@@ -1,0 +1,33 @@
+name: Update Portfolio Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight UTC
+  push:
+    branches: [ main ]
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch GitHub Data
+        env:
+          GITHUB_TOKEN: ${{ secrets.PORTFOLIO_GITHUB_PAT }}
+        run: node scripts/fetch-github.js
+
+      - name: Commit updated data
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add data.json
+          git diff --staged --quiet || git commit -m "Update portfolio stats [skip ci]"
+          git push
