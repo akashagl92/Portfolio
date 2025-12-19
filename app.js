@@ -1,10 +1,9 @@
-```javascript
 // GitHub Service
 const GithubService = {
     username: 'akashagl92',
     async fetchAllData() {
         // Check session cache first
-        const cached = sessionStorage.getItem('github_data_v7');
+        const cached = sessionStorage.getItem('github_data_v10');
         if (cached) return JSON.parse(cached);
 
         try {
@@ -15,7 +14,7 @@ const GithubService = {
                 // Check if data.json has real content (not just placeholder)
                 if (data.totalCommits > 0) {
                     console.log('Using pre-generated data from data.json');
-                    sessionStorage.setItem('github_data_v6', JSON.stringify(data));
+                    sessionStorage.setItem('github_data_v10', JSON.stringify(data));
                     return data;
                 }
             }
@@ -26,119 +25,119 @@ const GithubService = {
         // Fallback: Try live API (for local dev without data.json)
         try {
             const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=pushed&per_page=100`);
-if (!reposResponse.ok) throw new Error('Repo fetch failed');
+            if (!reposResponse.ok) throw new Error('Repo fetch failed');
 
-const repos = await reposResponse.json();
-let allCommits = [];
+            const repos = await reposResponse.json();
+            let allCommits = [];
 
-const targetRepos = repos.slice(0, 50);
-for (const repo of targetRepos) {
-    try {
-        const commitsResponse = await fetch(`https://api.github.com/repos/${this.username}/${repo.name}/commits?since=2025-01-01T00:00:00Z&per_page=100`);
-        if (commitsResponse.ok) {
-            const commits = await commitsResponse.json();
-            if (Array.isArray(commits)) {
-                allCommits.push(...commits.map(c => ({
-                    date: new Date(c.commit.author.date),
-                    repo: repo.name,
-                    language: repo.language || 'Other'
-                })));
+            const targetRepos = repos.slice(0, 50);
+            for (const repo of targetRepos) {
+                try {
+                    const commitsResponse = await fetch(`https://api.github.com/repos/${this.username}/${repo.name}/commits?since=2025-01-01T00:00:00Z&per_page=100`);
+                    if (commitsResponse.ok) {
+                        const commits = await commitsResponse.json();
+                        if (Array.isArray(commits)) {
+                            allCommits.push(...commits.map(c => ({
+                                date: new Date(c.commit.author.date),
+                                repo: repo.name,
+                                language: repo.language || 'Other'
+                            })));
+                        }
+                    }
+                } catch (err) {
+                    console.warn(`Failed to fetch commits for ${repo.name}`, err);
+                }
             }
-        }
-    } catch (err) {
-        console.warn(`Failed to fetch commits for ${repo.name}`, err);
-    }
-}
 
-if (allCommits.length < 10) {
-    console.log('Public activity low, generating mock data...');
-    allCommits = this.generateMockData();
-}
+            if (allCommits.length < 10) {
+                console.log('Public activity low, generating mock data...');
+                allCommits = this.generateMockData();
+            }
 
-const processed = this.processData(allCommits);
-sessionStorage.setItem('github_data_v6', JSON.stringify(processed));
-return processed;
+            const processed = this.processData(allCommits);
+            sessionStorage.setItem('github_data_v10', JSON.stringify(processed));
+            return processed;
         } catch (e) {
-    console.error('GitHub Fetch Error:', e);
-    // Final fallback: mock data
-    const mockCommits = this.generateMockData();
-    const processed = this.processData(mockCommits);
-    return processed;
-}
+            console.error('GitHub Fetch Error:', e);
+            // Final fallback: mock data
+            const mockCommits = this.generateMockData();
+            const processed = this.processData(mockCommits);
+            return processed;
+        }
     },
 
-generateMockData() {
-    // Simulating the 202+ contributions mentioned by user profile
-    // Distribution: Python (60%), Neo4j (20%), Agents (20%)
-    const now = new Date();
-    const startOfYear = new Date('2025-01-01');
-    const days = Math.floor((now - startOfYear) / (1000 * 60 * 60 * 24));
+    generateMockData() {
+        // Simulating the 202+ contributions mentioned by user profile
+        // Distribution: Python (60%), Neo4j (20%), Agents (20%)
+        const now = new Date();
+        const startOfYear = new Date('2025-01-01');
+        const days = Math.floor((now - startOfYear) / (1000 * 60 * 60 * 24));
 
-    const commits = [];
-    // Add ~200 mock commits spread over the year
-    for (let i = 0; i < 205; i++) {
-        const randomDay = Math.floor(Math.random() * days);
-        const date = new Date(startOfYear.getTime() + randomDay * 24 * 60 * 60 * 1000);
+        const commits = [];
+        // Add ~200 mock commits spread over the year
+        for (let i = 0; i < 205; i++) {
+            const randomDay = Math.floor(Math.random() * days);
+            const date = new Date(startOfYear.getTime() + randomDay * 24 * 60 * 60 * 1000);
 
-        let lang = 'Python';
-        const r = Math.random();
-        if (r > 0.6) lang = 'Neo4j';
-        if (r > 0.8) lang = 'Agents'; // Custom tag
+            let lang = 'Python';
+            const r = Math.random();
+            if (r > 0.6) lang = 'Neo4j';
+            if (r > 0.8) lang = 'Agents'; // Custom tag
 
-        commits.push({
-            date: date,
-            repo: 'private-work',
-            language: lang
+            commits.push({
+                date: date,
+                repo: 'private-work',
+                language: lang
+            });
+        }
+        return commits;
+    },
+
+    processData(commits) {
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const currentMonth = new Date().getMonth();
+
+        // Comprehensive language stats
+        const allLanguages = {};
+        commits.forEach(c => {
+            allLanguages[c.language] = (allLanguages[c.language] || 0) + 1;
         });
-    }
-    return commits;
-},
+        const topLanguages = Object.entries(allLanguages)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 3)
+            .map(e => e[0]);
 
-processData(commits) {
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    const currentMonth = new Date().getMonth();
+        const data = months.slice(0, currentMonth + 1).map((name, i) => {
+            const monthCommits = commits.filter(c => c.date.getMonth() === i);
+            const repos = new Set(monthCommits.map(c => c.repo));
+            const languages = {};
+            monthCommits.forEach(c => {
+                languages[c.language] = (languages[c.language] || 0) + 1;
+            });
 
-    // Comprehensive language stats
-    const allLanguages = {};
-    commits.forEach(c => {
-        allLanguages[c.language] = (allLanguages[c.language] || 0) + 1;
-    });
-    const topLanguages = Object.entries(allLanguages)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 3)
-        .map(e => e[0]);
+            // Calculate counts for top 3 languages for the line charts
+            const topLangCounts = {};
+            topLanguages.forEach(lang => {
+                topLangCounts[lang] = monthCommits.filter(c => c.language === lang).length;
+            });
 
-    const data = months.slice(0, currentMonth + 1).map((name, i) => {
-        const monthCommits = commits.filter(c => c.date.getMonth() === i);
-        const repos = new Set(monthCommits.map(c => c.repo));
-        const languages = {};
-        monthCommits.forEach(c => {
-            languages[c.language] = (languages[c.language] || 0) + 1;
-        });
-
-        // Calculate counts for top 3 languages for the line charts
-        const topLangCounts = {};
-        topLanguages.forEach(lang => {
-            topLangCounts[lang] = monthCommits.filter(c => c.language === lang).length;
+            return {
+                name,
+                count: monthCommits.length,
+                uniqueRepos: repos.size,
+                languages,
+                topLangCounts
+            };
         });
 
         return {
-            name,
-            count: monthCommits.length,
-            uniqueRepos: repos.size,
-            languages,
-            topLangCounts
+            monthly: data,
+            totalCommits: commits.length,
+            daily: commits.map(c => ({ date: c.date.toDateString() })),
+            topLanguages,
+            allLanguages
         };
-    });
-
-    return {
-        monthly: data,
-        totalCommits: commits.length,
-        daily: commits.map(c => ({ date: c.date.toDateString() })),
-        topLanguages,
-        allLanguages
-    };
-}
+    }
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -171,152 +170,198 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function updateCharts(data) {
-    // Update Stats
-    const totalCommitsEl = document.querySelector('.viz-stats .stat:first-child .stat-value');
+    // Update Stats in Hero
+    const totalCommitsEl = document.getElementById('total-commits');
     if (totalCommitsEl) totalCommitsEl.textContent = data.totalCommits.toLocaleString();
 
-    // Update Tech Stack Distribution Bars
-    const distChart = document.querySelector('.distribution-chart');
-    if (distChart && data.allLanguages) {
-        distChart.innerHTML = '';
-        const sortedLangs = Object.entries(data.allLanguages)
-            .sort((a, b) => b[1] - a[1])
-            .slice(0, 3);
+    const totalLangsEl = document.getElementById('total-languages');
+    if (totalLangsEl && data.allLanguages) {
+        totalLangsEl.textContent = Object.keys(data.allLanguages).length;
+    }
 
-        const totalTopCommits = sortedLangs.reduce((sum, l) => sum + l[1], 0);
+    // Color palette for languages
+    const langColors = {
+        'Python': '#a78bfa',
+        'TypeScript': '#3b82f6',
+        'JavaScript': '#fbbf24',
+        'HTML': '#f97316',
+        'CSS': '#06b6d4',
+        'Other': '#6b7280'
+    };
+    const defaultColors = ['#a78bfa', '#3b82f6', '#fbbf24', '#f97316', '#06b6d4', '#10b981', '#ec4899', '#8b5cf6'];
+
+    // Full Tech Distribution (Activity Section)
+    const fullDistChart = document.getElementById('full-tech-distribution');
+    if (fullDistChart && data.allLanguages) {
+        fullDistChart.innerHTML = '';
+        const sortedLangs = Object.entries(data.allLanguages)
+            .sort((a, b) => b[1] - a[1]);
+
+        const maxCount = sortedLangs[0]?.[1] || 1;
 
         sortedLangs.forEach(([lang, count], i) => {
-            const percentage = Math.round((count / totalTopCommits) * 100);
-            const classes = ['python', 'db', 'ai'];
+            const percentage = Math.round((count / maxCount) * 100);
+            const color = langColors[lang] || defaultColors[i % defaultColors.length];
             const row = document.createElement('div');
             row.className = 'dist-row';
             row.innerHTML = `
-                <span>${lang}</span>
+                <span>${lang} <span style="color: var(--text-muted)">${count} commits</span></span>
                 <div class="dist-bar-bg">
-                    <div class="dist-bar ${classes[i] || 'python'}" style="width: ${percentage}%"></div>
+                    <div class="dist-bar" style="width: ${percentage}%; background: ${color}"></div>
                 </div>
             `;
-            distChart.appendChild(row);
+            fullDistChart.appendChild(row);
         });
     }
 
-    // Update Legend
-    const legend = document.querySelector('.legend');
-    if (legend && data.topLanguages) {
-        legend.innerHTML = '';
-        const classes = ['python', 'neo4j', 'agents'];
-        data.topLanguages.forEach((lang, i) => {
-            const span = document.createElement('span');
-            span.className = 'legend-item';
-            span.innerHTML = `<i class="dot ${classes[i]}"></i> ${lang}`;
-            legend.appendChild(span);
-        });
-    }
+    // Build activity map with repo and language info for rich tooltips
+    const activityMap = {};
+    data.daily.forEach(d => {
+        if (!activityMap[d.date]) {
+            activityMap[d.date] = { count: 0, repos: {}, languages: {} };
+        }
+        activityMap[d.date].count++;
+        activityMap[d.date].repos[d.repo] = (activityMap[d.date].repos[d.repo] || 0) + 1;
+        activityMap[d.date].languages[d.language] = (activityMap[d.date].languages[d.language] || 0) + 1;
+    });
 
-    // Update Heatmap
-    const heatmap = document.getElementById('heatmap');
-    if (heatmap) {
-        heatmap.innerHTML = '';
-        const activityMap = {};
-        data.daily.forEach(d => {
-            // Group by approximate "blocks" for the heatmap UI if it's small
-            activityMap[d.date] = (activityMap[d.date] || 0) + 1;
-        });
+    // Hero Calendar
+    const heroCalendarGrid = document.getElementById('hero-calendar-grid');
+    const heroCalendarMonths = document.getElementById('hero-calendar-months');
+    const tooltip = document.getElementById('calendar-tooltip');
 
-        // Current implementation has 48 boxes
-        const allDates = Object.keys(activityMap).sort((a, b) => new Date(b) - new Date(a));
-        for (let i = 0; i < 48; i++) {
-            const day = document.createElement('div');
-            let intensity = 0;
-            if (i < allDates.length) {
-                const count = activityMap[allDates[i]];
-                intensity = Math.min(3, Math.ceil(count / 2));
+    if (heroCalendarGrid) {
+        heroCalendarGrid.innerHTML = '';
+
+        const startDate = new Date('2025-01-01');
+        const today = new Date();
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        // Start from the first day of 2025 (no padding for Dec 2024)
+        let currentDate = new Date(startDate);
+
+        // Find the first Sunday on or before Jan 1
+        const firstDayOfWeek = currentDate.getDay();
+        let weekIndex = 0;
+
+        let currentMonth = 0; // Start with January (0)
+        const monthPositions = [{ month: 'Jan', position: 0 }]; // Jan starts at position 0
+
+        while (currentDate <= today) {
+            const week = document.createElement('div');
+            week.className = 'calendar-week';
+
+            for (let i = 0; i < 7; i++) {
+                const day = document.createElement('div');
+                day.className = 'calendar-day';
+
+                // For the first week, hide days before Jan 1
+                const effectiveDate = new Date(startDate);
+                effectiveDate.setDate(effectiveDate.getDate() + (weekIndex * 7) + i - firstDayOfWeek);
+
+                if (effectiveDate >= startDate && effectiveDate <= today) {
+                    const dateStr = effectiveDate.toDateString();
+                    const dayData = activityMap[dateStr] || { count: 0, repos: {}, languages: {} };
+
+                    let level = 0;
+                    if (dayData.count >= 1) level = 1;
+                    if (dayData.count >= 3) level = 2;
+                    if (dayData.count >= 5) level = 3;
+                    if (dayData.count >= 8) level = 4;
+
+                    day.classList.add(`lvl-${level}`);
+                    day.dataset.date = dateStr;
+                    day.dataset.info = JSON.stringify(dayData);
+
+                    // Track month positions for labels (only when month changes)
+                    const month = effectiveDate.getMonth();
+                    if (month !== currentMonth && month > currentMonth) {
+                        currentMonth = month;
+                        monthPositions.push({ month: months[month], position: weekIndex });
+                    }
+
+                    // Rich tooltip on hover (only if tooltip element exists)
+                    if (tooltip) {
+                        day.addEventListener('mouseenter', (e) => {
+                            const info = JSON.parse(e.target.dataset.info);
+                            const date = e.target.dataset.date;
+
+                            if (info.count === 0) {
+                                tooltip.innerHTML = `
+                                    <div class="tooltip-header">${date}</div>
+                                    <div style="color: var(--text-muted)">No contributions</div>
+                                `;
+                            } else {
+                                const repoList = Object.entries(info.repos)
+                                    .sort((a, b) => b[1] - a[1])
+                                    .slice(0, 3)
+                                    .map(([repo, ct]) => `<div class="tooltip-project"><span>${repo}</span><span>${ct}</span></div>`)
+                                    .join('');
+
+                                const langEntries = Object.entries(info.languages).sort((a, b) => b[1] - a[1]);
+                                const totalLangCommits = langEntries.reduce((s, l) => s + l[1], 0);
+                                const techBar = langEntries.map(([lang, ct], idx) => {
+                                    const pct = (ct / totalLangCommits) * 100;
+                                    const color = langColors[lang] || defaultColors[idx % defaultColors.length];
+                                    return `<div class="tooltip-tech-segment" style="width: ${pct}%; background: ${color}"></div>`;
+                                }).join('');
+
+                                const techLegend = langEntries.slice(0, 3).map(([lang, ct], idx) => {
+                                    const color = langColors[lang] || defaultColors[idx % defaultColors.length];
+                                    return `<span style="color: ${color}">● ${lang}</span>`;
+                                }).join(' ');
+
+                                tooltip.innerHTML = `
+                                    <div class="tooltip-header">${date}</div>
+                                    <div><span class="tooltip-count">${info.count}</span> contribution${info.count !== 1 ? 's' : ''}</div>
+                                    <div class="tooltip-projects">${repoList}</div>
+                                    <div class="tooltip-tech">
+                                        <div class="tooltip-tech-bar">${techBar}</div>
+                                        <div class="tooltip-tech-legend">${techLegend}</div>
+                                    </div>
+                                `;
+                            }
+
+                            tooltip.classList.add('visible');
+                        });
+
+                        day.addEventListener('mousemove', (e) => {
+                            tooltip.style.left = `${e.clientX + 15}px`;
+                            tooltip.style.top = `${e.clientY + 15}px`;
+                        });
+
+                        day.addEventListener('mouseleave', () => {
+                            tooltip.classList.remove('visible');
+                        });
+                    }
+                } else {
+                    day.style.visibility = 'hidden';
+                }
+
+                week.appendChild(day);
             }
-            day.className = `heatmap-day lvl-${intensity}`;
-            heatmap.appendChild(day);
+
+            heroCalendarGrid.appendChild(week);
+            weekIndex++;
+
+            // Advance currentDate by 7 days for the while loop condition
+            currentDate.setDate(currentDate.getDate() + 7);
+        }
+
+        // Add month labels
+        if (heroCalendarMonths) {
+            heroCalendarMonths.innerHTML = '';
+            const totalWeeks = heroCalendarGrid.children.length;
+            monthPositions.forEach((mp, idx) => {
+                const span = document.createElement('span');
+                span.textContent = mp.month;
+                const nextPos = monthPositions[idx + 1]?.position || totalWeeks;
+                const weekSpan = nextPos - mp.position;
+                span.style.width = `${weekSpan * 12}px`;
+                heroCalendarMonths.appendChild(span);
+            });
         }
     }
 
-    // Multi-line Velocity Chart
-    const chart = document.querySelector('.velocity-chart');
-    const tooltip = document.getElementById('chart-tooltip');
-
-    if (chart && data.monthly.length > 0) {
-        // Clear existing paths first
-        const existingPaths = chart.querySelectorAll('.velocity-path');
-        existingPaths.forEach(p => p.remove());
-
-        const width = 400;
-        const height = 200;
-        const padding = 20;
-
-        const maxCommits = Math.max(...data.monthly.map(m => m.count), 1);
-        const colors = ['var(--accent-primary)', '#fbbf24', '#f472b6']; // Purple, Amber, Pink
-
-        data.topLanguages.forEach((lang, langIdx) => {
-            // Create path dynamically
-            const pathEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-            pathEl.classList.add('velocity-path');
-            pathEl.style.fill = 'none';
-            pathEl.style.stroke = colors[langIdx] || '#fff';
-            pathEl.style.strokeWidth = '3';
-            pathEl.style.strokeLinecap = 'round';
-            chart.appendChild(pathEl);
-
-            const points = data.monthly.map((m, i) => {
-                const count = m.topLangCounts[lang] || 0;
-                return {
-                    x: padding + (i * (width - 2 * padding) / Math.max(data.monthly.length - 1, 1)),
-                    y: height - padding - (count * (height - 2 * padding) / maxCommits)
-                };
-            });
-
-            if (points.length > 1) {
-                // Simplified Path Generation (Linear)
-                const d = `M${points.map(p => `${p.x},${p.y}`).join(' L')}`;
-                pathEl.setAttribute('d', d);
-            }
-        });
-
-        // Update main points for tooltip (uses total monthly count)
-        const mainPoints = data.monthly.map((m, i) => ({
-            x: padding + (i * (width - 2 * padding) / Math.max(data.monthly.length - 1, 1)),
-            y: height - padding - (m.count * (height - 2 * padding) / maxCommits),
-            data: m
-        }));
-
-        // Custom Tooltip Interaction
-        chart.addEventListener('mousemove', (e) => {
-            const rect = chart.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-
-            // Find closest month
-            const closest = mainPoints.reduce((prev, curr) =>
-                Math.abs(curr.x * (rect.width / 400) - x) < Math.abs(prev.x * (rect.width / 400) - x) ? curr : prev
-            );
-
-            if (closest) {
-                tooltip.style.opacity = '1';
-                tooltip.style.left = `${e.clientX + 10}px`;
-                tooltip.style.top = `${e.clientY + 10}px`;
-
-                const langBreakdown = Object.entries(closest.data.languages)
-                    .sort((a, b) => b[1] - a[1])
-                    .slice(0, 3)
-                    .map(([lang, count]) => `<span>${lang}: ${count}</span>`)
-                    .join('');
-
-                tooltip.innerHTML = `
-                    <strong>${closest.data.name} 2025</strong>
-                    <div class="tooltip-line"><span>Total Commits:</span> <span>${closest.data.count}</span></div>
-                    <div class="tooltip-line"><span>Projects:</span> <span>${closest.data.uniqueRepos}</span></div>
-                    <div style="border-top:1px solid rgba(255,255,255,0.1); margin-top:0.5rem; padding-top:0.5rem; font-size:0.7rem; color:var(--text-muted)">
-                        ${langBreakdown || 'General activity'}
-                    </div>
-                `;
-            }
-        });
-
-        chart.addEventListener('mouseleave', () => tooltip.style.opacity = '0');
-    }
 }
+

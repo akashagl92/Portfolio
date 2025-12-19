@@ -128,8 +128,12 @@ async function fetchAllData() {
         };
     });
 
-    // Build daily activity for heatmap
-    const daily = allCommits.map(c => ({ date: new Date(c.date).toDateString() }));
+    // Build daily activity for heatmap (with repo and language info)
+    const daily = allCommits.map(c => ({
+        date: new Date(c.date).toDateString(),
+        repo: c.repo,
+        language: c.language
+    }));
 
     const result = {
         monthly,

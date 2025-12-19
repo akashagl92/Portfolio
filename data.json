@@ -137,479 +137,795 @@
     },
     {
       "name": "Dec",
-      "count": 32,
-      "uniqueRepos": 4,
+      "count": 34,
+      "uniqueRepos": 5,
       "languages": {
-        "JavaScript": 3,
+        "JavaScript": 5,
         "Python": 29
       },
       "topLangCounts": {
         "Python": 29,
         "TypeScript": 0,
-        "JavaScript": 3
+        "JavaScript": 5
       }
     }
   ],
-  "totalCommits": 153,
+  "totalCommits": 155,
   "daily": [
     {
-      "date": "Thu Dec 18 2025"
+      "date": "Thu Dec 18 2025",
+      "repo": "Portfolio-Fetch",
+      "language": "JavaScript"
     },
     {
-      "date": "Tue Dec 16 2025"
+      "date": "Thu Dec 18 2025",
+      "repo": "Portfolio-Fetch",
+      "language": "JavaScript"
     },
     {
-      "date": "Tue Dec 16 2025"
+      "date": "Thu Dec 18 2025",
+      "repo": "Music-and-Math",
+      "language": "JavaScript"
     },
     {
-      "date": "Thu Dec 18 2025"
+      "date": "Tue Dec 16 2025",
+      "repo": "Music-and-Math",
+      "language": "JavaScript"
     },
     {
-      "date": "Thu Dec 18 2025"
+      "date": "Tue Dec 16 2025",
+      "repo": "Music-and-Math",
+      "language": "JavaScript"
     },
     {
-      "date": "Mon Nov 17 2025"
+      "date": "Thu Dec 18 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Mon Nov 17 2025"
+      "date": "Thu Dec 18 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Mon Nov 17 2025"
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Mon Nov 17 2025"
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Mon Nov 17 2025"
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Wed Nov 12 2025"
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Mon Dec 15 2025"
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Mon Dec 15 2025"
+      "date": "Wed Nov 12 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Mon Dec 15 2025"
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Sun Dec 14 2025"
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Sun Dec 14 2025"
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Sat Dec 13 2025"
+      "date": "Sun Dec 14 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 12 2025"
+      "date": "Sun Dec 14 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 12 2025"
+      "date": "Sat Dec 13 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 12 2025"
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 12 2025"
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 12 2025"
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 12 2025"
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Thu Dec 11 2025"
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Wed Dec 10 2025"
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Wed Dec 10 2025"
+      "date": "Thu Dec 11 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Wed Dec 10 2025"
+      "date": "Wed Dec 10 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Wed Dec 10 2025"
+      "date": "Wed Dec 10 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Sun Dec 07 2025"
+      "date": "Wed Dec 10 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Sun Dec 07 2025"
+      "date": "Wed Dec 10 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Sun Dec 07 2025"
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 05 2025"
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 05 2025"
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 05 2025"
+      "date": "Fri Dec 05 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Mon Dec 15 2025"
+      "date": "Fri Dec 05 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Mon Dec 15 2025"
+      "date": "Fri Dec 05 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
-      "date": "Mon Dec 15 2025"
+      "date": "Mon Dec 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Dec 15 2025"
+      "date": "Mon Dec 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Thu Nov 20 2025"
+      "date": "Mon Dec 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Nov 15 2025"
+      "date": "Mon Dec 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Thu Nov 13 2025"
+      "date": "Thu Nov 20 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Tue Nov 11 2025"
+      "date": "Sat Nov 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Tue Nov 11 2025"
+      "date": "Thu Nov 13 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Wed Sep 24 2025"
+      "date": "Tue Nov 11 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sun Sep 21 2025"
+      "date": "Tue Nov 11 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sun Sep 21 2025"
+      "date": "Wed Sep 24 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 19 2025"
+      "date": "Sun Sep 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 19 2025"
+      "date": "Sun Sep 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 19 2025"
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 19 2025"
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 19 2025"
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 19 2025"
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 19 2025"
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Tue Sep 16 2025"
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Tue Sep 16 2025"
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Tue Sep 16 2025"
+      "date": "Tue Sep 16 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 15 2025"
+      "date": "Tue Sep 16 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 15 2025"
+      "date": "Tue Sep 16 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 15 2025"
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 15 2025"
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 15 2025"
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 15 2025"
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 15 2025"
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 15 2025"
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 12 2025"
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 12 2025"
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 12 2025"
+      "date": "Fri Sep 12 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 12 2025"
+      "date": "Fri Sep 12 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 12 2025"
+      "date": "Fri Sep 12 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 12 2025"
+      "date": "Fri Sep 12 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Fri Sep 12 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Fri Sep 12 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Sep 08 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sun Sep 07 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Sep 06 2025"
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Sep 06 2025"
+      "date": "Sun Sep 07 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Sep 06 2025"
+      "date": "Sat Sep 06 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Sep 06 2025"
+      "date": "Sat Sep 06 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Sep 06 2025"
+      "date": "Sat Sep 06 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Sep 06 2025"
+      "date": "Sat Sep 06 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Sat Sep 06 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Sat Sep 06 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Sep 05 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Wed Aug 27 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Wed Aug 27 2025"
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Aug 25 2025"
+      "date": "Wed Aug 27 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Aug 25 2025"
+      "date": "Wed Aug 27 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Aug 25 2025"
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Aug 25 2025"
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Aug 25 2025"
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Aug 25 2025"
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Aug 25 2025"
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sun Aug 24 2025"
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sun Aug 24 2025"
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sun Aug 24 2025"
+      "date": "Sun Aug 24 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sun Aug 24 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sun Aug 24 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Sat Aug 23 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Aug 22 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Aug 22 2025"
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Aug 22 2025"
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Aug 22 2025"
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Aug 22 2025"
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Aug 22 2025"
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Aug 22 2025"
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Fri Aug 22 2025"
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Mon Nov 10 2025"
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Thu Nov 06 2025"
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
-      "date": "Wed Nov 05 2025"
+      "date": "Mon Nov 10 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
     },
     {
-      "date": "Wed Nov 05 2025"
+      "date": "Thu Nov 06 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
     },
     {
-      "date": "Wed Nov 05 2025"
+      "date": "Wed Nov 05 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
     },
     {
-      "date": "Wed Nov 05 2025"
+      "date": "Wed Nov 05 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
     },
     {
-      "date": "Tue Nov 04 2025"
+      "date": "Wed Nov 05 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
     },
     {
-      "date": "Tue Sep 23 2025"
+      "date": "Wed Nov 05 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
     },
     {
-      "date": "Tue Sep 23 2025"
+      "date": "Tue Nov 04 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
     },
     {
-      "date": "Mon Jun 16 2025"
+      "date": "Tue Sep 23 2025",
+      "repo": "Hindi-Tutor",
+      "language": "TypeScript"
     },
     {
-      "date": "Mon Jun 16 2025"
+      "date": "Tue Sep 23 2025",
+      "repo": "Hindi-Tutor",
+      "language": "TypeScript"
     },
     {
-      "date": "Mon Jun 16 2025"
+      "date": "Mon Jun 16 2025",
+      "repo": "LinkedIn-API",
+      "language": "Python"
     },
     {
-      "date": "Wed May 28 2025"
+      "date": "Mon Jun 16 2025",
+      "repo": "LinkedIn-API",
+      "language": "Python"
     },
     {
-      "date": "Wed May 28 2025"
+      "date": "Mon Jun 16 2025",
+      "repo": "LinkedIn-API",
+      "language": "Python"
     },
     {
-      "date": "Wed May 28 2025"
+      "date": "Wed May 28 2025",
+      "repo": "voc-buyer-journey-chatbot",
+      "language": "Python"
     },
     {
-      "date": "Tue Mar 25 2025"
+      "date": "Wed May 28 2025",
+      "repo": "voc-buyer-journey-chatbot",
+      "language": "Python"
     },
     {
-      "date": "Tue Mar 25 2025"
+      "date": "Wed May 28 2025",
+      "repo": "voc-buyer-journey-chatbot",
+      "language": "Python"
     },
     {
-      "date": "Sat Mar 08 2025"
+      "date": "Tue Mar 25 2025",
+      "repo": "Marketing-Analytics-Assistant",
+      "language": "Python"
     },
     {
-      "date": "Tue Mar 04 2025"
+      "date": "Tue Mar 25 2025",
+      "repo": "Marketing-Analytics-Assistant",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Mar 08 2025",
+      "repo": "Marketing-Analytics-Assistant",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Mar 04 2025",
+      "repo": "Marketing-Analytics-Assistant",
+      "language": "Python"
     }
   ],
   "topLanguages": [
@@ -618,9 +934,9 @@
     "JavaScript"
   ],
   "allLanguages": {
-    "JavaScript": 3,
+    "JavaScript": 5,
     "Python": 141,
     "TypeScript": 9
   },
-  "lastUpdated": "2025-12-19T03:19:06.445Z"
+  "lastUpdated": "2025-12-19T03:40:53.338Z"
 }
