@@ -565,9 +565,16 @@ section {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
+}
+
+.projects-grid .project-card {
+    flex: 1 1 350px;
+    max-width: 500px;
+    min-width: 300px;
 }
 
 .project-card {
@@ -657,9 +664,16 @@ section {
 
 /* Innovation Grid - Use same as projects-grid for consistency */
 .innovation-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
+}
+
+.innovation-grid .project-card {
+    flex: 1 1 350px;
+    max-width: 500px;
+    min-width: 300px;
 }
 
 .innovation-grid h4 {
@@ -923,15 +937,11 @@ footer {
         font-size: 2rem;
     }
 
-    .projects-grid,
-    .innovation-grid {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
-    .project-card {
-        max-width: 100%;
+    .projects-grid .project-card,
+    .innovation-grid .project-card {
+        flex: 1 1 100%;
+        max-width: 450px;
+        min-width: 280px;
     }
 
     .skills-container {
