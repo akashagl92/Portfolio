@@ -659,6 +659,73 @@ footer {
     line-height: 1.4;
 }
 
+/* Featured Project Cards */
+.project-card.featured {
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.05) 0%, rgba(59, 130, 246, 0.03) 100%);
+}
+
+.project-card.featured:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 30px rgba(167, 139, 250, 0.25);
+}
+
+/* Highlight Tags */
+.highlight-tag {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) !important;
+    color: white !important;
+    border: none !important;
+    font-weight: 600 !important;
+}
+
+/* Project Highlights */
+.project-highlights {
+    margin-bottom: 1.5rem;
+}
+
+.project-highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-highlights li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.project-highlights li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+}
+
+.project-highlights li strong {
+    color: var(--text-main);
+}
+
+/* Contact Section */
+.contact-container {
+    text-align: center;
+    padding: 4rem;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
 /* GitHub-Style Contribution Calendar */
 .contribution-card {
     min-width: 100%;

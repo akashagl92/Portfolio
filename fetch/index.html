@@ -105,135 +105,247 @@
                 </div>
             </div>
         </section>
-        <h2 class="section-title">Work Portfolio <span class="line"></span></h2>
-        <div class="projects-grid">
-            <!-- Project 1: GA4 / Genie -->
-            <div class="project-card glass-card work" data-link="https://github.com/akashagl92/Google-Analytics">
-                <div class="project-tags">
-                    <span>Ad Tech</span>
-                    <span>Databricks Genie</span>
-                    <span>APIs</span>
-                </div>
-                <h3>Data Foundations & Conversational AI</h3>
-                <p>Architected end-to-end data pipelines for GA4 and Google Ads, bypassing UI sampling limitations
-                    via API-driven custom filters. Integrated Databricks Genie to enable semantic, conversational
-                    exploration of complex ad-performance datasets.</p>
-                <div class="project-meta">
-                    <span><strong class="highlight">Auto-Scaling</strong> Pipelines</span>
-                    <span>Sampling Bypass</span>
-                </div>
-            </div>
 
-            <!-- Project 2: LinkedIn Measurement -->
-            <div class="project-card glass-card work">
-                <div class="project-tags">
-                    <span>Measurement</span>
-                    <span>LinkedIn</span>
-                    <span>Monetization</span>
+        <section id="work" class="reveal">
+            <h2 class="section-title">Work Portfolio <span class="line"></span></h2>
+            <div class="projects-grid">
+                <!-- Project 1: Databricks Genie Integration - TEXT-TO-SQL / AGENTIC -->
+                <div class="project-card glass-card work featured">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Text-to-SQL</span>
+                        <span>Databricks Genie</span>
+                        <span>Agentic Tech</span>
+                    </div>
+                    <h3>Databricks Genie Integration</h3>
+                    <p>Multi-workspace BI platform with natural language queries via Databricks Genie API. Enables
+                        semantic exploration of complex datasets with contact/account lookup, buyer journey analysis,
+                        and bulk data enrichment with sophisticated matching algorithms.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Natural Language → SQL</strong> via Genie Conversation API</li>
+                            <li><strong>Buyer Journey Lookup</strong> by Member ID, Contact, Product Codes</li>
+                            <li><strong>Multi-criteria Matching</strong>: Email, Org hierarchy, DHC mapping</li>
+                            <li><strong>Bulk Processing</strong>: Excel/CSV enrichment at scale</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span><strong class="highlight">509K+</strong> lines Python</span>
+                        <span>Flask + Databricks SQL</span>
+                    </div>
                 </div>
-                <h3>LinkedIn Ad-Measurement Frameworks</h3>
-                <p>Defined robust measurement frameworks for LinkedIn ad ecosystems, focusing on cross-platform data
-                    delivery and outcome-based reporting to drive advertiser ROI and data monetization transparency.
-                </p>
-                <div class="project-meta">
-                    <span>ROI Transparency</span>
-                    <span>Scalable Frameworks</span>
-                </div>
-            </div>
 
-            <!-- Project 3: VOC Buyer Journey -->
-            <div class="project-card glass-card work">
-                <div class="project-tags">
-                    <span>Data Modeling</span>
-                    <span>VOC</span>
-                    <span>UX</span>
+                <!-- Project 2: VOC Buyer Journey Chatbot - DUAL-BRAIN ARCHITECTURE -->
+                <div class="project-card glass-card work featured">
+                    <div class="project-tags">
+                        <span class="highlight-tag">LangGraph</span>
+                        <span>RAG + SQL</span>
+                        <span>Databricks</span>
+                    </div>
+                    <h3>VOC & Buyer Journey Chatbot</h3>
+                    <p>Production-ready chatbot with dual-brain architecture: SQL Brain (Genie API for structured
+                        queries)
+                        and Docs Brain (RAG for unstructured PDFs). LangGraph orchestration manages routing,
+                        state, and complex workflows with LangSmith observability.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Dual-Brain</strong>: SQL (Genie) + Document (RAG) routing</li>
+                            <li><strong>LangGraph</strong> state management & orchestration</li>
+                            <li><strong>Vector Search</strong> + databricks-bge-large-en embeddings</li>
+                            <li><strong>Model Serving</strong> via Databricks endpoints</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>LangChain 0.2+</span>
+                        <span>Streamlit UI</span>
+                    </div>
                 </div>
-                <h3>VOC Buyer Journey Modeling</h3>
-                <p>Engineered predictive data models to map the Voice of Customer (VOC) buyer journey. Identified
-                    high-friction touchpoints and optimized customer pathing analysis for increased conversion
-                    accuracy.</p>
-                <div class="project-meta">
-                    <span>Pathing Analysis</span>
-                    <span>Conversion Lift</span>
+
+                <!-- Project 3: Marketing Analytics Assistant - MEASUREMENT -->
+                <div class="project-card glass-card work">
+                    <div class="project-tags">
+                        <span>Measurement</span>
+                        <span>A/B Testing</span>
+                        <span>Statistical Analysis</span>
+                    </div>
+                    <h3>Marketing Analytics Assistant</h3>
+                    <p>AI-powered chatbot for marketing experiment analysis. Implements binomial tests, Z-tests,
+                        chi-square, and post-hoc power analysis. Automated statistical winner determination
+                        with confidence intervals and significance levels.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>4 Statistical Tests</strong> for robust A/B analysis</li>
+                            <li><strong>Power Analysis</strong>: ≥0.8 threshold for winner calls</li>
+                            <li><strong>GPT + Gemini</strong> for natural language insights</li>
+                            <li><strong>Segment-level</strong> experience performance analysis</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>FastAPI + Pandas</span>
+                        <span>Chart.js Viz</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: LinkedIn API - AD MEASUREMENT -->
+                <div class="project-card glass-card work">
+                    <div class="project-tags">
+                        <span>Ad Tech</span>
+                        <span>LinkedIn Ads</span>
+                        <span>APIs</span>
+                    </div>
+                    <h3>LinkedIn Campaign Measurement</h3>
+                    <p>Automated daily campaign stats export via LinkedIn Marketing API. Company name resolution
+                        and comprehensive Excel reporting for cross-platform ad measurement and partner data delivery.
+                    </p>
+                    <div class="project-meta">
+                        <span>Daily Automation</span>
+                        <span>Partner Data Delivery</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: Google Analytics Pipeline -->
+                <div class="project-card glass-card work">
+                    <div class="project-tags">
+                        <span>Data Pipelines</span>
+                        <span>GA4 API</span>
+                        <span>Sampling Bypass</span>
+                    </div>
+                    <h3>Google Analytics Data Foundation</h3>
+                    <p>API-driven data pipelines for GA4 and Universal Analytics. Custom filters to pull 100,000+ rows
+                        without data sampling—bypassing UI limitations for accurate ad-performance measurement.</p>
+                    <div class="project-meta">
+                        <span><strong class="highlight">100K+</strong> rows/query</span>
+                        <span>Zero Sampling</span>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
+
 
         <section id="innovation" class="reveal">
             <h2 class="section-title">Personal Projects <span class="line"></span></h2>
             <div class="innovation-grid">
-                <!-- Project 4: Autonomous Rebalancer -->
-                <!-- Project 4: Autonomous Rebalancer -->
-                <div class="project-card glass-card personal"
-                    data-link="https://github.com/akashagl92/covid19-india-analysis">
+                <!-- Project: Autonomous Stock Trading System -->
+                <div class="project-card glass-card personal featured">
                     <div class="project-tags">
-                        <span>FinTech</span>
-                        <span>Modeling</span>
+                        <span class="highlight-tag">FinTech</span>
+                        <span>ML/AI</span>
                         <span>Backtesting</span>
                     </div>
-                    <h3>Autonomous Portfolio Rebalancer</h3>
-                    <p>Developed a systematic asset allocation engine (Robinhood) producing 70% XIRR. Implemented robust
-                        backtesting frameworks and overfitting protection for high-precision risk management.</p>
+                    <h3>Autonomous Trading System (V2.6)</h3>
+                    <p>AI-powered dual-track portfolio (Stocks + Crypto) with market timing factors (BTC momentum, VIX).
+                        Tiered allocation, trend breakdown protection, and walk-forward validated strategies.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>72.1% XIRR</strong> vs 20.5% S&P 500 benchmark</li>
+                            <li><strong>Market Timing</strong>: BTC momentum (p=0.0001)</li>
+                            <li><strong>Email-based Approval</strong> for trade execution</li>
+                            <li><strong>Walk-Forward Validated</strong> (2021-2025)</li>
+                        </ul>
+                    </div>
                     <div class="project-meta">
-                        <span><strong class="highlight">70%</strong> XIRR</span>
-                        <span>Backtest Rigor</span>
+                        <span><strong class="highlight">72.1%</strong> XIRR</span>
+                        <span>3.5x S&P 500 Benchmark</span>
                     </div>
                 </div>
 
-                <div class="glass-card item personal">
-                    <h4>Ancient Scripture Sage AI</h4>
-                    <p>Advanced GraphRAG system built on Neo4j, applying agentic technology to classical scriptures for
-                        deep contextual retrieval and semantic reasoning. Bridging ancient wisdom with modern LLM
-                        capabilities.</p>
+                <!-- Project: AI Astrology - Astrological Analysis Platform -->
+                <div class="project-card glass-card personal featured">
+                    <div class="project-tags">
+                        <span class="highlight-tag">ML Validation</span>
+                        <span>Statistical Research</span>
+                        <span>GenAI</span>
+                    </div>
+                    <h3>AI Astrology - Scientific Analysis Platform</h3>
+                    <p>Full-stack platform combining astronomical calculations (Swiss Ephemeris) with AI
+                        interpretations.
+                        Backed by rigorous statistical research on 5,885 public figures and 239 countries.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>69-85% Accuracy</strong> in ML prediction models</li>
+                            <li><strong>FDR-corrected</strong> significance (q &lt; 0.001)</li>
+                            <li><strong>Multi-system</strong>: Western, Vedic</li>
+                            <li><strong>Next.js + FastAPI + PostgreSQL</strong></li>
+                        </ul>
+                    </div>
                     <div class="project-meta">
-                        <span>GraphRAG (Neo4j)</span>
-                        <span>Semantic Reasoning</span>
+                        <span>3.7M+ lines code</span>
+                        <span>Google Gemini + HuggingFace</span>
                     </div>
                 </div>
 
-                <div class="glass-card item personal">
-                    <h4>AIAstrology & Swiss Ephemeris</h4>
-                    <p>High-precision calculation engine (Swiss Ephemeris) integrated with LLMs to explore correlation
-                        and causality. Focus on technical accuracy and data-driven insight generation.</p>
+                <!-- Project: Philosophy Sage - GraphRAG -->
+                <div class="project-card glass-card personal featured">
+                    <div class="project-tags">
+                        <span class="highlight-tag">GraphRAG</span>
+                        <span>Neo4j</span>
+                        <span>LangChain</span>
+                    </div>
+                    <h3>Philosophy Sage</h3>
+                    <p>AI-powered platform for Hindu scriptures with GraphRAG architecture.
+                        Neo4j knowledge graph for contextual retrieval across the Mahabharata,
+                        Bhagavad Gita, and other texts. Sanskrit TTS integration.</p>
                     <div class="project-meta">
-                        <span>Swiss Ephemeris Engine</span>
-                        <span>Causality Modeling</span>
+                        <span>490K+ lines TypeScript</span>
+                        <span>React Frontend</span>
                     </div>
                 </div>
 
-                <div class="glass-card item personal" data-link="http://127.0.0.1:8081/index.html?v=98">
-                    <h4>Music + Math Visualizer</h4>
-                    <p>Interactive playground exploring the geometric and mathematical foundations of music theory.
-                        Real-time visualization of harmonic ratios and tonal structures.</p>
+                <!-- Project: Music + Math Visualizer -->
+                <div class="project-card glass-card personal featured"
+                    data-link="https://github.com/akashagl92/Music-and-Math">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Web Audio</span>
+                        <span>Canvas 2D</span>
+                        <span>Music Theory</span>
+                    </div>
+                    <h3>Sonic Geometry Visualizer</h3>
+                    <p>Interactive exploration of Music Theory × Physics × Math.
+                        Real-time oscilloscope, spectrum analyzer, Lissajous figures, Circle of Fifths,
+                        and polyphonic virtual keyboard—all native Web Audio API.</p>
                     <div class="project-meta">
-                        <span>Harmonic Analysis</span>
-                        <span>Real-time Visuals</span>
+                        <span>56K+ lines JavaScript</span>
+                        <span>Zero Dependencies</span>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="skills" class="reveal">
             <h2 class="section-title">Measurement Mastery <span class="line"></span></h2>
             <div class="skills-container glass-card">
                 <div class="skill-group">
                     <h5>Data Foundations</h5>
-                    <p>API-driven pipelines, Event Taxonomies, Schema Design, Data Monetization Strategy.</p>
+                    <p>API-driven pipelines, Event Taxonomies, Schema Design, Data Monetization Strategy, Bulk
+                        Enrichment.</p>
                 </div>
                 <div class="skill-group">
                     <h5>Ad Tech & Measurement</h5>
-                    <p>GA4, Google Ads, LinkedIn Ads, Conversion Modeling, Cross-Platform Attribution.</p>
+                    <p>GA4, Google Ads, LinkedIn Ads, Conversion Modeling, Cross-Platform Attribution, A/B Statistical
+                        Testing.</p>
                 </div>
                 <div class="skill-group">
                     <h5>Agentic & GenAI</h5>
-                    <p>Databricks Genie, RAG Architectures, Autonomous Rebalancing, Python, LLM Integration.</p>
+                    <p>Databricks Genie, LangGraph, LangChain, RAG Architectures, Text-to-SQL, Vector Search, LLM
+                        Integration.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2 class="section-title">Let's Connect <span class="line"></span></h2>
+            <div class="contact-container glass-card">
+                <p>Ready to transform Fetch's data and measurement ecosystem with scalable, agentic solutions.</p>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/akashagl" class="btn btn-primary" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/akashagl92" class="btn btn-secondary" target="_blank">GitHub</a>
+                    <a href="mailto:akash.agl92@gmail.com" class="btn btn-secondary">Email</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Akash Agrawal. Tailored for Fetch.</p>
+        <p>&copy; 2025 Akash Agrawal. Tailored for Fetch.</p>
     </footer>
 
     <div id="chart-tooltip" class="tooltip"></div>

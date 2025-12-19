@@ -1,0 +1,12 @@
+# Environment variables (contains secrets)
+.env
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
