@@ -23,6 +23,8 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--bg-dark);
+    overscroll-behavior: none;
 }
 
 body {
@@ -31,6 +33,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
+    overscroll-behavior: none;
 }
 
 /* Background Effects */
