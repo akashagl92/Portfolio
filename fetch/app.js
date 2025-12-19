@@ -204,7 +204,7 @@ function updateCharts(data) {
             item.innerHTML = `
                 <span class="lang-dot" style="background: ${color}"></span>
                 <span class="lang-name">${lang}</span>
-                <span class="lang-count">${count} commits</span>
+                <span class="lang-count">${count} contributions</span>
             `;
             fullDistChart.appendChild(item);
         });
