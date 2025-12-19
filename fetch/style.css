@@ -119,9 +119,9 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
-    padding: 0 10%;
-    gap: 4rem;
-    padding-top: 5rem;
+    padding: 0 8%;
+    gap: 5rem;
+    padding-top: 6rem;
 }
 
 .badge {
@@ -201,7 +201,8 @@ h1 {
 }
 
 .main-viz {
-    min-width: 580px;
+    width: 751.25px;
+    max-width: 100%;
     margin-left: auto;
     position: relative;
     overflow: visible;
@@ -342,7 +343,7 @@ h1 {
 .hero-calendar .calendar-months {
     display: flex;
     gap: 0;
-    margin-left: 22px;
+    margin-left: 30px;
     margin-bottom: 0.3rem;
     font-size: 0.6rem;
     color: var(--text-muted);
@@ -394,6 +395,26 @@ h1 {
 .hero-calendar .calendar-day:hover {
     transform: scale(1.5);
     z-index: 10;
+}
+
+.hero-calendar .calendar-day.lvl-0 {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.hero-calendar .calendar-day.lvl-1 {
+    background: rgba(167, 139, 250, 0.3);
+}
+
+.hero-calendar .calendar-day.lvl-2 {
+    background: rgba(167, 139, 250, 0.5);
+}
+
+.hero-calendar .calendar-day.lvl-3 {
+    background: rgba(167, 139, 250, 0.7);
+}
+
+.hero-calendar .calendar-day.lvl-4 {
+    background: var(--accent-primary);
 }
 
 /* Calendar Tooltip */
@@ -484,31 +505,48 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-#full-tech-distribution {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+/* Inline Tech Distribution in Hero */
+#full-tech-distribution,
+.inline-tech-distribution {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--glass-border);
+    flex-wrap: wrap;
 }
 
-#full-tech-distribution .dist-row {
+#full-tech-distribution .dist-item,
+.inline-tech-distribution .dist-item {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
 }
 
-#full-tech-distribution .dist-row span {
-    display: flex;
-    justify-content: space-between;
+#full-tech-distribution .dist-item .lang-name,
+.inline-tech-distribution .dist-item .lang-name {
+    font-weight: 600;
+    color: var(--text-main);
 }
 
-#full-tech-distribution .dist-bar-bg {
+#full-tech-distribution .dist-item .lang-count,
+.inline-tech-distribution .dist-item .lang-count {
+    color: var(--accent-primary);
+}
+
+#full-tech-distribution .dist-item .lang-dot,
+.inline-tech-distribution .dist-item .lang-dot {
+    width: 8px;
     height: 8px;
-    border-radius: 4px;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 /* Projects Section */
 section {
-    padding: 10rem 10%;
+    padding: 6rem 8%;
 }
 
 .section-title {
@@ -528,8 +566,8 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
 }
 
 .project-card {
@@ -617,10 +655,10 @@ section {
     color: var(--accent-primary);
 }
 
-/* Innovation Grid */
+/* Innovation Grid - Use same as projects-grid for consistency */
 .innovation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
 }
 

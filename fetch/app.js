@@ -3,7 +3,7 @@ const GithubService = {
     username: 'akashagl92',
     async fetchAllData() {
         // Check session cache first
-        const cached = sessionStorage.getItem('github_data_v10');
+        const cached = sessionStorage.getItem('github_data_v11');
         if (cached) return JSON.parse(cached);
 
         try {
@@ -14,7 +14,7 @@ const GithubService = {
                 // Check if data.json has real content (not just placeholder)
                 if (data.totalCommits > 0) {
                     console.log('Using pre-generated data from data.json');
-                    sessionStorage.setItem('github_data_v10', JSON.stringify(data));
+                    sessionStorage.setItem('github_data_v11', JSON.stringify(data));
                     return data;
                 }
             }
@@ -55,7 +55,7 @@ const GithubService = {
             }
 
             const processed = this.processData(allCommits);
-            sessionStorage.setItem('github_data_v10', JSON.stringify(processed));
+            sessionStorage.setItem('github_data_v11', JSON.stringify(processed));
             return processed;
         } catch (e) {
             console.error('GitHub Fetch Error:', e);
@@ -190,27 +190,23 @@ function updateCharts(data) {
     };
     const defaultColors = ['#a78bfa', '#3b82f6', '#fbbf24', '#f97316', '#06b6d4', '#10b981', '#ec4899', '#8b5cf6'];
 
-    // Full Tech Distribution (Activity Section)
+    // Full Tech Distribution (Inline in Hero)
     const fullDistChart = document.getElementById('full-tech-distribution');
     if (fullDistChart && data.allLanguages) {
         fullDistChart.innerHTML = '';
         const sortedLangs = Object.entries(data.allLanguages)
             .sort((a, b) => b[1] - a[1]);
 
-        const maxCount = sortedLangs[0]?.[1] || 1;
-
         sortedLangs.forEach(([lang, count], i) => {
-            const percentage = Math.round((count / maxCount) * 100);
+            const item = document.createElement('div');
+            item.className = 'dist-item';
             const color = langColors[lang] || defaultColors[i % defaultColors.length];
-            const row = document.createElement('div');
-            row.className = 'dist-row';
-            row.innerHTML = `
-                <span>${lang} <span style="color: var(--text-muted)">${count} commits</span></span>
-                <div class="dist-bar-bg">
-                    <div class="dist-bar" style="width: ${percentage}%; background: ${color}"></div>
-                </div>
+            item.innerHTML = `
+                <span class="lang-dot" style="background: ${color}"></span>
+                <span class="lang-name">${lang}</span>
+                <span class="lang-count">${count} commits</span>
             `;
-            fullDistChart.appendChild(row);
+            fullDistChart.appendChild(item);
         });
     }
 
@@ -269,13 +265,24 @@ function updateCharts(data) {
                     if (dayData.count >= 5) level = 3;
                     if (dayData.count >= 8) level = 4;
 
-                    day.classList.add(`lvl-${level}`);
+                    // Determine dominant language and apply its color
+                    const langEntries = Object.entries(dayData.languages);
+                    if (langEntries.length > 0 && level > 0) {
+                        const dominantLang = langEntries.sort((a, b) => b[1] - a[1])[0][0];
+                        const baseColor = langColors[dominantLang] || '#a78bfa';
+                        const opacity = [0.05, 0.3, 0.5, 0.7, 1][level];
+                        day.style.background = baseColor;
+                        day.style.opacity = opacity;
+                    } else {
+                        day.classList.add(`lvl-${level}`);
+                    }
                     day.dataset.date = dateStr;
                     day.dataset.info = JSON.stringify(dayData);
 
                     // Track month positions for labels (only when month changes)
+                    // Only track months 1-11 (Feb-Dec) as they appear chronologically after Jan
                     const month = effectiveDate.getMonth();
-                    if (month !== currentMonth && month > currentMonth) {
+                    if (month > currentMonth) {
                         currentMonth = month;
                         monthPositions.push({ month: months[month], position: weekIndex });
                     }
@@ -348,16 +355,34 @@ function updateCharts(data) {
             currentDate.setDate(currentDate.getDate() + 7);
         }
 
-        // Add month labels
+        // Add month labels - pre-calculate based on calendar structure
         if (heroCalendarMonths) {
             heroCalendarMonths.innerHTML = '';
             const totalWeeks = heroCalendarGrid.children.length;
-            monthPositions.forEach((mp, idx) => {
+            const weekWidth = 12; // 10px day + 2px gap
+
+            // Pre-calculate month positions based on actual calendar structure
+            const monthLabels = [];
+            const startDate = new Date('2025-01-01');
+            const firstDayOfWeek = startDate.getDay(); // 0=Sun, 1=Mon, etc.
+
+            // Calculate week index for the 1st of each month up to current month
+            const currentMonth = new Date().getMonth();
+            for (let m = 0; m <= currentMonth; m++) {
+                const monthStart = new Date(2025, m, 1);
+                const daysSinceStart = Math.floor((monthStart - startDate) / (1000 * 60 * 60 * 24));
+                const weekIndex = Math.floor((daysSinceStart + firstDayOfWeek) / 7);
+                monthLabels.push({ month: months[m], position: weekIndex });
+            }
+
+            monthLabels.forEach((mp, idx) => {
                 const span = document.createElement('span');
                 span.textContent = mp.month;
-                const nextPos = monthPositions[idx + 1]?.position || totalWeeks;
+                const nextPos = monthLabels[idx + 1]?.position || totalWeeks;
                 const weekSpan = nextPos - mp.position;
-                span.style.width = `${weekSpan * 12}px`;
+                span.style.width = `${weekSpan * weekWidth}px`;
+                span.style.textAlign = 'left';
+                span.style.flexShrink = '0';
                 heroCalendarMonths.appendChild(span);
             });
         }
