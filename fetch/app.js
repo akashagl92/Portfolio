@@ -351,10 +351,49 @@ function updateCharts(data) {
                                 `;
                             }
 
-                            // Set initial position based on element
-                            const rect = e.target.getBoundingClientRect();
-                            tooltip.style.left = `${rect.right + 10}px`;
-                            tooltip.style.top = `${rect.top}px`;
+                            // Smart Positioning Logic
+                            const rect = e.target.getBoundingClientRect(); // Capture rect immediately
+
+                            // Use setTimeout to ensure measurement happens after rendering
+                            requestAnimationFrame(() => {
+                                const ttRect = tooltip.getBoundingClientRect();
+                                const vw = document.documentElement.clientWidth;
+                                const vh = document.documentElement.clientHeight;
+                                const padding = 10; // Safety margin
+
+                                // Default: Right side, aligned top
+                                let left = rect.right + padding;
+                                let top = rect.top;
+
+                                // 1. Horizontal Check
+                                // If overflowing right, flip to left
+                                if (left + ttRect.width > vw - padding) {
+                                    left = rect.left - ttRect.width - padding;
+                                }
+
+                                // 2. Mobile / Narrow Screen Check (if flipping left also fails)
+                                if (left < padding) {
+                                    // Center horizontally
+                                    left = (vw - ttRect.width) / 2;
+                                    // Position above or below
+                                    top = rect.top - ttRect.height - padding;
+                                    if (top < padding) {
+                                        top = rect.bottom + padding;
+                                    }
+                                }
+
+                                // 3. Vertical Check (Prevent bottom overflow)
+                                if (top + ttRect.height > vh - padding) {
+                                    // Shift up
+                                    top = vh - ttRect.height - padding;
+                                }
+                                // Prevent top overflow
+                                if (top < padding) top = padding;
+
+                                // Apply final positions
+                                tooltip.style.left = `${left}px`;
+                                tooltip.style.top = `${top}px`;
+                            });
 
                             tooltip.classList.add('visible');
                         });
@@ -386,7 +425,6 @@ function updateCharts(data) {
         if (heroCalendarMonths) {
             heroCalendarMonths.innerHTML = '';
             heroCalendarMonths.style.position = 'relative';
-            const weekWidth = 12; // 10px day + 2px gap
 
             // Pre-calculate month positions based on actual calendar structure
             const startDate = new Date('2025-01-01');
@@ -402,7 +440,7 @@ function updateCharts(data) {
                 const span = document.createElement('span');
                 span.textContent = months[m];
                 span.style.position = 'absolute';
-                span.style.left = `${weekIndex * weekWidth}px`;
+                span.style.left = `calc(var(--week-width) * ${weekIndex})`;
                 heroCalendarMonths.appendChild(span);
             }
         }

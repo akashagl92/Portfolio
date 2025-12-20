@@ -1,4 +1,5 @@
 :root {
+    --week-width: 12px;
     --bg-dark: #050505;
     --accent-primary: #a78bfa;
     /* Soft Purple */
@@ -381,6 +382,7 @@ h1 {
 .hero-calendar .calendar-grid-wrapper {
     display: flex;
     gap: 0.5rem;
+    justify-content: center;
 }
 
 .hero-calendar .calendar-days {
@@ -531,14 +533,21 @@ h1 {
 }
 
 /* Inline Tech Distribution in Hero */
+/* Inline Tech Distribution in Hero */
 #full-tech-distribution,
 .inline-tech-distribution {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for better spacing */
+    gap: 1rem 2rem;
     margin-top: 1.5rem;
     padding-top: 1rem;
     border-top: 1px solid var(--glass-border);
-    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+    /* Tighter container for 2 columns */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #full-tech-distribution .dist-item,
@@ -548,6 +557,9 @@ h1 {
     gap: 0.5rem;
     font-size: 0.8rem;
     color: var(--text-muted);
+    justify-content: flex-start;
+    white-space: nowrap;
+    /* Prevent wrapping */
 }
 
 #full-tech-distribution .dist-item .lang-name,
@@ -662,9 +674,17 @@ section {
 
 .project-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
+    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.project-tags::-webkit-scrollbar {
+    display: none;
 }
 
 .project-tags span {
@@ -691,12 +711,20 @@ section {
 
 .project-meta {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1rem 2rem;
     font-size: 0.9rem;
     border-top: 1px solid var(--glass-border);
     padding-top: 1.5rem;
     margin-top: auto;
+    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.project-meta::-webkit-scrollbar {
+    display: none;
 }
 
 .highlight {
@@ -1121,7 +1149,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 1.75rem;
     }
@@ -1136,6 +1164,7 @@ footer {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+        padding: 0.8rem 1.5rem;
     }
 
     nav ul {
@@ -1162,16 +1191,64 @@ footer {
         font-size: 1.8rem;
     }
 
+    .main-viz {
+        padding: 1rem;
+    }
+
+    #full-tech-distribution .dist-item,
+    .inline-tech-distribution .dist-item {
+        white-space: normal;
+        line-height: 1.2;
+    }
+
     .hero-calendar {
-        transform-origin: top left;
-        transform: scale(0.65);
-        margin-bottom: -80px;
-        /* compensate for the scaled height */
+        margin-bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+        /* Force no scroll */
+    }
+
+    .hero-calendar .calendar-grid-wrapper {
+        justify-content: center;
     }
 
     .hero-calendar .calendar-day {
-        width: 6px;
-        height: 6px;
+        width: calc(var(--week-width) - 1px);
+        height: calc(var(--week-width) - 1px);
+        border-radius: 1px;
+    }
+
+    /* Tighter sizing for mobile fit */
+    .hero-calendar .calendar-grid,
+    .hero-calendar .calendar-week {
+        gap: 1px;
+    }
+
+    .hero-calendar .calendar-days {
+        display: none !important;
+        /* Hide weekday labels on mobile for legibility */
+    }
+
+    .hero-calendar .calendar-months {
+        margin-bottom: 2px;
+        font-size: 0.6rem;
+        /* Slightly larger for legibility */
+    }
+
+    /* Mobile override for week width: Fluid scaling */
+    .hero-calendar {
+        /* (Viewport - Padding [Hero 5%*2 + Viz 1rem*2] approx 70px) / 53 weeks */
+        --week-width: calc((100vw - 80px) / 53);
+    }
+
+    /* Keep legend as 2 columns but with tighter gap/font */
+    #full-tech-distribution,
+    .inline-tech-distribution {
+        gap: 0.5rem;
+        font-size: 0.7rem;
+        /* Smaller font for mobile fit */
     }
 
     .hero-calendar .calendar-grid {
