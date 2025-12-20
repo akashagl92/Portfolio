@@ -175,32 +175,54 @@ function updateCharts(data) {
     if (totalCommitsEl) totalCommitsEl.textContent = data.totalCommits.toLocaleString();
 
     const totalLangsEl = document.getElementById('total-languages');
-    if (totalLangsEl && data.allLanguages) {
-        totalLangsEl.textContent = Object.keys(data.allLanguages).length;
+    const langData = data.allLanguages || data.languages || {};
+    if (totalLangsEl && Object.keys(langData).length > 0) {
+        totalLangsEl.textContent = Object.keys(langData).length;
     }
 
-    // Color palette for languages
+    // Dynamic color generator for any language (hash-based for consistency)
+    const generateColor = (str) => {
+        let hash = 0;
+        for (let i = 0; i < str.length; i++) {
+            hash = str.charCodeAt(i) + ((hash << 5) - hash);
+        }
+        const h = Math.abs(hash) % 360;
+        return `hsl(${h}, 70%, 60%)`;
+    };
+
+    // Known language colors (for commonly used languages), fallback to generated
     const langColors = {
         'Python': '#a78bfa',
         'TypeScript': '#3b82f6',
         'JavaScript': '#fbbf24',
         'HTML': '#f97316',
         'CSS': '#06b6d4',
+        'Shell': '#10b981',
+        'Ruby': '#ef4444',
+        'Go': '#22d3ee',
+        'Rust': '#f59e0b',
+        'Java': '#dc2626',
+        'C++': '#3b82f6',
+        'C': '#6b7280',
         'Other': '#6b7280'
     };
+
+    // Get color for any language (known or dynamically generated)
+    const getLanguageColor = (lang) => langColors[lang] || generateColor(lang);
     const defaultColors = ['#a78bfa', '#3b82f6', '#fbbf24', '#f97316', '#06b6d4', '#10b981', '#ec4899', '#8b5cf6'];
 
-    // Full Tech Distribution (Inline in Hero)
+    // Full Tech Distribution (Inline in Hero) - support both 'languages' and 'allLanguages' keys
+    const languageData = data.allLanguages || data.languages || {};
     const fullDistChart = document.getElementById('full-tech-distribution');
-    if (fullDistChart && data.allLanguages) {
+    if (fullDistChart && Object.keys(languageData).length > 0) {
         fullDistChart.innerHTML = '';
-        const sortedLangs = Object.entries(data.allLanguages)
+        const sortedLangs = Object.entries(languageData)
             .sort((a, b) => b[1] - a[1]);
 
         sortedLangs.forEach(([lang, count], i) => {
             const item = document.createElement('div');
             item.className = 'dist-item';
-            const color = langColors[lang] || defaultColors[i % defaultColors.length];
+            const color = getLanguageColor(lang);
             item.innerHTML = `
                 <span class="lang-dot" style="background: ${color}"></span>
                 <span class="lang-name">${lang}</span>
@@ -270,7 +292,7 @@ function updateCharts(data) {
                     if (langEntries.length > 0 && level > 0) {
                         const dominantLang = langEntries.sort((a, b) => b[1] - a[1])[0][0];
                         const baseColor = langColors[dominantLang] || '#a78bfa';
-                        const opacity = [0.05, 0.3, 0.5, 0.7, 1][level];
+                        const opacity = [0.1, 0.5, 0.7, 0.85, 1][level];
                         day.style.background = baseColor;
                         day.style.opacity = opacity;
                     } else {
@@ -329,6 +351,11 @@ function updateCharts(data) {
                                 `;
                             }
 
+                            // Set initial position based on element
+                            const rect = e.target.getBoundingClientRect();
+                            tooltip.style.left = `${rect.right + 10}px`;
+                            tooltip.style.top = `${rect.top}px`;
+
                             tooltip.classList.add('visible');
                         });
 
@@ -355,16 +382,15 @@ function updateCharts(data) {
             currentDate.setDate(currentDate.getDate() + 7);
         }
 
-        // Add month labels - pre-calculate based on calendar structure
+        // Add month labels - use absolute positioning for precise alignment
         if (heroCalendarMonths) {
             heroCalendarMonths.innerHTML = '';
-            const totalWeeks = heroCalendarGrid.children.length;
+            heroCalendarMonths.style.position = 'relative';
             const weekWidth = 12; // 10px day + 2px gap
 
             // Pre-calculate month positions based on actual calendar structure
-            const monthLabels = [];
             const startDate = new Date('2025-01-01');
-            const firstDayOfWeek = startDate.getDay(); // 0=Sun, 1=Mon, etc.
+            const firstDayOfWeek = startDate.getDay(); // Wed = 3 for Jan 1, 2025
 
             // Calculate week index for the 1st of each month up to current month
             const currentMonth = new Date().getMonth();
@@ -372,19 +398,13 @@ function updateCharts(data) {
                 const monthStart = new Date(2025, m, 1);
                 const daysSinceStart = Math.floor((monthStart - startDate) / (1000 * 60 * 60 * 24));
                 const weekIndex = Math.floor((daysSinceStart + firstDayOfWeek) / 7);
-                monthLabels.push({ month: months[m], position: weekIndex });
-            }
 
-            monthLabels.forEach((mp, idx) => {
                 const span = document.createElement('span');
-                span.textContent = mp.month;
-                const nextPos = monthLabels[idx + 1]?.position || totalWeeks;
-                const weekSpan = nextPos - mp.position;
-                span.style.width = `${weekSpan * weekWidth}px`;
-                span.style.textAlign = 'left';
-                span.style.flexShrink = '0';
+                span.textContent = months[m];
+                span.style.position = 'absolute';
+                span.style.left = `${weekIndex * weekWidth}px`;
                 heroCalendarMonths.appendChild(span);
-            });
+            }
         }
     }
 

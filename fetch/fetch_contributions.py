@@ -1,281 +1,198 @@
 #!/usr/bin/env python3
 """
-Fetch all GitHub contributions (commits, issues, PRs, reviews) for 2025.
-Updates data.json with comprehensive contribution data.
+Fetch ALL GitHub contributions (including private repos) using REST API.
+Uses the Languages API to get full language breakdown per repository.
+Assigns each commit a language proportionally based on repo composition.
 """
 import os
 import json
+import random
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime
 from collections import defaultdict
 from dotenv import load_dotenv
 
-# Load .env file
 load_dotenv()
-
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+TOKEN = os.getenv('GITHUB_TOKEN')
 USERNAME = 'akashagl92'
-YEAR = 2025
 
-headers = {
-    'Authorization': f'token {GITHUB_TOKEN}',
-    'Accept': 'application/vnd.github.v3+json'
-}
+def get_repo_languages(repo_name, headers):
+    """Get the language breakdown for a repository (bytes per language)."""
+    response = requests.get(
+        f'https://api.github.com/repos/{USERNAME}/{repo_name}/languages',
+        headers=headers
+    )
+    if response.status_code == 200:
+        return response.json()  # {'Python': 50000, 'HTML': 5000, ...}
+    return {}
 
-def fetch_repos():
-    """Fetch all repos for the user."""
-    repos = []
+def weighted_language_choice(languages_bytes):
+    """Choose a language based on weighted probability from byte counts."""
+    if not languages_bytes:
+        return 'Other'
+    
+    total_bytes = sum(languages_bytes.values())
+    if total_bytes == 0:
+        return 'Other'
+    
+    # Create weighted choices
+    rand = random.random() * total_bytes
+    cumulative = 0
+    for lang, bytes_count in languages_bytes.items():
+        cumulative += bytes_count
+        if rand <= cumulative:
+            return lang
+    
+    return list(languages_bytes.keys())[0]
+
+def get_all_commits(repo_name, headers):
+    """Get all commits from a repo in 2025, handling pagination."""
+    all_commits = []
     page = 1
+    
     while True:
-        url = f'https://api.github.com/users/{USERNAME}/repos?sort=pushed&per_page=100&page={page}'
-        response = requests.get(url, headers=headers)
-        if response.status_code != 200:
-            print(f"Error fetching repos: {response.status_code}")
-            break
-        data = response.json()
-        if not data:
-            break
-        repos.extend(data)
-        page += 1
-    return repos
-
-def fetch_commits(repo_name):
-    """Fetch all commits for a repo in 2025."""
-    commits = []
-    page = 1
-    since = f'{YEAR}-01-01T00:00:00Z'
-    
-    while True:
-        url = f'https://api.github.com/repos/{USERNAME}/{repo_name}/commits?since={since}&per_page=100&page={page}'
-        response = requests.get(url, headers=headers)
-        if response.status_code != 200:
-            break
-        data = response.json()
-        if not data or not isinstance(data, list):
-            break
-        for commit in data:
-            if commit.get('commit', {}).get('author', {}).get('date', '').startswith(str(YEAR)):
-                commits.append({
-                    'date': commit['commit']['author']['date'],
-                    'repo': repo_name,
-                    'type': 'commit',
-                    'message': commit['commit']['message'][:50]
-                })
-        page += 1
-        if len(data) < 100:
-            break
-    return commits
-
-def fetch_issues_and_prs():
-    """Fetch issues and PRs created by user in 2025."""
-    items = []
-    
-    # Fetch issues
-    page = 1
-    while True:
-        url = f'https://api.github.com/search/issues?q=author:{USERNAME}+created:>={YEAR}-01-01&per_page=100&page={page}'
-        response = requests.get(url, headers=headers)
-        if response.status_code != 200:
-            break
-        data = response.json()
-        for item in data.get('items', []):
-            created = item.get('created_at', '')
-            if created.startswith(str(YEAR)):
-                items.append({
-                    'date': created,
-                    'repo': item.get('repository_url', '').split('/')[-1],
-                    'type': 'pr' if 'pull_request' in item else 'issue',
-                    'title': item.get('title', '')[:50]
-                })
-        if len(data.get('items', [])) < 100:
-            break
-        page += 1
-    
-    return items
-
-def fetch_events():
-    """Fetch user events (includes more activity types)."""
-    events = []
-    page = 1
-    
-    while page <= 10:  # GitHub limits to 300 events
-        url = f'https://api.github.com/users/{USERNAME}/events?per_page=100&page={page}'
-        response = requests.get(url, headers=headers)
-        if response.status_code != 200:
-            break
-        data = response.json()
-        if not data:
-            break
+        response = requests.get(
+            f'https://api.github.com/repos/{USERNAME}/{repo_name}/commits',
+            headers=headers,
+            params={
+                'since': '2025-01-01T00:00:00Z',
+                'until': '2025-12-31T23:59:59Z',
+                'author': USERNAME,
+                'per_page': 100,
+                'page': page
+            }
+        )
         
-        for event in data:
-            created = event.get('created_at', '')
-            if not created.startswith(str(YEAR)):
-                continue
+        if response.status_code != 200:
+            break
             
-            event_type = event.get('type', '')
-            repo = event.get('repo', {}).get('name', '').split('/')[-1]
+        commits = response.json()
+        if not commits:
+            break
             
-            # Map event types to contribution types
-            if event_type in ['PushEvent', 'CreateEvent', 'DeleteEvent']:
-                continue  # Already captured via commits
-            elif event_type == 'IssueCommentEvent':
-                events.append({
-                    'date': created,
-                    'repo': repo,
-                    'type': 'comment'
-                })
-            elif event_type == 'PullRequestReviewEvent':
-                events.append({
-                    'date': created,
-                    'repo': repo,
-                    'type': 'review'
-                })
-            elif event_type == 'PullRequestReviewCommentEvent':
-                events.append({
-                    'date': created,
-                    'repo': repo,
-                    'type': 'review_comment'
-                })
+        all_commits.extend(commits)
         
+        # Check if there are more pages
+        if len(commits) < 100:
+            break
         page += 1
     
-    return events
-
-def process_contributions(all_contributions):
-    """Process contributions into the required data.json format."""
-    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    current_month = datetime.now().month - 1  # 0-indexed
-    
-    # Language mapping (from repo languages)
-    lang_counts = defaultdict(int)
-    monthly_data = []
-    daily_data = []
-    
-    # Group by date
-    by_date = defaultdict(list)
-    for c in all_contributions:
-        date_str = c['date'][:10]  # YYYY-MM-DD
-        by_date[date_str].append(c)
-    
-    # Process each contribution
-    repo_languages = {}  # Cache repo languages
-    
-    for c in all_contributions:
-        date_obj = datetime.fromisoformat(c['date'].replace('Z', '+00:00'))
-        date_str = date_obj.strftime('%a %b %d %Y')
-        repo = c.get('repo', 'unknown')
-        
-        # Get language for repo (cache it)
-        if repo not in repo_languages:
-            url = f'https://api.github.com/repos/{USERNAME}/{repo}'
-            response = requests.get(url, headers=headers)
-            if response.status_code == 200:
-                repo_languages[repo] = response.json().get('language', 'Other') or 'Other'
-            else:
-                repo_languages[repo] = 'Other'
-        
-        lang = repo_languages[repo]
-        lang_counts[lang] += 1
-        
-        daily_data.append({
-            'date': date_str,
-            'repo': repo,
-            'language': lang,
-            'type': c.get('type', 'commit')
-        })
-    
-    # Build monthly data
-    for month_idx in range(current_month + 1):
-        month_contributions = [c for c in all_contributions 
-                               if datetime.fromisoformat(c['date'].replace('Z', '+00:00')).month == month_idx + 1]
-        
-        month_repos = set()
-        month_languages = defaultdict(int)
-        
-        for c in month_contributions:
-            repo = c.get('repo', 'unknown')
-            month_repos.add(repo)
-            lang = repo_languages.get(repo, 'Other')
-            month_languages[lang] += 1
-        
-        # Get top 3 languages
-        top_langs = ['Python', 'TypeScript', 'JavaScript']
-        top_lang_counts = {lang: month_languages.get(lang, 0) for lang in top_langs}
-        
-        monthly_data.append({
-            'name': months[month_idx],
-            'count': len(month_contributions),
-            'uniqueRepos': len(month_repos),
-            'languages': dict(month_languages),
-            'topLangCounts': top_lang_counts
-        })
-    
-    # Get top languages overall
-    sorted_langs = sorted(lang_counts.items(), key=lambda x: x[1], reverse=True)
-    top_languages = [lang for lang, _ in sorted_langs[:3]]
-    
-    return {
-        'monthly': monthly_data,
-        'totalCommits': len(all_contributions),  # Keep name for backward compat
-        'daily': daily_data,
-        'topLanguages': top_languages,
-        'allLanguages': dict(lang_counts)
-    }
+    return all_commits
 
 def main():
-    print(f"Fetching GitHub contributions for {USERNAME} in {YEAR}...")
+    if not TOKEN:
+        print("Error: GITHUB_TOKEN not found in .env file")
+        return
     
-    all_contributions = []
+    headers = {'Authorization': f'token {TOKEN}'}
     
-    # Fetch repos
-    print("Fetching repositories...")
-    repos = fetch_repos()
-    print(f"Found {len(repos)} repositories")
+    # Get all repos owned by user
+    response = requests.get(
+        'https://api.github.com/user/repos',
+        headers=headers,
+        params={'per_page': 100, 'affiliation': 'owner'}
+    )
+    repos = response.json()
     
-    # Fetch commits from each repo
-    print("Fetching commits...")
-    for i, repo in enumerate(repos):
-        repo_name = repo['name']
-        commits = fetch_commits(repo_name)
-        all_contributions.extend(commits)
-        if commits:
-            print(f"  {repo_name}: {len(commits)} commits")
+    print(f'Fetching commits from {len(repos)} repos for 2025...')
+    print()
     
-    # Fetch issues and PRs
-    print("Fetching issues and PRs...")
-    issues_prs = fetch_issues_and_prs()
-    all_contributions.extend(issues_prs)
-    print(f"  Found {len(issues_prs)} issues/PRs")
+    language_commits = defaultdict(int)
+    monthly_commits = defaultdict(lambda: defaultdict(int))
+    daily_commits = []
+    repo_data = []
     
-    # Fetch other events
-    print("Fetching events (comments, reviews)...")
-    events = fetch_events()
-    all_contributions.extend(events)
-    print(f"  Found {len(events)} other events")
+    for repo in repos:
+        name = repo['name']
+        is_private = repo['private']
+        
+        # Get full language breakdown for this repo
+        repo_languages = get_repo_languages(name, headers)
+        primary_lang = repo.get('language') or 'Other'
+        
+        commits = get_all_commits(name, headers)
+        count = len(commits)
+        
+        if count > 0:
+            visibility = 'PRIVATE' if is_private else 'PUBLIC'
+            
+            # Show language breakdown for this repo
+            if repo_languages:
+                total_bytes = sum(repo_languages.values())
+                lang_pcts = {k: f"{(v/total_bytes)*100:.1f}%" for k, v in repo_languages.items()}
+                print(f'  [{visibility:7}] {name:35} {count:3} commits')
+                print(f'            Languages: {lang_pcts}')
+            else:
+                print(f'  [{visibility:7}] {name:35} {count:3} commits ({primary_lang})')
+            
+            repo_data.append((name, count, primary_lang, visibility))
+            
+            # Process each commit - assign language based on repo composition
+            for commit in commits:
+                # Assign language proportionally based on repo's language breakdown
+                if repo_languages:
+                    lang = weighted_language_choice(repo_languages)
+                else:
+                    lang = primary_lang
+                
+                language_commits[lang] += 1
+                
+                commit_date = commit['commit']['author']['date'][:10]  # YYYY-MM-DD
+                date_obj = datetime.strptime(commit_date, '%Y-%m-%d')
+                month_idx = date_obj.month - 1
+                
+                monthly_commits[month_idx][lang] += 1
+                
+                formatted_date = date_obj.strftime('%a %b %d %Y')
+                daily_commits.append({
+                    'date': formatted_date,
+                    'repo': name,
+                    'language': lang
+                })
     
-    # Deduplicate by date+repo+type
-    seen = set()
-    unique_contributions = []
-    for c in all_contributions:
-        key = (c['date'][:10], c.get('repo', ''), c.get('type', 'commit'))
-        if key not in seen:
-            seen.add(key)
-            unique_contributions.append(c)
+    total_commits = sum(c for _, c, _, _ in repo_data)
+    print()
+    print(f'Total commits in 2025: {total_commits}')
+    print()
+    print('Language breakdown (distributed by repo composition):')
+    for lang, count in sorted(language_commits.items(), key=lambda x: -x[1]):
+        pct = (count / total_commits) * 100 if total_commits > 0 else 0
+        print(f'  {lang}: {count} ({pct:.1f}%)')
     
-    print(f"\nTotal unique contributions: {len(unique_contributions)}")
+    # Build monthly array
+    month_names = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    monthly = []
     
-    # Process and save
-    print("Processing data...")
-    data = process_contributions(unique_contributions)
+    for i, name in enumerate(month_names):
+        month_data = monthly_commits.get(i, {})
+        count = sum(month_data.values())
+        
+        monthly.append({
+            'name': name,
+            'count': count,
+            'uniqueRepos': len(set(d['repo'] for d in daily_commits if datetime.strptime(d['date'], '%a %b %d %Y').month == i + 1)),
+            'languages': dict(language_commits),
+            'topLangCounts': dict(month_data)
+        })
+    
+    # Build final data structure
+    result = {
+        'monthly': monthly,
+        'totalCommits': total_commits,
+        'daily': daily_commits,
+        'languages': dict(language_commits)
+    }
     
     # Save to data.json
     output_path = os.path.join(os.path.dirname(__file__), 'data.json')
     with open(output_path, 'w') as f:
-        json.dump(data, f, indent=2)
+        json.dump(result, f, indent=2)
     
-    print(f"\nSaved to {output_path}")
-    print(f"Total contributions: {data['totalCommits']}")
-    print(f"Languages: {data['allLanguages']}")
+    print()
+    print(f'Saved to {output_path}')
+    print(f'Total commits: {total_commits}')
+    print(f'Languages: {dict(language_commits)}')
 
 if __name__ == '__main__':
     main()
+
