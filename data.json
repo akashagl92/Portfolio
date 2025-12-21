@@ -7,7 +7,7 @@
       "languages": {},
       "topLangCounts": {
         "Python": 0,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 0
       }
     },
@@ -18,7 +18,7 @@
       "languages": {},
       "topLangCounts": {
         "Python": 0,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 0
       }
     },
@@ -31,7 +31,7 @@
       },
       "topLangCounts": {
         "Python": 20,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 0
       }
     },
@@ -42,7 +42,7 @@
       "languages": {},
       "topLangCounts": {
         "Python": 0,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 0
       }
     },
@@ -55,7 +55,7 @@
       },
       "topLangCounts": {
         "Python": 3,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 0
       }
     },
@@ -68,7 +68,7 @@
       },
       "topLangCounts": {
         "Python": 4,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 0
       }
     },
@@ -81,7 +81,7 @@
       },
       "topLangCounts": {
         "Python": 4,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 0
       }
     },
@@ -94,7 +94,7 @@
       },
       "topLangCounts": {
         "Python": 65,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 0
       }
     },
@@ -108,7 +108,7 @@
       },
       "topLangCounts": {
         "Python": 55,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 2
       }
     },
@@ -119,7 +119,7 @@
       "languages": {},
       "topLangCounts": {
         "Python": 0,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 0
       }
     },
@@ -133,167 +133,178 @@
       },
       "topLangCounts": {
         "Python": 11,
-        "JavaScript": 0,
+        "CSS": 0,
         "TypeScript": 7
       }
     },
     {
       "name": "Dec",
-      "count": 62,
+      "count": 64,
       "uniqueRepos": 5,
       "languages": {
-        "JavaScript": 31,
-        "Python": 31
+        "CSS": 30,
+        "Python": 31,
+        "JavaScript": 3
       },
       "topLangCounts": {
         "Python": 31,
-        "JavaScript": 31,
+        "CSS": 30,
         "TypeScript": 0
       }
     }
   ],
-  "totalCommits": 233,
+  "totalCommits": 235,
   "uniqueReposTotal": 10,
   "daily": [
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
     },
     {
       "date": "Sat Dec 20 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sat Dec 20 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
@@ -1323,13 +1334,14 @@
   ],
   "topLanguages": [
     "Python",
-    "JavaScript",
+    "CSS",
     "TypeScript"
   ],
   "allLanguages": {
-    "JavaScript": 31,
+    "CSS": 30,
     "Python": 193,
+    "JavaScript": 3,
     "TypeScript": 9
   },
-  "lastUpdated": "2025-12-21T20:22:11.241Z"
+  "lastUpdated": "2025-12-21T21:06:14.463Z"
 }
