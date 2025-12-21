@@ -4,90 +4,72 @@
       "name": "Jan",
       "count": 0,
       "uniqueRepos": 0,
-      "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
-      },
-      "topLangCounts": {}
+      "languages": {},
+      "topLangCounts": {
+        "Python": 0,
+        "JavaScript": 0,
+        "TypeScript": 0
+      }
     },
     {
       "name": "Feb",
       "count": 0,
       "uniqueRepos": 0,
-      "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
-      },
-      "topLangCounts": {}
+      "languages": {},
+      "topLangCounts": {
+        "Python": 0,
+        "JavaScript": 0,
+        "TypeScript": 0
+      }
     },
     {
       "name": "Mar",
-      "count": 7,
+      "count": 20,
       "uniqueRepos": 2,
       "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
+        "Python": 20
       },
       "topLangCounts": {
-        "Python": 6,
-        "JavaScript": 1
+        "Python": 20,
+        "JavaScript": 0,
+        "TypeScript": 0
       }
     },
     {
       "name": "Apr",
       "count": 0,
       "uniqueRepos": 0,
-      "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
-      },
-      "topLangCounts": {}
+      "languages": {},
+      "topLangCounts": {
+        "Python": 0,
+        "JavaScript": 0,
+        "TypeScript": 0
+      }
     },
     {
       "name": "May",
-      "count": 0,
-      "uniqueRepos": 0,
+      "count": 3,
+      "uniqueRepos": 1,
       "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
+        "Python": 3
       },
-      "topLangCounts": {}
+      "topLangCounts": {
+        "Python": 3,
+        "JavaScript": 0,
+        "TypeScript": 0
+      }
     },
     {
       "name": "Jun",
       "count": 4,
       "uniqueRepos": 2,
       "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
+        "Python": 4
       },
       "topLangCounts": {
-        "TypeScript": 1,
-        "Python": 3
+        "Python": 4,
+        "JavaScript": 0,
+        "TypeScript": 0
       }
     },
     {
@@ -95,34 +77,25 @@
       "count": 4,
       "uniqueRepos": 1,
       "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
+        "Python": 4
       },
       "topLangCounts": {
-        "Python": 3,
-        "TypeScript": 1
+        "Python": 4,
+        "JavaScript": 0,
+        "TypeScript": 0
       }
     },
     {
       "name": "Aug",
-      "count": 64,
+      "count": 65,
       "uniqueRepos": 1,
       "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
+        "Python": 65
       },
       "topLangCounts": {
-        "Python": 44,
-        "TypeScript": 13,
-        "HTML": 7
+        "Python": 65,
+        "JavaScript": 0,
+        "TypeScript": 0
       }
     },
     {
@@ -130,80 +103,149 @@
       "count": 57,
       "uniqueRepos": 2,
       "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
+        "Python": 55,
+        "TypeScript": 2
       },
       "topLangCounts": {
-        "Python": 36,
-        "TypeScript": 17,
-        "HTML": 3,
-        "Procfile": 1
+        "Python": 55,
+        "JavaScript": 0,
+        "TypeScript": 2
       }
     },
     {
       "name": "Oct",
       "count": 0,
       "uniqueRepos": 0,
-      "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
-      },
-      "topLangCounts": {}
+      "languages": {},
+      "topLangCounts": {
+        "Python": 0,
+        "JavaScript": 0,
+        "TypeScript": 0
+      }
     },
     {
       "name": "Nov",
-      "count": 12,
-      "uniqueRepos": 2,
+      "count": 18,
+      "uniqueRepos": 3,
       "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
+        "Python": 11,
+        "TypeScript": 7
       },
       "topLangCounts": {
-        "Python": 5,
+        "Python": 11,
+        "JavaScript": 0,
         "TypeScript": 7
       }
     },
     {
       "name": "Dec",
-      "count": 44,
-      "uniqueRepos": 4,
+      "count": 49,
+      "uniqueRepos": 5,
       "languages": {
-        "HTML": 18,
-        "Python": 122,
-        "TypeScript": 39,
-        "Procfile": 1,
-        "JavaScript": 7,
-        "CSS": 5
+        "JavaScript": 19,
+        "Python": 30
       },
       "topLangCounts": {
-        "HTML": 8,
-        "Python": 25,
-        "JavaScript": 6,
-        "CSS": 5
+        "Python": 30,
+        "JavaScript": 19,
+        "TypeScript": 0
       }
     }
   ],
-  "totalCommits": 192,
+  "totalCommits": 220,
   "daily": [
     {
-      "date": "Tue Dec 16 2025",
-      "repo": "aistro.ai",
-      "language": "HTML"
+      "date": "Sat Dec 20 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
     },
     {
-      "date": "Tue Dec 16 2025",
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Thu Dec 18 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Thu Dec 18 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Thu Dec 18 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
@@ -228,12 +270,7 @@
       "language": "Python"
     },
     {
-      "date": "Fri Nov 14 2025",
-      "repo": "aistro.ai",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Nov 12 2025",
+      "date": "Thu Nov 13 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
@@ -243,17 +280,32 @@
       "language": "Python"
     },
     {
-      "date": "Thu Sep 25 2025",
+      "date": "Tue Nov 11 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Mon Sep 22 2025",
+      "date": "Wed Sep 24 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Mon Sep 22 2025",
+      "date": "Sun Sep 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Sep 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
@@ -275,11 +327,6 @@
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "aistro.ai",
       "language": "Python"
     },
     {
@@ -288,17 +335,12 @@
       "language": "Python"
     },
     {
-      "date": "Fri Sep 19 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Wed Sep 17 2025",
+      "date": "Tue Sep 16 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Wed Sep 17 2025",
+      "date": "Tue Sep 16 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
@@ -310,17 +352,7 @@
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Mon Sep 15 2025",
-      "repo": "aistro.ai",
       "language": "Python"
-    },
-    {
-      "date": "Mon Sep 15 2025",
-      "repo": "aistro.ai",
-      "language": "HTML"
     },
     {
       "date": "Mon Sep 15 2025",
@@ -335,12 +367,7 @@
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Mon Sep 15 2025",
-      "repo": "aistro.ai",
-      "language": "HTML"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 15 2025",
@@ -348,9 +375,19 @@
       "language": "Python"
     },
     {
-      "date": "Fri Sep 12 2025",
+      "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
+    },
+    {
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Sep 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
       "date": "Fri Sep 12 2025",
@@ -365,7 +402,12 @@
     {
       "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
+    },
+    {
+      "date": "Fri Sep 12 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
       "date": "Fri Sep 12 2025",
@@ -400,22 +442,17 @@
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "HTML"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Mon Sep 08 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
@@ -435,7 +472,7 @@
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
     },
     {
       "date": "Sun Sep 07 2025",
@@ -443,19 +480,14 @@
       "language": "Python"
     },
     {
-      "date": "Sun Sep 07 2025",
+      "date": "Sat Sep 06 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Sun Sep 07 2025",
-      "repo": "aistro.ai",
-      "language": "Procfile"
+      "language": "Python"
     },
     {
       "date": "Sat Sep 06 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
     },
     {
       "date": "Sat Sep 06 2025",
@@ -475,7 +507,17 @@
     {
       "date": "Sat Sep 06 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
+    },
+    {
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Sep 05 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
       "date": "Fri Sep 05 2025",
@@ -495,12 +537,12 @@
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 05 2025",
@@ -528,16 +570,6 @@
       "language": "Python"
     },
     {
-      "date": "Tue Aug 26 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Tue Aug 26 2025",
-      "repo": "aistro.ai",
-      "language": "Python"
-    },
-    {
       "date": "Mon Aug 25 2025",
       "repo": "aistro.ai",
       "language": "Python"
@@ -560,7 +592,17 @@
     {
       "date": "Mon Aug 25 2025",
       "repo": "aistro.ai",
-      "language": "HTML"
+      "language": "Python"
+    },
+    {
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
       "date": "Sun Aug 24 2025",
@@ -585,22 +627,12 @@
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "HTML"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
       "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
@@ -620,7 +652,17 @@
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
@@ -640,11 +682,6 @@
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
       "language": "Python"
     },
     {
@@ -655,42 +692,7 @@
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "HTML"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
       "language": "Python"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "HTML"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "HTML"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "HTML"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
     },
     {
       "date": "Sat Aug 23 2025",
@@ -705,32 +707,7 @@
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "aistro.ai",
       "language": "Python"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "aistro.ai",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "aistro.ai",
-      "language": "HTML"
     },
     {
       "date": "Fri Aug 22 2025",
@@ -755,7 +732,12 @@
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
@@ -768,34 +750,64 @@
       "language": "Python"
     },
     {
-      "date": "Wed Aug 20 2025",
+      "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Wed Aug 20 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Wed Aug 20 2025",
+      "date": "Thu Aug 21 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Wed Aug 20 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Wed Aug 20 2025",
+      "date": "Thu Aug 21 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Wed Aug 20 2025",
+      "date": "Thu Aug 21 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
+      "language": "Python"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
       "date": "Wed Aug 20 2025",
@@ -819,6 +831,41 @@
     },
     {
       "date": "Wed Aug 20 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Aug 19 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
@@ -855,20 +902,10 @@
     {
       "date": "Mon Jul 07 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Fri Jun 20 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Wed Mar 19 2025",
-      "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Wed Mar 19 2025",
+      "date": "Fri Jun 20 2025",
       "repo": "aistro.ai",
       "language": "Python"
     },
@@ -893,34 +930,64 @@
       "language": "Python"
     },
     {
-      "date": "Wed Sep 24 2025",
-      "repo": "Hindi-Tutor",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Wed Sep 24 2025",
-      "repo": "Hindi-Tutor",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Mon Jun 16 2025",
-      "repo": "LinkedIn-API",
+      "date": "Tue Mar 18 2025",
+      "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Mon Jun 16 2025",
-      "repo": "LinkedIn-API",
+      "date": "Tue Mar 18 2025",
+      "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Mon Jun 16 2025",
-      "repo": "LinkedIn-API",
+      "date": "Tue Mar 18 2025",
+      "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Tue Mar 25 2025",
-      "repo": "Marketing-Analytics-Assistant",
-      "language": "JavaScript"
+      "date": "Tue Mar 18 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Mar 12 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Mar 10 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Mar 10 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Mar 10 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Mar 09 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Mar 09 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Mar 09 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Mar 09 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
       "date": "Thu Dec 18 2025",
@@ -928,7 +995,7 @@
       "language": "JavaScript"
     },
     {
-      "date": "Wed Dec 17 2025",
+      "date": "Tue Dec 16 2025",
       "repo": "Music-and-Math",
       "language": "JavaScript"
     },
@@ -938,113 +1005,43 @@
       "language": "JavaScript"
     },
     {
-      "date": "Tue Nov 11 2025",
-      "repo": "philosophy-sage",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Thu Nov 06 2025",
-      "repo": "philosophy-sage",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Thu Nov 06 2025",
-      "repo": "philosophy-sage",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Thu Nov 06 2025",
-      "repo": "philosophy-sage",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Wed Nov 05 2025",
-      "repo": "philosophy-sage",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Wed Nov 05 2025",
-      "repo": "philosophy-sage",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Wed Nov 05 2025",
-      "repo": "philosophy-sage",
-      "language": "TypeScript"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
+      "date": "Thu Dec 18 2025",
+      "repo": "Databricks-Genie-Integration",
       "language": "Python"
     },
     {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
+      "date": "Thu Dec 18 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML"
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML"
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML"
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
     },
     {
-      "date": "Tue Dec 16 2025",
-      "repo": "stock_price_target_modelling",
+      "date": "Mon Nov 17 2025",
+      "repo": "Databricks-Genie-Integration",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Nov 12 2025",
+      "repo": "Databricks-Genie-Integration",
       "language": "Python"
     },
     {
@@ -1063,17 +1060,12 @@
       "language": "Python"
     },
     {
-      "date": "Mon Dec 15 2025",
+      "date": "Sun Dec 14 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python"
     },
     {
-      "date": "Sat Dec 13 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 13 2025",
+      "date": "Sun Dec 14 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python"
     },
@@ -1100,7 +1092,12 @@
     {
       "date": "Fri Dec 12 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML"
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
       "date": "Fri Dec 12 2025",
@@ -1113,19 +1110,29 @@
       "language": "Python"
     },
     {
-      "date": "Thu Dec 11 2025",
+      "date": "Wed Dec 10 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python"
     },
     {
-      "date": "Thu Dec 11 2025",
+      "date": "Wed Dec 10 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python"
     },
     {
-      "date": "Thu Dec 11 2025",
+      "date": "Wed Dec 10 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML"
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 10 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
       "date": "Sun Dec 07 2025",
@@ -1138,32 +1145,125 @@
       "language": "Python"
     },
     {
-      "date": "Sun Dec 07 2025",
+      "date": "Fri Dec 05 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python"
     },
     {
-      "date": "Sat Dec 06 2025",
+      "date": "Fri Dec 05 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python"
     },
     {
-      "date": "Sat Dec 06 2025",
+      "date": "Fri Dec 05 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python"
     },
     {
-      "date": "Sat Dec 06 2025",
-      "repo": "stock_price_target_modelling",
+      "date": "Mon Nov 10 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Thu Nov 06 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Wed Nov 05 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Wed Nov 05 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Wed Nov 05 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Wed Nov 05 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Tue Nov 04 2025",
+      "repo": "philosophy-sage",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Tue Sep 23 2025",
+      "repo": "Hindi-Tutor",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Tue Sep 23 2025",
+      "repo": "Hindi-Tutor",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Mon Jun 16 2025",
+      "repo": "LinkedIn-API",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Jun 16 2025",
+      "repo": "LinkedIn-API",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Jun 16 2025",
+      "repo": "LinkedIn-API",
+      "language": "Python"
+    },
+    {
+      "date": "Wed May 28 2025",
+      "repo": "voc-buyer-journey-chatbot",
+      "language": "Python"
+    },
+    {
+      "date": "Wed May 28 2025",
+      "repo": "voc-buyer-journey-chatbot",
+      "language": "Python"
+    },
+    {
+      "date": "Wed May 28 2025",
+      "repo": "voc-buyer-journey-chatbot",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Mar 25 2025",
+      "repo": "Marketing-Analytics-Assistant",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Mar 25 2025",
+      "repo": "Marketing-Analytics-Assistant",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Mar 08 2025",
+      "repo": "Marketing-Analytics-Assistant",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Mar 04 2025",
+      "repo": "Marketing-Analytics-Assistant",
       "language": "Python"
     }
   ],
-  "languages": {
-    "HTML": 18,
-    "Python": 122,
-    "TypeScript": 39,
-    "Procfile": 1,
-    "JavaScript": 7,
-    "CSS": 5
-  }
+  "topLanguages": [
+    "Python",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "allLanguages": {
+    "JavaScript": 19,
+    "Python": 192,
+    "TypeScript": 9
+  },
+  "lastUpdated": "2025-12-21T01:48:00.086Z"
 }

@@ -9,6 +9,7 @@
  */
 
 const fs = require('fs');
+require('dotenv').config(); // Load environment variables from .env
 const path = require('path');
 
 const GITHUB_USERNAME = 'akashagl92';
@@ -43,7 +44,7 @@ async function fetchAllData() {
 
     // Use authenticated endpoint if token available, otherwise public endpoint
     const repoUrl = token
-        ? `https://api.github.com/user/repos?sort=pushed&per_page=100&affiliation=owner`
+        ? `https://api.github.com/user/repos?sort=pushed&per_page=100`
         : `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=pushed&per_page=100`;
 
     let allRepos = [];
@@ -65,18 +66,28 @@ async function fetchAllData() {
 
     for (const repo of allRepos) {
         try {
-            const commits = await fetchWithAuth(
-                `https://api.github.com/repos/${repo.full_name}/commits?since=${startDate}&per_page=100`
-            );
+            let repoCommits = [];
+            let page = 1;
+            while (true) {
+                const commits = await fetchWithAuth(
+                    `https://api.github.com/repos/${repo.full_name}/commits?since=${startDate}&per_page=100&page=${page}`
+                );
 
-            if (Array.isArray(commits)) {
-                for (const commit of commits) {
-                    allCommits.push({
-                        date: commit.commit.author.date,
-                        repo: repo.name,
-                        language: repo.language || 'Other'
-                    });
+                if (Array.isArray(commits) && commits.length > 0) {
+                    repoCommits.push(...commits);
+                    if (commits.length < 100) break; // Last page
+                    page++;
+                } else {
+                    break;
                 }
+            }
+
+            for (const commit of repoCommits) {
+                allCommits.push({
+                    date: commit.commit.author.date,
+                    repo: repo.name,
+                    language: repo.language || 'Other'
+                });
             }
 
             // Track language distribution
