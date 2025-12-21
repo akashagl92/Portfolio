@@ -130,9 +130,11 @@ const GithubService = {
             };
         });
 
+        const allRepos = new Set(commits.map(c => c.repo));
         return {
             monthly: data,
             totalCommits: commits.length,
+            uniqueReposTotal: allRepos.size,
             daily: commits.map(c => ({ date: c.date.toDateString() })),
             topLanguages,
             allLanguages
@@ -180,6 +182,11 @@ function updateCharts(data) {
         totalLangsEl.textContent = Object.keys(langData).length;
     }
 
+    const totalReposEl = document.getElementById('total-repos');
+    if (totalReposEl && data.uniqueReposTotal) {
+        totalReposEl.textContent = data.uniqueReposTotal;
+    }
+
     // Dynamic color generator for any language (hash-based for consistency)
     const generateColor = (str) => {
         let hash = 0;
@@ -219,14 +226,18 @@ function updateCharts(data) {
         const sortedLangs = Object.entries(languageData)
             .sort((a, b) => b[1] - a[1]);
 
+        // Calculate total contributions for percentage
+        const totalContributions = sortedLangs.reduce((sum, [, count]) => sum + count, 0);
+
         sortedLangs.forEach(([lang, count], i) => {
             const item = document.createElement('div');
             item.className = 'dist-item';
             const color = getLanguageColor(lang);
+            const percentage = ((count / totalContributions) * 100).toFixed(1);
             item.innerHTML = `
                 <span class="lang-dot" style="background: ${color}"></span>
                 <span class="lang-name">${lang}</span>
-                <span class="lang-count">${count} contributions</span>
+                <span class="lang-count">${percentage}%</span>
             `;
             fullDistChart.appendChild(item);
         });
