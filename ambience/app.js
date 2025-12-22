@@ -8,7 +8,7 @@ const GithubService = {
 
         try {
             // Try to load pre-generated data from build-time script
-            const response = await fetch('./data.json');
+            const response = await fetch('../data.json');
             if (response.ok) {
                 const data = await response.json();
                 // Check if data.json has real content (not just placeholder)
@@ -454,9 +454,6 @@ function updateCharts(data) {
                 span.style.left = `calc(var(--week-width) * ${weekIndex})`;
                 heroCalendarMonths.appendChild(span);
             }
-
-            // Match months container width to grid width so they center together
-            heroCalendarMonths.style.width = `${heroCalendarGrid.offsetWidth}px`;
         }
     }
 

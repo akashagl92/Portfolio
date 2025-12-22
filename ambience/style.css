@@ -544,7 +544,6 @@ h1 {
     padding-top: 1rem;
     border-top: 1px solid var(--glass-border);
     justify-content: center;
-    justify-items: center;
     max-width: 500px;
     /* Tighter container for 2 columns */
     margin-left: auto;
