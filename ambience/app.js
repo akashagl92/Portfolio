@@ -454,6 +454,9 @@ function updateCharts(data) {
                 span.style.left = `calc(var(--week-width) * ${weekIndex})`;
                 heroCalendarMonths.appendChild(span);
             }
+
+            // Match months container width to grid width so they center together
+            heroCalendarMonths.style.width = `${heroCalendarGrid.offsetWidth}px`;
         }
     }
 
