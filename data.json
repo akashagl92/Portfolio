@@ -139,23 +139,53 @@
     },
     {
       "name": "Dec",
-      "count": 77,
+      "count": 84,
       "uniqueRepos": 5,
       "languages": {
-        "Python": 32,
-        "JavaScript": 5,
-        "CSS": 40
+        "Python": 38,
+        "CSS": 41,
+        "JavaScript": 5
       },
       "topLangCounts": {
-        "Python": 32,
-        "CSS": 40,
+        "Python": 38,
+        "CSS": 41,
         "TypeScript": 0
       }
     }
   ],
-  "totalCommits": 248,
+  "totalCommits": 255,
   "uniqueReposTotal": 10,
   "daily": [
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
     {
       "date": "Mon Dec 22 2025",
       "repo": "stock_price_target_modelling",
@@ -275,6 +305,211 @@
       "date": "Sat Dec 06 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sat Dec 20 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sat Dec 20 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
     },
     {
       "date": "Mon Dec 22 2025",
@@ -300,206 +535,6 @@
       "date": "Tue Dec 16 2025",
       "repo": "Music-and-Math",
       "language": "JavaScript"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sat Dec 20 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sat Dec 20 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
@@ -1403,10 +1438,10 @@
     "TypeScript"
   ],
   "allLanguages": {
-    "Python": 194,
+    "Python": 200,
+    "CSS": 41,
     "JavaScript": 5,
-    "CSS": 40,
     "TypeScript": 9
   },
-  "lastUpdated": "2025-12-23T06:22:03.461Z"
+  "lastUpdated": "2025-12-24T06:22:12.565Z"
 }
