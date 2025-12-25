@@ -12,7 +12,8 @@ const path = require('path');
 const pages = [
     { url: 'http://localhost:8080/', output: './og-image.png', name: 'Root' },
     { url: 'http://localhost:8080/fetch/', output: './fetch/og-image.png', name: 'Fetch' },
-    { url: 'http://localhost:8080/ambience/', output: './ambience/og-image.png', name: 'Ambience' }
+    { url: 'http://localhost:8080/ambience/', output: './ambience/og-image.png', name: 'Ambience' },
+    { url: 'http://localhost:8080/viant/', output: './viant/og-image.png', name: 'Viant' }
 ];
 
 async function captureScreenshots() {
