@@ -139,457 +139,37 @@
     },
     {
       "name": "Dec",
-      "count": 95,
+      "count": 99,
       "uniqueRepos": 5,
       "languages": {
-        "CSS": 45,
-        "Python": 44,
+        "Python": 47,
+        "CSS": 46,
         "JavaScript": 6
       },
       "topLangCounts": {
-        "Python": 44,
-        "CSS": 45,
+        "Python": 47,
+        "CSS": 46,
         "TypeScript": 0
       }
     }
   ],
-  "totalCommits": 266,
+  "totalCommits": 270,
   "uniqueReposTotal": 10,
   "daily": [
     {
-      "date": "Thu Dec 25 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Thu Dec 25 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Thu Dec 25 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Tue Dec 23 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sat Dec 20 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Sat Dec 20 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS"
-    },
-    {
-      "date": "Thu Dec 25 2025",
-      "repo": "stock_price_target_modelling",
+      "date": "Sat Dec 27 2025",
+      "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Thu Dec 25 2025",
-      "repo": "stock_price_target_modelling",
+      "date": "Sat Dec 27 2025",
+      "repo": "aistro.ai",
       "language": "Python"
     },
     {
-      "date": "Thu Dec 25 2025",
-      "repo": "stock_price_target_modelling",
+      "date": "Sat Dec 27 2025",
+      "repo": "aistro.ai",
       "language": "Python"
-    },
-    {
-      "date": "Thu Dec 25 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Tue Dec 23 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Tue Dec 23 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Tue Dec 23 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Tue Dec 16 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 15 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 15 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 15 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 15 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 13 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 13 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 13 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 11 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 11 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 11 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 11 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sun Dec 07 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sun Dec 07 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sun Dec 07 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 06 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 06 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 06 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 25 2025",
-      "repo": "Music-and-Math",
-      "language": "JavaScript"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Music-and-Math",
-      "language": "JavaScript"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Music-and-Math",
-      "language": "JavaScript"
-    },
-    {
-      "date": "Thu Dec 18 2025",
-      "repo": "Music-and-Math",
-      "language": "JavaScript"
-    },
-    {
-      "date": "Wed Dec 17 2025",
-      "repo": "Music-and-Math",
-      "language": "JavaScript"
-    },
-    {
-      "date": "Tue Dec 16 2025",
-      "repo": "Music-and-Math",
-      "language": "JavaScript"
     },
     {
       "date": "Sun Dec 21 2025",
@@ -1352,6 +932,446 @@
       "language": "Python"
     },
     {
+      "date": "Fri Dec 26 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sat Dec 20 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Sat Dec 20 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 16 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 13 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 13 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 13 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 11 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 11 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 11 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 11 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 06 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 06 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 06 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "Music-and-Math",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "Music-and-Math",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Music-and-Math",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Thu Dec 18 2025",
+      "repo": "Music-and-Math",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Wed Dec 17 2025",
+      "repo": "Music-and-Math",
+      "language": "JavaScript"
+    },
+    {
+      "date": "Tue Dec 16 2025",
+      "repo": "Music-and-Math",
+      "language": "JavaScript"
+    },
+    {
       "date": "Thu Dec 18 2025",
       "repo": "Databricks-Genie-Integration",
       "language": "Python"
@@ -1493,10 +1513,10 @@
     "TypeScript"
   ],
   "allLanguages": {
-    "CSS": 45,
-    "Python": 206,
+    "Python": 209,
+    "CSS": 46,
     "JavaScript": 6,
     "TypeScript": 9
   },
-  "lastUpdated": "2025-12-26T06:21:25.496Z"
+  "lastUpdated": "2025-12-27T06:20:08.379Z"
 }
