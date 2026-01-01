@@ -10,152 +10,211 @@
         "CSS": 0,
         "TypeScript": 0
       }
-    },
-    {
-      "name": "Feb",
-      "count": 0,
-      "uniqueRepos": 0,
-      "languages": {},
-      "topLangCounts": {
-        "Python": 0,
-        "CSS": 0,
-        "TypeScript": 0
-      }
-    },
-    {
-      "name": "Mar",
-      "count": 20,
-      "uniqueRepos": 2,
-      "languages": {
-        "Python": 20
-      },
-      "topLangCounts": {
-        "Python": 20,
-        "CSS": 0,
-        "TypeScript": 0
-      }
-    },
-    {
-      "name": "Apr",
-      "count": 0,
-      "uniqueRepos": 0,
-      "languages": {},
-      "topLangCounts": {
-        "Python": 0,
-        "CSS": 0,
-        "TypeScript": 0
-      }
-    },
-    {
-      "name": "May",
-      "count": 3,
-      "uniqueRepos": 1,
-      "languages": {
-        "Python": 3
-      },
-      "topLangCounts": {
-        "Python": 3,
-        "CSS": 0,
-        "TypeScript": 0
-      }
-    },
-    {
-      "name": "Jun",
-      "count": 4,
-      "uniqueRepos": 2,
-      "languages": {
-        "Python": 4
-      },
-      "topLangCounts": {
-        "Python": 4,
-        "CSS": 0,
-        "TypeScript": 0
-      }
-    },
-    {
-      "name": "Jul",
-      "count": 4,
-      "uniqueRepos": 1,
-      "languages": {
-        "Python": 4
-      },
-      "topLangCounts": {
-        "Python": 4,
-        "CSS": 0,
-        "TypeScript": 0
-      }
-    },
-    {
-      "name": "Aug",
-      "count": 65,
-      "uniqueRepos": 1,
-      "languages": {
-        "Python": 65
-      },
-      "topLangCounts": {
-        "Python": 65,
-        "CSS": 0,
-        "TypeScript": 0
-      }
-    },
-    {
-      "name": "Sep",
-      "count": 57,
-      "uniqueRepos": 2,
-      "languages": {
-        "Python": 55,
-        "TypeScript": 2
-      },
-      "topLangCounts": {
-        "Python": 55,
-        "CSS": 0,
-        "TypeScript": 2
-      }
-    },
-    {
-      "name": "Oct",
-      "count": 0,
-      "uniqueRepos": 0,
-      "languages": {},
-      "topLangCounts": {
-        "Python": 0,
-        "CSS": 0,
-        "TypeScript": 0
-      }
-    },
-    {
-      "name": "Nov",
-      "count": 18,
-      "uniqueRepos": 3,
-      "languages": {
-        "Python": 11,
-        "TypeScript": 7
-      },
-      "topLangCounts": {
-        "Python": 11,
-        "CSS": 0,
-        "TypeScript": 7
-      }
-    },
-    {
-      "name": "Dec",
-      "count": 135,
-      "uniqueRepos": 5,
-      "languages": {
-        "CSS": 56,
-        "Python": 73,
-        "JavaScript": 6
-      },
-      "topLangCounts": {
-        "Python": 73,
-        "CSS": 56,
-        "TypeScript": 0
-      }
     }
   ],
-  "totalCommits": 306,
+  "totalCommits": 310,
   "uniqueReposTotal": 10,
   "daily": [
+    {
+      "date": "Wed Dec 31 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 31 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 31 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 25 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 24 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 22 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 16 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Dec 15 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 13 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 13 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 13 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 11 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 11 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 11 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Thu Dec 11 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sun Dec 07 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 06 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 06 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 06 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Wed Dec 31 2025",
+      "repo": "Portfolio",
+      "language": "CSS"
+    },
     {
       "date": "Tue Dec 30 2025",
       "repo": "Portfolio",
@@ -1343,186 +1402,6 @@
     },
     {
       "date": "Thu Dec 25 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 25 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 25 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 25 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Wed Dec 24 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Tue Dec 23 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Tue Dec 23 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Tue Dec 23 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Tue Dec 16 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 15 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 15 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 15 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Mon Dec 15 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 13 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 13 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 13 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 11 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 11 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 11 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 11 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sun Dec 07 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sun Dec 07 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sun Dec 07 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 06 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 06 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Sat Dec 06 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python"
-    },
-    {
-      "date": "Thu Dec 25 2025",
       "repo": "Music-and-Math",
       "language": "JavaScript"
     },
@@ -1693,10 +1572,10 @@
     "TypeScript"
   ],
   "allLanguages": {
-    "CSS": 56,
-    "Python": 235,
+    "Python": 238,
+    "CSS": 57,
     "JavaScript": 6,
     "TypeScript": 9
   },
-  "lastUpdated": "2025-12-31T06:22:22.166Z"
+  "lastUpdated": "2026-01-01T06:22:09.249Z"
 }
