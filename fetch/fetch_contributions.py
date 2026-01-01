@@ -89,7 +89,7 @@ def main():
     response = requests.get(
         'https://api.github.com/user/repos',
         headers=headers,
-        params={'per_page': 100, 'affiliation': 'owner'}
+        params={'per_page': 100, 'affiliation': 'owner,collaborator,organization_member'}
     )
     repos = response.json()
     

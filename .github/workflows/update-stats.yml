@@ -17,22 +17,33 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          node-version: '20'
+          python-version: '3.x'
+      
       - name: Install dependencies
-        run: npm ci
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-dotenv
 
       - name: Fetch GitHub Data
         env:
           GITHUB_TOKEN: ${{ secrets.PORTFOLIO_GITHUB_PAT }}
-        run: node scripts/fetch-github.js
+        run: python fetch/fetch_contributions.py
+
+      - name: Propagate Data to Sub-directories
+        run: |
+          cp data.json fetch/data.json
+          cp data.json ambience/data.json
+          cp data.json viant/data.json
+          cp data.json stellantis/data.json
+          cp data.json circle/data.json
 
       - name: Commit updated data
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git add data.json
+          git add data.json fetch/data.json ambience/data.json viant/data.json stellantis/data.json circle/data.json
           git diff --staged --quiet || git commit -m "Update portfolio stats [skip ci]"
           git push
