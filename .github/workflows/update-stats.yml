@@ -34,16 +34,17 @@ jobs:
 
       - name: Propagate Data to Sub-directories
         run: |
-          cp fetch/data.json data.json
-          cp fetch/data.json ambience/data.json
-          cp fetch/data.json viant/data.json
-          cp fetch/data.json stellantis/data.json
-          cp fetch/data.json circle/data.json
+          cp data.json fetch/data.json
+          cp data.json ambience/data.json
+          cp data.json viant/data.json
+          cp data.json stellantis/data.json
+          cp data.json circle/data.json
+          cp data.json scopely/data.json
 
       - name: Commit updated data
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git add data.json fetch/data.json ambience/data.json viant/data.json stellantis/data.json circle/data.json
+          git add data.json fetch/data.json ambience/data.json viant/data.json stellantis/data.json circle/data.json scopely/data.json
           git diff --staged --quiet || git commit -m "Update portfolio stats [skip ci]"
           git push
