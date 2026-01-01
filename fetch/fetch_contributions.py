@@ -56,7 +56,6 @@ def get_all_commits(repo_name, headers):
             headers=headers,
             params={
                 'since': '2025-01-01T00:00:00Z',
-                'until': '2025-12-31T23:59:59Z',
                 'author': USERNAME,
                 'per_page': 100,
                 'page': page
@@ -94,7 +93,7 @@ def main():
     )
     repos = response.json()
     
-    print(f'Fetching commits from {len(repos)} repos for 2025...')
+    print(f'Fetching commits from {len(repos)} repos for 2025+...')
     print()
     
     language_commits = defaultdict(int)
@@ -152,7 +151,7 @@ def main():
     
     total_commits = sum(c for _, c, _, _ in repo_data)
     print()
-    print(f'Total commits in 2025: {total_commits}')
+    print(f'Total commits in 2025+: {total_commits}')
     print()
     print('Language breakdown (distributed by repo composition):')
     for lang, count in sorted(language_commits.items(), key=lambda x: -x[1]):

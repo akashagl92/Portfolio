@@ -521,6 +521,24 @@ h1 {
     font-size: 0.7rem;
 }
 
+.calendar-year-marker {
+    position: absolute;
+    top: 0;
+    bottom: -20px;
+    border-left: 1px dashed var(--glass-border);
+    pointer-events: none;
+}
+
+.calendar-year-marker::after {
+    content: attr(data-year);
+    position: absolute;
+    bottom: -18px;
+    left: 4px;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
 /* Full Width Activity Card */
 .activity-card.full-width {
     grid-column: 1 / -1;

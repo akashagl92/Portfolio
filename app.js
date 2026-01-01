@@ -262,6 +262,15 @@ function updateCharts(data) {
     if (heroCalendarGrid) {
         heroCalendarGrid.innerHTML = '';
 
+        // Dynamic header update logic
+        const headerSpan = document.querySelector('.viz-header span');
+        if (headerSpan) {
+            const currentYear = new Date().getFullYear();
+            if (currentYear > 2025) {
+                headerSpan.textContent = `2025-${currentYear} ENGINEERING VELOCITY`;
+            }
+        }
+
         const startDate = new Date('2025-01-01');
         const today = new Date();
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -270,7 +279,7 @@ function updateCharts(data) {
         let currentDate = new Date(startDate);
 
         // Find the first Sunday on or before Jan 1
-        const firstDayOfWeek = currentDate.getDay();
+        const firstDayOfWeek = currentDate.getDay(); // Wed = 3
         let weekIndex = 0;
 
         let currentMonth = 0; // Start with January (0)
@@ -312,8 +321,7 @@ function updateCharts(data) {
                     day.dataset.date = dateStr;
                     day.dataset.info = JSON.stringify(dayData);
 
-                    // Track month positions for labels (only when month changes)
-                    // Only track months 1-11 (Feb-Dec) as they appear chronologically after Jan
+                    // Track month positions just in case logic is needed here
                     const month = effectiveDate.getMonth();
                     if (month > currentMonth) {
                         currentMonth = month;
@@ -441,18 +449,56 @@ function updateCharts(data) {
             const startDate = new Date('2025-01-01');
             const firstDayOfWeek = startDate.getDay(); // Wed = 3 for Jan 1, 2025
 
-            // Calculate week index for the 1st of each month up to current month
-            const currentMonth = new Date().getMonth();
-            for (let m = 0; m <= currentMonth; m++) {
-                const monthStart = new Date(2025, m, 1);
-                const daysSinceStart = Math.floor((monthStart - startDate) / (1000 * 60 * 60 * 24));
-                const weekIndex = Math.floor((daysSinceStart + firstDayOfWeek) / 7);
+            // Iterate from startDate to current date to generate all month labels and year markers
+            let labelDate = new Date(startDate);
+            const currentDateIterator = new Date(); // Use today as end date
 
-                const span = document.createElement('span');
-                span.textContent = months[m];
-                span.style.position = 'absolute';
-                span.style.left = `calc(var(--week-width) * ${weekIndex})`;
-                heroCalendarMonths.appendChild(span);
+            // To avoid potential infinite loops, set a safe limit (e.g., 5 years)
+            const maxDate = new Date(startDate);
+            maxDate.setFullYear(maxDate.getFullYear() + 5);
+
+            while (labelDate <= currentDateIterator && labelDate < maxDate) {
+                const year = labelDate.getFullYear();
+                const monthIndex = labelDate.getMonth();
+                const monthStart = new Date(labelDate);
+                monthStart.setDate(1); // Ensure we are at start of month
+
+                const daysSinceStart = Math.floor((monthStart - startDate) / (1000 * 60 * 60 * 24));
+                // Only if positive (future safeguard)
+                if (daysSinceStart >= 0) {
+                    const weekIndex = Math.floor((daysSinceStart + firstDayOfWeek) / 7);
+
+                    // Add Year Marker for 2026 onwards (bifurcation)
+                    if (monthIndex === 0 && year > 2025) {
+                        const marker = document.createElement('div');
+                        marker.className = 'calendar-year-marker';
+                        marker.dataset.year = year;
+                        marker.style.left = `calc(var(--week-width) * ${weekIndex} - 2px)`; // Adjust for border width
+                        heroCalendarMonths.appendChild(marker);
+                    }
+
+                    // Add Year Marker for 2025 (Start of graph) if month is Jan
+                    if (monthIndex === 0 && year === 2025) {
+                        const marker = document.createElement('div');
+                        marker.className = 'calendar-year-marker';
+                        marker.dataset.year = year;
+                        marker.style.left = `0px`; // Start of grid
+                        heroCalendarMonths.appendChild(marker);
+                    }
+
+                    const span = document.createElement('span');
+                    span.textContent = months[monthIndex];
+                    span.style.position = 'absolute';
+                    span.style.left = `calc(var(--week-width) * ${weekIndex})`;
+                    heroCalendarMonths.appendChild(span);
+                }
+
+                // Increment to next month safely handling year crossovers
+                // Using UTC date methods can sometimes be safer, but basic setMonth usually handles overflow correctly
+                // e.g. Jan 31 -> setMonth(1) -> March 2/3. 
+                // To be safe: Set date to 1 first, then add month.
+                labelDate.setDate(1);
+                labelDate.setMonth(labelDate.getMonth() + 1);
             }
 
             // Match months container width to grid width so they center together
@@ -461,4 +507,3 @@ function updateCharts(data) {
     }
 
 }
-
