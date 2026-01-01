@@ -78,6 +78,38 @@ def get_all_commits(repo_name, headers):
     
     return all_commits
 
+def get_all_repos(headers):
+    """Get all repositories, handling pagination."""
+    all_repos = []
+    page = 1
+    
+    while True:
+        response = requests.get(
+            'https://api.github.com/user/repos',
+            headers=headers,
+            params={
+                'per_page': 100, 
+                'page': page,
+                'affiliation': 'owner,collaborator,organization_member'
+            }
+        )
+        
+        if response.status_code != 200:
+            print(f"Error fetching repos: {response.status_code}")
+            break
+            
+        repos = response.json()
+        if not repos:
+            break
+            
+        all_repos.extend(repos)
+        
+        if len(repos) < 100:
+            break
+        page += 1
+    
+    return all_repos
+
 def main():
     if not TOKEN:
         print("Error: GITHUB_TOKEN not found in .env file")
@@ -86,12 +118,7 @@ def main():
     headers = {'Authorization': f'token {TOKEN}'}
     
     # Get all repos owned by user
-    response = requests.get(
-        'https://api.github.com/user/repos',
-        headers=headers,
-        params={'per_page': 100, 'affiliation': 'owner,collaborator,organization_member'}
-    )
-    repos = response.json()
+    repos = get_all_repos(headers)
     
     print(f'Fetching commits from {len(repos)} repos for 2025+...')
     print()
