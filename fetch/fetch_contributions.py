@@ -45,14 +45,14 @@ def weighted_language_choice(languages_bytes):
     
     return list(languages_bytes.keys())[0]
 
-def get_all_commits(repo_name, headers):
+def get_all_commits(repo_full_name, headers):
     """Get all commits from a repo in 2025, handling pagination."""
     all_commits = []
     page = 1
     
     while True:
         response = requests.get(
-            f'https://api.github.com/repos/{USERNAME}/{repo_name}/commits',
+            f'https://api.github.com/repos/{repo_full_name}/commits',
             headers=headers,
             params={
                 'since': '2025-01-01T00:00:00Z',
@@ -77,6 +77,45 @@ def get_all_commits(repo_name, headers):
         page += 1
     
     return all_commits
+
+def get_user_activity(repo_full_name, headers):
+    """Get PRs and Issues created by user in 2025."""
+    activity = []
+    
+    # 1. Get Issues (which includes PRs in the API, but we filter)
+    page = 1
+    while True:
+        response = requests.get(
+            f'https://api.github.com/repos/{repo_full_name}/issues',
+            headers=headers,
+            params={
+                'creator': USERNAME,
+                'state': 'all',
+                'since': '2025-01-01T00:00:00Z',
+                'per_page': 100,
+                'page': page
+            }
+        )
+        if response.status_code != 200: break
+        
+        items = response.json()
+        if not items: break
+        
+        for item in items:
+            # Check if strictly 2025+ (API 'since' includes updates, we want creation)
+            if item['created_at'] < '2025-01-01T00:00:00Z':
+                continue
+                
+            activity.append({
+                'type': 'pr' if 'pull_request' in item else 'issue',
+                'date': item['created_at'][:10],
+                'repo': repo_full_name
+            })
+            
+        if len(items) < 100: break
+        page += 1
+        
+    return activity
 
 def get_all_repos(headers):
     """Get all repositories, handling pagination."""
@@ -136,8 +175,11 @@ def main():
         repo_languages = get_repo_languages(name, headers)
         primary_lang = repo.get('language') or 'Other'
         
-        commits = get_all_commits(name, headers)
-        count = len(commits)
+        commits = get_all_commits(repo['full_name'], headers)
+        other_activity = get_user_activity(repo['full_name'], headers)
+        
+        # Total count = Commits + PRs + Issues
+        count = len(commits) + len(other_activity)
         
         if count > 0:
             visibility = 'PRIVATE' if is_private else 'PUBLIC'
@@ -153,9 +195,8 @@ def main():
             
             repo_data.append((name, count, primary_lang, visibility))
             
-            # Process each commit - assign language based on repo composition
+            # Process Commits
             for commit in commits:
-                # Assign language proportionally based on repo's language breakdown
                 if repo_languages:
                     lang = weighted_language_choice(repo_languages)
                 else:
@@ -163,7 +204,7 @@ def main():
                 
                 language_commits[lang] += 1
                 
-                commit_date = commit['commit']['author']['date'][:10]  # YYYY-MM-DD
+                commit_date = commit['commit']['author']['date'][:10]
                 date_obj = datetime.strptime(commit_date, '%Y-%m-%d')
                 month_idx = date_obj.month - 1
                 
@@ -173,7 +214,32 @@ def main():
                 daily_commits.append({
                     'date': formatted_date,
                     'repo': name,
-                    'language': lang
+                    'language': lang,
+                    'type': 'commit'
+                })
+
+            # Process PRs and Issues
+            for act in other_activity:
+                # Assign language of the repo to the activity
+                if repo_languages:
+                    lang = weighted_language_choice(repo_languages)
+                else:
+                    lang = primary_lang
+                
+                # We count language usage for activity too? 
+                # GitHub generally attributes PRs to languages. Let's do it.
+                language_commits[lang] += 1
+                
+                date_obj = datetime.strptime(act['date'], '%Y-%m-%d')
+                month_idx = date_obj.month - 1
+                monthly_commits[month_idx][lang] += 1
+                
+                formatted_date = date_obj.strftime('%a %b %d %Y')
+                daily_commits.append({
+                    'date': formatted_date,
+                    'repo': name,
+                    'language': lang,
+                    'type': act['type']
                 })
     
     total_commits = sum(c for _, c, _, _ in repo_data)
@@ -205,6 +271,7 @@ def main():
     result = {
         'monthly': monthly,
         'totalCommits': total_commits,
+        'uniqueReposTotal': len(set(d['repo'] for d in daily_commits)),
         'daily': daily_commits,
         'languages': dict(language_commits)
     }
