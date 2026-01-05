@@ -3,18 +3,18 @@ const GithubService = {
     username: 'akashagl92',
     async fetchAllData() {
         // Check session cache first
-        const cached = sessionStorage.getItem('github_data_v13');
+        const cached = sessionStorage.getItem('github_data_v14');
         if (cached) return JSON.parse(cached);
 
         try {
             // Try to load pre-generated data from build-time script
-            const response = await fetch('./data.json?v=13');
+            const response = await fetch('./data.json?v=14');
             if (response.ok) {
                 const data = await response.json();
                 // Check if data.json has real content (not just placeholder)
                 if (data.totalCommits > 0) {
                     console.log('Using pre-generated data from data.json');
-                    sessionStorage.setItem('github_data_v13', JSON.stringify(data));
+                    sessionStorage.setItem('github_data_v14', JSON.stringify(data));
                     return data;
                 }
             }
@@ -55,7 +55,7 @@ const GithubService = {
             }
 
             const processed = this.processData(allCommits);
-            sessionStorage.setItem('github_data_v13', JSON.stringify(processed));
+            sessionStorage.setItem('github_data_v14', JSON.stringify(processed));
             return processed;
         } catch (e) {
             console.error('GitHub Fetch Error:', e);
