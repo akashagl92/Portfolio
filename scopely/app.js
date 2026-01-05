@@ -3,7 +3,7 @@ const GithubService = {
     username: 'akashagl92',
     async fetchAllData() {
         // Check session cache first
-        const cached = sessionStorage.getItem('github_data_v11');
+        const cached = sessionStorage.getItem('github_data_v12');
         if (cached) return JSON.parse(cached);
 
         try {
@@ -14,7 +14,7 @@ const GithubService = {
                 // Check if data.json has real content (not just placeholder)
                 if (data.totalCommits > 0) {
                     console.log('Using pre-generated data from data.json');
-                    sessionStorage.setItem('github_data_v11', JSON.stringify(data));
+                    sessionStorage.setItem('github_data_v12', JSON.stringify(data));
                     return data;
                 }
             }
@@ -55,7 +55,7 @@ const GithubService = {
             }
 
             const processed = this.processData(allCommits);
-            sessionStorage.setItem('github_data_v11', JSON.stringify(processed));
+            sessionStorage.setItem('github_data_v12', JSON.stringify(processed));
             return processed;
         } catch (e) {
             console.error('GitHub Fetch Error:', e);
@@ -183,7 +183,7 @@ function updateCharts(data) {
     }
 
     const totalReposEl = document.getElementById('total-repos');
-    if (totalReposEl && data.uniqueReposTotal) {
+    if (totalReposEl && data.uniqueReposTotal !== undefined) {
         totalReposEl.textContent = data.uniqueReposTotal;
     }
 
