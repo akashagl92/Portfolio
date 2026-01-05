@@ -2,19 +2,19 @@
   "monthly": [
     {
       "name": "Jan",
-      "count": 5,
+      "count": 3,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {
-        "HTML": 2,
-        "Python": 3
+        "CSS": 1,
+        "Python": 2
       }
     },
     {
@@ -22,30 +22,29 @@
       "count": 0,
       "uniqueRepos": 0,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {}
     },
     {
       "name": "Mar",
-      "count": 9,
+      "count": 7,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {
-        "Python": 7,
-        "HTML": 2
+        "Python": 7
       }
     },
     {
@@ -53,12 +52,12 @@
       "count": 0,
       "uniqueRepos": 0,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {}
     },
@@ -67,12 +66,12 @@
       "count": 0,
       "uniqueRepos": 0,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {}
     },
@@ -81,16 +80,15 @@
       "count": 4,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {
-        "TypeScript": 1,
-        "Python": 3
+        "Python": 4
       }
     },
     {
@@ -98,15 +96,16 @@
       "count": 4,
       "uniqueRepos": 1,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {
-        "Python": 4
+        "Shell": 1,
+        "Python": 3
       }
     },
     {
@@ -114,18 +113,18 @@
       "count": 64,
       "uniqueRepos": 1,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {
-        "Python": 37,
-        "Shell": 3,
-        "HTML": 6,
-        "TypeScript": 18
+        "Python": 44,
+        "TypeScript": 12,
+        "HTML": 7,
+        "Shell": 1
       }
     },
     {
@@ -133,18 +132,17 @@
       "count": 57,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {
-        "TypeScript": 18,
-        "Python": 34,
-        "HTML": 4,
-        "Shell": 1
+        "Python": 39,
+        "HTML": 5,
+        "TypeScript": 13
       }
     },
     {
@@ -152,12 +150,12 @@
       "count": 0,
       "uniqueRepos": 0,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {}
     },
@@ -166,12 +164,12 @@
       "count": 12,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {
         "Python": 5,
@@ -183,1628 +181,1341 @@
       "count": 111,
       "uniqueRepos": 4,
       "languages": {
-        "Python": 161,
-        "TypeScript": 49,
-        "HTML": 23,
-        "Shell": 4,
+        "Python": 172,
+        "TypeScript": 37,
+        "HTML": 27,
+        "Shell": 2,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 11
       },
       "topLangCounts": {
         "Python": 68,
         "TypeScript": 5,
-        "HTML": 9,
         "JavaScript": 13,
-        "CSS": 16
+        "CSS": 10,
+        "HTML": 15
       }
     }
   ],
-  "totalCommits": 266,
-  "uniqueReposTotal": 8,
+  "totalCommits": 262,
   "daily": [
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Dec 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Tue Dec 16 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Dec 16 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Dec 15 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Dec 15 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Nov 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Nov 15 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Nov 14 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Nov 12 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Nov 11 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Sep 25 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 22 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 22 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Sep 17 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Wed Sep 17 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Tue Sep 16 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "Shell",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Sep 07 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sun Sep 07 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sun Sep 07 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Sep 06 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Sep 06 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Sep 06 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Sep 06 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Sep 06 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 27 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Aug 26 2025",
       "repo": "aistro.ai",
-      "language": "Shell",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Aug 26 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Aug 25 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Aug 25 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Aug 25 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Mon Aug 25 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Aug 25 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Aug 24 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Aug 24 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sun Aug 24 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Shell",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Shell"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Aug 18 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Aug 18 2025",
       "repo": "aistro.ai",
-      "language": "Shell",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Aug 18 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Jul 09 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Shell"
     },
     {
       "date": "Wed Jul 09 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Jul 09 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Jul 07 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Jun 20 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Mar 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Mar 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Mar 19 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Mar 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Mar 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Mar 18 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Mar 19 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "pr"
-    },
-    {
-      "date": "Wed Mar 19 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "pr"
+      "language": "Python"
     },
     {
       "date": "Wed Sep 24 2025",
       "repo": "Hindi-Tutor",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Wed Sep 24 2025",
       "repo": "Hindi-Tutor",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Mon Jun 16 2025",
       "repo": "LinkedIn-API",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Jun 16 2025",
       "repo": "LinkedIn-API",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Jun 16 2025",
       "repo": "LinkedIn-API",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Mar 25 2025",
       "repo": "Marketing-Analytics-Assistant",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 25 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Mon Dec 22 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Thu Dec 18 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Wed Dec 17 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Tue Dec 16 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Tue Nov 11 2025",
       "repo": "philosophy-sage",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Thu Nov 06 2025",
       "repo": "philosophy-sage",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Thu Nov 06 2025",
       "repo": "philosophy-sage",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Thu Nov 06 2025",
       "repo": "philosophy-sage",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Wed Nov 05 2025",
       "repo": "philosophy-sage",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Wed Nov 05 2025",
       "repo": "philosophy-sage",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Wed Nov 05 2025",
       "repo": "philosophy-sage",
-      "language": "TypeScript",
-      "type": "commit"
+      "language": "TypeScript"
     },
     {
       "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 01 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 01 2026",
-      "repo": "Portfolio",
-      "language": "Python",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Mon Dec 29 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Mon Dec 29 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Thu Dec 25 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Mon Dec 22 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Mon Dec 22 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Sat Dec 20 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Sat Dec 20 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "JavaScript"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "CSS"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Thu Jan 01 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Jan 01 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 31 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 31 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 31 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 25 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Thu Dec 25 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 25 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 25 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 24 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 24 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 24 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 24 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 24 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Dec 23 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Dec 23 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Dec 23 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Dec 22 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Tue Dec 16 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Dec 15 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Dec 15 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Dec 15 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Dec 15 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 13 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 13 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sat Dec 13 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Dec 12 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Dec 12 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Dec 12 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Dec 12 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Fri Dec 12 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 11 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 11 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 11 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 11 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 07 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 07 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sun Dec 07 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 06 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 06 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Dec 06 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     }
   ],
   "languages": {
-    "Python": 161,
-    "TypeScript": 49,
-    "HTML": 23,
-    "Shell": 4,
+    "Python": 172,
+    "TypeScript": 37,
+    "HTML": 27,
+    "Shell": 2,
     "JavaScript": 13,
-    "CSS": 16
+    "CSS": 11
   }
 }
