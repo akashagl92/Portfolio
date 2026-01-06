@@ -45,10 +45,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PORTFOLIO_GITHUB_PAT }}
         run: node scripts/fetch-project-details.js
 
-      - name: Run Agentic Chronicler (Python)
-        env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: python fetch/agentic_chronicler.py
+      # Chronicler disabled - summaries are manually managed per page
+      # - name: Run Agentic Chronicler (Python)
+      #   env:
+      #     OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      #   run: python fetch/agentic_chronicler.py
 
       - name: Propagate Data to Sub-directories
         run: |
