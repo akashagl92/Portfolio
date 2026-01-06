@@ -34,12 +34,12 @@ jobs:
 
       - name: Propagate Data to Sub-directories
         run: |
-          cp data.json fetch/data.json
-          cp data.json ambience/data.json
-          cp data.json viant/data.json
-          cp data.json stellantis/data.json
-          cp data.json circle/data.json
-          cp data.json scopely/data.json
+          cp fetch/data.json data.json
+          cp fetch/data.json ambience/data.json
+          cp fetch/data.json viant/data.json
+          cp fetch/data.json stellantis/data.json
+          cp fetch/data.json circle/data.json
+          cp fetch/data.json scopely/data.json
 
       - name: Commit updated data
         run: |
