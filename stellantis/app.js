@@ -3,18 +3,18 @@ const GithubService = {
     username: 'akashagl92',
     async fetchAllData() {
         // Check session cache first
-        const cached = sessionStorage.getItem('github_data_v14');
+        const cached = sessionStorage.getItem('github_data_v15');
         if (cached) return JSON.parse(cached);
 
         try {
             // Try to load pre-generated data from build-time script
-            const response = await fetch('./data.json?v=14');
+            const response = await fetch('./data.json?v=15');
             if (response.ok) {
                 const data = await response.json();
                 // Check if data.json has real content (not just placeholder)
                 if (data.totalCommits > 0) {
                     console.log('Using pre-generated data from data.json');
-                    sessionStorage.setItem('github_data_v14', JSON.stringify(data));
+                    sessionStorage.setItem('github_data_v15', JSON.stringify(data));
                     return data;
                 }
             }
@@ -55,7 +55,7 @@ const GithubService = {
             }
 
             const processed = this.processData(allCommits);
-            sessionStorage.setItem('github_data_v14', JSON.stringify(processed));
+            sessionStorage.setItem('github_data_v15', JSON.stringify(processed));
             return processed;
         } catch (e) {
             console.error('GitHub Fetch Error:', e);
@@ -285,7 +285,8 @@ function updateCharts(data) {
         let currentMonth = 0; // Start with January (0)
         const monthPositions = [{ month: 'Jan', position: 0 }]; // Jan starts at position 0
 
-        while (currentDate <= today) {
+        // Check if the START of the current week is <= today
+        while (new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - firstDayOfWeek) <= today) {
             const week = document.createElement('div');
             week.className = 'calendar-week';
 
