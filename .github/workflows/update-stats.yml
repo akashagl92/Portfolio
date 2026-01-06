@@ -27,10 +27,28 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests python-dotenv
 
-      - name: Fetch GitHub Data
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Fetch GitHub Data (Stats)
         env:
           GITHUB_TOKEN: ${{ secrets.PORTFOLIO_GITHUB_PAT }}
         run: python fetch/fetch_contributions.py
+
+      - name: Fetch Project Details (Node)
+        env:
+          GITHUB_TOKEN: ${{ secrets.PORTFOLIO_GITHUB_PAT }}
+        run: node scripts/fetch-project-details.js
+
+      - name: Run Agentic Chronicler (Python)
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python fetch/agentic_chronicler.py
 
       - name: Propagate Data to Sub-directories
         run: |
@@ -40,11 +58,12 @@ jobs:
           cp fetch/data.json stellantis/data.json
           cp fetch/data.json circle/data.json
           cp fetch/data.json scopely/data.json
+          cp fetch/data.json consensys/data.json
 
       - name: Commit updated data
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git add data.json fetch/data.json ambience/data.json viant/data.json stellantis/data.json circle/data.json scopely/data.json
+          git add data.json fetch/data.json ambience/data.json viant/data.json stellantis/data.json circle/data.json scopely/data.json consensys/data.json
           git diff --staged --quiet || git commit -m "Update portfolio stats [skip ci]"
           git push

@@ -204,13 +204,12 @@
         "author": "GitHub Actions Bot"
       }
     ],
-    "ai_summary": "Akash Agrawal's 2025 Engineering Portfolio showcases a Data & AI Product Leader adept at blending strategic product thinking with deep technical execution. With 231 commits across 10 repositories, the projects exhibit a unique ability to architect and build production-grade systems that bridge data science research, marketing technology, and agentic AI while maintaining rigorous engineering practices.",
+    "ai_summary": "This portfolio demonstrates leadership in architecting production-grade data and AI systems, driving product strategy through rigorous, data-driven hypothesis testing. It features an Autonomous Trading System with a 40.8% XIRR and an AI Astrology Platform leveraging AI for large-scale statistical research. The work emphasizes embedding advanced measurement and analytics capabilities from inception, showcasing expertise in transforming complex data into actionable product insights and fostering a data-driven culture.",
     "ai_tags": [
-      "Python",
-      "JavaScript",
-      "FastAPI",
-      "Pandas",
-      "Next.js"
+      "Product Analytics",
+      "Data Engineering",
+      "AI/ML",
+      "Hypothesis Testing"
     ],
     "complexity_score": 8
   },
@@ -388,13 +387,14 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "AI-powered autonomous trading system with 40.8% XIRR, leveraging multi-tier strategy and market timing factors",
+    "ai_summary": "This AI-powered autonomous trading system implements a v4.0 Optimal strategy, achieving a 40.8% XIRR by managing a dual-track portfolio of stocks and crypto. It leverages sophisticated market timing factors, portfolio optimization, and real-time broker integration with human-in-the-loop approval. The system demonstrates robust data-driven insights and advanced AI tooling for product strategy, translating complex financial data into significant outcomes within the Web3 domain.",
     "ai_tags": [
       "Python",
-      "Autonomous Trading",
-      "Portfolio Management"
+      "AI/Machine Learning",
+      "Financial Modeling",
+      "Web3"
     ],
-    "complexity_score": 8
+    "complexity_score": 9
   },
   {
     "name": "aistro.ai",
@@ -875,15 +875,14 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Developing a comprehensive astrological analysis platform, aistro.ai, involves a complex system combining traditional astrological calculations with modern AI-powered interpretations. The project features multi-system support, precise calculations, AI-powered interpretations, interactive charts, and advanced astrological analyses. Backed by rigorous statistical research, the platform offers predictive ML models and precise temporal predictions, enhancing user experience and providing a holistic approach to astrological insights.",
+    "ai_summary": "Aistro.ai is an AI-powered astrological platform that integrates precise astronomical calculations with advanced machine learning to provide personalized interpretations. It leverages rigorous statistical research on millions of events, achieving 69-85% predictive accuracy for life events. The platform features comprehensive user interaction analytics, multilingual support, and robust data-driven insights, demonstrating expertise in product analytics and AI integration for strategic decision-making.",
     "ai_tags": [
-      "Python",
-      "JavaScript",
-      "Node.js",
-      "Google Gemini API",
-      "Data Science"
+      "Product Analytics",
+      "Machine Learning",
+      "Data Science",
+      "Full-Stack Development"
     ],
-    "complexity_score": 8
+    "complexity_score": 9
   },
   {
     "name": "Music-and-Math",
@@ -979,13 +978,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Sonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.",
+    "ai_summary": "This interactive web-based visualizer leverages the Web Audio API and HTML5 Canvas to translate complex audio physics and music theory into accessible, real-time insights. It provides dynamic graphical representations and virtual instruments, empowering users to self-service explore fundamental concepts of sound and harmony. Built with vanilla JavaScript, it demonstrates robust capability in creating engaging educational platforms that enhance user understanding for intricate domains.",
     "ai_tags": [
-      "Vanilla JavaScript",
       "Web Audio API",
       "HTML5 Canvas",
-      "CSS3",
-      "Music Theory"
+      "Vanilla JavaScript",
+      "Real-time Data Visualization"
     ],
     "complexity_score": 8
   },
