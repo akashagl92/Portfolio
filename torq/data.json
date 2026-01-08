@@ -2,21 +2,21 @@
   "monthly": [
     {
       "name": "Jan",
-      "count": 19,
+      "count": 21,
       "uniqueRepos": 2,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {
-        "CSS": 8,
-        "JavaScript": 3,
-        "HTML": 5,
-        "Python": 3
+        "HTML": 6,
+        "CSS": 5,
+        "JavaScript": 8,
+        "Python": 2
       }
     },
     {
@@ -25,11 +25,11 @@
       "uniqueRepos": 0,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {}
     },
@@ -39,15 +39,16 @@
       "uniqueRepos": 2,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {
+        "TypeScript": 1,
         "Python": 7,
-        "TypeScript": 2
+        "HTML": 1
       }
     },
     {
@@ -56,11 +57,11 @@
       "uniqueRepos": 0,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {}
     },
@@ -70,11 +71,11 @@
       "uniqueRepos": 0,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {}
     },
@@ -84,11 +85,11 @@
       "uniqueRepos": 2,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {
         "Python": 4
@@ -100,15 +101,15 @@
       "uniqueRepos": 1,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {
-        "Python": 3,
-        "TypeScript": 1
+        "TypeScript": 2,
+        "Python": 2
       }
     },
     {
@@ -117,17 +118,17 @@
       "uniqueRepos": 1,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {
-        "TypeScript": 16,
         "Python": 43,
-        "HTML": 4,
-        "JavaScript": 1
+        "HTML": 3,
+        "TypeScript": 15,
+        "Shell": 3
       }
     },
     {
@@ -136,17 +137,16 @@
       "uniqueRepos": 2,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {
-        "TypeScript": 17,
-        "Python": 31,
-        "HTML": 7,
-        "Shell": 2
+        "Python": 41,
+        "HTML": 4,
+        "TypeScript": 12
       }
     },
     {
@@ -155,11 +155,11 @@
       "uniqueRepos": 0,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {}
     },
@@ -169,16 +169,15 @@
       "uniqueRepos": 2,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {
         "Python": 4,
-        "HTML": 1,
-        "TypeScript": 7
+        "TypeScript": 8
       }
     },
     {
@@ -187,23 +186,23 @@
       "uniqueRepos": 4,
       "languages": {
         "Python": 161,
-        "Shell": 5,
-        "HTML": 33,
-        "TypeScript": 44,
-        "JavaScript": 23,
-        "CSS": 14
+        "TypeScript": 46,
+        "Shell": 4,
+        "HTML": 32,
+        "JavaScript": 28,
+        "CSS": 11
       },
       "topLangCounts": {
-        "Python": 66,
-        "Shell": 3,
-        "HTML": 16,
-        "TypeScript": 1,
-        "JavaScript": 19,
+        "Python": 58,
+        "TypeScript": 8,
+        "Shell": 1,
+        "HTML": 18,
+        "JavaScript": 20,
         "CSS": 6
       }
     }
   ],
-  "totalCommits": 280,
+  "totalCommits": 282,
   "uniqueReposTotal": 8,
   "daily": [
     {
@@ -215,31 +214,25 @@
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Shell",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -281,29 +274,11 @@
     {
       "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
-      "date": "Sat Dec 27 2025",
-      "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
+      "date": "Sun Dec 28 2025",
       "repo": "aistro.ai",
       "language": "Python",
       "type": "commit"
@@ -317,6 +292,18 @@
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "aistro.ai",
       "language": "Python",
       "type": "commit"
     },
@@ -329,19 +316,13 @@
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "aistro.ai",
       "language": "Python",
       "type": "commit"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -365,13 +346,31 @@
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "Shell",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "aistro.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -437,7 +436,7 @@
     {
       "date": "Wed Nov 12 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -449,7 +448,7 @@
     {
       "date": "Thu Sep 25 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -467,42 +466,42 @@
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
+      "repo": "aistro.ai",
       "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "aistro.ai",
       "language": "TypeScript",
       "type": "commit"
     },
@@ -515,7 +514,7 @@
     {
       "date": "Wed Sep 17 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -527,13 +526,7 @@
     {
       "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
-      "language": "Shell",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 15 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -573,19 +566,7 @@
       "type": "commit"
     },
     {
-      "date": "Fri Sep 12 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 12 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 12 2025",
+      "date": "Mon Sep 15 2025",
       "repo": "aistro.ai",
       "language": "TypeScript",
       "type": "commit"
@@ -599,41 +580,29 @@
     {
       "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Mon Sep 08 2025",
+      "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Mon Sep 08 2025",
+      "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Mon Sep 08 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 08 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 08 2025",
+      "date": "Fri Sep 12 2025",
       "repo": "aistro.ai",
       "language": "Python",
       "type": "commit"
@@ -647,13 +616,25 @@
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
       "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -666,6 +647,24 @@
       "date": "Mon Sep 08 2025",
       "repo": "aistro.ai",
       "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 08 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -683,13 +682,7 @@
     {
       "date": "Sun Sep 07 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Sep 07 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -699,9 +692,9 @@
       "type": "commit"
     },
     {
-      "date": "Sat Sep 06 2025",
+      "date": "Sun Sep 07 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -713,19 +706,37 @@
     {
       "date": "Sat Sep 06 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Sat Sep 06 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Sep 06 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Sep 06 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
       "language": "TypeScript",
       "type": "commit"
     },
     {
-      "date": "Sat Sep 06 2025",
+      "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -737,7 +748,7 @@
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "Shell",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -755,19 +766,7 @@
     {
       "date": "Fri Sep 05 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 05 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 05 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -779,7 +778,7 @@
     {
       "date": "Wed Aug 27 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -791,19 +790,13 @@
     {
       "date": "Tue Aug 26 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Tue Aug 26 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Aug 25 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -816,6 +809,12 @@
       "date": "Mon Aug 25 2025",
       "repo": "aistro.ai",
       "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Aug 25 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -833,7 +832,7 @@
     {
       "date": "Sun Aug 24 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "Shell",
       "type": "commit"
     },
     {
@@ -845,7 +844,73 @@
     {
       "date": "Sun Aug 24 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "aistro.ai",
+      "language": "Shell",
       "type": "commit"
     },
     {
@@ -887,25 +952,7 @@
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -929,24 +976,6 @@
     {
       "date": "Sat Aug 23 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
       "language": "Python",
       "type": "commit"
     },
@@ -958,42 +987,6 @@
     },
     {
       "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "aistro.ai",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
       "language": "Python",
       "type": "commit"
@@ -1001,7 +994,7 @@
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "HTML",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1025,7 +1018,13 @@
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "aistro.ai",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1067,7 +1066,7 @@
     {
       "date": "Fri Aug 22 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1091,19 +1090,13 @@
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1133,37 +1126,43 @@
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "Shell",
       "type": "commit"
     },
     {
       "date": "Wed Aug 20 2025",
       "repo": "aistro.ai",
       "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "aistro.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Aug 18 2025",
+      "repo": "aistro.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Aug 18 2025",
+      "repo": "aistro.ai",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Mon Aug 18 2025",
       "repo": "aistro.ai",
       "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Aug 18 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Aug 18 2025",
-      "repo": "aistro.ai",
-      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Wed Jul 09 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1193,7 +1192,7 @@
     {
       "date": "Wed Mar 19 2025",
       "repo": "aistro.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1229,13 +1228,13 @@
     {
       "date": "Wed Mar 19 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "pr"
     },
     {
       "date": "Wed Mar 19 2025",
       "repo": "aistro.ai",
-      "language": "TypeScript",
+      "language": "HTML",
       "type": "pr"
     },
     {
@@ -1277,25 +1276,25 @@
     {
       "date": "Thu Dec 25 2025",
       "repo": "Music-and-Math",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Mon Dec 22 2025",
       "repo": "Music-and-Math",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Music-and-Math",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Thu Dec 18 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1355,7 +1354,19 @@
     {
       "date": "Thu Jan 08 2026",
       "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 08 2026",
+      "repo": "Portfolio",
       "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 08 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -1367,25 +1378,25 @@
     {
       "date": "Tue Jan 06 2026",
       "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 06 2026",
+      "repo": "Portfolio",
       "language": "CSS",
       "type": "commit"
     },
     {
       "date": "Tue Jan 06 2026",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Tue Jan 06 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Jan 06 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -1397,19 +1408,19 @@
     {
       "date": "Mon Jan 05 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Mon Jan 05 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Mon Jan 05 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -1427,7 +1438,7 @@
     {
       "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "Python",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -1445,25 +1456,25 @@
     {
       "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Dec 29 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Mon Dec 29 2025",
       "repo": "Portfolio",
       "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Dec 29 2025",
+      "repo": "Portfolio",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -1475,18 +1486,48 @@
     {
       "date": "Thu Dec 25 2025",
       "repo": "Portfolio",
-      "language": "Python",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Mon Dec 22 2025",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Mon Dec 22 2025",
       "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
       "language": "CSS",
       "type": "commit"
     },
@@ -1511,37 +1552,7 @@
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
       "language": "CSS",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1553,54 +1564,6 @@
     {
       "date": "Sat Dec 20 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
       "language": "CSS",
       "type": "commit"
     },
@@ -1619,7 +1582,7 @@
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1631,13 +1594,61 @@
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
       "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1697,13 +1708,13 @@
     {
       "date": "Wed Dec 24 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Wed Dec 24 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1739,7 +1750,7 @@
     {
       "date": "Tue Dec 23 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1793,7 +1804,7 @@
     {
       "date": "Sat Dec 13 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1859,7 +1870,7 @@
     {
       "date": "Sun Dec 07 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1889,10 +1900,10 @@
   ],
   "languages": {
     "Python": 161,
-    "Shell": 5,
-    "HTML": 33,
-    "TypeScript": 44,
-    "JavaScript": 23,
-    "CSS": 14
+    "TypeScript": 46,
+    "Shell": 4,
+    "HTML": 32,
+    "JavaScript": 28,
+    "CSS": 11
   }
 }
