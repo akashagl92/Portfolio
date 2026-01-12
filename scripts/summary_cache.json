@@ -1,0 +1,190 @@
+{
+  "Portfolio": {
+    "hash": "7241b60858c00ccfdd810849a0bf6db5",
+    "data": {
+      "summary": "Akash Agrawal's 2025 Engineering Portfolio showcases a Data & AI Product Leader adept at blending strategic product thinking with deep technical execution. With 231 commits across 10 repositories, the projects exhibit a unique ability to architect and build production-grade systems that bridge data science research, marketing technology, and agentic AI while maintaining rigorous engineering practices.",
+      "tags": [
+        "Python",
+        "JavaScript",
+        "FastAPI",
+        "Pandas",
+        "Next.js"
+      ],
+      "complexity": 8
+    },
+    "last_updated": 1767689165.370873
+  },
+  "stock_price_target_modelling": {
+    "hash": "975327619c2d04d820b899075b03155b",
+    "data": {
+      "ai_summary": "AI-powered autonomous trading system with 40.8% XIRR, leveraging multi-tier strategy and market timing factors",
+      "ai_tags": [
+        "Python",
+        "Autonomous Trading",
+        "Portfolio Management"
+      ],
+      "complexity_score": 8
+    },
+    "last_updated": 1767723643.922994
+  },
+  "aistro.ai": {
+    "hash": "e8295c116571e90c93ce0298fcb51266",
+    "data": {
+      "ai_summary": "Developing a comprehensive astrological analysis platform, aistro.ai, involves a complex system combining traditional astrological calculations with modern AI-powered interpretations. The project features multi-system support, precise calculations, AI-powered interpretations, interactive charts, and advanced astrological analyses. Backed by rigorous statistical research, the platform offers predictive ML models and precise temporal predictions, enhancing user experience and providing a holistic approach to astrological insights.",
+      "ai_tags": [
+        "Python",
+        "JavaScript",
+        "Node.js",
+        "Google Gemini API",
+        "Data Science"
+      ],
+      "complexity_score": 8
+    },
+    "last_updated": 1767689185.636559
+  },
+  "Music-and-Math": {
+    "hash": "096c79fc750e33a2a19d94060c4ac75a",
+    "data": {
+      "summary": "Sonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.",
+      "tags": [
+        "Vanilla JavaScript",
+        "Web Audio API",
+        "HTML5 Canvas",
+        "CSS3",
+        "Music Theory"
+      ],
+      "complexity": 8
+    },
+    "last_updated": 1767689195.041374
+  },
+  "Databricks-Genie-Integration": {
+    "hash": "626eb253fda972be9894ea08c05de24a",
+    "data": {
+      "summary": "Developed a sophisticated web application, Databricks Genie Integration, facilitating seamless connectivity between Databricks workspaces and business intelligence tools for enhanced data lookup and enrichment capabilities. The project features multi-workspace support, pre-built queries, natural language query support, and advanced data enrichment functionalities, utilizing a technology stack including Python Flask, Databricks SQL, HTML, CSS, JavaScript, Pandas, SQL, and Databricks Connect for authentication.",
+      "tags": [
+        "Python Flask",
+        "Databricks SQL",
+        "Pandas",
+        "Data Processing",
+        "Databricks Connect"
+      ],
+      "complexity": 8
+    },
+    "last_updated": 1767689204.618727
+  },
+  "philosophy-sage": {
+    "hash": "bacd1ff637bc7668733a7a9ccf475e9e",
+    "data": {
+      "summary": "The Philosophy-Sage project showcases a modular codebase with recent refactoring, cleanup, and integration efforts. It includes features like the Ashtavakra Gita corpus addition, TTS playback implementation, and monorepo conversion, indicating a focus on technical debt management and feature enhancements. Enhancing documentation, clarifying the technology stack, and emphasizing testing practices are areas for improvement to support project understanding and reliability.",
+      "tags": [
+        "CytoscapeGraph",
+        "TTS playback",
+        "Monorepo",
+        "Code Refactoring",
+        "Feature Enhancement"
+      ],
+      "complexity": 7
+    },
+    "last_updated": 1767689214.56846
+  },
+  "Hindi-Tutor": {
+    "hash": "756ad64c169baba1a8e34cb026995a7a",
+    "data": {
+      "summary": "The Hindi-Tutor project is an early-stage initiative to develop a Hindi Voice Assistant for language learners, utilizing TypeScript, React, and Vite for efficient development. Integration with the Gemini API adds complexity, while structured data handling and service workers enhance functionality. The project's README provides clear instructions for local setup and deployment, with room for improvement in detailed documentation, testing, and CI/CD implementation.",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Vite",
+        "Gemini API",
+        "Service Worker"
+      ],
+      "complexity": 7
+    },
+    "last_updated": 1767689223.168695
+  },
+  "LinkedIn-API": {
+    "hash": "53ed204121342aa90e8892c16da2ffa8",
+    "data": {
+      "summary": "The LinkedIn-API project consists of Python scripts like company_name_resolver.py and linkedin_excel_export_daily_comprehensive.py for handling LinkedIn tasks. The codebase lacks details on structure and dependencies, requiring further exploration. Recent commits by Akash Agrawal indicate ongoing development. The project's complexity is uncertain, potentially involving data manipulation and export tasks. Recommendations include improving commit messages, adding documentation, and evaluating frameworks for scalability.",
+      "tags": [
+        "Python",
+        "LinkedIn API",
+        "Data Manipulation"
+      ],
+      "complexity": 7
+    },
+    "last_updated": 1767689233.129133
+  },
+  "voc-buyer-journey-chatbot": {
+    "hash": "f5576fce216d0db64a45dd5beae3f550",
+    "data": {
+      "summary": "Developed a production-ready VoC and Buyer Journey Dashboard Chatbot on Databricks with a dual-brain architecture integrating Genie for structured data queries and RAG for unstructured document retrieval, orchestrated by LangGraph. The project encompassed complex workflows, LangChain integration, and a Streamlit UI, ensuring efficient data processing and continuous improvement capabilities.",
+      "tags": [
+        "Python",
+        "Databricks",
+        "LangChain",
+        "LangGraph",
+        "Genie Conversation API"
+      ],
+      "complexity": 8
+    },
+    "last_updated": 1767689243.987215
+  },
+  "Marketing-Analytics-Assistant": {
+    "hash": "5b68f1d890266fdffe0149e46adb03f9",
+    "data": {
+      "summary": "The Vizient Marketing Analytics Chatbot project integrates natural language processing, statistical analysis, and visualizations to provide marketing insights. Utilizing FastAPI, OpenAI GPT, Google Gemini, Matplotlib, Pandas, and Databricks SQL, the chatbot offers real-time data processing, multiple data source support, and business-friendly summaries. The project's technical complexity lies in its AI integration, statistical testing, and real-time analysis, requiring API key setup and visualization capabilities. Recent commits show ongoing development, with a focus on improving project documentation and functionality.",
+      "tags": [
+        "FastAPI",
+        "OpenAI GPT",
+        "Matplotlib",
+        "Pandas",
+        "Databricks SQL"
+      ],
+      "complexity": 8
+    },
+    "last_updated": 1767689254.93348
+  },
+  "Google-Analytics": {
+    "hash": "312361bf42492a2b604f0d1301393f64",
+    "data": {
+      "summary": "The Google-Analytics project focuses on efficiently pulling large volumes of data from Google Analytics using Python scripts that leverage the Google Analytics Reporting API V4 and Data API. The project's complexity lies in handling data without sampling and applying various filters, offering valuable insights. While the structure is organized, improvements in documentation and testing are recommended for enhanced maintainability and reliability.",
+      "tags": [
+        "Python",
+        "Google Analytics Reporting API V4",
+        "Google Analytics Data API",
+        "Data Handling"
+      ],
+      "complexity": 7
+    },
+    "last_updated": 1767689265.256284
+  },
+  "covid19-india-analysis": {
+    "hash": "0d01667bf52f9d15908a2f0a75db5efb",
+    "data": {
+      "summary": "The 'covid19-india-analysis' project utilizes Python with Bokeh for in-depth COVID-19 data analysis, focusing on India and its states. With real-time API integration, the project offers dynamic data processing and visualization, showcasing a sophisticated approach to data presentation. Ongoing maintenance and enhancements by Akash Agrawal ensure the project's technical depth and relevance in providing valuable insights into COVID-19 trends in India.",
+      "tags": [
+        "Python",
+        "Bokeh",
+        "Data Visualization",
+        "Real-time API"
+      ],
+      "complexity": 8
+    },
+    "last_updated": 1767689274.870995
+  },
+  "docs.bokeh.org": {
+    "hash": "880d5f925358258a01c8299964cf8647",
+    "data": {
+      "summary": "The `docs.bokeh.org` project is a static archive of pre-built documentation, primarily managed by Bryan Van de Ven. It utilizes HTML, CSS, and possibly JavaScript, with a focus on version control and content management. The low technical complexity is offset by the repository's efficiency in providing historical documentation versions, enhancing user experience through easy access and tracking of changes.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "Version Control",
+        "Static Content"
+      ],
+      "complexity": 3
+    },
+    "last_updated": 1767689283.1011488
+  }
+}

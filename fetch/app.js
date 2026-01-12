@@ -169,7 +169,58 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const vizCard = document.querySelector('.main-viz');
     if (vizCard) vizCard.classList.add('float-anim');
+
+    // Load Agentic Summaries (AI Council)
+    await loadAgenticSummaries();
 });
+
+async function loadAgenticSummaries() {
+    try {
+        // Look for data.json one level up if not found locally, 
+        // but project-details.json is likely at root.
+        // fetch/ directory structure: root/fetch/index.html
+        // root/project-details.json
+        // So we need to fetch '../project-details.json'
+
+        const response = await fetch('../project-details.json?v=' + new Date().getTime());
+        if (!response.ok) return;
+        const projects = await response.json();
+
+        // Create a map for fast lookup
+        const projectMap = {};
+        projects.forEach(p => projectMap[p.name] = p);
+
+        document.querySelectorAll('.project-card[data-repo]').forEach(card => {
+            const repoName = card.getAttribute('data-repo');
+            const data = projectMap[repoName];
+
+            if (data && data.ai_summary) {
+                // Update Description
+                const descEl = card.querySelector('p');
+                if (descEl) {
+                    descEl.textContent = data.ai_summary;
+                }
+
+                // Update Tags if available and not empty
+                if (data.ai_tags && data.ai_tags.length > 0) {
+                    const tagsContainer = card.querySelector('.project-tags');
+                    if (tagsContainer) {
+                        tagsContainer.innerHTML = data.ai_tags.map((tag, i) =>
+                            `<span class="${i === 0 ? 'highlight-tag' : ''}">${tag}</span>`
+                        ).join('');
+                    }
+                }
+
+                // Add "AI Verified" badge to card
+                card.style.position = 'relative';
+            }
+        });
+
+        console.log('✨ Agentic summaries loaded (Fetch)');
+    } catch (e) {
+        console.warn('Failed to load agentic summaries', e);
+    }
+}
 
 function updateCharts(data) {
     // Update Stats in Hero

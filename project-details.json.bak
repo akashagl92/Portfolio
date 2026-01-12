@@ -1,0 +1,2191 @@
+[
+  {
+    "name": "Portfolio",
+    "fullName": "akashagl92/Portfolio",
+    "description": "Build a portfolio using my github repo",
+    "url": "https://github.com/akashagl92/Portfolio",
+    "homepage": null,
+    "isPrivate": false,
+    "language": "CSS",
+    "languages": {
+      "CSS": 183876,
+      "JavaScript": 173561,
+      "HTML": 157463,
+      "Python": 25376
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-12-19T03:23:05Z",
+    "updatedAt": "2026-01-06T08:32:19Z",
+    "pushedAt": "2026-01-06T08:32:16Z",
+    "topics": [],
+    "readme": "# Akash Agrawal - 2025 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **231 commits across 10 repositories** in 2025, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**\u2014all while maintaining rigorous engineering practices.\n\n## \ud83c\udf10 Live Sites\n\n- **General**: [https://akashagl92.github.io/Portfolio/](https://akashagl92.github.io/Portfolio/)\n- **Fetch-tailored**: [https://akashagl92.github.io/Portfolio/fetch/](https://akashagl92.github.io/Portfolio/fetch/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Rather than building features speculatively, each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. The AI Astrology project exemplifies this\u2014running **3+ million chart calculations** and conducting large-scale statistical research that would traditionally require a dedicated data science team was accomplished efficiently through AI-assisted development.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature rather than an afterthought.\n\n---\n\n## Project Deep-Dives\n\n### \ud83d\udd2e AI Astrology Platform (`aistro.ai`)\n**152 commits | Python | [Live Demo](https://aistro-frontend-stage.onrender.com)**\n\n**Research Scale:**\n- **5,885 public figures** from AstroDataBank analyzed\n- **239 countries** studied for geopolitical astrological patterns\n- **3+ million chart calculations** processed using Swiss Ephemeris astronomical API\n- **FDR-corrected significance** (q < 0.001) for statistical rigor\n\n**Technical Architecture:**\n| Component | Technology |\n|-----------|------------|\n| Astronomical Engine | Swiss Ephemeris (industry-standard) |\n| AI Interpretations | Google Gemini API |\n| Knowledge Base | 18 astrology books indexed via RAG |\n| Vector Search | Semantic + Lexical hybrid retrieval |\n| Frontend | Next.js |\n| Backend | FastAPI + PostgreSQL |\n\n**Key Features:**\n- Multi-system support: Western (Tropical), Vedic (Sidereal), Horary\n- Divisional charts (D1-D60), Dasha periods, Yoga detection\n- Mundane astrology for country governance analysis\n- Q&A system with natural language queries\n\n---\n\n### \ud83d\udcc8 Autonomous Trading System (`stock_price_target_modelling`)\n**23 commits | Python | Walk-Forward Validated**\n\n**Performance:** 72.1% XIRR \u2014 a **3.5x improvement over S&P 500 benchmark** (20.5%) using the same cash flows for apples-to-apples comparison.\n\n**Technical Innovation:**\n- **Dual-Track Portfolio**: 10 Stocks + 20 Crypto positions\n- **Market Timing Factors**:\n  - BTC Momentum (20-day returns): Chi-square p=0.0001\n  - VIX Volatility Factor (>25 threshold)\n- **Tiered Allocation**: Forever Holdings (4x), Quality Growth (1.5x), Speculative (0.5x)\n- **Walk-Forward Validation**: Training 2021-2023, OOS 2024-2025\n\n**Automation:**\n- Monthly rebalancing with email-based approval workflow\n- Trend breakdown protection logic\n- Fundamental safeguards (3-month Fund Score smoothing)\n\n---\n\n### \ud83c\udfb9 Sonic Geometry Visualizer (`Music-and-Math`)\n**JavaScript | Zero Dependencies**\n\nMIDI emulator for learning music theory through mathematical visualization of sound.\n\n**Features:**\n1. **Interactive Visualizations**: Oscilloscope, Spectrum Analyzer (FFT), Lissajous Figures, Interference Patterns\n2. **Music Theory Lab**: Circle of Fifths, Harmony Explorer (interval ratios: 3:2, 4:3, 5:4)\n3. **Virtual Instruments**: Polyphonic keyboard, Continuous drone, Dual-voice harmony mode\n\n**Tech Stack:** Pure vanilla JavaScript with Web Audio API and HTML5 Canvas.\n\n---\n\n### \ud83e\udd16 Databricks Genie Integration\n**8 commits | Python + Flask**\n\n- **Multi-Workspace Support**: Connect to multiple Databricks environments\n- **Natural Language \u2192 SQL**: Business questions in plain English via Genie API\n- **Bulk Data Processing**: Excel/CSV enrichment at scale\n- **Multi-Criteria Matching**: Email, Org hierarchy, DHC mapping\n\n---\n\n### \ud83d\udcac VOC & Buyer Journey Chatbot\n**3 commits | LangChain + LangGraph**\n\n**Architecture:** Dual-brain system with SQL Brain (Databricks Genie) + Docs Brain (RAG)\n\n**Tech Stack:**\n- LangChain 0.2+ with LangGraph orchestration\n- Databricks Vector Search + databricks-bge-large-en embeddings\n- LangSmith observability\n- Streamlit UI on Databricks\n\n---\n\n### \ud83d\udcca Marketing Analytics Assistant\n**4 commits | FastAPI + Python**\n\n- Natural language processing for marketing experiment queries\n- Statistical testing: Z-tests, chi-square, binomial, power analysis\n- Automated winner determination with confidence intervals\n- GPT + Gemini for insight generation\n\n---\n\n### \ud83d\udd17 LinkedIn Campaign Measurement (`LinkedIn-API`)\n**3 commits | Python**\n\nAutomated daily campaign stats export via LinkedIn Marketing API with company name resolution and Excel reporting for cross-platform ad measurement.\n\n---\n\n### \ud83d\udcda Philosophy Sage (GraphRAG)\n**7 commits | Neo4j + LangChain**\n\nAI-powered exploration of ancient philosophy texts (Mahabharata, Bhagavad Gita) using:\n- Neo4j knowledge graph for entity relationships across 18 Parvas\n- Vector search hybrid retrieval\n- Sanskrit TTS integration\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **Statistical significance testing** before feature deployment\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: 3M+ calculations that would require dedicated data science teams\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation\n3. **Self-documenting code**: Comprehensive READMEs and architecture docs\n\n---\n\n## Summary Statistics\n\n| Metric | 2025 Value |\n|--------|------------|\n| Total Commits | 231 |\n| Unique Repositories | 10 |\n| Primary Language | Python (83.5%) |\n| Secondary Languages | JavaScript (12.6%), TypeScript (3.9%) |\n| Peak Activity | Aug-Sep (122 commits) |\n\n---\n\n## \ud83d\udee0 Tech Stack\n\n- Vanilla JavaScript (no frameworks)\n- CSS3 with custom properties\n- GitHub Actions for automated daily data updates\n\n## \ud83d\udcc1 Structure\n\n```\n\u251c\u2500\u2500 index.html          \u2192 General portfolio\n\u251c\u2500\u2500 style.css\n\u251c\u2500\u2500 app.js\n\u251c\u2500\u2500 data.json           \u2192 GitHub activity data\n\u251c\u2500\u2500 fetch/              \u2192 Fetch-tailored portfolio\n\u2514\u2500\u2500 scripts/\n    \u2514\u2500\u2500 fetch-github.js \u2192 Data fetcher (GitHub Actions)\n```\n\n## \ud83d\ude80 Development\n\n```bash\n# Start local server (root)\npython3 -m http.server 8080\n\n# Start local server (fetch)\ncd fetch && python3 -m http.server 5500\n\n# Update GitHub stats (requires GITHUB_TOKEN)\nnode scripts/fetch-github.js\n```\n\n## \ud83d\udcdd License\n\nMIT\n",
+    "files": [
+      {
+        "name": ".env.example",
+        "type": "file",
+        "path": ".env.example"
+      },
+      {
+        "name": ".github",
+        "type": "dir",
+        "path": ".github"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "ambience",
+        "type": "dir",
+        "path": "ambience"
+      },
+      {
+        "name": "app.js",
+        "type": "file",
+        "path": "app.js"
+      },
+      {
+        "name": "circle",
+        "type": "dir",
+        "path": "circle"
+      },
+      {
+        "name": "data.json",
+        "type": "file",
+        "path": "data.json"
+      },
+      {
+        "name": "fetch",
+        "type": "dir",
+        "path": "fetch"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "path": "index.html"
+      },
+      {
+        "name": "og-image.png",
+        "type": "file",
+        "path": "og-image.png"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json"
+      },
+      {
+        "name": "project-details.json",
+        "type": "file",
+        "path": "project-details.json"
+      },
+      {
+        "name": "scopely",
+        "type": "dir",
+        "path": "scopely"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "path": "scripts"
+      },
+      {
+        "name": "stellantis",
+        "type": "dir",
+        "path": "stellantis"
+      },
+      {
+        "name": "style.css",
+        "type": "file",
+        "path": "style.css"
+      },
+      {
+        "name": "test_access.txt",
+        "type": "file",
+        "path": "test_access.txt"
+      },
+      {
+        "name": "viant",
+        "type": "dir",
+        "path": "viant"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2026-01-06T08:30:51Z",
+        "message": "fix: Correct calendar loop logic to render current week [skip ci]",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-06T06:22:31Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-06T05:54:40Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-06T05:54:09Z",
+        "message": "fix: Correct data propagation in CI workflow",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-05T04:48:40Z",
+        "message": "fix: Manually inject uniqueReposTotal and bump cache to v14 [skip ci]",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-05T04:34:03Z",
+        "message": "fix: Propagate app.js v13 cache fix to all remaining portfolio pages",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-05T04:30:12Z",
+        "message": "fix: Force data refresh with cache buster query param",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-05T04:24:00Z",
+        "message": "fix: Bump cache to v12 and correct repo count logic",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-05T04:19:03Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-05T04:15:10Z",
+        "message": "feat: Add Scopely portfolio page and fix calendar alignment",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-01T08:49:50Z",
+        "message": "Fix CI: use python fetch script and propagate data",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-04T06:20:45Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-03T06:20:42Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-02T06:22:26Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-01T10:12:42Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      }
+    ],
+    "ai_summary": "Akash Agrawal's 2025 Engineering Portfolio showcases a Data & AI Product Leader adept at blending strategic product thinking with deep technical execution. With 231 commits across 10 repositories, the projects exhibit a unique ability to architect and build production-grade systems that bridge data science research, marketing technology, and agentic AI while maintaining rigorous engineering practices.",
+    "ai_tags": [
+      "Python",
+      "JavaScript",
+      "FastAPI",
+      "Pandas",
+      "Next.js"
+    ],
+    "complexity_score": 8
+  },
+  {
+    "name": "stock_price_target_modelling",
+    "fullName": "akashagl92/stock_price_target_modelling",
+    "description": "Predict tomorrow's S&P 500 index price using historical data. Avoid common issues that make most stock price models overfit in the real world. S&P 500 prices using a package called yfinance. We'll train a random forest model and make predictions using backtesting.  ",
+    "url": "https://github.com/akashagl92/stock_price_target_modelling",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "Python",
+    "languages": {
+      "Python": 2602845,
+      "HTML": 163717,
+      "Shell": 3137
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2024-01-21T21:29:51Z",
+    "updatedAt": "2026-01-01T07:42:53Z",
+    "pushedAt": "2026-01-01T07:42:49Z",
+    "topics": [],
+    "readme": "\n# Autonomous Stock Trading System (v4.0 Optimal)\n\nAn AI-powered autonomous trading system that manages a dual-track portfolio of Stocks and Crypto. It uses a sophisticated multi-tier strategy with **market timing factors** to optimize returns while minimizing risk.\n\n## \ud83d\ude80 Performance Highlights\n\n| Portfolio | XIRR | Final Value | Status |\n|-----------|------|-------------|--------|\n| **AI Strategy (v4.0 Optimal)** | **40.8%** | **$135,497** | \ud83c\udfc6 Winner |\n| Actual Portfolio | 31.2% | $64,925 | |\n| SP500 Benchmark | 20.5% | $53,706 | |\n\n## \ud83c\udfaf Key Features (v4.0)\n\n### Market Timing\n*   **BTC Momentum Factor**: Adjusts allocation based on 20-day Bitcoin returns.\n*   **VIX Volatility Factor**: Reduces allocation when VIX > 25.\n*   **Walk-Forward Validated**: Robust in both training and OOS.\n\n### Core Features\n*   **Dual-Track Portfolio**: Manages 10 Stocks + 20 Crypto positions.\n*   **Automated Execution**: Monthly rebalancing with email-based approval.\n",
+    "files": [
+      {
+        "name": ".DS_Store",
+        "type": "file",
+        "path": ".DS_Store"
+      },
+      {
+        "name": ".env",
+        "type": "file",
+        "path": ".env"
+      },
+      {
+        "name": ".env.template",
+        "type": "file",
+        "path": ".env.template"
+      },
+      {
+        "name": ".github",
+        "type": "dir",
+        "path": ".github"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "__pycache__",
+        "type": "dir",
+        "path": "__pycache__"
+      },
+      {
+        "name": "archive",
+        "type": "dir",
+        "path": "archive"
+      },
+      {
+        "name": "autonomous_system",
+        "type": "dir",
+        "path": "autonomous_system"
+      },
+      {
+        "name": "data",
+        "type": "dir",
+        "path": "data"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "path": "docs"
+      },
+      {
+        "name": "download",
+        "type": "dir",
+        "path": "download"
+      },
+      {
+        "name": "legacy",
+        "type": "dir",
+        "path": "legacy"
+      },
+      {
+        "name": "logs",
+        "type": "dir",
+        "path": "logs"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file",
+        "path": "requirements.txt"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2026-01-01T07:42:49Z",
+        "message": "Fix XIRR source file reference and store final crontab",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-01T07:25:18Z",
+        "message": "Transition to Local Execution: Setup cron jobs, added market logic, paused GH Actions",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-31T11:28:11Z",
+        "message": "Fix KeyError in strategy tiers and correct email status check",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-31T11:10:35Z",
+        "message": "Add Manual Email Test Workflow (Bypasses Date Check)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-31T10:57:57Z",
+        "message": "Deploy V4.0 Optimal Strategy (4.0x GC Boost) with Enhanced Logging and Verification",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-25T16:51:32Z",
+        "message": "Fix: Use centralized RobinhoodBroker in morning_order_verification.py",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-25T07:04:04Z",
+        "message": "Fix: Add default args to RobinhoodBroker and create logs dir in monitor_approvals",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-25T06:31:49Z",
+        "message": "Fix: Sync core/robinhood_broker.py with main version (add default args)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-25T06:23:25Z",
+        "message": "Fix: Remove dead AIPortfolioTracker import causing ModuleNotFoundError",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-24T17:41:53Z",
+        "message": "Fix: Add duplicate date prevention to prevent gaps in daily_snapshots.csv",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-24T06:34:29Z",
+        "message": "Fix: Add write permissions for data persistence in all workflows",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-24T06:14:46Z",
+        "message": "Fix: Add lxml dependency and ensure logs directory exists",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-24T06:01:24Z",
+        "message": "Fix: Correct package name pypfopt -> PyPortfolioOpt",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-24T05:57:25Z",
+        "message": "Fix: Downgrade to Python 3.12 for pypfopt compatibility",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-23T18:00:42Z",
+        "message": "Fix: Align with local Python 3.13 and add TA-Lib system dependencies",
+        "author": "Akash Agrawal"
+      }
+    ],
+    "ai_summary": "AI-powered autonomous trading system with 40.8% XIRR, leveraging multi-tier strategy and market timing factors",
+    "ai_tags": [
+      "Python",
+      "Autonomous Trading",
+      "Portfolio Management"
+    ],
+    "complexity_score": 8
+  },
+  {
+    "name": "aistro.ai",
+    "fullName": "akashagl92/aistro.ai",
+    "description": null,
+    "url": "https://github.com/akashagl92/aistro.ai",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "Python",
+    "languages": {
+      "Python": 4070633,
+      "TypeScript": 1222891,
+      "HTML": 422820,
+      "Shell": 112496,
+      "JavaScript": 7569,
+      "CSS": 3001,
+      "Procfile": 1921,
+      "Roff": 1229
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-03-18T06:19:43Z",
+    "updatedAt": "2025-12-28T20:55:11Z",
+    "pushedAt": "2025-12-28T20:55:08Z",
+    "topics": [],
+    "readme": "# SwissEphemeris-Astrology\n\nA comprehensive astrological analysis platform that combines traditional astrological calculations with modern AI-powered interpretations. The system provides accurate astronomical calculations and delivers personalized astrological insights through an intuitive web interface.\n\n## \ud83d\udcda Documentation\n\n### **Complete Technical Documentation**\n- **`COMPREHENSIVE_DOCUMENTATION.md`** - Complete technical reference (130KB+)\n  - System architecture and design patterns\n  - Frontend and backend implementation details\n  - Database schema and analytics system\n  - Testing strategy and deployment guide\n  - Business model and pricing strategy\n  - Security and privacy compliance\n\n### **Development Resources**\n- **`CONTRIBUTING.md`** - Development guidelines and Cursor agent instructions\n- **`CHANGELOG.md`** - Version history and recent changes\n- **`README.md`** - This file - project overview and quick start\n\n### **For Cursor Agents & Developers**\n**\u26a0\ufe0f IMPORTANT**: Before making any changes, read:\n1. **`COMPREHENSIVE_DOCUMENTATION.md`** - Complete technical reference\n2. **`CONTRIBUTING.md`** - Development guidelines and requirements\n3. Current codebase structure and patterns\n\n**Key Requirements:**\n- Keep documentation updated for any code changes\n- Request privacy policy review for data collection changes\n- Maintain minimal tech debt (no duplicate code)\n- Write comprehensive tests for new functionality\n\n## \ud83c\udf1f Features\n\n### Core Functionality\n- **Multi-System Support**: Western (Tropical), Vedic (Sidereal), and Horary astrology\n- **Precise Calculations**: Industry-standard astronomical calculations for accuracy\n- **AI-Powered Interpretations**: Google Gemini API for intelligent analysis\n- **Interactive Charts**: Visual birth chart representations\n- **Q&A System**: Natural language queries about astrological data\n- **Export Capabilities**: PDF generation with custom branding\n- **Responsive Design**: Mobile-first, accessible interface\n\n### Advanced Features\n- **Mundane Astrology**: Country/entity charts using independence dates for geopolitical analysis\n  - *Coming Soon: Company (IPO dates) and Cryptocurrency (launch dates) entity types*\n- **Divisional Charts**: Complete Vedic divisional chart analysis (D1-D60)\n- **Dasha Periods**: Vimshottari Dasha calculations and interpretations\n- **Transit Analysis**: Current planetary movements and their effects\n- **Aspect Analysis**: Detailed planetary aspect calculations\n- **Yogas Detection**: Vedic yoga identification and analysis\n- **Nakshatra Analysis**: Detailed lunar mansion interpretations\n- **Dosha Analysis**: Astrological affliction detection (Mangal, Saturn, Rahu, etc.)\n- **House Systems**: Multiple house system support\n- **Analytics Tracking**: Comprehensive user interaction analytics\n- **Multi-Channel Sharing**: Social media integration with tracking\n\n## \ud83d\udd2c Research & Scientific Validation\n\nThis platform is backed by **rigorous statistical research** validating astrological principles. Our research applies modern data science methods to test traditional astrological techniques.\n\n### Research Dataset\n- **5,885 public figures** with verified birth data and 4,740 documented life events\n- **239 countries** with independence charts and 7,311 historical events\n\n### Key Scientific Findings\n| Finding | Evidence |\n|---------|----------|\n| **Astrological Correlations** | Statistically significant (q < 0.001 after FDR correction) |\n| **Domain-Specific Patterns** | House 10\u2192career, House 7\u2192relationships validated |\n| **Vedic Techniques** | Doshas (RR up to 2.69), 14 Yoga types, Divisional charts all significant |\n| **Combination Effects** | Synergy ratios up to 48.89x when conditions align |\n| **Predictive ML Models** | 69-85% accuracy in predicting life events |\n| **Temporal Precision** | 50%+ events within 1\u00b0 orb of exact transits |\n\n### \ud83d\udcd6 Complete Research Documentation\n- **[Master Research Documentation](backend/research/reports/COMPREHENSIVE_MASTER_RESEARCH_DOCUMENTATION.md)** - Complete findings, methodology, and statistical analysis\n- **[Research Directory](backend/research/)** - Scripts, data, and reproducible results\n\n## \ud83c\udfd7\ufe0f Architecture\n\n### Technology Stack\n- **Frontend**: Next.js 14, React 18, TypeScript, Tailwind CSS\n- **Backend**: FastAPI, Python 3.10, SQLAlchemy\n- **Database**: PostgreSQL (Production), SQLite (Development)\n- **AI Integration**: Google Gemini API, HuggingFace Inference API\n- **PDF Generation**: ReportLab with custom watermarking\n- **Deployment**: Render.com, Heroku, Railway, PM2\n- **Testing**: Pytest, Jest, GitHub Actions\n\n### System Components\n```\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502                        Client Layer                             \u2502\n\u2502  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510 \u2502\n\u2502  \u2502   Web Browser   \u2502  \u2502   Mobile App    \u2502  \u2502   API Clients   \u2502 \u2502\n\u2502  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                                \u2502\n                                \u25bc\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502                     Next.js Frontend                            \u2502\n\u2502  \u251c\u2500\u2500\u2500 Components (React)                                        \u2502\n\u2502  \u251c\u2500\u2500\u2500 Pages (Next.js routing)                                   \u2502\n\u2502  \u251c\u2500\u2500\u2500 Utilities (TypeScript)                                    \u2502\n\u2502  \u2514\u2500\u2500\u2500 Styles (Tailwind CSS)                                     \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                                \u2502\n                                \u25bc\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502                     FastAPI Backend                             \u2502\n\u2502  \u251c\u2500\u2500\u2500 Route Handlers                                            \u2502\n\u2502  \u251c\u2500\u2500\u2500 Business Logic Services                                   \u2502\n\u2502  \u251c\u2500\u2500\u2500 AI Integration (Gemini + HuggingFace)                     \u2502\n\u2502  \u2514\u2500\u2500\u2500 Data Processing                                           \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n```\n\n## \ud83d\ude80 Quick Start\n\n### Prerequisites\n- Python 3.10+\n- Node.js 18+\n- npm or yarn\n- PostgreSQL (for production)\n\n## \ud83e\uddea Testing\n\n### Comprehensive Testing Strategy\nOur application includes a robust testing framework covering all aspects of functionality, security, and user experience:\n\n- **[Testing Strategy](TESTING_STRATEGY.md)**: Complete testing pyramid including unit, integration, and security tests\n- **[Security Testing](SECURITY_TESTING.md)**: Comprehensive security testing framework with automated vulnerability detection\n- **[UAT Test Plan](UAT_TEST_PLAN.md)**: Detailed User Acceptance Testing scenarios and procedures\n\n### Running Tests\n```bash\n# Run all tests\ncd backend && python run_tests.py\n\n# Run security tests\ncd backend && python run_security_tests.py\n\n# Run frontend tests\nnpm test\n\n# Run specific test categories\npython -m pytest tests/test_security.py -m sql_injection -v\npython -m pytest tests/test_astrology.py -v\nnpm test -- --testNamePattern=\"NatalChartWheel\"\n```\n\n### Installation\n\n1. **Clone the repository**\n   ```bash\n   git clone https://github.com/your-username/SwissEphemeris-Astrology.git\n   cd SwissEphemeris-Astrology\n   ```\n\n2. **Set up the backend**\n   ```bash\n   # Create and activate virtual environment\n   python -m venv venv_py310\n   source venv_py310/bin/activate  # On Windows: venv_py310\\Scripts\\activate\n   \n   # Install dependencies\n   cd backend\n   pip install -r requirements.txt\n   ```\n\n3. **Set up the frontend**\n   ```bash\n   # Install dependencies\n   npm install\n   ```\n\n4. **Environment Configuration**\n   \n   Create `.env` files in both root and backend directories:\n   \n   **Root `.env`:**\n   ```env\n   NEXT_PUBLIC_API_URL=http://localhost:8001\n   ```\n   \n   **Backend `.env`:**\n   ```env\n   DATABASE_URL=sqlite:///./astrology.db\n   EPHEMERIS_PATH=./app/ephe\n   GEMINI_API_KEY=your_gemini_api_key_here\n   SECRET_KEY=your_secret_key_here\n   ```\n\n5. **Download ephemeris files**\n   ```bash\n   cd backend\n   mkdir -p app/ephe\n   # Download ephemeris files for astronomical calculations\n   # Or use the provided download script\n   python download_ephemeris.py\n   ```\n\n### Running the Application\n\n1. **Start the backend server**\n```bash\ncd backend\nsource ../venv_py310/bin/activate\n   python -m uvicorn app.main:app --port 8001 --reload\n```\n\n2. **Start the frontend server**\n```bash\nnpm run dev\n```\n\n3. **Access the application**\n   - Frontend: http://localhost:3000\n   - Backend API: http://localhost:8001\n   - API Documentation: http://localhost:8001/docs\n\n## \ud83d\udcc1 Project Structure\n\n```\nAistro-Astrology/\n\u251c\u2500\u2500 README.md\n\u251c\u2500\u2500 ARCHITECTURE.md\n\u251c\u2500\u2500 DESIGN_GUIDELINES.md\n\u251c\u2500\u2500 package.json\n\u251c\u2500\u2500 next.config.js\n\u251c\u2500\u2500 tailwind.config.js\n\u251c\u2500\u2500 tsconfig.json\n\u251c\u2500\u2500 .env\n\u251c\u2500\u2500 .env.local\n\u251c\u2500\u2500 .gitignore\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 src/                          # Frontend source code\n\u2502   \u251c\u2500\u2500 components/               # React components\n\u2502   \u2502   \u251c\u2500\u2500 ui/                  # Base UI components\n\u2502   \u2502   \u251c\u2500\u2500 charts/              # Chart components\n\u2502   \u2502   \u251c\u2500\u2500 forms/               # Form components\n\u2502   \u2502   \u251c\u2500\u2500 analysis/            # Analysis components\n\u2502   \u2502   \u2514\u2500\u2500 layout/              # Layout components\n\u2502   \u251c\u2500\u2500 pages/                   # Next.js pages\n\u2502   \u2502   \u251c\u2500\u2500 api/                 # API routes\n\u2502   \u2502   \u251c\u2500\u2500 index.tsx            # Home page\n\u2502   \u2502   \u2514\u2500\u2500 chart.tsx            # Chart page\n\u2502   \u251c\u2500\u2500 utils/                   # Utility functions\n\u2502   \u2502   \u251c\u2500\u2500 api.ts               # API client\n\u2502   \u2502   \u251c\u2500\u2500 formatters.ts        # Data formatters\n\u2502   \u2502   \u251c\u2500\u2500 textFormatting.ts    # Text formatting utilities\n\u2502   \u2502   \u2514\u2500\u2500 validators.ts        # Input validation\n\u2502   \u251c\u2500\u2500 types/                   # TypeScript types\n\u2502   \u2502   \u251c\u2500\u2500 chart.ts             # Chart types\n\u2502   \u2502   \u2514\u2500\u2500 api.ts               # API types\n\u2502   \u2514\u2500\u2500 styles/                  # Styling\n\u2502       \u251c\u2500\u2500 globals.css          # Global styles\n\u2502       \u2514\u2500\u2500 components.css       # Component styles\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 backend/                     # Backend source code\n\u2502   \u251c\u2500\u2500 app/\n\u2502   \u2502   \u251c\u2500\u2500 main.py             # FastAPI application\n\u2502   \u2502   \u251c\u2500\u2500 config.py           # Configuration\n\u2502   \u2502   \u251c\u2500\u2500 models/             # Pydantic models\n\u2502   \u2502   \u251c\u2500\u2500 database/           # Database layer\n\u2502   \u2502   \u251c\u2500\u2500 routes/             # API routes\n\u2502   \u2502   \u251c\u2500\u2500 services/           # Business logic\n\u2502   \u2502   \u251c\u2500\u2500 training/           # AI training\n\u2502   \u2502   \u251c\u2500\u2500 utils/              # Utilities\n\u2502   \u2502   \u2514\u2500\u2500 ephe/               # Ephemeris files\n\u2502   \u251c\u2500\u2500 tests/                  # Test suite\n\u2502   \u251c\u2500\u2500 requirements.txt        # Python dependencies\n\u2502   \u2514\u2500\u2500 .env                    # Backend environment\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 .github/                    # GitHub workflows\n\u2502   \u2514\u2500\u2500 workflows/\n\u2502       \u251c\u2500\u2500 deploy.yml          # Deployment workflow\n\u2502       \u2514\u2500\u2500 test.yml            # Testing workflow\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 scripts/                    # Deployment scripts\n\u2502   \u251c\u2500\u2500 deploy.sh              # Deployment script\n\u2502   \u2514\u2500\u2500 backup.sh              # Backup script\n\u2514\u2500\u2500 \n\u2514\u2500\u2500 docs/                      # Documentation\n    \u251c\u2500\u2500 api/                   # API documentation\n    \u251c\u2500\u2500 user-guide/            # User guide\n    \u2514\u2500\u2500 developer-guide/       # Developer guide\n```\n\n## \ud83d\udd27 Configuration\n\n### Environment Variables\n\n#### Frontend Environment Variables\n```env\nNEXT_PUBLIC_API_URL=http://localhost:8001\nNEXT_PUBLIC_BRAND_NAME=\"Aistro Astrology\"\n```\n\n#### Backend Environment Variables\n```env\n# Database\nDATABASE_URL=sqlite:///./astrology.db\nDATABASE_URL_PROD=postgresql://user:password@localhost/astrology\n\n# Ephemeris\nEPHEMERIS_PATH=./app/ephe\n\n# AI Integration\nGEMINI_API_KEY=your_gemini_api_key_here\nDISABLE_AI_INTERPRETATIONS=false\n\n# Security\nSECRET_KEY=your_secret_key_here\nCORS_ORIGINS=[\"http://localhost:3000\"]\n\n# Logging\nLOG_LEVEL=INFO\nLOG_FILE=app.log\n\n# Export\nWATERMARK_TEXT=\"Aistro Astrology\"\n```\n\n### Ephemeris Setup\n\n1. **Download ephemeris files**\n   ```bash\n   cd backend/app/ephe\n   wget https://www.astro.com/ftp/swisseph/ephe/sepl_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/semo_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/seas_18.se1\n   ```\n\n2. **Verify file integrity**\n   ```bash\n   cd backend\n   python -c \"from app.config import validate_ephemeris_files; validate_ephemeris_files()\"\n   ```\n\n## \ud83e\uddea Testing\n\n### Backend Tests\n```bash\ncd backend\nsource ../venv_py310/bin/activate\npython -m pytest tests/ -v\n```\n\n### Frontend Tests\n```bash\nnpm test\n```\n\n### Integration Tests\n```bash\nnpm run test:integration\n```\n\n### Test Coverage\n```bash\n# Backend coverage\ncd backend\npython -m pytest --cov=app tests/\n\n# Frontend coverage\nnpm run test:coverage\n```\n\n## \ud83d\udcca API Documentation\n\n### Core Endpoints\n\n#### Chart Calculation\n```http\nPOST /calculate\nContent-Type: application/json\n\n{\n  \"date\": \"1990-07-12\",\n  \"time\": \"14:30\",\n  \"city\": \"New York\",\n  \"state\": \"NY\",\n  \"country\": \"USA\",\n  \"system\": \"western\"\n}\n```\n\n#### Q&A System\n```http\nPOST /qa/stream?question=What%20is%20my%20life%20purpose&system=vedic\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"transit_data\": { ... }\n}\n```\n\n#### PDF Export\n```http\nPOST /export/chart/pdf\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"birth_details\": { ... }\n}\n```\n\n### Response Format\n```json\n{\n  \"success\": true,\n  \"data\": {\n    // Response data\n  },\n  \"meta\": {\n    \"timestamp\": \"2024-01-08T12:00:00Z\",\n    \"requestId\": \"req_123456\",\n    \"version\": \"1.0.0\"\n  }\n}\n```\n\n## \ud83d\ude80 Deployment\n\n### Production Deployment\n\n1. **Build the application**\n   ```bash\n   npm run build\n   ```\n\n2. **Deploy to Render.com**\n   ```bash\n   # Using the provided deployment script\n   ./scripts/deploy.sh\n   ```\n\n3. **Environment Setup**\n   - Set production environment variables\n   - Configure database connections\n   - Set up SSL certificates\n\n### Container Deployment\n\n1. **Using Heroku**\n```bash\nheroku create your-app-name\nheroku config:set DATABASE_URL=your_db_url\ngit push heroku main\n```\n\n2. **Using Railway**\n```bash\nrailway login\nrailway init\nrailway up\n```\n\n### Manual Deployment\n\n1. **Backend deployment**\n   ```bash\n   cd backend\n   gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker\n   ```\n\n2. **Frontend deployment**\n   ```bash\n   npm run build\n   npm run start\n   ```\n\n## \ud83d\udd12 Security\n\n### Authentication & Authorization\n- JWT token-based authentication\n- Role-based access control\n- Rate limiting on API endpoints\n- Input validation and sanitization\n\n### Data Protection\n- Encrypted database connections\n- Secure API key management\n- CORS configuration\n- Request/response logging\n\n## \ud83d\udcc8 Performance\n\n### Optimization Strategies\n- **Frontend**: Code splitting, image optimization, caching\n- **Backend**: Database indexing, connection pooling, async processing\n- **API**: Response compression, pagination, caching headers\n\n### Monitoring\n- Application performance monitoring\n- Error tracking and logging\n- Database query optimization\n- API response time monitoring\n\n## \ud83e\udd1d Contributing\n\n### Development Workflow\n\n1. **Fork the repository**\n2. **Create a feature branch**\n   ```bash\n   git checkout -b feature/amazing-feature\n   ```\n3. **Make your changes**\n4. **Run tests**\n   ```bash\n   npm test\n   cd backend && python -m pytest\n   ```\n5. **Submit a pull request**\n\n### Code Style Guidelines\n\n#### TypeScript/JavaScript\n- Use TypeScript for type safety\n- Follow ESLint configuration\n- Use Prettier for code formatting\n- Write meaningful variable names\n\n#### Python\n- Follow PEP 8 style guide\n- Use type hints\n- Write docstrings for functions\n- Use meaningful variable names\n\n### Commit Message Format\n```\ntype(scope): description\n\n[optional body]\n\n[optional footer]\n```\n\nExample:\n```\nfeat(qa): add PDF export functionality\n\nAdd PDF export capability to Q&A responses with custom watermarking\nand structured formatting for better readability.\n\nCloses #123\n```\n\n## \ud83d\udcda Documentation\n\n### Available Documentation\n- [Architecture Guide](ARCHITECTURE.md) - System architecture and design\n- [Design Guidelines](DESIGN_GUIDELINES.md) - UI/UX and code style guidelines\n- [API Documentation](docs/api/) - Detailed API reference\n- [User Guide](docs/user-guide/) - End-user documentation\n- [Developer Guide](docs/developer-guide/) - Development setup and guidelines\n\n### Generating Documentation\n```bash\n# API documentation\ncd backend\npython -m app.docs.generate_api_docs\n\n# Code documentation\nnpm run docs:generate\n```\n\n## \ud83d\udc1b Troubleshooting\n\n### Common Issues\n\n#### Ephemeris Files Missing\n```bash\n# Error: Ephemeris files not found\n# Solution: Download ephemeris files\ncd backend/app/ephe\npython ../download_ephemeris.py\n```\n\n#### Database Connection Issues\n```bash\n# Error: Database connection failed\n# Solution: Check database configuration\ncd backend\npython -c \"from app.database import test_connection; test_connection()\"\n```\n\n#### AI Integration Issues\n```bash\n# Error: Gemini API key invalid\n# Solution: Check API key configuration\nexport GEMINI_API_KEY=your_valid_api_key\n```\n\n### Debug Mode\n```bash\n# Enable debug logging\nexport LOG_LEVEL=DEBUG\n\n# Run with debug mode\ncd backend\npython -m uvicorn app.main:app --reload --log-level debug\n```\n\n## \ud83d\udcc4 License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n## \ufffd\ufffd Acknowledgments\n\n- Astronomical calculation libraries for precise calculations\n- Google Gemini team for AI integration\n- Astrological community for domain expertise\n- Open source contributors and maintainers\n\n## \ud83d\udcde Support\n\n### Getting Help\n- \ud83d\udce7 Email: support@aistro.ai\n- \ud83d\udcac Discord: [Join our community](https://discord.gg/astrology)\n- \ud83d\udcd6 Documentation: [docs.aistro.ai](https://docs.aistro.ai)\n- \ud83d\udc1b Issues: [GitHub Issues](https://github.com/akashagl/AI-Astrologer/issues)\n\n### Commercial Support\nFor commercial licensing, custom development, or enterprise support, please contact us at akash.agl92@gmail.com.\n\n---\n\nMade with \u2764\ufe0f by Akash Agrawal and Cursor",
+    "files": [
+      {
+        "name": ".claude",
+        "type": "dir",
+        "path": ".claude"
+      },
+      {
+        "name": ".cursorrules",
+        "type": "file",
+        "path": ".cursorrules"
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "path": ".env.example"
+      },
+      {
+        "name": ".gitattributes",
+        "type": "file",
+        "path": ".gitattributes"
+      },
+      {
+        "name": ".github",
+        "type": "dir",
+        "path": ".github"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": "5",
+        "type": "file",
+        "path": "5"
+      },
+      {
+        "name": "API_KEYS_AND_MODELS.md",
+        "type": "file",
+        "path": "API_KEYS_AND_MODELS.md"
+      },
+      {
+        "name": "ARCHITECTURE.md",
+        "type": "file",
+        "path": "ARCHITECTURE.md"
+      },
+      {
+        "name": "CHANGELOG.md",
+        "type": "file",
+        "path": "CHANGELOG.md"
+      },
+      {
+        "name": "CODE_COVERAGE_ANALYSIS.md",
+        "type": "file",
+        "path": "CODE_COVERAGE_ANALYSIS.md"
+      },
+      {
+        "name": "COMPREHENSIVE_DOCUMENTATION.md",
+        "type": "file",
+        "path": "COMPREHENSIVE_DOCUMENTATION.md"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "COUNTRY_DROPDOWN_IMPLEMENTATION.md",
+        "type": "file",
+        "path": "COUNTRY_DROPDOWN_IMPLEMENTATION.md"
+      },
+      {
+        "name": "COUNTRY_ENTITY_SUPPORT_ANALYSIS.md",
+        "type": "file",
+        "path": "COUNTRY_ENTITY_SUPPORT_ANALYSIS.md"
+      },
+      {
+        "name": "DATABASE_COMPARISON_ANALYSIS.md",
+        "type": "file",
+        "path": "DATABASE_COMPARISON_ANALYSIS.md"
+      },
+      {
+        "name": "DEPLOYMENT_DATABASE_GUIDE.md",
+        "type": "file",
+        "path": "DEPLOYMENT_DATABASE_GUIDE.md"
+      },
+      {
+        "name": "FLEXIBLE_QA_FORMAT_EXAMPLES.md",
+        "type": "file",
+        "path": "FLEXIBLE_QA_FORMAT_EXAMPLES.md"
+      },
+      {
+        "name": "FREE_TIER_OPTIMIZATION_STRATEGY.md",
+        "type": "file",
+        "path": "FREE_TIER_OPTIMIZATION_STRATEGY.md"
+      },
+      {
+        "name": "FRONTEND_MULTILINGUAL_IMPLEMENTATION.md",
+        "type": "file",
+        "path": "FRONTEND_MULTILINGUAL_IMPLEMENTATION.md"
+      },
+      {
+        "name": "GAZA_ADDITION_SUMMARY.md",
+        "type": "file",
+        "path": "GAZA_ADDITION_SUMMARY.md"
+      },
+      {
+        "name": "GAZA_REMOVAL_SUMMARY.md",
+        "type": "file",
+        "path": "GAZA_REMOVAL_SUMMARY.md"
+      },
+      {
+        "name": "HF",
+        "type": "file",
+        "path": "HF"
+      },
+      {
+        "name": "HINDI_INTERPRETATION_IMPROVEMENTS.md",
+        "type": "file",
+        "path": "HINDI_INTERPRETATION_IMPROVEMENTS.md"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "path": "LICENSE"
+      },
+      {
+        "name": "MULTILINGUAL_IMPLEMENTATION_PLAN.md",
+        "type": "file",
+        "path": "MULTILINGUAL_IMPLEMENTATION_PLAN.md"
+      },
+      {
+        "name": "Procfile",
+        "type": "file",
+        "path": "Procfile"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "STRUCTURED_RESPONSE_FRAMEWORK.md",
+        "type": "file",
+        "path": "STRUCTURED_RESPONSE_FRAMEWORK.md"
+      },
+      {
+        "name": "ai-astrologer",
+        "type": "file",
+        "path": "ai-astrologer"
+      },
+      {
+        "name": "ai-astrologer.pub",
+        "type": "file",
+        "path": "ai-astrologer.pub"
+      },
+      {
+        "name": "ai_response_quality_test_1757697498.json",
+        "type": "file",
+        "path": "ai_response_quality_test_1757697498.json"
+      },
+      {
+        "name": "ai_response_quality_test_1757697758.json",
+        "type": "file",
+        "path": "ai_response_quality_test_1757697758.json"
+      },
+      {
+        "name": "analyze_cache_performance.py",
+        "type": "file",
+        "path": "analyze_cache_performance.py"
+      },
+      {
+        "name": "backend",
+        "type": "dir",
+        "path": "backend"
+      },
+      {
+        "name": "backend_response.json",
+        "type": "file",
+        "path": "backend_response.json"
+      },
+      {
+        "name": "backup_project.sh",
+        "type": "file",
+        "path": "backup_project.sh"
+      },
+      {
+        "name": "commit_non_chart_wheel.sh",
+        "type": "file",
+        "path": "commit_non_chart_wheel.sh"
+      },
+      {
+        "name": "comprehensive_model_test_20250905_224142.json",
+        "type": "file",
+        "path": "comprehensive_model_test_20250905_224142.json"
+      },
+      {
+        "name": "content",
+        "type": "dir",
+        "path": "content"
+      },
+      {
+        "name": "debug_info.md",
+        "type": "file",
+        "path": "debug_info.md"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "path": "docs"
+      },
+      {
+        "name": "ecosystem.config.js",
+        "type": "file",
+        "path": "ecosystem.config.js"
+      },
+      {
+        "name": "env.development",
+        "type": "file",
+        "path": "env.development"
+      },
+      {
+        "name": "env.production.template",
+        "type": "file",
+        "path": "env.production.template"
+      },
+      {
+        "name": "env.staging",
+        "type": "file",
+        "path": "env.staging"
+      },
+      {
+        "name": "frontend_multilingual_test_20250905_225640.json",
+        "type": "file",
+        "path": "frontend_multilingual_test_20250905_225640.json"
+      },
+      {
+        "name": "hindi_script_test_results_20250905_223455.json",
+        "type": "file",
+        "path": "hindi_script_test_results_20250905_223455.json"
+      },
+      {
+        "name": "jest.config.js",
+        "type": "file",
+        "path": "jest.config.js"
+      },
+      {
+        "name": "jest.setup.js",
+        "type": "file",
+        "path": "jest.setup.js"
+      },
+      {
+        "name": "jest.setup.ts",
+        "type": "file",
+        "path": "jest.setup.ts"
+      },
+      {
+        "name": "local_backups",
+        "type": "dir",
+        "path": "local_backups"
+      },
+      {
+        "name": "multilingual_implementation_test_20250905_224822.json",
+        "type": "file",
+        "path": "multilingual_implementation_test_20250905_224822.json"
+      },
+      {
+        "name": "multilingual_implementation_test_20250905_225021.json",
+        "type": "file",
+        "path": "multilingual_implementation_test_20250905_225021.json"
+      },
+      {
+        "name": "multilingual_model_comparison_20250905_224030.json",
+        "type": "file",
+        "path": "multilingual_model_comparison_20250905_224030.json"
+      },
+      {
+        "name": "multilingual_poc_results_20250905_223213.json",
+        "type": "file",
+        "path": "multilingual_poc_results_20250905_223213.json"
+      },
+      {
+        "name": "next-env.d.ts",
+        "type": "file",
+        "path": "next-env.d.ts"
+      },
+      {
+        "name": "next.config.js",
+        "type": "file",
+        "path": "next.config.js"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json"
+      },
+      {
+        "name": "pre_commit_audit_report_local_20250905_132003.json",
+        "type": "file",
+        "path": "pre_commit_audit_report_local_20250905_132003.json"
+      },
+      {
+        "name": "public",
+        "type": "dir",
+        "path": "public"
+      },
+      {
+        "name": "render.yaml",
+        "type": "file",
+        "path": "render.yaml"
+      },
+      {
+        "name": "response.json",
+        "type": "file",
+        "path": "response.json"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "path": "scripts"
+      },
+      {
+        "name": "simple_model_comparison_20250905_224242.json",
+        "type": "file",
+        "path": "simple_model_comparison_20250905_224242.json"
+      },
+      {
+        "name": "simple_test_case.py",
+        "type": "file",
+        "path": "simple_test_case.py"
+      },
+      {
+        "name": "src",
+        "type": "dir",
+        "path": "src"
+      },
+      {
+        "name": "start_backend.sh",
+        "type": "file",
+        "path": "start_backend.sh"
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "path": "tests"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "path": "tsconfig.json"
+      },
+      {
+        "name": "tsconfig.tsbuildinfo",
+        "type": "file",
+        "path": "tsconfig.tsbuildinfo"
+      },
+      {
+        "name": "update_admin_routes.py",
+        "type": "file",
+        "path": "update_admin_routes.py"
+      },
+      {
+        "name": "update_database_schema.py",
+        "type": "file",
+        "path": "update_database_schema.py"
+      },
+      {
+        "name": "~",
+        "type": "dir",
+        "path": "~"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2025-12-28T20:55:07Z",
+        "message": "Add Vedic astrology references per reviewer guidance",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T20:39:33Z",
+        "message": "Address reviewer feedback: event examples, power analysis, causality section",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T20:13:55Z",
+        "message": "Embed figures inline within Results section for better readability",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T20:03:33Z",
+        "message": "Generate proper APA v7 formatted Word document with python-docx",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T19:56:13Z",
+        "message": "Add complete APA v7 journal paper draft with figures",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T19:41:55Z",
+        "message": "Minor polish: add power constraints caveat to null findings",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T19:41:09Z",
+        "message": "Apply reviewer feedback: softer language, clearer timing/rate separation",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T19:32:45Z",
+        "message": "Add comprehensive visualizations for validated planet+house findings",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T19:21:42Z",
+        "message": "Complete storyboard documentation with all validated findings",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T19:07:01Z",
+        "message": "Complete Jupiter/Mars validation - ALL 12 houses tested",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T18:56:59Z",
+        "message": "Complete independent planet+house validation for both entities",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T18:36:11Z",
+        "message": "Corrected methodology: Planet+House specificity is key",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-28T18:26:42Z",
+        "message": "CORRECTED: Venus H3 DOES replicate with adequate sample size",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-27T21:54:07Z",
+        "message": "Complete Phase 2 findings in Comprehensive Master Documentation",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-27T21:51:43Z",
+        "message": "Correct misleading 'age dominates' language",
+        "author": "Akash Agrawal"
+      }
+    ],
+    "ai_summary": "Developing a comprehensive astrological analysis platform, aistro.ai, involves a complex system combining traditional astrological calculations with modern AI-powered interpretations. The project features multi-system support, precise calculations, AI-powered interpretations, interactive charts, and advanced astrological analyses. Backed by rigorous statistical research, the platform offers predictive ML models and precise temporal predictions, enhancing user experience and providing a holistic approach to astrological insights.",
+    "ai_tags": [
+      "Python",
+      "JavaScript",
+      "Node.js",
+      "Google Gemini API",
+      "Data Science"
+    ],
+    "complexity_score": 8
+  },
+  {
+    "name": "Music-and-Math",
+    "fullName": "akashagl92/Music-and-Math",
+    "description": "Understanding Music theory through some visualizations",
+    "url": "https://github.com/akashagl92/Music-and-Math",
+    "homepage": null,
+    "isPrivate": false,
+    "language": "JavaScript",
+    "languages": {
+      "JavaScript": 103931,
+      "CSS": 20241,
+      "HTML": 11435
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-12-16T21:56:43Z",
+    "updatedAt": "2025-12-25T08:09:30Z",
+    "pushedAt": "2025-12-25T08:09:26Z",
+    "topics": [],
+    "readme": "# Sonic Geometry: Math x Buffer\n\n**Sonic Geometry** is an interactive web-based visualizer that explores the intersection of Music Theory, Physics of Sound, and Mathematics. It uses the Web Audio API and HTML5 Canvas to provide real-time visualizations of sound waves, frequencies, and harmony.\n\n## \ud83d\ude80 Live Demo\n> [Link to live demo if valid, otherwise omit or use generic placeholder]\n*(Run locally to experience the full audio engine)*\n\n## \u2728 Key Features\n\n### 1. Interactive Visualizations\n- **Oscilloscope (Time Domain)**: Visualize the actual shape of sound waves in real-time.\n- **Spectrum Analyzer (Frequency Domain)**: See the individual frequencies that make up a sound (FFT).\n- **Lissajous Figures (Phase)**: Visualize the relationship between left and right stereo channels (X-Y plot).\n- **Interference Patterns**: See how two waves add up (constructive/destructive interference) to create harmony or dissonance.\n\n### 2. Music Theory Lab\n- **Circle of Fifths**: Interactive clock-face visualization to navigate musical keys by perfect fifths (3:2 ratio).\n- **Harmony Explorer**: Toggle different interval ratios (Unison, Main Third, Perfect Fifth, Octave) to hear and see the math behind consonance and dissonance.\n- **Detuning**: Fine-tune frequencies by cents to create \"beating\" effects.\n\n### 3. Virtual Instruments\n- **Continuous Drone**: A persistent background tone (Drone) that sustains indefinitely for meditative or analytical purposes.\n- **Polyphonic Keyboard**: A fully functional virtual piano that allows you to play chords and melodies on top of the drone.\n- **Dual-Voice Harmony**: When \"Theory Lab\" is enabled, the keyboard plays both a base note and a harmony note simultaneously based on your selected ratio.\n\n### 4. Guided Lessons\n- **Physics of Sound**: Learn about Frequency, Amplitude, and Waveforms.\n- **Harmonics**: Understand the Harmonic Series and Overtones.\n- Interactive overlays guide you through the concepts with hands-on experiments.\n\n## \ud83d\udee0\ufe0f Tech Stack\n- **Core**: Vanilla JavaScript (ES6+)\n- **Audio**: Web Audio API (Oscillators, Analysers, Gain Nodes, Stereo Panner)\n- **Graphics**: HTML5 Canvas API (2D Context)\n- **Styling**: CSS3 (Glassmorphism, Flexbox, Responsive Design)\n- **No external frameworks** (React/Vue/Three.js) - Pure native performance.\n\n## \ud83d\udce6 How to Run\n\n1. **Clone the repository**\n   ```bash\n   git clone https://github.com/akashagl92/Music-and-Math.git\n   cd Music-and-Math\n   ```\n\n2. **Start a local server**\n   Because of CORS policies related to Web Audio/Modules, it's best to run on a local server.\n\n   **Python 3:**\n   ```bash\n   python3 -m http.server 8081\n   # Open http://localhost:8081\n   ```\n\n   **Node.js (http-server):**\n   ```bash\n   npx http-server .\n   # Open the address shown\n   ```\n\n3. **Explore!**\n   Click \"Start Audio\" and verify your volume is up.\n\n## \ud83e\udd1d Contributing\nFeel free to submit issues and enhancement requests.\n\n## \ud83d\udcdd License\n[MIT](LICENSE)\n",
+    "files": [
+      {
+        "name": ".DS_Store",
+        "type": "file",
+        "path": ".DS_Store"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "app.js",
+        "type": "file",
+        "path": "app.js"
+      },
+      {
+        "name": "final_uat_recording.webp",
+        "type": "file",
+        "path": "final_uat_recording.webp"
+      },
+      {
+        "name": "final_uat_screenshot.png",
+        "type": "file",
+        "path": "final_uat_screenshot.png"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "path": "index.html"
+      },
+      {
+        "name": "style.css",
+        "type": "file",
+        "path": "style.css"
+      },
+      {
+        "name": "theory-engine.js",
+        "type": "file",
+        "path": "theory-engine.js"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2025-12-25T08:08:52Z",
+        "message": "Add Circle of Fifths, fix chord highlighting & audio bugs",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-22T07:10:47Z",
+        "message": "Sonic Geometry 2.0: Music Theory Learning System",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-19T02:33:33Z",
+        "message": "Fix audio auto-start issues and refine chord analysis UI",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-18T19:01:40Z",
+        "message": "Fix performance lag, stabilize virtual keyboard, and restore MIDI hardware sync (v90)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-17T00:54:21Z",
+        "message": "Add README",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-12-16T22:00:32Z",
+        "message": "Initial commit of Sonic Geometry",
+        "author": "Akash Agrawal"
+      }
+    ],
+    "ai_summary": "Sonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.",
+    "ai_tags": [
+      "Vanilla JavaScript",
+      "Web Audio API",
+      "HTML5 Canvas",
+      "CSS3",
+      "Music Theory"
+    ],
+    "complexity_score": 8
+  },
+  {
+    "name": "Databricks-Genie-Integration",
+    "fullName": "akashagl92/Databricks-Genie-Integration",
+    "description": null,
+    "url": "https://github.com/akashagl92/Databricks-Genie-Integration",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "Python",
+    "languages": {
+      "Python": 509173,
+      "HTML": 210439,
+      "PowerShell": 7985
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-08-27T16:58:42Z",
+    "updatedAt": "2025-12-18T16:41:43Z",
+    "pushedAt": "2025-12-18T16:41:38Z",
+    "topics": [],
+    "readme": "# Databricks Genie Integration\n\nA comprehensive web application that provides seamless integration between Databricks workspaces and business intelligence tools, enabling powerful data lookup and enrichment capabilities.\n\n## \ud83d\ude80 Features\n\n### Core Functionality\n- **Multi-Workspace Support**: Connect to multiple Databricks workspaces (`corp_int_analytics_prod`, `corp_prod`)\n- **Pre-built Queries**: Access and execute saved queries across workspaces\n- **Natural Language Queries**: Ask business questions in plain English using Databricks Genie AI\n- **Business Intelligence**: Advanced lookup and data enrichment capabilities\n\n### Business Queries\n- **Contact Lookup**: Comprehensive contact and organization information retrieval\n- **Account Lookup**: Detailed account and organization data with contact counts\n- **Account Lookup with Inventory**: Includes product inventory information\n- **Buyer Journey Lookup**: \n  - **Account Lookup**: Lookup Buyer Journey Stage and engagement by Member ID and Product Code(s)\n  - **Contact Lookup**: Lookup Buyer Journey Stage and engagement by Contact Email/ID and Product Code(s)\n  - Supports both single and bulk lookups with Excel/CSV upload\n- **Bulk Processing**: Excel/CSV file upload with automatic data enrichment\n- **DHC/System Mapping**: Hierarchical data mapping for organizational structures\n\n### Data Enrichment Capabilities\n- **Email-based Matching**: Exact and domain-based email matching\n- **Organization Hierarchy**: Member ID, System ID, and DHC mapping\n- **Multi-criteria Matching**: Email, Member Name, System Name, Member ID, System ID\n- **Bulk Data Processing**: Process thousands of records with automatic enrichment\n\n## \ud83d\udee0\ufe0f Technology Stack\n\n- **Backend**: Python Flask\n- **Database**: Databricks SQL\n- **Frontend**: HTML, CSS (Bootstrap), JavaScript\n- **Data Processing**: Pandas, SQL\n- **Authentication**: Databricks Connect\n\n## \ud83d\udccb Prerequisites\n\n- Python 3.8+\n- Databricks workspace access\n- Databricks Connect configured\n- Required Python packages (see requirements.txt)\n\n## \ud83d\ude80 Installation\n\n1. **Clone the repository**\n   ```bash\n   git clone <repository-url>\n   cd databricks-genie-cli\n   ```\n\n2. **Install dependencies**\n   ```bash\n   pip install -r requirements.txt\n   ```\n\n3. **Configure Databricks Connect**\n   ```bash\n   databricks-connect configure\n   ```\n\n4. **Set up environment variables**\n   ```bash\n   # Create .env file with your Databricks configuration\n   DATABRICKS_HOST=your-workspace-url\n   DATABRICKS_TOKEN=your-access-token\n   ```\n\n## \ud83c\udfc3\u200d\u2642\ufe0f Quick Start\n\n1. **Start the application**\n   ```bash\n   python web_app.py\n   ```\n\n2. **Access the web interface**\n   - Open your browser and navigate to `http://localhost:5000`\n   - The application will be available on all network interfaces\n\n3. **Test the connection**\n   - Navigate to the \"Pre-built Queries\" section\n   - Verify connection to both workspaces\n   - Try \"Ask Your Business Question\" to test Genie integration\n\n## \ud83d\udcca Usage\n\n### Pre-built Queries\n- Browse and execute saved queries from both Databricks workspaces\n- View results in a formatted table\n- Export results to Excel/CSV\n\n### Business Queries\n\n#### Individual Lookups\n- **Contact Lookup**: Search by email address or contact ID\n- **Account Lookup**: Search by account ID, member ID, or account name\n- **Account Lookup with Inventory**: Includes product inventory information\n- **Buyer Journey Account Lookup**: \n  - Enter Member ID and select Product Code(s)\n  - Returns: LastUpdatedDate, MemberID, CanonicalID, Product_Code, Total_Engagement, Buyer_Journey_Stage, In Pipeline status\n  - Product codes are dynamically loaded based on available Buyer Journey data for the Member\n- **Buyer Journey Contact Lookup**: \n  - Enter Email Address or Contact ID and optionally select Product Code(s)\n  - Returns: Contact information, MemberID, CanonicalID, Product_Code, Total_Engagement, Buyer_Journey_Stage\n  - If no Product Code specified, returns all products mapped to the contact's member\n\n#### Bulk Processing\n1. **Upload Excel/CSV File**: Support for `.xlsx`, `.xls`, `.csv` files\n2. **Column Mapping**: Automatic suggestion of column mappings\n3. **Data Enrichment**: Automatic enrichment with organizational hierarchy data\n4. **Export Results**: Download enriched data with original columns plus 6 new columns:\n   - Member_ID\n   - Member_Name\n   - System_ID\n   - System_Name\n   - DHC_ID\n   - DHC_Name\n\n### DHC/System Mapping\n- View hierarchical organizational structures\n- Filter by system ID, DHC ID, member ID, or member name\n- Export mapping data for analysis\n\n## \ud83d\udd27 Configuration\n\n### Workspace Configuration\nThe application supports multiple Databricks workspaces:\n- `corp_int_analytics_prod`: Primary internal analytics workspace (formerly `internalanalytics-prod`)\n- `corp_prod`: Production marketing analytics workspace (formerly `marketinganalytics_prod`)\n\n### Column Mapping\nThe system automatically suggests column mappings for common field names:\n- Email: `email`, `email_address`, `emailaddress`\n- Member ID: `member id`, `memberid`, `member`\n- System ID: `system id`, `systemid`, `system`\n- And many more...\n\n## \ud83d\udcc8 Data Flow\n\n1. **File Upload**: User uploads Excel/CSV file\n2. **Validation**: System validates file format and content\n3. **Column Mapping**: Automatic suggestion of column mappings\n4. **Data Processing**: Bulk lookup against Databricks tables\n5. **Enrichment**: Append organizational hierarchy data\n6. **Export**: Download enriched dataset\n\n## \ud83d\udd0d Matching Logic\n\nThe system uses a sophisticated multi-criteria matching algorithm:\n\n1. **Exact Email Match** (Priority 1): Direct email address matching\n2. **Domain Match** (Priority 2): Domain-based matching within same organization\n3. **Member Name Match** (Priority 3): Fuzzy matching on member names\n4. **System Name Match** (Priority 4): Fuzzy matching on system names\n5. **Member ID Match** (Priority 5): Exact member ID matching\n6. **System ID Match** (Priority 6): Exact system ID matching\n\n## \ud83d\udeab Business Rule Filters\n\nThe system applies the following business rules to ensure data quality and compliance:\n\n### Account Filtering\n- **DNU Exclusion**: Accounts with names starting with \"DNU \u2013 \" are excluded from all lookups\n- **Prime Type Filter**: Only accounts with `Prime_Type_Category_Code__c = 1` or NULL are included\n- **Status Filter**: Terminated accounts (`Primary_Status__c = 'Terminated'`) are excluded from all lookups\n\n### Contact Filtering\n- **Organization Association**: Contacts are only shown if they're associated with accounts that pass the above filters\n- **Data Consistency**: Contact counts displayed in account lookups match the actual contacts available for drill-down\n\n### Impact on Results\nThese filters ensure that:\n- Only active, valid accounts are included in search results\n- Contact lookups return relevant, current contact information\n- Data consistency is maintained across all lookup methods\n- Business stakeholders see only actionable, current data\n\n## \ud83e\uddea Testing\n\nRun the test suite:\n```bash\npython test_comprehensive_lookup.py\n```\n\nThe test suite includes:\n- Unit tests for all business logic\n- Integration tests for database connectivity\n- SQL query validation tests\n- Error handling tests\n\n## \ud83d\udcc1 Project Structure\n\n```\ndatabricks-genie-cli/\n\u251c\u2500\u2500 web_app.py                 # Main Flask application\n\u251c\u2500\u2500 business_queries.py        # Business logic and SQL queries\n\u251c\u2500\u2500 excel_upload_handler.py    # Excel/CSV file processing\n\u251c\u2500\u2500 databricks_client.py       # Databricks connection management\n\u251c\u2500\u2500 test_comprehensive_lookup.py  # Test suite\n\u251c\u2500\u2500 templates/\n\u2502   \u2514\u2500\u2500 index.html            # Main web interface\n\u251c\u2500\u2500 static/                   # Static assets\n\u251c\u2500\u2500 exports/                  # Exported files (gitignored)\n\u2514\u2500\u2500 README.md                 # This file\n```\n\n## \ud83d\udd12 Security\n\n- Sensitive configuration files are excluded from version control\n- Databricks tokens are stored securely\n- Input validation and SQL injection protection\n- Secure file upload handling\n\n## \ud83d\udc1b Troubleshooting\n\n### Common Issues\n\n1. **Connection Errors**\n   - Verify Databricks Connect configuration\n   - Check network connectivity\n   - Validate access tokens\n\n2. **File Upload Issues**\n   - Ensure file format is supported (.xlsx, .xls, .csv)\n   - Check file size (max 10MB)\n   - Verify file contains valid data\n\n3. **Column Mapping Issues**\n   - Review column names in uploaded file\n   - Check for special characters or encoding issues\n   - Verify data types\n\n### Debug Mode\nEnable debug mode for detailed logging:\n```bash\nexport FLASK_ENV=development\npython web_app.py\n```\n\n## \ud83e\udd1d Contributing\n\n1. Fork the repository\n2. Create a feature branch\n3. Make your changes\n4. Add tests for new functionality\n5. Submit a pull request\n\n## \ud83d\udcc4 License\n\nThis project is licensed under the MIT License - see the LICENSE file for details.\n\n## \ud83c\udd98 Support\n\nFor support and questions:\n- Create an issue in the repository\n- Contact the development team\n- Check the troubleshooting section\n\n## \ud83d\udd04 Version History\n\n- **v1.0.0**: Initial release with basic functionality\n- **v1.1.0**: Added bulk processing capabilities\n- **v1.2.0**: Enhanced matching algorithms and error handling\n- **v1.3.0**: Added DHC/System mapping features\n- **v1.4.0**: Improved column filtering and duplicate handling\n- **v1.5.0**: Fixed contact lookup functionality and improved business rule compliance\n  - Resolved string conversion bug in contact lookup methods\n  - Added consistent filtering across all lookup methods\n  - Improved JOIN logic to prevent data loss\n  - Enhanced contact count accuracy and drill-down functionality\n- **v1.6.0**: Buyer Journey Lookup and Genie Integration\n  - Added Buyer Journey Account Lookup (single and bulk)\n  - Added Buyer Journey Contact Lookup (single and bulk)\n  - Integrated Databricks Genie for natural language queries\n  - Migrated to new catalog names: `corp_int_analytics_prod`, `corp_prod`\n  - Added MemberID column to Buyer Journey results\n  - Improved product code loading with sorting and loading indicators\n  - Enhanced CSV file handling with BOM detection and delimiter auto-detection\n\n---\n\n**Note**: This application requires proper Databricks workspace access and appropriate permissions to function correctly.\n",
+    "files": [
+      {
+        "name": ".claude",
+        "type": "dir",
+        "path": ".claude"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": "ARCHITECTURE.md",
+        "type": "file",
+        "path": "ARCHITECTURE.md"
+      },
+      {
+        "name": "AZURE_DEVOPS_SETUP.md",
+        "type": "file",
+        "path": "AZURE_DEVOPS_SETUP.md"
+      },
+      {
+        "name": "BUSINESS_WORKFLOW.md",
+        "type": "file",
+        "path": "BUSINESS_WORKFLOW.md"
+      },
+      {
+        "name": "DHC_MAPPING_AND_LIMIT_IMPROVEMENTS.md",
+        "type": "file",
+        "path": "DHC_MAPPING_AND_LIMIT_IMPROVEMENTS.md"
+      },
+      {
+        "name": "GIT_SETUP_SUMMARY.md",
+        "type": "file",
+        "path": "GIT_SETUP_SUMMARY.md"
+      },
+      {
+        "name": "METADATA_CACHE_IMPLEMENTATION.md",
+        "type": "file",
+        "path": "METADATA_CACHE_IMPLEMENTATION.md"
+      },
+      {
+        "name": "PRODUCT_INVENTORY_IMPROVEMENT.md",
+        "type": "file",
+        "path": "PRODUCT_INVENTORY_IMPROVEMENT.md"
+      },
+      {
+        "name": "QUERY_MANAGEMENT_GUIDE.md",
+        "type": "file",
+        "path": "QUERY_MANAGEMENT_GUIDE.md"
+      },
+      {
+        "name": "QUERY_MANAGEMENT_SUMMARY.md",
+        "type": "file",
+        "path": "QUERY_MANAGEMENT_SUMMARY.md"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "WEB_INTERFACE_README.md",
+        "type": "file",
+        "path": "WEB_INTERFACE_README.md"
+      },
+      {
+        "name": "business_interface.py",
+        "type": "file",
+        "path": "business_interface.py"
+      },
+      {
+        "name": "business_queries.py",
+        "type": "file",
+        "path": "business_queries.py"
+      },
+      {
+        "name": "config.py",
+        "type": "file",
+        "path": "config.py"
+      },
+      {
+        "name": "create-azure-devops-repo.ps1",
+        "type": "file",
+        "path": "create-azure-devops-repo.ps1"
+      },
+      {
+        "name": "databricks_client.py",
+        "type": "file",
+        "path": "databricks_client.py"
+      },
+      {
+        "name": "env.template",
+        "type": "file",
+        "path": "env.template"
+      },
+      {
+        "name": "excel_upload_handler.py",
+        "type": "file",
+        "path": "excel_upload_handler.py"
+      },
+      {
+        "name": "genie_client.py",
+        "type": "file",
+        "path": "genie_client.py"
+      },
+      {
+        "name": "genie_prebuilt_insights.py",
+        "type": "file",
+        "path": "genie_prebuilt_insights.py"
+      },
+      {
+        "name": "genie_space_builder.py",
+        "type": "file",
+        "path": "genie_space_builder.py"
+      },
+      {
+        "name": "hell -Command Get-Process python -ErrorAction SilentlyContinue \uf07c Stop-Process -Force",
+        "type": "file",
+        "path": "hell -Command Get-Process python -ErrorAction SilentlyContinue \uf07c Stop-Process -Force"
+      },
+      {
+        "name": "how --name-only 3e6638f",
+        "type": "file",
+        "path": "how --name-only 3e6638f"
+      },
+      {
+        "name": "intelligent_insight_engine.py",
+        "type": "file",
+        "path": "intelligent_insight_engine.py"
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "path": "main.py"
+      },
+      {
+        "name": "metadata_cache_manager.py",
+        "type": "file",
+        "path": "metadata_cache_manager.py"
+      },
+      {
+        "name": "over name matches, fix data format for frontend, add CSV support, and improve Excel file handling\uf022",
+        "type": "file",
+        "path": "over name matches, fix data format for frontend, add CSV support, and improve Excel file handling\uf022"
+      },
+      {
+        "name": "prebuilt_queries.py",
+        "type": "file",
+        "path": "prebuilt_queries.py"
+      },
+      {
+        "name": "query_manager.py",
+        "type": "file",
+        "path": "query_manager.py"
+      },
+      {
+        "name": "query_processor.py",
+        "type": "file",
+        "path": "query_processor.py"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file",
+        "path": "requirements.txt"
+      },
+      {
+        "name": "setup_remote_repo.md",
+        "type": "file",
+        "path": "setup_remote_repo.md"
+      },
+      {
+        "name": "start_web_interface.py",
+        "type": "file",
+        "path": "start_web_interface.py"
+      },
+      {
+        "name": "table_metadata_provider.py",
+        "type": "file",
+        "path": "table_metadata_provider.py"
+      },
+      {
+        "name": "templates",
+        "type": "dir",
+        "path": "templates"
+      },
+      {
+        "name": "web_app.py",
+        "type": "file",
+        "path": "web_app.py"
+      },
+      {
+        "name": "workspace_query_retriever.py",
+        "type": "file",
+        "path": "workspace_query_retriever.py"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2025-12-18T16:38:43Z",
+        "message": "chore: local snapshot commit",
+        "author": "Automation"
+      },
+      {
+        "date": "2025-12-18T16:32:42Z",
+        "message": "Update project files",
+        "author": "Automation"
+      },
+      {
+        "date": "2025-11-17T19:22:01Z",
+        "message": "Merged PR 143304: Initial commit: Firmograph Lookup Tool - Optimized bulk buyer journey lookup...",
+        "author": "Agrawal,Akash"
+      },
+      {
+        "date": "2025-11-17T19:17:26Z",
+        "message": "Merge PR #143304: Optimized bulk buyer journey lookup with security fixes",
+        "author": "Databricks Genie Integration"
+      },
+      {
+        "date": "2025-11-17T19:06:52Z",
+        "message": "Security fixes: Update vulnerable packages and fix XSS vulnerabilities",
+        "author": "Databricks Genie Integration"
+      },
+      {
+        "date": "2025-11-17T18:44:31Z",
+        "message": "Resolve merge conflicts: accept optimized versions with bulk lookup improvements",
+        "author": "Databricks Genie Integration"
+      },
+      {
+        "date": "2025-11-17T18:40:40Z",
+        "message": "Initial commit: Firmograph Lookup Tool - Optimized bulk buyer journey lookup with manual product codes support",
+        "author": "Databricks Genie Integration"
+      },
+      {
+        "date": "2025-11-12T17:04:20Z",
+        "message": "Initial commit: Firmograph Lookup Tool - Clean version without secrets",
+        "author": "Databricks Genie Integration"
+      }
+    ],
+    "ai_summary": "Developed a sophisticated web application, Databricks Genie Integration, facilitating seamless connectivity between Databricks workspaces and business intelligence tools for enhanced data lookup and enrichment capabilities. The project features multi-workspace support, pre-built queries, natural language query support, and advanced data enrichment functionalities, utilizing a technology stack including Python Flask, Databricks SQL, HTML, CSS, JavaScript, Pandas, SQL, and Databricks Connect for authentication.",
+    "ai_tags": [
+      "Python Flask",
+      "Databricks SQL",
+      "Pandas",
+      "Data Processing",
+      "Databricks Connect"
+    ],
+    "complexity_score": 8
+  },
+  {
+    "name": "philosophy-sage",
+    "fullName": "akashagl92/philosophy-sage",
+    "description": "Ancient philosophy sage AI with GraphRAG system to retrieve knowledge across a corpus of philosophical (or religious) scriptures. Essentially, an AI-powered platform for exploring Hindu (and other) scriptures with GraphRAG, Q&A, and Sanskrit chanting",
+    "url": "https://github.com/akashagl92/philosophy-sage",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "TypeScript",
+    "languages": {
+      "TypeScript": 489627,
+      "JavaScript": 465,
+      "CSS": 373
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-11-06T03:36:36Z",
+    "updatedAt": "2025-11-11T02:35:55Z",
+    "pushedAt": "2025-11-11T02:35:51Z",
+    "topics": [],
+    "readme": null,
+    "files": [
+      {
+        "name": ".claude",
+        "type": "dir",
+        "path": ".claude"
+      },
+      {
+        "name": "data",
+        "type": "dir",
+        "path": "data"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "path": "docs"
+      },
+      {
+        "name": "render.yaml",
+        "type": "file",
+        "path": "render.yaml"
+      },
+      {
+        "name": "web",
+        "type": "dir",
+        "path": "web"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2025-11-11T02:35:48Z",
+        "message": "refactor: remove unused code in CytoscapeGraph component",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-11-06T21:34:29Z",
+        "message": "chore: comprehensive codebase cleanup and documentation consolidation",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-11-06T03:41:32Z",
+        "message": "refactor: Convert to monorepo - integrate web directory",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-11-06T03:31:18Z",
+        "message": "feat: Add Ashtavakra Gita corpus and taxonomy",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-11-05T20:50:40Z",
+        "message": "chore: Update web submodule reference",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-11-05T20:50:19Z",
+        "message": "docs: Add comprehensive documentation and prepare for multi-scripture expansion",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-11-05T03:43:21Z",
+        "message": "feat: Implement robust TTS playback and stabilize QA endpoint",
+        "author": "Akash Agrawal"
+      }
+    ],
+    "ai_summary": "The Philosophy-Sage project showcases a modular codebase with recent refactoring, cleanup, and integration efforts. It includes features like the Ashtavakra Gita corpus addition, TTS playback implementation, and monorepo conversion, indicating a focus on technical debt management and feature enhancements. Enhancing documentation, clarifying the technology stack, and emphasizing testing practices are areas for improvement to support project understanding and reliability.",
+    "ai_tags": [
+      "CytoscapeGraph",
+      "TTS playback",
+      "Monorepo",
+      "Code Refactoring",
+      "Feature Enhancement"
+    ],
+    "complexity_score": 7
+  },
+  {
+    "name": "Hindi-Tutor",
+    "fullName": "akashagl92/Hindi-Tutor",
+    "description": "A voice assisted Hindi tutor",
+    "url": "https://github.com/akashagl92/Hindi-Tutor",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "TypeScript",
+    "languages": {
+      "TypeScript": 41790,
+      "HTML": 1446
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-09-24T01:06:51Z",
+    "updatedAt": "2025-09-24T01:07:07Z",
+    "pushedAt": "2025-09-24T01:07:03Z",
+    "topics": [],
+    "readme": "<div align=\"center\">\n<img width=\"1200\" height=\"475\" alt=\"GHBanner\" src=\"https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6\" />\n</div>\n\n# Run and deploy your AI Studio app\n\nThis contains everything you need to run your app locally.\n\nView your app in AI Studio: https://ai.studio/apps/drive/1xu9eTQZjMbNetYCpBagwTzLxGiigd-ei\n\n## Run Locally\n\n**Prerequisites:**  Node.js\n\n\n1. Install dependencies:\n   `npm install`\n2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key\n3. Run the app:\n   `npm run dev`\n",
+    "files": [
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": "App.tsx",
+        "type": "file",
+        "path": "App.tsx"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "components",
+        "type": "dir",
+        "path": "components"
+      },
+      {
+        "name": "hooks",
+        "type": "dir",
+        "path": "hooks"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "path": "index.html"
+      },
+      {
+        "name": "index.tsx",
+        "type": "file",
+        "path": "index.tsx"
+      },
+      {
+        "name": "manifest.json",
+        "type": "file",
+        "path": "manifest.json"
+      },
+      {
+        "name": "metadata.json",
+        "type": "file",
+        "path": "metadata.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json"
+      },
+      {
+        "name": "service-worker.ts",
+        "type": "file",
+        "path": "service-worker.ts"
+      },
+      {
+        "name": "services",
+        "type": "dir",
+        "path": "services"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "path": "tsconfig.json"
+      },
+      {
+        "name": "types.ts",
+        "type": "file",
+        "path": "types.ts"
+      },
+      {
+        "name": "vite.config.ts",
+        "type": "file",
+        "path": "vite.config.ts"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2025-09-24T01:07:03Z",
+        "message": "feat: Initialize Hindi Voice Assistant project",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-09-24T01:06:54Z",
+        "message": "Initial commit",
+        "author": "Akash Agrawal"
+      }
+    ],
+    "ai_summary": "The Hindi-Tutor project is an early-stage initiative to develop a Hindi Voice Assistant for language learners, utilizing TypeScript, React, and Vite for efficient development. Integration with the Gemini API adds complexity, while structured data handling and service workers enhance functionality. The project's README provides clear instructions for local setup and deployment, with room for improvement in detailed documentation, testing, and CI/CD implementation.",
+    "ai_tags": [
+      "TypeScript",
+      "React",
+      "Vite",
+      "Gemini API",
+      "Service Worker"
+    ],
+    "complexity_score": 7
+  },
+  {
+    "name": "LinkedIn-API",
+    "fullName": "akashagl92/LinkedIn-API",
+    "description": null,
+    "url": "https://github.com/akashagl92/LinkedIn-API",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "Python",
+    "languages": {
+      "Python": 36104
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-06-16T21:27:23Z",
+    "updatedAt": "2025-06-16T21:33:38Z",
+    "pushedAt": "2025-06-16T21:33:35Z",
+    "topics": [],
+    "readme": "# LinkedIn-API",
+    "files": [
+      {
+        "name": ".env",
+        "type": "file",
+        "path": ".env"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "company_name_resolver.py",
+        "type": "file",
+        "path": "company_name_resolver.py"
+      },
+      {
+        "name": "linkedin_campaign_stats_20250523_095854.xlsx",
+        "type": "file",
+        "path": "linkedin_campaign_stats_20250523_095854.xlsx"
+      },
+      {
+        "name": "linkedin_excel_export_daily_comprehensive.py",
+        "type": "file",
+        "path": "linkedin_excel_export_daily_comprehensive.py"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2025-06-16T21:33:34Z",
+        "message": "Add files via upload",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-06-16T21:33:02Z",
+        "message": "Add files via upload",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-06-16T21:27:23Z",
+        "message": "Initial commit",
+        "author": "Akash Agrawal"
+      }
+    ],
+    "ai_summary": "The LinkedIn-API project consists of Python scripts like company_name_resolver.py and linkedin_excel_export_daily_comprehensive.py for handling LinkedIn tasks. The codebase lacks details on structure and dependencies, requiring further exploration. Recent commits by Akash Agrawal indicate ongoing development. The project's complexity is uncertain, potentially involving data manipulation and export tasks. Recommendations include improving commit messages, adding documentation, and evaluating frameworks for scalability.",
+    "ai_tags": [
+      "Python",
+      "LinkedIn API",
+      "Data Manipulation"
+    ],
+    "complexity_score": 7
+  },
+  {
+    "name": "voc-buyer-journey-chatbot",
+    "fullName": "akashagl92/voc-buyer-journey-chatbot",
+    "description": "VoC and Buyer Journey Dashboard Chatbot - Production-ready implementation with dual-brain architecture",
+    "url": "https://github.com/akashagl92/voc-buyer-journey-chatbot",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "Python",
+    "languages": {
+      "Python": 100477
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-05-28T18:33:05Z",
+    "updatedAt": "2025-05-28T18:56:13Z",
+    "pushedAt": "2025-05-28T18:56:08Z",
+    "topics": [],
+    "readme": "# VoC and Buyer Journey Dashboard Chatbot\n\nA production-ready chatbot built on Databricks that combines structured data querying (via Genie) with unstructured document retrieval (RAG) to provide comprehensive insights on Voice of Customer and Buyer Journey analytics.\n\n## Architecture Overview\n\nThis chatbot uses a dual-brain architecture:\n- **SQL Brain**: Leverages Databricks Genie Conversation API for structured data queries\n- **Docs Brain**: Uses RAG (Retrieval-Augmented Generation) for unstructured PDF/document queries\n- **Orchestration**: LangGraph manages routing between the two brains and handles complex workflows\n\n## Tech Stack\n\n| Layer | Technology |\n|-------|------------|\n| **Core Framework** | LangChain 0.2+ |\n| **Orchestration** | LangGraph |\n| **Vector Search** | Databricks Vector Search |\n| **SQL Generation** | Databricks Genie Conversation API |\n| **LLM** | DBRX-Instruct (with fallback to GPT-4/Claude 3) |\n| **Embeddings** | databricks-bge-large-en |\n| **Observability** | LangSmith |\n| **Deployment** | Databricks Model Serving |\n| **UI** | Streamlit on Databricks |\n\n## Project Structure\n\n```\n\u251c\u2500\u2500 src/\n\u2502   \u251c\u2500\u2500 agents/           # LangGraph agent definitions\n\u2502   \u251c\u2500\u2500 tools/           # SQL and RAG tool implementations\n\u2502   \u251c\u2500\u2500 data/            # Data ingestion and processing\n\u2502   \u251c\u2500\u2500 models/          # Model configurations and serving\n\u2502   \u2514\u2500\u2500 ui/              # Streamlit interface\n\u251c\u2500\u2500 notebooks/           # Databricks notebooks for development\n\u251c\u2500\u2500 tests/              # Unit and integration tests\n\u251c\u2500\u2500 config/             # Configuration files\n\u251c\u2500\u2500 requirements.txt    # Python dependencies\n\u2514\u2500\u2500 deployment/         # Deployment scripts and configs\n```\n\n## Implementation Phases\n\n### Phase 0: Foundations \u2705\n- [x] Project structure setup\n- [x] LangSmith integration\n- [x] Git repository initialization\n\n### Phase 1: Data Plumbing (Days 1-3)\n- [ ] PDF ingestion pipeline (Bronze \u2192 Silver \u2192 Vector Index)\n- [ ] Lakehouse table preparation for Genie\n- [ ] Vector Search index creation\n\n### Phase 2: Prototype Brains (Days 3-5)\n- [ ] SQL brain with Genie API wrapper\n- [ ] RAG brain with document retrieval\n- [ ] Basic testing and validation\n\n### Phase 3: LangGraph Orchestration (Days 6-7)\n- [ ] State management design\n- [ ] Router implementation\n- [ ] Error handling and retry logic\n\n### Phase 4: Quality Hardening (Week 2)\n- [ ] Guardrails implementation\n- [ ] Offline evaluation setup\n- [ ] Monitoring and alerting\n\n### Phase 5: Deployment (Week 3)\n- [ ] Model Serving endpoint\n- [ ] Streamlit UI\n- [ ] Authentication and security\n\n### Phase 6: Continuous Improvement (Week 4+)\n- [ ] Feedback loops\n- [ ] A/B testing framework\n- [ ] Cost optimization\n\n## Quick Start\n\n1. **Environment Setup**\n   ```bash\n   pip install -r requirements.txt\n   ```\n\n2. **Configure LangSmith**\n   ```bash\n   export LANGCHAIN_TRACING_V2=true\n   export LANGCHAIN_API_KEY=your_langsmith_key\n   export LANGCHAIN_PROJECT=voc-chatbot\n   ```\n\n3. **Run Development Server**\n   ```bash\n   streamlit run src/ui/app.py\n   ```\n\n## Development Guidelines\n\n- All LLM calls use `temperature=0` for deterministic responses\n- Every component is traced through LangSmith\n- SQL queries are validated for safety (no DDL/DML)\n- RAG responses include source citations\n- Genie certified answers are prioritized\n\n## Contributing\n\n1. Create feature branch from `main`\n2. Implement changes with tests\n3. Ensure LangSmith traces are clean\n4. Submit PR with evaluation results\n\n## License\n\nMIT License - see LICENSE file for details ",
+    "files": [
+      {
+        "name": ".cursorrules",
+        "type": "file",
+        "path": ".cursorrules"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "SETUP_FOR_COLLABORATORS.md",
+        "type": "file",
+        "path": "SETUP_FOR_COLLABORATORS.md"
+      },
+      {
+        "name": "TEAM_COLLABORATION_GUIDE.md",
+        "type": "file",
+        "path": "TEAM_COLLABORATION_GUIDE.md"
+      },
+      {
+        "name": "config",
+        "type": "dir",
+        "path": "config"
+      },
+      {
+        "name": "deployment",
+        "type": "dir",
+        "path": "deployment"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "path": "docs"
+      },
+      {
+        "name": "notebooks",
+        "type": "dir",
+        "path": "notebooks"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file",
+        "path": "requirements.txt"
+      },
+      {
+        "name": "src",
+        "type": "dir",
+        "path": "src"
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "path": "tests"
+      },
+      {
+        "name": "verify_setup.py",
+        "type": "file",
+        "path": "verify_setup.py"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2025-05-28T18:55:58Z",
+        "message": "Add Cursor AI collaboration framework - rules, guides, and prompt templates for consistent team development",
+        "author": "Agrawal"
+      },
+      {
+        "date": "2025-05-28T18:48:14Z",
+        "message": "Add collaborator setup guide",
+        "author": "Agrawal"
+      },
+      {
+        "date": "2025-05-28T18:24:01Z",
+        "message": "Initial commit: VoC and Buyer Journey Dashboard Chatbot - Complete production-ready implementation with dual-brain architecture, LangGraph orchestration, Databricks integration, and Streamlit UI",
+        "author": "Agrawal"
+      }
+    ],
+    "ai_summary": "Developed a production-ready VoC and Buyer Journey Dashboard Chatbot on Databricks with a dual-brain architecture integrating Genie for structured data queries and RAG for unstructured document retrieval, orchestrated by LangGraph. The project encompassed complex workflows, LangChain integration, and a Streamlit UI, ensuring efficient data processing and continuous improvement capabilities.",
+    "ai_tags": [
+      "Python",
+      "Databricks",
+      "LangChain",
+      "LangGraph",
+      "Genie Conversation API"
+    ],
+    "complexity_score": 8
+  },
+  {
+    "name": "Marketing-Analytics-Assistant",
+    "fullName": "akashagl92/Marketing-Analytics-Assistant",
+    "description": null,
+    "url": "https://github.com/akashagl92/Marketing-Analytics-Assistant",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "Python",
+    "languages": {
+      "Python": 382300,
+      "JavaScript": 42894,
+      "HTML": 22867,
+      "CSS": 9327
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-03-25T21:55:12Z",
+    "updatedAt": "2025-03-25T21:59:53Z",
+    "pushedAt": "2025-03-25T21:59:50Z",
+    "topics": [],
+    "readme": "# Marketing Analytics Chatbot\n\nAn intelligent chatbot that provides analytics and insights for marketing experiments and campaigns. The chatbot uses natural language processing to understand queries and provides statistical analysis, visualizations, and actionable recommendations.\n\n## Features\n\n- Natural language query processing for marketing analytics\n- Statistical testing and analysis of experiments\n- Interactive visualizations of results\n- Automated insights and recommendations\n- Support for multiple data sources (Databricks, Excel, etc.)\n- Real-time data processing and analysis\n\n## Tech Stack\n\n- FastAPI for the backend API\n- OpenAI GPT and Google Gemini for natural language processing\n- Matplotlib and Seaborn for data visualization\n- Pandas for data manipulation\n- Databricks SQL for data access\n- Python 3.8+ required\n\n## Installation\n\n1. Clone the repository:\n```bash\ngit clone https://github.com/yourusername/vizient-marketing-analytics-chatbot.git\ncd vizient-marketing-analytics-chatbot\n```\n\n2. Create a virtual environment and activate it:\n```bash\npython -m venv venv\nsource venv/bin/activate  # On Windows: venv\\Scripts\\activate\n```\n\n3. Install dependencies:\n```bash\npip install -r requirements.txt\n```\n\n4. Create a `.env` file in the root directory with your API keys:\n```\nOPENAI_API_KEY=your_openai_api_key\nOPENAI_ORG_ID=your_openai_org_id\nGEMINI_API_KEY=your_gemini_api_key\nDATABRICKS_HOST=your_databricks_host\nDATABRICKS_TOKEN=your_databricks_token\n```\n\n## Usage\n\n1. Start the server:\n```bash\nuvicorn app.main:app --reload\n```\n\n2. Open your browser and navigate to:\n```\nhttp://localhost:8000/chat-ui\n```\n\n3. Start asking questions about your marketing data!\n\nExample queries:\n- \"Show me the conversion rate trend over the last 30 days\"\n- \"Compare experiment ABC123 performance with control group\"\n- \"What's our overall engagement rate performance?\"\n- \"Show bounce rate by device type\"\n- \"Analyze revenue trends year to date\"\n\n## Development\n\n- The project follows black code formatting\n- API documentation is available at `/docs` when the server is running\n- Tests can be run using pytest\n- New visualizations can be added in the `app/utils/visualization.py` file\n- Statistical tests are implemented in `app/services/marketing_analytics_service.py`\n\n## Contributing\n\n1. Fork the repository\n2. Create a feature branch\n3. Commit your changes\n4. Push to the branch\n5. Create a Pull Request\n\n## License\n\nThis project is proprietary and confidential. All rights reserved.\n\n## Table of Contents\n\n1. [Project Overview](#project-overview)\n2. [Project Structure](#project-structure)\n3. [Data Flow Architecture](#data-flow-architecture)\n4. [Statistical Methodology](#statistical-methodology)\n5. [Development Guidelines](#development-guidelines)\n6. [API Documentation](#api-documentation)\n7. [Frontend Documentation](#frontend-documentation)\n8. [Deployment Instructions](#deployment-instructions)\n\n## Project Overview\n\nThe Vizient Marketing Analytics Chatbot is designed to analyze marketing experiments and experiences, providing statistical insights and visualizations. The system connects to Databricks for data retrieval, processes the data using robust statistical methods, and presents the results through a conversational interface powered by AI models (OpenAI GPT and Google Gemini).\n\n### Key Features\n\n- **Experiment Analysis**: Statistical testing of A/B experiments with multiple variants\n- **Experience Analysis**: Segment-level performance analysis for single-variant experiences\n- **Statistical Rigor**: Multiple statistical tests with power analysis\n- **Conversational Interface**: Natural language interaction for data analysis\n- **Visualizations**: Chart generation for data presentation\n\n## Project Structure\n\n```\nVizient Marketing Analytics Chatbot/\n\u251c\u2500\u2500 app/                        # Main application code\n\u2502   \u251c\u2500\u2500 __init__.py             # Package initialization\n\u2502   \u251c\u2500\u2500 main.py                 # FastAPI application entry point\n\u2502   \u251c\u2500\u2500 api/                    # API endpoints\n\u2502   \u2502   \u251c\u2500\u2500 __init__.py\n\u2502   \u2502   \u251c\u2500\u2500 routes.py           # Combined router configuration\n\u2502   \u2502   \u251c\u2500\u2500 chat_router.py      # Chat endpoint implementation\n\u2502   \u2502   \u2514\u2500\u2500 analytics_router.py # Analytics endpoint implementation\n\u2502   \u251c\u2500\u2500 core/                   # Core application components\n\u2502   \u2502   \u251c\u2500\u2500 __init__.py\n\u2502   \u2502   \u2514\u2500\u2500 config.py           # Application configuration\n\u2502   \u251c\u2500\u2500 models/                 # Data models\n\u2502   \u2502   \u251c\u2500\u2500 __init__.py\n\u2502   \u2502   \u2514\u2500\u2500 schemas.py          # Pydantic models for request/response\n\u2502   \u251c\u2500\u2500 services/               # Service layer\n\u2502   \u2502   \u251c\u2500\u2500 __init__.py\n\u2502   \u2502   \u251c\u2500\u2500 ai_service.py       # AI model integration (GPT, Gemini)\n\u2502   \u2502   \u2514\u2500\u2500 databricks_service.py # Databricks data retrieval and processing\n\u2502   \u2514\u2500\u2500 utils/                  # Utility functions\n\u2502       \u251c\u2500\u2500 __init__.py\n\u2502       \u2514\u2500\u2500 stats_utils.py      # Statistical analysis utilities\n\u251c\u2500\u2500 static/                     # Static assets\n\u2502   \u251c\u2500\u2500 styles.css              # CSS styles\n\u2502   \u251c\u2500\u2500 chat.js                 # Chat interface JavaScript\n\u2502   \u251c\u2500\u2500 script.js               # General JavaScript\n\u2502   \u2514\u2500\u2500 js/                     # JavaScript modules\n\u2502       \u2514\u2500\u2500 chart-loader.js     # Chart generation utilities\n\u251c\u2500\u2500 templates/                  # HTML templates\n\u2502   \u251c\u2500\u2500 chat.html               # Chat interface template\n\u2502   \u251c\u2500\u2500 stats.html              # Statistical analysis interface\n\u2502   \u2514\u2500\u2500 index.html              # Main page template\n\u251c\u2500\u2500 cache/                      # Cache directory for conversations and data\n\u251c\u2500\u2500 run.py                      # Server startup script\n\u2514\u2500\u2500 requirements.txt            # Python dependencies\n```\n\n### Critical Files and Their Purpose\n\n- **app/main.py**: FastAPI application configuration, middleware setup, and route registration\n- **app/api/chat_router.py**: Implementation of the chat endpoint for AI interaction\n- **app/services/databricks_service.py**: Core data retrieval and statistical analysis logic\n- **app/services/ai_service.py**: Integration with AI models for generating responses\n- **static/chat.js**: Frontend logic for the chat interface\n- **templates/chat.html**: HTML template for the chat interface\n\n## Data Flow Architecture\n\nThe application follows a structured data flow:\n\n1. **User Request**: User submits a query through the chat interface\n2. **API Processing**: The chat endpoint receives the request\n3. **Data Retrieval**: The system fetches relevant data from Databricks\n4. **Statistical Analysis**: The data is processed using statistical methods\n5. **AI Processing**: The processed data and user query are sent to the AI model\n6. **Response Generation**: The AI model generates a response based on the data and query\n7. **Response Delivery**: The response is returned to the user interface\n\n### Detailed Flow Diagram\n\n```\nUser Query \u2192 FastAPI Endpoint \u2192 Databricks Data Retrieval \u2192 Statistical Processing \u2192 \nAI Model Processing \u2192 Response Formatting \u2192 User Interface\n```\n\n### Key Components Interaction\n\n- **Frontend (chat.js)** sends requests to the **/chat** endpoint\n- **chat_router.py** processes requests and calls **databricks_service.py** for data\n- **databricks_service.py** retrieves and processes data, performing statistical analysis\n- **ai_service.py** generates responses using the processed data\n- **chat_router.py** returns the response to the frontend\n\n## Statistical Methodology\n\nThe application employs a robust statistical methodology to analyze marketing experiments and experiences.\n\n### Experiment vs Experience\n\n- **Experiment**: A test with multiple variants (e.g., A/B test) where we compare performance between variants\n- **Experience**: A single-variant implementation (no A/B testing) where we analyze segment-level performance\n\n### Statistical Tests\n\nThe system performs multiple statistical tests to ensure robust results:\n\n1. **Binomial Test** (scipy.stats.binomtest)\n   - Purpose: Tests if the variant's click rate is statistically different from the control's click rate\n   - Null Hypothesis: The variant's click rate is equal to the control's click rate\n   - Alternative Hypothesis: The variant's click rate is different from the control's click rate (two-tailed)\n   - Best used for: Direct comparison of conversion rates with a known baseline\n\n2. **Z-Test for Proportions**\n   - Purpose: Tests if the difference between two proportions is statistically significant\n   - Formula: z = (p\u2081 - p\u2082) / sqrt(p\u0302(1-p\u0302)(1/n\u2081 + 1/n\u2082)), where p\u0302 is the pooled proportion\n   - Null Hypothesis: There is no difference between the two proportions\n   - Alternative Hypothesis: The proportions are different (two-tailed)\n   - Best used for: Large sample sizes (n > 30)\n\n3. **Chi-Square Test** (scipy.stats.chi2_contingency)\n   - Purpose: Tests if there is a significant association between two categorical variables\n   - Null Hypothesis: There is no association between variant and click behavior\n   - Alternative Hypothesis: There is an association between variant and click behavior\n   - Best used for: Comparing multiple variants or when analyzing contingency tables\n\n4. **Post-hoc Power Analysis**\n   - Purpose: Determines if the test had sufficient statistical power to detect the observed effect\n   - Formula: Based on observed effect size, sample size, and significance level (\u03b1 = 0.05)\n   - Interpretation: Power \u2265 0.8 indicates sufficient statistical power (80% chance of detecting a true effect)\n   - Importance: Low power increases the risk of Type II errors (false negatives)\n\n### Significance and Winner Determination\n\n- A result is considered \"significant\" if at least one test shows significance (p < 0.05)\n- Significance levels are determined by how many tests agree:\n  * High: All three tests show significance (p < 0.05)\n  * Medium: Two tests show significance\n  * Low: Only one test shows significance\n  * None: No tests show significance\n- A variant is considered a \"winner\" only if:\n  1. It shows statistical significance (p < 0.05 in at least one test)\n  2. It has sufficient statistical power (power \u2265 0.8)\n  3. It shows a positive lift compared to the control\n\n### Control Group Selection\n\nFor each experiment and segment, the control group is determined as follows:\n- If 'BAU' variant exists, it is used as the control\n- If no 'BAU' but 'Var 1' exists with other variants, 'Var 1' is used as control\n- Otherwise, the first available variant is used as control\n\n### Single-Variant Experience Analysis\n\nFor single-variant experiences, the system:\n- Calculates click rates for each segment\n- Computes 95% confidence intervals for each segment's click rate\n- Identifies best and worst performing segments\n- Calculates relative difference between segments\n- Determines if confidence intervals overlap to assess statistical significance\n\n## Development Guidelines\n\nTo ensure the stability and reliability of the application, follow these guidelines when making changes:\n\n### Critical Rules\n\n1. **Never modify the statistical testing methodology without thorough validation**\n2. **Always maintain backward compatibility with existing data structures**\n3. **Document all changes thoroughly before implementation**\n4. **Test all changes against real data before deployment**\n5. **Preserve the existing API contracts for frontend-backend communication**\n\n### Change Management Process\n\n1. **Document the proposed change** with clear rationale\n2. **Explain the impact** on existing functionality\n3. **Provide before/after examples** to illustrate the change\n4. **Get explicit approval** before implementing the change\n5. **Implement with comprehensive error handling**\n6. **Test thoroughly** with real data\n7. **Deploy incrementally** if possible\n\n### Areas Requiring Special Caution\n\n1. **Statistical Testing Logic**: Changes may affect interpretation of results\n2. **Databricks Integration**: Data retrieval and processing are critical\n3. **AI Model Integration**: Changes may affect response quality\n4. **Frontend-Backend Communication**: API changes can break the UI\n5. **Caching Mechanism**: Changes may affect performance\n\n## API Documentation\n\n### Chat Endpoint\n\n```\nPOST /chat\n```\n\nRequest Body:\n```json\n{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"string\"\n    }\n  ],\n  \"conversation_id\": \"string\",\n  \"model\": \"gpt\"\n}\n```\n\nResponse Body:\n```json\n{\n  \"response\": \"string\",\n  \"conversation_id\": \"string\",\n  \"query_time\": 0\n}\n```\n\n### Debug Stats Endpoint\n\n```\nGET /debug/stats\n```\n\nResponse: Raw statistical analysis data\n\n## Frontend Documentation\n\n### Chat Interface\n\nThe chat interface is implemented in `static/chat.js` and `templates/chat.html`. Key features:\n\n- **Message Submission**: Form submission via button or Enter key\n- **Markdown Rendering**: Uses markdown-it for formatting responses\n- **Chart Rendering**: Supports chart generation via Chart.js\n- **Error Handling**: Graceful handling of server errors\n- **Loading States**: Visual feedback during processing\n\n### Key JavaScript Functions\n\n- **appendMessage(role, content)**: Adds a message to the chat interface\n- **setLoading(loading)**: Manages loading state during requests\n- **startNewConversation()**: Resets the conversation\n\n## Deployment Instructions\n\n1. Install dependencies: `pip install -r requirements.txt`\n2. Configure environment variables (see Configuration section)\n3. Start the server: `python run.py` or `uvicorn app.main:app --host 0.0.0.0 --port 8000`\n\n### Configuration\n\nRequired environment variables:\n- `DATABRICKS_SERVER_HOST`: Databricks server hostname\n- `DATABRICKS_ACCESS_TOKEN`: Databricks access token\n- `DATABRICKS_HTTP_PATH`: Databricks HTTP path\n- `OPENAI_API_KEY`: OpenAI API key\n- `OPENAI_ORG_ID`: OpenAI organization ID\n- `GEMINI_API_KEY`: Google Gemini API key\n\n---\n\n## Maintenance Guidelines\n\n### Updating Dependencies\n\nWhen updating dependencies, always:\n1. Test thoroughly with the new versions\n2. Document any breaking changes\n3. Update the requirements.txt file with specific versions\n\n### Troubleshooting\n\nCommon issues and solutions:\n- **Server Timeout**: Check Databricks connection and query complexity\n- **AI Model Errors**: Verify API keys and request format\n- **Statistical Analysis Errors**: Check data format and sample sizes\n- **Frontend Display Issues**: Check browser console for JavaScript errors\n",
+    "files": [
+      {
+        "name": ".cursor",
+        "type": "dir",
+        "path": ".cursor"
+      },
+      {
+        "name": ".cursorrules",
+        "type": "file",
+        "path": ".cursorrules"
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "path": ".env.example"
+      },
+      {
+        "name": ".env.template",
+        "type": "file",
+        "path": ".env.template"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "app",
+        "type": "dir",
+        "path": "app"
+      },
+      {
+        "name": "debug_databricks.py",
+        "type": "file",
+        "path": "debug_databricks.py"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "path": "docs"
+      },
+      {
+        "name": "main.py.bak",
+        "type": "file",
+        "path": "main.py.bak"
+      },
+      {
+        "name": "readme.md",
+        "type": "file",
+        "path": "readme.md"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file",
+        "path": "requirements.txt"
+      },
+      {
+        "name": "run.py",
+        "type": "file",
+        "path": "run.py"
+      },
+      {
+        "name": "run_server.py",
+        "type": "file",
+        "path": "run_server.py"
+      },
+      {
+        "name": "simplified_main.py",
+        "type": "file",
+        "path": "simplified_main.py"
+      },
+      {
+        "name": "static",
+        "type": "dir",
+        "path": "static"
+      },
+      {
+        "name": "templates",
+        "type": "dir",
+        "path": "templates"
+      },
+      {
+        "name": "test_experiment_query.py",
+        "type": "file",
+        "path": "test_experiment_query.py"
+      },
+      {
+        "name": "test_server.py",
+        "type": "file",
+        "path": "test_server.py"
+      },
+      {
+        "name": "test_statistical_analysis.py",
+        "type": "file",
+        "path": "test_statistical_analysis.py"
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "path": "tests"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2025-03-25T21:59:50Z",
+        "message": "Update readme.md",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2025-03-25T21:53:47Z",
+        "message": "Initial commit: Marketing Analytics Chatbot",
+        "author": "Agrawal"
+      },
+      {
+        "date": "2025-03-08T07:29:39Z",
+        "message": "fix: Modified SQL query to show all segments by restructuring joins and filters. Improved click counting logic to handle NULL values correctly. App revamped and stable",
+        "author": "Agrawal"
+      },
+      {
+        "date": "2025-03-05T04:40:35Z",
+        "message": "Initial commit: Stable version with business-friendly summary of winning variants",
+        "author": "Agrawal"
+      }
+    ],
+    "ai_summary": "The Vizient Marketing Analytics Chatbot project integrates natural language processing, statistical analysis, and visualizations to provide marketing insights. Utilizing FastAPI, OpenAI GPT, Google Gemini, Matplotlib, Pandas, and Databricks SQL, the chatbot offers real-time data processing, multiple data source support, and business-friendly summaries. The project's technical complexity lies in its AI integration, statistical testing, and real-time analysis, requiring API key setup and visualization capabilities. Recent commits show ongoing development, with a focus on improving project documentation and functionality.",
+    "ai_tags": [
+      "FastAPI",
+      "OpenAI GPT",
+      "Matplotlib",
+      "Pandas",
+      "Databricks SQL"
+    ],
+    "complexity_score": 8
+  },
+  {
+    "name": "Google-Analytics",
+    "fullName": "akashagl92/Google-Analytics",
+    "description": "Google Analytics Reporting API V4 on Python to pull rows more than 10000 rows",
+    "url": "https://github.com/akashagl92/Google-Analytics",
+    "homepage": null,
+    "isPrivate": false,
+    "language": "Python",
+    "languages": {
+      "Python": 13042
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2021-10-26T14:46:08Z",
+    "updatedAt": "2021-10-26T14:54:40Z",
+    "pushedAt": "2023-02-24T21:29:38Z",
+    "topics": [],
+    "readme": "# Google-Analytics UA\nGoogle Analytics Reporting API V4 on Python to pull more than 10000 rows\n\n# Google-Analytics GA4\nGoogle Analytics Data API is used to pull data using just a regular filter (ga4_data_pull.py) and then with different types of filters with and_filter and or_filter (ga4_data_pull_multiple_filters.py) over 100,000 rows and without data sampling\n",
+    "files": [
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "ga4_data_pull.py",
+        "type": "file",
+        "path": "ga4_data_pull.py"
+      },
+      {
+        "name": "ga4_data_pull_multiple_filters.py",
+        "type": "file",
+        "path": "ga4_data_pull_multiple_filters.py"
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "path": "main.py"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2023-02-24T21:29:38Z",
+        "message": "Update README.md",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2023-02-24T21:29:11Z",
+        "message": "Update README.md",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2023-02-24T21:28:32Z",
+        "message": "Update README.md",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2023-02-23T20:11:16Z",
+        "message": "Rename ga4_data_pull_multiple_filters to ga4_data_pull_multiple_filters.py",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2023-02-23T20:10:58Z",
+        "message": "Update ga4_data_pull_multiple_filters",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2023-02-23T20:09:31Z",
+        "message": "Create ga4_data_pull_multiple_filters",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2023-02-23T17:49:11Z",
+        "message": "Update ga4_data_pull.py",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2023-02-10T21:09:38Z",
+        "message": "Create ga4_data_pull.py",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2021-10-26T14:54:37Z",
+        "message": "Update README.md",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2021-10-26T14:54:22Z",
+        "message": "Create main.py",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2021-10-26T14:46:09Z",
+        "message": "Initial commit",
+        "author": "Akash Agrawal"
+      }
+    ],
+    "ai_summary": "Engineered a robust Google Analytics data pipeline capable of bypassing API sampling limits to extract granular datasets with over 100,000 rows. Features automated pagination, broken-down dimension filtering, and resilient error handling for enterprise-scale data analysis.",
+    "ai_tags": [
+      "Python",
+      "Data Engineering",
+      "Google Analytics API",
+      "ETL"
+    ],
+    "complexity_score": 7
+  },
+  {
+    "name": "covid19-india-analysis",
+    "fullName": "akashagl92/covid19-india-analysis",
+    "description": null,
+    "url": "https://github.com/akashagl92/covid19-india-analysis",
+    "homepage": null,
+    "isPrivate": false,
+    "language": "HTML",
+    "languages": {
+      "HTML": 798388,
+      "Python": 154246
+    },
+    "stars": 1,
+    "forks": 0,
+    "createdAt": "2020-04-25T17:32:12Z",
+    "updatedAt": "2021-04-08T23:17:00Z",
+    "pushedAt": "2021-04-08T23:16:58Z",
+    "topics": [],
+    "readme": "# covid19-india-analysis\n\nThe dashboard on Covid19 Analysis, specific to India and Indian states, is built to allow better visual comprehension of progress and updates in COVID19 cases in each state which in turn allows for better comparison between the states. With the newly discovered [Bokeh](https://bokeh.org/) library, this dashboard is completely built on Python.\n\nThe data source of the dashboard is as follows:\n\n  Cases, Deaths and Recovered Data - (https://api.rootnet.in/covid19-in/stats/history)\n  \n  Tests Data - (https://api.rootnet.in/covid19-in/stats/testing/raw)\n  \n Example of one of the charts from Dashboard\n  \n ![New Confirmed Cases Trajectory - Statewise](https://github.com/akashagl92/covid19-india-analysis/blob/master/covid19-india/static/covid19-india-og.png)\n",
+    "files": [
+      {
+        "name": "Coronavirus_realtime_api.py",
+        "type": "file",
+        "path": "Coronavirus_realtime_api.py"
+      },
+      {
+        "name": "Coronavirus_realtime_india.py",
+        "type": "file",
+        "path": "Coronavirus_realtime_india.py"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "covid19-app",
+        "type": "dir",
+        "path": "covid19-app"
+      },
+      {
+        "name": "covid19-india",
+        "type": "dir",
+        "path": "covid19-india"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2021-04-08T23:16:58Z",
+        "message": "Attempt to fix an error",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2021-04-08T22:46:17Z",
+        "message": "Added a missed paranthesis",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2021-04-08T22:39:42Z",
+        "message": "Replaced astype('int64') with np.int64()",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2021-01-25T02:30:17Z",
+        "message": "Corrected duplicate state names",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2020-11-02T19:06:06Z",
+        "message": "Correlation change - Daily Tests Vs Daily cases",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2020-07-26T11:10:22Z",
+        "message": "Consolidated Telengana state data",
+        "author": "akashagl92"
+      },
+      {
+        "date": "2020-07-24T20:29:08Z",
+        "message": "Corrected state duplicates in Statewise tabs",
+        "author": "akashagl92"
+      },
+      {
+        "date": "2020-07-24T20:25:24Z",
+        "message": "Added Footer text above social media icons",
+        "author": "akashagl92"
+      },
+      {
+        "date": "2020-07-22T15:01:37Z",
+        "message": "Changed \"NewConfirmedCases\" to \"yhat\"",
+        "author": "akashagl92"
+      },
+      {
+        "date": "2020-07-21T21:55:58Z",
+        "message": "Added footer with social media icons",
+        "author": "akashagl92"
+      },
+      {
+        "date": "2020-07-20T09:51:27Z",
+        "message": "Added extra line break ",
+        "author": "akashagl92"
+      },
+      {
+        "date": "2020-07-20T09:47:51Z",
+        "message": "Updated Cases Trajectory tab",
+        "author": "akashagl92"
+      },
+      {
+        "date": "2020-07-20T08:19:29Z",
+        "message": "Merged misspelt states on JSON data of API",
+        "author": "akashagl92"
+      },
+      {
+        "date": "2020-05-21T08:10:06Z",
+        "message": "Improvements",
+        "author": "akashagl92"
+      },
+      {
+        "date": "2020-05-21T08:01:24Z",
+        "message": "Updated the legend in Ascending order for states",
+        "author": "akashagl92"
+      }
+    ],
+    "ai_summary": "The 'covid19-india-analysis' project utilizes Python with Bokeh for in-depth COVID-19 data analysis, focusing on India and its states. With real-time API integration, the project offers dynamic data processing and visualization, showcasing a sophisticated approach to data presentation. Ongoing maintenance and enhancements by Akash Agrawal ensure the project's technical depth and relevance in providing valuable insights into COVID-19 trends in India.",
+    "ai_tags": [
+      "Python",
+      "Bokeh",
+      "Data Visualization",
+      "Real-time API"
+    ],
+    "complexity_score": 8
+  },
+  {
+    "name": "docs.bokeh.org",
+    "fullName": "akashagl92/docs.bokeh.org",
+    "description": "Published built static docs",
+    "url": "https://github.com/akashagl92/docs.bokeh.org",
+    "homepage": null,
+    "isPrivate": false,
+    "language": null,
+    "languages": {
+      "HTML": 653167365,
+      "JavaScript": 209607358,
+      "CSS": 879489
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2020-04-27T14:50:07Z",
+    "updatedAt": "2020-04-27T14:50:11Z",
+    "pushedAt": "2019-11-04T05:45:26Z",
+    "topics": [],
+    "readme": "# docs.bokeh.org\n\nThis repository holds a static archive of published already-built docs. Issue for docs problems or features should be submitted in the [main repository](https://github.com/bokeh/bokeh).\n",
+    "files": [
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "path": "LICENSE"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "en",
+        "type": "dir",
+        "path": "en"
+      },
+      {
+        "name": "robots.txt",
+        "type": "file",
+        "path": "robots.txt"
+      },
+      {
+        "name": "sitemap_index.xml",
+        "type": "file",
+        "path": "sitemap_index.xml"
+      },
+      {
+        "name": "static",
+        "type": "dir",
+        "path": "static"
+      },
+      {
+        "name": "versions.json",
+        "type": "file",
+        "path": "versions.json"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2019-11-04T05:45:18Z",
+        "message": "Merge branch 'master' of github.com:bokeh/docs.bokeh.org",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-11-04T05:45:11Z",
+        "message": "update for 1.4",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-10-31T22:17:23Z",
+        "message": "Update README.md",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-10-31T22:17:01Z",
+        "message": "Update README.md",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-10-20T23:53:20Z",
+        "message": "releases -> en",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-10-20T23:52:38Z",
+        "message": "add sitemaps",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-10-19T18:56:53Z",
+        "message": "update GA cookie domain",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-08-22T03:30:16Z",
+        "message": "add static dir",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-08-22T03:29:51Z",
+        "message": "add version.txt for 1.3.4",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-08-22T03:29:39Z",
+        "message": "add empty robots.txt",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-08-18T18:52:41Z",
+        "message": "add versions.json",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-08-18T18:52:18Z",
+        "message": "add remaining versions",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-08-18T01:39:41Z",
+        "message": "initial commit of old docs",
+        "author": "Bryan Van de Ven"
+      },
+      {
+        "date": "2019-08-18T01:31:23Z",
+        "message": "Initial commit",
+        "author": "Bryan Van de Ven"
+      }
+    ],
+    "ai_summary": "The `docs.bokeh.org` project is a static archive of pre-built documentation, primarily managed by Bryan Van de Ven. It utilizes HTML, CSS, and possibly JavaScript, with a focus on version control and content management. The low technical complexity is offset by the repository's efficiency in providing historical documentation versions, enhancing user experience through easy access and tracking of changes.",
+    "ai_tags": [
+      "HTML",
+      "CSS",
+      "Version Control",
+      "Static Content"
+    ],
+    "complexity_score": 3
+  }
+]

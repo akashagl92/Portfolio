@@ -56,7 +56,7 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ### 📈 Autonomous Trading System (`stock_price_target_modelling`)
 **23 commits | Python | Walk-Forward Validated**
 
-**Performance:** 72.1% XIRR — a **3.5x improvement over S&P 500 benchmark** (20.5%) using the same cash flows for apples-to-apples comparison.
+**Performance:** 63.6% XIRR — a **3.5x improvement over S&P 500 benchmark** (18.4%) using the same cash flows for apples-to-apples comparison.
 
 **Technical Innovation:**
 - **Dual-Track Portfolio**: 10 Stocks + 20 Crypto positions
