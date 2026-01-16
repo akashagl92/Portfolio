@@ -68,11 +68,12 @@ jobs:
           cp fetch/data.json airbnb/aircover/data.json
           cp fetch/data.json happymoney/data.json
           cp fetch/data.json kraken/data.json
+          cp fetch/data.json quince/data.json
 
       - name: Commit updated data
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git add data.json fetch/data.json ambience/data.json viant/data.json stellantis/data.json circle/data.json scopely/data.json consensys/data.json reku/data.json airbnb/data.json root/data.json fedex/data.json torq/data.json airbnb/aircover/data.json happymoney/data.json kraken/data.json
+          git add data.json fetch/data.json ambience/data.json viant/data.json stellantis/data.json circle/data.json scopely/data.json consensys/data.json reku/data.json airbnb/data.json root/data.json fedex/data.json torq/data.json airbnb/aircover/data.json happymoney/data.json kraken/data.json quince/data.json
           git diff --staged --quiet || git commit -m "Update portfolio stats [skip ci]"
           git push
