@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **8731 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **337 commits across 9 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -43,9 +43,9 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ### 🔮 AI Astrology Platform (`aistro.ai`)
 **Python** | [Repo](https://github.com/akashagl92/aistro.ai)
 
-AI-powered astrological analysis platform with multi-system support and personalized insights
+Developing a comprehensive astrological analysis platform, aistro.ai, involves a complex system combining traditional astrological calculations with modern AI-powered interpretations. The project features multi-system support, precise calculations, AI-powered interpretations, interactive charts, and advanced astrological analyses. Backed by rigorous statistical research, the platform offers predictive ML models and precise temporal predictions, enhancing user experience and providing a holistic approach to astrological insights.
 
-_Tags: Astrology, AI, Next.js_
+_Tags: Python, JavaScript, Node.js, Google Gemini API, Data Science_
 
 ---
 
@@ -79,18 +79,18 @@ _Tags: Vanilla JavaScript, Web Audio API, HTML5 Canvas, CSS3, Music Theory_
 ### Portfolio (`Portfolio`)
 **JavaScript** | [Repo](https://github.com/akashagl92/Portfolio)
 
-Data & AI product leader with 231 commits across 10 repositories, showcasing research-backed development and agentic IDE efficiency.
+Akash Agrawal's 2025 Engineering Portfolio showcases a Data & AI Product Leader adept at blending strategic product thinking with deep technical execution. With 231 commits across 10 repositories, the projects exhibit a unique ability to architect and build production-grade systems that bridge data science research, marketing technology, and agentic AI while maintaining rigorous engineering practices.
 
-_Tags: Data Science, AI, Product Leadership_
+_Tags: Python, JavaScript, FastAPI, Pandas, Next.js_
 
 ---
 
 ### Philosophy-sage (`philosophy-sage`)
 **TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)
 
-Philosophy-sage integrates AI-driven semantic search and allegorical interpretations for philosophical inquiry
+Advanced AI platform for philosophical and scriptural text analysis
 
-_Tags: Natural Language Processing, Machine Learning, Semantic Search_
+_Tags: Natural Language Processing, Semantic Search, Graph Databases_
 
 ---
 
@@ -121,10 +121,10 @@ _Tags: Python Flask, Databricks SQL, Pandas, Data Processing, Databricks Connect
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 8731 |
-| Unique Repositories | 11 |
-| Primary Language | TypeScript |
-| Top Languages | TypeScript (95.2%), Python (3.0%), JavaScript (1.7%) |
+| Total Commits | 337 |
+| Unique Repositories | 9 |
+| Primary Language | Python |
+| Top Languages | Python (71.5%), JavaScript (22.6%), TypeScript (5.9%) |
 | Last Synced | 2/1/2026 |
 
 ---

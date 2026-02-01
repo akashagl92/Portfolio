@@ -70,7 +70,7 @@ async function fetchAllData() {
             let page = 1;
             while (true) {
                 const commits = await fetchWithAuth(
-                    `https://api.github.com/repos/${repo.full_name}/commits?since=${startDate}&per_page=100&page=${page}`
+                    `https://api.github.com/repos/${repo.full_name}/commits?since=${startDate}&per_page=100&page=${page}&author=${GITHUB_USERNAME}`
                 );
 
                 if (Array.isArray(commits) && commits.length > 0) {
