@@ -8,22 +8,22 @@
     "isPrivate": true,
     "language": "TypeScript",
     "languages": {
-      "TypeScript": 16126086,
+      "TypeScript": 16161447,
+      "HTML": 13700218,
       "Swift": 2627390,
       "Kotlin": 365828,
-      "Shell": 161635,
+      "Shell": 161982,
+      "Python": 102469,
       "CSS": 100960,
-      "JavaScript": 79736,
-      "Python": 59298,
-      "HTML": 25057,
+      "JavaScript": 82897,
       "Dockerfile": 3863,
       "Ruby": 3023
     },
     "stars": 0,
     "forks": 0,
     "createdAt": "2026-01-29T07:21:35Z",
-    "updatedAt": "2026-01-29T18:19:25Z",
-    "pushedAt": "2026-01-29T18:19:21Z",
+    "updatedAt": "2026-02-01T08:44:18Z",
+    "pushedAt": "2026-02-01T08:44:13Z",
     "topics": [],
     "readme": "# Moltbot: Prime Halo Edition\n\nThis is the **Prime Halo** deployment of Moltbot, a personal AI assistant optimized for family use and unified messaging.\n\n## 🎯 North Star\nBuild a robust, multi-user Moltbot environment optimized for personal and family use, with unified access to WhatsApp, Gmail, and local workspace search.\n\n## 🧠 Agentic Capabilities\nBeyond simple chat, this instance serves as an autonomous software engineer and researcher:\n- **Codebase Management**: Capable of cloning git repositories, traversing complex project structures, and performing full-stack engineering tasks.\n- **Ideation & Strategy**: Partners on product ideation, helping refine concepts into actionable technical plans.\n- **Market Research**: Conducts extensive market research to validate ideas and inform feature development.\n- **Review & Iterate**: Performs code reviews, audits architecture, and iterates on designs based on feedback.\n\n## 🚀 Active Integrations\n\n### WhatsApp (Primary Channel)\n- **Status**: Enabled via `channels.whatsapp`.\n- **Policy**: `allowlist` only (Privacy-first).\n- **Allowed Users**: `+1**********`.\n- **Features**: QR pairing, self-chat mode enabled.\n- **Media**: Self-chat mode and read receipts enabled.\n\n### AI Models (Chain of Resilience)\n- **Primary**: Google Gemini 2.5 Flash (`google/gemini-2.5-flash`).\n- **Secondary**: Groq Llama 3.3 70B (`groq/llama-3.3-70b-versatile`) as fallback.\n- **Provider API Keys**: Managed in `.moltbot/moltbot.json`.\n\n### Skills & Tools\n- **GoPlaces**: Enabled for Google Maps/Reviews location data.\n- **Web Search**: Generic web search is disabled in favor of specific tools.\n- **Memory**: Gemini-backed semantic memory enabled with session watch.\n- **Code Execution**: Local sandbox execution enabled.\n\n## 🛠️ Configuration\nThe primary configuration is located at `~/.moltbot/moltbot.json`.\n\n### Key Settings Overview\n```json\n{\n  \"gateway\": {\n    \"port\": 18789,\n    \"mode\": \"local\",\n    \"auth\": { \"token\": \"<REDACTED_TOKEN>\" }\n  },\n  \"agents\": {\n    \"defaults\": {\n      \"model\": { \n        \"primary\": \"google/gemini-2.5-flash\",\n        \"fallbacks\": [] \n      },\n      \"memorySearch\": {\n        \"enabled\": true,\n        \"provider\": \"gemini\"\n      }\n    }\n  }\n}\n```\n\n## 🏃‍♂️ Operational Runbook\n\n### Starting the Gateway\n```bash\n# Start the gateway on the configured port\nmoltbot gateway --port 18789 --verbose\n```\n\n### Onboarding / Re-configuration\n```bash\n# Run the wizard to interactively update settings\nmoltbot onboard\n```\n\n### Connecting Channels\n**WhatsApp**:\n```bash\n# Login to WhatsApp (generates QR code)\nmoltbot channels login --channel whatsapp\n```\n\n### Verification\n- **Health Check**: `moltbot doctor`\n- **Status**: check `http://localhost:18789` (if Control UI is enabled).\n\n## 📂 Project Structure\n- `.pai/`: **Personal AI Infrastructure**. Central source of truth for Project Goals (`manifest.md`), Architectural Decisions (`decisions/`), and Learnings (`learnings/`).\n- `moltbot/`: Source code (upstream fork).\n- `README_UPSTREAM.md`: Original Moltbot framework documentation.\n\n---\n*For core framework documentation, deep dives, and API references, see [README_UPSTREAM.md](./README_UPSTREAM.md).*\n",
     "files": [
@@ -128,6 +128,11 @@
         "path": "CLAUDE.md"
       },
       {
+        "name": "CONTEXT_HANDOFF.md",
+        "type": "file",
+        "path": "CONTEXT_HANDOFF.md"
+      },
+      {
         "name": "CONTRIBUTING.md",
         "type": "file",
         "path": "CONTRIBUTING.md"
@@ -146,6 +151,11 @@
         "name": "Dockerfile.sandbox-browser",
         "type": "file",
         "path": "Dockerfile.sandbox-browser"
+      },
+      {
+        "name": "HEARTBEAT.md",
+        "type": "file",
+        "path": "HEARTBEAT.md"
       },
       {
         "name": "LICENSE",
@@ -173,9 +183,19 @@
         "path": "SECURITY.md"
       },
       {
+        "name": "SOUL.md",
+        "type": "file",
+        "path": "SOUL.md"
+      },
+      {
         "name": "Swabble",
         "type": "dir",
         "path": "Swabble"
+      },
+      {
+        "name": "TOOLS.md",
+        "type": "file",
+        "path": "TOOLS.md"
       },
       {
         "name": "appcast.xml",
@@ -191,6 +211,11 @@
         "name": "assets",
         "type": "dir",
         "path": "assets"
+      },
+      {
+        "name": "debug-paths.mts",
+        "type": "file",
+        "path": "debug-paths.mts"
       },
       {
         "name": "docker-compose.yml",
@@ -340,6 +365,11 @@
     ],
     "recentCommits": [
       {
+        "date": "2026-02-01T08:44:09Z",
+        "message": "feat(browser): standardize viewport, fix profile defaults, and add PDF extraction fallback",
+        "author": "Akash Agrawal"
+      },
+      {
         "date": "2026-01-29T18:18:33Z",
         "message": "docs: add Prime Halo specific README and upstream reference",
         "author": "Akash Agrawal"
@@ -408,11 +438,6 @@
         "date": "2026-01-28T06:11:28Z",
         "message": "fix: wire per-account dm scope guidance (#3095) (thanks @jarvis-sam)",
         "author": "Ayaan Zaidi"
-      },
-      {
-        "date": "2026-01-28T02:51:23Z",
-        "message": "feat(routing): add per-account-channel-peer session scope",
-        "author": "Jarvis Deploy"
       }
     ]
   },
@@ -426,15 +451,15 @@
     "language": "JavaScript",
     "languages": {
       "JavaScript": 423973,
-      "HTML": 374332,
+      "HTML": 401018,
       "CSS": 183876,
-      "Python": 43637
+      "Python": 51196
     },
     "stars": 0,
     "forks": 0,
     "createdAt": "2025-12-19T03:23:05Z",
-    "updatedAt": "2026-01-29T06:36:37Z",
-    "pushedAt": "2026-01-29T06:36:33Z",
+    "updatedAt": "2026-02-01T06:39:46Z",
+    "pushedAt": "2026-02-01T06:39:43Z",
     "topics": [],
     "readme": "# Akash Agrawal - 2025 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **231 commits across 10 repositories** in 2025, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [https://akashagl92.github.io/Portfolio/](https://akashagl92.github.io/Portfolio/)\n- **Fetch-tailored**: [https://akashagl92.github.io/Portfolio/fetch/](https://akashagl92.github.io/Portfolio/fetch/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Rather than building features speculatively, each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. The AI Astrology project exemplifies this—running **3+ million chart calculations** and conducting large-scale statistical research that would traditionally require a dedicated data science team was accomplished efficiently through AI-assisted development.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature rather than an afterthought.\n\n---\n\n## Project Deep-Dives\n\n### 🔮 AI Astrology Platform (`aistro.ai`)\n**152 commits | Python | [Live Demo](https://aistro-frontend-stage.onrender.com)**\n\n**Research Scale:**\n- **5,885 public figures** from AstroDataBank analyzed\n- **239 countries** studied for geopolitical astrological patterns\n- **3+ million chart calculations** processed using Swiss Ephemeris astronomical API\n- **FDR-corrected significance** (q < 0.001) for statistical rigor\n\n**Technical Architecture:**\n| Component | Technology |\n|-----------|------------|\n| Astronomical Engine | Swiss Ephemeris (industry-standard) |\n| AI Interpretations | Google Gemini API |\n| Knowledge Base | 18 astrology books indexed via RAG |\n| Vector Search | Semantic + Lexical hybrid retrieval |\n| Frontend | Next.js |\n| Backend | FastAPI + PostgreSQL |\n\n**Key Features:**\n- Multi-system support: Western (Tropical), Vedic (Sidereal), Horary\n- Divisional charts (D1-D60), Dasha periods, Yoga detection\n- Mundane astrology for country governance analysis\n- Q&A system with natural language queries\n\n---\n\n### 📈 Autonomous Trading System (`stock_price_target_modelling`)\n**23 commits | Python | Walk-Forward Validated**\n\n**Performance:** 63.6% XIRR — a **3.5x improvement over S&P 500 benchmark** (18.4%) using the same cash flows for apples-to-apples comparison.\n\n**Technical Innovation:**\n- **Dual-Track Portfolio**: 10 Stocks + 20 Crypto positions\n- **Market Timing Factors**:\n  - BTC Momentum (20-day returns): Chi-square p=0.0001\n  - VIX Volatility Factor (>25 threshold)\n- **Tiered Allocation**: Forever Holdings (4x), Quality Growth (1.5x), Speculative (0.5x)\n- **Walk-Forward Validation**: Training 2021-2023, OOS 2024-2025\n\n**Automation:**\n- Monthly rebalancing with email-based approval workflow\n- Trend breakdown protection logic\n- Fundamental safeguards (3-month Fund Score smoothing)\n\n---\n\n### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)\n**JavaScript | Zero Dependencies**\n\nMIDI emulator for learning music theory through mathematical visualization of sound.\n\n**Features:**\n1. **Interactive Visualizations**: Oscilloscope, Spectrum Analyzer (FFT), Lissajous Figures, Interference Patterns\n2. **Music Theory Lab**: Circle of Fifths, Harmony Explorer (interval ratios: 3:2, 4:3, 5:4)\n3. **Virtual Instruments**: Polyphonic keyboard, Continuous drone, Dual-voice harmony mode\n\n**Tech Stack:** Pure vanilla JavaScript with Web Audio API and HTML5 Canvas.\n\n---\n\n### 🤖 Databricks Genie Integration\n**8 commits | Python + Flask**\n\n- **Multi-Workspace Support**: Connect to multiple Databricks environments\n- **Natural Language → SQL**: Business questions in plain English via Genie API\n- **Bulk Data Processing**: Excel/CSV enrichment at scale\n- **Multi-Criteria Matching**: Email, Org hierarchy, DHC mapping\n\n---\n\n### 💬 VOC & Buyer Journey Chatbot\n**3 commits | LangChain + LangGraph**\n\n**Architecture:** Dual-brain system with SQL Brain (Databricks Genie) + Docs Brain (RAG)\n\n**Tech Stack:**\n- LangChain 0.2+ with LangGraph orchestration\n- Databricks Vector Search + databricks-bge-large-en embeddings\n- LangSmith observability\n- Streamlit UI on Databricks\n\n---\n\n### 📊 Marketing Analytics Assistant\n**4 commits | FastAPI + Python**\n\n- Natural language processing for marketing experiment queries\n- Statistical testing: Z-tests, chi-square, binomial, power analysis\n- Automated winner determination with confidence intervals\n- GPT + Gemini for insight generation\n\n---\n\n### 🔗 LinkedIn Campaign Measurement (`LinkedIn-API`)\n**3 commits | Python**\n\nAutomated daily campaign stats export via LinkedIn Marketing API with company name resolution and Excel reporting for cross-platform ad measurement.\n\n---\n\n### 📚 Philosophy Sage (GraphRAG)\n**7 commits | Neo4j + LangChain**\n\nAI-powered exploration of ancient philosophy texts (Mahabharata, Bhagavad Gita) using:\n- Neo4j knowledge graph for entity relationships across 18 Parvas\n- Vector search hybrid retrieval\n- Sanskrit TTS integration\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **Statistical significance testing** before feature deployment\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: 3M+ calculations that would require dedicated data science teams\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation\n3. **Self-documenting code**: Comprehensive READMEs and architecture docs\n\n---\n\n## Summary Statistics\n\n| Metric | 2025 Value |\n|--------|------------|\n| Total Commits | 231 |\n| Unique Repositories | 10 |\n| Primary Language | Python (83.5%) |\n| Secondary Languages | JavaScript (12.6%), TypeScript (3.9%) |\n| Peak Activity | Aug-Sep (122 commits) |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript (no frameworks)\n- CSS3 with custom properties\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── style.css\n├── app.js\n├── data.json           → GitHub activity data\n├── fetch/              → Fetch-tailored portfolio\n└── scripts/\n    └── fetch-github.js → Data fetcher (GitHub Actions)\n```\n\n## 🚀 Development\n\n```bash\n# Start local server (root)\npython3 -m http.server 8080\n\n# Start local server (fetch)\ncd fetch && python3 -m http.server 5500\n\n# Update GitHub stats (requires GITHUB_TOKEN)\nnode scripts/fetch-github.js\n```\n\n## 📝 License\n\nMIT\n",
     "files": [
@@ -487,6 +512,11 @@
         "name": "airbnb",
         "type": "dir",
         "path": "airbnb"
+      },
+      {
+        "name": "alivo",
+        "type": "dir",
+        "path": "alivo"
       },
       {
         "name": "ambience",
@@ -621,6 +651,46 @@
     ],
     "recentCommits": [
       {
+        "date": "2026-02-01T06:39:42Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-31T06:28:14Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-30T06:38:09Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-29T21:36:04Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-29T21:35:12Z",
+        "message": "ci: Include Alivo page in daily stats update",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-29T21:34:15Z",
+        "message": "fix: Add missing data.json to Alivo page",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-01-29T21:32:20Z",
+        "message": "Update portfolio stats [skip ci]",
+        "author": "GitHub Actions Bot"
+      },
+      {
+        "date": "2026-01-29T21:31:40Z",
+        "message": "feat: Add Alivo portfolio page and update Moltbot branding",
+        "author": "Akash Agrawal"
+      },
+      {
         "date": "2026-01-29T06:36:32Z",
         "message": "Update portfolio stats [skip ci]",
         "author": "GitHub Actions Bot"
@@ -654,46 +724,6 @@
         "date": "2026-01-23T06:22:51Z",
         "message": "Update portfolio stats [skip ci]",
         "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-22T06:23:13Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-21T06:24:45Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-20T06:24:37Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-19T06:27:28Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-18T06:21:06Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-17T06:20:30Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-16T07:12:51Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-16T07:11:58Z",
-        "message": "fix(quince): Resolve duplicate XIRR and Strategy list items in portfolio cards",
-        "author": "Akash Agrawal"
       }
     ]
   },

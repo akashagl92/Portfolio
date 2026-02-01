@@ -394,7 +394,7 @@ def main():
             projects_modified = True
             projects_modified = True
             print("  ⏳ Cooling down for 30s (Rate Limit Safety)...")
-            time.sleep(30)
+            time.sleep(5)
     
     # Save Updates
     if not args.dry_run and projects_modified:

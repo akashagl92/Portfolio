@@ -1,139 +1,106 @@
-# Akash Agrawal - 2025 Engineering Portfolio
+# Akash Agrawal - 2026 Engineering Portfolio
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **231 commits across 10 repositories** in 2025, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **331 commits across 9 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
-- **General**: [https://akashagl92.github.io/Portfolio/](https://akashagl92.github.io/Portfolio/)
-- **Fetch-tailored**: [https://akashagl92.github.io/Portfolio/fetch/](https://akashagl92.github.io/Portfolio/fetch/)
+- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)
+- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)
+- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)
+- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)
+- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)
+- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)
+- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)
+- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)
+- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)
+- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)
+- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)
+- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)
+- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)
+- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)
+- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)
+- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)
 
 ---
 
 ## Key Themes & Differentiators
 
 ### 1. Research-Backed Product Development
-The hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Rather than building features speculatively, each project demonstrates data-driven hypothesis testing before and during development.
+The hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.
 
 ### 2. Agentic IDE Efficiency
-A core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. The AI Astrology project exemplifies this—running **3+ million chart calculations** and conducting large-scale statistical research that would traditionally require a dedicated data science team was accomplished efficiently through AI-assisted development.
+A core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.
 
 ### 3. Marketing Technology Integration
-Each project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature rather than an afterthought.
+Each project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.
 
 ---
 
 ## Project Deep-Dives
 
 ### 🔮 AI Astrology Platform (`aistro.ai`)
-**152 commits | Python | [Live Demo](https://aistro-frontend-stage.onrender.com)**
+**Python** | [Repo](https://github.com/akashagl92/aistro.ai)
 
-**Research Scale:**
-- **5,885 public figures** from AstroDataBank analyzed
-- **239 countries** studied for geopolitical astrological patterns
-- **3+ million chart calculations** processed using Swiss Ephemeris astronomical API
-- **FDR-corrected significance** (q < 0.001) for statistical rigor
+Developing a comprehensive astrological analysis platform, aistro.ai, involves a complex system combining traditional astrological calculations with modern AI-powered interpretations. The project features multi-system support, precise calculations, AI-powered interpretations, interactive charts, and advanced astrological analyses. Backed by rigorous statistical research, the platform offers predictive ML models and precise temporal predictions, enhancing user experience and providing a holistic approach to astrological insights.
 
-**Technical Architecture:**
-| Component | Technology |
-|-----------|------------|
-| Astronomical Engine | Swiss Ephemeris (industry-standard) |
-| AI Interpretations | Google Gemini API |
-| Knowledge Base | 18 astrology books indexed via RAG |
-| Vector Search | Semantic + Lexical hybrid retrieval |
-| Frontend | Next.js |
-| Backend | FastAPI + PostgreSQL |
+_Tags: Python, JavaScript, Node.js, Google Gemini API, Data Science_
 
-**Key Features:**
-- Multi-system support: Western (Tropical), Vedic (Sidereal), Horary
-- Divisional charts (D1-D60), Dasha periods, Yoga detection
-- Mundane astrology for country governance analysis
-- Q&A system with natural language queries
+---
+
+### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)
+**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)
+
+Moltbot is an autonomous AI assistant for personal and family use, featuring unified messaging and advanced codebase management.
+
+_Tags: AI, Machine Learning, Containerization_
 
 ---
 
 ### 📈 Autonomous Trading System (`stock_price_target_modelling`)
-**23 commits | Python | Walk-Forward Validated**
+**Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)
 
-**Performance:** 63.6% XIRR — a **3.5x improvement over S&P 500 benchmark** (18.4%) using the same cash flows for apples-to-apples comparison.
+AI-powered autonomous trading system with 40.8% XIRR, leveraging multi-tier strategy and market timing factors
 
-**Technical Innovation:**
-- **Dual-Track Portfolio**: 10 Stocks + 20 Crypto positions
-- **Market Timing Factors**:
-  - BTC Momentum (20-day returns): Chi-square p=0.0001
-  - VIX Volatility Factor (>25 threshold)
-- **Tiered Allocation**: Forever Holdings (4x), Quality Growth (1.5x), Speculative (0.5x)
-- **Walk-Forward Validation**: Training 2021-2023, OOS 2024-2025
-
-**Automation:**
-- Monthly rebalancing with email-based approval workflow
-- Trend breakdown protection logic
-- Fundamental safeguards (3-month Fund Score smoothing)
+_Tags: Python, Autonomous Trading, Portfolio Management_
 
 ---
 
 ### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)
-**JavaScript | Zero Dependencies**
+**JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)
 
-MIDI emulator for learning music theory through mathematical visualization of sound.
+Sonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.
 
-**Features:**
-1. **Interactive Visualizations**: Oscilloscope, Spectrum Analyzer (FFT), Lissajous Figures, Interference Patterns
-2. **Music Theory Lab**: Circle of Fifths, Harmony Explorer (interval ratios: 3:2, 4:3, 5:4)
-3. **Virtual Instruments**: Polyphonic keyboard, Continuous drone, Dual-voice harmony mode
-
-**Tech Stack:** Pure vanilla JavaScript with Web Audio API and HTML5 Canvas.
+_Tags: Vanilla JavaScript, Web Audio API, HTML5 Canvas, CSS3, Music Theory_
 
 ---
 
-### 🤖 Databricks Genie Integration
-**8 commits | Python + Flask**
+### Portfolio (`Portfolio`)
+**JavaScript** | [Repo](https://github.com/akashagl92/Portfolio)
 
-- **Multi-Workspace Support**: Connect to multiple Databricks environments
-- **Natural Language → SQL**: Business questions in plain English via Genie API
-- **Bulk Data Processing**: Excel/CSV enrichment at scale
-- **Multi-Criteria Matching**: Email, Org hierarchy, DHC mapping
+Akash Agrawal's 2025 Engineering Portfolio showcases a Data & AI Product Leader adept at blending strategic product thinking with deep technical execution. With 231 commits across 10 repositories, the projects exhibit a unique ability to architect and build production-grade systems that bridge data science research, marketing technology, and agentic AI while maintaining rigorous engineering practices.
 
----
-
-### 💬 VOC & Buyer Journey Chatbot
-**3 commits | LangChain + LangGraph**
-
-**Architecture:** Dual-brain system with SQL Brain (Databricks Genie) + Docs Brain (RAG)
-
-**Tech Stack:**
-- LangChain 0.2+ with LangGraph orchestration
-- Databricks Vector Search + databricks-bge-large-en embeddings
-- LangSmith observability
-- Streamlit UI on Databricks
+_Tags: Python, JavaScript, FastAPI, Pandas, Next.js_
 
 ---
 
-### 📊 Marketing Analytics Assistant
-**4 commits | FastAPI + Python**
+### Databricks-Genie-Integration (`Databricks-Genie-Integration`)
+**Python** | [Repo](https://github.com/akashagl92/Databricks-Genie-Integration)
 
-- Natural language processing for marketing experiment queries
-- Statistical testing: Z-tests, chi-square, binomial, power analysis
-- Automated winner determination with confidence intervals
-- GPT + Gemini for insight generation
+Developed a sophisticated web application, Databricks Genie Integration, facilitating seamless connectivity between Databricks workspaces and business intelligence tools for enhanced data lookup and enrichment capabilities. The project features multi-workspace support, pre-built queries, natural language query support, and advanced data enrichment functionalities, utilizing a technology stack including Python Flask, Databricks SQL, HTML, CSS, JavaScript, Pandas, SQL, and Databricks Connect for authentication.
 
----
-
-### 🔗 LinkedIn Campaign Measurement (`LinkedIn-API`)
-**3 commits | Python**
-
-Automated daily campaign stats export via LinkedIn Marketing API with company name resolution and Excel reporting for cross-platform ad measurement.
+_Tags: Python Flask, Databricks SQL, Pandas, Data Processing, Databricks Connect_
 
 ---
 
-### 📚 Philosophy Sage (GraphRAG)
-**7 commits | Neo4j + LangChain**
+### Voc-buyer-journey-chatbot (`voc-buyer-journey-chatbot`)
+**Python** | [Repo](https://github.com/akashagl92/voc-buyer-journey-chatbot)
 
-AI-powered exploration of ancient philosophy texts (Mahabharata, Bhagavad Gita) using:
-- Neo4j knowledge graph for entity relationships across 18 Parvas
-- Vector search hybrid retrieval
-- Sanskrit TTS integration
+Developed a production-ready VoC and Buyer Journey Dashboard Chatbot on Databricks with a dual-brain architecture integrating Genie for structured data queries and RAG for unstructured document retrieval, orchestrated by LangGraph. The project encompassed complex workflows, LangChain integration, and a Streamlit UI, ensuring efficient data processing and continuous improvement capabilities.
+
+_Tags: Python, Databricks, LangChain, LangGraph, Genie Conversation API_
+
 
 ---
 
@@ -142,57 +109,60 @@ AI-powered exploration of ancient philosophy texts (Mahabharata, Bhagavad Gita) 
 ### CI/CD with Security-First Mindset
 - **Unit testing** throughout the codebase
 - **Walk-forward validation** for financial models
-- **Statistical significance testing** before feature deployment
 - **LangSmith observability** for agentic systems
 
 ### Cost Efficiency Through Agentic Development
-1. **Research acceleration**: 3M+ calculations that would require dedicated data science teams
-2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation
-3. **Self-documenting code**: Comprehensive READMEs and architecture docs
+1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.
+2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.
 
 ---
 
 ## Summary Statistics
 
-| Metric | 2025 Value |
+| Metric | Current Value |
 |--------|------------|
-| Total Commits | 231 |
-| Unique Repositories | 10 |
-| Primary Language | Python (83.5%) |
-| Secondary Languages | JavaScript (12.6%), TypeScript (3.9%) |
-| Peak Activity | Aug-Sep (122 commits) |
+| Total Commits | 331 |
+| Unique Repositories | 9 |
+| Primary Language | Python |
+| Top Languages | N/A |
+| Last Synced | 2/1/2026 |
 
 ---
 
 ## 🛠 Tech Stack
 
-- Vanilla JavaScript (no frameworks)
-- CSS3 with custom properties
+- Vanilla JavaScript & TypeScript
+- Python (FastAPI, SciPy, LangChain)
+- Neo4j Knowledge Graphs
 - GitHub Actions for automated daily data updates
 
 ## 📁 Structure
 
 ```
 ├── index.html          → General portfolio
-├── style.css
-├── app.js
-├── data.json           → GitHub activity data
-├── fetch/              → Fetch-tailored portfolio
-└── scripts/
-    └── fetch-github.js → Data fetcher (GitHub Actions)
+├── alivo/              → Alivo-tailored (Product Enthusiast)
+├── consensys/          → Consensys-tailored (Market Research)
+├── airbnb/             → Airbnb-tailored (Research & Discovery)
+├── data.json           → GitHub activity data (Synced DAILY)
+└── scripts/            → Automation & Dynamic generation
+```
+
+## 🏗 Architecture & Data Flow
+
+```mermaid
+graph TD
+    A[GitHub Repos] -->|fetch-project-details.js| B[project-details.json]
+    B -->|agentic_chronicler.py| C[summary_cache.json]
+    C -->|update-readme.js| D[README.md]
+    E[README.template.md] --> D
 ```
 
 ## 🚀 Development
 
 ```bash
-# Start local server (root)
-python3 -m http.server 8080
-
-# Start local server (fetch)
-cd fetch && python3 -m http.server 5500
-
-# Update GitHub stats (requires GITHUB_TOKEN)
+# Update GitHub stats & README (requires GITHUB_TOKEN)
 node scripts/fetch-github.js
+node scripts/update-readme.js
 ```
 
 ## 📝 License
