@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **331 commits across 9 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **8731 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -43,9 +43,9 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ### 🔮 AI Astrology Platform (`aistro.ai`)
 **Python** | [Repo](https://github.com/akashagl92/aistro.ai)
 
-Developing a comprehensive astrological analysis platform, aistro.ai, involves a complex system combining traditional astrological calculations with modern AI-powered interpretations. The project features multi-system support, precise calculations, AI-powered interpretations, interactive charts, and advanced astrological analyses. Backed by rigorous statistical research, the platform offers predictive ML models and precise temporal predictions, enhancing user experience and providing a holistic approach to astrological insights.
+AI-powered astrological analysis platform with multi-system support and personalized insights
 
-_Tags: Python, JavaScript, Node.js, Google Gemini API, Data Science_
+_Tags: Astrology, AI, Next.js_
 
 ---
 
@@ -79,9 +79,18 @@ _Tags: Vanilla JavaScript, Web Audio API, HTML5 Canvas, CSS3, Music Theory_
 ### Portfolio (`Portfolio`)
 **JavaScript** | [Repo](https://github.com/akashagl92/Portfolio)
 
-Akash Agrawal's 2025 Engineering Portfolio showcases a Data & AI Product Leader adept at blending strategic product thinking with deep technical execution. With 231 commits across 10 repositories, the projects exhibit a unique ability to architect and build production-grade systems that bridge data science research, marketing technology, and agentic AI while maintaining rigorous engineering practices.
+Data & AI product leader with 231 commits across 10 repositories, showcasing research-backed development and agentic IDE efficiency.
 
-_Tags: Python, JavaScript, FastAPI, Pandas, Next.js_
+_Tags: Data Science, AI, Product Leadership_
+
+---
+
+### Philosophy-sage (`philosophy-sage`)
+**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)
+
+Philosophy-sage integrates AI-driven semantic search and allegorical interpretations for philosophical inquiry
+
+_Tags: Natural Language Processing, Machine Learning, Semantic Search_
 
 ---
 
@@ -91,15 +100,6 @@ _Tags: Python, JavaScript, FastAPI, Pandas, Next.js_
 Developed a sophisticated web application, Databricks Genie Integration, facilitating seamless connectivity between Databricks workspaces and business intelligence tools for enhanced data lookup and enrichment capabilities. The project features multi-workspace support, pre-built queries, natural language query support, and advanced data enrichment functionalities, utilizing a technology stack including Python Flask, Databricks SQL, HTML, CSS, JavaScript, Pandas, SQL, and Databricks Connect for authentication.
 
 _Tags: Python Flask, Databricks SQL, Pandas, Data Processing, Databricks Connect_
-
----
-
-### Voc-buyer-journey-chatbot (`voc-buyer-journey-chatbot`)
-**Python** | [Repo](https://github.com/akashagl92/voc-buyer-journey-chatbot)
-
-Developed a production-ready VoC and Buyer Journey Dashboard Chatbot on Databricks with a dual-brain architecture integrating Genie for structured data queries and RAG for unstructured document retrieval, orchestrated by LangGraph. The project encompassed complex workflows, LangChain integration, and a Streamlit UI, ensuring efficient data processing and continuous improvement capabilities.
-
-_Tags: Python, Databricks, LangChain, LangGraph, Genie Conversation API_
 
 
 ---
@@ -121,10 +121,10 @@ _Tags: Python, Databricks, LangChain, LangGraph, Genie Conversation API_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 331 |
-| Unique Repositories | 9 |
-| Primary Language | Python |
-| Top Languages | N/A |
+| Total Commits | 8731 |
+| Unique Repositories | 11 |
+| Primary Language | TypeScript |
+| Top Languages | TypeScript (95.2%), Python (3.0%), JavaScript (1.7%) |
 | Last Synced | 2/1/2026 |
 
 ---
@@ -151,10 +151,10 @@ _Tags: Python, Databricks, LangChain, LangGraph, Genie Conversation API_
 
 ```mermaid
 graph TD
-    A[GitHub Repos] -->|fetch-project-details.js| B[project-details.json]
-    B -->|agentic_chronicler.py| C[summary_cache.json]
-    C -->|update-readme.js| D[README.md]
-    E[README.template.md] --> D
+    A["GitHub Repos"] -->|"fetch-project-details.js"| B["project-details.json"]
+    B -->|"agentic_chronicler.py"| C["summary_cache.json"]
+    C -->|"update-readme.js"| D["README.md"]
+    E["README.template.md"] --> D
 ```
 
 ## 🚀 Development
