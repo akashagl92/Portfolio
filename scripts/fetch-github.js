@@ -149,10 +149,14 @@ async function fetchAllData() {
     // Calculate total unique repos
     const allReposSet = new Set(allCommits.map(c => c.repo));
 
+    // Calculate total languages across all repositories found
+    const allRepoLanguages = new Set(allRepos.map(r => r.language).filter(Boolean));
+
     const result = {
         monthly,
         totalCommits: allCommits.length,
         uniqueReposTotal: allReposSet.size,
+        totalLanguagesCount: allRepoLanguages.size,
         daily,
         topLanguages,
         allLanguages,

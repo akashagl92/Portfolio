@@ -231,8 +231,9 @@ function updateCharts(data) {
 
     const totalLangsEl = document.getElementById('total-languages');
     const langData = data.allLanguages || data.languages || {};
-    if (totalLangsEl && Object.keys(langData).length > 0) {
-        totalLangsEl.textContent = Object.keys(langData).length;
+    if (totalLangsEl) {
+        // Prefer totalLanguagesCount from server, fallback to commit-based keys
+        totalLangsEl.textContent = data.totalLanguagesCount || Object.keys(langData).length;
     }
 
     const totalReposEl = document.getElementById('total-repos');
