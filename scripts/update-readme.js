@@ -2,11 +2,11 @@
  * Agentic Project Chronicler: README Generator
  * 
  * Architecture & Data Flow:
- * flowchart TD
- *     A[GitHub Repos] -- "fetch-project-details.js" --> B[project-details.json]
- *     B -- "agentic_chronicler.py" --> C[summary_cache.json]
- *     C -- "update-readme.js" --> D[README.md]
- *     E[README.template.md] --> D
+ * graph TD
+ *     REPOS["GitHub Repos"] -->|"fetch-project-details.js"| DETAILS["project-details.json"]
+ *     DETAILS -->|"agentic_chronicler.py"| CACHE["summary_cache.json"]
+ *     CACHE -->|"update-readme.js"| README["README.md"]
+ *     TEMPLATE["README.template.md"] --> README
  */
 
 const fs = require('fs');
