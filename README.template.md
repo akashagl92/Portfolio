@@ -69,11 +69,11 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ## 🏗 Architecture & Data Flow
 
 ```mermaid
-graph TD
-    A["GitHub Repos"] -->|"fetch-project-details.js"| B["project-details.json"]
-    B -->|"agentic_chronicler.py"| C["summary_cache.json"]
-    C -->|"update-readme.js"| D["README.md"]
-    E["README.template.md"] --> D
+flowchart TD
+    A[GitHub Repos] -- "fetch-project-details.js" --> B[project-details.json]
+    B -- "agentic_chronicler.py" --> C[summary_cache.json]
+    C -- "update-readme.js" --> D[README.md]
+    E[README.template.md] --> D
 ```
 
 ## 🚀 Development
