@@ -5,11 +5,13 @@ To build a "living" engineering portfolio that dynamically updates itself using 
 
 ## Current State
 - **Core Site:** Operational (HTML/JS/CSS).
+- **Responsiveness:** Fixed - Calendar grid and project cards work correctly at all viewport widths (desktop, tablet, mobile). All 16 portfolio pages use unified root `style.css`.
 - **Automation:** GitHub Actions for fetching stats (`update-stats.yml`) are largely functional but prone to occasional "stale data" or "permission" bugs.
 - **Features:**
+    - "Stats Dashboard" (Live - shows accurate author-filtered contributions)
     - "Music Visualizer" (WIP)
-    - "Stats Dashboard" (Live, debugging Repo Count)
     - "Journal Paper" (Drafting)
+
 
 ## Desired State
 - **Fully Autonomous:** The portfolio updates its own stats, blog, and "recent work" without manual intervention.
