@@ -440,11 +440,11 @@
         "author": "Ayaan Zaidi"
       }
     ],
-    "ai_summary": "Moltbot Prime Halo Edition: AI assistant for unified messaging and autonomous software engineering",
+    "ai_summary": "Moltbot is an autonomous AI assistant for personal and family use, featuring unified messaging and advanced codebase management.",
     "ai_tags": [
       "AI",
       "Machine Learning",
-      "Autonomous Software Engineering"
+      "Containerization"
     ],
     "complexity_score": 8
   },
@@ -732,14 +732,7 @@
         "message": "Update portfolio stats [skip ci]",
         "author": "GitHub Actions Bot"
       }
-    ],
-    "ai_summary": "Data & AI product leader portfolio with 231 commits, showcasing research-backed development and agentic IDE efficiency",
-    "ai_tags": [
-      "Data Science",
-      "AI",
-      "Marketing Technology"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "aistro.ai",
@@ -1068,14 +1061,7 @@
         "message": "fix(deploy): resolve startup hangs in export_service and db config",
         "author": "Akash Agrawal"
       }
-    ],
-    "ai_summary": "Astrological analysis platform with AI-powered interpretations",
-    "ai_tags": [
-      "Astrology",
-      "AI",
-      "Next.js"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "philosophy-sage",
@@ -1217,11 +1203,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Philosophy platform with semantic search, allegorical interpretations, and hybrid RAG models",
+    "ai_summary": "Advanced AI platform for philosophical and scriptural text analysis",
     "ai_tags": [
-      "NLP",
-      "Graph Databases",
-      "Machine Learning"
+      "Natural Language Processing",
+      "Semantic Search",
+      "Graph Databases"
     ],
     "complexity_score": 8
   },
@@ -1403,14 +1389,7 @@
         "message": "Fix: Use centralized RobinhoodBroker in morning_order_verification.py",
         "author": "Akash Agrawal"
       }
-    ],
-    "ai_summary": "AI-powered autonomous trading system with 40.8% XIRR",
-    "ai_tags": [
-      "AI Trading",
-      "Stock Market",
-      "Crypto"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "Music-and-Math",

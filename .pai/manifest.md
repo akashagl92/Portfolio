@@ -11,7 +11,7 @@ To build a "living" engineering portfolio that dynamically updates itself using 
     - "Stats Dashboard" (Live - shows accurate author-filtered contributions)
     - "Music Visualizer" (WIP)
     - "Journal Paper" (Drafting)
-
+    - "Tailored Portfolios" (EY-Parthenon, Scopely, Alivo, etc.)
 
 ## Desired State
 - **Fully Autonomous:** The portfolio updates its own stats, blog, and "recent work" without manual intervention.

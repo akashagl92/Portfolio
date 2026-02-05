@@ -149,14 +149,28 @@ async function fetchAllData() {
     // Calculate total unique repos
     const allReposSet = new Set(allCommits.map(c => c.repo));
 
-    // Calculate total languages across all repositories found
-    const allRepoLanguages = new Set(allRepos.map(r => r.language).filter(Boolean));
+    // Calculate total languages across repositories that had activity in 2025
+    const activeLanguages = {};
+    const activeReposList = allRepos.filter(r => allReposSet.has(r.name));
+
+    console.log(`Aggregating languages for ${activeReposList.length} active repositories...`);
+    for (const repo of activeReposList) {
+        try {
+            const languages = await fetchWithAuth(repo.languages_url);
+            for (const [lang, bytes] of Object.entries(languages)) {
+                activeLanguages[lang] = (activeLanguages[lang] || 0) + bytes;
+            }
+        } catch (err) {
+            console.warn(`Failed to fetch language breakdown for ${repo.name}: ${err.message}`);
+        }
+    }
 
     const result = {
         monthly,
         totalCommits: allCommits.length,
         uniqueReposTotal: allReposSet.size,
-        totalLanguagesCount: allRepoLanguages.size,
+        totalLanguagesCount: Object.keys(activeLanguages).length,
+        activeLanguages: activeLanguages, // Return map with byte counts
         daily,
         topLanguages,
         allLanguages,

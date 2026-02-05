@@ -363,7 +363,8 @@ h1 {
 /* Hero Calendar */
 .hero-calendar {
     padding: 1rem 0;
-    overflow-x: hidden;
+    overflow-x: visible;
+    /* Prevent clipping of edges */
 }
 
 .hero-calendar .calendar-months {
@@ -391,13 +392,22 @@ h1 {
     gap: 2px;
     font-size: 0.6rem;
     color: var(--text-muted);
-    padding-right: 0.3rem;
+    padding-right: 0.5rem;
+    /* Increased padding text-grid gap */
+    text-align: right;
+    padding-top: 1px;
+    /* Optical alignment tweak */
 }
 
 .hero-calendar .calendar-days span {
     height: 10px;
     line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+
 
 .hero-calendar .calendar-grid {
     display: flex;
@@ -1269,15 +1279,36 @@ footer {
     .hero-calendar .calendar-months {
         margin-bottom: 2px;
         font-size: 0.6rem;
-        margin-left: 0;
-        text-align: center;
-        width: 100%;
+        margin: 0 auto !important;
+        /* Center the container */
+        text-align: center !important;
+        /* Removed width: 100% to allow JS to size it */
     }
 
     /* Mobile override for week width: Fluid scaling */
     .hero-calendar {
-        /* (Viewport - Padding [Hero 5%*2 + Viz 1rem*2] approx 70px) / 53 weeks */
-        --week-width: calc((100vw - 80px) / 53);
+        /* (Viewport - Padding [Hero 16% + Card 1.5rem + Safety]) */
+        /* Increased subtraction from 80px to 120px to prevent scroll/blowout */
+        --week-width: calc((100vw - 120px) / 53);
+    }
+
+    /* Ensure all children of the glass box respect the container width */
+    .main-viz>* {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Allow header elements to wrap if needed to prevent blowout */
+    .viz-header,
+    .viz-stats {
+        flex-wrap: wrap !important;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Force buttons to align centered */
+    .hero-actions .btn {
+        margin: 0 auto;
     }
 
     /* Keep legend as 2 columns but with tighter gap/font */

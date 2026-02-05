@@ -1,9 +1,5 @@
 ---
-description: Run the comprehensive PAI synchronization ritual (Save Game)
----
-
----
-description: Run the comprehensive PAI synchronization ritual (Save Game)
+description: The "Save Game" ritual - run before ending a session, switching tasks, or when context feels stale.
 ---
 # PAI Sync Ritual (The "Save Game")
 
@@ -12,7 +8,7 @@ This workflow acts as a **"Save Game"** for your project. Run it before ending a
 ## Steps
 
 ### 1. 🔄 Review & Grounding (Two Loops)
-1.  **Read the North Star**: Read [.pai/manifest.md](cci:7://file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.pai/manifest.md:0:0-0:0).
+1.  **Read the North Star**: Read `.pai/manifest.md`.
 2.  **Two Loops Check**: Ask: "Are we in Strategy (Outer) or Execution (Inner) mode?"
 3.  **Core Check**: "Is our current work still serving these Core Objectives?" (Update Manifest if no).
 
@@ -26,9 +22,17 @@ This workflow acts as a **"Save Game"** for your project. Run it before ending a
     *   *Action*: Create `.pai/learnings/YYYY-MM-DD-topic.md`.
 
 ### 3. 🌟 Manifest Update
-1.  **Update**: Adjust "Current State" in [.pai/manifest.md](cci:7://file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.pai/manifest.md:0:0-0:0) to match reality.
+1.  **Update**: Adjust "Current State" in `.pai/manifest.md` to match reality.
 
-### 4. 🌍 Global Sync (Antigravity)
+### 4. 🧠 Update Portfolio Memory
+1.  **Reflect**: Run the portfolio generator to update global context with recent work.
+    ```bash
+    # Ensure GH_TOKEN is set or gh is authenticated
+    export GH_TOKEN=${GITHUB_TOKEN:-$GH_TOKEN} 
+    node ~/.gemini/scripts/generate_portfolio.mjs
+    ```
+
+### 5. 🌍 Global Sync (Antigravity)
 1.  **Scan**: Look for insights in `.pai/learnings/` that apply *universally* (e.g., "React 19 breaks X").
 2.  **Promote**: Propose: "Promote [Insight] to Global Rules (`~/.gemini/GEMINI.md`)?"
 

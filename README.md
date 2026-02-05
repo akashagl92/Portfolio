@@ -12,6 +12,7 @@ This portfolio represents a **Data & AI Product Leader** who combines strategic 
 - **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)
 - **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)
 - **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)
+- **EY-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)
 - **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)
 - **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)
 - **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)
