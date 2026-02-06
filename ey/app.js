@@ -3,18 +3,18 @@ const GithubService = {
     username: 'akashagl92',
     async fetchAllData() {
         // Check session cache first
-        const cached = sessionStorage.getItem('github_data_v15');
+        const cached = sessionStorage.getItem('github_data_v16');
         if (cached) return JSON.parse(cached);
 
         try {
             // Try to load pre-generated data from build-time script
-            const response = await fetch('../data.json?v=15');
+            const response = await fetch('../data.json?v=16');
             if (response.ok) {
                 const data = await response.json();
                 // Check if data.json has real content (not just placeholder)
                 if (data.totalCommits > 0) {
                     console.log('Using pre-generated data from data.json');
-                    sessionStorage.setItem('github_data_v15', JSON.stringify(data));
+                    sessionStorage.setItem('github_data_v16', JSON.stringify(data));
                     return data;
                 }
             }
@@ -55,7 +55,7 @@ const GithubService = {
             }
 
             const processed = this.processData(allCommits);
-            sessionStorage.setItem('github_data_v15', JSON.stringify(processed));
+            sessionStorage.setItem('github_data_v16', JSON.stringify(processed));
             return processed;
         } catch (e) {
             console.error('GitHub Fetch Error:', e);
@@ -137,7 +137,8 @@ const GithubService = {
             uniqueReposTotal: allRepos.size,
             daily: commits.map(c => ({ date: c.date.toDateString() })),
             topLanguages,
-            allLanguages
+            allLanguages,
+            activeLanguages: allLanguages // Parity for fallback
         };
     }
 };
