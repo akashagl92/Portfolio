@@ -1,9 +1,13 @@
 name: Update Portfolio Stats
 
 on:
+  schedule:
+    - cron: '30 6 * * *'
   workflow_dispatch:
   push:
     branches: [ main ]
+
+
 
 permissions:
   contents: write

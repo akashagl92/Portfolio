@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **337 commits across 9 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **339 commits across 9 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -12,7 +12,7 @@ This portfolio represents a **Data & AI Product Leader** who combines strategic 
 - **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)
 - **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)
 - **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)
-- **EY-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)
+- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)
 - **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)
 - **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)
 - **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)
@@ -122,11 +122,11 @@ _Tags: Python Flask, Databricks SQL, Pandas, Data Processing, Databricks Connect
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 337 |
+| Total Commits | 339 |
 | Unique Repositories | 9 |
 | Primary Language | Python |
-| Top Languages | Python (71.5%), JavaScript (22.6%), TypeScript (5.9%) |
-| Last Synced | 2/1/2026 |
+| Top Languages | Python (71.1%), JavaScript (23.0%), TypeScript (5.9%) |
+| Last Synced | 2/16/2026 |
 
 ---
 
