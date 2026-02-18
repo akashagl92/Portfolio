@@ -167,9 +167,22 @@ def main():
     daily_commits = []
     repo_data = []
     
+    # Configuration for filtering/renaming in visual grid
+    EXCLUDED_REPOS = {'marketing-analytics-assistant', 'linkedin-api', 'marketing-analytics-assistant1'} 
+    EXCLUDED_KEYWORDS = ['databricks']
+    REPO_RENAMES = {'aistro.ai': 'AI Astrology'}
+
     for repo in repos:
         name = repo['name']
         is_private = repo['private']
+        
+        # Determine if this repo should be HIDDEN from the daily grid
+        # Case-insensitive keyword check
+        name_lower = name.lower()
+        is_excluded = (name_lower in EXCLUDED_REPOS) or any(k in name_lower for k in EXCLUDED_KEYWORDS)
+        
+        # Determine display name
+        display_name = REPO_RENAMES.get(name, name)
         
         # Get full language breakdown for this repo
         repo_languages = get_repo_languages(name, headers)
@@ -188,11 +201,12 @@ def main():
             if repo_languages:
                 total_bytes = sum(repo_languages.values())
                 lang_pcts = {k: f"{(v/total_bytes)*100:.1f}%" for k, v in repo_languages.items()}
-                print(f'  [{visibility:7}] {name:35} {count:3} commits')
+                print(f'  [{visibility:7}] {display_name:35} {count:3} commits')
                 print(f'            Languages: {lang_pcts}')
             else:
-                print(f'  [{visibility:7}] {name:35} {count:3} commits ({primary_lang})')
+                print(f'  [{visibility:7}] {display_name:35} {count:3} commits ({primary_lang})')
             
+            # Still count towards total stats, even if excluded from grid
             repo_data.append((name, count, primary_lang, visibility))
             
             # Process Commits
@@ -210,13 +224,15 @@ def main():
                 
                 monthly_commits[month_idx][lang] += 1
                 
-                formatted_date = date_obj.strftime('%a %b %d %Y')
-                daily_commits.append({
-                    'date': formatted_date,
-                    'repo': name,
-                    'language': lang,
-                    'type': 'commit'
-                })
+                # Only add to visual grid if NOT excluded
+                if not is_excluded:
+                    formatted_date = date_obj.strftime('%a %b %d %Y')
+                    daily_commits.append({
+                        'date': formatted_date,
+                        'repo': display_name,
+                        'language': lang,
+                        'type': 'commit'
+                    })
 
             # Process PRs and Issues
             for act in other_activity:
@@ -234,13 +250,15 @@ def main():
                 month_idx = date_obj.month - 1
                 monthly_commits[month_idx][lang] += 1
                 
-                formatted_date = date_obj.strftime('%a %b %d %Y')
-                daily_commits.append({
-                    'date': formatted_date,
-                    'repo': name,
-                    'language': lang,
-                    'type': act['type']
-                })
+                # Only add to visual grid if NOT excluded
+                if not is_excluded:
+                    formatted_date = date_obj.strftime('%a %b %d %Y')
+                    daily_commits.append({
+                        'date': formatted_date,
+                        'repo': display_name,
+                        'language': lang,
+                        'type': act['type']
+                    })
     
     total_commits = sum(c for _, c, _, _ in repo_data)
     print()
@@ -271,7 +289,7 @@ def main():
     result = {
         'monthly': monthly,
         'totalCommits': total_commits,
-        'uniqueReposTotal': len(set(d['repo'] for d in daily_commits)),
+        'uniqueReposTotal': len(repo_data),
         'daily': daily_commits,
         'languages': dict(language_commits)
     }
