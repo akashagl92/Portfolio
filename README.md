@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **339 commits across 9 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **358 commits across 9 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -122,11 +122,11 @@ _Tags: Python Flask, Databricks SQL, Pandas, Data Processing, Databricks Connect
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 339 |
+| Total Commits | 358 |
 | Unique Repositories | 9 |
 | Primary Language | Python |
-| Top Languages | Python (71.1%), JavaScript (23.0%), TypeScript (5.9%) |
-| Last Synced | 2/16/2026 |
+| Top Languages | N/A |
+| Last Synced | 2/18/2026 |
 
 ---
 
