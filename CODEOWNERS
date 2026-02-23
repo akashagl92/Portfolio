@@ -1,0 +1,12 @@
+# Default owner for the repository
+* @akashagl92
+
+# Workflow ownership
+.github/workflows/* @akashagl92
+
+# Data and presentation assets
+*.json @akashagl92
+*.html @akashagl92
+*.css @akashagl92
+*.js @akashagl92
+
