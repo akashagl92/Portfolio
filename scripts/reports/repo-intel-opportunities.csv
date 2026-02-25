@@ -1,0 +1,3 @@
+generated_at,repo,repo_url,key,title,category,priority,impact,effort,evidence,next_action,status,owner,target_date,notes
+2026-02-23T23:56:45.644Z,Portfolio,https://github.com/akashagl92/Portfolio,low-test-signal,Establish minimal automated test suite,reliability,7,5,3,No test directory/config detected from repository snapshot.,Add smoke tests for critical paths and gate PRs with test command.,todo,,,
+2026-02-23T23:56:45.644Z,Portfolio,https://github.com/akashagl92/Portfolio,missing-dependabot,Enable dependency update automation,security-maintenance,7,4,1,Dependabot config not found.,Add .github/dependabot.yml for weekly dependency checks.,todo,,,

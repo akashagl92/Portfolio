@@ -5,13 +5,16 @@ To build a "living" engineering portfolio that dynamically updates itself using 
 
 ## Current State
 - **Core Site:** Operational (HTML/JS/CSS).
-- **Responsiveness:** Fixed - Calendar grid and project cards work correctly at all viewport widths (desktop, tablet, mobile). All 16 portfolio pages use unified root `style.css`.
-- **Automation:** GitHub Actions for fetching stats (`update-stats.yml`) are largely functional but prone to occasional "stale data" or "permission" bugs.
+- **Responsiveness (2026-02-25 fixes):** Resolved horizontal overflow and asymmetric padding on mobile viewports. Unified `min(350px, 100%)` grid sizing, `body` max-width fixes, and `clip-path` glow containment rolled out to all 19 portfolio pages (root, fetch, ambience, circle, scopely, stellantis, viant).
+- **Automation:** GitHub Actions for fetching stats (`update-stats.yml`) are fully functional with specific repository filtering logic.
+- **Research Cards:**
+    - "Infinite Memory" card updated to 2026-02-25 hardened metrics.
+    - "Personal AI Infrastructure (PAI v2)" card deployed across 19 pages.
 - **Features:**
-    - "Stats Dashboard" (Live - shows accurate author-filtered contributions)
+    - "Stats Dashboard" (Live - accurate filtered contributions)
     - "Music Visualizer" (WIP)
     - "Journal Paper" (Drafting)
-    - "Tailored Portfolios" (EY-Parthenon, Scopely, Alivo, etc.)
+    - "Tailored Portfolios" (EY-Parthenon, Scopely, Alivo, Fetch, etc.)
 
 ## Desired State
 - **Fully Autonomous:** The portfolio updates its own stats, blog, and "recent work" without manual intervention.
@@ -22,3 +25,9 @@ To build a "living" engineering portfolio that dynamically updates itself using 
 1.  **Automation First:** If it can be a script, it shouldn't be a manual task.
 2.  **Verify Everything:** Trust but verify metrics (e.g., Repo Counts) against the raw API.
 3.  **Aesthetics Matter:** The design must "wow" users immediately (Dark mode, glassmorphism).
+
+## Domain Tags
+`#javascript` `#scraping` `#infra` `#universal` `#research`
+
+## Rule Version
+`v2.1.0`

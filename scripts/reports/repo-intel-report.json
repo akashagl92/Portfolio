@@ -1,0 +1,103 @@
+{
+  "args": {
+    "limit": 20,
+    "recentDays": 365,
+    "refresh": true,
+    "autofix": true,
+    "exportCsv": true,
+    "repo": "Portfolio",
+    "minPriority": 7
+  },
+  "summary": {
+    "analyzedRepoCount": 1,
+    "generatedAt": "2026-02-23T23:56:45.644Z",
+    "topOpportunities": [
+      {
+        "repo": "Portfolio",
+        "repoUrl": "https://github.com/akashagl92/Portfolio",
+        "key": "low-test-signal",
+        "title": "Establish minimal automated test suite",
+        "evidence": "No test directory/config detected from repository snapshot.",
+        "impact": 5,
+        "effort": 3,
+        "priority": 7,
+        "category": "reliability",
+        "nextAction": "Add smoke tests for critical paths and gate PRs with test command."
+      },
+      {
+        "repo": "Portfolio",
+        "repoUrl": "https://github.com/akashagl92/Portfolio",
+        "key": "missing-dependabot",
+        "title": "Enable dependency update automation",
+        "evidence": "Dependabot config not found.",
+        "impact": 4,
+        "effort": 1,
+        "priority": 7,
+        "category": "security-maintenance",
+        "nextAction": "Add .github/dependabot.yml for weekly dependency checks."
+      }
+    ],
+    "categoryDistribution": {
+      "reliability": 1,
+      "security-maintenance": 1
+    }
+  },
+  "repos": [
+    {
+      "name": "Portfolio",
+      "fullName": "akashagl92/Portfolio",
+      "url": "https://github.com/akashagl92/Portfolio",
+      "isPrivate": false,
+      "language": "JavaScript",
+      "pushedAt": "2026-02-23T23:56:06Z",
+      "daysSincePush": 0,
+      "readmeLength": 7849,
+      "hasReadme": true,
+      "hasCI": false,
+      "hasGitHubDir": true,
+      "hasTests": false,
+      "hasContribGuide": true,
+      "hasSecurityPolicy": true,
+      "hasDependabot": false,
+      "hasCodeowners": true,
+      "bugFixCommitCount": 6,
+      "filesCount": 46,
+      "commitsSampleSize": 15
+    }
+  ],
+  "opportunitiesByRepo": {
+    "Portfolio": [
+      {
+        "repo": "Portfolio",
+        "repoUrl": "https://github.com/akashagl92/Portfolio",
+        "key": "low-test-signal",
+        "title": "Establish minimal automated test suite",
+        "evidence": "No test directory/config detected from repository snapshot.",
+        "impact": 5,
+        "effort": 3,
+        "priority": 7,
+        "category": "reliability",
+        "nextAction": "Add smoke tests for critical paths and gate PRs with test command."
+      },
+      {
+        "repo": "Portfolio",
+        "repoUrl": "https://github.com/akashagl92/Portfolio",
+        "key": "missing-dependabot",
+        "title": "Enable dependency update automation",
+        "evidence": "Dependabot config not found.",
+        "impact": 4,
+        "effort": 1,
+        "priority": 7,
+        "category": "security-maintenance",
+        "nextAction": "Add .github/dependabot.yml for weekly dependency checks."
+      }
+    ]
+  },
+  "autofixHints": [
+    {
+      "key": "missing-dependabot",
+      "file": ".github/dependabot.yml",
+      "snippet": "version: 2\nupdates:\n  - package-ecosystem: \"npm\"\n    directory: \"/\"\n    schedule:\n      interval: \"weekly\""
+    }
+  ]
+}

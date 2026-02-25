@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+RUNTIME_DIR="$ROOT_DIR/.pai/runtime"
+PROFILE_FILE="$RUNTIME_DIR/profile.env"
+EVENT_LOG="$RUNTIME_DIR/events.log"
+
+mkdir -p "$RUNTIME_DIR"
+
+now_iso() {
+  date -u +"%Y-%m-%dT%H:%M:%SZ"
+}
+
+write_profile() {
+  local profile="$1"
+  local locked="$2"
+  local reason="$3"
+  local ts
+  ts="$(now_iso)"
+  cat > "$PROFILE_FILE" <<EOF
+PROFILE=$profile
+LOCKED=$locked
+REASON=$reason
+UPDATED_AT=$ts
+EOF
+  echo "$ts profile=$profile locked=$locked reason=$reason" >> "$EVENT_LOG"
+}
+
+read_profile() {
+  if [[ -f "$PROFILE_FILE" ]]; then
+    # shellcheck disable=SC1090
+    source "$PROFILE_FILE"
+  else
+    PROFILE="NATIVE"
+    LOCKED="0"
+    REASON="bootstrap_default"
+    UPDATED_AT="$(now_iso)"
+  fi
+}
+
+cmd="${1:-status}"
+reason="${2:-manual}"
+
+case "$cmd" in
+  status)
+    read_profile
+    echo "PROFILE=$PROFILE"
+    echo "LOCKED=$LOCKED"
+    echo "REASON=$REASON"
+    echo "UPDATED_AT=$UPDATED_AT"
+    ;;
+  native-on)
+    read_profile
+    if [[ "${LOCKED:-0}" == "1" && "${3:-}" != "--force" ]]; then
+      echo "Refusing native-on because profile is locked. Use --force after verification pass."
+      exit 2
+    fi
+    write_profile "NATIVE" "0" "$reason"
+    echo "Switched to NATIVE"
+    ;;
+  shadow-on)
+    write_profile "SHADOW" "1" "$reason"
+    echo "Switched to SHADOW and locked"
+    ;;
+  unlock)
+    read_profile
+    write_profile "${PROFILE:-SHADOW}" "0" "$reason"
+    echo "Unlocked profile"
+    ;;
+  reset)
+    write_profile "NATIVE" "0" "$reason"
+    echo "Reset profile to NATIVE"
+    ;;
+  *)
+    echo "Usage:"
+    echo "  scripts/pai_runtime_guard.sh status"
+    echo "  scripts/pai_runtime_guard.sh shadow-on <reason>"
+    echo "  scripts/pai_runtime_guard.sh native-on <reason> [--force]"
+    echo "  scripts/pai_runtime_guard.sh unlock <reason>"
+    echo "  scripts/pai_runtime_guard.sh reset <reason>"
+    exit 1
+    ;;
+esac

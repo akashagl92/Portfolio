@@ -1,0 +1,10 @@
+# Portfolio-Fetch Local Rules (v2.1.0 - V1 Continuity)
+
+### 1. Style Guidelines
+- Maintain project-specific CSS standards in `style.css`.
+- Ensure all pages import the project-standard CSS.
+
+### 2. Infrastructure Resilience (Strict Serialization) `#infra` `#stability`
+- **Rule**: Never modify more than one PAI System Artifact (`task.md`, `implementation_plan.md`, `walkthrough.md`) in a single turn.
+- **Rule**: `task_boundary` updates MUST be completely isolated (run in a separate turn) from file-writes to the `brain/` directory to prevent IDE Project Synchronization deadlocks.
+- **Rule**: If updating native tools (like the sidebar), do so slowly and methodically, one component per turn. No exceptions.
