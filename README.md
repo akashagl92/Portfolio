@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **396 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **400 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -122,10 +122,10 @@ _Tags: Natural Language Processing, Semantic Search, Graph Databases_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 396 |
+| Total Commits | 400 |
 | Unique Repositories | 10 |
 | Primary Language | Python |
-| Top Languages | Python (65.7%), JavaScript (21.5%), TypeScript (12.9%) |
+| Top Languages | N/A |
 | Last Synced | 2/25/2026 |
 
 ---
