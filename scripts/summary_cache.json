@@ -1,46 +1,45 @@
 {
   "Portfolio": {
-    "hash": "7241b60858c00ccfdd810849a0bf6db5",
+    "hash": "3aa13bcaf9d45a014a49065d907786f5",
     "data": {
-      "summary": "Akash Agrawal's 2025 Engineering Portfolio showcases a Data & AI Product Leader adept at blending strategic product thinking with deep technical execution. With 231 commits across 10 repositories, the projects exhibit a unique ability to architect and build production-grade systems that bridge data science research, marketing technology, and agentic AI while maintaining rigorous engineering practices.",
-      "tags": [
-        "Python",
-        "JavaScript",
-        "FastAPI",
-        "Pandas",
-        "Next.js"
+      "ai_summary": "This portfolio showcases a Data & AI Product Leader adept at architecting and deploying production-grade systems across data science, marketing technology, and agentic AI. It features an autonomous trading system with a 40.8% XIRR, AI-powered personal agents, and interactive visualizers. The platform itself leverages sophisticated automation for personalized content delivery, demonstrating a strong grasp of advanced technologies and efficient development workflows.",
+      "ai_tags": [
+        "AI/Machine Learning",
+        "Data Science",
+        "Autonomous Systems",
+        "Web Development"
       ],
-      "complexity": 8
+      "complexity_score": 7
     },
-    "last_updated": 1767689165.370873
+    "last_updated": 1772062711.8049831
   },
   "stock_price_target_modelling": {
-    "hash": "975327619c2d04d820b899075b03155b",
+    "hash": "5ae28ec5f634b83a69b57a4ba5726950",
     "data": {
-      "ai_summary": "AI-powered autonomous trading system with 40.8% XIRR, leveraging multi-tier strategy and market timing factors",
+      "ai_summary": "This autonomous AI-powered trading system dynamically manages a dual-track portfolio across stocks and crypto. It employs a sophisticated multi-tier strategy with Golden Cross momentum boosting, achieving significant XIRR performance by optimizing realized wealth. The system features automated execution with email-based approval, robust data pipelines, and shadow portfolio tracking for rigorous validation.",
       "ai_tags": [
+        "Algorithmic Trading",
         "Python",
-        "Autonomous Trading",
-        "Portfolio Management"
+        "Financial Automation",
+        "Quantitative Finance"
       ],
-      "complexity_score": 8
+      "complexity_score": 9
     },
-    "last_updated": 1767723643.922994
+    "last_updated": 1772062896.8142688
   },
   "aistro.ai": {
-    "hash": "e8295c116571e90c93ce0298fcb51266",
+    "hash": "64d88fad7601b2acb5734489da9d0945",
     "data": {
-      "ai_summary": "Developing a comprehensive astrological analysis platform, aistro.ai, involves a complex system combining traditional astrological calculations with modern AI-powered interpretations. The project features multi-system support, precise calculations, AI-powered interpretations, interactive charts, and advanced astrological analyses. Backed by rigorous statistical research, the platform offers predictive ML models and precise temporal predictions, enhancing user experience and providing a holistic approach to astrological insights.",
+      "ai_summary": "This advanced AI platform provides comprehensive astrological analysis across Western, Vedic, and Horary systems. It leverages precise astronomical calculations and Google Gemini for AI-powered, statistically validated interpretations. Built with Next.js and FastAPI, it offers interactive charts, predictive insights, and robust data science integration, backed by research on over 12,000 events.",
       "ai_tags": [
-        "Python",
-        "JavaScript",
-        "Node.js",
-        "Google Gemini API",
-        "Data Science"
+        "AI/ML",
+        "Full-Stack Development",
+        "Data Science",
+        "Astrology Engine"
       ],
-      "complexity_score": 8
+      "complexity_score": 9
     },
-    "last_updated": 1767689185.636559
+    "last_updated": 1772062775.289382
   },
   "Music-and-Math": {
     "hash": "096c79fc750e33a2a19d94060c4ac75a",
@@ -186,16 +185,45 @@
     "last_updated": 1767689283.1011488
   },
   "moltbot": {
-    "hash": "3264a225f001cea4c87572a395c83b7c",
+    "hash": "82ac41f37886f98ccc444d0fef490fc9",
     "data": {
-      "ai_summary": "Moltbot is an autonomous AI assistant for personal and family use, featuring unified messaging and advanced codebase management.",
+      "ai_summary": "Moltbot is a cutting-edge personal AI agent platform that revolutionizes LLM memory by overcoming attention saturation. Utilizing Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC), it achieves 100% discovery fidelity over 10 million conversation turns with O(1) query latency. This research-grade system provides persistent, scalable agentic memory, pushing the boundaries of AI interaction and long-term context retention.",
       "ai_tags": [
-        "AI",
-        "Machine Learning",
-        "Containerization"
+        "LLM Memory Management",
+        "AI Agent Systems",
+        "Container Orchestration",
+        "Polyglot Development"
       ],
-      "complexity_score": 8
+      "complexity_score": 10
     },
-    "last_updated": 1769971999.151752
+    "last_updated": 1772062646.2006872
+  },
+  "agentic-memory-scaling": {
+    "hash": "e7e932f3adeaed779204e4359b896264",
+    "data": {
+      "ai_summary": "This research identifies the \"Discovery Cliff,\" a fundamental scaling limit where LLM-based agents lose critical information in long conversation histories due to temporal decay. The novel Recursive Gated Consolidation (RGC) architecture rigorously overcomes this, maintaining 100% signal recall at over 10 million turns by decoupling discovery from synthesis, significantly advancing agentic memory capabilities.",
+      "ai_tags": [
+        "LLM Agentic Systems",
+        "Memory Consolidation",
+        "Scaling Laws",
+        "AI Benchmarking"
+      ],
+      "complexity_score": 9
+    },
+    "last_updated": 1772062584.658806
+  },
+  "pi-home-assistant": {
+    "hash": "9d55be7a44c39bc12362b5965713a94f",
+    "data": {
+      "ai_summary": "Establishes a self-hosted smart home hub on a Raspberry Pi, leveraging Home Assistant to integrate diverse IoT devices and custom sensors. It enables sophisticated, privacy-focused automations, transforming a standard SBC into a central nervous system for intelligent environmental control and monitoring.",
+      "ai_tags": [
+        "Raspberry Pi",
+        "Home Automation",
+        "IoT",
+        "Python"
+      ],
+      "complexity_score": 6
+    },
+    "last_updated": 1772062832.852582
   }
 }

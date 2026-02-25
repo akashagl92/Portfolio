@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **379 commits across 9 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **396 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -44,27 +44,27 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ### 🔮 AI Astrology Platform (`aistro.ai`)
 **Python** | [Repo](https://github.com/akashagl92/aistro.ai)
 
-Developing a comprehensive astrological analysis platform, aistro.ai, involves a complex system combining traditional astrological calculations with modern AI-powered interpretations. The project features multi-system support, precise calculations, AI-powered interpretations, interactive charts, and advanced astrological analyses. Backed by rigorous statistical research, the platform offers predictive ML models and precise temporal predictions, enhancing user experience and providing a holistic approach to astrological insights.
+This advanced AI platform provides comprehensive astrological analysis across Western, Vedic, and Horary systems. It leverages precise astronomical calculations and Google Gemini for AI-powered, statistically validated interpretations. Built with Next.js and FastAPI, it offers interactive charts, predictive insights, and robust data science integration, backed by research on over 12,000 events.
 
-_Tags: Python, JavaScript, Node.js, Google Gemini API, Data Science_
+_Tags: AI/ML, Full-Stack Development, Data Science, Astrology Engine_
 
 ---
 
 ### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)
 **TypeScript** | [Repo](https://github.com/akashagl92/moltbot)
 
-Moltbot is an autonomous AI assistant for personal and family use, featuring unified messaging and advanced codebase management.
+Moltbot is a cutting-edge personal AI agent platform that revolutionizes LLM memory by overcoming attention saturation. Utilizing Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC), it achieves 100% discovery fidelity over 10 million conversation turns with O(1) query latency. This research-grade system provides persistent, scalable agentic memory, pushing the boundaries of AI interaction and long-term context retention.
 
-_Tags: AI, Machine Learning, Containerization_
+_Tags: LLM Memory Management, AI Agent Systems, Container Orchestration, Polyglot Development_
 
 ---
 
 ### 📈 Autonomous Trading System (`stock_price_target_modelling`)
 **Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)
 
-AI-powered autonomous trading system with 40.8% XIRR, leveraging multi-tier strategy and market timing factors
+This autonomous AI-powered trading system dynamically manages a dual-track portfolio across stocks and crypto. It employs a sophisticated multi-tier strategy with Golden Cross momentum boosting, achieving significant XIRR performance by optimizing realized wealth. The system features automated execution with email-based approval, robust data pipelines, and shadow portfolio tracking for rigorous validation.
 
-_Tags: Python, Autonomous Trading, Portfolio Management_
+_Tags: Algorithmic Trading, Python, Financial Automation, Quantitative Finance_
 
 ---
 
@@ -80,9 +80,18 @@ _Tags: Vanilla JavaScript, Web Audio API, HTML5 Canvas, CSS3, Music Theory_
 ### Portfolio (`Portfolio`)
 **JavaScript** | [Repo](https://github.com/akashagl92/Portfolio)
 
-Akash Agrawal's 2025 Engineering Portfolio showcases a Data & AI Product Leader adept at blending strategic product thinking with deep technical execution. With 231 commits across 10 repositories, the projects exhibit a unique ability to architect and build production-grade systems that bridge data science research, marketing technology, and agentic AI while maintaining rigorous engineering practices.
+This portfolio showcases a Data & AI Product Leader adept at architecting and deploying production-grade systems across data science, marketing technology, and agentic AI. It features an autonomous trading system with a 40.8% XIRR, AI-powered personal agents, and interactive visualizers. The platform itself leverages sophisticated automation for personalized content delivery, demonstrating a strong grasp of advanced technologies and efficient development workflows.
 
-_Tags: Python, JavaScript, FastAPI, Pandas, Next.js_
+_Tags: AI/Machine Learning, Data Science, Autonomous Systems, Web Development_
+
+---
+
+### Agentic-memory-scaling (`agentic-memory-scaling`)
+**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)
+
+This research identifies the "Discovery Cliff," a fundamental scaling limit where LLM-based agents lose critical information in long conversation histories due to temporal decay. The novel Recursive Gated Consolidation (RGC) architecture rigorously overcomes this, maintaining 100% signal recall at over 10 million turns by decoupling discovery from synthesis, significantly advancing agentic memory capabilities.
+
+_Tags: LLM Agentic Systems, Memory Consolidation, Scaling Laws, AI Benchmarking_
 
 ---
 
@@ -92,15 +101,6 @@ _Tags: Python, JavaScript, FastAPI, Pandas, Next.js_
 Advanced AI platform for philosophical and scriptural text analysis
 
 _Tags: Natural Language Processing, Semantic Search, Graph Databases_
-
----
-
-### Databricks-Genie-Integration (`Databricks-Genie-Integration`)
-**Python** | [Repo](https://github.com/akashagl92/Databricks-Genie-Integration)
-
-Developed a sophisticated web application, Databricks Genie Integration, facilitating seamless connectivity between Databricks workspaces and business intelligence tools for enhanced data lookup and enrichment capabilities. The project features multi-workspace support, pre-built queries, natural language query support, and advanced data enrichment functionalities, utilizing a technology stack including Python Flask, Databricks SQL, HTML, CSS, JavaScript, Pandas, SQL, and Databricks Connect for authentication.
-
-_Tags: Python Flask, Databricks SQL, Pandas, Data Processing, Databricks Connect_
 
 
 ---
@@ -122,10 +122,10 @@ _Tags: Python Flask, Databricks SQL, Pandas, Data Processing, Databricks Connect
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 379 |
-| Unique Repositories | 9 |
+| Total Commits | 396 |
+| Unique Repositories | 10 |
 | Primary Language | Python |
-| Top Languages | N/A |
+| Top Languages | Python (65.7%), JavaScript (21.5%), TypeScript (12.9%) |
 | Last Synced | 2/25/2026 |
 
 ---

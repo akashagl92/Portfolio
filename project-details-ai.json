@@ -1,5 +1,71 @@
 [
   {
+    "name": "agentic-memory-scaling",
+    "fullName": "akashagl92/agentic-memory-scaling",
+    "description": "Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems \u2014 The Discovery Cliff",
+    "url": "https://github.com/akashagl92/agentic-memory-scaling",
+    "homepage": null,
+    "isPrivate": false,
+    "language": "Python",
+    "languages": {
+      "Python": 24899
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2026-02-25T22:37:04Z",
+    "updatedAt": "2026-02-25T22:45:57Z",
+    "pushedAt": "2026-02-25T22:45:53Z",
+    "topics": [],
+    "readme": "# Agentic Memory Scaling\n\n**Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems**\n\n[![Paper](https://img.shields.io/badge/Paper-APA_Format-blue)](paper/paper_memory_consolidation_apa.md)\n[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)\n\n---\n\n## Abstract\n\nThis repository contains the research paper, benchmark data, and reproducibility harness for **\"The Discovery Cliff: Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems.\"**\n\nWe identify a fundamental scaling limit\u2014the **Discovery Cliff**\u2014where standard single-stage memory consolidation (SSC) fails to extract new signals from long conversation histories. Through a dual-tier ablation study across multiple model generations (Google Gemini 2.5/3.0, Anthropic Claude 4.6), we prove that **temporal decay accounts for 99% of the recall collapse**, establishing an invariant Scaling Law for Agentic Memory.\n\nWe propose **Recursive Gated Consolidation (RGC)**, a two-stage architecture that maintains **100% signal recall at 10M+ turns** by decoupling discovery from synthesis.\n\n## Key Findings\n\n| Finding | Detail |\n| :--- | :--- |\n| **The Discovery Cliff** | SSC recall collapses after 1M turns (Flash) / 5M turns (Pro) |\n| **Temporal Decay Dominance** | Decay rate ($d$) accounts for **99%** of recall collapse |\n| **RGC Performance** | Maintains **100% recall** at 10M+ turns |\n| **Synthetic Saturation** | Code distractors accelerate decay by ~12% vs. prose |\n| **Cross-System Validation** | Validated in chatbot (Moltbot) and IDE (Antigravity) environments |\n\n## Repository Structure\n\n```\nagentic-memory-scaling/\n\u251c\u2500\u2500 README.md                  # This file\n\u251c\u2500\u2500 LICENSE                    # MIT License\n\u251c\u2500\u2500 paper/\n\u2502   \u2514\u2500\u2500 paper_memory_consolidation_apa.md  # Full APA research paper\n\u251c\u2500\u2500 benchmarks/\n\u2502   \u251c\u2500\u2500 results/               # High-fidelity JSON results (N=50)\n\u2502   \u2502   \u251c\u2500\u2500 flash_results_n50.json\n\u2502   \u2502   \u251c\u2500\u2500 pro_results_n50.json\n\u2502   \u2502   \u251c\u2500\u2500 gemini-3.0-flash_results_n50.json\n\u2502   \u2502   \u251c\u2500\u2500 claude-4.6-opus_results_n50.json\n\u2502   \u2502   \u2514\u2500\u2500 ablation_*.json\n\u2502   \u2514\u2500\u2500 figures/               # Publication-ready figures (v5)\n\u2502       \u251c\u2500\u2500 discovery_cliff_v5.png\n\u2502       \u251c\u2500\u2500 model_comparison_v5.png\n\u2502       \u251c\u2500\u2500 ablation_fidelity_vs_decay_v1.png\n\u2502       \u2514\u2500\u2500 ablation_fidelity_vs_decay_v2.png\n\u2514\u2500\u2500 scripts/\n    \u2514\u2500\u2500 run_cst.py             # Cognitive Stress Test harness\n```\n\n## Reproducing Results\n\n### Prerequisites\n- Python 3.10+\n- `matplotlib` (for visualization)\n\n### Running the Benchmark\n```bash\ncd scripts\npython run_cst.py\n```\n\nThis will execute the Cognitive Stress Test (CST) harness, generating:\n- `scale_results.json` \u2014 Raw recall data across logarithmic turn depths\n- `discovery_cliff_auto.png` \u2014 The Discovery Cliff visualization\n\n## Citation\n\nIf you use this work in your research, please cite:\n\n```bibtex\n@article{agrawal2026discovery,\n  title={The Discovery Cliff: Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems},\n  author={Agrawal, Akash},\n  year={2026},\n  note={Preprint}\n}\n```\n\n## License\n\nThis project is licensed under the MIT License \u2014 see the [LICENSE](LICENSE) file for details.\n",
+    "files": [
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "path": "LICENSE"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "benchmarks",
+        "type": "dir",
+        "path": "benchmarks"
+      },
+      {
+        "name": "paper",
+        "type": "dir",
+        "path": "paper"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "path": "scripts"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2026-02-25T22:45:52Z",
+        "message": "docs: update affiliation, model list, abstract, and stale figure refs",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-02-25T22:36:46Z",
+        "message": "Initial commit: Discovery Cliff research paper, benchmarks, and reproducibility harness",
+        "author": "Akash Agrawal"
+      }
+    ],
+    "ai_summary": "This research identifies the \"Discovery Cliff,\" a fundamental scaling limit where LLM-based agents lose critical information in long conversation histories due to temporal decay. The novel Recursive Gated Consolidation (RGC) architecture rigorously overcomes this, maintaining 100% signal recall at over 10 million turns by decoupling discovery from synthesis, significantly advancing agentic memory capabilities.",
+    "ai_tags": [
+      "LLM Agentic Systems",
+      "Memory Consolidation",
+      "Scaling Laws",
+      "AI Benchmarking"
+    ],
+    "complexity_score": 9
+  },
+  {
     "name": "moltbot",
     "fullName": "akashagl92/moltbot",
     "description": null,
@@ -8,24 +74,24 @@
     "isPrivate": true,
     "language": "TypeScript",
     "languages": {
-      "TypeScript": 16161447,
-      "HTML": 13700218,
+      "TypeScript": 16275577,
+      "HTML": 5074541,
       "Swift": 2627390,
       "Kotlin": 365828,
-      "Shell": 161982,
-      "Python": 102469,
+      "Python": 235451,
+      "Shell": 163151,
       "CSS": 100960,
-      "JavaScript": 82897,
-      "Dockerfile": 3863,
+      "JavaScript": 82678,
+      "Dockerfile": 4071,
       "Ruby": 3023
     },
     "stars": 0,
     "forks": 0,
     "createdAt": "2026-01-29T07:21:35Z",
-    "updatedAt": "2026-02-01T08:44:18Z",
-    "pushedAt": "2026-02-01T08:44:13Z",
+    "updatedAt": "2026-02-25T21:57:53Z",
+    "pushedAt": "2026-02-25T21:57:49Z",
     "topics": [],
-    "readme": "# Moltbot: Prime Halo Edition\n\nThis is the **Prime Halo** deployment of Moltbot, a personal AI assistant optimized for family use and unified messaging.\n\n## \ud83c\udfaf North Star\nBuild a robust, multi-user Moltbot environment optimized for personal and family use, with unified access to WhatsApp, Gmail, and local workspace search.\n\n## \ud83e\udde0 Agentic Capabilities\nBeyond simple chat, this instance serves as an autonomous software engineer and researcher:\n- **Codebase Management**: Capable of cloning git repositories, traversing complex project structures, and performing full-stack engineering tasks.\n- **Ideation & Strategy**: Partners on product ideation, helping refine concepts into actionable technical plans.\n- **Market Research**: Conducts extensive market research to validate ideas and inform feature development.\n- **Review & Iterate**: Performs code reviews, audits architecture, and iterates on designs based on feedback.\n\n## \ud83d\ude80 Active Integrations\n\n### WhatsApp (Primary Channel)\n- **Status**: Enabled via `channels.whatsapp`.\n- **Policy**: `allowlist` only (Privacy-first).\n- **Allowed Users**: `+1**********`.\n- **Features**: QR pairing, self-chat mode enabled.\n- **Media**: Self-chat mode and read receipts enabled.\n\n### AI Models (Chain of Resilience)\n- **Primary**: Google Gemini 2.5 Flash (`google/gemini-2.5-flash`).\n- **Secondary**: Groq Llama 3.3 70B (`groq/llama-3.3-70b-versatile`) as fallback.\n- **Provider API Keys**: Managed in `.moltbot/moltbot.json`.\n\n### Skills & Tools\n- **GoPlaces**: Enabled for Google Maps/Reviews location data.\n- **Web Search**: Generic web search is disabled in favor of specific tools.\n- **Memory**: Gemini-backed semantic memory enabled with session watch.\n- **Code Execution**: Local sandbox execution enabled.\n\n## \ud83d\udee0\ufe0f Configuration\nThe primary configuration is located at `~/.moltbot/moltbot.json`.\n\n### Key Settings Overview\n```json\n{\n  \"gateway\": {\n    \"port\": 18789,\n    \"mode\": \"local\",\n    \"auth\": { \"token\": \"<REDACTED_TOKEN>\" }\n  },\n  \"agents\": {\n    \"defaults\": {\n      \"model\": { \n        \"primary\": \"google/gemini-2.5-flash\",\n        \"fallbacks\": [] \n      },\n      \"memorySearch\": {\n        \"enabled\": true,\n        \"provider\": \"gemini\"\n      }\n    }\n  }\n}\n```\n\n## \ud83c\udfc3\u200d\u2642\ufe0f Operational Runbook\n\n### Starting the Gateway\n```bash\n# Start the gateway on the configured port\nmoltbot gateway --port 18789 --verbose\n```\n\n### Onboarding / Re-configuration\n```bash\n# Run the wizard to interactively update settings\nmoltbot onboard\n```\n\n### Connecting Channels\n**WhatsApp**:\n```bash\n# Login to WhatsApp (generates QR code)\nmoltbot channels login --channel whatsapp\n```\n\n### Verification\n- **Health Check**: `moltbot doctor`\n- **Status**: check `http://localhost:18789` (if Control UI is enabled).\n\n## \ud83d\udcc2 Project Structure\n- `.pai/`: **Personal AI Infrastructure**. Central source of truth for Project Goals (`manifest.md`), Architectural Decisions (`decisions/`), and Learnings (`learnings/`).\n- `moltbot/`: Source code (upstream fork).\n- `README_UPSTREAM.md`: Original Moltbot framework documentation.\n\n---\n*For core framework documentation, deep dives, and API references, see [README_UPSTREAM.md](./README_UPSTREAM.md).*\n",
+    "readme": "# Moltbot: Resilient Agentic Memory & Extreme-Scale Research\n\nMoltbot is a research-grade personal AI agent platform built for **Recursive Gated Consolidation (RGC)** and **Structured State Convergence (SSC)**. It is designed to overcome the \" silicone wall\" of attention saturation in LLMs, enabling persistent agentic memory across millions of conversation turns.\n\n## \ud83d\udd2c Research Focus\nThis repository serves as the primary evaluation environment for the **Cognitive Stress Test (CST)** benchmarks, identifying the \"Discovery Cliff\" in single-stage consolidation architectures.\n\n- **Research Paper**: [Structured State Convergence: Scaling Agentic Memory to 10 Million Turns via Recursive Gated Consolidation](.pai/research/paper_memory_consolidation_apa.md)\n- **Recursive Gated Consolidation (RGC)**: A multi-stage memory architecture that maintains 100% discovery fidelity at 10M+ turns by filtering and synthesizing raw signal from noise.\n- **Tiered Memory Model**: Decouples strategic, architectural, and narrative state into a three-layer persistence system ([docs](docs/concepts/tiered-memory-model.md)).\n- **Structured State Convergence (SSC)**: $O(1)$ query latency with structured compaction.\n\n## \ud83d\udcdc Citation\nIf you use this codebase or the RGC/SSC architectures in your research, please cite:\n\n```bibtex\n@article{agrawal2026moltbot,\n  title={Structured State Convergence: Scaling Agentic Memory to 10 Million Turns via Recursive Gated Consolidation},\n  author={Agrawal, Akash},\n  journal={Work-in-Progress (Peer Review)},\n  year={2026},\n  url={https://github.com/akashagrawal/moltbot}\n}\n```\n\n## \ud83d\udee0\ufe0f Performance & Verification\nTo reproduce the research findings, use the native benchmarking suite:\n```bash\npython3 scripts/benchmarking/run_cst.py --scenario test/benchmarks/identity_amnesia.json --scale-test\n```\n*Note: RGC mode triggers automatically after 100,000 turns.*\n\n---\n\n<!-- START_CAPABILITIES -->\n\n### \ud83d\ude80 Dynamic Capabilities\n\n| Category | Name | Description |\n| :--- | :--- | :--- |\n| Skill | **1password** | Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op. |\n| Skill | **apple-notes** | Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks Moltbot to add a note, list notes, search notes, or manage note folders. |\n| Skill | **apple-reminders** | Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output. |\n| Skill | **bear-notes** | Create, search, and manage Bear notes via grizzly CLI. |\n| Skill | **bird** | X/Twitter CLI for reading, searching, posting, and engagement via cookies. |\n| Skill | **blogwatcher** | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI. |\n| Skill | **blucli** | BluOS CLI (blu) for discovery, playback, grouping, and volume. |\n| Skill | **bluebubbles** | Build or update the BlueBubbles external channel plugin for Moltbot (extension package, REST send/probe, webhook inbound). |\n| Skill | **camsnap** | Capture frames or clips from RTSP/ONVIF cameras. |\n| Skill | **clawdhub** | Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawdhub CLI. |\n| Skill | **coding-agent** | Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control. |\n| Skill | **discord** | Use when you need to control Discord from Moltbot via the discord tool: send messages, react, post or upload stickers, upload emojis, run polls, manage threads/pins/search, create/edit/delete channels and categories, fetch permissions or member/role/channel info, or handle moderation actions in Discord DMs or channels. |\n| Skill | **eightctl** | Control Eight Sleep pods (status, temperature, alarms, schedules). |\n| Skill | **food-order** | Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA. |\n| Skill | **gemini** | Gemini CLI for one-shot Q&A, summaries, and generation. |\n| Skill | **gifgrep** | Search GIF providers with CLI/TUI, download results, and extract stills/sheets. |\n| Skill | **github** | \"Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.\" |\n| Skill | **gog** | Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. |\n| Skill | **goplaces** | \"Google Places API - Find restaurants, coffee shops, hotels, businesses, attractions nearby. Use for 'find places near me', 'look up restaurants', 'coffee shops nearby', or any real-time location/business search. Also known as: google-places, places, location-search.\" |\n| Skill | **himalaya** | \"CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).\" |\n| Skill | **imsg** | iMessage/SMS CLI for listing chats, history, watch, and sending. |\n| Skill | **job-hunter** | Run automated job searches across LinkedIn, Google Jobs, Startup.jobs, Wellfound, and Reddit. Get email digests of relevant job listings matching your profile. |\n| Skill | **local-places** | Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost. |\n| Skill | **mcporter** | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation. |\n| Skill | **model-usage** | Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON. |\n| Skill | **nano-banana-pro** | Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro). |\n| Skill | **nano-pdf** | Edit PDFs with natural-language instructions using the nano-pdf CLI. |\n| Skill | **notion** | Notion API for creating and managing pages, databases, and blocks. |\n| Skill | **obsidian** | Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli. |\n| Skill | **openai-image-gen** | Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery. |\n| Skill | **openai-whisper** | Local speech-to-text with the Whisper CLI (no API key). |\n| Skill | **openai-whisper-api** | Transcribe audio via OpenAI Audio Transcriptions API (Whisper). |\n| Skill | **openhue** | Control Philips Hue lights/scenes via the OpenHue CLI. |\n| Skill | **oracle** | Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns). |\n| Skill | **ordercli** | Foodora-only CLI for checking past orders and active order status (Deliveroo WIP). |\n| Skill | **peekaboo** | Capture and automate macOS UI with the Peekaboo CLI. |\n| Skill | **sag** | ElevenLabs text-to-speech with mac-style say UX. |\n| Skill | **session-logs** | Search and analyze your own session logs (older/parent conversations) using jq. |\n| Skill | **sherpa-onnx-tts** | Local text-to-speech via sherpa-onnx (offline, no cloud) |\n| Skill | **skill-creator** | Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets. |\n| Skill | **slack** | Use when you need to control Slack from Moltbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs. |\n| Skill | **songsee** | Generate spectrograms and feature-panel visualizations from audio with the songsee CLI. |\n| Skill | **sonoscli** | Control Sonos speakers (discover/status/play/volume/group). |\n| Skill | **spotify-player** | Terminal Spotify playback/search via spogo (preferred) or spotify_player. |\n| Skill | **summarize** | Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for \u201ctranscribe this YouTube/video\u201d). |\n| Skill | **things-mac** | Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks Moltbot to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags. |\n| Skill | **tmux** | Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output. |\n| Skill | **trello** | Manage Trello boards, lists, and cards via the Trello REST API. |\n| Skill | **video-frames** | Extract frames or short clips from videos using ffmpeg. |\n| Skill | **voice-call** | Start voice calls via the Moltbot voice-call plugin. |\n| Skill | **wacli** | Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats). |\n| Skill | **weather** | Native Plugin (See index.ts) |\n\n<!-- END_CAPABILITIES -->\n",
     "files": [
       {
         "name": ".agent",
@@ -61,6 +127,11 @@
         "name": ".gitignore",
         "type": "file",
         "path": ".gitignore"
+      },
+      {
+        "name": ".moltbot-debug-prompt.txt",
+        "type": "file",
+        "path": ".moltbot-debug-prompt.txt"
       },
       {
         "name": ".npmrc",
@@ -113,14 +184,34 @@
         "path": ".swiftlint.yml"
       },
       {
+        "name": "AGENTS-CORE.md",
+        "type": "file",
+        "path": "AGENTS-CORE.md"
+      },
+      {
+        "name": "AGENTS-EXTENDED.md",
+        "type": "file",
+        "path": "AGENTS-EXTENDED.md"
+      },
+      {
         "name": "AGENTS.md",
         "type": "file",
         "path": "AGENTS.md"
       },
       {
+        "name": "BOOTSTRAP.md",
+        "type": "file",
+        "path": "BOOTSTRAP.md"
+      },
+      {
         "name": "CHANGELOG.md",
         "type": "file",
         "path": "CHANGELOG.md"
+      },
+      {
+        "name": "CITATION.cff",
+        "type": "file",
+        "path": "CITATION.cff"
       },
       {
         "name": "CLAUDE.md",
@@ -143,6 +234,11 @@
         "path": "Dockerfile"
       },
       {
+        "name": "Dockerfile.aether",
+        "type": "file",
+        "path": "Dockerfile.aether"
+      },
+      {
         "name": "Dockerfile.sandbox",
         "type": "file",
         "path": "Dockerfile.sandbox"
@@ -158,9 +254,19 @@
         "path": "HEARTBEAT.md"
       },
       {
+        "name": "IDENTITY.md",
+        "type": "file",
+        "path": "IDENTITY.md"
+      },
+      {
         "name": "LICENSE",
         "type": "file",
         "path": "LICENSE"
+      },
+      {
+        "name": "MEMORY.md",
+        "type": "file",
+        "path": "MEMORY.md"
       },
       {
         "name": "README-header.png",
@@ -213,9 +319,14 @@
         "path": "assets"
       },
       {
-        "name": "debug-paths.mts",
+        "name": "auth-profiles.json",
         "type": "file",
-        "path": "debug-paths.mts"
+        "path": "auth-profiles.json"
+      },
+      {
+        "name": "canvas",
+        "type": "dir",
+        "path": "canvas"
       },
       {
         "name": "docker-compose.yml",
@@ -258,9 +369,19 @@
         "path": "git-hooks"
       },
       {
+        "name": "logs",
+        "type": "dir",
+        "path": "logs"
+      },
+      {
         "name": "moltbot.mjs",
         "type": "file",
         "path": "moltbot.mjs"
+      },
+      {
+        "name": "music-and-math",
+        "type": "file",
+        "path": "music-and-math"
       },
       {
         "name": "package.json",
@@ -276,6 +397,11 @@
         "name": "patches",
         "type": "dir",
         "path": "patches"
+      },
+      {
+        "name": "pids",
+        "type": "dir",
+        "path": "pids"
       },
       {
         "name": "pnpm-lock.yaml",
@@ -365,88 +491,89 @@
     ],
     "recentCommits": [
       {
-        "date": "2026-02-01T08:44:09Z",
-        "message": "feat(browser): standardize viewport, fix profile defaults, and add PDF extraction fallback",
+        "date": "2026-02-25T21:57:48Z",
+        "message": "docs(research): final scientific polish on memory consolidation paper",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-29T18:18:33Z",
-        "message": "docs: add Prime Halo specific README and upstream reference",
+        "date": "2026-02-25T21:41:47Z",
+        "message": "fix(research): convert absolute image paths to relative for GitHub rendering",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-29T07:33:57Z",
-        "message": "docs: PAI sync - added privacy/auth ADRs and lockout RCA",
+        "date": "2026-02-25T21:32:43Z",
+        "message": "chore: restore CI stability and align research metrics",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-29T07:22:47Z",
-        "message": "feat: initial moltbot configuration, privacy fixes, and PAI integration",
+        "date": "2026-02-25T07:15:07Z",
+        "message": "paper: rename Moltbot to Aether, add Conversation Sentinel as live SSC application",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-28T21:32:10Z",
-        "message": "fix(ui): gateway URL confirmation modal (based on #2880) (#3578)",
-        "author": "Tyler Yust"
+        "date": "2026-02-25T07:12:30Z",
+        "message": "feat: add conversation_sentinel.py \u2014 IDE RGC extension for cross-session memory",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-28T16:39:35Z",
-        "message": "fix: banner spacing",
-        "author": "Gustavo Madeira Santana"
+        "date": "2026-02-25T06:27:44Z",
+        "message": "ritual: pai_sync \u2014 capture ablation lesson, update manifest RGC status",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-28T13:26:25Z",
-        "message": "fix(cli): initialize plugins before pairing CLI registration (#3272)",
-        "author": "Akshay"
+        "date": "2026-02-25T06:21:30Z",
+        "message": "research: add single-variable ablation study and comprehensive paper revision",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-28T12:31:47Z",
-        "message": "Merge pull request #3316 from bguidolim/fix/mime-types-audio-video",
-        "author": "Shakker"
+        "date": "2026-02-25T05:49:36Z",
+        "message": "research: fix recall denominator bug and regenerate high-SNR charts",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-28T12:17:50Z",
-        "message": "fix(media): add missing MIME type mappings for audio/video files",
-        "author": "Bruno Guidolim"
+        "date": "2026-02-25T05:45:26Z",
+        "message": "docs: codify dynamic RGC hybrid thresholds in ADR 0023 and mission log",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-27T17:22:04Z",
-        "message": "fix: use fileURLToPath for Windows compatibility",
-        "author": "Roopak Nijhara"
+        "date": "2026-02-25T05:39:56Z",
+        "message": "research: synchronize individual smoothed visualizations",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-27T16:00:44Z",
-        "message": "style: run pnpm format",
-        "author": "Roopak Nijhara"
+        "date": "2026-02-25T05:37:29Z",
+        "message": "research: finalize high-SNR smoothed benchmarks and apa paper",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-27T11:24:08Z",
-        "message": "feat(hooks): make session-memory message count configurable (#2681)",
-        "author": "Roopak Nijhara"
+        "date": "2026-02-25T05:19:08Z",
+        "message": "research: finalized annotated charts and tiered synthesis definitions",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-28T07:12:04Z",
-        "message": "Accidental inclusion",
-        "author": "Shadow"
+        "date": "2026-02-25T05:05:40Z",
+        "message": "research: Gemini 2.5 Pro cross-validation results and CST script enhancements",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-28T06:36:12Z",
-        "message": "Discord: fix resolveDiscordTarget parse options",
-        "author": "Shadow"
+        "date": "2026-02-25T04:29:53Z",
+        "message": "docs: scientific refinements for NeurIPS/ICLR publication readiness",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-28T06:11:28Z",
-        "message": "fix: wire per-account dm scope guidance (#3095) (thanks @jarvis-sam)",
-        "author": "Ayaan Zaidi"
+        "date": "2026-02-24T19:04:25Z",
+        "message": "ci: pin Node 22 for install smoke workflow",
+        "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Moltbot is an autonomous AI assistant for personal and family use, featuring unified messaging and advanced codebase management.",
+    "ai_summary": "Moltbot is a cutting-edge personal AI agent platform that revolutionizes LLM memory by overcoming attention saturation. Utilizing Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC), it achieves 100% discovery fidelity over 10 million conversation turns with O(1) query latency. This research-grade system provides persistent, scalable agentic memory, pushing the boundaries of AI interaction and long-term context retention.",
     "ai_tags": [
-      "AI",
-      "Machine Learning",
-      "Containerization"
+      "LLM Memory Management",
+      "AI Agent Systems",
+      "Container Orchestration",
+      "Polyglot Development"
     ],
-    "complexity_score": 8
+    "complexity_score": 10
   },
   {
     "name": "Portfolio",
@@ -457,18 +584,18 @@
     "isPrivate": false,
     "language": "JavaScript",
     "languages": {
-      "JavaScript": 423973,
-      "HTML": 401018,
-      "CSS": 183876,
-      "Python": 51196
+      "JavaScript": 465324,
+      "HTML": 425380,
+      "CSS": 274219,
+      "Python": 52122
     },
     "stars": 0,
     "forks": 0,
     "createdAt": "2025-12-19T03:23:05Z",
-    "updatedAt": "2026-02-01T06:39:46Z",
-    "pushedAt": "2026-02-01T06:39:43Z",
+    "updatedAt": "2026-02-25T07:32:51Z",
+    "pushedAt": "2026-02-25T07:32:47Z",
     "topics": [],
-    "readme": "# Akash Agrawal - 2025 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **231 commits across 10 repositories** in 2025, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**\u2014all while maintaining rigorous engineering practices.\n\n## \ud83c\udf10 Live Sites\n\n- **General**: [https://akashagl92.github.io/Portfolio/](https://akashagl92.github.io/Portfolio/)\n- **Fetch-tailored**: [https://akashagl92.github.io/Portfolio/fetch/](https://akashagl92.github.io/Portfolio/fetch/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Rather than building features speculatively, each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. The AI Astrology project exemplifies this\u2014running **3+ million chart calculations** and conducting large-scale statistical research that would traditionally require a dedicated data science team was accomplished efficiently through AI-assisted development.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature rather than an afterthought.\n\n---\n\n## Project Deep-Dives\n\n### \ud83d\udd2e AI Astrology Platform (`aistro.ai`)\n**152 commits | Python | [Live Demo](https://aistro-frontend-stage.onrender.com)**\n\n**Research Scale:**\n- **5,885 public figures** from AstroDataBank analyzed\n- **239 countries** studied for geopolitical astrological patterns\n- **3+ million chart calculations** processed using Swiss Ephemeris astronomical API\n- **FDR-corrected significance** (q < 0.001) for statistical rigor\n\n**Technical Architecture:**\n| Component | Technology |\n|-----------|------------|\n| Astronomical Engine | Swiss Ephemeris (industry-standard) |\n| AI Interpretations | Google Gemini API |\n| Knowledge Base | 18 astrology books indexed via RAG |\n| Vector Search | Semantic + Lexical hybrid retrieval |\n| Frontend | Next.js |\n| Backend | FastAPI + PostgreSQL |\n\n**Key Features:**\n- Multi-system support: Western (Tropical), Vedic (Sidereal), Horary\n- Divisional charts (D1-D60), Dasha periods, Yoga detection\n- Mundane astrology for country governance analysis\n- Q&A system with natural language queries\n\n---\n\n### \ud83d\udcc8 Autonomous Trading System (`stock_price_target_modelling`)\n**23 commits | Python | Walk-Forward Validated**\n\n**Performance:** 63.6% XIRR \u2014 a **3.5x improvement over S&P 500 benchmark** (18.4%) using the same cash flows for apples-to-apples comparison.\n\n**Technical Innovation:**\n- **Dual-Track Portfolio**: 10 Stocks + 20 Crypto positions\n- **Market Timing Factors**:\n  - BTC Momentum (20-day returns): Chi-square p=0.0001\n  - VIX Volatility Factor (>25 threshold)\n- **Tiered Allocation**: Forever Holdings (4x), Quality Growth (1.5x), Speculative (0.5x)\n- **Walk-Forward Validation**: Training 2021-2023, OOS 2024-2025\n\n**Automation:**\n- Monthly rebalancing with email-based approval workflow\n- Trend breakdown protection logic\n- Fundamental safeguards (3-month Fund Score smoothing)\n\n---\n\n### \ud83c\udfb9 Sonic Geometry Visualizer (`Music-and-Math`)\n**JavaScript | Zero Dependencies**\n\nMIDI emulator for learning music theory through mathematical visualization of sound.\n\n**Features:**\n1. **Interactive Visualizations**: Oscilloscope, Spectrum Analyzer (FFT), Lissajous Figures, Interference Patterns\n2. **Music Theory Lab**: Circle of Fifths, Harmony Explorer (interval ratios: 3:2, 4:3, 5:4)\n3. **Virtual Instruments**: Polyphonic keyboard, Continuous drone, Dual-voice harmony mode\n\n**Tech Stack:** Pure vanilla JavaScript with Web Audio API and HTML5 Canvas.\n\n---\n\n### \ud83e\udd16 Databricks Genie Integration\n**8 commits | Python + Flask**\n\n- **Multi-Workspace Support**: Connect to multiple Databricks environments\n- **Natural Language \u2192 SQL**: Business questions in plain English via Genie API\n- **Bulk Data Processing**: Excel/CSV enrichment at scale\n- **Multi-Criteria Matching**: Email, Org hierarchy, DHC mapping\n\n---\n\n### \ud83d\udcac VOC & Buyer Journey Chatbot\n**3 commits | LangChain + LangGraph**\n\n**Architecture:** Dual-brain system with SQL Brain (Databricks Genie) + Docs Brain (RAG)\n\n**Tech Stack:**\n- LangChain 0.2+ with LangGraph orchestration\n- Databricks Vector Search + databricks-bge-large-en embeddings\n- LangSmith observability\n- Streamlit UI on Databricks\n\n---\n\n### \ud83d\udcca Marketing Analytics Assistant\n**4 commits | FastAPI + Python**\n\n- Natural language processing for marketing experiment queries\n- Statistical testing: Z-tests, chi-square, binomial, power analysis\n- Automated winner determination with confidence intervals\n- GPT + Gemini for insight generation\n\n---\n\n### \ud83d\udd17 LinkedIn Campaign Measurement (`LinkedIn-API`)\n**3 commits | Python**\n\nAutomated daily campaign stats export via LinkedIn Marketing API with company name resolution and Excel reporting for cross-platform ad measurement.\n\n---\n\n### \ud83d\udcda Philosophy Sage (GraphRAG)\n**7 commits | Neo4j + LangChain**\n\nAI-powered exploration of ancient philosophy texts (Mahabharata, Bhagavad Gita) using:\n- Neo4j knowledge graph for entity relationships across 18 Parvas\n- Vector search hybrid retrieval\n- Sanskrit TTS integration\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **Statistical significance testing** before feature deployment\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: 3M+ calculations that would require dedicated data science teams\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation\n3. **Self-documenting code**: Comprehensive READMEs and architecture docs\n\n---\n\n## Summary Statistics\n\n| Metric | 2025 Value |\n|--------|------------|\n| Total Commits | 231 |\n| Unique Repositories | 10 |\n| Primary Language | Python (83.5%) |\n| Secondary Languages | JavaScript (12.6%), TypeScript (3.9%) |\n| Peak Activity | Aug-Sep (122 commits) |\n\n---\n\n## \ud83d\udee0 Tech Stack\n\n- Vanilla JavaScript (no frameworks)\n- CSS3 with custom properties\n- GitHub Actions for automated daily data updates\n\n## \ud83d\udcc1 Structure\n\n```\n\u251c\u2500\u2500 index.html          \u2192 General portfolio\n\u251c\u2500\u2500 style.css\n\u251c\u2500\u2500 app.js\n\u251c\u2500\u2500 data.json           \u2192 GitHub activity data\n\u251c\u2500\u2500 fetch/              \u2192 Fetch-tailored portfolio\n\u2514\u2500\u2500 scripts/\n    \u2514\u2500\u2500 fetch-github.js \u2192 Data fetcher (GitHub Actions)\n```\n\n## \ud83d\ude80 Development\n\n```bash\n# Start local server (root)\npython3 -m http.server 8080\n\n# Start local server (fetch)\ncd fetch && python3 -m http.server 5500\n\n# Update GitHub stats (requires GITHUB_TOKEN)\nnode scripts/fetch-github.js\n```\n\n## \ud83d\udcdd License\n\nMIT\n",
+    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **379 commits across 9 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**\u2014all while maintaining rigorous engineering practices.\n\n## \ud83c\udf10 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### \ud83d\udd2e AI Astrology Platform (`aistro.ai`)\n**Python** | [Repo](https://github.com/akashagl92/aistro.ai)\n\nDeveloping a comprehensive astrological analysis platform, aistro.ai, involves a complex system combining traditional astrological calculations with modern AI-powered interpretations. The project features multi-system support, precise calculations, AI-powered interpretations, interactive charts, and advanced astrological analyses. Backed by rigorous statistical research, the platform offers predictive ML models and precise temporal predictions, enhancing user experience and providing a holistic approach to astrological insights.\n\n_Tags: Python, JavaScript, Node.js, Google Gemini API, Data Science_\n\n---\n\n### \ud83d\udcf2 Moltbot - AI WhatsApp Agent (`moltbot`)\n**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)\n\nMoltbot is an autonomous AI assistant for personal and family use, featuring unified messaging and advanced codebase management.\n\n_Tags: AI, Machine Learning, Containerization_\n\n---\n\n### \ud83d\udcc8 Autonomous Trading System (`stock_price_target_modelling`)\n**Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)\n\nAI-powered autonomous trading system with 40.8% XIRR, leveraging multi-tier strategy and market timing factors\n\n_Tags: Python, Autonomous Trading, Portfolio Management_\n\n---\n\n### \ud83c\udfb9 Sonic Geometry Visualizer (`Music-and-Math`)\n**JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)\n\nSonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.\n\n_Tags: Vanilla JavaScript, Web Audio API, HTML5 Canvas, CSS3, Music Theory_\n\n---\n\n### Portfolio (`Portfolio`)\n**JavaScript** | [Repo](https://github.com/akashagl92/Portfolio)\n\nAkash Agrawal's 2025 Engineering Portfolio showcases a Data & AI Product Leader adept at blending strategic product thinking with deep technical execution. With 231 commits across 10 repositories, the projects exhibit a unique ability to architect and build production-grade systems that bridge data science research, marketing technology, and agentic AI while maintaining rigorous engineering practices.\n\n_Tags: Python, JavaScript, FastAPI, Pandas, Next.js_\n\n---\n\n### Philosophy-sage (`philosophy-sage`)\n**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)\n\nAdvanced AI platform for philosophical and scriptural text analysis\n\n_Tags: Natural Language Processing, Semantic Search, Graph Databases_\n\n---\n\n### Databricks-Genie-Integration (`Databricks-Genie-Integration`)\n**Python** | [Repo](https://github.com/akashagl92/Databricks-Genie-Integration)\n\nDeveloped a sophisticated web application, Databricks Genie Integration, facilitating seamless connectivity between Databricks workspaces and business intelligence tools for enhanced data lookup and enrichment capabilities. The project features multi-workspace support, pre-built queries, natural language query support, and advanced data enrichment functionalities, utilizing a technology stack including Python Flask, Databricks SQL, HTML, CSS, JavaScript, Pandas, SQL, and Databricks Connect for authentication.\n\n_Tags: Python Flask, Databricks SQL, Pandas, Data Processing, Databricks Connect_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 379 |\n| Unique Repositories | 9 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 2/25/2026 |\n\n---\n\n## \ud83d\udee0 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## \ud83d\udcc1 Structure\n\n```\n\u251c\u2500\u2500 index.html          \u2192 General portfolio\n\u251c\u2500\u2500 alivo/              \u2192 Alivo-tailored (Product Enthusiast)\n\u251c\u2500\u2500 consensys/          \u2192 Consensys-tailored (Market Research)\n\u251c\u2500\u2500 airbnb/             \u2192 Airbnb-tailored (Research & Discovery)\n\u251c\u2500\u2500 data.json           \u2192 GitHub activity data (Synced DAILY)\n\u2514\u2500\u2500 scripts/            \u2192 Automation & Dynamic generation\n```\n\n## \ud83c\udfd7 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch-project-details.js| B[project-details.json]\n    B -->|agentic_chronicler.py| C[summary_cache.json]\n    C -->|update-readme.js| D[README.md]\n    E[README.template.md] --> D\n```\n\n## \ud83d\ude80 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\nnode scripts/fetch-github.js\nnode scripts/update-readme.js\n```\n\n## \ud83d\udcdd License\n\nMIT\n",
     "files": [
       {
         "name": ".agent",
@@ -506,6 +633,11 @@
         "path": "Agrawal_Akash - Resume.docx"
       },
       {
+        "name": "CODEOWNERS",
+        "type": "file",
+        "path": "CODEOWNERS"
+      },
+      {
         "name": "CONTRIBUTING.md",
         "type": "file",
         "path": "CONTRIBUTING.md"
@@ -514,6 +646,16 @@
         "name": "README.md",
         "type": "file",
         "path": "README.md"
+      },
+      {
+        "name": "README.template.md",
+        "type": "file",
+        "path": "README.template.md"
+      },
+      {
+        "name": "SECURITY.md",
+        "type": "file",
+        "path": "SECURITY.md"
       },
       {
         "name": "airbnb",
@@ -551,6 +693,11 @@
         "path": "data.json"
       },
       {
+        "name": "ey",
+        "type": "dir",
+        "path": "ey"
+      },
+      {
         "name": "fedex",
         "type": "dir",
         "path": "fedex"
@@ -586,6 +733,11 @@
         "path": "og-image.png"
       },
       {
+        "name": "old_style.css",
+        "type": "file",
+        "path": "old_style.css"
+      },
+      {
         "name": "package-lock.json",
         "type": "file",
         "path": "package-lock.json"
@@ -596,9 +748,9 @@
         "path": "package.json"
       },
       {
-        "name": "project-details.json",
+        "name": "project-details-ai.json",
         "type": "file",
-        "path": "project-details.json"
+        "path": "project-details-ai.json"
       },
       {
         "name": "project-details.json.bak",
@@ -641,9 +793,29 @@
         "path": "style.css"
       },
       {
+        "name": "style_backup_hero_preserved.css",
+        "type": "file",
+        "path": "style_backup_hero_preserved.css"
+      },
+      {
+        "name": "style_old.css",
+        "type": "file",
+        "path": "style_old.css"
+      },
+      {
+        "name": "style_reference.css",
+        "type": "file",
+        "path": "style_reference.css"
+      },
+      {
         "name": "test_access.txt",
         "type": "file",
         "path": "test_access.txt"
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "path": "tests"
       },
       {
         "name": "torq",
@@ -658,81 +830,89 @@
     ],
     "recentCommits": [
       {
-        "date": "2026-02-01T06:39:42Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
+        "date": "2026-02-25T07:32:46Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
       },
       {
-        "date": "2026-01-31T06:28:14Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
+        "date": "2026-02-24T07:32:15Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
       },
       {
-        "date": "2026-01-30T06:38:09Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
+        "date": "2026-02-23T23:56:42Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
       },
       {
-        "date": "2026-01-29T21:36:04Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-29T21:35:12Z",
-        "message": "ci: Include Alivo page in daily stats update",
+        "date": "2026-02-23T23:52:10Z",
+        "message": "chore: add portfolio quality baseline PoC",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-29T21:34:15Z",
-        "message": "fix: Add missing data.json to Alivo page",
+        "date": "2026-02-23T07:36:26Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-02-22T07:10:19Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-02-21T07:05:27Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-02-20T07:29:30Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-02-19T07:31:40Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-02-18T22:56:35Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-02-18T22:55:37Z",
+        "message": "Fix: Update-stats user.name & Filter sensitive repos from grid",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-29T21:32:20Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-29T21:31:40Z",
-        "message": "feat: Add Alivo portfolio page and update Moltbot branding",
+        "date": "2026-02-16T19:57:31Z",
+        "message": "Fix daily job schedule and update portfolio stats",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-29T06:36:32Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
+        "date": "2026-02-06T14:32:42Z",
+        "message": "fix: global cache invalidation (v15 -> v16) and activeLanguages parity to fix language legend reduction",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-28T06:25:30Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
+        "date": "2026-02-05T21:41:13Z",
+        "message": "feat: add tailored EY-Parthenon portfolio page with custom OG image and latest IRR updates",
+        "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-27T06:24:02Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-26T06:26:25Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-25T06:21:25Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-24T06:21:05Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
-      },
-      {
-        "date": "2026-01-23T06:22:51Z",
-        "message": "Update portfolio stats [skip ci]",
-        "author": "GitHub Actions Bot"
+        "date": "2026-02-02T06:33:50Z",
+        "message": "docs(pai): sync session - responsive CSS learnings and manifest update",
+        "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "This portfolio showcases a Data & AI Product Leader adept at architecting and deploying production-grade systems across data science, marketing technology, and agentic AI. It features an autonomous trading system with a 40.8% XIRR, AI-powered personal agents, and interactive visualizers. The platform itself leverages sophisticated automation for personalized content delivery, demonstrating a strong grasp of advanced technologies and efficient development workflows.",
+    "ai_tags": [
+      "AI/Machine Learning",
+      "Data Science",
+      "Autonomous Systems",
+      "Web Development"
+    ],
+    "complexity_score": 7
   },
   {
     "name": "aistro.ai",
@@ -743,10 +923,10 @@
     "isPrivate": true,
     "language": "Python",
     "languages": {
-      "Python": 4516869,
-      "TypeScript": 1255127,
+      "Python": 4718375,
+      "TypeScript": 1263170,
       "HTML": 422820,
-      "Shell": 112496,
+      "Shell": 113033,
       "JavaScript": 7569,
       "CSS": 3001,
       "Procfile": 1921
@@ -754,10 +934,10 @@
     "stars": 0,
     "forks": 0,
     "createdAt": "2025-03-18T06:19:43Z",
-    "updatedAt": "2026-01-29T02:20:50Z",
-    "pushedAt": "2026-01-29T02:20:47Z",
+    "updatedAt": "2026-02-19T17:26:36Z",
+    "pushedAt": "2026-02-19T17:26:32Z",
     "topics": [],
-    "readme": "# SwissEphemeris-Astrology\n\n![Python](https://img.shields.io/badge/python-3.10+-blue.svg)\n![Next.js](https://img.shields.io/badge/Next.js-14.0-black)\n![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688.svg)\n![License](https://img.shields.io/badge/license-MIT-green.svg)\n![Research](https://img.shields.io/badge/Research-Validated-purple)\n\nA comprehensive astrological analysis platform that combines traditional astrological calculations with modern AI-powered interpretations. The system provides accurate astronomical calculations and delivers personalized astrological insights through an intuitive web interface.\n\n## \ud83d\udcda Documentation\n\n### **Complete Technical Documentation**\n- **`COMPREHENSIVE_DOCUMENTATION.md`** - Complete technical reference (130KB+)\n  - System architecture and design patterns\n  - Frontend and backend implementation details\n  - Database schema and analytics system\n  - Testing strategy and deployment guide\n  - Business model and pricing strategy\n  - Security and privacy compliance\n\n### **Development Resources**\n- **`CONTRIBUTING.md`** - Development guidelines and Cursor agent instructions\n- **`CHANGELOG.md`** - Version history and recent changes\n- **`README.md`** - This file - project overview and quick start\n\n### **For Cursor Agents & Developers**\n**\u26a0\ufe0f IMPORTANT**: Before making any changes, read:\n1. **`COMPREHENSIVE_DOCUMENTATION.md`** - Complete technical reference\n2. **`CONTRIBUTING.md`** - Development guidelines and requirements\n3. Current codebase structure and patterns\n\n**Key Requirements:**\n- Keep documentation updated for any code changes\n- Request privacy policy review for data collection changes\n- Maintain minimal tech debt (no duplicate code)\n- Write comprehensive tests for new functionality\n\n## \ud83c\udf1f Features\n\n### Core Functionality\n- **Multi-System Support**: Western (Tropical), Vedic (Sidereal), and Horary astrology\n- **Precise Calculations**: Industry-standard astronomical calculations for accuracy\n- **AI-Powered Interpretations**: Google Gemini API for intelligent analysis\n- **Interactive Charts**: Visual birth chart representations\n- **Q&A System**: Natural language queries about astrological data\n- **Export Capabilities**: PDF generation with custom branding\n- **Responsive Design**: Mobile-first, accessible interface\n\n### Advanced Features\n- **Mundane Astrology**: Country/entity charts using independence dates for geopolitical analysis\n  - *Coming Soon: Company (IPO dates) and Cryptocurrency (launch dates) entity types*\n- **Divisional Charts**: Complete Vedic divisional chart analysis (D1-D60)\n- **Dasha Periods**: Vimshottari Dasha calculations and interpretations\n- **Transit Analysis**: Current planetary movements and their effects\n- **Aspect Analysis**: Detailed planetary aspect calculations\n- **Yogas Detection**: Vedic yoga identification and analysis\n- **Nakshatra Analysis**: Detailed lunar mansion interpretations\n- **Dosha Analysis**: Astrological affliction detection (Mangal, Saturn, Rahu, etc.)\n- **House Systems**: Multiple house system support\n- **Analytics Tracking**: Comprehensive user interaction analytics\n- **Multi-Channel Sharing**: Social media integration with tracking\n\n## \ud83d\udd2c Research & Scientific Validation\n\nThis platform is backed by **rigorous statistical research** validating astrological principles. Our research applies modern data science methods to test traditional astrological techniques.\n\n### Research Dataset\n- **5,885 public figures** with verified birth data and 4,740 documented life events\n- **239 countries** with independence charts and 7,311 historical events\n\n### Key Scientific Findings\n| Finding | Evidence |\n|---------|----------|\n| **Astrological Correlations** | Statistically significant (q < 0.001 after FDR correction) |\n| **Domain-Specific Patterns** | House 10\u2192career, House 7\u2192relationships validated |\n| **Vedic Techniques** | Doshas (RR up to 2.69), 14 Yoga types, Divisional charts all significant |\n| **Combination Effects** | Synergy ratios up to 48.89x when conditions align |\n| **Predictive ML Models** | 69-85% accuracy in predicting life events |\n| **Temporal Precision** | 50%+ events within 1\u00b0 orb of exact transits |\n\n### \ud83d\udcd6 Complete Research Documentation\n- **[Master Research Documentation](backend/research/reports/COMPREHENSIVE_MASTER_RESEARCH_DOCUMENTATION.md)** - Complete findings, methodology, and statistical analysis\n- **[Research Directory](backend/research/)** - Scripts, data, and reproducible results\n\n### \ud83e\uddec Hybrid System & Research Philosophy\nWe enforce a unique **\"Archetypal Transferability\"** data philosophy:\n- **Core Premise**: An archetype (e.g., \"Sun in House 10 = Visibility\") is statistically valid regardless of which system places the planet there.\n- **Interoperability**:\n  - **Western Points in Vedic**: We support toggling asteroids (Lilith, Pallas) in Vedic charts. These are interpreted using a **Hybrid Approach**: calculated by Sidereal Sign (Vedic), Vedic House, and *Vedic Nakshatra*.\n  - **Data Flow**: To ensure depth of insight, **all calculated bodies (including asteroids) are passed to the AI Interpretation Engine** even if hidden in the UI. The \"Western Points\" toggle is a visual preference, not a data filter.\n  - **Exclusion**: We do *not* force Vedic-derived points (Arudha Lagna) into Western systems as they lack the requisite framework.\n\n## \ud83c\udfd7\ufe0f Architecture\n\n### Technology Stack\n- **Frontend**: Next.js 14, React 18, TypeScript, Tailwind CSS\n- **Backend**: FastAPI, Python 3.10, SQLAlchemy\n- **Database**: PostgreSQL (Production), SQLite (Development)\n- **AI Integration**: Google Gemini API, HuggingFace Inference API\n- **PDF Generation**: ReportLab with custom watermarking\n- **Deployment**: Render.com, Heroku, Railway, PM2\n- **Testing**: Pytest, Jest, GitHub Actions\n\n### System Components\n```mermaid\ngraph TD\n    Client[Client Layer]\n    Web[Web Browser]\n    Mobile[Mobile App]\n    API[API Clients]\n    \n    Client --> Web\n    Client --> Mobile\n    Client --> API\n    \n    Web --> Frontend[Next.js Frontend]\n    Mobile --> Frontend\n    \n    Frontend --> Backend[FastAPI Backend]\n    \n    subgraph \"Frontend Services\"\n        Components[React Components]\n        Pages[Next.js Pages]\n        Utils[Utilities]\n        Styles[Tailwind CSS]\n    end\n    \n    Frontend --- Components\n    Frontend --- Pages\n    \n    subgraph \"Backend Services\"\n        Routes[Route Handlers]\n        Logic[Business Logic]\n        AI[AI Integration (Gemini)]\n        Data[Data Processing]\n        Ephe[Swiss Ephemeris]\n        DB[(Database)]\n    end\n    \n    Backend --> Routes\n    Routes --> Logic\n    Logic --> AI\n    Logic --> Data\n    Logic --> Ephe\n    Logic --> DB\n```\n\n## \ud83d\ude80 Quick Start\n\n### Prerequisites\n- Python 3.10+\n- Node.js 18+\n- npm or yarn\n- PostgreSQL (for production)\n\n## \ud83e\uddea Testing\n\n### Comprehensive Testing Strategy\nOur application includes a robust testing framework covering all aspects of functionality, security, and user experience:\n\n- **[Testing Strategy](TESTING_STRATEGY.md)**: Complete testing pyramid including unit, integration, and security tests\n- **[Security Testing](SECURITY_TESTING.md)**: Comprehensive security testing framework with automated vulnerability detection\n- **[UAT Test Plan](UAT_TEST_PLAN.md)**: Detailed User Acceptance Testing scenarios and procedures\n\n### Running Tests\n```bash\n# Run all tests\ncd backend && python run_tests.py\n\n# Run security tests\ncd backend && python run_security_tests.py\n\n# Run frontend tests\nnpm test\n\n# Run specific test categories\npython -m pytest tests/test_security.py -m sql_injection -v\npython -m pytest tests/test_astrology.py -v\nnpm test -- --testNamePattern=\"NatalChartWheel\"\n```\n\n### Installation\n\n1. **Clone the repository**\n   ```bash\n   git clone https://github.com/your-username/SwissEphemeris-Astrology.git\n   cd SwissEphemeris-Astrology\n   ```\n\n2. **Set up the backend**\n   ```bash\n   # Create and activate virtual environment\n   python -m venv venv_py310\n   source venv_py310/bin/activate  # On Windows: venv_py310\\Scripts\\activate\n   \n   # Install dependencies\n   cd backend\n   pip install -r requirements.txt\n   ```\n\n3. **Set up the frontend**\n   ```bash\n   # Install dependencies\n   npm install\n   ```\n\n4. **Environment Configuration**\n   \n   Create `.env` files in both root and backend directories:\n   \n   **Root `.env`:**\n   ```env\n   NEXT_PUBLIC_API_URL=http://localhost:8001\n   ```\n   \n   **Backend `.env`:**\n   ```env\n   DATABASE_URL=sqlite:///./astrology.db\n   EPHEMERIS_PATH=./app/ephe\n   GEMINI_API_KEY=your_gemini_api_key_here\n   SECRET_KEY=your_secret_key_here\n   ```\n\n5. **Download ephemeris files**\n   ```bash\n   cd backend\n   mkdir -p app/ephe\n   # Download ephemeris files for astronomical calculations\n   # Or use the provided download script\n   python download_ephemeris.py\n   ```\n\n### Running the Application\n\n1. **Start the backend server**\n```bash\ncd backend\nsource ../venv_py310/bin/activate\n   python -m uvicorn app.main:app --port 8001 --reload\n```\n\n2. **Start the frontend server**\n```bash\nnpm run dev\n```\n\n3. **Access the application**\n   - Frontend: http://localhost:3000\n   - Backend API: http://localhost:8001\n   - API Documentation: http://localhost:8001/docs\n\n## \ud83d\udcc1 Project Structure\n\n```\nAistro-Astrology/\n\u251c\u2500\u2500 README.md\n\u251c\u2500\u2500 ARCHITECTURE.md\n\u251c\u2500\u2500 DESIGN_GUIDELINES.md\n\u251c\u2500\u2500 package.json\n\u251c\u2500\u2500 next.config.js\n\u251c\u2500\u2500 tailwind.config.js\n\u251c\u2500\u2500 tsconfig.json\n\u251c\u2500\u2500 .env\n\u251c\u2500\u2500 .env.local\n\u251c\u2500\u2500 .gitignore\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 src/                          # Frontend source code\n\u2502   \u251c\u2500\u2500 components/               # React components\n\u2502   \u2502   \u251c\u2500\u2500 ui/                  # Base UI components\n\u2502   \u2502   \u251c\u2500\u2500 charts/              # Chart components\n\u2502   \u2502   \u251c\u2500\u2500 forms/               # Form components\n\u2502   \u2502   \u251c\u2500\u2500 analysis/            # Analysis components\n\u2502   \u2502   \u2514\u2500\u2500 layout/              # Layout components\n\u2502   \u251c\u2500\u2500 pages/                   # Next.js pages\n\u2502   \u2502   \u251c\u2500\u2500 api/                 # API routes\n\u2502   \u2502   \u251c\u2500\u2500 index.tsx            # Home page\n\u2502   \u2502   \u2514\u2500\u2500 chart.tsx            # Chart page\n\u2502   \u251c\u2500\u2500 utils/                   # Utility functions\n\u2502   \u2502   \u251c\u2500\u2500 api.ts               # API client\n\u2502   \u2502   \u251c\u2500\u2500 formatters.ts        # Data formatters\n\u2502   \u2502   \u251c\u2500\u2500 textFormatting.ts    # Text formatting utilities\n\u2502   \u2502   \u2514\u2500\u2500 validators.ts        # Input validation\n\u2502   \u251c\u2500\u2500 types/                   # TypeScript types\n\u2502   \u2502   \u251c\u2500\u2500 chart.ts             # Chart types\n\u2502   \u2502   \u2514\u2500\u2500 api.ts               # API types\n\u2502   \u2514\u2500\u2500 styles/                  # Styling\n\u2502       \u251c\u2500\u2500 globals.css          # Global styles\n\u2502       \u2514\u2500\u2500 components.css       # Component styles\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 backend/                     # Backend source code\n\u2502   \u251c\u2500\u2500 app/\n\u2502   \u2502   \u251c\u2500\u2500 main.py             # FastAPI application\n\u2502   \u2502   \u251c\u2500\u2500 config.py           # Configuration\n\u2502   \u2502   \u251c\u2500\u2500 models/             # Pydantic models\n\u2502   \u2502   \u251c\u2500\u2500 database/           # Database layer\n\u2502   \u2502   \u251c\u2500\u2500 routes/             # API routes\n\u2502   \u2502   \u251c\u2500\u2500 services/           # Business logic\n\u2502   \u2502   \u251c\u2500\u2500 training/           # AI training\n\u2502   \u2502   \u251c\u2500\u2500 utils/              # Utilities\n\u2502   \u2502   \u2514\u2500\u2500 ephe/               # Ephemeris files\n\u2502   \u251c\u2500\u2500 tests/                  # Test suite\n\u2502   \u251c\u2500\u2500 requirements.txt        # Python dependencies\n\u2502   \u2514\u2500\u2500 .env                    # Backend environment\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 .github/                    # GitHub workflows\n\u2502   \u2514\u2500\u2500 workflows/\n\u2502       \u251c\u2500\u2500 deploy.yml          # Deployment workflow\n\u2502       \u2514\u2500\u2500 test.yml            # Testing workflow\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 scripts/                    # Deployment scripts\n\u2502   \u251c\u2500\u2500 deploy.sh              # Deployment script\n\u2502   \u2514\u2500\u2500 backup.sh              # Backup script\n\u2514\u2500\u2500 \n\u2514\u2500\u2500 docs/                      # Documentation\n    \u251c\u2500\u2500 api/                   # API documentation\n    \u251c\u2500\u2500 user-guide/            # User guide\n    \u2514\u2500\u2500 developer-guide/       # Developer guide\n```\n\n## \ud83d\udd27 Configuration\n\n### Environment Variables\n\n#### Frontend Environment Variables\n```env\nNEXT_PUBLIC_API_URL=http://localhost:8001\nNEXT_PUBLIC_BRAND_NAME=\"Aistro Astrology\"\n```\n\n#### Backend Environment Variables\n```env\n# Database\nDATABASE_URL=sqlite:///./astrology.db\nDATABASE_URL_PROD=postgresql://user:password@localhost/astrology\n\n# Ephemeris\nEPHEMERIS_PATH=./app/ephe\n\n# AI Integration\nGEMINI_API_KEY=your_gemini_api_key_here\nDISABLE_AI_INTERPRETATIONS=false\n\n# Security\nSECRET_KEY=your_secret_key_here\nCORS_ORIGINS=[\"http://localhost:3000\"]\n\n# Logging\nLOG_LEVEL=INFO\nLOG_FILE=app.log\n\n# Export\nWATERMARK_TEXT=\"Aistro Astrology\"\n```\n\n### Ephemeris Setup\n\n1. **Download ephemeris files**\n   ```bash\n   cd backend/app/ephe\n   wget https://www.astro.com/ftp/swisseph/ephe/sepl_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/semo_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/seas_18.se1\n   ```\n\n2. **Verify file integrity**\n   ```bash\n   cd backend\n   python -c \"from app.config import validate_ephemeris_files; validate_ephemeris_files()\"\n   ```\n\n## \ud83e\uddea Testing\n\n### Backend Tests\n```bash\ncd backend\nsource ../venv_py310/bin/activate\npython -m pytest tests/ -v\n```\n\n### Frontend Tests\n```bash\nnpm test\n```\n\n### Integration Tests\n```bash\nnpm run test:integration\n```\n\n### Test Coverage\n```bash\n# Backend coverage\ncd backend\npython -m pytest --cov=app tests/\n\n# Frontend coverage\nnpm run test:coverage\n```\n\n## \ud83d\udcca API Documentation\n\n### Core Endpoints\n#### Chart Calculation\n```http\nPOST /calculate\nContent-Type: application/json\n\n{\n  \"date\": \"1990-07-12\",\n  \"time\": \"14:30\",\n  \"city\": \"New York\",\n  \"state\": \"NY\",\n  \"country\": \"USA\",\n  \"system\": \"western\" // or \"vedic\"\n}\n```\n\n#### Interpretation (Streaming)\n```http\nPOST /interpret\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"system\": \"vedic\",\n  \"include_transits\": true,\n  \"section\": \"natal_chart_interpretation\"\n}\n```\n\n#### City Suggestion\n```http\nGET /suggest_cities?query=London&limit=5&include_timezone=true\n```\n\n#### Q&A System\n```http\nPOST /qa\nContent-Type: application/json\n\n{\n  \"question\": \"What does Saturn in 5th house mean?\",\n  \"context\": { \"chart_data\": ... },\n  \"system\": \"vedic\"\n}\n```\n\n#### Predictions\n```http\nPOST /api/predictions/generate\nContent-Type: application/json\n\n{\n  \"date\": \"1990-07-12\",\n  \"time\": \"14:30\",\n  \"city\": \"New York\",\n  \"prediction_window_days\": 30\n}\n```\n\n#### PDF Export\n```http\nPOST /export/chart/pdf\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"birth_details\": { ... }\n}\n```\n\n### Response Format\n```json\n{\n  \"success\": true,\n  \"data\": {\n    // Response data\n  },\n  \"meta\": {\n    \"timestamp\": \"2024-01-08T12:00:00Z\",\n    \"requestId\": \"req_123456\",\n    \"version\": \"1.0.0\"\n  }\n}\n```\n\n## \ud83d\ude80 Deployment\n\n### Production Deployment\n\n1. **Build the application**\n   ```bash\n   npm run build\n   ```\n\n2. **Deploy to Render.com**\n   ```bash\n   # Using the provided deployment script\n   ./scripts/deploy.sh\n   ```\n\n3. **Environment Setup**\n   - Set production environment variables\n   - Configure database connections\n   - Set up SSL certificates\n\n### Container Deployment\n\n1. **Using Heroku**\n```bash\nheroku create your-app-name\nheroku config:set DATABASE_URL=your_db_url\ngit push heroku main\n```\n\n2. **Using Railway**\n```bash\nrailway login\nrailway init\nrailway up\n```\n\n### Manual Deployment\n\n1. **Backend deployment**\n   ```bash\n   cd backend\n   gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker\n   ```\n\n2. **Frontend deployment**\n   ```bash\n   npm run build\n   npm run start\n   ```\n\n## \ud83d\udd12 Security\n\n### Authentication & Authorization\n- JWT token-based authentication\n- Role-based access control\n- Rate limiting on API endpoints\n- Input validation and sanitization\n\n### Data Protection\n- Encrypted database connections\n- Secure API key management\n- CORS configuration\n- Request/response logging\n\n## \ud83d\udcc8 Performance\n\n### Optimization Strategies\n- **Frontend**: Code splitting, image optimization, caching\n- **Backend**: Database indexing, connection pooling, async processing\n- **API**: Response compression, pagination, caching headers\n\n### Monitoring\n- Application performance monitoring\n- Error tracking and logging\n- Database query optimization\n- API response time monitoring\n\n## \ud83e\udd1d Contributing\n\n### Development Workflow\n\n1. **Fork the repository**\n2. **Create a feature branch**\n   ```bash\n   git checkout -b feature/amazing-feature\n   ```\n3. **Make your changes**\n4. **Run tests**\n   ```bash\n   npm test\n   cd backend && python -m pytest\n   ```\n5. **Submit a pull request**\n\n### Code Style Guidelines\n\n#### TypeScript/JavaScript\n- Use TypeScript for type safety\n- Follow ESLint configuration\n- Use Prettier for code formatting\n- Write meaningful variable names\n\n#### Python\n- Follow PEP 8 style guide\n- Use type hints\n- Write docstrings for functions\n- Use meaningful variable names\n\n### Commit Message Format\n```\ntype(scope): description\n\n[optional body]\n\n[optional footer]\n```\n\nExample:\n```\nfeat(qa): add PDF export functionality\n\nAdd PDF export capability to Q&A responses with custom watermarking\nand structured formatting for better readability.\n\nCloses #123\n```\n\n## \ud83d\udcda Documentation\n\n### Available Documentation\n- [Architecture Guide](ARCHITECTURE.md) - System architecture and design\n- [Design Guidelines](DESIGN_GUIDELINES.md) - UI/UX and code style guidelines\n- [API Documentation](docs/api/) - Detailed API reference\n- [User Guide](docs/user-guide/) - End-user documentation\n- [Developer Guide](docs/developer-guide/) - Development setup and guidelines\n\n### Generating Documentation\n```bash\n# API documentation\ncd backend\npython -m app.docs.generate_api_docs\n\n# Code documentation\nnpm run docs:generate\n```\n\n## \ud83d\udc1b Troubleshooting\n\n### Common Issues\n\n#### Ephemeris Files Missing\n```bash\n# Error: Ephemeris files not found\n# Solution: Download ephemeris files\ncd backend/app/ephe\npython ../download_ephemeris.py\n```\n\n#### Database Connection Issues\n```bash\n# Error: Database connection failed\n# Solution: Check database configuration\ncd backend\npython -c \"from app.database import test_connection; test_connection()\"\n```\n\n#### AI Integration Issues\n```bash\n# Error: Gemini API key invalid\n# Solution: Check API key configuration\nexport GEMINI_API_KEY=your_valid_api_key\n```\n\n### Debug Mode\n```bash\n# Enable debug logging\nexport LOG_LEVEL=DEBUG\n\n# Run with debug mode\ncd backend\npython -m uvicorn app.main:app --reload --log-level debug\n```\n\n## \ud83d\udcc4 License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n## \ufffd\ufffd Acknowledgments\n\n- Astronomical calculation libraries for precise calculations\n- Google Gemini team for AI integration\n- Astrological community for domain expertise\n- Open source contributors and maintainers\n\n## \ud83d\udcde Support\n\n### Getting Help\n- \ud83d\udce7 Email: support@aistro.ai\n- \ud83d\udcac Discord: [Join our community](https://discord.gg/astrology)\n- \ud83d\udcd6 Documentation: [docs.aistro.ai](https://docs.aistro.ai)\n- \ud83d\udc1b Issues: [GitHub Issues](https://github.com/akashagl/AI-Astrologer/issues)\n\n### Commercial Support\nFor commercial licensing, custom development, or enterprise support, please contact us at akash.agl92@gmail.com.\n\n---\n\nMade with \u2764\ufe0f by Akash Agrawal and Cursor",
+    "readme": "# SwissEphemeris-Astrology\n\n![Python](https://img.shields.io/badge/python-3.10+-blue.svg)\n![Next.js](https://img.shields.io/badge/Next.js-14.0-black)\n![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688.svg)\n![License](https://img.shields.io/badge/license-MIT-green.svg)\n![Research](https://img.shields.io/badge/Research-Validated-purple)\n\nA comprehensive astrological analysis platform that combines traditional astrological calculations with modern AI-powered interpretations. The system provides accurate astronomical calculations and delivers personalized astrological insights through an intuitive web interface.\n\n## \ud83d\udcda Documentation\n\n### **Complete Technical Documentation**\n- **[COMPREHENSIVE_DOCUMENTATION.md](docs/COMPREHENSIVE_DOCUMENTATION.md)** - Complete technical reference (130KB+)\n  - System architecture and design patterns\n  - Frontend and backend implementation details\n  - Database schema and analytics system\n  - Testing strategy and deployment guide\n  - Business model and pricing strategy\n  - Security and privacy compliance\n\n### **Development Resources**\n- **`CONTRIBUTING.md`** - Development guidelines and Cursor agent instructions\n- **`CHANGELOG.md`** - Version history and recent changes\n- **`README.md`** - This file - project overview and quick start\n\n### **For Cursor Agents & Developers**\n**\u26a0\ufe0f IMPORTANT**: Before making any changes, read:\n1. **`COMPREHENSIVE_DOCUMENTATION.md`** - Complete technical reference\n2. **`CONTRIBUTING.md`** - Development guidelines and requirements\n3. Current codebase structure and patterns\n4. **Available Workflows**:\n   - `/docs_sync`: Ensure documentation, research reports, and persistent context are in sync.\n   - `/pai_sync`: Daily synchronization of project state with Personal AI Infrastructure (PAI).\n   - `/refactor`: Weekly hygiene ritual to clean the codebase and prune PAI memory.\n\n**Key Requirements:**\n- Keep documentation updated for any code changes\n- Request privacy policy review for data collection changes\n- Maintain minimal tech debt (no duplicate code)\n- Write comprehensive tests for new functionality\n\n## \ud83c\udf1f Features\n\n### Core Functionality\n- **Multi-System Support**: Western (Tropical), Vedic (Sidereal), and Horary astrology\n- **Precise Calculations**: Industry-standard astronomical calculations for accuracy\n- **AI-Powered Interpretations**: Google Gemini API for intelligent analysis\n- **Interactive Charts**: Visual birth chart representations\n- **Q&A System**: Natural language queries about astrological data\n- **Export Capabilities**: PDF generation with custom branding\n- **Responsive Design**: Mobile-first, accessible interface\n\n### Advanced Features\n- **Mundane Astrology**: Country/entity charts using independence dates for geopolitical analysis\n  - *Coming Soon: Company (IPO dates) and Cryptocurrency (launch dates) entity types*\n- **Divisional Charts**: Complete Vedic divisional chart analysis (D1-D60)\n- **Dasha Periods**: Vimshottari Dasha calculations and interpretations\n- **Transit Analysis**: Current planetary movements and their effects\n- **Aspect Analysis**: Detailed planetary aspect calculations\n- **Yogas Detection**: Vedic yoga identification and analysis\n- **Nakshatra Analysis**: Detailed lunar mansion interpretations\n- **Dosha Analysis**: Astrological affliction detection (Mangal, Saturn, Rahu, etc.)\n- **House Systems**: Multiple house system support\n- **Analytics Tracking**: Comprehensive user interaction analytics\n- **Multi-Channel Sharing**: Social media integration with tracking\n\n## \ud83d\udd2c Research & Scientific Validation\n\nThis platform is backed by **rigorous statistical research** validating astrological principles. Our research applies modern data science methods to test traditional astrological techniques.\n\n### Research Dataset\n- **5,885 public figures** with verified birth data and 4,739 documented figures analyzed\n- **239 countries** with independence charts and 7,311 historical events analyzed\n- **Total valid event scale**: 12,050 events\n\n### Key Scientific Findings\n| Finding | Evidence |\n|---------|----------|\n| **Astrological Correlations** | Statistically significant (q < 0.001 after FDR correction) |\n| **Domain-Specific Patterns** | House 10\u2192career, House 7\u2192relationships validated |\n| **Vedic Techniques** | Doshas (RR up to 2.69), 14 Yoga types, Divisional charts all significant |\n| **Combination Effects** | Synergy ratios up to 48.89x when conditions align |\n| **Predictive ML Models** | 78-81% accuracy (Timing Precision) |\n| **Temporal Precision** | 50%+ events within 1\u00b0 orb of exact transits |\n\n### \ud83d\udcd6 Complete Research Documentation\n- **[Master Research Documentation](backend/research/reports/COMPREHENSIVE_MASTER_RESEARCH_DOCUMENTATION.md)** - Complete findings, methodology, and statistical analysis\n- **[Research Directory](backend/research/)** - Scripts, data, and reproducible results\n\n### \ud83e\uddec Hybrid System & Research Philosophy\nWe enforce a unique **\"Archetypal Transferability\"** data philosophy:\n- **Core Premise**: An archetype (e.g., \"Sun in House 10 = Visibility\") is statistically valid regardless of which system places the planet there.\n- **Interoperability**:\n  - **Western Points in Vedic**: We support toggling asteroids (Lilith, Pallas) in Vedic charts. These are interpreted using a **Hybrid Approach**: calculated by Sidereal Sign (Vedic), Vedic House, and *Vedic Nakshatra*.\n  - **Data Flow**: To ensure depth of insight, **all calculated bodies (including asteroids) are passed to the AI Interpretation Engine** even if hidden in the UI. The \"Western Points\" toggle is a visual preference, not a data filter.\n  - **Exclusion**: We do *not* force Vedic-derived points (Arudha Lagna) into Western systems as they lack the requisite framework.\n\n## \ud83c\udfd7\ufe0f Architecture\n\n### Technology Stack\n- **Frontend**: Next.js 14, React 18, TypeScript, Tailwind CSS\n- **Backend**: FastAPI, Python 3.10, SQLAlchemy\n- **Database**: PostgreSQL (Production), SQLite (Development)\n- **AI Integration**: Google Gemini API, HuggingFace Inference API\n- **PDF Generation**: ReportLab with custom watermarking\n- **Deployment**: Render.com, Heroku, Railway, PM2\n- **Testing**: Pytest, Jest, GitHub Actions\n\n### System Components\n```mermaid\ngraph TD\n    Client[\"Client Layer\"]\n    Web[\"Web Browser\"]\n    Mobile[\"Mobile App\"]\n    API[\"API Clients\"]\n    \n    Client --> Web\n    Client --> Mobile\n    Client --> API\n    \n    Web --> Frontend[\"Next.js Frontend\"]\n    Mobile --> Frontend\n    \n    Frontend --> Backend[\"FastAPI Backend\"]\n    \n    subgraph \"Frontend Services\"\n        Components[\"React Components\"]\n        Pages[\"Next.js Pages\"]\n        Utils[\"Utilities\"]\n        Styles[\"Tailwind CSS\"]\n    end\n    \n    Frontend --- Components\n    Frontend --- Pages\n    \n    subgraph \"Backend Services\"\n        Routes[\"Route Handlers\"]\n        Logic[\"Business Logic\"]\n        AI[\"AI Integration (Gemini)\"]\n        Data[\"Data Processing\"]\n        Ephe[\"Swiss Ephemeris\"]\n        DB[(\"Database\")]\n    end\n    \n    Backend --> Routes\n    Routes --> Logic\n    Logic --> AI\n    Logic --> Data\n    Logic --> Ephe\n    Logic --> DB\n```\n\n## \ud83d\ude80 Quick Start\n\n### Prerequisites\n- Python 3.10+\n- Node.js 18+\n- npm or yarn\n- PostgreSQL (for production)\n\n## \ud83e\uddea Testing\n\n### Comprehensive Testing Strategy\nOur application includes a robust testing framework covering all aspects of functionality, security, and user experience:\n\n- **[Testing Strategy](docs/COMPREHENSIVE_DOCUMENTATION.md#10-testing-strategy--implementation)**: Complete testing pyramid including unit, integration, and security tests\n- **[Security Testing](docs/COMPREHENSIVE_DOCUMENTATION.md#11-security--quality-assurance)**: Comprehensive security testing framework with automated vulnerability detection\n- **[UAT Test Plan](docs/COMPREHENSIVE_DOCUMENTATION.md#11-security--quality-assurance)**: Detailed User Acceptance Testing scenarios and procedures\n\n### Running Tests\n```bash\n# Run all tests\ncd backend && python run_tests.py\n\n# Run security tests\ncd backend && python run_security_tests.py\n\n# Run frontend tests\nnpm test\n\n# Run specific test categories\npython -m pytest tests/test_security.py -m sql_injection -v\npython -m pytest tests/test_astrology.py -v\nnpm test -- --testNamePattern=\"NatalChartWheel\"\n```\n\n### Installation\n\n1. **Clone the repository**\n   ```bash\n   git clone https://github.com/your-username/SwissEphemeris-Astrology.git\n   cd SwissEphemeris-Astrology\n   ```\n\n2. **Set up the backend**\n   ```bash\n   # Create and activate virtual environment\n   python -m venv venv_py310\n   source venv_py310/bin/activate  # On Windows: venv_py310\\Scripts\\activate\n   \n   # Install dependencies\n   cd backend\n   pip install -r requirements.txt\n   ```\n\n3. **Set up the frontend**\n   ```bash\n   # Install dependencies\n   npm install\n   ```\n\n4. **Environment Configuration**\n   \n   Create `.env` files in both root and backend directories:\n   \n   **Root `.env`:**\n   ```env\n   NEXT_PUBLIC_API_URL=http://localhost:8001\n   ```\n   \n   **Backend `.env`:**\n   ```env\n   DATABASE_URL=sqlite:///./astrology.db\n   EPHEMERIS_PATH=./app/ephe\n   GEMINI_API_KEY=your_gemini_api_key_here\n   SECRET_KEY=your_secret_key_here\n   ```\n\n5. **Download ephemeris files**\n   ```bash\n   cd backend\n   mkdir -p app/ephe\n   # Download ephemeris files for astronomical calculations\n   # Or use the provided download script\n   python download_ephemeris.py\n   ```\n\n### Running the Application\n\n1. **Start the backend server**\n```bash\ncd backend\nsource ../venv_py310/bin/activate\n   python -m uvicorn app.main:app --port 8001 --reload\n```\n\n2. **Start the frontend server**\n```bash\nnpm run dev\n```\n\n3. **Access the application**\n   - Frontend: http://localhost:3000\n   - Backend API: http://localhost:8001\n   - API Documentation: http://localhost:8001/docs\n\n## \ud83d\udcc1 Project Structure\n\n```\nAistro-Astrology/\n\u251c\u2500\u2500 README.md\n\u251c\u2500\u2500 ARCHITECTURE.md\n\u251c\u2500\u2500 DESIGN_GUIDELINES.md\n\u251c\u2500\u2500 package.json\n\u251c\u2500\u2500 next.config.js\n\u251c\u2500\u2500 tailwind.config.js\n\u251c\u2500\u2500 tsconfig.json\n\u251c\u2500\u2500 .env\n\u251c\u2500\u2500 .env.local\n\u251c\u2500\u2500 .gitignore\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 src/                          # Frontend source code\n\u2502   \u251c\u2500\u2500 components/               # React components\n\u2502   \u2502   \u251c\u2500\u2500 ui/                  # Base UI components\n\u2502   \u2502   \u251c\u2500\u2500 charts/              # Chart components\n\u2502   \u2502   \u251c\u2500\u2500 forms/               # Form components\n\u2502   \u2502   \u251c\u2500\u2500 analysis/            # Analysis components\n\u2502   \u2502   \u2514\u2500\u2500 layout/              # Layout components\n\u2502   \u251c\u2500\u2500 pages/                   # Next.js pages\n\u2502   \u2502   \u251c\u2500\u2500 api/                 # API routes\n\u2502   \u2502   \u251c\u2500\u2500 index.tsx            # Home page\n\u2502   \u2502   \u2514\u2500\u2500 chart.tsx            # Chart page\n\u2502   \u251c\u2500\u2500 utils/                   # Utility functions\n\u2502   \u2502   \u251c\u2500\u2500 api.ts               # API client\n\u2502   \u2502   \u251c\u2500\u2500 formatters.ts        # Data formatters\n\u2502   \u2502   \u251c\u2500\u2500 textFormatting.ts    # Text formatting utilities\n\u2502   \u2502   \u2514\u2500\u2500 validators.ts        # Input validation\n\u2502   \u251c\u2500\u2500 types/                   # TypeScript types\n\u2502   \u2502   \u251c\u2500\u2500 chart.ts             # Chart types\n\u2502   \u2502   \u2514\u2500\u2500 api.ts               # API types\n\u2502   \u2514\u2500\u2500 styles/                  # Styling\n\u2502       \u251c\u2500\u2500 globals.css          # Global styles\n\u2502       \u2514\u2500\u2500 components.css       # Component styles\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 backend/                     # Backend source code\n\u2502   \u251c\u2500\u2500 app/\n\u2502   \u2502   \u251c\u2500\u2500 main.py             # FastAPI application\n\u2502   \u2502   \u251c\u2500\u2500 config.py           # Configuration\n\u2502   \u2502   \u251c\u2500\u2500 models/             # Pydantic models\n\u2502   \u2502   \u251c\u2500\u2500 database/           # Database layer\n\u2502   \u2502   \u251c\u2500\u2500 routes/             # API routes\n\u2502   \u2502   \u251c\u2500\u2500 services/           # Business logic\n\u2502   \u2502   \u251c\u2500\u2500 training/           # AI training\n\u2502   \u2502   \u251c\u2500\u2500 utils/              # Utilities\n\u2502   \u2502   \u2514\u2500\u2500 ephe/               # Ephemeris files\n\u2502   \u251c\u2500\u2500 tests/                  # Test suite\n\u2502   \u251c\u2500\u2500 requirements.txt        # Python dependencies\n\u2502   \u2514\u2500\u2500 .env                    # Backend environment\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 .github/                    # GitHub workflows\n\u2502   \u2514\u2500\u2500 workflows/\n\u2502       \u251c\u2500\u2500 deploy.yml          # Deployment workflow\n\u2502       \u2514\u2500\u2500 test.yml            # Testing workflow\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 scripts/                    # Deployment scripts\n\u2502   \u251c\u2500\u2500 deploy.sh              # Deployment script\n\u2502   \u2514\u2500\u2500 backup.sh              # Backup script\n\u2514\u2500\u2500 \n\u2514\u2500\u2500 docs/                      # Documentation\n    \u251c\u2500\u2500 api/                   # API documentation\n    \u251c\u2500\u2500 user-guide/            # User guide\n    \u2514\u2500\u2500 developer-guide/       # Developer guide\n```\n\n## \ud83d\udd27 Configuration\n\n### Environment Variables\n\n#### Frontend Environment Variables\n```env\nNEXT_PUBLIC_API_URL=http://localhost:8001\nNEXT_PUBLIC_BRAND_NAME=\"Aistro Astrology\"\n```\n\n#### Backend Environment Variables\n```env\n# Database\nDATABASE_URL=sqlite:///./astrology.db\nDATABASE_URL_PROD=postgresql://user:password@localhost/astrology\n\n# Ephemeris\nEPHEMERIS_PATH=./app/ephe\n\n# AI Integration\nGEMINI_API_KEY=your_gemini_api_key_here\nDISABLE_AI_INTERPRETATIONS=false\n\n# Security\nSECRET_KEY=your_secret_key_here\nCORS_ORIGINS=[\"http://localhost:3000\"]\n\n# Logging\nLOG_LEVEL=INFO\nLOG_FILE=app.log\n\n# Export\nWATERMARK_TEXT=\"Aistro Astrology\"\n```\n\n### Ephemeris Setup\n\n1. **Download ephemeris files**\n   ```bash\n   cd backend/app/ephe\n   wget https://www.astro.com/ftp/swisseph/ephe/sepl_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/semo_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/seas_18.se1\n   ```\n\n2. **Verify file integrity**\n   ```bash\n   cd backend\n   python -c \"from app.config import validate_ephemeris_files; validate_ephemeris_files()\"\n   ```\n\n## \ud83e\uddea Testing\n\n### Backend Tests\n```bash\ncd backend\nsource ../venv_py310/bin/activate\npython -m pytest tests/ -v\n```\n\n### Frontend Tests\n```bash\nnpm test\n```\n\n### Integration Tests\n```bash\nnpm run test:integration\n```\n\n### Test Coverage\n```bash\n# Backend coverage\ncd backend\npython -m pytest --cov=app tests/\n\n# Frontend coverage\nnpm run test:coverage\n```\n\n## \ud83d\udcca API Documentation\n\n### Core Endpoints\n#### Chart Calculation\n```http\nPOST /calculate\nContent-Type: application/json\n\n{\n  \"date\": \"1990-07-12\",\n  \"time\": \"14:30\",\n  \"city\": \"New York\",\n  \"state\": \"NY\",\n  \"country\": \"USA\",\n  \"system\": \"western\" // or \"vedic\"\n}\n```\n\n#### Interpretation (Streaming)\n```http\nPOST /interpret\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"system\": \"vedic\",\n  \"include_transits\": true,\n  \"section\": \"natal_chart_interpretation\"\n}\n```\n\n#### City Suggestion\n```http\nGET /suggest_cities?query=London&limit=5&include_timezone=true\n```\n\n#### Q&A System\n```http\nPOST /qa\nContent-Type: application/json\n\n{\n  \"question\": \"What does Saturn in 5th house mean?\",\n  \"context\": { \"chart_data\": ... },\n  \"system\": \"vedic\"\n}\n```\n\n#### Predictions\n```http\nPOST /api/predictions/generate\nContent-Type: application/json\n\n{\n  \"date\": \"1990-07-12\",\n  \"time\": \"14:30\",\n  \"city\": \"New York\",\n  \"prediction_window_days\": 30\n}\n```\n\n#### PDF Export\n```http\nPOST /export/chart/pdf\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"birth_details\": { ... }\n}\n```\n\n### Response Format\n```json\n{\n  \"success\": true,\n  \"data\": {\n    // Response data\n  },\n  \"meta\": {\n    \"timestamp\": \"2024-01-08T12:00:00Z\",\n    \"requestId\": \"req_123456\",\n    \"version\": \"1.0.0\"\n  }\n}\n```\n\n## \ud83d\ude80 Deployment\n\n### Production Deployment\n\n1. **Build the application**\n   ```bash\n   npm run build\n   ```\n\n2. **Deploy to Render.com**\n   ```bash\n   # Using the provided deployment script\n   ./scripts/deploy.sh\n   ```\n\n3. **Environment Setup**\n   - Set production environment variables\n   - Configure database connections\n   - Set up SSL certificates\n\n### Container Deployment\n\n1. **Using Heroku**\n```bash\nheroku create your-app-name\nheroku config:set DATABASE_URL=your_db_url\ngit push heroku main\n```\n\n2. **Using Railway**\n```bash\nrailway login\nrailway init\nrailway up\n```\n\n### Manual Deployment\n\n1. **Backend deployment**\n   ```bash\n   cd backend\n   gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker\n   ```\n\n2. **Frontend deployment**\n   ```bash\n   npm run build\n   npm run start\n   ```\n\n## \ud83d\udd12 Security\n\n### Authentication & Authorization\n- JWT token-based authentication\n- Role-based access control\n- Rate limiting on API endpoints\n- Input validation and sanitization\n\n### Data Protection\n- Encrypted database connections\n- Secure API key management\n- CORS configuration\n- Request/response logging\n\n## \ud83d\udcc8 Performance\n\n### Optimization Strategies\n- **Frontend**: Code splitting, image optimization, caching\n- **Backend**: Database indexing, connection pooling, async processing\n- **API**: Response compression, pagination, caching headers\n\n### Monitoring\n- Application performance monitoring\n- Error tracking and logging\n- Database query optimization\n- API response time monitoring\n\n## \ud83e\udd1d Contributing\n\n### Development Workflow\n\n1. **Fork the repository**\n2. **Create a feature branch**\n   ```bash\n   git checkout -b feature/amazing-feature\n   ```\n3. **Make your changes**\n4. **Run tests**\n   ```bash\n   npm test\n   cd backend && python -m pytest\n   ```\n5. **Submit a pull request**\n\n### Code Style Guidelines\n\n#### TypeScript/JavaScript\n- Use TypeScript for type safety\n- Follow ESLint configuration\n- Use Prettier for code formatting\n- Write meaningful variable names\n\n#### Python\n- Follow PEP 8 style guide\n- Use type hints\n- Write docstrings for functions\n- Use meaningful variable names\n\n### Commit Message Format\n```\ntype(scope): description\n\n[optional body]\n\n[optional footer]\n```\n\nExample:\n```\nfeat(qa): add PDF export functionality\n\nAdd PDF export capability to Q&A responses with custom watermarking\nand structured formatting for better readability.\n\nCloses #123\n```\n\n## \ud83d\udcda Documentation\n\n### Available Documentation\n- [Architecture Guide](docs/architecture/ARCHITECTURE.md) - System architecture and design\n- [Design Guidelines](docs/COMPREHENSIVE_DOCUMENTATION.md#6-design-guidelines--visual-identity) - UI/UX and code style guidelines\n- [API Documentation](docs/COMPREHENSIVE_DOCUMENTATION.md#4-backend-architecture--services) - Detailed API reference\n- [User Guide](docs/COMPREHENSIVE_DOCUMENTATION.md) - End-user documentation\n- [Developer Guide](docs/COMPREHENSIVE_DOCUMENTATION.md) - Development setup and guidelines\n\n### Generating Documentation\n```bash\n# API documentation\ncd backend\npython -m app.docs.generate_api_docs\n\n# Code documentation\nnpm run docs:generate\n```\n\n## \ud83d\udc1b Troubleshooting\n\n### Common Issues\n\n#### Ephemeris Files Missing\n```bash\n# Error: Ephemeris files not found\n# Solution: Download ephemeris files\ncd backend/app/ephe\npython ../download_ephemeris.py\n```\n\n#### Database Connection Issues\n```bash\n# Error: Database connection failed\n# Solution: Check database configuration\ncd backend\npython -c \"from app.database import test_connection; test_connection()\"\n```\n\n#### AI Integration Issues\n```bash\n# Error: Gemini API key invalid\n# Solution: Check API key configuration\nexport GEMINI_API_KEY=your_valid_api_key\n```\n\n### Debug Mode\n```bash\n# Enable debug logging\nexport LOG_LEVEL=DEBUG\n\n# Run with debug mode\ncd backend\npython -m uvicorn app.main:app --reload --log-level debug\n```\n\n## \ud83d\udcc4 License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n## \ufffd\ufffd Acknowledgments\n\n- Astronomical calculation libraries for precise calculations\n- Google Gemini team for AI integration\n- Astrological community for domain expertise\n- Open source contributors and maintainers\n\n## \ud83d\udcde Support\n\n### Getting Help\n- \ud83d\udce7 Email: support@aistro.ai\n- \ud83d\udcac Discord: [Join our community](https://discord.gg/astrology)\n- \ud83d\udcd6 Documentation: [docs.aistro.ai](https://docs.aistro.ai)\n- \ud83d\udc1b Issues: [GitHub Issues](https://github.com/akashagl92/AI-Astrologer/issues)\n\n### Commercial Support\nFor commercial licensing, custom development, or enterprise support, please contact us at akash.agl92@gmail.com.\n\n---\n\nMade with \u2764\ufe0f by Akash Agrawal and Cursor",
     "files": [
       {
         "name": ".agent",
@@ -868,11 +1048,6 @@
         "name": "content",
         "type": "dir",
         "path": "content"
-      },
-      {
-        "name": "debug_info.md",
-        "type": "file",
-        "path": "debug_info.md"
       },
       {
         "name": "docs",
@@ -987,81 +1162,116 @@
     ],
     "recentCommits": [
       {
-        "date": "2026-01-29T02:20:47Z",
-        "message": "fix: resolve TypeScript type mismatch in AnalyticsService to fix frontend build",
+        "date": "2026-02-19T17:26:31Z",
+        "message": "feat(research): implement system-level filtering and terminology translation (Phase 30)",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-29T02:03:50Z",
-        "message": "perf: prune heavy dependencies and optimize RAG for Render Free Tier",
+        "date": "2026-02-19T01:12:22Z",
+        "message": "fix(interpretation): implement neo-vedic sidereal bridge for dasha calculation and broaden JIT enrichment",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-29T01:35:27Z",
-        "message": "fix: resolve TypeScript build error in AuthContext registration tracking",
+        "date": "2026-02-18T22:23:17Z",
+        "message": "feat(qa): implement smart divisional chart context selector (ADR-0032)",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-29T01:27:01Z",
-        "message": "feat: implement user-scoped auth analytics and resolve landing page redirect issue",
+        "date": "2026-02-18T21:33:02Z",
+        "message": "Standardized Vedic terminology, verified D-chart inputs, and added QA checks",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-26T00:28:13Z",
-        "message": "fix: dependency crash on Render",
+        "date": "2026-02-18T08:02:44Z",
+        "message": "feat(qa): resolve persistent 500 error via cross-endpoint robustness and proxy relaxation",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-25T22:57:26Z",
-        "message": "feat: Implement secure auth, email verification, and persistence fixes",
+        "date": "2026-02-17T18:55:28Z",
+        "message": "docs(research): finalize phase 25 documentation synthesis and journal paper",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-24T19:52:04Z",
-        "message": "fix(all): enable auth, profiles, and fix db initialization",
+        "date": "2026-02-17T16:03:36Z",
+        "message": "docs: bridge synergy between /docs_sync and /pai_sync workflows",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-24T18:55:55Z",
-        "message": "fix(gemini): add missing import for get_context_enrichment_service",
+        "date": "2026-02-17T15:57:12Z",
+        "message": "docs: refine /docs_sync workflow with enhanced verification protocols",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-24T18:12:23Z",
-        "message": "perf(build): optimize slug size",
+        "date": "2026-02-17T15:55:33Z",
+        "message": "docs: sync tech docs with Hybrid Insight Model and 2026 benchmarks; fix links",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-24T17:31:53Z",
-        "message": "feat(architecture): implement GlobalModelManager for robust background loading",
+        "date": "2026-02-17T15:41:11Z",
+        "message": "docs: academic refinement of journal paper, documentation sync, and README fix",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-24T09:47:47Z",
-        "message": "fix(stability): refactor HuggingFaceProcessor to be non-blocking",
+        "date": "2026-02-17T02:49:08Z",
+        "message": "fix(frontend): resolve typescript 'possibly null' errors in NatalChartWheel",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-24T08:58:25Z",
-        "message": "fix(analytics): make tracking non-blocking with asyncio.create_task",
+        "date": "2026-02-17T02:41:58Z",
+        "message": "docs: pivot architecture to technical flow-charts & remove abstract visuals",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-24T08:33:27Z",
-        "message": "fix(stability): wrap heavy ML imports in asyncio.to_thread",
+        "date": "2026-02-17T02:40:42Z",
+        "message": "docs: elaborate predictive model architecture & visual deep-dive",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-24T07:51:24Z",
-        "message": "perf(startup): lazy load heavyweight ML libraries in gemini_integration",
+        "date": "2026-02-17T02:31:16Z",
+        "message": "feat: formalize eclipse-natal synergy, documentation & PAI sync (1.46x RR)",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-01-24T06:53:37Z",
-        "message": "fix(deploy): resolve startup hangs in export_service and db config",
+        "date": "2026-02-16T15:25:21Z",
+        "message": "feat: implement Dynamic Orb Pruning & research enrichment",
         "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "This advanced AI platform provides comprehensive astrological analysis across Western, Vedic, and Horary systems. It leverages precise astronomical calculations and Google Gemini for AI-powered, statistically validated interpretations. Built with Next.js and FastAPI, it offers interactive charts, predictive insights, and robust data science integration, backed by research on over 12,000 events.",
+    "ai_tags": [
+      "AI/ML",
+      "Full-Stack Development",
+      "Data Science",
+      "Astrology Engine"
+    ],
+    "complexity_score": 9
+  },
+  {
+    "name": "pi-home-assistant",
+    "fullName": "akashagl92/pi-home-assistant",
+    "description": null,
+    "url": "https://github.com/akashagl92/pi-home-assistant",
+    "homepage": null,
+    "isPrivate": true,
+    "language": null,
+    "languages": {},
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2026-02-08T09:40:46Z",
+    "updatedAt": "2026-02-08T09:40:46Z",
+    "pushedAt": "2026-02-08T09:40:46Z",
+    "topics": [],
+    "readme": null,
+    "files": [],
+    "recentCommits": [],
+    "ai_summary": "Establishes a self-hosted smart home hub on a Raspberry Pi, leveraging Home Assistant to integrate diverse IoT devices and custom sensors. It enables sophisticated, privacy-focused automations, transforming a standard SBC into a central nervous system for intelligent environmental control and monitoring.",
+    "ai_tags": [
+      "Raspberry Pi",
+      "Home Automation",
+      "IoT",
+      "Python"
+    ],
+    "complexity_score": 6
   },
   {
     "name": "philosophy-sage",
@@ -1389,7 +1599,15 @@
         "message": "Fix: Use centralized RobinhoodBroker in morning_order_verification.py",
         "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "This autonomous AI-powered trading system dynamically manages a dual-track portfolio across stocks and crypto. It employs a sophisticated multi-tier strategy with Golden Cross momentum boosting, achieving significant XIRR performance by optimizing realized wealth. The system features automated execution with email-based approval, robust data pipelines, and shadow portfolio tracking for rigorous validation.",
+    "ai_tags": [
+      "Algorithmic Trading",
+      "Python",
+      "Financial Automation",
+      "Quantitative Finance"
+    ],
+    "complexity_score": 9
   },
   {
     "name": "Music-and-Math",
