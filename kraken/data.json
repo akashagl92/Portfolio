@@ -5,47 +5,47 @@
       "count": 71,
       "uniqueRepos": 5,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {
-        "Python": 22,
-        "HTML": 17,
-        "TypeScript": 12,
-        "Shell": 1,
-        "JavaScript": 11,
+        "Python": 28,
+        "HTML": 15,
+        "TypeScript": 10,
+        "Kotlin": 1,
+        "JavaScript": 9,
         "CSS": 8
       }
     },
     {
       "name": "Feb",
-      "count": 68,
+      "count": 69,
       "uniqueRepos": 4,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {
-        "Python": 17,
+        "Python": 15,
+        "TypeScript": 27,
+        "Kotlin": 2,
+        "HTML": 11,
+        "Swift": 2,
         "Shell": 1,
-        "HTML": 15,
-        "TypeScript": 18,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 9,
-        "CSS": 3
+        "CSS": 8,
+        "JavaScript": 3
       }
     },
     {
@@ -53,18 +53,18 @@
       "count": 9,
       "uniqueRepos": 1,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {
-        "Python": 6,
-        "TypeScript": 3
+        "TypeScript": 2,
+        "Python": 7
       }
     },
     {
@@ -72,14 +72,14 @@
       "count": 0,
       "uniqueRepos": 0,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {}
     },
@@ -88,14 +88,14 @@
       "count": 0,
       "uniqueRepos": 0,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {}
     },
@@ -104,17 +104,18 @@
       "count": 4,
       "uniqueRepos": 1,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {
-        "Python": 4
+        "TypeScript": 1,
+        "Python": 3
       }
     },
     {
@@ -122,19 +123,17 @@
       "count": 4,
       "uniqueRepos": 1,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {
-        "Python": 2,
-        "HTML": 1,
-        "TypeScript": 1
+        "Python": 4
       }
     },
     {
@@ -142,19 +141,19 @@
       "count": 64,
       "uniqueRepos": 1,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {
-        "Python": 49,
-        "TypeScript": 14,
-        "HTML": 1
+        "Python": 43,
+        "TypeScript": 15,
+        "HTML": 6
       }
     },
     {
@@ -162,20 +161,19 @@
       "count": 57,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {
-        "Python": 40,
+        "HTML": 6,
         "TypeScript": 12,
-        "HTML": 4,
-        "Shell": 1
+        "Python": 39
       }
     },
     {
@@ -183,14 +181,14 @@
       "count": 0,
       "uniqueRepos": 0,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {}
     },
@@ -199,19 +197,18 @@
       "count": 12,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {
-        "TypeScript": 8,
-        "Python": 3,
-        "Shell": 1
+        "Python": 4,
+        "TypeScript": 8
       }
     },
     {
@@ -219,25 +216,25 @@
       "count": 112,
       "uniqueRepos": 5,
       "languages": {
-        "Python": 207,
-        "Shell": 4,
-        "HTML": 56,
-        "TypeScript": 74,
-        "Swift": 4,
-        "Kotlin": 1,
-        "JavaScript": 41,
-        "CSS": 14
+        "Python": 203,
+        "TypeScript": 84,
+        "HTML": 54,
+        "Kotlin": 3,
+        "Swift": 2,
+        "Shell": 1,
+        "CSS": 24,
+        "JavaScript": 31
       },
       "topLangCounts": {
-        "Python": 64,
-        "HTML": 18,
-        "TypeScript": 6,
-        "JavaScript": 21,
-        "CSS": 3
+        "Python": 60,
+        "TypeScript": 9,
+        "HTML": 16,
+        "CSS": 8,
+        "JavaScript": 19
       }
     }
   ],
-  "totalCommits": 401,
+  "totalCommits": 402,
   "uniqueReposTotal": 10,
   "daily": [
     {
@@ -261,7 +258,7 @@
     {
       "date": "Thu Feb 19 2026",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -273,13 +270,25 @@
     {
       "date": "Wed Feb 18 2026",
       "repo": "AI Astrology",
-      "language": "Shell",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Wed Feb 18 2026",
       "repo": "AI Astrology",
-      "language": "HTML",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 17 2026",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 17 2026",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -298,18 +307,6 @@
       "date": "Tue Feb 17 2026",
       "repo": "AI Astrology",
       "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 17 2026",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 17 2026",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -345,11 +342,17 @@
     {
       "date": "Fri Feb 13 2026",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Fri Feb 13 2026",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 29 2026",
       "repo": "AI Astrology",
       "language": "Python",
       "type": "commit"
@@ -370,12 +373,6 @@
       "date": "Thu Jan 29 2026",
       "repo": "AI Astrology",
       "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 29 2026",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -387,6 +384,24 @@
     {
       "date": "Sun Jan 25 2026",
       "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Jan 24 2026",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Jan 24 2026",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Jan 24 2026",
+      "repo": "AI Astrology",
       "language": "TypeScript",
       "type": "commit"
     },
@@ -405,25 +420,7 @@
     {
       "date": "Sat Jan 24 2026",
       "repo": "AI Astrology",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Jan 24 2026",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Jan 24 2026",
-      "repo": "AI Astrology",
       "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Jan 24 2026",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -471,70 +468,88 @@
     {
       "date": "Sun Dec 28 2025",
       "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "AI Astrology",
       "language": "HTML",
       "type": "commit"
     },
     {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
       "date": "Sat Dec 27 2025",
       "repo": "AI Astrology",
       "language": "Python",
@@ -556,30 +571,6 @@
       "date": "Sat Dec 27 2025",
       "repo": "AI Astrology",
       "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
       "type": "commit"
     },
     {
@@ -627,19 +618,25 @@
     {
       "date": "Sat Dec 27 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sat Dec 20 2025",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -657,7 +654,7 @@
     {
       "date": "Mon Dec 15 2025",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -669,7 +666,7 @@
     {
       "date": "Thu Nov 20 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -681,7 +678,7 @@
     {
       "date": "Fri Nov 14 2025",
       "repo": "AI Astrology",
-      "language": "Shell",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -699,29 +696,17 @@
     {
       "date": "Thu Sep 25 2025",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Mon Sep 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
       "repo": "AI Astrology",
       "language": "TypeScript",
       "type": "commit"
     },
     {
-      "date": "Fri Sep 19 2025",
+      "date": "Mon Sep 22 2025",
       "repo": "AI Astrology",
       "language": "HTML",
       "type": "commit"
@@ -741,19 +726,31 @@
     {
       "date": "Fri Sep 19 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "AI Astrology",
-      "language": "Shell",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Fri Sep 19 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -765,7 +762,7 @@
     {
       "date": "Wed Sep 17 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -777,6 +774,24 @@
     {
       "date": "Mon Sep 15 2025",
       "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 15 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 15 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 15 2025",
+      "repo": "AI Astrology",
       "language": "TypeScript",
       "type": "commit"
     },
@@ -795,31 +810,25 @@
     {
       "date": "Mon Sep 15 2025",
       "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 15 2025",
+      "repo": "AI Astrology",
       "language": "TypeScript",
       "type": "commit"
     },
     {
-      "date": "Mon Sep 15 2025",
+      "date": "Fri Sep 12 2025",
       "repo": "AI Astrology",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Mon Sep 15 2025",
+      "date": "Fri Sep 12 2025",
       "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 15 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 15 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -847,13 +856,13 @@
       "type": "commit"
     },
     {
-      "date": "Fri Sep 12 2025",
+      "date": "Mon Sep 08 2025",
       "repo": "AI Astrology",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Sep 12 2025",
+      "date": "Mon Sep 08 2025",
       "repo": "AI Astrology",
       "language": "Python",
       "type": "commit"
@@ -903,19 +912,7 @@
     {
       "date": "Mon Sep 08 2025",
       "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 08 2025",
-      "repo": "AI Astrology",
       "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 08 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
       "type": "commit"
     },
     {
@@ -939,29 +936,11 @@
     {
       "date": "Sun Sep 07 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Sun Sep 07 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Sep 06 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Sep 06 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Sep 06 2025",
       "repo": "AI Astrology",
       "language": "HTML",
       "type": "commit"
@@ -979,7 +958,19 @@
       "type": "commit"
     },
     {
-      "date": "Fri Sep 05 2025",
+      "date": "Sat Sep 06 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Sep 06 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Sep 06 2025",
       "repo": "AI Astrology",
       "language": "Python",
       "type": "commit"
@@ -987,7 +978,7 @@
     {
       "date": "Fri Sep 05 2025",
       "repo": "AI Astrology",
-      "language": "HTML",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -999,7 +990,13 @@
     {
       "date": "Fri Sep 05 2025",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 05 2025",
+      "repo": "AI Astrology",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1011,7 +1008,7 @@
     {
       "date": "Fri Sep 05 2025",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1035,7 +1032,7 @@
     {
       "date": "Wed Aug 27 2025",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1077,23 +1074,41 @@
     {
       "date": "Mon Aug 25 2025",
       "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Aug 24 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Aug 24 2025",
-      "repo": "AI Astrology",
       "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sun Aug 24 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Aug 24 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Aug 24 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
       "repo": "AI Astrology",
       "language": "HTML",
       "type": "commit"
@@ -1119,42 +1134,6 @@
     {
       "date": "Sat Aug 23 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
       "language": "Python",
       "type": "commit"
     },
@@ -1179,313 +1158,331 @@
     {
       "date": "Sat Aug 23 2025",
       "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
       "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Aug 18 2025",
-      "repo": "AI Astrology",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Aug 18 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Aug 18 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Jul 09 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Jul 09 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Jul 09 2025",
       "repo": "AI Astrology",
       "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Aug 23 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Aug 18 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Aug 18 2025",
+      "repo": "AI Astrology",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Aug 18 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Jul 09 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Jul 09 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Jul 09 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Mon Jul 07 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Fri Jun 20 2025",
       "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Mar 19 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Mar 19 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Mar 19 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Mar 19 2025",
-      "repo": "AI Astrology",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Wed Mar 19 2025",
       "repo": "AI Astrology",
       "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Mar 19 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Mar 19 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Mar 19 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Mar 19 2025",
+      "repo": "AI Astrology",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Tue Mar 18 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Wed Mar 19 2025",
       "repo": "AI Astrology",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "pr"
     },
     {
       "date": "Wed Mar 19 2025",
       "repo": "AI Astrology",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "pr"
     },
     {
@@ -1503,7 +1500,7 @@
     {
       "date": "Wed Feb 25 2026",
       "repo": "moltbot",
-      "language": "Swift",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1521,7 +1518,37 @@
     {
       "date": "Wed Feb 25 2026",
       "repo": "moltbot",
-      "language": "HTML",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1539,12 +1566,6 @@
     {
       "date": "Wed Feb 25 2026",
       "repo": "moltbot",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "moltbot",
       "language": "TypeScript",
       "type": "commit"
     },
@@ -1552,36 +1573,12 @@
       "date": "Wed Feb 25 2026",
       "repo": "moltbot",
       "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "moltbot",
-      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Wed Feb 25 2026",
       "repo": "moltbot",
       "language": "Swift",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "moltbot",
-      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1611,13 +1608,13 @@
     {
       "date": "Wed Feb 18 2026",
       "repo": "moltbot",
-      "language": "Swift",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Tue Feb 17 2026",
       "repo": "moltbot",
-      "language": "Swift",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1629,13 +1626,13 @@
     {
       "date": "Fri Feb 13 2026",
       "repo": "moltbot",
-      "language": "HTML",
+      "language": "Kotlin",
       "type": "commit"
     },
     {
       "date": "Thu Feb 12 2026",
       "repo": "moltbot",
-      "language": "HTML",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1671,19 +1668,13 @@
     {
       "date": "Mon Feb 02 2026",
       "repo": "moltbot",
-      "language": "TypeScript",
+      "language": "Shell",
       "type": "commit"
     },
     {
       "date": "Mon Feb 02 2026",
       "repo": "moltbot",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1693,6 +1684,18 @@
       "type": "commit"
     },
     {
+      "date": "Sun Feb 01 2026",
+      "repo": "moltbot",
+      "language": "Swift",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 29 2026",
+      "repo": "moltbot",
+      "language": "Kotlin",
+      "type": "commit"
+    },
+    {
       "date": "Thu Jan 29 2026",
       "repo": "moltbot",
       "language": "TypeScript",
@@ -1701,19 +1704,13 @@
     {
       "date": "Thu Jan 29 2026",
       "repo": "moltbot",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 29 2026",
-      "repo": "moltbot",
-      "language": "Shell",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Thu Dec 25 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -1737,7 +1734,7 @@
     {
       "date": "Wed Dec 17 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -1831,45 +1828,51 @@
       "type": "commit"
     },
     {
+      "date": "Thu Feb 26 2026",
+      "repo": "Portfolio",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
       "date": "Wed Feb 25 2026",
       "repo": "Portfolio",
       "language": "HTML",
       "type": "commit"
     },
     {
-      "date": "Wed Feb 25 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
       "date": "Mon Feb 23 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Wed Feb 18 2026",
       "repo": "Portfolio",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Mon Feb 16 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Fri Feb 06 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -1881,37 +1884,13 @@
     {
       "date": "Mon Feb 02 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Mon Feb 02 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -1933,60 +1912,66 @@
       "type": "commit"
     },
     {
-      "date": "Thu Jan 29 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 29 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 29 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Jan 16 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Jan 16 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Jan 16 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Jan 13 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Jan 13 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Jan 13 2026",
+      "date": "Sun Feb 01 2026",
       "repo": "Portfolio",
       "language": "CSS",
       "type": "commit"
     },
     {
+      "date": "Sun Feb 01 2026",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Feb 01 2026",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Feb 01 2026",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 29 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 29 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 29 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Jan 16 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Jan 16 2026",
+      "repo": "Portfolio",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Jan 16 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
       "date": "Tue Jan 13 2026",
       "repo": "Portfolio",
       "language": "HTML",
@@ -1995,25 +1980,37 @@
     {
       "date": "Tue Jan 13 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Tue Jan 13 2026",
       "repo": "Portfolio",
       "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 13 2026",
+      "repo": "Portfolio",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 13 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 13 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Mon Jan 12 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 08 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -2037,7 +2034,13 @@
     {
       "date": "Thu Jan 08 2026",
       "repo": "Portfolio",
-      "language": "Python",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 08 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -2055,13 +2058,7 @@
     {
       "date": "Tue Jan 06 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Jan 06 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -2077,6 +2074,12 @@
       "type": "commit"
     },
     {
+      "date": "Tue Jan 06 2026",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
       "date": "Mon Jan 05 2026",
       "repo": "Portfolio",
       "language": "JavaScript",
@@ -2085,7 +2088,7 @@
     {
       "date": "Mon Jan 05 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -2097,29 +2100,11 @@
     {
       "date": "Mon Jan 05 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Mon Jan 05 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 01 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 01 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
       "language": "CSS",
       "type": "commit"
@@ -2132,6 +2117,30 @@
     },
     {
       "date": "Thu Jan 01 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 01 2026",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 01 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 01 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Dec 29 2025",
       "repo": "Portfolio",
       "language": "CSS",
       "type": "commit"
@@ -2139,13 +2148,7 @@
     {
       "date": "Mon Dec 29 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Dec 29 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -2157,13 +2160,7 @@
     {
       "date": "Thu Dec 25 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Dec 22 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -2173,6 +2170,48 @@
       "type": "commit"
     },
     {
+      "date": "Mon Dec 22 2025",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
       "language": "JavaScript",
@@ -2188,42 +2227,6 @@
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
       "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -2235,6 +2238,36 @@
     {
       "date": "Sat Dec 20 2025",
       "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
       "language": "HTML",
       "type": "commit"
     },
@@ -2248,54 +2281,6 @@
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
       "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "CSS",
       "type": "commit"
     },
     {
@@ -2319,7 +2304,25 @@
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
       "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -2475,13 +2478,13 @@
     {
       "date": "Tue Dec 23 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Mon Dec 22 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -2511,18 +2514,6 @@
     {
       "date": "Mon Dec 15 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 13 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 13 2025",
-      "repo": "stock_price_target_modelling",
       "language": "HTML",
       "type": "commit"
     },
@@ -2533,7 +2524,13 @@
       "type": "commit"
     },
     {
-      "date": "Fri Dec 12 2025",
+      "date": "Sat Dec 13 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 13 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python",
       "type": "commit"
@@ -2547,7 +2544,13 @@
     {
       "date": "Fri Dec 12 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -2624,13 +2627,13 @@
     }
   ],
   "languages": {
-    "Python": 207,
-    "Shell": 4,
-    "HTML": 56,
-    "TypeScript": 74,
-    "Swift": 4,
-    "Kotlin": 1,
-    "JavaScript": 41,
-    "CSS": 14
+    "Python": 203,
+    "TypeScript": 84,
+    "HTML": 54,
+    "Kotlin": 3,
+    "Swift": 2,
+    "Shell": 1,
+    "CSS": 24,
+    "JavaScript": 31
   }
 }
