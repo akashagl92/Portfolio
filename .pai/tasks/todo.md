@@ -17,3 +17,4 @@
   - [ ] Fetch & Rebase from remote
   - [ ] Commit tailored files (including `.pai/` artifacts)
   - [ ] Push to Github Pages
+- [ ] Session bootstrap enforced at 2026-02-27T20:11:30Z (shadow hard mode)
