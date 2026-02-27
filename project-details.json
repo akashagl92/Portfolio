@@ -1,83 +1,5 @@
 [
   {
-    "name": "agentic-memory-scaling",
-    "fullName": "akashagl92/agentic-memory-scaling",
-    "description": "Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems — The Discovery Cliff",
-    "url": "https://github.com/akashagl92/agentic-memory-scaling",
-    "homepage": null,
-    "isPrivate": false,
-    "language": "Python",
-    "languages": {
-      "Python": 24899
-    },
-    "stars": 0,
-    "forks": 0,
-    "createdAt": "2026-02-25T22:37:04Z",
-    "updatedAt": "2026-02-26T07:58:45Z",
-    "pushedAt": "2026-02-26T07:58:42Z",
-    "topics": [],
-    "readme": "# Agentic Memory Scaling\n\n**Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems**\n\n[![Paper](https://img.shields.io/badge/Paper-APA_Format-blue)](paper/paper_memory_consolidation_apa.md)\n[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)\n\n---\n\n## Abstract\n\nThis repository contains the research paper, benchmark data, and reproducibility harness for **\"Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns.\"**\n\nWe identify a fundamental scaling limit—the **Discovery Cliff**—where standard single-stage memory consolidation (SSC) fails to extract new signals from long conversation histories. Through a dual-tier ablation study scaled to an N=1000 empirical standard across multiple model generations (Google Gemini 2.5/3.0, Anthropic Claude 4.6), we prove that **temporal decay accounts for 91% of the recall collapse**, establishing an invariant Scaling Law for Agentic Memory. At extreme scale, SSC recall plunges to 17.0% due to this decay.\n\nWe propose **Recursive Gated Consolidation (RGC)**, a two-stage architecture that eliminates this decay and maintains **100% signal recall at 10M+ turns** by decoupling discovery from synthesis.\n\n## Key Findings\n\n| Finding | Detail |\n| :--- | :--- |\n| **The Discovery Cliff** | SSC recall collapses to 17.0% at 10M turns (Flash) |\n| **Temporal Decay Dominance** | Decay rate ($d$) accounts for **91%** of recall collapse |\n| **RGC Performance** | Maintains **100% recall** at 10M+ turns |\n| **Synthetic Saturation** | Code distractors accelerate decay by ~12% vs. prose |\n| **Cross-System Validation** | Validated in chatbot (Moltbot) and IDE (Antigravity) environments |\n\n## Repository Structure\n\n```\nagentic-memory-scaling/\n├── README.md                  # This file\n├── LICENSE                    # MIT License\n├── paper/\n│   └── paper_memory_consolidation_apa.md  # Full APA research paper\n├── benchmarks/\n│   ├── results/               # High-fidelity JSON results (N=1000)\n│   │   ├── flash_results_n1000.json\n│   │   ├── pro_results_n1000.json\n│   │   ├── gemini-3.0-flash_results_n1000.json\n│   │   ├── claude-4.6-opus_results_n1000.json\n│   │   └── ablation_*.json\n│   └── figures/               # Publication-ready figures (v5)\n│       ├── discovery_cliff_v5.png\n│       ├── model_comparison_v5.png\n│       ├── ablation_fidelity_vs_decay_v1.png\n│       └── ablation_fidelity_vs_decay_v2.png\n└── scripts/\n    └── run_cst.py             # Cognitive Stress Test harness\n```\n\n## Reproducing Results\n\n### Prerequisites\n- Python 3.10+\n- `matplotlib` (for visualization)\n\n### Running the Benchmark\n```bash\ncd scripts\npython run_cst.py\n```\n\nThis will execute the Cognitive Stress Test (CST) harness, generating:\n- `scale_results.json` — Raw recall data across logarithmic turn depths\n- `discovery_cliff_auto.png` — The Discovery Cliff visualization\n\n## Citation\n\nIf you use this work in your research, please cite:\n\n```bibtex\n@article{agrawal2026discovery,\n  title={Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns},\n  author={Agrawal, Akash},\n  year={2026},\n  note={Preprint}\n}\n```\n\n## License\n\nThis project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.\n",
-    "files": [
-      {
-        "name": "LICENSE",
-        "type": "file",
-        "path": "LICENSE"
-      },
-      {
-        "name": "README.md",
-        "type": "file",
-        "path": "README.md"
-      },
-      {
-        "name": "benchmarks",
-        "type": "dir",
-        "path": "benchmarks"
-      },
-      {
-        "name": "paper",
-        "type": "dir",
-        "path": "paper"
-      },
-      {
-        "name": "scripts",
-        "type": "dir",
-        "path": "scripts"
-      }
-    ],
-    "recentCommits": [
-      {
-        "date": "2026-02-26T07:58:41Z",
-        "message": "docs(research): remove private repository citation",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-26T07:57:06Z",
-        "message": "docs(research): remove irrelevant legacy references (Gemini 1.5, Claude 3)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-26T07:22:27Z",
-        "message": "docs: align README with N=1000 empirical standard",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-26T06:24:23Z",
-        "message": "docs(research): finalize N=1000 empirical convergence data",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T22:45:52Z",
-        "message": "docs: update affiliation, model list, abstract, and stale figure refs",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T22:36:46Z",
-        "message": "Initial commit: Discovery Cliff research paper, benchmarks, and reproducibility harness",
-        "author": "Akash Agrawal"
-      }
-    ]
-  },
-  {
     "name": "Portfolio",
     "fullName": "akashagl92/Portfolio",
     "description": "Build a portfolio using my github repo",
@@ -86,19 +8,19 @@
     "isPrivate": false,
     "language": "HTML",
     "languages": {
-      "HTML": 488350,
-      "JavaScript": 480998,
+      "HTML": 516934,
+      "JavaScript": 509534,
       "CSS": 274581,
       "Python": 55446,
-      "Shell": 4739
+      "Shell": 2803
     },
     "stars": 0,
     "forks": 0,
     "createdAt": "2025-12-19T03:23:05Z",
-    "updatedAt": "2026-02-26T07:32:27Z",
-    "pushedAt": "2026-02-26T07:32:23Z",
+    "updatedAt": "2026-02-27T20:20:34Z",
+    "pushedAt": "2026-02-27T20:20:29Z",
     "topics": [],
-    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **403 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### 🔮 AI Astrology Platform (`aistro.ai`)\n**Python** | [Repo](https://github.com/akashagl92/aistro.ai)\n\nThis advanced AI platform provides comprehensive astrological analysis across Western, Vedic, and Horary systems. It leverages precise astronomical calculations and Google Gemini for AI-powered, statistically validated interpretations. Built with Next.js and FastAPI, it offers interactive charts, predictive insights, and robust data science integration, backed by research on over 12,000 events.\n\n_Tags: AI/ML, Full-Stack Development, Data Science, Astrology Engine_\n\n---\n\n### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)\n**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)\n\nMoltbot is a cutting-edge personal AI agent platform that revolutionizes LLM memory by overcoming attention saturation. Utilizing Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC), it achieves 100% discovery fidelity over 10 million conversation turns with O(1) query latency. This research-grade system provides persistent, scalable agentic memory, pushing the boundaries of AI interaction and long-term context retention.\n\n_Tags: LLM Memory Management, AI Agent Systems, Container Orchestration, Polyglot Development_\n\n---\n\n### 📈 Autonomous Trading System (`stock_price_target_modelling`)\n**Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)\n\nThis autonomous AI-powered trading system dynamically manages a dual-track portfolio across stocks and crypto. It employs a sophisticated multi-tier strategy with Golden Cross momentum boosting, achieving significant XIRR performance by optimizing realized wealth. The system features automated execution with email-based approval, robust data pipelines, and shadow portfolio tracking for rigorous validation.\n\n_Tags: Algorithmic Trading, Python, Financial Automation, Quantitative Finance_\n\n---\n\n### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)\n**JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)\n\nSonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.\n\n_Tags: Vanilla JavaScript, Web Audio API, HTML5 Canvas, CSS3, Music Theory_\n\n---\n\n### Portfolio (`Portfolio`)\n**JavaScript** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis portfolio showcases a Data & AI Product Leader adept at architecting and deploying production-grade systems across data science, marketing technology, and agentic AI. It features an autonomous trading system with a 40.8% XIRR, AI-powered personal agents, and interactive visualizers. The platform itself leverages sophisticated automation for personalized content delivery, demonstrating a strong grasp of advanced technologies and efficient development workflows.\n\n_Tags: AI/Machine Learning, Data Science, Autonomous Systems, Web Development_\n\n---\n\n### Agentic-memory-scaling (`agentic-memory-scaling`)\n**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)\n\nThis research identifies the \"Discovery Cliff,\" a fundamental scaling limit where LLM-based agents lose critical information in long conversation histories due to temporal decay. The novel Recursive Gated Consolidation (RGC) architecture rigorously overcomes this, maintaining 100% signal recall at over 10 million turns by decoupling discovery from synthesis, significantly advancing agentic memory capabilities.\n\n_Tags: LLM Agentic Systems, Memory Consolidation, Scaling Laws, AI Benchmarking_\n\n---\n\n### Philosophy-sage (`philosophy-sage`)\n**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)\n\nAdvanced AI platform for philosophical and scriptural text analysis\n\n_Tags: Natural Language Processing, Semantic Search, Graph Databases_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 403 |\n| Unique Repositories | 10 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 2/26/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch-project-details.js| B[project-details.json]\n    B -->|agentic_chronicler.py| C[summary_cache.json]\n    C -->|update-readme.js| D[README.md]\n    E[README.template.md] --> D\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\nnode scripts/fetch-github.js\nnode scripts/update-readme.js\n```\n\n## 📝 License\n\nMIT\n",
+    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **408 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### 🔮 AI Astrology Platform (`aistro.ai`)\n**Python** | [Repo](https://github.com/akashagl92/aistro.ai)\n\nThis advanced AI platform provides comprehensive astrological analysis across Western, Vedic, and Horary systems. It leverages precise astronomical calculations and Google Gemini for AI-powered, statistically validated interpretations. Built with Next.js and FastAPI, it offers interactive charts, predictive insights, and robust data science integration, backed by research on over 12,000 events.\n\n_Tags: AI/ML, Full-Stack Development, Data Science, Astrology Engine_\n\n---\n\n### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)\n**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)\n\nMoltbot is a cutting-edge personal AI agent platform that revolutionizes LLM memory by overcoming attention saturation. Utilizing Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC), it achieves 100% discovery fidelity over 10 million conversation turns with O(1) query latency. This research-grade system provides persistent, scalable agentic memory, pushing the boundaries of AI interaction and long-term context retention.\n\n_Tags: LLM Memory Management, AI Agent Systems, Container Orchestration, Polyglot Development_\n\n---\n\n### 📈 Autonomous Trading System (`stock_price_target_modelling`)\n**Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)\n\nThis autonomous AI-powered trading system dynamically manages a dual-track portfolio across stocks and crypto. It employs a sophisticated multi-tier strategy with Golden Cross momentum boosting, achieving significant XIRR performance by optimizing realized wealth. The system features automated execution with email-based approval, robust data pipelines, and shadow portfolio tracking for rigorous validation.\n\n_Tags: Algorithmic Trading, Python, Financial Automation, Quantitative Finance_\n\n---\n\n### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)\n**JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)\n\nSonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.\n\n_Tags: Vanilla JavaScript, Web Audio API, HTML5 Canvas, CSS3, Music Theory_\n\n---\n\n### Portfolio (`Portfolio`)\n**JavaScript** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis portfolio showcases a Data & AI Product Leader adept at architecting and deploying production-grade systems across data science, marketing technology, and agentic AI. It features an autonomous trading system with a 40.8% XIRR, AI-powered personal agents, and interactive visualizers. The platform itself leverages sophisticated automation for personalized content delivery, demonstrating a strong grasp of advanced technologies and efficient development workflows.\n\n_Tags: AI/Machine Learning, Data Science, Autonomous Systems, Web Development_\n\n---\n\n### Agentic-memory-scaling (`agentic-memory-scaling`)\n**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)\n\nThis research identifies the \"Discovery Cliff,\" a fundamental scaling limit where LLM-based agents lose critical information in long conversation histories due to temporal decay. The novel Recursive Gated Consolidation (RGC) architecture rigorously overcomes this, maintaining 100% signal recall at over 10 million turns by decoupling discovery from synthesis, significantly advancing agentic memory capabilities.\n\n_Tags: LLM Agentic Systems, Memory Consolidation, Scaling Laws, AI Benchmarking_\n\n---\n\n### Philosophy-sage (`philosophy-sage`)\n**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)\n\nAdvanced AI platform for philosophical and scriptural text analysis\n\n_Tags: Natural Language Processing, Semantic Search, Graph Databases_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 408 |\n| Unique Repositories | 10 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 2/27/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch-project-details.js| B[project-details.json]\n    B -->|agentic_chronicler.py| C[summary_cache.json]\n    C -->|update-readme.js| D[README.md]\n    E[README.template.md] --> D\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\nnode scripts/fetch-github.js\nnode scripts/update-readme.js\n```\n\n## 📝 License\n\nMIT\n",
     "files": [
       {
         "name": ".agent",
@@ -166,6 +88,11 @@
         "path": "SECURITY.md"
       },
       {
+        "name": "abnormal",
+        "type": "dir",
+        "path": "abnormal"
+      },
+      {
         "name": "airbnb",
         "type": "dir",
         "path": "airbnb"
@@ -184,6 +111,11 @@
         "name": "app.js",
         "type": "file",
         "path": "app.js"
+      },
+      {
+        "name": "ci.yml",
+        "type": "file",
+        "path": "ci.yml"
       },
       {
         "name": "circle",
@@ -343,6 +275,46 @@
     ],
     "recentCommits": [
       {
+        "date": "2026-02-27T20:20:28Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-02-27T20:19:18Z",
+        "message": "chore(hygiene): remove local operational systemic files from git tracking and sync abnormal CI",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-02-27T20:19:03Z",
+        "message": "chore(hygiene): remove local operational systemic files from git tracking",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-02-27T20:10:29Z",
+        "message": "fix(build): ensure scripts/pai_runtime_guard.sh is a real file to fix CI",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-02-27T20:09:27Z",
+        "message": "fix(build): replace absolute symlink with real file to fix CI artifact upload",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-02-27T19:58:29Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-02-27T19:54:18Z",
+        "message": "feat: add tailored portfolio for Abnormal Security AI Product Builder role",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-02-27T07:27:12Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
         "date": "2026-02-26T07:32:23Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
@@ -376,46 +348,84 @@
         "date": "2026-02-25T23:58:44Z",
         "message": "fix(build): bypass jekyll build due to absolute symlink errors",
         "author": "Akash Agrawal"
+      }
+    ]
+  },
+  {
+    "name": "agentic-memory-scaling",
+    "fullName": "akashagl92/agentic-memory-scaling",
+    "description": "Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems — The Discovery Cliff",
+    "url": "https://github.com/akashagl92/agentic-memory-scaling",
+    "homepage": null,
+    "isPrivate": false,
+    "language": "Python",
+    "languages": {
+      "Python": 24899
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2026-02-25T22:37:04Z",
+    "updatedAt": "2026-02-26T07:58:45Z",
+    "pushedAt": "2026-02-26T07:58:42Z",
+    "topics": [],
+    "readme": "# Agentic Memory Scaling\n\n**Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems**\n\n[![Paper](https://img.shields.io/badge/Paper-APA_Format-blue)](paper/paper_memory_consolidation_apa.md)\n[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)\n\n---\n\n## Abstract\n\nThis repository contains the research paper, benchmark data, and reproducibility harness for **\"Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns.\"**\n\nWe identify a fundamental scaling limit—the **Discovery Cliff**—where standard single-stage memory consolidation (SSC) fails to extract new signals from long conversation histories. Through a dual-tier ablation study scaled to an N=1000 empirical standard across multiple model generations (Google Gemini 2.5/3.0, Anthropic Claude 4.6), we prove that **temporal decay accounts for 91% of the recall collapse**, establishing an invariant Scaling Law for Agentic Memory. At extreme scale, SSC recall plunges to 17.0% due to this decay.\n\nWe propose **Recursive Gated Consolidation (RGC)**, a two-stage architecture that eliminates this decay and maintains **100% signal recall at 10M+ turns** by decoupling discovery from synthesis.\n\n## Key Findings\n\n| Finding | Detail |\n| :--- | :--- |\n| **The Discovery Cliff** | SSC recall collapses to 17.0% at 10M turns (Flash) |\n| **Temporal Decay Dominance** | Decay rate ($d$) accounts for **91%** of recall collapse |\n| **RGC Performance** | Maintains **100% recall** at 10M+ turns |\n| **Synthetic Saturation** | Code distractors accelerate decay by ~12% vs. prose |\n| **Cross-System Validation** | Validated in chatbot (Moltbot) and IDE (Antigravity) environments |\n\n## Repository Structure\n\n```\nagentic-memory-scaling/\n├── README.md                  # This file\n├── LICENSE                    # MIT License\n├── paper/\n│   └── paper_memory_consolidation_apa.md  # Full APA research paper\n├── benchmarks/\n│   ├── results/               # High-fidelity JSON results (N=1000)\n│   │   ├── flash_results_n1000.json\n│   │   ├── pro_results_n1000.json\n│   │   ├── gemini-3.0-flash_results_n1000.json\n│   │   ├── claude-4.6-opus_results_n1000.json\n│   │   └── ablation_*.json\n│   └── figures/               # Publication-ready figures (v5)\n│       ├── discovery_cliff_v5.png\n│       ├── model_comparison_v5.png\n│       ├── ablation_fidelity_vs_decay_v1.png\n│       └── ablation_fidelity_vs_decay_v2.png\n└── scripts/\n    └── run_cst.py             # Cognitive Stress Test harness\n```\n\n## Reproducing Results\n\n### Prerequisites\n- Python 3.10+\n- `matplotlib` (for visualization)\n\n### Running the Benchmark\n```bash\ncd scripts\npython run_cst.py\n```\n\nThis will execute the Cognitive Stress Test (CST) harness, generating:\n- `scale_results.json` — Raw recall data across logarithmic turn depths\n- `discovery_cliff_auto.png` — The Discovery Cliff visualization\n\n## Citation\n\nIf you use this work in your research, please cite:\n\n```bibtex\n@article{agrawal2026discovery,\n  title={Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns},\n  author={Agrawal, Akash},\n  year={2026},\n  note={Preprint}\n}\n```\n\n## License\n\nThis project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.\n",
+    "files": [
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "path": "LICENSE"
       },
       {
-        "date": "2026-02-25T23:53:04Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
       },
       {
-        "date": "2026-02-25T23:51:56Z",
-        "message": "docs: agentic doc generation & readme update",
+        "name": "benchmarks",
+        "type": "dir",
+        "path": "benchmarks"
+      },
+      {
+        "name": "paper",
+        "type": "dir",
+        "path": "paper"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "path": "scripts"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2026-02-26T07:58:41Z",
+        "message": "docs(research): remove private repository citation",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-02-25T23:31:36Z",
-        "message": "style(mobile): fix horizontal scroll and asymmetric padding across 19 portfolio tailors",
+        "date": "2026-02-26T07:57:06Z",
+        "message": "docs(research): remove irrelevant legacy references (Gemini 1.5, Claude 3)",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-02-25T07:32:46Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-02-24T07:32:15Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-02-23T23:56:42Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-02-23T23:52:10Z",
-        "message": "chore: add portfolio quality baseline PoC",
+        "date": "2026-02-26T07:22:27Z",
+        "message": "docs: align README with N=1000 empirical standard",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-02-23T07:36:26Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
+        "date": "2026-02-26T06:24:23Z",
+        "message": "docs(research): finalize N=1000 empirical convergence data",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-02-25T22:45:52Z",
+        "message": "docs: update affiliation, model list, abstract, and stale figure refs",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-02-25T22:36:46Z",
+        "message": "Initial commit: Discovery Cliff research paper, benchmarks, and reproducibility harness",
+        "author": "Akash Agrawal"
       }
     ]
   },
