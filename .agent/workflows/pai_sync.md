@@ -5,6 +5,11 @@ description: Run the documentation & hygiene ritual (The PAI Sync)
 
 Run this ritual daily or whenever switching contexts. This acts as a **"Save Game"** for your project.
 
+## When To Run
+- End of day or before context switching to another project.
+- Before long breaks to persist decision state.
+- After significant refactors, bug-fix waves, or incident handling.
+
 > [!IMPORTANT]
 > **Runtime Preflight:** Start by running `scripts/pai_runtime_guard.sh status`. If `PROFILE=SHADOW` or `LOCKED=1`, do not use native Task/Implementation Plan/Walkthrough artifacts.
 > Allowed shadow write targets only:

@@ -13,8 +13,14 @@
   - [x] **Test-Case**: Observe & record sub-agent coordination durante build.
   - [x] Run local server
   - [x] Validate UI/UX and Agentic Summaries
-- [/] Phase 4: Publishing & Sync
-  - [ ] Fetch & Rebase from remote
-  - [ ] Commit tailored files (including `.pai/` artifacts)
-  - [ ] Push to Github Pages
+- [x] Phase 4: Publishing & Sync
+  - [x] Fetch & Rebase from remote
+  - [x] Commit tailored files (including `.pai/` artifacts)
+  - [x] Push to Github Pages
+- [x] Phase 5: Documentation Hygiene (@[/update_docs])
+  - [x] Sync GitHub activity stats (`scripts/fetch-github.js`)
+  - [x] Fetch project deep-dive data (`scripts/fetch-project-details.js`)
+  - [x] Agentic Project Chronicler synthesis (`scripts/agentic_chronicler.py`) [Partial - Priority Projects Complete]
+  - [x] Generate Dynamic README (`scripts/update-readme.js`)
+  - [x] Verify & Persist Changes
 - [ ] Session bootstrap enforced at 2026-02-27T20:11:30Z (shadow hard mode)

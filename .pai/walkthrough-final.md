@@ -23,3 +23,39 @@ This page build served as a live test-case for persona-level sub-agent coordinat
 
 ## Token
 `ABNORMAL_BUILD_COMPLETE`
+
+---
+
+# Operational Update - Secure Agent/Sub-Agent Collaboration
+
+## Implemented Runtime Controls
+- Restored local runtime profile at `.pai/runtime/profile.env` with inline comments and supported flag values.
+- Restored local operational scripts:
+  - `scripts/pai_runtime_guard.sh`
+  - `scripts/pai_subagent_ctl.sh`
+  - `scripts/pai_subagent_worker.sh`
+- Enforced `SUBAGENT_MODE=proposal_only` behavior:
+  - mutation-like commands are rejected for child lanes,
+  - read/analyze/propose commands are allowed.
+
+## Workflow Guidance Added
+- Added explicit **When To Run** guidance to:
+  - `.agent/workflows/session_bootstrap.md`
+  - `.agent/workflows/persona_orchestration.md`
+  - `.agent/workflows/research_spawn.md`
+  - `.agent/workflows/pai_sync.md`
+
+## Operational Documentation Added
+- Added runbook:
+  - `.pai/plans/operational_runbook.md`
+- Runbook includes:
+  - profile flag definitions and defaults,
+  - mode selection guidance,
+  - stage-based quality gates,
+  - fallback/rollback behavior,
+  - KPI targets.
+
+## Validation Performed
+- `scripts/pai_runtime_guard.sh status` confirms shadow-first defaults.
+- `scripts/pai_subagent_ctl.sh spawn ...` rejects mutating commands in proposal mode.
+- `scripts/pai_subagent_ctl.sh spawn ...` succeeds for read-only command lanes and returns collectable lifecycle evidence.

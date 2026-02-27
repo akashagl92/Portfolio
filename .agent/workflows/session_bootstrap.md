@@ -5,6 +5,12 @@ description: Enforce SHADOW hard mode at session start before any task work
 
 Run this workflow first in every new or reloaded session.
 
+## When To Run
+- At the beginning of every new chat thread.
+- Immediately after IDE reload/restart.
+- After any native artifact spinner/cancel/failure event.
+- Before running any non-trivial workflow (`/persona_orchestration`, `/research_spawn`, `/pai_sync`).
+
 ## Goal
 Prevent native artifact drift and force orchestration writes to project-local `.pai/*` files.
 

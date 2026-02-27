@@ -17,6 +17,10 @@
   - `.pai/plans/active_plan.md`
   - `.pai/walkthrough-final.md`
 - Keep mutating writes on a single execution path (no concurrent mutation lanes).
+- Loop alignment:
+  - Parent agent owns Outer Loop checkpoints (objective, strategy, success criteria, go/no-go).
+  - Sub-agents run scoped Inner Loop only (Observe -> Think -> Plan -> Execute -> Verify -> Report).
+  - No child result is accepted until parent completes Verify -> Learn and records synthesis.
 
 #### Self-Improvement Loop
 - After each correction, append a short lesson to `.pai/tasks/lessons.md`.
@@ -66,6 +70,11 @@
   3. Track lifecycle with `status` and `collect`.
   4. Merge child outputs in parent context; child must not write shared orchestration artifacts.
   5. If spawn is gated/unavailable/fails, fallback to single-parent and record reason in `.pai/tasks/todo.md`.
+  6. Child handoff must include loop evidence:
+     - scope observed,
+     - plan chosen,
+     - verification evidence,
+     - explicit assumptions and confidence.
 
 ### 5. Task Management Contract
 - Plan first in `.pai/tasks/todo.md` with checkable items.

@@ -5,6 +5,12 @@ description: Run research via sub-agent spawn with strict fallback and lifecycle
 
 Use this for research-heavy tasks to preserve parent context.
 
+## When To Run
+- Multi-source or long-running research.
+- Hypothesis/experimentation analysis requiring evidence traceability.
+- Any research likely to bloat parent context.
+- Not required for small, bounded single-source lookups.
+
 ## Preconditions
 1. Run `scripts/pai_runtime_guard.sh status`.
 2. Confirm runtime flags in `.pai/runtime/profile.env`:
@@ -27,6 +33,11 @@ Use this for research-heavy tasks to preserve parent context.
   - `.pai/tasks/todo.md`
   - `.pai/walkthrough-final.md`
 - If `PROFILE=SHADOW` or `LOCKED=1`, do not mutate native Task/Implementation Plan/Walkthrough artifacts.
+- Child lanes must return an Inner Loop trace:
+  - Observe summary
+  - Plan chosen
+  - Verification evidence
+  - Confidence level
 - If spawn is unavailable/fails/times out:
   - fallback to single-parent execution,
   - record failure reason in `.pai/tasks/todo.md`.
