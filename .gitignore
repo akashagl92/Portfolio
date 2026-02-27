@@ -11,3 +11,13 @@ node_modules/
 .idea/
 .vscode/
 PAI/
+
+# PAI Operational Systemic Files
+.pai/runtime/
+.pai/state/
+scripts/pai_*
+scripts/summary_cache.json
+scripts/reports/
+*.v1_backup
+*.bak
+package-json.patch.diff

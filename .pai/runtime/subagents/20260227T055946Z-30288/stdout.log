@@ -1,3 +1,0 @@
-scripts/pai_subagent_worker.sh
-scripts/pai_subagent_ctl.sh
-scripts/pai_runtime_guard.sh
