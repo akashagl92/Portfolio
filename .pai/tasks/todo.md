@@ -1,17 +1,19 @@
-# Todo: Portfolio Infrastructure Updates
+# Tasks - Abnormal Security Portfolio
 
-- [x] Integrate SSC/RGC "Infinite Memory" card across 19 pages (v1)
-- [x] Add PAI v2 Infrastructure card across 19 pages
-- [/] **Final Refinement: Infinite Memory card with Hardened 2026-02-25 metrics**
-  - [x] Review `global_learnings.md` for hardened thresholds (1M turns)
-  - [x] Implement Batch 1: Root + airbnb, alivo, ambience
-  - [x] Implement Batch 2: circle, consensys, ey, fedex
-  - [x] Implement Batch 3: fetch, happymoney, kraken, quince
-  - [x] Implement Batch 4 & 5: reku, root, scopely, stellantis, torq, viant
-- [/] Final Verification
-  - [x] Visual verification of O(1) and 1M turn threshold metrics
-  - [x] Fixed mobile symmetric padding and prevented horizontal scroll blowouts on all 19 custom portfolio pages.
-
-## Refactor Backlog
-- [ ] **CSS Consolidation:** Extract the shared core styles (~1200 lines) from all 19 portfolio pages' `style.css` into a single `base.css` file to prevent duplicate maintenance of responsive grids and padding. Only page-specific overrides should remain in the individual folders.
-- [ ] **Research Card Templating:** Create a Handlebars partial or build script to inject the "Infinite Memory" research card HTML so edits aren't duplicated across 19 files.
+- [x] Phase 1: Setup & Context
+  - [x] Document Job Context (`.pai/job_contexts/abnormal.md`)
+  - [x] Initialize Project-Local Plan (`.pai/plans/active_plan.md`)
+  - [x] Create Directory Structure (`/abnormal/`)
+- [x] Phase 2: Page Implementation
+  - [x] Create `abnormal/job_description.md`
+  - [x] Create `abnormal/index.html` (tailored)
+  - [x] Create `abnormal/app.js` (tailored)
+  - [ ] Generate `abnormal/data.json` (if needed) or update global `project-details.json`
+- [x] Phase 3: Verification & Sub-Agent Audit
+  - [x] **Test-Case**: Observe & record sub-agent coordination durante build.
+  - [x] Run local server
+  - [x] Validate UI/UX and Agentic Summaries
+- [/] Phase 4: Publishing & Sync
+  - [ ] Fetch & Rebase from remote
+  - [ ] Commit tailored files (including `.pai/` artifacts)
+  - [ ] Push to Github Pages

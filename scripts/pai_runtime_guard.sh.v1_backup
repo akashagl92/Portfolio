@@ -1,7 +1,33 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# Resolve project root robustly even when this script is symlinked from ~/.gemini/scripts.
+resolve_root() {
+  # 1) Explicit override wins.
+  if [[ -n "${PAI_PROJECT_ROOT:-}" && -d "${PAI_PROJECT_ROOT}" ]]; then
+    echo "${PAI_PROJECT_ROOT}"
+    return
+  fi
+
+  # 2) Current working directory if it looks like a PAI project.
+  if [[ -d "$(pwd)/.pai" ]]; then
+    echo "$(pwd)"
+    return
+  fi
+
+  # 3) Git repo root from current directory if available.
+  if git_root="$(git rev-parse --show-toplevel 2>/dev/null)" && [[ -d "${git_root}/.pai" ]]; then
+    echo "${git_root}"
+    return
+  fi
+
+  # 4) Fallback: parent of script location (works for non-symlink local script install).
+  local script_dir
+  script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+  echo "$(cd "${script_dir}/.." && pwd -P)"
+}
+
+ROOT_DIR="$(resolve_root)"
 RUNTIME_DIR="$ROOT_DIR/.pai/runtime"
 PROFILE_FILE="$RUNTIME_DIR/profile.env"
 EVENT_LOG="$RUNTIME_DIR/events.log"
@@ -18,12 +44,12 @@ write_profile() {
   local reason="$3"
   local ts
   ts="$(now_iso)"
-  cat > "$PROFILE_FILE" <<EOF
+  cat > "$PROFILE_FILE" <<__PROFILE_EOF__
 PROFILE=$profile
 LOCKED=$locked
 REASON=$reason
 UPDATED_AT=$ts
-EOF
+__PROFILE_EOF__
   echo "$ts profile=$profile locked=$locked reason=$reason" >> "$EVENT_LOG"
 }
 
@@ -45,6 +71,8 @@ reason="${2:-manual}"
 case "$cmd" in
   status)
     read_profile
+    echo "ROOT_DIR=$ROOT_DIR"
+    echo "PROFILE_FILE=$PROFILE_FILE"
     echo "PROFILE=$PROFILE"
     echo "LOCKED=$LOCKED"
     echo "REASON=$REASON"

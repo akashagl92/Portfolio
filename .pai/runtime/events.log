@@ -1,2 +1,3 @@
 2026-02-23T06:34:03Z profile=SHADOW locked=1 reason=native_stall
 2026-02-23T06:34:03Z profile=NATIVE locked=0 reason=verification_pass
+2026-02-27T04:37:28Z profile=SHADOW locked=1 reason=global_shadow_default

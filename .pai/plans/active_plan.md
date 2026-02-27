@@ -1,15 +1,25 @@
-# Active Plan: Portfolio Infrastructure Updates (SHADOW)
+# Implementation Plan - Abnormal Security Portfolio
 
-## Objective
-Update the portfolio to reflect the current state of "Infinite Memory" research and the new "Personal AI Infrastructure (PAI v2)" architectural layer.
+Tailoring the engineering portfolio for the **AI Product Builder** role at Abnormal Security. This role emphasizes hands-on AI execution (Cursor, Claude Code), agentic workflows, and internal GTM efficiency.
 
-## Card 1: Infinite Memory Research (SSC/RGC) - DONE
-- **Status**: Hardened 2026-02-25 metrics (1M threshold, O(1), 12% saturation) deployed.
+## Proposed Changes
 
-## Card 2: Personal AI Infrastructure (PAI v2) - DONE
-- **Status**: Implemented across 19 pages.
+### Abnormal Security Page
+- [NEW] `abnormal/index.html`: Base structure updated with Abnormal Security branding and AI Product Builder hero.
+- [NEW] `abnormal/app.js`: Tailored for AI summary loading and Abnormal-specific highlighting.
+- [NEW] `abnormal/job_description.md`: For local context and script processing.
 
-## Implementation Steps (Final Polish) - DONE
-1. **Plan Polish**: Incorporate 1M turn threshold and synthetic saturation metrics. - DONE
-2. **Batch 1-5**: Rollout to 19 pages complete. - DONE
-3. **Verification**: Visual check of "Highlights" for O(1) and 1M turn markers. - IN PROGRESS
+### Content Tailoring
+- **Hero**: Emphasize "AI-Native Productivity" and "GTM Transformation".
+- **Professional Projects**:
+  - Focus on **Moltbot** (Agentic), **Databricks Genie** (Text-to-SQL), and **VOC Chatbot** (LangGraph).
+  - Emphasize internal automation and production-grade agents.
+- **Personal Projects**:
+  - Highlight **PAI v2** (Orchestration/Memory) and **Infinite Memory** (Research).
+  - [NEW] **Multi-Agent Coordination**: Showcasing persona-level sub-agents (System 1/System 2) and how they synchronize for complex deliveries—directly relevant to Abnormal's "AI Transformation Pods".
+
+## Verification & Sub-Agent Test-Case
+- **Behavioral Audit**: Verify how sub-agents take effect during the construction of this page.
+- **Delivery Sync**: Ensure the main agent coordinates persona-level sub-agent outputs for the final `/abnormal/` page.
+- Serve locally and verify `/abnormal/index.html`.
+- Ensure AI summaries load correctly via `app.js`.

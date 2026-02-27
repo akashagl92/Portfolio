@@ -6,7 +6,11 @@ description: Run the documentation & hygiene ritual (The PAI Sync)
 Run this ritual daily or whenever switching contexts. This acts as a **"Save Game"** for your project.
 
 > [!IMPORTANT]
-> **Runtime Preflight:** Start by running `scripts/pai_runtime_guard.sh status`. If `PROFILE=SHADOW` or `LOCKED=1`, do not use native Task/Implementation Plan artifacts.
+> **Runtime Preflight:** Start by running `scripts/pai_runtime_guard.sh status`. If `PROFILE=SHADOW` or `LOCKED=1`, do not use native Task/Implementation Plan/Walkthrough artifacts.
+> Allowed shadow write targets only:
+> - `.pai/tasks/todo.md`
+> - `.pai/plans/active_plan.md`
+> - `.pai/walkthrough-final.md`
 
 ## Steps
 
@@ -26,7 +30,9 @@ Run this ritual daily or whenever switching contexts. This acts as a **"Save Gam
 3. Record Root Cause Analysis/Learnings in `.pai/learnings/`.
 
 ### 3. 🌟 State Update & Portfolio
-1. **Subagent Handoffs**: If subagents were used, collect all handoffs first.
+1. **Subagent Handoffs**:
+   - If research subagents were used, collect results via `scripts/pai_subagent_ctl.sh collect <id>` first.
+   - Record child id/status in `.pai/tasks/todo.md` before synthesis.
 2. Update "Current State" in `.pai/manifest.md`.
 3. **Global Portfolio**: Run `node ~/.gemini/scripts/generate_portfolio.mjs` (if available).
 
@@ -47,3 +53,9 @@ Run this ritual daily or whenever switching contexts. This acts as a **"Save Gam
 // turbo
 4. Run `python3 ~/.gemini/scripts/conversation_sentinel.py` (IDE Conversation Memory).
 5. Verify `.pai/state/conversation_knowledge.json` is updated with recent sessions.
+
+## Research Spawn Routing (PoC)
+- For any sync step that requires external research/comparison:
+1. Run `scripts/pai_runtime_guard.sh status`.
+2. If `SUBAGENT_ENABLED=1` and `CAPABILITY_SPAWN_SUBAGENT=1`, run research in a spawned lane via `scripts/pai_subagent_ctl.sh spawn`.
+3. If spawn unavailable/fails, fallback to single-parent and note fallback in `.pai/tasks/todo.md`.
