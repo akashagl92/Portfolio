@@ -70,10 +70,12 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 
 ```mermaid
 graph TD
-    A[GitHub Repos] -->|fetch-project-details.js| B[project-details.json]
-    B -->|agentic_chronicler.py| C[summary_cache.json]
-    C -->|update-readme.js| D[README.md]
-    E[README.template.md] --> D
+    A[GitHub Repos] -->|fetch-github.js| B[data.json]
+    A -->|fetch-project-details.js| C[project-details.json]
+    C -->|agentic_chronicler.py| D[project-details-ai.json]
+    B -->|update-readme.js| E[README.md]
+    D -->|update-readme.js| E
+    F[README.template.md] -->|update-readme.js| E
 ```
 
 ## 🚀 Development
