@@ -2,11 +2,12 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **405 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **407 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
 - **General**: [Live Site](https://akashagl92.github.io/Portfolio/)
+- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)
 - **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)
 - **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)
 - **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)
@@ -122,7 +123,7 @@ _Tags: Natural Language Processing, Semantic Search, Graph Databases_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 405 |
+| Total Commits | 407 |
 | Unique Repositories | 10 |
 | Primary Language | Python |
 | Top Languages | N/A |
