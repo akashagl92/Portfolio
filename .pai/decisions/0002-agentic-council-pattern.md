@@ -23,17 +23,6 @@ We implement the "Agentic Council" pattern within the `agentic_chronicler.py` sc
     - **Input:** Engineer's analysis + Recruiter's pitch + Raw Data.
     - **Output:** Final, professional JSON summary (max 80 words).
 
-## Consequences
-
-### Positive
-- **Balanced Content:** Documentation captures both technical rigor and commercial impact.
-- **Fact-Checked Accuracy:** The Chairman role acts as a "Gated Quality Layer" to prevent hallucination.
-- **Automation:** READMEs and portfolios are updated autonomously without manual editing.
-
-### Negative / Risks
-- **Cost/Latency:** Three sequential LLM calls are more expensive and slower than a single-prompt approach.
-- **Provider Sensitivity:** Personas can be sensitive to the underlying LLM model (Gemini vs. Llama).
-
 ## Verification
 - Successfully integrated into the `/update_docs` workflow.
 - Verified output in `Portfolio-Fetch/project-details-ai.json`.
