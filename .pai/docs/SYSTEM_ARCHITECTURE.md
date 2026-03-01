@@ -35,10 +35,10 @@ Standardized capabilities are injected into project rituals using a **Skill Cont
 
 ```mermaid
 sequenceDiagram
-    participant W as Local Workflow (/qa_gate)
-    participant C as Skill Controller (pai_skill_ctl.sh)
-    participant S as Global Skill (quality-gate)
-    participant P as Project Files
+    participant W as "Local Workflow (/qa_gate)"
+    participant C as "Skill Controller (pai_skill_ctl.sh)"
+    participant S as "Global Skill (quality-gate)"
+    participant P as "Project Files"
 
     W->>C: Call "run quality-gate"
     C->>S: Locate & Execute audit_codebase.sh
@@ -53,13 +53,13 @@ Hierarchical delegation for complex or parallel work.
 
 ```mermaid
 graph TD
-    Parent[Parent Agent (Orchestrator)]
-    Sub[Child Sub-agent (Worker)]
-    Global[Global Skill Brain]
+    Parent["Parent Agent (Orchestrator)"]
+    Sub["Child Sub-agent (Worker)"]
+    Global["Global Skill Brain"]
 
     Parent -- Spawn --> Sub
     Sub -- Read SKILL.md --> Global
-    Sub -- Execute Task --> Project[Local Files]
+    Sub -- Execute Task --> Project["Local Files"]
     Project -- Results --> Sub
     Sub -- Collect --> Parent
 ```
@@ -69,11 +69,11 @@ Recursive Gated Consolidation ensures long-term memory doesn't "decay."
 
 ```mermaid
 graph LR
-    A[New Learning] --> B[L0 Sentinel]
-    B -- Gated Signal --> C[rgc_buffer.json]
-    C --> D[L1 Synthesizer]
-    D -- Consolidation --> E[context_summaries.json]
-    E -- Grounding --> F[Next Session]
+    A["New Learning"] --> B["L0 Sentinel"]
+    B -- Gated Signal --> C["rgc_buffer.json"]
+    C --> D["L1 Synthesizer"]
+    D -- Consolidation --> E["context_summaries.json"]
+    E -- Grounding --> F["Next Session"]
 ```
 
 ### D. The Agentic Chronicler (Docs Sync)
@@ -81,12 +81,12 @@ The `/update_docs` workflow utilizes an "LLM Council" to synthesize project real
 
 ```mermaid
 graph TD
-    Raw[Raw Data: GitHub/Commits/README] --> Eng[Engineer Persona: Tech Stack]
-    Raw --> Rec[Recruiter Persona: Impact]
-    Eng --> Chair[Chairman: Synthesis]
+    Raw["Raw Data: GitHub/Commits/README"] --> Eng["Engineer Persona: Tech Stack"]
+    Raw --> Rec["Recruiter Persona: Impact"]
+    Eng --> Chair["Chairman: Synthesis"]
     Rec --> Chair
-    Chair -- JSON Summary --> README[Dynamic README.md]
-    README --> Git[Git Push/Deploy]
+    Chair -- JSON Summary --> README["Dynamic README.md"]
+    README --> Git["Git Push/Deploy"]
 ```
 
 ## 4. Holistic Interaction Map
@@ -94,30 +94,30 @@ How all components work together to provide a robust, self-healing mechanism acr
 
 ```mermaid
 graph TD
-    subgraph Global_Layer [Global Capability Layer (~/.gemini/)]
-        GS[Global Skills: quality-gate, research-spawn]
-        GL[Global Learnings: brain/global_learnings.md]
-        GW[Global Workflows: rgc_sync]
+    subgraph Global_Layer ["Global Capability Layer (~/.gemini/)"]
+        GS["Global Skills: quality-gate, research-spawn"]
+        GL["Global Learnings: brain/global_learnings.md"]
+        GW["Global Workflows: rgc_sync"]
     end
 
-    subgraph Project_Layer [Project Operational Layer (.pai/)]
-        W_QA[/qa_gate]
-        W_RG[/rgc_sync]
-        W_DOC[/update_docs]
-        W_REF[/refactor]
-        CTL[pai_skill_ctl.sh]
-        SENT[rgc_sentinel.py]
+    subgraph Project_Layer ["Project Operational Layer (.pai/)"]
+        W_QA["/qa_gate"]
+        W_RG["/rgc_sync"]
+        W_DOC["/update_docs"]
+        W_REF["/refactor"]
+        CTL["pai_skill_ctl.sh"]
+        SENT["rgc_sentinel.py"]
     end
 
-    subgraph Agentic_Core [Agentic Synthesis / The Council]
+    subgraph Agentic_Core ["Agentic Synthesis / The Council"]
         AC["agentic_chronicler.py (The Council)"]
-        CS[conversation_sentinel.py]
+        CS["conversation_sentinel.py"]
         Council_P["Engineer | Recruiter | Chairman"]
     end
 
     W_QA -- Orchestrates --> CTL
     CTL -- Calls --> GS
-    GS -- Verifies --> Project[Project Files]
+    GS -- Verifies --> Project["Project Files"]
     
     W_RG -- Runs --> SENT
     SENT -- Gates --> GL
@@ -125,12 +125,12 @@ graph TD
     W_DOC -- Triggers --> AC
     AC -- "1. Analysis & Pitch" --> Council_P
     Council_P -- "2. Fact-Check" --> Project
-    Council_P -- "3. Synthesis" --> README[Dynamic README.md]
+    Council_P -- "3. Synthesis" --> README["Dynamic README.md"]
     
     Project -- Insights --> GL
     GL -- Influences --> W_REF
     
-    CS -- Distills --> Session[Conversation Knowledge]
+    CS -- Distills --> Session["Conversation Knowledge"]
 ```
 
 ## 5. Key Tooling
