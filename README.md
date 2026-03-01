@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **418 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **419 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -45,63 +45,63 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ### 🔮 AI Astrology Platform (`aistro.ai`)
 **Python** | [Repo](https://github.com/akashagl92/aistro.ai)
 
-This advanced AI platform provides comprehensive astrological analysis across Western, Vedic, and Horary systems. It leverages precise astronomical calculations and Google Gemini for AI-powered, statistically validated interpretations. Built with Next.js and FastAPI, it offers interactive charts, predictive insights, and robust data science integration, backed by research on over 12,000 events.
+AI-powered astrological analysis platform with traditional calculations and modern interpretations
 
-_Tags: AI/ML, Full-Stack Development, Data Science, Astrology Engine_
+_Tags: Astrology, AI, Machine Learning_
 
 ---
 
 ### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)
 **TypeScript** | [Repo](https://github.com/akashagl92/moltbot)
 
-Moltbot is a cutting-edge personal AI agent platform that revolutionizes LLM memory by overcoming attention saturation. Utilizing Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC), it achieves 100% discovery fidelity over 10 million conversation turns with O(1) query latency. This research-grade system provides persistent, scalable agentic memory, pushing the boundaries of AI interaction and long-term context retention.
+Moltbot is a resilient agentic memory platform with RGC and SSC for extreme-scale research
 
-_Tags: LLM Memory Management, AI Agent Systems, Container Orchestration, Polyglot Development_
+_Tags: Recursive Gated Consolidation, Structured State Convergence, Agentic Memory_
 
 ---
 
 ### 📈 Autonomous Trading System (`stock_price_target_modelling`)
 **Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)
 
-This autonomous AI-powered trading system dynamically manages a dual-track portfolio across stocks and crypto. It employs a sophisticated multi-tier strategy with Golden Cross momentum boosting, achieving significant XIRR performance by optimizing realized wealth. The system features automated execution with email-based approval, robust data pipelines, and shadow portfolio tracking for rigorous validation.
+AI-powered autonomous trading system with 40.8% XIRR
 
-_Tags: Algorithmic Trading, Python, Financial Automation, Quantitative Finance_
+_Tags: AI Trading, Stock Market, Crypto_
 
 ---
 
 ### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)
 **JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)
 
-Sonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.
+Interactive music visualizer combining audio physics and theory for immersive learning
 
-_Tags: Vanilla JavaScript, Web Audio API, HTML5 Canvas, CSS3, Music Theory_
+_Tags: Web Audio API, HTML5 Canvas, Music Theory_
 
 ---
 
 ### Portfolio (`Portfolio`)
-**JavaScript** | [Repo](https://github.com/akashagl92/Portfolio)
+**HTML** | [Repo](https://github.com/akashagl92/Portfolio)
 
-This portfolio showcases a Data & AI Product Leader adept at architecting and deploying production-grade systems across data science, marketing technology, and agentic AI. It features an autonomous trading system with a 40.8% XIRR, AI-powered personal agents, and interactive visualizers. The platform itself leverages sophisticated automation for personalized content delivery, demonstrating a strong grasp of advanced technologies and efficient development workflows.
+Data & AI Product Leader portfolio with 418 commits, showcasing strategic product thinking and technical execution in data science, marketing technology, and agentic AI.
 
-_Tags: AI/Machine Learning, Data Science, Autonomous Systems, Web Development_
+_Tags: Data Science, AI/ML, Full-Stack Development_
 
 ---
 
 ### Agentic-memory-scaling (`agentic-memory-scaling`)
 **Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)
 
-This research identifies the "Discovery Cliff," a fundamental scaling limit where LLM-based agents lose critical information in long conversation histories due to temporal decay. The novel Recursive Gated Consolidation (RGC) architecture rigorously overcomes this, maintaining 100% signal recall at over 10 million turns by decoupling discovery from synthesis, significantly advancing agentic memory capabilities.
+Agentic memory scaling framework achieves 100% recall at extreme scales using Recursive Gated Consolidation
 
-_Tags: LLM Agentic Systems, Memory Consolidation, Scaling Laws, AI Benchmarking_
+_Tags: LLM, Agentic Systems, Memory Consolidation_
 
 ---
 
-### Philosophy-sage (`philosophy-sage`)
-**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)
+### Pi-home-assistant (`pi-home-assistant`)
+ | [Repo](https://github.com/akashagl92/pi-home-assistant)
 
-Advanced AI platform for philosophical and scriptural text analysis
+Intelligent home automation hub integrating AI and IoT for streamlined domestic life
 
-_Tags: Natural Language Processing, Semantic Search, Graph Databases_
+_Tags: Home Automation, AI, IoT_
 
 
 ---
@@ -123,7 +123,7 @@ _Tags: Natural Language Processing, Semantic Search, Graph Databases_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 418 |
+| Total Commits | 419 |
 | Unique Repositories | 10 |
 | Primary Language | Python |
 | Top Languages | N/A |
