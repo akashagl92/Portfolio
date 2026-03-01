@@ -1,0 +1,1 @@
+/Users/akashagrawal/.gemini/workflows/capture_social.md

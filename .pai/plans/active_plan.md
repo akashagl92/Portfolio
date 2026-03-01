@@ -36,13 +36,22 @@ Restore all session-generated files lost during recent git operations and ensure
 #### [NEW] [2026-03-01-framework-verification.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.pai/learnings/2026-03-01-framework-verification.md)
 - Re-create the session learnings.
 
+### [Component] Visual Showcase & Outreach
+
+#### [MODIFY] [architecture_viz.html](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/showcase/architecture_viz.html)
+- **Contrast**: Switch to high-vibrancy palette (Brighter Indigo, Emerald, Amber).
+- **Legibility**: Increase sub-text font weights and contrast.
+- **Context**: Explicitly label as "Executive Job Hunt Engine".
+
+#### [MODIFY] [PROMOTION_POSTS.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.gemini/antigravity/brain/9298f8ab-db91-443e-9b08-3b5cfb54ea13/PROMOTION_POSTS.md)
+- Update content to match the "Job Hunt" narrative.
+
 ## Verification Plan
 
 ### Automated Verification
-1. `ls -R .pai/ .agent/ scripts/` to confirm all 11+ restored files are present.
-2. `./scripts/pai_skill_ctl.sh run quality-gate` to verify the reliability framework loop.
-3. `git status` to verify all files are staged and ready for push.
+1. `browser_subagent` recording of the 20s animation sequence.
+2. Check for "Recruiter" persona visibility and impact mapping text.
 
 ### Manual Verification
-1. User review of restored `SYSTEM_ARCHITECTURE.md` to confirm interaction diagrams are correct.
-2. Final Git push verification.
+1. User review of the animation legibility.
+2. Final approval before Git Push.

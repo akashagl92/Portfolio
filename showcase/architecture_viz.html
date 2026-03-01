@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Portfolio Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Outfit:wght@300;600;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #010409;
+            --primary: #c7d2fe;
+            --secondary: #6ee7b7;
+            --accent: #fde047;
+            --info: #bae6fd;
+            --text: #ffffff;
+            --card-bg: rgba(2, 6, 23, 0.97);
+            --border: rgba(255, 255, 255, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #canvas {
+            width: 1280px;
+            height: 720px;
+            background:
+                radial-gradient(ellipse at 75% 20%, rgba(30, 27, 75, 0.6), transparent 60%),
+                radial-gradient(ellipse at 25% 80%, rgba(6, 78, 59, 0.4), transparent 60%),
+                var(--bg);
+            position: relative;
+            border-radius: 24px;
+            box-shadow: 0 0 150px rgba(0, 0, 0, 1);
+            border: 2px solid var(--border);
+            overflow: hidden;
+        }
+
+        /* --- Glass Card --- */
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--border);
+            border-radius: 24px;
+            padding: 30px 36px;
+            position: absolute;
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 50;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.9);
+        }
+
+        .active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .title-card {
+            top: 40px;
+            left: 50px;
+            width: 480px;
+        }
+
+        .context-tag {
+            display: inline-block;
+            padding: 8px 18px;
+            background: #ffffff;
+            color: #000000;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.8rem;
+            margin-bottom: 16px;
+            line-height: 1.1;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #e2e8f0;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+
+        /* --- Two Loops --- */
+        .loop-container {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 580px;
+            height: 580px;
+            opacity: 0;
+            transition: all 1.5s ease;
+        }
+
+        .loop {
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .outer-loop {
+            width: 100%;
+            height: 100%;
+            border: 3px solid rgba(199, 210, 254, 0.45);
+            animation: rotate 80s linear infinite;
+        }
+
+        .inner-loop {
+            width: 65%;
+            height: 65%;
+            top: 17.5%;
+            left: 17.5%;
+            border: 3px solid rgba(110, 231, 183, 0.5);
+            animation: rotate-reverse 55s linear infinite;
+        }
+
+        .node {
+            position: absolute;
+            padding: 12px 20px;
+            background: #0d1117;
+            border: 3px solid var(--info);
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 900;
+            color: #ffffff;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9);
+            white-space: nowrap;
+        }
+
+        .node-emerald {
+            border-color: var(--secondary);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-reverse {
+            from {
+                transform: rotate(360deg);
+            }
+
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* --- Agentic Council --- */
+        .council-nodes {
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            bottom: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 60;
+        }
+
+        .council-member {
+            text-align: center;
+            width: 240px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .avatar-ring {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.8rem;
+            background-color: #010409;
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
+        }
+
+        .ring-eng {
+            border: 6px solid var(--primary);
+            box-shadow: 0 0 50px rgba(199, 210, 254, 0.4);
+        }
+
+        .ring-rec {
+            border: 6px solid var(--secondary);
+            box-shadow: 0 0 50px rgba(110, 231, 183, 0.4);
+        }
+
+        .ring-chair {
+            border: 6px solid var(--accent);
+            box-shadow: 0 0 50px rgba(253, 224, 71, 0.4);
+        }
+
+        .persona-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            color: #ffffff;
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 800;
+        }
+
+        .persona-role {
+            font-size: 0.9rem;
+            color: #ffffff;
+            line-height: 1.3;
+            font-weight: 700;
+            display: block;
+            padding: 8px 10px;
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Color-coded sub-labels */
+        .role-eng {
+            color: var(--primary);
+        }
+
+        .role-rec {
+            color: var(--secondary);
+        }
+
+        .role-chair {
+            color: var(--accent);
+        }
+
+        /* --- Pipeline Visual --- */
+        .pipeline {
+            position: absolute;
+            right: 280px;
+            top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            opacity: 0;
+            transition: opacity 1.2s ease;
+            z-index: 40;
+        }
+
+        .pipe-step {
+            padding: 12px 28px;
+            background: rgba(13, 17, 23, 0.95);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .pipe-step.highlight {
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+
+        .pipe-arrow {
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 1rem;
+        }
+
+        /* --- Timeline --- */
+        .timeline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .progress {
+            height: 100%;
+            width: 0%;
+            background: #ffffff;
+            transition: width 0.1s linear;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+        }
+
+        /* --- Overlay --- */
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: var(--bg);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 1.5s ease;
+        }
+
+        .overlay h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 1.2rem;
+        }
+
+        .overlay .subtitle {
+            color: var(--primary);
+            font-weight: 900;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="canvas">
+        <!-- Intro Overlay -->
+        <div class="overlay" id="introOverlay">
+            <h2>Agentic Portfolio Engine</h2>
+            <div class="subtitle">Governed by Personal AI Infrastructure</div>
+        </div>
+
+        <!-- Info Card -->
+        <div class="glass-card title-card" id="mainInfo">
+            <div class="context-tag">Executive Job-Hunt Engine</div>
+            <h1 id="stageTitle">PAI v2.2</h1>
+            <p id="description">A self-healing infrastructure built to present my technical portfolio with maximum
+                impact for hiring managers.</p>
+        </div>
+
+        <!-- Two-Loop Visualization -->
+        <div class="loop-container" id="loopVisual">
+            <div class="loop outer-loop">
+                <div class="node" style="top: -24px; left: 50%; transform: translateX(-50%);">STRATEGY</div>
+                <div class="node" style="bottom: -24px; left: 50%; transform: translateX(-50%);">GOVERNANCE</div>
+            </div>
+            <div class="loop inner-loop">
+                <div class="node node-emerald" style="top: -24px; left: 50%; transform: translateX(-50%);">EXECUTION
+                </div>
+                <div class="node node-emerald" style="bottom: -24px; left: 50%; transform: translateX(-50%);">VERIFY
+                </div>
+            </div>
+        </div>
+
+        <!-- Agentic Council -->
+        <div class="council-nodes" id="councilVisual">
+            <div class="council-member" id="m1">
+                <div class="avatar-ring ring-eng">👨‍💻</div>
+                <strong class="persona-name">The Engineer</strong>
+                <span class="persona-role role-eng">Guarantees production-ready excellence.</span>
+            </div>
+            <div class="council-member" id="m2">
+                <div class="avatar-ring ring-rec">👔</div>
+                <strong class="persona-name">The Recruiter</strong>
+                <span class="persona-role role-rec">Synthesizes code into STAR impact.</span>
+            </div>
+            <div class="council-member" id="m3">
+                <div class="avatar-ring ring-chair">🏛️</div>
+                <strong class="persona-name">The Chairman</strong>
+                <span class="persona-role role-chair">Enforces absolute truth & safety.</span>
+            </div>
+        </div>
+
+        <!-- Pipeline Visual (appears when loops fade) -->
+        <div class="pipeline" id="pipelineVisual">
+            <div class="pipe-step">GitHub API</div>
+            <div class="pipe-arrow">↓</div>
+            <div class="pipe-step">fetch & analyze</div>
+            <div class="pipe-arrow">↓</div>
+            <div class="pipe-step highlight">LLM Council</div>
+            <div class="pipe-arrow">↓</div>
+            <div class="pipe-step">README.md</div>
+            <div class="pipe-arrow">↓</div>
+            <div class="pipe-step">Live Portfolio</div>
+        </div>
+
+        <!-- Progress Timeline -->
+        <div class="timeline">
+            <div class="progress" id="progressBar"></div>
+        </div>
+    </div>
+
+    <script>
+        const stages = [
+            {
+                title: "Executive Integrity",
+                desc: "Architectural Decision Records ensure a foundation that survives rigorous audits by tech leadership.",
+                action: () => {
+                    document.getElementById('mainInfo').classList.add('active');
+                    document.getElementById('loopVisual').style.opacity = "1";
+                }
+            },
+            {
+                title: "Hiring Optimization",
+                desc: "The 'Recruiter' persona translates raw commits into measurable career value.",
+                action: () => {
+                    document.getElementById('loopVisual').style.transform = "translateY(-50%) scale(0.85) translateX(60px)";
+                    document.getElementById('m2').style.opacity = "1";
+                    document.getElementById('m2').style.transform = "translateY(0) scale(1.15)";
+                    document.getElementById('progressBar').style.background = "var(--secondary)";
+                    document.getElementById('progressBar').style.boxShadow = "0 0 30px var(--secondary)";
+                }
+            },
+            {
+                title: "The Agentic Council",
+                desc: "Three personas ensure a fact-checked portfolio for specialized technical roles.",
+                action: () => {
+                    document.getElementById('loopVisual').style.opacity = "0.04";
+                    document.getElementById('pipelineVisual').style.opacity = "1";
+                    document.getElementById('m1').style.opacity = "1";
+                    document.getElementById('m1').style.transform = "translateY(0) scale(1)";
+                    document.getElementById('m3').style.opacity = "1";
+                    document.getElementById('m3').style.transform = "translateY(0) scale(1)";
+                    document.getElementById('m2').style.transform = "translateY(0) scale(1)";
+                    document.getElementById('progressBar').style.background = "var(--accent)";
+                    document.getElementById('progressBar').style.boxShadow = "0 0 30px var(--accent)";
+                }
+            },
+            {
+                title: "Persistent Memory",
+                desc: "Recursive Gated Consolidation ensures my professional context is synchronized across every session.",
+                action: () => {
+                    document.getElementById('progressBar').style.background = "#ffffff";
+                    document.getElementById('progressBar').style.boxShadow = "0 0 40px #ffffff";
+                }
+            }
+        ];
+
+        let currentStage = 0;
+        const totalDuration = 20000;
+        const stageDuration = totalDuration / stages.length;
+
+        function updateProgress() {
+            const progress = document.getElementById('progressBar');
+            let start = Date.now();
+            const timer = setInterval(() => {
+                let timePassed = Date.now() - start;
+                let pct = (timePassed / totalDuration) * 100;
+                progress.style.width = Math.min(pct, 100) + '%';
+                if (timePassed >= totalDuration) clearInterval(timer);
+            }, 50);
+        }
+
+        setTimeout(() => {
+            document.getElementById('introOverlay').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('introOverlay').remove();
+                updateProgress();
+                runAnimation();
+            }, 1000);
+        }, 1500);
+
+        function runAnimation() {
+            if (currentStage >= stages.length) return;
+            const stage = stages[currentStage];
+            document.getElementById('stageTitle').innerText = stage.title;
+            document.getElementById('description').innerText = stage.desc;
+            stage.action();
+            currentStage++;
+            setTimeout(runAnimation, stageDuration);
+        }
+    </script>
+</body>
+
+</html>

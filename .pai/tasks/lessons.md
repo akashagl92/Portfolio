@@ -16,3 +16,18 @@
 - **Problem:** Mobile horizontal scroll blowouts and asymmetric padding issues were prevalent across all customized sub-pages (Fetch, Ambience, etc.).
 - **Pattern:** Reliance on `100vw` ignores scrollbar width reservations. Absolute positioning for decorative background glows can expand the browser's layout container if not explicitly clipped.
 - **Decision:** Deployed hardened CSS rules: `body {max-width: 100%}`, `.projects-grid { minmax(min(350px, 100%), 1fr) }`, and `clip-path` overlay containment.
+
+## 2026-03-01: SHADOW Profile Compliance
+- **Problem:** Task tracking and walkthroughs were being written to `~/.gemini/antigravity/brain/` (native artifacts) instead of `.pai/` (orchestration artifacts).
+- **Pattern:** SHADOW profile = orchestration artifacts only. All task tracking, plans, and lessons must live in `.pai/tasks/`, `.pai/plans/`, and `.pai/learnings/`.
+- **Decision:** Migrated tracking to `.pai/tasks/todo.md`. No native artifact mutations for task management.
+
+## 2026-03-01: Showcase Card/Persona Overlap
+- **Problem:** Glass card description text and council persona avatars overlap vertically when all 3 personas appear, and `max-height` + `overflow: hidden` truncates description text.
+- **Pattern:** Fixed layouts with absolute positioning require explicit spatial budgets. A `max-height` hack clips content unpredictably when text length varies per stage.
+- **Decision:** Removed `max-height` constraint, shortened stage descriptions instead, reduced card padding, and pushed council section lower (`bottom: 25px`).
+
+## 2026-03-01: The Trap of Literal Historical Repetition
+- **Problem:** When asked to "sound like the user," initial attempts overused historical catchphrases (e.g., "professional mémoire"), making the copy sound like it was "trying too hard" or forced.
+- **Pattern:** Persona research should identify the *spirit* and *traits* (intellectual wit, friction-focus) rather than just literal strings.
+- **Decision:** Shifted to an "Organic Persona Synthesis" model. Defined the "Pragmatic Intellectual" persona in a persistent artifact (`.pai/personas/user_voice.md`) using traits and writing signatures instead of fixed phrases.

@@ -15,6 +15,7 @@ To build a "living" engineering portfolio that dynamically updates itself using 
     - "Music Visualizer" (WIP)
     - "Journal Paper" (Drafting)
     - "Tailored Portfolios" (EY-Parthenon, Scopely, Alivo, Fetch, etc.)
+    - "Persona-Driven Narratives" (Live - automated career storytelling via .pai/personas/)
 
 ## Desired State
 - **Fully Autonomous:** The portfolio updates its own stats, blog, and "recent work" without manual intervention.

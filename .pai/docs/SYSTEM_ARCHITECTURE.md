@@ -89,6 +89,33 @@ graph TD
     README --> Git["Git Push/Deploy"]
 ```
 
+### E. GitHub Token Data Pipeline (Dynamic Portfolio)
+The portfolio is **not static**. It is dynamically generated from live GitHub data using a `GITHUB_TOKEN` (PAT) that provides authenticated access to both public and private repositories. The pipeline runs in four sequential stages:
+
+| Stage | Script | Input | Output |
+| :--- | :--- | :--- | :--- |
+| **1. Activity Sync** | `fetch-github.js` | GitHub API (authenticated) | `data.json` (commits, languages, monthly stats) |
+| **2. Deep-Dive Fetch** | `fetch-project-details.js` | GitHub API (authenticated) | `project-details.json` (READMEs, file trees, commit history) |
+| **3. LLM Council** | `agentic_chronicler.py` | `project-details.json` | `project-details-ai.json` (AI summaries, tags, complexity scores) |
+| **4. README Render** | `update-readme.js` | `data.json` + `project-details-ai.json` + `README.template.md` | `README.md` (final dynamic portfolio) |
+
+```mermaid
+graph LR
+    GH_TOKEN["GITHUB_TOKEN (PAT)"] --> FG["fetch-github.js"]
+    GH_TOKEN --> FPD["fetch-project-details.js"]
+    FG --> DATA["data.json"]
+    FPD --> PD["project-details.json"]
+    PD --> AC["agentic_chronicler.py"]
+    AC --> PDAI["project-details-ai.json"]
+    DATA --> UR["update-readme.js"]
+    PDAI --> UR
+    TMPL["README.template.md"] --> UR
+    UR --> README["README.md"]
+    README --> Deploy["Git Push / GitHub Pages"]
+```
+
+**Key Design Decision:** The `GITHUB_TOKEN` is stored in a local `.env` file (git-ignored) and is **never committed to the repository**. The `quality-gate` skill actively scans for secret leakage as a safety net.
+
 ## 4. Holistic Interaction Map
 How all components work together to provide a robust, self-healing mechanism across projects.
 
@@ -98,6 +125,12 @@ graph TD
         GS["Global Skills: quality-gate, research-spawn"]
         GL["Global Learnings: brain/global_learnings.md"]
         GW["Global Workflows: rgc_sync"]
+    end
+
+    subgraph Data_Pipeline ["Dynamic Portfolio Pipeline"]
+        GH["GITHUB_TOKEN (PAT)"]
+        FG["fetch-github.js → data.json"]
+        FPD["fetch-project-details.js → project-details.json"]
     end
 
     subgraph Project_Layer ["Project Operational Layer (.pai/)"]
@@ -115,6 +148,10 @@ graph TD
         Council_P["Engineer | Recruiter | Chairman"]
     end
 
+    GH -- Authenticates --> FG
+    GH -- Authenticates --> FPD
+    FPD -- Raw Data --> AC
+
     W_QA -- Orchestrates --> CTL
     CTL -- Calls --> GS
     GS -- Verifies --> Project["Project Files"]
@@ -126,6 +163,7 @@ graph TD
     AC -- "1. Analysis & Pitch" --> Council_P
     Council_P -- "2. Fact-Check" --> Project
     Council_P -- "3. Synthesis" --> README["Dynamic README.md"]
+    FG -- Stats --> README
     
     Project -- Insights --> GL
     GL -- Influences --> W_REF

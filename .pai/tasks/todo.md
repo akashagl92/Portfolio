@@ -23,4 +23,19 @@
   - [x] Agentic Project Chronicler synthesis (`scripts/agentic_chronicler.py`) [Partial - Priority Projects Complete]
   - [x] Generate Dynamic README (`scripts/update-readme.js`)
   - [x] Verify & Persist Changes
+- [x] Phase 6: Showcase Refinement (Career Impact)
+  - [x] High-contrast palette (Indigo/Emerald/Amber)
+  - [x] "Executive Job-Hunt Engine" context tag
+  - [x] Persona sub-label legibility fix
+  - [x] Card/persona overlap fix (padding + description length)
+  - [ ] Final user visual approval
+- [x] Phase 7: Architecture Documentation
+  - [x] Add Section 3E: GitHub Token Data Pipeline
+  - [x] Update Holistic Interaction Map with Data_Pipeline subgraph
+  - [ ] Final user review
+- [x] Phase 10: Persona-Driven Promo Posts (Organic Voice)
+- [x] Phase 11: Workflow Enhancement (Persona File Integration)
+- [x] Phase 12: Deep Persona Research (Historical X/LinkedIn)
+- [x] Phase 13: Persona Institutionalization (.pai/personas/user_voice.md)
+- [ ] Phase 8: Atomic Git Push (awaiting approval)
 - [ ] Session bootstrap enforced at 2026-02-27T20:11:30Z (shadow hard mode)
