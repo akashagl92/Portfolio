@@ -350,14 +350,35 @@ def main():
             'files': [f['name'] for f in files]
         })
 
-        # Skip if already has AI summary (Preserve expensive Llama generations) - UNLESS FORCED
-        if project.get('ai_summary') and not args.force:
-             print(f"  ✨ Skipping {name} (AI Summary exists)")
-             continue
-        
         # Check Cache (ONLY if no context is provided and NOT forced)
+        pushed_at = project.get('pushedAt')
+        last_updated = cache.get(name, {}).get('last_updated', 0)
+        
+        # If hash matches OR if pushed_at is before/on last_updated (meaning no new code)
+        # Skip if already has AI summary (Preserve expensive generations) - UNLESS FORCED
+        should_skip = False
+        if not args.force:
+            if project.get('ai_summary'):
+                # If we have a summary and it's up-to-date with the last push
+                if pushed_at and last_updated > 0:
+                    # Convert pushed_at to timestamp if possible, or just compare string
+                    # GitHub timestamps are ISO8601: 2026-03-01T17:11:25Z
+                    # For simplicity, if it's the same string or older, we skip
+                    cached_pushed_at = cache.get(name, {}).get('pushed_at')
+                    if pushed_at == cached_pushed_at:
+                        print(f"  ✨ Skipping {name} (AI Summary current with pushed_at: {pushed_at})")
+                        should_skip = True
+
+        if should_skip:
+            # Load metadata from cache if missing in project
+            cached_data = cache.get(name, {}).get('data', {})
+            project['ai_summary'] = project.get('ai_summary') or cached_data.get('ai_summary') or cached_data.get('summary')
+            project['ai_tags'] = project.get('ai_tags') or cached_data.get('ai_tags') or cached_data.get('tags')
+            project['complexity_score'] = project.get('complexity_score') or cached_data.get('complexity_score') or cached_data.get('complexity')
+            continue
+
         if not args.force and not job_context and name in cache and cache[name].get('hash') == content_signature:
-            print(f"  ⏭️  Skipping {name} (Unchanged)")
+            print(f"  ⏭️  Skipping {name} (Content Unchanged)")
             cached_data = cache[name]['data']
             
             ai_summary = cached_data.get('ai_summary') or cached_data.get('summary')
@@ -382,6 +403,7 @@ def main():
             if not job_context:
                 cache[name] = {
                     'hash': content_signature,
+                    'pushed_at': project.get('pushedAt'),
                     'data': {
                         'ai_summary': project['ai_summary'],
                         'ai_tags': project['ai_tags'],
