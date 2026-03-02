@@ -350,11 +350,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Data & AI Product Leader portfolio with 418 commits, showcasing strategic product thinking and technical execution in data science, marketing technology, and agentic AI.",
+    "ai_summary": "Advanced AI product leader portfolio showcasing full-stack development, AI/ML, and data science integration",
     "ai_tags": [
-      "Data Science",
       "AI/ML",
-      "Full-Stack Development"
+      "Full-Stack Development",
+      "Data Science"
     ],
     "complexity_score": 8
   },
@@ -435,11 +435,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Agentic memory scaling framework achieves 100% recall at extreme scales using Recursive Gated Consolidation",
+    "ai_summary": "Solves the Discovery Cliff with 100% signal recall at 10M+ turns using Recursive Gated Consolidation",
     "ai_tags": [
       "LLM",
-      "Agentic Systems",
-      "Memory Consolidation"
+      "Memory Consolidation",
+      "Agentic Systems"
     ],
     "complexity_score": 8
   },
@@ -943,14 +943,7 @@
         "message": "ci: pin Node 22 for install smoke workflow",
         "author": "Akash Agrawal"
       }
-    ],
-    "ai_summary": "Moltbot is a resilient agentic memory platform with RGC and SSC for extreme-scale research",
-    "ai_tags": [
-      "Recursive Gated Consolidation",
-      "Structured State Convergence",
-      "Agentic Memory"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "aistro.ai",
@@ -1274,14 +1267,7 @@
         "message": "feat: implement Dynamic Orb Pruning & research enrichment",
         "author": "Akash Agrawal"
       }
-    ],
-    "ai_summary": "AI-powered astrological analysis platform with traditional calculations and modern interpretations",
-    "ai_tags": [
-      "Astrology",
-      "AI",
-      "Machine Learning"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "pi-home-assistant",
@@ -1300,14 +1286,7 @@
     "topics": [],
     "readme": null,
     "files": [],
-    "recentCommits": [],
-    "ai_summary": "Intelligent home automation hub integrating AI and IoT for streamlined domestic life",
-    "ai_tags": [
-      "Home Automation",
-      "AI",
-      "IoT"
-    ],
-    "complexity_score": 8
+    "recentCommits": []
   },
   {
     "name": "philosophy-sage",
@@ -1448,15 +1427,7 @@
         "message": "feat: Implement robust TTS playback and stabilize QA endpoint",
         "author": "Akash Agrawal"
       }
-    ],
-    "ai_summary": "Philosophy-sage integrates sacred texts, allegorical interpretations, and semantic search for profound explorations of ancient wisdom.",
-    "ai_tags": [
-      "NLP",
-      "AI",
-      "Semantic Search",
-      "Philosophy"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "stock_price_target_modelling",
@@ -1636,14 +1607,7 @@
         "message": "Fix: Use centralized RobinhoodBroker in morning_order_verification.py",
         "author": "Akash Agrawal"
       }
-    ],
-    "ai_summary": "AI-powered autonomous trading system with 40.8% XIRR",
-    "ai_tags": [
-      "AI Trading",
-      "Stock Market",
-      "Crypto"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "Music-and-Math",
@@ -1738,14 +1702,7 @@
         "message": "Initial commit of Sonic Geometry",
         "author": "Akash Agrawal"
       }
-    ],
-    "ai_summary": "Interactive music visualizer combining audio physics and theory for immersive learning",
-    "ai_tags": [
-      "Web Audio API",
-      "HTML5 Canvas",
-      "Music Theory"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "Databricks-Genie-Integration",
@@ -2005,14 +1962,7 @@
         "message": "Initial commit: Firmograph Lookup Tool - Clean version without secrets",
         "author": "Databricks Genie Integration"
       }
-    ],
-    "ai_summary": "Databricks Genie Integration enables data lookup and enrichment with AI-powered queries",
-    "ai_tags": [
-      "Databricks",
-      "Genie",
-      "Data Intelligence"
-    ],
-    "complexity_score": 7
+    ]
   },
   {
     "name": "Hindi-Tutor",
@@ -2121,14 +2071,7 @@
         "message": "Initial commit",
         "author": "Akash Agrawal"
       }
-    ],
-    "ai_summary": "Immersive Hindi language learning platform with AI-driven voice assistance",
-    "ai_tags": [
-      "AI",
-      "Language Learning",
-      "Voice Assistance"
-    ],
-    "complexity_score": 7
+    ]
   },
   {
     "name": "LinkedIn-API",
@@ -2191,14 +2134,7 @@
         "message": "Initial commit",
         "author": "Akash Agrawal"
       }
-    ],
-    "ai_summary": "Empowers seamless LinkedIn data exchange, unlocking campaign insights with Python",
-    "ai_tags": [
-      "LinkedIn API",
-      "Python",
-      "Data Analytics"
-    ],
-    "complexity_score": 6
+    ]
   },
   {
     "name": "voc-buyer-journey-chatbot",
@@ -2301,14 +2237,7 @@
         "message": "Initial commit: VoC and Buyer Journey Dashboard Chatbot - Complete production-ready implementation with dual-brain architecture, LangGraph orchestration, Databricks integration, and Streamlit UI",
         "author": "Agrawal"
       }
-    ],
-    "ai_summary": "VoC and Buyer Journey Dashboard Chatbot with dual-brain architecture",
-    "ai_tags": [
-      "NLP",
-      "Databricks",
-      "LangGraph"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "Marketing-Analytics-Assistant",
@@ -2459,14 +2388,7 @@
         "message": "Initial commit: Stable version with business-friendly summary of winning variants",
         "author": "Agrawal"
       }
-    ],
-    "ai_summary": "Intelligent marketing analytics chatbot providing insights and visualizations",
-    "ai_tags": [
-      "Natural Language Processing",
-      "Marketing Analytics",
-      "Machine Learning"
-    ],
-    "complexity_score": 8
+    ]
   },
   {
     "name": "Google-Analytics",

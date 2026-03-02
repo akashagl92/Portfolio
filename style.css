@@ -132,9 +132,10 @@ nav a:hover {
 /* Hero Section */
 #hero {
     min-height: 65vh;
-    padding-top: 6rem;
+    padding-top: 10rem;
     padding-bottom: 0;
     overflow: hidden;
+    /* Strict containment to prevent scrollbars */
 }
 
 .hero-wrapper {
@@ -231,6 +232,11 @@ h1 {
     backdrop-filter: blur(20px);
     padding: 2.5rem;
     box-shadow: var(--card-shadow);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* Contain pseudo-glow */
 }
 
 .main-viz {
@@ -254,6 +260,7 @@ h1 {
     pointer-events: none;
     clip-path: inset(0 round 1.5rem);
     /* Contain glow within card bounds to prevent overflow */
+    z-index: -1;
 }
 
 @keyframes rotate {
@@ -294,8 +301,10 @@ h1 {
 
 .viz-stats {
     display: flex;
+    justify-content: center;
     gap: 3rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .stat-label {
@@ -379,19 +388,46 @@ h1 {
     /* Prevent clipping of edges */
 }
 
-.hero-calendar .calendar-months {
-    position: relative;
-    height: 1rem;
-    margin-left: 30px;
-    /* Aligns with grid when weekday labels are visible */
-    /* Fixed: Removed 30px offset causing right overflow */
-    margin-bottom: 0.3rem;
-    font-size: 0.6rem;
-    color: var(--text-muted);
+.hero-calendar {
+    margin-top: 1.5rem;
 }
 
-.hero-calendar .calendar-months span {
-    text-align: left;
+.hero-calendar .calendar-months {
+    display: block;
+    /* Use block so absolute positioning works natively without flex squishing */
+    width: 100%;
+    margin-bottom: 0.3rem;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    min-height: 1.2rem;
+    position: relative;
+    /* Restored to contain absolute spans on desktop */
+}
+
+.hero-calendar .calendar-months span,
+.hero-calendar .calendar-years span {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.hero-calendar .calendar-years {
+    display: block;
+    width: 100%;
+    margin-top: 0.3rem;
+    /* Spacing below grid */
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    min-height: 1.2rem;
+    position: relative;
+}
+
+.hero-calendar .calendar-main {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-items: center;
+    position: relative;
+    /* Bounds for year markers */
 }
 
 .hero-calendar .calendar-grid-wrapper {
@@ -404,41 +440,58 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     color: var(--text-muted);
     padding-right: 0.5rem;
-    /* Increased padding text-grid gap */
     text-align: right;
-    padding-top: 1px;
-    /* Optical alignment tweak */
+    padding-top: calc(1.2rem + 0.3rem);
+    /* Match month label height + margin */
 }
 
 .hero-calendar .calendar-days span {
     height: 10px;
+    min-height: 10px;
+    max-height: 10px;
     line-height: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    transform: translateY(-1px);
+    /* micro-adjustment for optical baseline */
 }
 
 .hero-calendar .calendar-grid {
     display: flex;
     gap: 2px;
+    position: relative;
+    /* Required for child offsetLeft to be relative to grid */
+    overflow: visible;
+    /* Prevent any internal vertical scroll clipping */
 }
 
 .hero-calendar .calendar-week {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    flex-shrink: 0;
+    /* Prevent weeks from collapsing to 0 width */
 }
 
 .hero-calendar .calendar-day {
     width: 10px;
+    min-width: 10px;
+    max-width: 10px;
     height: 10px;
+    min-height: 10px;
+    max-height: 10px;
+    box-sizing: border-box;
     border-radius: 2px;
     background: rgba(255, 255, 255, 0.05);
     cursor: pointer;
     transition: transform 0.2s ease;
+    flex-shrink: 0;
 }
 
 .hero-calendar .calendar-day:hover {
@@ -538,27 +591,23 @@ h1 {
 .tooltip-tech-legend {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.75rem;
     margin-top: 0.5rem;
     font-size: 0.7rem;
-}
-
-.calendar-year-marker {
-    position: absolute;
-    top: 0;
-    bottom: -20px;
-    border-left: 1px dashed var(--glass-border);
-    pointer-events: none;
-}
-
-.calendar-year-marker::after {
-    content: attr(data-year);
-    position: absolute;
-    bottom: -18px;
-    left: 4px;
-    font-size: 0.7rem;
     color: var(--text-muted);
-    font-weight: 600;
+}
+
+.tooltip-tech-legend span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.tooltip-tech-legend i {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 /* Full Width Activity Card */
@@ -1022,6 +1071,10 @@ footer {
 
     /* Remove the left margin that was accounting for the now-hidden weekday labels */
     /* Center the months container to match the centered grid */
+    .hero-calendar {
+        margin-top: 1.5rem;
+    }
+
     .hero-calendar .calendar-months {
         margin: 0 auto !important;
         text-align: center !important;
@@ -1271,66 +1324,95 @@ footer {
         flex-direction: column;
         align-items: center;
         overflow-x: hidden;
-        /* Force no scroll */
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
+    }
+
+    .hero-calendar .calendar-main {
+        max-width: 100%;
     }
 
     .hero-calendar .calendar-grid-wrapper {
         justify-content: center;
-        overflow-x: hidden;
+        overflow: visible;
+        /* Prevent scrollbars while ensuring content is not clipped */
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Target a larger legible square size for mobile */
+    .hero-calendar {
+        --week-width: 14px;
+        margin-top: 1.5rem;
     }
 
     .hero-calendar .calendar-day {
-        width: calc(var(--week-width) - 2px);
-        height: calc(var(--week-width) - 2px);
-        border-radius: 1px;
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
     }
 
-    /* Tighter sizing for mobile fit */
-    .hero-calendar .calendar-grid,
-    .hero-calendar .calendar-week {
-        gap: 2px;
-    }
-
+    /* Hide weekday labels on mobile to save horizontal space for the scrolling grid */
     .hero-calendar .calendar-days {
         display: none !important;
-        /* Hide weekday labels on mobile for legibility */
     }
 
     .hero-calendar .calendar-months {
-        margin-bottom: 2px;
-        font-size: 0.6rem;
-        margin-left: 0;
-        text-align: center;
-        width: 100%;
+        margin-bottom: 4px;
+        font-size: 0.55rem;
+        width: max-content;
+        /* scale with the scrolling grid */
     }
 
-    /* Mobile override for week width: Fluid scaling */
-    .hero-calendar {
-        /* (Viewport - Section padding 5%*2 - Card padding 1rem*2 - Border - Safety) */
-        --week-width: calc((100vw - 120px) / 53);
+    .hero-calendar .calendar-grid,
+    .hero-calendar .calendar-week {
+        gap: 3px;
     }
 
-    /* Keep legend as 2 columns but with tighter gap/font */
-    #full-tech-distribution,
-    .inline-tech-distribution {
-        gap: 0.5rem;
-        font-size: 0.7rem;
-        /* Smaller font for mobile fit */
-    }
+    @media (max-width: 500px) {
+        .hero-calendar {
+            margin-top: 1rem;
+        }
 
-    .hero-calendar .calendar-grid {
-        gap: 2px;
-    }
+        .hero-calendar .calendar-grid,
+        .hero-calendar .calendar-week {
+            gap: 1px;
+            /* Minimal gap to ensure 52 weeks fit in ~350-400px */
+        }
 
-    .calendar-grid-wrapper {
-        min-width: 0;
-        width: 100%;
-    }
+        .hero-calendar .calendar-day {
+            width: 5px !important;
+            height: 5px !important;
+            border-radius: 1px;
+        }
 
-    .hero-calendar .calendar-months {
-        font-size: 0.5rem;
+        .hero-calendar .calendar-day {
+            /* Robust scaling for mobile to fit ~54 weeks. Max 10px, min 3px. */
+            width: clamp(3px, calc(100vw / 65), 10px) !important;
+            height: clamp(3px, calc(100vw / 65), 10px) !important;
+            border-radius: 1px;
+        }
+
+        .hero-calendar .calendar-months,
+        .hero-calendar .calendar-years {
+            font-size: 0.45rem !important;
+            /* Prevent overlap due to squished columns */
+        }
+
+        #full-tech-distribution svg,
+        .inline-tech-distribution svg {
+            width: 80% !important;
+            /* Scale down pie chart proportionally on mobile */
+            height: auto !important;
+            margin: 0 auto;
+            display: block;
+        }
+
+        #full-tech-distribution,
+        .inline-tech-distribution {
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            gap: 0.5rem;
+        }
     }
 
     .skills-container {
@@ -1396,25 +1478,43 @@ footer {
 
     .viz-header {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .viz-header h3 {
-        font-size: 0.85rem;
+        align-items: center;
+        gap: 0.25rem;
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
     .viz-stats {
-        flex-direction: row;
-        gap: 1.5rem;
+        flex-direction: row !important;
+        /* Force horizontal metrics */
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        gap: 0;
+        padding-top: 1rem;
+        border-top: 1px solid var(--glass-border);
+        margin-bottom: 1rem;
     }
 
-    .stat-value {
-        font-size: 1.5rem;
+    .stat {
+        flex: 1;
+        text-align: center;
+        padding: 0 4px;
     }
 
     .stat-label {
         font-size: 0.6rem;
+        letter-spacing: 0;
+        margin-bottom: 0.25rem;
+        white-space: nowrap;
+    }
+
+    .stat-value {
+        font-size: 1.2rem;
+    }
+
+    .hero-calendar {
+        margin-top: 1.5rem;
     }
 
     .hero-calendar .calendar-months {

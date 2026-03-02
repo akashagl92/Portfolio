@@ -94,21 +94,21 @@ The portfolio is **not static**. It is dynamically generated from live GitHub da
 
 | Stage | Script | Input | Output |
 | :--- | :--- | :--- | :--- |
-| **1. Activity Sync** | `fetch-github.js` | GitHub API (authenticated) | `data.json` (commits, languages, monthly stats) |
-| **2. Deep-Dive Fetch** | `fetch-project-details.js` | GitHub API (authenticated) | `project-details.json` (READMEs, file trees, commit history) |
-| **3. LLM Council** | `agentic_chronicler.py` | `project-details.json` | `project-details-ai.json` (AI summaries, tags, complexity scores) |
-| **4. README Render** | `update-readme.js` | `data.json` + `project-details-ai.json` + `README.template.md` | `README.md` (final dynamic portfolio) |
+| **1. Activity Sync** | `fetch/fetch_contributions.py` | GitHub API (authenticated) | `data.json` (commits, languages, monthly stats) |
+| **2. Deep-Dive Fetch** | `scripts/fetch-project-details.js` | GitHub API (authenticated) | `project-details.json` (READMEs, file trees, commit history) |
+| **3. LLM Council** | `scripts/agentic_chronicler.py` (Manual) | `project-details.json` | `project-details-ai.json` (AI summaries, tags, complexity scores) |
+| **4. README Render** | `scripts/update-readme.js` | `data.json` + `project-details-ai.json` + `README.template.md` | `README.md` (final dynamic portfolio) |
 
 ```mermaid
 graph LR
-    GH_TOKEN["GITHUB_TOKEN (PAT)"] --> FG["fetch-github.js"]
-    GH_TOKEN --> FPD["fetch-project-details.js"]
+    GH_TOKEN["GITHUB_TOKEN (PAT)"] --> FG["fetch/fetch_contributions.py"]
+    GH_TOKEN --> FPD["scripts/fetch-project-details.js"]
     FG --> DATA["data.json"]
     FPD --> PD["project-details.json"]
-    PD --> AC["agentic_chronicler.py"]
-    AC --> PDAI["project-details-ai.json"]
-    DATA --> UR["update-readme.js"]
-    PDAI --> UR
+    PD -.-> AC["scripts/agentic_chronicler.py (Manual)"]
+    AC -.-> PDAI["project-details-ai.json"]
+    DATA --> UR["scripts/update-readme.js"]
+    PDAI -.-> UR
     TMPL["README.template.md"] --> UR
     UR --> README["README.md"]
     README --> Deploy["Git Push / GitHub Pages"]
@@ -129,7 +129,7 @@ graph TD
 
     subgraph Data_Pipeline ["Dynamic Portfolio Pipeline"]
         GH["GITHUB_TOKEN (PAT)"]
-        FG["fetch-github.js → data.json"]
+        FG["fetch/fetch_contributions.py → data.json"]
         FPD["fetch-project-details.js → project-details.json"]
     end
 

@@ -83,8 +83,14 @@ async function fetchAllData() {
             }
 
             for (const commit of repoCommits) {
+                // Convert UTC github date to fake local date in Chicago time
+                // This ensures night-time commits in CDT/CST don't spill into the next UTC day
+                const utcDate = new Date(commit.commit.author.date);
+                const chicagoStr = utcDate.toLocaleString('en-US', { timeZone: 'America/Chicago' });
+                const chicagoDate = new Date(chicagoStr);
+
                 allCommits.push({
-                    date: commit.commit.author.date,
+                    date: chicagoDate,
                     repo: repo.name,
                     language: repo.language || 'Other'
                 });
