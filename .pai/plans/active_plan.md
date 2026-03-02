@@ -1,30 +1,32 @@
-# Orchestration Plan - QA Gate Restoration & Chronicler Stability
+# Orchestration Plan - QA Gate & Skill Institutionalization
 
-Restore the global QA infrastructure and optimize the documentation synthesis pipeline to be more resilient to LLM rate limits.
-
-## User Review Required
-> [!IMPORTANT]
-> The `qa_gate` workflow requires several scripts (`scripts/pai_stage_detect.sh`, `scripts/pai_skill_ctl.sh`) to be present in the project. I will verify if these exist or need stubs.
+Expand the project's agentic capabilities by restoring QA infrastructure and institutionalizing the social media capture pipeline.
 
 ## Proposed Changes
 
 ### 1. Global Workflows
-#### [NEW] [qa_gate.md](file:///Users/akashagrawal/.gemini/workflows/qa_gate.md)
-Restore the stage-aware QA gate workflow from the `moltbot` reference.
+#### [MODIFY] [capture_social.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.agent/workflows/capture_social.md)
+Update the workflow to use the generic `pai_skill_ctl.sh` interface instead of hardcoded global paths.
 
-### 2. Documentation Pipeline
+### 2. PAI Skill Infrastructure
+#### [MODIFY] [pai_skill_ctl.sh](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/scripts/pai_skill_ctl.sh)
+Refactor to support arbitrary skills and argument passing.
+- Entry point detection: `scripts/run.sh` -> `scripts/audit_codebase.sh` -> `scripts/capture.js`.
+- Pass all trailing arguments to the skill entry point.
+
+#### [NEW] [social-media-capture skill](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.agent/skills/social-media-capture/)
+Sync the global `social-media-capture` skill folder to the project-local `.agent/skills/` directory.
+- Ensure `scripts/run.sh` is created/linked as the standard entry point.
+
+### 3. Documentation Pipeline (Stability)
 #### [MODIFY] [agentic_chronicler.py](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/scripts/agentic_chronicler.py)
-Update the synthesis logic to prioritize the project's `pushed_at` timestamp for cache validation. This ensures we only synthesize repositories that have had actual activity since the last success, drastically reducing LLM calls.
-
--   Add `iso8601` parsing or simple string comparison for `pushed_at`.
--   If `pushed_at` <= `cache['last_updated']`, skip synthesis even if the detailed hash changed slightly (minimizing noise).
--   Increase cooldown/jitter for free-tier providers.
+[ALREADY APPLIED] Optimized with `pushed_at` incremental synthesis.
 
 ## Verification Plan
 
 ### Automated Tests
-- Run `scripts/agentic_chronicler.py --dry-run` to verify cache logic works with timestamps.
-- Check if `qa_gate` shows up in available workflows.
+- Run `node scripts/pai_skill_ctl.sh run social-media-capture --help` (visual check).
+- Verify `qa_gate` still passes after refactor.
 
 ### Manual Verification
-- Verify that `qa_gate` runs and detects the current stage correctly.
+- Capture a short test GIF using the project-local skill.

@@ -36,9 +36,9 @@ End-to-end: create an HTML animation, capture it as a platform-optimized video, 
    ```
    If puppeteer is not found, run `npm install puppeteer` in the target project.
 
-5. **Run the capture script with the appropriate platform preset.**
+5. **Run the capture skill with the appropriate platform preset.**
    ```bash
-   node ~/.gemini/antigravity/skills/social-media-capture/scripts/capture.js \
+   bash scripts/pai_skill_ctl.sh run social-media-capture \
      --html "<ABSOLUTE_PATH_TO_HTML>" \
      --platform <PLATFORM> \
      --output "<OUTPUT_PATH>" \
