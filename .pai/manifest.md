@@ -5,6 +5,7 @@ To build a "living" engineering portfolio that dynamically updates itself using 
 
 ## Current State
 - **Core Site:** Operational (HTML/JS/CSS).
+- **Architecture Resiliency (2026-03-02 fixes):** Resolved race conditions between active orchestration pushes and automated GitHub Action background syncs by decoupling CI triggers. Enabled offline LLM caching (via JSON injection) for dynamic README project summaries to mitigate rate limits and preserve architecture.
 - **Responsiveness (2026-02-25 fixes):** Resolved horizontal overflow and asymmetric padding on mobile viewports. Unified `min(350px, 100%)` grid sizing, `body` max-width fixes, and `clip-path` glow containment rolled out to all 19 portfolio pages (root, fetch, ambience, circle, scopely, stellantis, viant).
 - **Automation:** GitHub Actions for fetching stats (`update-stats.yml`) are fully functional with specific repository filtering logic.
 - **Research Cards:**

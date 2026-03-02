@@ -1,32 +1,16 @@
-# Orchestration Plan - QA Gate & Skill Institutionalization
+# Active Refactor Plan: Portfolio Templating System
 
-Expand the project's agentic capabilities by restoring QA infrastructure and institutionalizing the social media capture pipeline.
+**Target:** Eliminate the architectural debt of modifying 19 independent `index.html` files every time a new dynamic research card (like "Infinite Memory" or "Personal AI Infrastructure") is added.
 
-## Proposed Changes
+## Problem Statement
+(From `.pai/tasks/lessons.md - 2026-02-25`)
+Updating the same research card content across 19 HTML files is error-prone and repetitive. Flexible line ranges work but generate noisy diffs and occasional clipping overlapping.
 
-### 1. Global Workflows
-#### [MODIFY] [capture_social.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.agent/workflows/capture_social.md)
-Update the workflow to use the generic `pai_skill_ctl.sh` interface instead of hardcoded global paths.
+## Refactor Scope
+1. **Consolidation**: Extract the standard `/abnormal/`, `/fetch/`, `/circle/` specific custom parts (like the Hero title and subtext) into JSON or YAML frontmatter configurations.
+2. **Template Core**: Create a single `template.html` that contains the `projects-grid`, GitHub stats dashboard (`data.json` loading), and navigation.
+3. **Build Pipeline**: Create a Node.js script (e.g., `scripts/build_pages.js`) using plain string replacement or Handlebars (`npm install handlebars`) to generate all 19 sub-pages dynamically.
+4. **CI/CD**: Integrate this build step into the GitHub Actions pipeline so that changing a single shared "Card Component" cascades safely to all generated HTML pages.
 
-### 2. PAI Skill Infrastructure
-#### [MODIFY] [pai_skill_ctl.sh](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/scripts/pai_skill_ctl.sh)
-Refactor to support arbitrary skills and argument passing.
-- Entry point detection: `scripts/run.sh` -> `scripts/audit_codebase.sh` -> `scripts/capture.js`.
-- Pass all trailing arguments to the skill entry point.
-
-#### [NEW] [social-media-capture skill](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.agent/skills/social-media-capture/)
-Sync the global `social-media-capture` skill folder to the project-local `.agent/skills/` directory.
-- Ensure `scripts/run.sh` is created/linked as the standard entry point.
-
-### 3. Documentation Pipeline (Stability)
-#### [MODIFY] [agentic_chronicler.py](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/scripts/agentic_chronicler.py)
-[ALREADY APPLIED] Optimized with `pushed_at` incremental synthesis.
-
-## Verification Plan
-
-### Automated Tests
-- Run `node scripts/pai_skill_ctl.sh run social-media-capture --help` (visual check).
-- Verify `qa_gate` still passes after refactor.
-
-### Manual Verification
-- Capture a short test GIF using the project-local skill.
+## Execution Lane
+Because this touches the foundational deployment format of 19 endpoints, this was selected during the `SHADOW` mode `refactor` hygiene scan. Actual execution will be deferred to a dedicated feature branch under `NATIVE` mode.

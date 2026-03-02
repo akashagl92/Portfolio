@@ -1,10 +1,11 @@
-# Task: Alignment & Spacing Restoration
+# Task: Core Maintenance Rituals
 
-- [x] Phase 19: Git Rebase & Push (@[/rgc_sync] complete)
-- [x] Phase 20: Alignment & Spacing Restoration
-  - [x] Revert Desktop Grid to `1.2fr 1fr`
-  - [x] Restore original spacing (padding/margins) for Hero CTAs
-  - [x] Fix horizontal overflow and "hidden right edge" clipping
-  - [x] Implement robust mobile scaling (Horizontal metrics + Grid fit)
-  - [ ] Verify dynamic scaling on multiple viewport sizes
-- [ ] Phase 21: Final Verification & Push
+- [/] Execute `pai_sync`
+  - [x] Runtime preflight (SHADOW)
+  - [x] Review & Grounding
+  - [x] Capture Knowledge (ADR & RCA)
+  - [x] State Update (Manifest)
+  - [x] Semantic Health Check (RGC)
+- [x] Execute `qa_gate` (Token: `QA_GATE_DEV_PASS`)
+- [x] Execute `rgc_sync`
+- [x] Execute `refactor` (Plan: Portfolio Templating System)
