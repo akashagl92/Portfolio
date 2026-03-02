@@ -70,21 +70,22 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 
 ```mermaid
 graph TD
-    A[GitHub Repos] -->|fetch-github.js| B[data.json]
-    A -->|fetch-project-details.js| C[project-details.json]
-    C -->|agentic_chronicler.py| D[project-details-ai.json]
-    B -->|update-readme.js| E[README.md]
-    D -->|update-readme.js| E
-    F[README.template.md] -->|update-readme.js| E
+    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]
+    A -->|scripts/fetch-project-details.js| C[project-details.json]
+    C -.->|scripts/agentic_chronicler.py (Manual)| D[project-details-ai.json]
+    B -->|scripts/update-readme.js| E[README.md]
+    D -->|scripts/update-readme.js| E
+    F[README.template.md] -->|scripts/update-readme.js| E
 ```
 
 ## 🚀 Development
 
 ```bash
 # Update GitHub stats & README (requires GITHUB_TOKEN)
-node scripts/fetch-github.js
+python fetch/fetch_contributions.py
 node scripts/update-readme.js
 ```
+
 
 ## 📝 License
 

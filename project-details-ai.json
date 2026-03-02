@@ -350,7 +350,7 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Advanced AI product leader portfolio showcasing full-stack development, AI/ML, and data science integration",
+    "ai_summary": "This portfolio showcases a Data & AI Product Leader adept at architecting and deploying production-grade systems across data science, marketing technology, and agentic AI. It features an autonomous trading system with a 40.8% XIRR, AI-powered personal agents, and interactive visualizers. The platform itself leverages sophisticated automation for personalized content delivery, demonstrating a strong grasp of advanced technologies and efficient development workflows.",
     "ai_tags": [
       "AI/ML",
       "Full-Stack Development",
@@ -435,7 +435,7 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Solves the Discovery Cliff with 100% signal recall at 10M+ turns using Recursive Gated Consolidation",
+    "ai_summary": "This research identifies the \"Discovery Cliff,\" a fundamental scaling limit where LLM-based agents lose critical information in long conversation histories due to temporal decay. The novel Recursive Gated Consolidation (RGC) architecture rigorously overcomes this, maintaining 100% signal recall at over 10 million turns by decoupling discovery from synthesis, significantly advancing agentic memory capabilities.",
     "ai_tags": [
       "LLM",
       "Memory Consolidation",
@@ -943,7 +943,8 @@
         "message": "ci: pin Node 22 for install smoke workflow",
         "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "Moltbot is a cutting-edge personal AI agent platform that revolutionizes LLM memory by overcoming attention saturation. Utilizing Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC), it achieves 100% discovery fidelity over 10 million conversation turns with O(1) query latency. This research-grade system provides persistent, scalable agentic memory, pushing the boundaries of AI interaction and long-term context retention."
   },
   {
     "name": "aistro.ai",
@@ -1267,7 +1268,8 @@
         "message": "feat: implement Dynamic Orb Pruning & research enrichment",
         "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "This advanced AI platform provides comprehensive astrological analysis across Western, Vedic, and Horary systems. It leverages precise astronomical calculations and Google Gemini for AI-powered, statistically validated interpretations. Built with Next.js and FastAPI, it offers interactive charts, predictive insights, and robust data science integration, backed by research on over 12,000 events."
   },
   {
     "name": "pi-home-assistant",
@@ -1427,7 +1429,8 @@
         "message": "feat: Implement robust TTS playback and stabilize QA endpoint",
         "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "Advanced AI platform for philosophical and scriptural text analysis"
   },
   {
     "name": "stock_price_target_modelling",
@@ -1607,7 +1610,8 @@
         "message": "Fix: Use centralized RobinhoodBroker in morning_order_verification.py",
         "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "This autonomous AI-powered trading system dynamically manages a dual-track portfolio across stocks and crypto. It employs a sophisticated multi-tier strategy with Golden Cross momentum boosting, achieving significant XIRR performance by optimizing realized wealth. The system features automated execution with email-based approval, robust data pipelines, and shadow portfolio tracking for rigorous validation."
   },
   {
     "name": "Music-and-Math",
@@ -1702,7 +1706,8 @@
         "message": "Initial commit of Sonic Geometry",
         "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "Sonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math."
   },
   {
     "name": "Databricks-Genie-Integration",
