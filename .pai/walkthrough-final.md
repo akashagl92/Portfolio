@@ -1,24 +1,28 @@
-# Session Walkthrough — QA Gate & Chronicler Stability
+# Session Walkthrough — Social Media Capture & Generic Skill Control
 
-I have restored the mission-critical QA infrastructure and optimized the documentation synthesis pipeline for extreme rate-limit resilience.
+I have institutionalized the **Social Media Capture** pipeline as a first-class project capability and refactored the core **PAI Skill Controller** for generic extensibility.
 
 ## 🛠️ Key Improvements
 
-### 1. QA Gate Restoration
-Restored the stage-aware `qa_gate` workflow to ensure high-fidelity code pushes.
-- **Workflow**: [.agent/workflows/qa_gate.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.agent/workflows/qa_gate.md)
-- **Features**: Automatically detects project stage (`dev`, `pre_merge`, `pre_deploy`) and runs relevant quality gates.
-- **Verification**: Confirmed successful execution of the `quality-gate` skill.
+### 1. Skill Project-Local Modularization
+The `social-media-capture` skill is no longer dependent on global paths.
+- **Location**: [.agent/skills/social-media-capture/](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.agent/skills/social-media-capture/)
+- **Standardized**: Ported from global `.gemini/` to project-local `.agent/` for portability and consistency.
 
-### 2. Chronicler Stability (Incrementality)
-Optimized `agentic_chronicler.py` to be **Push-Aware**.
-- **Logic**: The chronicler now monitors the project's `pushedAt` timestamp from GitHub.
-- **Result**: If a repository hasn't had new activity since its last successful synthesis, the LLM Council is skipped entirely. This drastically reduces API calls and avoids Gemini/OpenRouter rate limits during large repo scans.
-- **Caching**: Successfully updated `scripts/summary_cache.json` with `pushed_at` metadata.
+### 2. Generic Skill Controller (`pai_skill_ctl.sh`)
+Refactored the bridge between workflows and skills to be argument-aware.
+- **Support**: Now supports arbitrary scripts (`run.sh`, `audit_codebase.sh`, `capture.js`).
+- **Flexibility**: Forwards all CLI arguments to the underlying skill.
+- **Verification**: Confirmed functional via `bash scripts/pai_skill_ctl.sh run social-media-capture --help`.
 
-## 🛡️ SHADOW Protocol Compliance
-- **Orchestration**: All task planning and tracking remained strictly within the `.pai/` directory.
-- **Memory**: Updated `.pai/tasks/todo.md` and created this walkthrough in `.pai/walkthrough-final.md`.
+### 3. Workflow Anchoring
+- **Workflow**: [.agent/workflows/capture_social.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.agent/workflows/capture_social.md)
+- **Update**: Replaced hardcoded node calls with the standardized `pai_skill_ctl.sh` interface.
 
-## 🚀 Ready for Atomic Push
-The system is now stable, efficient, and guarded by professional QA gates.
+## 🛡️ Persistence & Git Intelligence
+Modified [.gitignore](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.gitignore) to track core infrastructure scripts (`scripts/pai_*`). This ensures that your project "remembers" its orchestration capabilities across all future agent sessions while still ignoring transient runtime state.
+
+## 🚀 Final State
+- **Institutionalized**: All capture and QA skills are first-class project citizens.
+- **Synced**: All changes pushed to `origin/main` (including rebase with nightly sync).
+- **SHADOW Verified**: All orchestration remains strictly project-local.
