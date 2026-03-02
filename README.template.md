@@ -72,7 +72,7 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 graph TD
     A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]
     A -->|scripts/fetch-project-details.js| C[project-details.json]
-    C -.->|scripts/agentic_chronicler.py (Manual)| D[project-details-ai.json]
+    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]
     B -->|scripts/update-readme.js| E[README.md]
     D -->|scripts/update-readme.js| E
     F[README.template.md] -->|scripts/update-readme.js| E

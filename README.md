@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **428 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **429 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -106,7 +106,7 @@ _Tags: LLM, Memory Consolidation, Agentic Systems_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 428 |
+| Total Commits | 429 |
 | Unique Repositories | 10 |
 | Primary Language | Python |
 | Top Languages | N/A |
@@ -138,7 +138,7 @@ _Tags: LLM, Memory Consolidation, Agentic Systems_
 graph TD
     A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]
     A -->|scripts/fetch-project-details.js| C[project-details.json]
-    C -.->|scripts/agentic_chronicler.py (Manual)| D[project-details-ai.json]
+    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]
     B -->|scripts/update-readme.js| E[README.md]
     D -->|scripts/update-readme.js| E
     F[README.template.md] -->|scripts/update-readme.js| E
