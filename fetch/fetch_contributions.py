@@ -8,7 +8,7 @@ import os
 import json
 import random
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 from collections import defaultdict
 from dotenv import load_dotenv
 
@@ -218,15 +218,25 @@ def main():
                 
                 language_commits[lang] += 1
                 
-                commit_date = commit['commit']['author']['date'][:10]
-                date_obj = datetime.strptime(commit_date, '%Y-%m-%d')
-                month_idx = date_obj.month - 1
+                commit_date_str = commit['commit']['author']['date']
+                # GitHub gives UTC: 2025-03-02T01:53:47Z
+                # Convert to datetime and then shift to Central (UTC-6 or UTC-5)
+                # For simplicity and no dependencies, we'll manually shift UTC-6 
+                # (Central Standard Time is UTC-6, Central Dayight is UTC-5)
+                # Since this is for a visual grid, a 6-hour shift is usually sufficient 
+                # to keep late-night commits on the correct local day.
+                
+                dt_utc = datetime.strptime(commit_date_str, '%Y-%m-%dT%H:%M:%SZ')
+                # Shift by -6 hours for Central Time approx
+                dt_central = dt_utc - timedelta(hours=6)
+                
+                month_idx = dt_central.month - 1
                 
                 monthly_commits[month_idx][lang] += 1
                 
                 # Only add to visual grid if NOT excluded
                 if not is_excluded:
-                    formatted_date = date_obj.strftime('%a %b %d %Y')
+                    formatted_date = dt_central.strftime('%a %b %d %Y')
                     daily_commits.append({
                         'date': formatted_date,
                         'repo': display_name,
@@ -245,6 +255,11 @@ def main():
                 # We count language usage for activity too? 
                 # GitHub generally attributes PRs to languages. Let's do it.
                 language_commits[lang] += 1
+                
+                # assume act['date'] is already just YYYY-MM-DD from line 111
+                # but for consistency with commits, let's treat it as a point in time if possible
+                # or just use it as is if it's already localized by the API query (since: ...)
+                # Actually line 111 does item['created_at'][:10]. Let's make that better too.
                 
                 date_obj = datetime.strptime(act['date'], '%Y-%m-%d')
                 month_idx = date_obj.month - 1

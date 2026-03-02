@@ -1,44 +1,10 @@
-# Tasks - Abnormal Security Portfolio
+# Task: Alignment & Spacing Restoration
 
-- [x] Phase 1: Setup & Context
-  - [x] Document Job Context (`.pai/job_contexts/abnormal.md`)
-  - [x] Initialize Project-Local Plan (`.pai/plans/active_plan.md`)
-  - [x] Create Directory Structure (`/abnormal/`)
-- [x] Phase 2: Page Implementation
-  - [x] Create `abnormal/job_description.md`
-  - [x] Create `abnormal/index.html` (tailored)
-  - [x] Create `abnormal/app.js` (tailored)
-  - [ ] Generate `abnormal/data.json` (if needed) or update global `project-details.json`
-- [x] Phase 3: Verification & Sub-Agent Audit
-  - [x] **Test-Case**: Observe & record sub-agent coordination durante build.
-  - [x] Run local server
-  - [x] Validate UI/UX and Agentic Summaries
-- [x] Phase 4: Publishing & Sync
-  - [x] Fetch & Rebase from remote
-  - [x] Commit tailored files (including `.pai/` artifacts)
-  - [x] Push to Github Pages
-- [x] Phase 5: Documentation Hygiene (@[/update_docs])
-  - [x] Sync GitHub activity stats (`scripts/fetch-github.js`)
-  - [x] Fetch project deep-dive data (`scripts/fetch-project-details.js`)
-  - [x] Agentic Project Chronicler synthesis (`scripts/agentic_chronicler.py`) [Partial - Priority Projects Complete]
-  - [x] Generate Dynamic README (`scripts/update-readme.js`)
-  - [x] Verify & Persist Changes
-- [x] Phase 6: Showcase Refinement (Career Impact)
-  - [x] High-contrast palette (Indigo/Emerald/Amber)
-  - [x] "Executive Job-Hunt Engine" context tag
-  - [x] Persona sub-label legibility fix
-  - [x] Card/persona overlap fix (padding + description length)
-  - [ ] Final user visual approval
-- [x] Phase 7: Architecture Documentation
-  - [x] Add Section 3E: GitHub Token Data Pipeline
-  - [x] Update Holistic Interaction Map with Data_Pipeline subgraph
-  - [ ] Final user review
-- [x] Phase 10: Persona-Driven Promo Posts (Organic Voice)
-- [x] Phase 11: Workflow Enhancement (Persona File Integration)
-- [x] Phase 12: Deep Persona Research (Historical X/LinkedIn)
-- [x] Phase 13: Persona Institutionalization (.pai/personas/user_voice.md)
-- [x] Phase 8: Atomic Git Push (Success)
-- [ ] Session bootstrap enforced at 2026-02-27T20:11:30Z (shadow hard mode)
-- [x] Phase 14: QA Gate Restoration (Sync from Moltbot)
-- [x] Phase 15: Chronicler Stability (Push-Aware Incremental Synthesis)
-- [ ] Session bootstrap enforced at 2026-03-01T23:52:40Z (shadow hard mode)
+- [x] Phase 19: Git Rebase & Push (@[/rgc_sync] complete)
+- [x] Phase 20: Alignment & Spacing Restoration
+  - [x] Revert Desktop Grid to `1.2fr 1fr`
+  - [x] Restore original spacing (padding/margins) for Hero CTAs
+  - [x] Fix horizontal overflow and "hidden right edge" clipping
+  - [x] Implement robust mobile scaling (Horizontal metrics + Grid fit)
+  - [ ] Verify dynamic scaling on multiple viewport sizes
+- [ ] Phase 21: Final Verification & Push

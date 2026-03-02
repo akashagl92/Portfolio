@@ -21,6 +21,9 @@ Here’s the baseline of how it works:
 
 It’s not a "miracle" tool—it’s just a pragmatic way to ensure the story I tell recruiters matches the code I actually ship. 
 
+🔗 **Live Portfolio:** https://akashagl92.github.io/Portfolio/
+💻 **Source Code:** https://github.com/akashagl92/Portfolio/
+
 What’s the most annoying "manual hygiene" task in your workflow that you’d love to delegate to a council of agents?
 
 #AgenticAI #AIOps #ProductEngineering #TechFriction #BuildLog
@@ -72,5 +75,9 @@ Governing it all is my **PAI v2.2** framework. Using **Recursive Gated Consolida
 There’s a certain irony in building a sophisticated multi-agent system just to talk about building other systems. But as a product builder, I’ve found that the *process* of automation is often more revealing than the result.
 
 The **Agentic Portfolio Engine** ensures my portfolio is a living testament to my current baseline, not just a historical archive. It turns "I used to do this" into "I am currently doing this."
+
+**Explore the Project:**
+- **Live Demo:** [https://akashagl92.github.io/Portfolio/](https://akashagl92.github.io/Portfolio/)
+- **GitHub Repo:** [https://github.com/akashagl92/Portfolio/](https://github.com/akashagl92/Portfolio/)
 
 *If you’re interested in how we’re reducing technical friction through agentic workflows, consider subscribing. I’m deep in the trenches of PAI v2.2 and will be sharing more on the "Six Cycles" of orchestration soon.*

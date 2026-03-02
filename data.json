@@ -243,6 +243,20 @@
   ],
   "totalCommits": 426,
   "uniqueReposTotal": 10,
+  "totalLanguagesCount": 11,
+  "activeLanguages": {
+    "HTML": 6255332,
+    "JavaScript": 758715,
+    "CSS": 408483,
+    "Python": 8245730,
+    "Shell": 299946,
+    "TypeScript": 18476371,
+    "Swift": 2627390,
+    "Kotlin": 365828,
+    "Dockerfile": 4071,
+    "Ruby": 3023,
+    "Procfile": 1921
+  },
   "daily": [
     {
       "date": "Thu Feb 26 2026",
@@ -1909,14 +1923,12 @@
     {
       "date": "Sun Mar 01 2026",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sun Mar 01 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Feb 27 2026",
@@ -1927,7 +1939,7 @@
     {
       "date": "Fri Feb 27 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "JavaScript",(chore: finalize layout fixes and resolve data conflict)
       "type": "commit"
     },
     {
@@ -1994,7 +2006,7 @@
       "date": "Wed Feb 25 2026",
       "repo": "Portfolio",
       "language": "JavaScript",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Wed Feb 25 2026",
@@ -2006,19 +2018,18 @@
       "date": "Mon Feb 23 2026",
       "repo": "Portfolio",
       "language": "HTML",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Wed Feb 18 2026",
       "repo": "Portfolio",
       "language": "CSS",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Mon Feb 16 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Feb 06 2026",
@@ -2030,7 +2041,7 @@
       "date": "Thu Feb 05 2026",
       "repo": "Portfolio",
       "language": "HTML",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Mon Feb 02 2026",
@@ -2048,7 +2059,7 @@
       "date": "Sun Feb 01 2026",
       "repo": "Portfolio",
       "language": "HTML",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Sun Feb 01 2026",
@@ -2066,7 +2077,12 @@
       "date": "Sun Feb 01 2026",
       "repo": "Portfolio",
       "language": "JavaScript",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
+    },
+    {
+      "date": "Sun Feb 01 2026",
+      "repo": "Portfolio",
+      "language": "HTML"
     },
     {
       "date": "Sun Feb 01 2026",
@@ -2077,14 +2093,7 @@
     {
       "date": "Sun Feb 01 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Thu Jan 29 2026",
@@ -2095,8 +2104,7 @@
     {
       "date": "Thu Jan 29 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Thu Jan 29 2026",
@@ -2108,7 +2116,7 @@
       "date": "Fri Jan 16 2026",
       "repo": "Portfolio",
       "language": "HTML",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Fri Jan 16 2026",
@@ -2117,7 +2125,7 @@
       "type": "commit"
     },
     {
-      "date": "Fri Jan 16 2026",
+      "date": "Thu Jan 15 2026",
       "repo": "Portfolio",
       "language": "JavaScript",
       "type": "commit"
@@ -2125,20 +2133,17 @@
     {
       "date": "Tue Jan 13 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Tue Jan 13 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Tue Jan 13 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Tue Jan 13 2026",
@@ -2197,16 +2202,58 @@
     {
       "date": "Wed Jan 07 2026",
       "repo": "Portfolio",
+      "language": "HTML"
+    },
+    {
+      "date": "Tue Jan 06 2026",
+      "repo": "Portfolio",
+=======
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 06 2026",
+      "repo": "Portfolio",
       "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Tue Jan 06 2026",
       "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 06 2026",
+      "repo": "Portfolio",
+      "language": "HTML"
+    },
+    {
+      "date": "Tue Jan 06 2026",
+      "repo": "Portfolio",
+      "language": "HTML"
+    },
+    {
+      "date": "Mon Jan 05 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Jan 05 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Jan 04 2026",
+      "repo": "Portfolio",
+>>>>>>> e5dcae2 (chore: finalize layout fixes and resolve data conflict)
       "language": "CSS",
       "type": "commit"
     },
     {
+<<<<<<< HEAD
       "date": "Tue Jan 06 2026",
       "repo": "Portfolio",
       "language": "JavaScript",
@@ -2231,16 +2278,25 @@
       "type": "commit"
     },
     {
-      "date": "Mon Jan 05 2026",
+      "date": "Mon Jan 05 2026",(chore: finalize layout fixes and resolve data conflict)
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
-      "date": "Mon Jan 05 2026",
+      "date": "Sun Jan 04 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
+    },
+    {
+=======
+      "date": "Sun Jan 04 2026",
+      "repo": "Portfolio",
+      "language": "HTML"
+    },
+    {
+      "date": "Sun Jan 04 2026",
+      "repo": "Portfolio",
+      "language": "HTML"
     },
     {
       "date": "Mon Jan 05 2026",
@@ -2275,14 +2331,23 @@
     {
       "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
+      "language": "HTML"
+    },
+    {
+>>>>>>> Stashed changes
+      "date": "Thu Jan 01 2026",
+      "repo": "Portfolio",
+      "language": "HTML"
+    },
+    {
+      "date": "Thu Jan 01 2026",
+      "repo": "Portfolio",
+      "language": "HTML"
     },
     {
       "date": "Thu Jan 01 2026",
@@ -2293,8 +2358,7 @@
     {
       "date": "Mon Dec 29 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Mon Dec 29 2025",
@@ -2305,8 +2369,7 @@
     {
       "date": "Sat Dec 27 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Thu Dec 25 2025",
@@ -2335,8 +2398,7 @@
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Sun Dec 21 2025",
@@ -2346,15 +2408,16 @@
     },
     {
       "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
+      "repo": "Portfolio",(chore: finalize layout fixes and resolve data conflict)
       "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
+<<<<<<< HEAD
       "language": "CSS",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Sun Dec 21 2025",
@@ -2419,14 +2482,12 @@
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "language": "HTML"
     },
     {
       "date": "Fri Dec 19 2025",
@@ -2444,7 +2505,7 @@
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
       "language": "JavaScript",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Fri Dec 19 2025",
@@ -2459,10 +2520,9 @@
       "type": "commit"
     },
     {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
+      "date": "Mon Dec 15 2025",
+      "repo": "aistro.ai",
+      "language": "Python"
     },
     {
       "date": "Fri Dec 19 2025",
@@ -2477,88 +2537,74 @@
       "type": "commit"
     },
     {
-      "date": "Sun Jan 18 2026",
+      "date": "Sun Jan 18 2026",(chore: finalize layout fixes and resolve data conflict)
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Jan 12 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Jan 12 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Jan 12 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Jan 11 2026",
-      "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Jan 11 2026",
-      "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Jan 10 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Sat Jan 10 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
+    },
+    {
+      "date": "Sat Jan 10 2026",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Fri Jan 09 2026",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
     },
     {
       "date": "Tue Jan 06 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Jan 01 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Jan 01 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 31 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 31 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 31 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 25 2025",
@@ -2575,14 +2621,12 @@
     {
       "date": "Thu Dec 25 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Thu Dec 25 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 24 2025",
@@ -2605,8 +2649,7 @@
     {
       "date": "Wed Dec 24 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Wed Dec 24 2025",
@@ -2624,37 +2667,41 @@
       "date": "Tue Dec 23 2025",
       "repo": "stock_price_target_modelling",
       "language": "HTML",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Tue Dec 23 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
+=======
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+      "date": "Tue Dec 23 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python"
+    },
+    {
+>>>>>>> e5dcae2 (chore: finalize layout fixes and resolve data conflict)
       "date": "Mon Dec 22 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Dec 16 2025",
-      "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Dec 15 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
-      "type": "commit"
+      "language": "Python"
     },
     {
       "date": "Mon Dec 15 2025",
       "repo": "stock_price_target_modelling",
+<<<<<<< HEAD
       "language": "Python",
-      "type": "commit"
+      "type": "commit"(chore: finalize layout fixes and resolve data conflict)
     },
     {
       "date": "Mon Dec 15 2025",
@@ -2706,11 +2753,64 @@
     },
     {
       "date": "Fri Dec 12 2025",
-      "repo": "stock_price_target_modelling",
+      "repo": "stock_price_target_modelling",(chore: finalize layout fixes and resolve data conflict)
       "language": "HTML",
       "type": "commit"
     },
     {
+<<<<<<< HEAD
+=======
+      "date": "Tue Sep 23 2025",
+      "repo": "Hindi-Tutor",
+      "language": "TypeScript"
+    },
+    {
+      "date": "Mon Jun 16 2025",
+      "repo": "LinkedIn-API",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Jun 16 2025",
+      "repo": "LinkedIn-API",
+      "language": "Python"
+    },
+    {
+      "date": "Mon Jun 16 2025",
+      "repo": "LinkedIn-API",
+      "language": "Python"
+    },
+    {
+      "date": "Sat Dec 13 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 12 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+>>>>>>> e5dcae2 (chore: finalize layout fixes and resolve data conflict)
       "date": "Fri Dec 12 2025",
       "repo": "stock_price_target_modelling",
       "language": "Python",
