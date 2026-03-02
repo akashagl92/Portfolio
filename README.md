@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **425 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **428 commits across 10 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -45,35 +45,35 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ### 🔮 AI Astrology Platform (`aistro.ai`)
 **Python** | [Repo](https://github.com/akashagl92/aistro.ai)
 
-No summary available.
+This advanced AI platform provides comprehensive astrological analysis across Western, Vedic, and Horary systems. It leverages precise astronomical calculations and Google Gemini for AI-powered, statistically validated interpretations. Built with Next.js and FastAPI, it offers interactive charts, predictive insights, and robust data science integration, backed by research on over 12,000 events.
 
 ---
 
 ### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)
 **TypeScript** | [Repo](https://github.com/akashagl92/moltbot)
 
-No summary available.
+Moltbot is a cutting-edge personal AI agent platform that revolutionizes LLM memory by overcoming attention saturation. Utilizing Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC), it achieves 100% discovery fidelity over 10 million conversation turns with O(1) query latency. This research-grade system provides persistent, scalable agentic memory, pushing the boundaries of AI interaction and long-term context retention.
 
 ---
 
 ### 📈 Autonomous Trading System (`stock_price_target_modelling`)
 **Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)
 
-Predict tomorrow's S&P 500 index price using historical data. Avoid common issues that make most stock price models overfit in the real world. S&P 500 prices using a package called yfinance. We'll train a random forest model and make predictions using backtesting.  
+This autonomous AI-powered trading system dynamically manages a dual-track portfolio across stocks and crypto. It employs a sophisticated multi-tier strategy with Golden Cross momentum boosting, achieving significant XIRR performance by optimizing realized wealth. The system features automated execution with email-based approval, robust data pipelines, and shadow portfolio tracking for rigorous validation.
 
 ---
 
 ### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)
 **JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)
 
-Understanding Music theory through some visualizations
+Sonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.
 
 ---
 
 ### Portfolio (`Portfolio`)
 **HTML** | [Repo](https://github.com/akashagl92/Portfolio)
 
-Advanced AI product leader portfolio showcasing full-stack development, AI/ML, and data science integration
+This portfolio showcases a Data & AI Product Leader adept at architecting and deploying production-grade systems across data science, marketing technology, and agentic AI. It features an autonomous trading system with a 40.8% XIRR, AI-powered personal agents, and interactive visualizers. The platform itself leverages sophisticated automation for personalized content delivery, demonstrating a strong grasp of advanced technologies and efficient development workflows.
 
 _Tags: AI/ML, Full-Stack Development, Data Science_
 
@@ -82,7 +82,7 @@ _Tags: AI/ML, Full-Stack Development, Data Science_
 ### Agentic-memory-scaling (`agentic-memory-scaling`)
 **Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)
 
-Solves the Discovery Cliff with 100% signal recall at 10M+ turns using Recursive Gated Consolidation
+This research identifies the "Discovery Cliff," a fundamental scaling limit where LLM-based agents lose critical information in long conversation histories due to temporal decay. The novel Recursive Gated Consolidation (RGC) architecture rigorously overcomes this, maintaining 100% signal recall at over 10 million turns by decoupling discovery from synthesis, significantly advancing agentic memory capabilities.
 
 _Tags: LLM, Memory Consolidation, Agentic Systems_
 
@@ -106,7 +106,7 @@ _Tags: LLM, Memory Consolidation, Agentic Systems_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 425 |
+| Total Commits | 428 |
 | Unique Repositories | 10 |
 | Primary Language | Python |
 | Top Languages | N/A |
@@ -136,21 +136,22 @@ _Tags: LLM, Memory Consolidation, Agentic Systems_
 
 ```mermaid
 graph TD
-    A[GitHub Repos] -->|fetch-github.js| B[data.json]
-    A -->|fetch-project-details.js| C[project-details.json]
-    C -->|agentic_chronicler.py| D[project-details-ai.json]
-    B -->|update-readme.js| E[README.md]
-    D -->|update-readme.js| E
-    F[README.template.md] -->|update-readme.js| E
+    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]
+    A -->|scripts/fetch-project-details.js| C[project-details.json]
+    C -.->|scripts/agentic_chronicler.py (Manual)| D[project-details-ai.json]
+    B -->|scripts/update-readme.js| E[README.md]
+    D -->|scripts/update-readme.js| E
+    F[README.template.md] -->|scripts/update-readme.js| E
 ```
 
 ## 🚀 Development
 
 ```bash
 # Update GitHub stats & README (requires GITHUB_TOKEN)
-node scripts/fetch-github.js
+python fetch/fetch_contributions.py
 node scripts/update-readme.js
 ```
+
 
 ## 📝 License
 
