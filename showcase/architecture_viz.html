@@ -40,17 +40,24 @@
         }
 
         #canvas {
-            width: 1280px;
-            height: 720px;
+            width: 1920px;
+            height: 1080px;
             background:
                 radial-gradient(ellipse at 75% 20%, rgba(30, 27, 75, 0.6), transparent 60%),
                 radial-gradient(ellipse at 25% 80%, rgba(6, 78, 59, 0.4), transparent 60%),
                 var(--bg);
             position: relative;
-            border-radius: 24px;
-            box-shadow: 0 0 150px rgba(0, 0, 0, 1);
-            border: 2px solid var(--border);
             overflow: hidden;
+        }
+
+        .scale-wrapper {
+            width: 1280px;
+            height: 720px;
+            transform: scale(1.5);
+            transform-origin: top left;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
         /* --- Glass Card --- */
@@ -74,7 +81,7 @@
         }
 
         .title-card {
-            top: 40px;
+            top: 140px;
             left: 50px;
             width: 480px;
         }
@@ -309,8 +316,108 @@
             height: 100%;
             width: 0%;
             background: #ffffff;
-            transition: width 0.1s linear;
+            transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+        }
+
+        /* --- RGC Context --- */
+        .rgc-context {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            width: 480px;
+            padding: 24px;
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.5;
+            z-index: 50;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .rgc-context strong {
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: inline-block;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        .rgc-context.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- Persistent Header --- */
+        .persistent-header {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            z-index: 60;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .persistent-header h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .persistent-header .subtitle {
+            color: var(--primary);
+            font-weight: 800;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        /* --- Swipe Indicator --- */
+        .swipe-indicator {
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            z-index: 150;
+            transition: opacity 1s ease;
+        }
+
+        .swipe-indicator span {
+            font-size: 1.5rem;
+            animation: pulse-right 2s infinite;
+        }
+
+        @keyframes pulse-right {
+            0% {
+                transform: translateX(0);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: translateX(10px);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 0.5;
+            }
         }
 
         /* --- Overlay --- */
@@ -347,70 +454,91 @@
 
 <body>
     <div id="canvas">
-        <!-- Intro Overlay -->
-        <div class="overlay" id="introOverlay">
-            <h2>Agentic Portfolio Engine</h2>
-            <div class="subtitle">Governed by Personal AI Infrastructure</div>
-        </div>
-
-        <!-- Info Card -->
-        <div class="glass-card title-card" id="mainInfo">
-            <div class="context-tag">Executive Job-Hunt Engine</div>
-            <h1 id="stageTitle">PAI v2.2</h1>
-            <p id="description">A self-healing infrastructure built to present my technical portfolio with maximum
-                impact for hiring managers.</p>
-        </div>
-
-        <!-- Two-Loop Visualization -->
-        <div class="loop-container" id="loopVisual">
-            <div class="loop outer-loop">
-                <div class="node" style="top: -24px; left: 50%; transform: translateX(-50%);">STRATEGY</div>
-                <div class="node" style="bottom: -24px; left: 50%; transform: translateX(-50%);">GOVERNANCE</div>
+        <div class="scale-wrapper">
+            <!-- Intro Overlay -->
+            <div class="overlay" id="introOverlay">
+                <h2>Agentic Portfolio Engine</h2>
+                <div class="subtitle">Governed by Personal AI Infrastructure</div>
             </div>
-            <div class="loop inner-loop">
-                <div class="node node-emerald" style="top: -24px; left: 50%; transform: translateX(-50%);">EXECUTION
+
+            <!-- Persistent Header -->
+            <div class="persistent-header" id="persistentHeader">
+                <h2>Agentic Portfolio Engine</h2>
+                <div class="subtitle">Governed by Personal AI Infrastructure</div>
+            </div>
+
+            <!-- Swipe Indicator -->
+            <div class="swipe-indicator" id="swipeIndicator">
+                SWIPE <span>→</span>
+            </div>
+
+            <!-- Info Card -->
+            <div class="glass-card title-card" id="mainInfo">
+                <div class="context-tag">Executive Job-Hunt Engine</div>
+                <h1 id="stageTitle">PAI v2.2</h1>
+                <p id="description">A self-healing infrastructure built to present my technical portfolio with maximum
+                    impact for hiring managers.</p>
+            </div>
+
+            <!-- RGC Context (Bottom Left) -->
+            <div class="rgc-context" id="rgcContext">
+                <strong>Persistent Memory</strong><br>
+                Recursive Gated Consolidation (part of my ongoing research into infinite session memory) ensures my
+                professional context is synchronized across every session.<br>
+                <em>Deployed to guarantee context continuity across all portfolio updates without data collapse.</em>
+            </div>
+
+            <!-- Two-Loop Visualization -->
+            <div class="loop-container" id="loopVisual">
+                <div class="loop outer-loop">
+                    <div class="node" style="top: -24px; left: 50%; transform: translateX(-50%);">STRATEGY</div>
+                    <div class="node" style="bottom: -24px; left: 50%; transform: translateX(-50%);">GOVERNANCE</div>
                 </div>
-                <div class="node node-emerald" style="bottom: -24px; left: 50%; transform: translateX(-50%);">VERIFY
+                <div class="loop inner-loop">
+                    <div class="node node-emerald" style="top: -24px; left: 50%; transform: translateX(-50%);">EXECUTION
+                    </div>
+                    <div class="node node-emerald" style="bottom: -24px; left: 50%; transform: translateX(-50%);">VERIFY
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Agentic Council -->
-        <div class="council-nodes" id="councilVisual">
-            <div class="council-member" id="m1">
-                <div class="avatar-ring ring-eng">👨‍💻</div>
-                <strong class="persona-name">The Engineer</strong>
-                <span class="persona-role role-eng">Guarantees production-ready excellence.</span>
+            <!-- Agentic Council -->
+            <div class="council-nodes" id="councilVisual">
+                <div class="council-member" id="m1">
+                    <div class="avatar-ring ring-eng">👨‍💻</div>
+                    <strong class="persona-name">The Engineer</strong>
+                    <span class="persona-role role-eng">Guarantees production-ready excellence.</span>
+                </div>
+                <div class="council-member" id="m2">
+                    <div class="avatar-ring ring-rec">👔</div>
+                    <strong class="persona-name">The Recruiter</strong>
+                    <span class="persona-role role-rec">Synthesizes code into STAR impact.</span>
+                </div>
+                <div class="council-member" id="m3">
+                    <div class="avatar-ring ring-chair">🏛️</div>
+                    <strong class="persona-name">The Chairman</strong>
+                    <span class="persona-role role-chair">Enforces absolute truth & safety.</span>
+                </div>
             </div>
-            <div class="council-member" id="m2">
-                <div class="avatar-ring ring-rec">👔</div>
-                <strong class="persona-name">The Recruiter</strong>
-                <span class="persona-role role-rec">Synthesizes code into STAR impact.</span>
-            </div>
-            <div class="council-member" id="m3">
-                <div class="avatar-ring ring-chair">🏛️</div>
-                <strong class="persona-name">The Chairman</strong>
-                <span class="persona-role role-chair">Enforces absolute truth & safety.</span>
-            </div>
-        </div>
 
-        <!-- Pipeline Visual (appears when loops fade) -->
-        <div class="pipeline" id="pipelineVisual">
-            <div class="pipe-step">GitHub API</div>
-            <div class="pipe-arrow">↓</div>
-            <div class="pipe-step">fetch & analyze</div>
-            <div class="pipe-arrow">↓</div>
-            <div class="pipe-step highlight">LLM Council</div>
-            <div class="pipe-arrow">↓</div>
-            <div class="pipe-step">README.md</div>
-            <div class="pipe-arrow">↓</div>
-            <div class="pipe-step">Live Portfolio</div>
-        </div>
+            <!-- Pipeline Visual (appears when loops fade) -->
+            <div class="pipeline" id="pipelineVisual">
+                <div class="pipe-step">GitHub API</div>
+                <div class="pipe-arrow">↓</div>
+                <div class="pipe-step">fetch & analyze</div>
+                <div class="pipe-arrow">↓</div>
+                <div class="pipe-step highlight">LLM Council</div>
+                <div class="pipe-arrow">↓</div>
+                <div class="pipe-step">README.md</div>
+                <div class="pipe-arrow">↓</div>
+                <div class="pipe-step">Live Portfolio</div>
+            </div>
 
-        <!-- Progress Timeline -->
-        <div class="timeline">
-            <div class="progress" id="progressBar"></div>
-        </div>
+            <!-- Progress Timeline -->
+            <div class="timeline">
+                <div class="progress" id="progressBar"></div>
+            </div>
+        </div> <!-- End scale-wrapper -->
     </div>
 
     <script>
@@ -421,40 +549,25 @@
                 action: () => {
                     document.getElementById('mainInfo').classList.add('active');
                     document.getElementById('loopVisual').style.opacity = "1";
-                }
-            },
-            {
-                title: "Hiring Optimization",
-                desc: "The 'Recruiter' persona translates raw commits into measurable career value.",
-                action: () => {
-                    document.getElementById('loopVisual').style.transform = "translateY(-50%) scale(0.85) translateX(60px)";
-                    document.getElementById('m2').style.opacity = "1";
-                    document.getElementById('m2').style.transform = "translateY(0) scale(1.15)";
-                    document.getElementById('progressBar').style.background = "var(--secondary)";
-                    document.getElementById('progressBar').style.boxShadow = "0 0 30px var(--secondary)";
+                    document.getElementById('rgcContext').classList.add('active');
                 }
             },
             {
                 title: "The Agentic Council",
                 desc: "Three personas ensure a fact-checked portfolio for specialized technical roles.",
                 action: () => {
+                    document.getElementById('swipeIndicator').style.opacity = '0';
+                    document.getElementById('rgcContext').classList.remove('active');
                     document.getElementById('loopVisual').style.opacity = "0.04";
                     document.getElementById('pipelineVisual').style.opacity = "1";
                     document.getElementById('m1').style.opacity = "1";
                     document.getElementById('m1').style.transform = "translateY(0) scale(1)";
+                    document.getElementById('m2').style.opacity = "1";
+                    document.getElementById('m2').style.transform = "translateY(0) scale(1)";
                     document.getElementById('m3').style.opacity = "1";
                     document.getElementById('m3').style.transform = "translateY(0) scale(1)";
-                    document.getElementById('m2').style.transform = "translateY(0) scale(1)";
                     document.getElementById('progressBar').style.background = "var(--accent)";
                     document.getElementById('progressBar').style.boxShadow = "0 0 30px var(--accent)";
-                }
-            },
-            {
-                title: "Persistent Memory",
-                desc: "Recursive Gated Consolidation ensures my professional context is synchronized across every session.",
-                action: () => {
-                    document.getElementById('progressBar').style.background = "#ffffff";
-                    document.getElementById('progressBar').style.boxShadow = "0 0 40px #ffffff";
                 }
             }
         ];
@@ -463,22 +576,11 @@
         const totalDuration = 20000;
         const stageDuration = totalDuration / stages.length;
 
-        function updateProgress() {
-            const progress = document.getElementById('progressBar');
-            let start = Date.now();
-            const timer = setInterval(() => {
-                let timePassed = Date.now() - start;
-                let pct = (timePassed / totalDuration) * 100;
-                progress.style.width = Math.min(pct, 100) + '%';
-                if (timePassed >= totalDuration) clearInterval(timer);
-            }, 50);
-        }
-
         setTimeout(() => {
             document.getElementById('introOverlay').style.opacity = '0';
+            document.getElementById('persistentHeader').style.opacity = '1';
             setTimeout(() => {
                 document.getElementById('introOverlay').remove();
-                updateProgress();
                 runAnimation();
             }, 1000);
         }, 1500);
@@ -488,6 +590,11 @@
             const stage = stages[currentStage];
             document.getElementById('stageTitle').innerText = stage.title;
             document.getElementById('description').innerText = stage.desc;
+
+            // Step progress bar by segments (e.g. 25%, 50%, 75%, 100%)
+            const progressPct = ((currentStage + 1) / stages.length) * 100;
+            document.getElementById('progressBar').style.width = progressPct + '%';
+
             stage.action();
             currentStage++;
             setTimeout(runAnimation, stageDuration);

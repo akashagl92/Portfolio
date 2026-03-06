@@ -41,7 +41,7 @@ PROVIDERS = {
     "groq": {
         "url": "https://api.groq.com/openai/v1/chat/completions",
         "env_key": "GROQ_API_KEY",
-        "models": ["llama-3.3-70b-versatile"]
+        "models": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "openai/gpt-oss-120b"]
     },
     "xai": {
         "url": "https://api.x.ai/v1/chat/completions",
@@ -61,7 +61,7 @@ def get_file_hash(content):
     """Generate specific hash for content to detect changes."""
     return hashlib.md5(json.dumps(content, sort_keys=True).encode('utf-8')).hexdigest()
 
-def call_llm(messages, temperature=0.7, provider="openrouter", json_mode=False):
+def call_llm(messages, temperature=0.7, provider="openrouter", json_mode=False, model=None):
     """Call LLM API based on selected provider."""
     config = PROVIDERS.get(provider)
     if not config:
@@ -84,7 +84,7 @@ def call_llm(messages, temperature=0.7, provider="openrouter", json_mode=False):
         headers["X-Title"] = "Portfolio Agentic Chronicler"
 
     # Try primary model then fallback
-    models = config['models']
+    models = [model] if model else config['models']
     
     for model in models:
         payload = {
@@ -108,6 +108,10 @@ def call_llm(messages, temperature=0.7, provider="openrouter", json_mode=False):
         for attempt in range(retries):
             try:
                 response = requests.post(config['url'], headers=headers, json=payload)
+                
+                if response.status_code == 413:
+                    print(f"⚠️  Payload too large (413). Model {model} cannot handle this context.")
+                    return "ERROR: context_too_large"
                 
                 if response.status_code == 429:
                     wait_time = base_delay * (2 ** attempt)
@@ -140,7 +144,7 @@ def call_llm(messages, temperature=0.7, provider="openrouter", json_mode=False):
     print("❌ All models failed.")
     return None
 
-def run_council(project_name, readme, recent_commits, file_structure, job_context=None, provider="openrouter"):
+def run_council(project_name, readme, recent_commits, file_structure, job_context=None, provider="openrouter", model=None):
     """Execute the Council workflow for a single project, optionally tailored to a job context."""
     
     print(f"  🤖 Convening Council for: {project_name}")
@@ -166,12 +170,13 @@ def run_council(project_name, readme, recent_commits, file_structure, job_contex
         {"role": "system", "content": "You are a Senior Staff Engineer. Analyze the provided codebase context. Identify the core technology stack, validity of the code structure, and technical complexity. Be critical. Output a bulleted technical analysis."},
         {"role": "user", "content": context}
     ]
-    technical_analysis = call_llm(engineer_prompt, temperature=0.3, provider=provider)
+    technical_analysis = call_llm(engineer_prompt, temperature=0.3, provider=provider, model=model)
     if not technical_analysis and provider != 'groq':
         print("⚠️  Primary provider failed. Invoking Fallback (Groq 70B)...")
         technical_analysis = call_llm(engineer_prompt, temperature=0.3, provider='groq')
     if not technical_analysis: return None
-    time.sleep(15)
+    print("    ⏳ Throttling for 30s (TPM Safety)...")
+    time.sleep(30)
 
     # --- Phase 2: The Recruiter (Impact Pitch) ---
     print("    💼 Recruiter drafting...")
@@ -184,7 +189,7 @@ def run_council(project_name, readme, recent_commits, file_structure, job_contex
     3. **Start Strong**: "An interactive visualizer..." or "A production-grade pipeline...".
     4. **No Meta-Commentary**: Never say "This project...", "The repo...", or "Recent commits...".
     5. **Specific Constraints**:
-       - 'stock_price_target_modelling': Strategy 'v4.0 Optimal'. Performance: **40.8% XIRR**. (Use this latest figure).
+       - 'stock_price_target_modelling': Strategy 'v4.1 Steady Winner'. Performance: **80.8% XIRR** (**60.3% Alpha** over S&P 500). (Use this latest figure).
        - 'Music-and-Math': Focus on the intersection of audio physics and theory.
        - 'Google-Analytics': Focus on bypassing sampling limits for granular data without mentioning specific row counts.
     6. **No Absolute Currency Values**: Do NOT mention specific portfolio dollar amounts (e.g., "$135k").
@@ -196,12 +201,13 @@ def run_council(project_name, readme, recent_commits, file_structure, job_contex
         {"role": "system", "content": recruiter_system_content},
         {"role": "user", "content": context + job_context_str}
     ]
-    impact_pitch = call_llm(recruiter_prompt, temperature=0.7, provider=provider)
+    impact_pitch = call_llm(recruiter_prompt, temperature=0.7, provider=provider, model=model)
     if not impact_pitch and provider != 'groq':
         print("⚠️  Primary provider failed. Invoking Fallback (Groq 70B)...")
         impact_pitch = call_llm(recruiter_prompt, temperature=0.7, provider='groq')
     if not impact_pitch: return None
-    time.sleep(15)
+    print("    ⏳ Throttling for 30s (TPM Safety)...")
+    time.sleep(30)
 
     # --- Phase 3: The Chairman (Synthesis) ---
     print("    ⚖️  Chairman synthesizing...")
@@ -226,8 +232,6 @@ def run_council(project_name, readme, recent_commits, file_structure, job_contex
         """},
         {"role": "user", "content": f"""
         RAW CONTEXT:
-        {context}
-        
         TECHNICAL ANALYSIS (The Engineer):
         {technical_analysis}
         
@@ -236,10 +240,13 @@ def run_council(project_name, readme, recent_commits, file_structure, job_contex
         
         JOB CONTEXT (Tailor the output to this if present):
         {job_context_str}
+        
+        RAW CODE CONTEXT (Truncated for Chairman):
+        {context[:1500]}
         """}
     ]
     
-    final_json_str = call_llm(chairman_prompt, temperature=0.1, provider=provider, json_mode=True)
+    final_json_str = call_llm(chairman_prompt, temperature=0.1, provider=provider, json_mode=True, model=model)
     if not final_json_str and provider != 'groq':
         print("⚠️  Primary provider failed. Invoking Fallback (Groq 70B)...")
         final_json_str = call_llm(chairman_prompt, temperature=0.1, provider='groq', json_mode=True)
@@ -287,6 +294,45 @@ def run_council(project_name, readme, recent_commits, file_structure, job_contex
             return None
     return None
 
+def tailor_council(project_name, ai_summary, ai_tags, complexity, job_context, provider="openrouter", model=None):
+    """Fast-Tailor phase: adapta an existing AI summary to a job context in a single call."""
+    print(f"  🎯 Fast-Tailoring: {project_name}")
+    
+    prompt = [
+        {"role": "system", "content": f"""You are an Expert Career Coach and Technical Writer.
+        Your task is to adapt an existing PROJECT SUMMARY for a specific job context.
+        
+        INPUTS:
+        - Current Summary: {ai_summary}
+        - Current Tags: {ai_tags}
+        - Complexity: {complexity}
+        
+        RULES:
+        1. **MAINTAIN MEANING**: Preserve the core technical facts.
+        2. **ADAPT TONE**: Adjust the language to use keywords and themes from the Job Description.
+        3. **FORMAT**: Return ONLY a JSON object with 'ai_summary' (max 80 words) and 'ai_tags' (3-4 technical tags).
+        
+        Output format:
+        {{
+            "ai_summary": "...",
+            "ai_tags": ["tag1", "tag2"]
+        }}
+        """},
+        {"role": "user", "content": f"TAILOR FOR THIS JOB CONTEXT:\n{job_context}"}
+    ]
+    
+    final_json_str = call_llm(prompt, temperature=0.3, provider=provider, json_mode=True, model=model)
+    if final_json_str:
+        final_json_str = final_json_str.replace('```json', '').replace('```', '').strip()
+        try:
+            data = json.loads(final_json_str)
+            data['complexity_score'] = complexity # Preserve complexity
+            return data
+        except json.JSONDecodeError:
+            print(f"❌ Failed to parse Tailor output for {project_name}")
+            return None
+    return None
+
 def main():
     parser = argparse.ArgumentParser(description="Agentic Project Chronicler")
     parser.add_argument('--input', help="Path to input JSON file (defaults to project-details.json)")
@@ -295,6 +341,8 @@ def main():
     parser.add_argument('--provider', choices=['openrouter', 'gemini', 'groq', 'xai'], default='openrouter', help="LLM Provider")
     parser.add_argument('--force', action='store_true', help="Force regenerate summaries (ignore cache and existing)")
     parser.add_argument('--project', help="Run only for a specific project name")
+    parser.add_argument('--model', help="Override specific model (e.g. qwen/qwen3-32b)")
+    parser.add_argument('--tailor-only', action='store_true', help="Bypass Phase 1 Council. Use existing ai_summary and only tailor based on context.")
     parser.add_argument('--dry-run', action='store_true', help="Don't save changes")
     args = parser.parse_args()
 
@@ -392,8 +440,19 @@ def main():
                 projects_modified = True
             continue
             
-        # Run Council
-        result = run_council(name, readme, commits, files, job_context, provider=args.provider)
+        # Run Council or Fast-Tailor
+        if args.tailor_only:
+            existing_summary = project.get('ai_summary') or project.get('summary')
+            existing_tags = project.get('ai_tags') or project.get('tags')
+            existing_complexity = project.get('complexity_score') or project.get('complexity') or 5
+            
+            if not existing_summary or not job_context:
+                print(f"  ⚠️  Skipping {name}: No existing summary or job context for tailoring.")
+                continue
+                
+            result = tailor_council(name, existing_summary, existing_tags, existing_complexity, job_context, provider=args.provider, model=args.model)
+        else:
+            result = run_council(name, readme, commits, files, job_context, provider=args.provider, model=args.model)
         
         if result:
             project['ai_summary'] = result.get('ai_summary') or result.get('summary')
@@ -414,20 +473,22 @@ def main():
                 updated_count += 1
             
             projects_modified = True
-            projects_modified = True
+            
+            # Incremental Save
+            if not args.dry_run:
+                print(f"  💾 Saving incremental update to {output_path}...")
+                os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
+                with open(output_path, 'w') as f:
+                    json.dump(projects, f, indent=2)
+            
             print("  ⏳ Cooling down for 30s (Rate Limit Safety)...")
             time.sleep(5)
     
-    # Save Updates
-    if not args.dry_run and projects_modified:
-        print(f"\n💾 Saving updates to {output_path}...")
-        os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
-        
-        with open(output_path, 'w') as f:
-            json.dump(projects, f, indent=2)
-            
+    # Save Cache
     if not args.dry_run and updated_count > 0:
         print(f"💾 Saving {updated_count} new entries to cache...")
+        with open(cache_path, 'w') as f:
+            json.dump(cache, f, indent=2)
         with open(cache_path, 'w') as f:
             json.dump(cache, f, indent=2)
 

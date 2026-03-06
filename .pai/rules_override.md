@@ -45,6 +45,8 @@
   - Never mutate native `Task`.
   - Never mutate native `Implementation Plan`.
   - Never mutate native `Walkthrough`.
+  - Never call `task_boundary` while `PROFILE=SHADOW` or `LOCKED=1`.
+  - Never issue native edits for `task.md`, `implementation_plan.md`, `walkthrough.md` while `PROFILE=SHADOW` or `LOCKED=1`.
 - **Explicit Allow (SHADOW/LOCKED)**:
   - `.pai/tasks/todo.md`
   - `.pai/plans/active_plan.md`
@@ -59,6 +61,7 @@
 - **Autonomous Switch Rule**: On native stall/spinner/failure, execute:
   - `scripts/pai_runtime_guard.sh shadow-on native_stall`
   - then continue in `SHADOW` without asking for confirmation.
+- **Hard Abort Rule**: If a native artifact lane starts while in SHADOW/LOCKED, abort that lane immediately and continue in `.pai/*` only.
 - **Recovery Rule**: Return to Native only after passing the local verification workflow.
   - `scripts/pai_runtime_guard.sh native-on verification_pass --force`
 

@@ -1,0 +1,10 @@
+# One glob per line; these are excluded from quality-gate scanning.
+**/temp_*/**
+**/*.min.js
+**/*.map
+PAI/**
+archive/**
+venv/**
+.venv/**
+venv_voice/**
+**/site-packages/**

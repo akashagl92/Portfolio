@@ -42,49 +42,111 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 
 ## Project Deep-Dives
 
-### 🔮 AI Astrology Platform (`aistro.ai`)
-**Python** | [Repo](https://github.com/akashagl92/aistro.ai)
+### Portfolio (`Portfolio`)
+**HTML** | [Repo](https://github.com/akashagl92/Portfolio)
 
-This advanced AI platform provides comprehensive astrological analysis across Western, Vedic, and Horary systems. It leverages precise astronomical calculations and Google Gemini for AI-powered, statistically validated interpretations. Built with Next.js and FastAPI, it offers interactive charts, predictive insights, and robust data science integration, backed by research on over 12,000 events.
+A dynamic portfolio platform integrating agentic AI, data science, and product leadership, featuring automated content generation via JSON data, GitHub Actions for CI/CD, and scalable architecture for industry-specific projects. Delivers research-grade analytics and AI-driven solutions with production-ready automation.
+
+_Tags: agentic AI, static site generation, GitHub Actions, JSON data management_
 
 ---
 
 ### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)
 **TypeScript** | [Repo](https://github.com/akashagl92/moltbot)
 
-Moltbot is a cutting-edge personal AI agent platform that revolutionizes LLM memory by overcoming attention saturation. Utilizing Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC), it achieves 100% discovery fidelity over 10 million conversation turns with O(1) query latency. This research-grade system provides persistent, scalable agentic memory, pushing the boundaries of AI interaction and long-term context retention.
+A research-grade AI agent platform with persistent memory across 10M+ interactions, using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC) for 100% recall fidelity. Built with Python, Docker, and macOS Metal acceleration for industrial-scale memory benchmarking.
+
+_Tags: AI/ML, Python, Docker_
 
 ---
 
 ### 📈 Autonomous Trading System (`stock_price_target_modelling`)
 **Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)
 
-This autonomous AI-powered trading system dynamically manages a dual-track portfolio across stocks and crypto. It employs a sophisticated multi-tier strategy with Golden Cross momentum boosting, achieving significant XIRR performance by optimizing realized wealth. The system features automated execution with email-based approval, robust data pipelines, and shadow portfolio tracking for rigorous validation.
+A production-grade autonomous trading system combining AI-driven financial engineering with risk-adjusted portfolio optimization. The v4.1 Steady Winner strategy achieves 80.8% XIRR (60.3% Alpha over S&P 500) through dual-track asset allocation, Golden Cross momentum, and real-time Shadow Portfolio tracking. Features include tax-efficient execution, statistical verification, and tiered risk management for crypto-stocks hybrid portfolios.
+
+_Tags: autonomous-trading, financial-modeling, machine-learning_
+
+---
+
+### 🔮 AI Astrology Platform (`aistro.ai`)
+**Python** | [Repo](https://github.com/akashagl92/aistro.ai)
+
+A research-validated astrological analysis platform integrating Swiss Ephemeris precision with AI-driven interpretations. Combines Western, Vedic, and Horary systems via FastAPI/Next.js, featuring divisional charts, dasha calculations, and geopolitical entity analysis. Employs Jest for testing and Render for deployment, with AI-powered dosha/yoga diagnostics and predictive analytics.
+
+_Tags: FastAPI, Next.js, TypeScript, Jest_
+
+---
+
+### 🤖 IDE-Agnostic Agent Orchestrator (`ide-agnostic-agent-orchestrator`)
+**Shell** | [Repo](https://github.com/akashagl92/ide-agnostic-agent-orchestrator)
+
+An IDE-agnostic orchestration framework that unifies AI agent workflows across development environments. It decouples core safety policies—like runtime locks, circuit breakers, and policy-first execution—from IDE-specific adapters, enabling consistent AI-assisted coding without tooling lock-in. Modular design ensures portable runtime guarantees across CLIs, editors, and projects via a single, enforceable quality and telemetry stack.
+
+_Tags: AI orchestration, runtime safety, modular architecture, policy enforcement_
 
 ---
 
 ### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)
 **JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)
 
-Sonic Geometry is an interactive web-based visualizer that merges Music Theory, Sound Physics, and Mathematics through real-time visualizations of sound waves, frequencies, and harmony. Utilizing advanced technologies like Web Audio API and HTML5 Canvas, the project offers interactive learning tools, virtual instruments, and guided lessons. With a focus on native performance and custom implementation, Sonic Geometry provides an immersive experience for users to explore the intricate connections between music and math.
+An interactive web-based visualizer merging music theory and sound physics, enabling real-time exploration of harmonic ratios, wave interference, and acoustic principles through Web Audio API and HTML5 Canvas. Combines educational value with performance-optimized audio-visual synthesis for dynamic learning experiences.
 
----
-
-### Portfolio (`Portfolio`)
-**HTML** | [Repo](https://github.com/akashagl92/Portfolio)
-
-This portfolio showcases a Data & AI Product Leader adept at architecting and deploying production-grade systems across data science, marketing technology, and agentic AI. It features an autonomous trading system with a 40.8% XIRR, AI-powered personal agents, and interactive visualizers. The platform itself leverages sophisticated automation for personalized content delivery, demonstrating a strong grasp of advanced technologies and efficient development workflows.
-
-_Tags: AI/ML, Full-Stack Development, Data Science_
+_Tags: Web Audio API, HTML5 Canvas, music theory_
 
 ---
 
 ### Agentic-memory-scaling (`agentic-memory-scaling`)
 **Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)
 
-This research identifies the "Discovery Cliff," a fundamental scaling limit where LLM-based agents lose critical information in long conversation histories due to temporal decay. The novel Recursive Gated Consolidation (RGC) architecture rigorously overcomes this, maintaining 100% signal recall at over 10 million turns by decoupling discovery from synthesis, significantly advancing agentic memory capabilities.
+A high-fidelity framework for O(1) memory scaling in LLM agents, resolving the Discovery Cliff with Recursive Gated Consolidation (RGC) to maintain 100% recall at 10M+ conversation turns. Leverages TPU v4/v5 and SparseCore hardware for latency-optimized pathways, validated across Gemini 3.0, Claude 4.6, and real-world systems.
 
-_Tags: LLM, Memory Consolidation, Agentic Systems_
+_Tags: LLM memory scaling, Recursive Gated Consolidation, TPU optimization_
+
+---
+
+### Philosophy-sage (`philosophy-sage`)
+**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)
+
+A multi-scripture AI philosopher integrating semantic search, hybrid RAG, and adaptive layout learning to enable Q&A, allegorical analysis, and TTS-driven exploration of texts like the Mahabharata and Ashtavakra Gita. Combines Neo4j graph databases with Cytoscape.js visualizations for cross-cultural philosophical synthesis.
+
+_Tags: semantic_search, rag, neo4j, tts_
+
+---
+
+### Pi-home-assistant (`pi-home-assistant`)
+ | [Repo](https://github.com/akashagl92/pi-home-assistant)
+
+A Raspberry Pi-powered home automation system that integrates IoT devices with custom logic and lightweight machine learning models, enabling real-time adaptive control of smart environments without proprietary platforms.
+
+_Tags: Raspberry Pi, IoT Automation, Machine Learning_
+
+---
+
+### Databricks-Genie-Integration (`Databricks-Genie-Integration`)
+**Python** | [Repo](https://github.com/akashagl92/Databricks-Genie-Integration)
+
+An intelligent data integration platform combining Databricks workspaces with Genie's AI-driven natural language querying, enabling real-time business intelligence through multi-workspace orchestration and bulk data enrichment. Built with Python Flask, Databricks SQL, and Pandas, it empowers users to extract actionable insights via conversational queries or Excel/CSV uploads, bridging complex analytics with intuitive workflows.
+
+_Tags: Python, Databricks, Flask, AI Integration_
+
+---
+
+### Hindi-Tutor (`Hindi-Tutor`)
+**TypeScript** | [Repo](https://github.com/akashagl92/Hindi-Tutor)
+
+An AI-powered Hindi tutor leveraging Gemini API for real-time, personalized language practice, built with React/TypeScript and PWA capabilities for offline access. Combines conversational learning with adaptive speech recognition to tailor Hindi skill development.
+
+_Tags: React, TypeScript, AI/ML, PWA_
+
+---
+
+### Voc-buyer-journey-chatbot (`voc-buyer-journey-chatbot`)
+**Python** | [Repo](https://github.com/akashagl92/voc-buyer-journey-chatbot)
+
+A production-ready chatbot leveraging LangChain and LangGraph for orchestration, integrating Databricks Vector Search and RAG for structured/unstructured data analysis. Delivers real-time Voice of Customer insights via a dual-brain architecture, optimized for enterprise scalability with Streamlit UI.
+
+_Tags: LangChain, LangGraph, Databricks Vector Search, RAG_
 
 
 ---

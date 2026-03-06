@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 2: Fragmentation Risk</title>
+    <style>
+        :root {
+            --bg: #fbf9f1;
+            --accent: #ef4444;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            font-family: 'Inter', sans-serif;
+            height: 1350px;
+            width: 1080px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container {
+            padding: 80px;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 36px;
+            color: #4b5563;
+            margin-bottom: 60px;
+            line-height: 1.4;
+        }
+
+        .visual {
+            position: relative;
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+            border: 2px dashed #d1d5db;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        .cloud {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.6;
+        }
+
+        .funnel {
+            width: 150px;
+            height: 150px;
+            background: #1a1a1a;
+            clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 30% 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .debt-label {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 32px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>The Fragmentation Risk</h1>
+        <p>AI is everywhere, but it's fragmented. Different teams use different tools with zero consistency. This
+            creates <strong>"Compliance Debt."</strong></p>
+        <div class="visual">
+            <span class="cloud" style="top: 10%; left: 10%;">🤖</span>
+            <span class="cloud" style="top: 20%; left: 40%;">⚙️</span>
+            <span class="cloud" style="top: 15%; left: 80%;">💻</span>
+            <span class="cloud" style="top: 70%; left: 15%;">📂</span>
+            <span class="cloud" style="top: 80%; left: 70%;">🔐</span>
+            <div class="funnel">CONSISTENCY</div>
+        </div>
+        <div class="debt-label">UNGOVERNED FRAGMENTATION = RISK</div>
+    </div>
+</body>
+
+</html>

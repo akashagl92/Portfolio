@@ -17,16 +17,20 @@ Prevent native artifact drift and force orchestration writes to project-local `.
 ## Steps
 1. Run runtime preflight:
    - `scripts/pai_runtime_guard.sh status`
-2. Read and echo the active profile fields:
+2. Emit shadow-hard banner:
+   - `scripts/pai_shadow_hard_banner.sh`
+   - Mandatory rule text:
+     - `If NATIVE_ARTIFACTS_ALLOWED=0, ban task_boundary + native task.md/implementation_plan.md/walkthrough.md edits, use .pai/* only.`
+3. Read and echo the active profile fields:
    - `PROFILE`
    - `LOCKED`
    - `SUBAGENT_ENABLED`
    - `CAPABILITY_SPAWN_SUBAGENT`
-3. Enforce SHADOW contract:
+4. Enforce SHADOW contract:
    - If `PROFILE=SHADOW` or `LOCKED=1`, native mutations are forbidden.
-4. Record a bootstrap entry in `.pai/tasks/todo.md` with timestamp and session intent using a file-path shell write only:
+5. Record a bootstrap entry in `.pai/tasks/todo.md` with timestamp and session intent using a file-path shell write only:
    - `printf -- "- [ ] Session bootstrap enforced at %s (shadow hard mode)\n" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> .pai/tasks/todo.md`
-5. Return the token:
+6. Return the token:
    - `SHADOW_ENFORCED`
 
 ## SHADOW Contract (Explicit)
@@ -34,11 +38,18 @@ Prevent native artifact drift and force orchestration writes to project-local `.
   - native `Task`
   - native `Implementation Plan`
   - native `Walkthrough`
+- Deny native artifact mutation tools/calls:
+  - `task_boundary`
+  - any native edit call targeting `task.md`, `implementation_plan.md`, `walkthrough.md`
 - During bootstrap, do not call any native artifact mutation tool even once.
 - Allow writes only to:
   - `.pai/tasks/todo.md`
   - `.pai/plans/active_plan.md`
   - `.pai/walkthrough-final.md`
+
+## Hard Failure Rule (Non-Negotiable)
+- If `NATIVE_ARTIFACTS_ALLOWED=0` from `scripts/pai_runtime_guard.sh status`, do not attempt native artifact tools at all.
+- If a native artifact tool is attempted anyway, immediately stop that lane and continue using `.pai/*` artifacts only.
 
 ## Failure Behavior
 - If any native artifact action is attempted during bootstrap:

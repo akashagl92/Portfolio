@@ -23,6 +23,9 @@ Use this before finalizing implementation decisions or moving toward merge/deplo
 ### `dev`
 - Required:
   - Global Quality Audit: `scripts/pai_skill_ctl.sh run quality-gate`
+  - Runtime Telemetry Audit: `scripts/pai_telemetry_report.sh`
+    - Review `spawn_success_rate_pct`, `deadlock_rate`, `fallback_logged_all_failures`.
+  - Six Sigma Gate Eval: `scripts/pai_quality_gate_eval.sh`
   - lint/static checks (if configured)
   - unit/sanity checks relevant to touched scope
 - Output token:
@@ -32,6 +35,8 @@ Use this before finalizing implementation decisions or moving toward merge/deplo
 - Required:
   - regression check for changed paths
   - integration/smoke checks for impacted flows
+  - Runtime Telemetry Audit: `scripts/pai_telemetry_report.sh`
+  - Six Sigma Gate Eval: `scripts/pai_quality_gate_eval.sh`
   - verifier review summary
 - Output token:
   - `QA_GATE_PRE_MERGE_PASS` or `QA_GATE_PRE_MERGE_FAIL`
@@ -40,6 +45,8 @@ Use this before finalizing implementation decisions or moving toward merge/deplo
 - Required:
   - critical path smoke checks
   - rollback readiness checklist
+  - Runtime Telemetry Audit: `scripts/pai_telemetry_report.sh`
+  - Six Sigma Gate Eval: `scripts/pai_quality_gate_eval.sh`
   - reliability go/no-go
 - Output token:
   - `QA_GATE_PRE_DEPLOY_PASS` or `QA_GATE_PRE_DEPLOY_FAIL`
@@ -48,6 +55,8 @@ Use this before finalizing implementation decisions or moving toward merge/deplo
 - Required:
   - monitoring sanity review
   - error/incident scan and rollback trigger review
+  - Runtime Telemetry Audit: `scripts/pai_telemetry_report.sh`
+  - Six Sigma Gate Eval: `scripts/pai_quality_gate_eval.sh`
 - Output token:
   - `QA_GATE_POST_DEPLOY_PASS` or `QA_GATE_POST_DEPLOY_FAIL`
 

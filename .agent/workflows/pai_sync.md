@@ -16,12 +16,18 @@ Run this ritual daily or whenever switching contexts. This acts as a **"Save Gam
 > - `.pai/tasks/todo.md`
 > - `.pai/plans/active_plan.md`
 > - `.pai/walkthrough-final.md`
+> Hard deny list under SHADOW/LOCKED:
+> - `task_boundary`
+> - native edits to `task.md`, `implementation_plan.md`, `walkthrough.md`
 
 ## Steps
 
 ### 0. Runtime Preflight
 1. Run `scripts/pai_runtime_guard.sh status`.
-2. Decide lane: `NATIVE` (artifacts allowed) or `SHADOW` (write to `.pai/` fallback only).
+2. Run `scripts/pai_shadow_hard_banner.sh`.
+3. Decide lane: `NATIVE` (artifacts allowed) or `SHADOW` (write to `.pai/` fallback only).
+4. If `NATIVE_ARTIFACTS_ALLOWED=0`, apply rule exactly:
+   - `If NATIVE_ARTIFACTS_ALLOWED=0, ban task_boundary + native task.md/implementation_plan.md/walkthrough.md edits, use .pai/* only.`
 
 ### 1. 🔄 Review & Grounding
 1. Read `.pai/manifest.md`.
@@ -43,7 +49,12 @@ Run this ritual daily or whenever switching contexts. This acts as a **"Save Gam
 
 ### 4. 🌍 Global Sync & Promotion
 1. Evaluate local learnings for promotion to `~/.gemini/brain/global_learnings.md`.
-2. **Telemetry**: Update global learning and registry telemetry (if applicable).
+2. **Telemetry**:
+   - Run `scripts/pai_telemetry_report.sh`.
+   - Run `scripts/pai_quality_gate_eval.sh`.
+   - Verify `.pai/state/telemetry_report.json` and `.pai/state/telemetry_report.md` are updated.
+   - Use `scripts/pai_defect_log.sh add ...` for any new quality defects discovered during sync.
+   - If `failed_spawns > 0`, ensure `fallback_to_single_parent` is logged in `.pai/tasks/todo.md`.
 3. Scan for universal insights.
 
 ### 5. ✂️ Review & Prune

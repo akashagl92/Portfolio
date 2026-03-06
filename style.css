@@ -1523,3 +1523,150 @@ footer {
 
     /* Removed hardcoded size to allowed fluid calc from 768px query to work */
 }
+
+/* --- PORTRAIT PDF OPTIMIZATION & PRINT STYLES --- */
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 1.5cm;
+    }
+
+    :root {
+        --bg-dark: #fbf9f1;
+        /* Premium Light Beige for PDF */
+        --text-main: #1e293b;
+        --text-muted: #4b5563;
+        --glass-bg: #ffffff;
+        --glass-border: #e2e8f0;
+        --accent-primary: #7c3aed;
+        --accent-secondary: #2563eb;
+    }
+
+    body {
+        background-color: #fbf9f1 !important;
+        color: #1e293b !important;
+        width: 100%;
+    }
+
+    .background-radial,
+    .background-grid,
+    header,
+    header *,
+    nav,
+    nav *,
+    .hero-actions,
+    .section-cta,
+    footer,
+    #chart-tooltip,
+    #calendar-tooltip {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    main {
+        padding: 0 !important;
+    }
+
+    section {
+        padding: 1.5rem 0 !important;
+        page-break-inside: avoid;
+        margin-bottom: 2rem !important;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    #hero {
+        padding-top: 0 !important;
+        min-height: auto !important;
+    }
+
+    .hero-wrapper {
+        display: block !important;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .hero-sub {
+        font-size: 1.2rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .glass-card {
+        background: #ffffff !important;
+        border: 1px solid #e5e7eb !important;
+        backdrop-filter: none !important;
+        box-shadow: none !important;
+        padding: 1.5rem !important;
+        border-radius: 0.5rem !important;
+    }
+
+    .projects-grid,
+    .innovation-grid {
+        display: block !important;
+        /* Stack for portrait A4 width */
+    }
+
+    .project-card {
+        margin-bottom: 1.5rem !important;
+        page-break-inside: avoid;
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem !important;
+        min-height: auto !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .project-card p {
+        font-size: 1rem !important;
+        min-height: auto !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .project-tags {
+        min-height: auto !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .project-meta {
+        min-height: auto !important;
+        padding-top: 0.75rem !important;
+    }
+
+    .gradient-text {
+        background: none !important;
+        -webkit-text-fill-color: initial !important;
+        color: #7c3aed !important;
+    }
+
+    /* Contribution Calendar for PDF */
+    .hero-calendar .calendar-day {
+        border: 1px solid #e5e7eb !important;
+    }
+
+    .hero-calendar .calendar-day.lvl-0 {
+        background: #f9fafb !important;
+    }
+
+    .hero-calendar .calendar-day.lvl-1 {
+        background: #ddd6fe !important;
+    }
+
+    .hero-calendar .calendar-day.lvl-2 {
+        background: #c4b5fd !important;
+    }
+
+    .hero-calendar .calendar-day.lvl-3 {
+        background: #a78bfa !important;
+    }
+
+    .hero-calendar .calendar-day.lvl-4 {
+        background: #7c3aed !important;
+    }
+}

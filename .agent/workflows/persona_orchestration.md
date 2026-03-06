@@ -13,11 +13,17 @@ Use this workflow for non-trivial tasks that require persona collaboration.
 
 ## 0. Runtime Preflight
 1. Run `scripts/pai_runtime_guard.sh status`.
-2. If `PROFILE=SHADOW` or `LOCKED=1`, use only:
+2. Run `scripts/pai_shadow_hard_banner.sh`.
+3. If `PROFILE=SHADOW` or `LOCKED=1`, use only:
    - `.pai/tasks/todo.md`
    - `.pai/plans/active_plan.md`
    - `.pai/walkthrough-final.md`
-3. Never mutate native Task/Implementation Plan/Walkthrough under SHADOW/LOCKED.
+4. Never mutate native Task/Implementation Plan/Walkthrough under SHADOW/LOCKED.
+5. Hard deny under SHADOW/LOCKED:
+   - `task_boundary`
+   - native edits to `task.md`, `implementation_plan.md`, `walkthrough.md`
+6. Mandatory rule text:
+   - `If NATIVE_ARTIFACTS_ALLOWED=0, ban task_boundary + native task.md/implementation_plan.md/walkthrough.md edits, use .pai/* only.`
 
 ## 1. Parent Outer Loop (Strategy)
 1. Define objective, constraints, and success criteria.

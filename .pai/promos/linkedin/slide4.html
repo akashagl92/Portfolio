@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 4: Operational Visibility</title>
+    <style>
+        :root {
+            --bg: #fbf9f1;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            font-family: 'Inter', sans-serif;
+            height: 1350px;
+            width: 1080px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 900px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 32px;
+            color: #4b5563;
+            margin-bottom: 80px;
+        }
+
+        .timeline {
+            border-left: 4px solid #3b82f6;
+            text-align: left;
+            padding-left: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+        }
+
+        .event {
+            position: relative;
+            margin-bottom: 60px;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .event::before {
+            content: "";
+            position: absolute;
+            left: -54px;
+            top: 40px;
+            width: 24px;
+            height: 24px;
+            background: #3b82f6;
+            border-radius: 50%;
+            border: 6px solid var(--bg);
+        }
+
+        .time {
+            font-weight: 700;
+            color: #3b82f6;
+            margin-bottom: 5px;
+        }
+
+        .action {
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        .meta {
+            font-size: 20px;
+            color: #6b7280;
+        }
+
+        .tag {
+            background: #dcfce7;
+            color: #166534;
+            padding: 4px 12px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Operational Visibility</h1>
+        <p>From "Black Box" to "Open Ledger." Total accountability for every AI-driven action.</p>
+        <div class="timeline">
+            <div class="event">
+                <div class="time">14:02:45</div>
+                <div class="action">AI Change Detected</div>
+                <div class="meta">Target: production_scaler.go</div>
+                <div class="tag">AUDITED</div>
+            </div>
+            <div class="event">
+                <div class="time">14:02:46</div>
+                <div class="action">Policy Verification</div>
+                <div class="meta">Governance Check: PASSED</div>
+                <div class="tag">VERIFIED</div>
+            </div>
+            <div class="event" style="margin-bottom: 0;">
+                <div class="time">14:02:48</div>
+                <div class="action">Knowledge Captured</div>
+                <div class="meta">Decision Record: ADR-024 Created</div>
+                <div class="tag">STORED</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

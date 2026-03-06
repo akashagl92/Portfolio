@@ -9,8 +9,9 @@ To build a "living" engineering portfolio that dynamically updates itself using 
 - **Responsiveness (2026-02-25 fixes):** Resolved horizontal overflow and asymmetric padding on mobile viewports. Unified `min(350px, 100%)` grid sizing, `body` max-width fixes, and `clip-path` glow containment rolled out to all 19 portfolio pages (root, fetch, ambience, circle, scopely, stellantis, viant).
 - **Automation:** GitHub Actions for fetching stats (`update-stats.yml`) are fully functional with specific repository filtering logic.
 - **Research Cards:**
+    - "V4.1 Alpha Steady" trading strategy: **80.8% XIRR** (**60.3% Alpha** over S&P 500).
+    - "ide-agnostic-agent-orchestrator" (Portable PAI Core): Native artifact safety and cross-IDE telemetry.
     - "Infinite Memory" card updated to 2026-02-25 hardened metrics.
-    - "Personal AI Infrastructure (PAI v2)" card deployed across 19 pages.
 - **Features:**
     - "Stats Dashboard" (Live - accurate filtered contributions)
     - "Music Visualizer" (WIP)

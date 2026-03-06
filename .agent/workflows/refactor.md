@@ -6,10 +6,18 @@ description: Run the code hygiene & refactoring ritual (The Cleanse)
 Run weekly or after major technical debt discovery.
 
 ## Rules
+- Runtime preflight commands:
+  - `scripts/pai_runtime_guard.sh status`
+  - `scripts/pai_shadow_hard_banner.sh`
 - Parent agent owns shared orchestration state updates.
 - Subagents may analyze/prepare scoped code changes only.
 - Subagents must not mutate native task/plan artifacts.
 - If `PROFILE=SHADOW` or `LOCKED=1`, native Task/Implementation Plan/Walkthrough mutations are forbidden.
+- Under SHADOW/LOCKED, hard deny:
+  - `task_boundary`
+  - native edits to `task.md`, `implementation_plan.md`, `walkthrough.md`
+- Mandatory rule text:
+  - `If NATIVE_ARTIFACTS_ALLOWED=0, ban task_boundary + native task.md/implementation_plan.md/walkthrough.md edits, use .pai/* only.`
 - Under shadow, shared state updates are limited to:
   - `.pai/tasks/todo.md`
   - `.pai/plans/active_plan.md`

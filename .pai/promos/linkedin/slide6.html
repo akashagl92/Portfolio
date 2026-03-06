@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 6: Agility Without Lock-In</title>
+    <style>
+        :root {
+            --bg: #fbf9f1;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            font-family: 'Inter', sans-serif;
+            height: 1350px;
+            width: 1080px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 900px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 32px;
+            color: #4b5563;
+            margin-bottom: 80px;
+        }
+
+        .visual {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        .core {
+            width: 200px;
+            height: 200px;
+            background: #1a1a1a;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 800;
+            font-size: 24px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .node {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 24px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            font-size: 40px;
+            border: 2px solid #e5e7eb;
+        }
+
+        .n1 {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .n2 {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        .n3 {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .n4 {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .line {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 220px;
+            height: 2px;
+            background: #d1d5db;
+            transform-origin: left center;
+            z-index: 1;
+        }
+
+        .l1 {
+            transform: rotate(-90deg);
+        }
+
+        .l2 {
+            transform: rotate(0deg);
+        }
+
+        .l3 {
+            transform: rotate(90deg);
+        }
+
+        .l4 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Agility Without Lock-In</h1>
+        <p>Don't let your business logic be trapped in a single vendor's ecosystem.</p>
+        <div class="visual">
+            <div class="core">Orchestrator</div>
+            <div class="line l1"></div>
+            <div class="node n1">🤖</div>
+            <div class="line l2"></div>
+            <div class="node n2">🛠️</div>
+            <div class="line l3"></div>
+            <div class="node n3">🌩️</div>
+            <div class="line l4"></div>
+            <div class="node n4">🏗️</div>
+        </div>
+        <p style="margin-top: 80px; font-weight: 700;">Switch tools. Keep your safety posture.</p>
+    </div>
+</body>
+
+</html>

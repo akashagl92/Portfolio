@@ -6,20 +6,19 @@
 
 ---
 
-I’ve always found it ironic that we spend hundreds of hours shipping complex systems, yet our portfolios are usually the most outdated, manually-maintained **"legacy code"** in our careers.
+Since my recent career pivot, my days are spent deep in the trenches of various AI stacks—experimenting with agentic architectures, testing new LLM orchestration patterns, and actively building multiple projects concurrently.
 
-The moment I deployed a new product or a breakthrough update, my portfolio report began to decay. Most portfolios are just accidental lies of omission because, frankly, *the friction of manual updates is too high.* 
+But I quickly ran into a frustrating problem: The faster I shipped, the more my "Public Face" decayed. 
 
-I spent the last few sessions building an **Agentic Portfolio Engine** to solve my own maintenance bottleneck. It’s a 4-stage pipeline that treats my GitHub activity as a live dataset rather than a static archive.
+There is an incredible amount of friction in having to stop development just to manually update a portfolio. It’s why so many of our profiles end up looking like outdated, manually-maintained "legacy code" that doesn't accurately reflect the systems we’re currently capable of building.
 
-Instead of trying to summarize my own impact, I delegated it to three specialized AI agents:
-🔹 An **Engineer** for architectural accuracy
-🔹 A **Recruiter** for career alignment
-🔹 A **Chairman** to fact-check them against the actual code
+I didn't want to just accept that bottleneck. If I was orchestrating complex AI workflows to solve other people's problems, surely I could treat my own career narrative as a data engineering challenge. 
 
-It’s not a "miracle" tool—it’s just a pragmatic way to ensure the story I tell recruiters matches the code I actually ship. 
+I wanted a system that could analyze my raw GitHub commits across all these different stacks and automatically translate them into living, fact-checked documentation—without me having to write a single summary.
 
-I wrote a deeper dive on the architecture and the **"Meta-Irony"** of automating the parts of the job we like the least in my latest Substack piece, *Reducing the Friction of the Career Narrative*.
+I spent the last few sessions building exactly that: a multi-agent system designed to completely automate the part of the job I like the least.
+
+I wrote a deep dive over on Substack covering the architecture behind this solution, the core agents involved, and the "meta-irony" of automating our own documentation.
 
 📖 **Read the full breakdown here:** https://open.substack.com/pub/akashagl/p/reducing-the-friction-of-the-career?r=kf2uu&utm_source=linkedin&utm_medium=social&utm_campaign=portfolio_engine_launch&showWelcomeOnShare=true
 

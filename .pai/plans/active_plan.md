@@ -1,16 +1,35 @@
-# Active Refactor Plan: Portfolio Templating System
+# Portfolio Update: Research Findings & Job Context Tailoring
 
-**Target:** Eliminate the architectural debt of modifying 19 independent `index.html` files every time a new dynamic research card (like "Infinite Memory" or "Personal AI Infrastructure") is added.
+## Research Findings (v4.1 Alpha)
+- **Repo**: `stock_price_target_modelling`
+- **Result**: 80.8% XIRR vs 20.5% S&P 500 (SPX).
+- **Alpha**: ~60.3% over SPX (Money-Weighted).
+- **Strategy**: 'v4.1 Steady Winner' (Calibrated Aug 1, 2021).
+- **New Project**: `ide-agnostic-agent-orchestrator` (Portable PAI Core) - Production AI infrastructure for context-aware agents.
 
-## Problem Statement
-(From `.pai/tasks/lessons.md - 2026-02-25`)
-Updating the same research card content across 19 HTML files is error-prone and repetitive. Flexible line ranges work but generate noisy diffs and occasional clipping overlapping.
+## Objectives
+1. Update `agentic_chronicler.py` with the new V4.1 trading alpha figures (80.8% XIRR).
+2. Tailor portfolio pages (`airbnb`, `stellantis`, `alivo`, etc.) by running the chronicler with their respective `job_description.md` contexts.
+3. Ensure the dynamic summary cards in the HTML pages reflect these updates.
 
-## Refactor Scope
-1. **Consolidation**: Extract the standard `/abnormal/`, `/fetch/`, `/circle/` specific custom parts (like the Hero title and subtext) into JSON or YAML frontmatter configurations.
-2. **Template Core**: Create a single `template.html` that contains the `projects-grid`, GitHub stats dashboard (`data.json` loading), and navigation.
-3. **Build Pipeline**: Create a Node.js script (e.g., `scripts/build_pages.js`) using plain string replacement or Handlebars (`npm install handlebars`) to generate all 19 sub-pages dynamically.
-4. **CI/CD**: Integrate this build step into the GitHub Actions pipeline so that changing a single shared "Card Component" cascades safely to all generated HTML pages.
+## Proposed Changes
 
-## Execution Lane
-Because this touches the foundational deployment format of 19 endpoints, this was selected during the `SHADOW` mode `refactor` hygiene scan. Actual execution will be deferred to a dedicated feature branch under `NATIVE` mode.
+### Scripts
+#### [MODIFY] [agentic_chronicler.py](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/scripts/agentic_chronicler.py)
+- Updated Groq model list to include `qwen/qwen3-32b` (500k TPD) and `openai/gpt-oss-120b` (200k TPD).
+- Run with `--provider groq` using **Qwen 32B** for all tailored generations to bypass 70B rate limits.
+
+### Portfolio Pages
+#### [MODIFY] [project-details.json](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/project-details.json)
+- Run `agentic_chronicler.py` with the `--force` flag once per tailored folder to produce a "static" tailored JSON.
+- This produces the final descriptions that `app.js` will serve for that specific JD context.
+- Include `portable-pai-core` in the summaries if relevant to the JD (especially for infrastructure/AI roles).
+
+### Automation
+- Run `scripts/agentic_chronicler.py` for each tailored folder SEQUENTIALLY to avoid rate limits.
+- Process order: `airbnb`, `alivo`, `abnormal`, `consensys`, `fedex`, `happymoney`, `kraken`, `reku`, `root`, `stellantis`, `torq`.
+
+## Verification Plan
+- Check `project-details.json` for updated XIRR metrics in `stock_price_target_modelling`.
+- Manually open `airbnb/index.html` and verify the "Autonomous Trading System" card shows 80.8% XIRR.
+- Verify that other tailored pages (e.g., Alivo, Stellantis) have context-aware summaries.

@@ -14,8 +14,8 @@ for p in projects:
         
         # Manually set the description to match the "Elevator Pitch" style and new stats
         p['ai_summary'] = (
-            "Developed an AI-powered autonomous trading system implementing the 'v4.0 Optimal' strategy, "
-            "which achieved a 40.8% XIRR through sophisticated market timing and volatility management. "
+            "Developed an AI-powered autonomous trading system implementing the 'v4.1 Steady Winner' strategy, "
+            "which achieved an 80.8% XIRR—a 60.3% alpha over the S&P 500 index fund (20.5% XIRR). "
             "The system manages a dual-track portfolio of stocks and crypto with fully automated rebalancing "
             "and email-based trade execution."
         )

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 3: Strategy vs Execution</title>
+    <style>
+        :root {
+            --bg: #fbf9f1;
+            --blue: #3b82f6;
+            --green: #10b981;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            font-family: 'Inter', sans-serif;
+            height: 1350px;
+            width: 1080px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 900px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 32px;
+            color: #4b5563;
+            margin-bottom: 80px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 32px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: left;
+        }
+
+        .card-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-bottom: 4px solid var(--blue);
+            padding-bottom: 10px;
+        }
+
+        .card-green {
+            border-bottom-color: var(--green);
+        }
+
+        ul {
+            font-size: 24px;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        .result {
+            margin-top: 60px;
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a1a;
+            background: #eff6ff;
+            padding: 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Strategy vs. Execution</h1>
+        <p>A Decoupled Control Plane: You own the policy; the tools follow your lead.</p>
+        <div class="grid">
+            <div class="card">
+                <div class="card-title">Strategic Policy</div>
+                <ul>
+                    <li>What is allowed?</li>
+                    <li>Safety limits</li>
+                    <li>Governance rules</li>
+                    <li>Compliance checks</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-title card-green">Tool Execution</div>
+                <ul>
+                    <li>LLM coding scripts</li>
+                    <li>IDE adapters</li>
+                    <li>Context injection</li>
+                    <li>Rapid iteration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="result">Control the Strategy. Automate the Execution.</div>
+    </div>
+</body>
+
+</html>

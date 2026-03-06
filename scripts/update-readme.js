@@ -59,8 +59,11 @@ function generateProjectDeepDives() {
         cache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf8'));
     }
 
-    // Filter for projects with AI summaries and specific priority
-    const priorityProjects = ['aistro.ai', 'moltbot', 'stock_price_target_modelling', 'Music-and-Math', 'Portfolio'];
+    // Dynamic Filtering: Select projects active in last 6 months OR with high complexity
+    const SIX_MONTHS_AGO = new Date();
+    SIX_MONTHS_AGO.setMonth(SIX_MONTHS_AGO.getMonth() - 6);
+
+    const ALWAYS_INCLUDE = ['aistro.ai', 'moltbot', 'stock_price_target_modelling', 'ide-agnostic-agent-orchestrator', 'Music-and-Math', 'Portfolio'];
 
     const dives = projects
         .map(p => {
@@ -73,22 +76,44 @@ function generateProjectDeepDives() {
             }
             return p;
         })
-        .filter(p => priorityProjects.includes(p.name) || (p.ai_summary && p.complexity_score > 6))
+        .filter(p => {
+            if (!p.ai_summary) return false;
+            if (ALWAYS_INCLUDE.includes(p.name)) return true;
+
+            const pushDate = new Date(p.pushedAt);
+            const isRecent = pushDate > SIX_MONTHS_AGO;
+            const isHighComplexity = (p.complexity_score || 0) >= 6;
+
+            return isRecent || isHighComplexity;
+        })
         .sort((a, b) => {
-            const aIdx = priorityProjects.indexOf(a.name);
-            const bIdx = priorityProjects.indexOf(b.name);
-            if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx;
-            if (aIdx !== -1) return -1;
-            if (bIdx !== -1) return 1;
+            // Priority 1: Portfolio (Root)
+            if (a.name === 'Portfolio') return -1;
+            if (b.name === 'Portfolio') return 1;
+
+            // Priority 2: Manual Highlights
+            const aAlways = ALWAYS_INCLUDE.includes(a.name);
+            const bAlways = ALWAYS_INCLUDE.includes(b.name);
+            if (aAlways && !bAlways) return -1;
+            if (!aAlways && bAlways) return 1;
+
+            // Priority 3: Recency
+            const aRecent = new Date(a.pushedAt) > SIX_MONTHS_AGO;
+            const bRecent = new Date(b.pushedAt) > SIX_MONTHS_AGO;
+            if (aRecent && !bRecent) return -1;
+            if (!aRecent && bRecent) return 1;
+
+            // Priority 4: Complexity
             return (b.complexity_score || 0) - (a.complexity_score || 0);
         })
-        .slice(0, 7) // Limit to top 7 projects
+        .slice(0, 12) // Show up to 12 projects to be inclusive
         .map(p => {
             const title = p.name === 'aistro.ai' ? '🔮 AI Astrology Platform' :
                 p.name === 'moltbot' ? '📲 Moltbot - AI WhatsApp Agent' :
                     p.name === 'stock_price_target_modelling' ? '📈 Autonomous Trading System' :
-                        p.name === 'Music-and-Math' ? '🎹 Sonic Geometry Visualizer' :
-                            p.name.charAt(0).toUpperCase() + p.name.slice(1);
+                        p.name === 'ide-agnostic-agent-orchestrator' ? '🤖 IDE-Agnostic Agent Orchestrator' :
+                            p.name === 'Music-and-Math' ? '🎹 Sonic Geometry Visualizer' :
+                                p.name.charAt(0).toUpperCase() + p.name.slice(1);
 
             const lang = p.language ? `**${p.language}**` : '';
             const link = p.homepage ? ` | [Live Demo](${p.homepage})` : p.url ? ` | [Repo](${p.url})` : '';

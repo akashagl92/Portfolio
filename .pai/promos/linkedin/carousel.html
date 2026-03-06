@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Carousel: The AI Governance Framework</title>
+    <style>
+        :root {
+            --bg: #fbf9f1;
+            --blue: #3b82f6;
+            --green: #10b981;
+            --red: #ef4444;
+            --text: #1a1a1a;
+            --secondary: #4b5563;
+        }
+
+        @page {
+            size: 1080px 1350px;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+
+        .slide {
+            width: 1080px;
+            height: 1350px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            page-break-after: always;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 80px;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            color: var(--text);
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-size: 36px;
+            color: var(--secondary);
+            margin-bottom: 60px;
+            line-height: 1.4;
+            max-width: 800px;
+        }
+
+        .swipe-indicator {
+            position: absolute;
+            bottom: 60px;
+            right: 80px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--blue);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .swipe-indicator svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        /* Slide Specific Styles */
+        .visual {
+            position: relative;
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Slide 1 styles */
+        .shield-icon {
+            width: 150px;
+            height: 170px;
+            background: var(--green);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Slide 2 styles */
+        .disorganized {
+            border: 2px dashed #d1d5db;
+            border-radius: 40px;
+            background: white;
+            padding: 40px;
+        }
+
+        /* Slide 3 styles */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            width: 100%;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 32px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: left;
+        }
+
+        .card h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            border-bottom: 4px solid var(--blue);
+            padding-bottom: 10px;
+        }
+
+        .card ul {
+            font-size: 24px;
+            padding-left: 20px;
+        }
+
+        /* Slide 4 styles */
+        .timeline {
+            border-left: 4px solid var(--blue);
+            text-align: left;
+            padding-left: 40px;
+        }
+
+        .event {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            width: 500px;
+        }
+
+        /* Slide 5 styles */
+        .flow {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .node {
+            width: 180px;
+            height: 180px;
+            background: white;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 24px;
+            border: 4px solid transparent;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .node.active {
+            border-color: var(--blue);
+        }
+
+        /* Slide 6 styles */
+        .orchestrator {
+            width: 220px;
+            height: 220px;
+            background: var(--text);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+        }
+
+        /* Slide 7 styles */
+        .button-ui {
+            background: white;
+            padding: 60px;
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            border: 4px solid var(--green);
+        }
+
+        .btn {
+            background: var(--green);
+            color: white;
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size: 36px;
+            font-weight: 800;
+        }
+
+        /* Slide 8 styles */
+        .cta-card {
+            background: white;
+            padding: 80px;
+            border-radius: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border-top: 10px solid var(--blue);
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Slide 1 -->
+    <div class="slide">
+        <h1>The AI Governance<br>Framework</h1>
+        <p>Scaling AI Engineering without sacrificing safety.</p>
+        <div class="visual">
+            <div class="shield-icon">🛡️</div>
+        </div>
+        <div class="swipe-indicator">Swipe to see how ⮕</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <h2>The Fragmentation Risk</h2>
+        <p>AI is everywhere, but it's fragmented. Different teams, different tools, zero consistency. This creates
+            <strong>"Compliance Debt."</strong></p>
+        <div class="visual disorganized">
+            <div style="font-size: 100px;">🧩 🤖 🏗️ 🔐</div>
+        </div>
+        <div class="swipe-indicator">The solution ⮕</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <h2>Strategy vs. Execution</h2>
+        <p>Decoupled Control Plane: You own the policy; the tools follow your lead.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Strategic Policy</h3>
+                <ul>
+                    <li>Governance rules</li>
+                    <li>Safety limits</li>
+                    <li>Audit requirements</li>
+                </ul>
+            </div>
+            <div class="card" style="border-bottom-color: var(--green);">
+                <h3 style="border-color: var(--green);">Tool Execution</h3>
+                <ul>
+                    <li>LLM coding scripts</li>
+                    <li>IDE adapters</li>
+                    <li>Context injection</li>
+                </ul>
+            </div>
+        </div>
+        <div class="swipe-indicator">Next: Visibility ⮕</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <h2>Operational Visibility</h2>
+        <p>From "Black Box" to "Open Ledger." Total accountability for every AI-driven action.</p>
+        <div class="timeline">
+            <div class="event"><strong>14:02</strong> - AI Action Detected</div>
+            <div class="event"><strong>14:02</strong> - Policy Check: PASSED</div>
+            <div class="event"><strong>14:03</strong> - Decision Logged (ADR)</div>
+        </div>
+        <div class="swipe-indicator">Safety first ⮕</div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+        <h2>The Safety "Circuit Breaker"</h2>
+        <p>Mistake Prevention, Automated. Unsafe actions are blocked before they hit your codebase.</p>
+        <div class="flow">
+            <div class="node">🤖<br>Action</div>
+            <div style="font-size: 40px;">⮕</div>
+            <div class="node active" style="border-color: var(--red);">🛡️<br>Guard</div>
+            <div style="font-size: 40px;">⮕</div>
+            <div class="node" style="opacity: 0.3;">🚀<br>Deploy</div>
+        </div>
+        <div style="margin-top: 40px; color: var(--red); font-weight: 800; font-size: 32px;">🛑 RISK BLOCKED</div>
+        <div class="swipe-indicator">No vendor lock-in ⮕</div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <h2>Agility Without Lock-In</h2>
+        <p>Don't let your business logic be trapped in a single vendor's ecosystem.</p>
+        <div class="visual">
+            <div class="orchestrator">PAI Orchestrator</div>
+        </div>
+        <p style="margin-top: 40px;">Switch tools easily while your governance stays constant.</p>
+        <div class="swipe-indicator">Rapid Deployment ⮕</div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide">
+        <h2>Rapid Enterprise Deployment</h2>
+        <p>Governance in seconds, across any project. One-click protection for all repositories.</p>
+        <div class="button-ui">
+            <div class="btn">Deploy Guard</div>
+        </div>
+        <div class="swipe-indicator">Final Vision ⮕</div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide">
+        <h2>The Vision</h2>
+        <p>Building a self-correcting engineering organization that is resilient, transparent, and scalable.</p>
+        <div class="cta-card">
+            <div style="font-size: 32px; font-weight: 700;">How are you governing your AI transition?</div>
+            <div
+                style="margin-top: 40px; display: inline-block; padding: 20px 40px; background: var(--blue); color: white; border-radius: 12px; font-weight: 800;">
+                Let's Connect 🤝</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
