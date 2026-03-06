@@ -9,6 +9,7 @@ This portfolio represents a **Data & AI Product Leader** who combines strategic 
 - **General**: [Live Site](https://akashagl92.github.io/Portfolio/)
 - **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)
 - **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)
+- **AI-Foundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)
 - **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)
 - **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)
 - **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)
