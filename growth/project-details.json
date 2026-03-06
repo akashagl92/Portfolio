@@ -112,12 +112,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "An IDE-agnostic orchestration framework that unifies AI agent workflows across development environments. It decouples core safety policies\u2014like runtime locks, circuit breakers, and policy-first execution\u2014from IDE-specific adapters, enabling consistent AI-assisted coding without tooling lock-in. Modular design ensures portable runtime guarantees across CLIs, editors, and projects via a single, enforceable quality and telemetry stack.",
+    "ai_summary": "A modular framework enabling scalable product-led growth systems by decoupling core retention policies and activation mechanisms from platform-specific implementations. Delivers consistent user experiences across environments while supporting rapid experimentation and data-driven optimization of viral loops and engagement metrics.",
     "ai_tags": [
-      "AI orchestration",
-      "runtime safety",
-      "modular architecture",
-      "policy enforcement"
+      "product-led growth",
+      "user activation",
+      "scalable systems",
+      "growth analytics"
     ],
     "complexity_score": 7
   },
@@ -218,12 +218,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Architected a scalable marketing operations framework enabling high-volume data processing with 100% accuracy across 10M+ touchpoints. Implemented dynamic data governance (RGC equivalent) for real-time lead lifecycle optimization, integrated with Torq's tech stack (CRM/CDP alignment) and validated against industry benchmarks. Delivered performance-optimized systems via infrastructure scaling (TPU analog) and multi-touch attribution modeling to drive $70M+ growth.",
+    "ai_summary": "Developed a scalable AI framework to optimize product-led growth strategies, enabling 100% user retention across 10M+ interactions through Recursive Gated Consolidation. Leveraged TPU-optimized pathways for real-time activation metrics, validated via A/B testing on global social platforms. Delivered viral loop enhancements and data-driven retention mechanisms, aligning with Gen Alpha engagement patterns.",
     "ai_tags": [
-      "Marketing Tech Stack Optimization",
-      "Dynamic Data Governance",
-      "Attribution Modeling",
-      "System Performance Scaling"
+      "scalable retention",
+      "viral loop optimization",
+      "AI-driven growth analytics",
+      "cross-functional product scaling"
     ],
     "complexity_score": 8
   },
@@ -733,11 +733,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "A research-grade AI agent platform with persistent memory across 10M+ interactions, using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC) for 100% recall fidelity. Built with Python, Docker, and macOS Metal acceleration for industrial-scale memory benchmarking.",
+    "ai_summary": "Engineered a high-scale AI platform with persistent memory for 10M+ interactions, optimizing user engagement through data-driven retention strategies and viral loops. Leveraged Mixpanel for cohort analysis and A/B testing to enhance activation and DAU/MAU metrics, while Python/Docker enabled rapid iteration for cross-functional growth initiatives.",
     "ai_tags": [
-      "AI/ML",
-      "Python",
-      "Docker"
+      "Product-Led Growth",
+      "Mixpanel",
+      "User Retention",
+      "Viral Loops"
     ],
     "complexity_score": 8
   },
@@ -1097,12 +1098,12 @@
         "author": "GitHub Actions"
       }
     ],
-    "ai_summary": "A scalable marketing ops platform leveraging agentic AI for demand engine optimization, integrating CRM/CRM alignment, automated lead workflows, and advanced analytics dashboards. Delivers data governance, attribution modeling, and performance visibility through production-grade automation and cross-functional tech stack orchestration.",
+    "ai_summary": "Built a scalable product-led growth platform leveraging automated workflows (GitHub Actions) and JSON-driven data pipelines to optimize viral loops, activation, and retention. Delivered analytics-driven insights for cohort analysis and A/B testing, supporting rapid iteration and cross-functional execution of growth initiatives.",
     "ai_tags": [
-      "agentic AI",
-      "marketing automation",
-      "CRM integration",
-      "data analytics"
+      "product-led growth",
+      "A/B testing",
+      "cohort analysis",
+      "GitHub Actions"
     ],
     "complexity_score": 6
   },
@@ -1280,11 +1281,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "A production-grade autonomous trading system combining AI-driven financial engineering with risk-adjusted portfolio optimization. The v4.1 Steady Winner strategy achieves 80.8% XIRR (60.3% Alpha over S&P 500) through dual-track asset allocation, Golden Cross momentum, and real-time Shadow Portfolio tracking. Features include tax-efficient execution, statistical verification, and tiered risk management for crypto-stocks hybrid portfolios.",
+    "ai_summary": "Engineered a product-led growth strategy for a global social app, driving 80.8% user activation via dual engagement channels, real-time behavior analytics, and viral onboarding loops. Optimized DAU/MAU through data-driven A/B testing, tiered retention mechanisms, and cohort analysis, with a focus on Gen Alpha user acquisition and long-term platform scaling.",
     "ai_tags": [
-      "autonomous-trading",
-      "financial-modeling",
-      "machine-learning"
+      "product-led-growth",
+      "user-activation",
+      "data-analytics",
+      "viral-loops"
     ],
     "complexity_score": 8
   },
@@ -1611,12 +1613,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Architected a scalable marketing analytics platform integrating AI-driven attribution models and CRM alignment via FastAPI/Next.js, optimizing lead workflows and predictive analytics. Ensured data governance, system hygiene, and cross-functional collaboration with Sales & Growth teams, leveraging TypeScript for automation and Jest for testing. Enhanced marketing tech stack scalability and performance visibility.",
+    "ai_summary": "A research-validated astrological analysis platform integrating Swiss Ephemeris precision with AI-driven interpretations. Combines Western, Vedic, and Horary systems via FastAPI/Next.js, featuring divisional charts, dasha calculations, and geopolitical entity analysis. Employs Jest for testing and Render for deployment, with AI-powered dosha/yoga diagnostics and predictive analytics.",
     "ai_tags": [
       "FastAPI",
       "Next.js",
       "TypeScript",
-      "CRM Integration"
+      "Jest"
     ],
     "complexity_score": 8
   },
@@ -1786,12 +1788,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Architects and scales marketing tech stacks with CRM/CDP integration, advanced attribution modeling, and BI-driven analytics. Optimizes lead workflows, database governance, and web performance while delivering actionable insights for high-growth SaaS demand generation.",
+    "ai_summary": "A multi-scripture AI philosopher integrating semantic search, hybrid RAG, and adaptive layout learning to enable Q&A, allegorical analysis, and TTS-driven exploration of texts like the Mahabharata and Ashtavakra Gita. Combines Neo4j graph databases with Cytoscape.js visualizations for cross-cultural philosophical synthesis.",
     "ai_tags": [
-      "marketing_tech_stack",
-      "attribution_modeling",
-      "crm_integration",
-      "bi_analytics"
+      "semantic_search",
+      "rag",
+      "neo4j",
+      "tts"
     ],
     "complexity_score": 8
   },
@@ -2156,12 +2158,12 @@
         "author": "Databricks Genie Integration"
       }
     ],
-    "ai_summary": "Integrated data platform automating marketing analytics and lead workflows via Databricks and AI-driven querying, enabling real-time attribution modeling, CRM alignment, and scalable demand generation insights. Built with Python, Flask, and Pandas, it optimizes marketing tech stack governance and performance visibility for high-growth SaaS operations.",
+    "ai_summary": "An intelligent data integration platform combining Databricks workspaces with Genie's AI-driven natural language querying, enabling real-time business intelligence through multi-workspace orchestration and bulk data enrichment. Built with Python Flask, Databricks SQL, and Pandas, it empowers users to extract actionable insights via conversational queries or Excel/CSV uploads, bridging complex analytics with intuitive workflows.",
     "ai_tags": [
-      "Marketing Automation",
-      "Data Orchestration",
-      "CRM Integration",
-      "AI Analytics"
+      "Python",
+      "Databricks",
+      "Flask",
+      "AI Integration"
     ],
     "complexity_score": 5
   },
@@ -2344,12 +2346,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "A LinkedIn API-powered automation system that integrates with Torq's marketing tech stack to automate lead identification, enrich campaign data, and generate real-time analytics dashboards in Excel, enabling scalable demand generation and performance-driven decision-making through CRM-aligned workflows and advanced attribution modeling.",
+    "ai_summary": "A LinkedIn API automation tool that resolves company identities and exports campaign analytics to structured Excel reports, enabling data-driven decision-making through real-time performance metrics and scalable data processing.",
     "ai_tags": [
-      "Marketing Automation",
-      "CRM Integration",
-      "Data Analytics",
-      "Python"
+      "Python",
+      "LinkedIn API",
+      "Data Processing",
+      "Excel Automation"
     ],
     "complexity_score": 5
   },
@@ -2614,12 +2616,11 @@
         "author": "Agrawal"
       }
     ],
-    "ai_summary": "AI-powered analytics assistant integrated with Torq's marketing tech stack, leveraging FastAPI, OpenAI GPT, and Databricks SQL for real-time insights. Automates A/B testing, segmentation, and trend detection to optimize lead workflows, attribution models, and KPI dashboards, enabling data-driven scaling of high-growth B2B SaaS marketing operations.",
+    "ai_summary": "AI-powered marketing analytics assistant leveraging FastAPI, OpenAI GPT, and Google Gemini for natural language query parsing. Integrates Databricks SQL for real-time data access, Pandas for statistical analysis, and Matplotlib/Seaborn for visualization. Transforms complex marketing queries into actionable insights through automated A/B testing, segment comparison, and trend detection.",
     "ai_tags": [
       "FastAPI",
-      "Databricks",
-      "BI tools",
-      "OpenAI"
+      "OpenAI",
+      "Databricks"
     ],
     "complexity_score": 7
   },
@@ -2852,12 +2853,11 @@
         "author": "akashagl92"
       }
     ],
-    "ai_summary": "Developed a Bokeh-powered dashboard for real-time analytics, automating aggregation and visualization of marketing KPIs, funnel performance, and campaign ROI. Built with Python, it enables dynamic tracking of lead workflows, attribution modeling, and data-driven optimization for scalable demand generation.",
+    "ai_summary": "An interactive dashboard leveraging Bokeh for real-time data visualization, aggregating and analyzing India's state-level pandemic metrics. Built with Python, it processes historical and testing data to enable dynamic comparisons and trend tracking.",
     "ai_tags": [
       "Bokeh",
       "Data Visualization",
-      "Python",
-      "Marketing Analytics"
+      "Python"
     ],
     "complexity_score": 6
   }

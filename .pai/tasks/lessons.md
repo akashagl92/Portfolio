@@ -31,3 +31,8 @@
 - **Problem:** When asked to "sound like the user," initial attempts overused historical catchphrases (e.g., "professional mémoire"), making the copy sound like it was "trying too hard" or forced.
 - **Pattern:** Persona research should identify the *spirit* and *traits* (intellectual wit, friction-focus) rather than just literal strings.
 - **Decision:** Shifted to an "Organic Persona Synthesis" model. Defined the "Pragmatic Intellectual" persona in a persistent artifact (`.pai/personas/user_voice.md`) using traits and writing signatures instead of fixed phrases.
+
+## 2026-03-05: Stale Global Stats and Propagation Failures
+- **Problem:** Portfolio pages (including the root hompage) were displaying stale engineering velocity stats (e.g., 430 commits instead of 457) because the automated GitHub Action (`update-stats.yml`) was using a hardcoded list of directories to copy `data.json` into. New tailored pages like `aifoundry` were completely missed, and local caching exacerbated the issue.
+- **Pattern:** Hardcoded file paths in CI/CD pipelines break silently when new project directories are logically added.
+- **Decision:** Replaced the hardcoded `cp` commands with a dynamic `find` command that automatically discovers all valid sub-portfolios. Additionally, implemented cache-busting (e.g., `?v=17`) in `app.js` to ensure browsers fetch the latest `.json` payloads instead of relying on stale session caches.

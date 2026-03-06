@@ -2,14 +2,14 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **448 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **463 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
 - **General**: [Live Site](https://akashagl92.github.io/Portfolio/)
 - **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)
+- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)
 - **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)
-- **AI-Foundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)
 - **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)
 - **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)
 - **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)
@@ -169,7 +169,7 @@ _Tags: LangChain, LangGraph, Databricks Vector Search, RAG_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 448 |
+| Total Commits | 463 |
 | Unique Repositories | 11 |
 | Primary Language | Python |
 | Top Languages | N/A |
