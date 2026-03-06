@@ -64,6 +64,7 @@ shell_wrappers=(
   pai_native_replay.sh
   pai_pilot_preflight.sh
   pai_quality_gate_eval.sh
+  pai_repo_integrity_gate.sh
   pai_reconcile_jobs.sh
   pai_runtime_guard.sh
   pai_shadow_hard_banner.sh

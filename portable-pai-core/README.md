@@ -164,6 +164,7 @@ Important runtime knobs:
 - `PAI_SHADOW_ALLOWED_ARTIFACT_PATHS=<csv>` (canonical `.pai/*` write targets when native artifacts are forbidden)
 - `PAI_DOCS_QUALITY_ENABLED=0|1` (check report/markdown remote-render safety in quality gate)
 - `PAI_DOCS_QUALITY_SCOPE=all|staged` (`staged` is recommended for pre-commit)
+- `PAI_REPO_INTEGRITY_ENABLED=0|1` (fail on gitlinks, nested `.git`, absolute/broken symlinks)
 
 ## Adapter Model
 Adapters must comply with [adapters/CONTRACT.md](adapters/CONTRACT.md).

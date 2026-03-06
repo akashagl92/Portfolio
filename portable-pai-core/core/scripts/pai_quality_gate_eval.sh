@@ -109,6 +109,14 @@ if [[ "$docs_quality_enabled" == "1" ]]; then
   fi
 fi
 
+repo_integrity_enabled="${PAI_REPO_INTEGRITY_ENABLED:-1}"
+if [[ "$repo_integrity_enabled" == "1" ]]; then
+  if ! "$ROOT_DIR/scripts/pai_repo_integrity_gate.sh"; then
+    echo "QUALITY_FAIL repo_integrity_check"
+    fail_gate "repo_integrity_check_failed"
+  fi
+fi
+
 spawn_success="$(jq -r '.kpi.spawn_success_rate_pct' "$REPORT_JSON")"
 deadlock_rate="$(jq -r '.kpi.deadlock_rate' "$REPORT_JSON")"
 fallback_logged="$(jq -r '.kpi.fallback_logged_all_failures' "$REPORT_JSON")"

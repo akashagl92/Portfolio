@@ -98,6 +98,7 @@ pai_load_runtime() {
   : "${PAI_SHADOW_ALLOWED_ARTIFACT_PATHS:=.pai/tasks/todo.md,.pai/plans/active_plan.md,.pai/walkthrough-final.md}"
   : "${PAI_DOCS_QUALITY_ENABLED:=1}"
   : "${PAI_DOCS_QUALITY_SCOPE:=all}"
+  : "${PAI_REPO_INTEGRITY_ENABLED:=1}"
 
   # Apply only transient profile keys.
   pai_load_profile_state "$profile"

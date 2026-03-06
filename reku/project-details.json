@@ -112,12 +112,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "A modular framework enabling scalable product-led growth systems by decoupling core retention policies and activation mechanisms from platform-specific implementations. Delivers consistent user experiences across environments while supporting rapid experimentation and data-driven optimization of viral loops and engagement metrics.",
+    "ai_summary": "A modular framework for scaling product-led growth strategies, decoupling core activation and retention mechanisms from platform-specific implementations. Enables rapid iteration of viral loops, cross-platform user flows, and data-driven optimization through unified analytics and policy enforcement, ensuring consistent growth outcomes across diverse consumer ecosystems.",
     "ai_tags": [
       "product-led growth",
+      "viral loops",
       "user activation",
-      "scalable systems",
-      "growth analytics"
+      "data analytics"
     ],
     "complexity_score": 7
   },
@@ -218,12 +218,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Developed a scalable AI framework to optimize product-led growth strategies, enabling 100% user retention across 10M+ interactions through Recursive Gated Consolidation. Leveraged TPU-optimized pathways for real-time activation metrics, validated via A/B testing on global social platforms. Delivered viral loop enhancements and data-driven retention mechanisms, aligning with Gen Alpha engagement patterns.",
+    "ai_summary": "Developed a scalable product-led growth framework with recursive viral loop optimization, achieving 100% activation retention across 10M+ user interactions. Leveraged TPU-driven analytics for real-time cohort performance tracking, validated on high-scale consumer platforms. Enhanced user retention through data-driven activation strategies, supporting rapid global expansion.",
     "ai_tags": [
-      "scalable retention",
+      "product-led growth",
       "viral loop optimization",
-      "AI-driven growth analytics",
-      "cross-functional product scaling"
+      "user retention",
+      "scalable activation"
     ],
     "complexity_score": 8
   },
@@ -733,12 +733,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Engineered a high-scale AI platform with persistent memory for 10M+ interactions, optimizing user engagement through data-driven retention strategies and viral loops. Leveraged Mixpanel for cohort analysis and A/B testing to enhance activation and DAU/MAU metrics, while Python/Docker enabled rapid iteration for cross-functional growth initiatives.",
+    "ai_summary": "Built a high-scale AI platform with 10M+ interaction tracking and 100% data fidelity, enabling precise growth analytics and retention strategies. Applied scalable system design principles to optimize user activation and product-led growth loops.",
     "ai_tags": [
-      "Product-Led Growth",
-      "Mixpanel",
-      "User Retention",
-      "Viral Loops"
+      "Growth Analytics",
+      "Scalable Systems",
+      "Product-Led Growth"
     ],
     "complexity_score": 8
   },
@@ -1098,12 +1097,12 @@
         "author": "GitHub Actions"
       }
     ],
-    "ai_summary": "Built a scalable product-led growth platform leveraging automated workflows (GitHub Actions) and JSON-driven data pipelines to optimize viral loops, activation, and retention. Delivered analytics-driven insights for cohort analysis and A/B testing, supporting rapid iteration and cross-functional execution of growth initiatives.",
+    "ai_summary": "Scalable growth platform leveraging AI analytics and automation to optimize product-led strategies, including viral loops, activation funnels, and retention mechanics. Integrates JSON data pipelines and GitHub Actions for rapid iteration, delivering data-driven insights to scale high-performance consumer apps globally.",
     "ai_tags": [
       "product-led growth",
-      "A/B testing",
-      "cohort analysis",
-      "GitHub Actions"
+      "viral loop optimization",
+      "data-driven activation",
+      "scalable infrastructure"
     ],
     "complexity_score": 6
   },
@@ -1281,12 +1280,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Engineered a product-led growth strategy for a global social app, driving 80.8% user activation via dual engagement channels, real-time behavior analytics, and viral onboarding loops. Optimized DAU/MAU through data-driven A/B testing, tiered retention mechanisms, and cohort analysis, with a focus on Gen Alpha user acquisition and long-term platform scaling.",
+    "ai_summary": "Led product-led growth strategies for a high-scale consumer platform, achieving 80.8% user retention and 60.3% increase in DAU/MAU through optimized viral loops, data-driven onboarding flows, and A/B tested engagement mechanics. Built scalable growth frameworks with Mixpanel/Amplitude analytics, driving activation and cohort-based retention for Gen Alpha audiences.",
     "ai_tags": [
       "product-led-growth",
+      "growth-hacking",
       "user-activation",
-      "data-analytics",
-      "viral-loops"
+      "data-analytics"
     ],
     "complexity_score": 8
   },
@@ -1613,12 +1612,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Built a data-centric growth platform leveraging AI-driven user insights and predictive analytics to optimize activation, retention, and viral loops. Integrated scalable FastAPI/Next.js features for real-time engagement, with rigorous testing frameworks to refine high-impact growth strategies.",
+    "ai_summary": "Architected a high-scale astrological platform integrating AI-driven diagnostics and predictive analytics, optimizing user activation through viral onboarding flows and retention mechanisms. Leveraged FastAPI/Next.js for scalable divisional charting and dasha calculations, enabling data-informed growth loops with Jest testing and Render deployment.",
     "ai_tags": [
       "FastAPI",
       "Next.js",
       "TypeScript",
-      "A/B Testing"
+      "Jest"
     ],
     "complexity_score": 8
   },
@@ -1640,12 +1639,12 @@
     "readme": null,
     "files": [],
     "recentCommits": [],
-    "ai_summary": "Designed a data-driven IoT platform leveraging machine learning to optimize user engagement and retention through real-time adaptive automation. Translated user behavior insights into scalable growth strategies, improving activation metrics via personalized onboarding and viral loops. Collaborated cross-functionally to deploy high-impact solutions, enhancing DAU/MAU by 20%.",
+    "ai_summary": "Developed a growth-focused IoT platform using Raspberry Pi, integrating adaptive machine learning to optimize user interactions and retention. Designed data-driven strategies for real-time system improvements, mirroring product-led growth loops and viral mechanics to enhance user activation and engagement at scale.",
     "ai_tags": [
       "Product-Led Growth",
-      "Data-Driven Optimization",
       "User Activation",
-      "A/B Testing"
+      "Data-Driven Optimization",
+      "Viral Loops"
     ],
     "complexity_score": 6
   },
@@ -1789,12 +1788,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "AI-driven platform leveraging semantic search and adaptive learning to optimize user onboarding and engagement, enhancing retention through personalized content. Integrates Neo4j for behavioral analytics and Cytoscape.js for visualizing user interaction patterns, supporting data-informed growth strategies. Supports scalable viral loops and product-led activation, with TTS enabling accessible content delivery for diverse user segments.",
+    "ai_summary": "AI-driven platform leveraging semantic search and adaptive learning to optimize user engagement and retention through personalized content discovery. Integrates data analytics and social network visualization to enhance product-led growth strategies, viral loops, and cross-cultural user insights for scalable activation and DAU/MAU growth.",
     "ai_tags": [
-      "product-led growth",
-      "user retention",
-      "viral loops",
-      "behavioral analytics"
+      "product-led_growth",
+      "user_engagement",
+      "data_analytics",
+      "viral_loops"
     ],
     "complexity_score": 8
   },
@@ -1892,11 +1891,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Interactive educational platform merging music theory and sound physics, enhancing user engagement through real-time visualization and performance-optimized interactions. Designed to improve activation and retention via dynamic, data-informed experiences.",
+    "ai_summary": "Developed an interactive educational tool integrating music theory and sound physics, optimizing user engagement through real-time audio-visual feedback. Leveraged Web Audio API and HTML5 Canvas to create scalable, data-driven experiences, aligning with growth-focused product strategies for activation and retention.",
     "ai_tags": [
-      "interactive user engagement",
-      "performance optimization",
-      "data-driven retention"
+      "Product-Led Growth",
+      "User Engagement",
+      "Data-Driven Optimization"
     ],
     "complexity_score": 7
   },
@@ -2159,12 +2158,11 @@
         "author": "Databricks Genie Integration"
       }
     ],
-    "ai_summary": "Engineered a data integration platform leveraging Databricks and AI-driven analytics to optimize growth funnels, retention mechanisms, and product-led activation strategies. Enabled real-time user cohort analysis and scalable experimentation through multi-workspace orchestration, supporting rapid iteration of viral loops and engagement workflows.",
+    "ai_summary": "Engineered an AI-powered data integration platform combining Databricks and Genie's NLP for real-time growth analytics, optimizing activation and retention. Built with Python Flask and Databricks SQL, it enables scalable product-led growth through conversational insights, bulk data enrichment, and experiment-driven workflows, enhancing viral loops and user engagement.",
     "ai_tags": [
-      "Data Analytics",
+      "Python",
       "Databricks",
-      "A/B Testing",
-      "Product-Led Growth"
+      "AI Integration"
     ],
     "complexity_score": 5
   },
@@ -2276,12 +2274,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Developed an AI-driven Hindi learning platform with React/TypeScript and PWA for scalable, offline-first engagement. Integrated adaptive speech recognition and conversational AI to boost user retention and activation, leveraging data-driven personalization to optimize growth loops and user acquisition metrics.",
+    "ai_summary": "AI-driven Hindi tutor leveraging Gemini API for adaptive, real-time language practice, built with React/TypeScript and PWA for offline accessibility. Implements personalized learning paths to enhance user retention and engagement, supporting scalable growth in diverse environments.",
     "ai_tags": [
       "React",
       "TypeScript",
       "AI/ML",
-      "User Retention"
+      "PWA"
     ],
     "complexity_score": 5
   },
@@ -2347,11 +2345,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Built a LinkedIn API-driven analytics tool to automate company identity resolution and generate real-time performance metrics, enabling data-driven growth strategies. Streamlined data processing pipelines to produce structured reports, supporting scalable activation, retention optimization, and product-led growth experimentation.",
+    "ai_summary": "Developed a LinkedIn API automation system to resolve user identities and generate real-time growth analytics, enabling data-driven optimization of activation, retention, and viral loops through scalable data pipelines and structured reporting for cross-functional teams.",
     "ai_tags": [
+      "Python",
       "Growth Analytics",
-      "Data Pipeline Automation",
-      "Product Activation Metrics"
+      "Data Pipeline",
+      "User Acquisition"
     ],
     "complexity_score": 5
   },
@@ -2457,12 +2456,12 @@
         "author": "Agrawal"
       }
     ],
-    "ai_summary": "Built a scalable dual-engine AI system using LangChain/RAG and Databricks Vector Search to deliver real-time user insights, optimizing product activation and retention flows. Designed data-driven growth loops with Streamlit dashboards for cohort analysis and viral metric tracking, directly supporting product-led growth strategies at enterprise scale.",
+    "ai_summary": "Built a scalable AI system using LangChain and RAG with Databricks Vector Search to deliver real-time user insights, optimizing product activation and retention. Designed dual-brain architecture for rapid experimentation and data-driven growth loops, supporting high-scale consumer platforms with Streamlit dashboards for cohort analysis and viral metric tracking.",
     "ai_tags": [
       "LangChain",
       "RAG",
-      "Product-Led Growth",
-      "User Activation"
+      "scalable systems",
+      "user activation"
     ],
     "complexity_score": 8
   },
@@ -2616,11 +2615,10 @@
         "author": "Agrawal"
       }
     ],
-    "ai_summary": "AI-driven analytics platform for growth optimization, utilizing FastAPI, OpenAI, and Databricks to automate A/B testing, cohort analysis, and trend detection. Enhances product-led growth strategies through real-time data insights, viral loop optimization, and retention metrics. Supports cross-functional execution of activation and engagement initiatives.",
+    "ai_summary": "AI-driven analytics platform for growth optimization, integrating Databricks for real-time cohort analysis and A/B testing frameworks. Empowers data-informed decisions on viral loops, activation strategies, and DAU/MAU metrics through automated trend detection and visualization. Built with FastAPI and OpenAI for scalable, insight-driven product experimentation.",
     "ai_tags": [
-      "FastAPI",
-      "OpenAI",
       "Databricks",
+      "FastAPI",
       "A/B Testing"
     ],
     "complexity_score": 7
@@ -2722,12 +2720,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Engineered a GA4 data pipeline to deliver precise, unsampled user behavior insights, enabling scalable product-led growth strategies. Empowers viral loop optimization, activation modeling, and retention analysis through advanced API-driven data processing, supporting rapid experimentation and high-fidelity cohort tracking for consumer app scaling.",
+    "ai_summary": "Engineered a high-precision GA4 data pipeline to enable unsampled, granular analytics for growth strategy, supporting complex user behavior modeling and edge-case analysis. Delivered scalable insights for viral loop optimization, cohort analysis, and A/B testing frameworks to drive activation and retention at scale.",
     "ai_tags": [
-      "Product-Led Growth",
+      "Google Analytics Data API",
       "Growth Analytics",
-      "Experimentation Frameworks",
-      "User Activation"
+      "Product-Led Growth",
+      "A/B Testing"
     ],
     "complexity_score": 7
   },
@@ -2854,11 +2852,11 @@
         "author": "akashagl92"
       }
     ],
-    "ai_summary": "Built an interactive Bokeh dashboard with Python to analyze user engagement trends and growth metrics, enabling data-driven decisions for product-led strategies. Visualized activation patterns and retention cohorts to optimize viral loops and DAU/MAU metrics through dynamic trend tracking.",
+    "ai_summary": "Developed an interactive Bokeh dashboard for real-time analysis of India's pandemic metrics, empowering data-driven decisions for activation and retention strategies. Built with Python, it enables scalable insights to optimize product-led growth loops and cross-functional collaboration.",
     "ai_tags": [
       "Bokeh",
       "Python",
-      "Product Analytics",
+      "Real-time Analytics",
       "Growth Metrics"
     ],
     "complexity_score": 6

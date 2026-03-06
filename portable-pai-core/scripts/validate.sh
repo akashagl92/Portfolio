@@ -10,6 +10,7 @@ required=(
   "$ROOT_DIR/core/scripts/pai_config_doctor.sh"
   "$ROOT_DIR/core/scripts/pai_docs_quality_gate.sh"
   "$ROOT_DIR/core/scripts/pai_install_precommit_hook.sh"
+  "$ROOT_DIR/core/scripts/pai_repo_integrity_gate.sh"
   "$ROOT_DIR/core/scripts/pai_policy_eval.py"
   "$ROOT_DIR/core/scripts/pai_runtime_guard.sh"
   "$ROOT_DIR/core/scripts/pai_shadow_hard_banner.sh"
@@ -39,6 +40,7 @@ bash "$ROOT_DIR/scripts/init-project.sh" --project "$TARGET" >/dev/null
 
 "$TARGET/scripts/pai_runtime_guard.sh" status >/dev/null
 "$TARGET/scripts/pai_docs_quality_gate.sh" all >/dev/null
+"$TARGET/scripts/pai_repo_integrity_gate.sh" >/dev/null
 "$TARGET/scripts/pai_policy_eval.py" --policy "$TARGET/.pai/config/policy.json" --mode proposal_only --actor child --command "echo ok" --root "$TARGET" >/dev/null
 
 if "$TARGET/scripts/pai_policy_eval.py" --policy "$TARGET/.pai/config/policy.json" --mode proposal_only --actor child --command "touch /tmp/pai_validate_block" --root "$TARGET" >/dev/null 2>&1; then

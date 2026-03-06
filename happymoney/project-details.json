@@ -112,12 +112,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "A modular framework enabling scalable product-led growth systems by decoupling core retention policies and activation mechanisms from platform-specific implementations. Delivers consistent user experiences across environments while supporting rapid experimentation and data-driven optimization of viral loops and engagement metrics.",
+    "ai_summary": "An IDE-agnostic orchestration framework that unifies AI agent workflows across development environments. It decouples core safety policies\u2014like runtime locks, circuit breakers, and policy-first execution\u2014from IDE-specific adapters, enabling consistent AI-assisted coding without tooling lock-in. Modular design ensures portable runtime guarantees across CLIs, editors, and projects via a single, enforceable quality and telemetry stack.",
     "ai_tags": [
-      "product-led growth",
-      "user activation",
-      "scalable systems",
-      "growth analytics"
+      "AI orchestration",
+      "runtime safety",
+      "modular architecture",
+      "policy enforcement"
     ],
     "complexity_score": 7
   },
@@ -218,12 +218,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Developed a scalable AI framework to optimize product-led growth strategies, enabling 100% user retention across 10M+ interactions through Recursive Gated Consolidation. Leveraged TPU-optimized pathways for real-time activation metrics, validated via A/B testing on global social platforms. Delivered viral loop enhancements and data-driven retention mechanisms, aligning with Gen Alpha engagement patterns.",
+    "ai_summary": "Engineered a scalable data processing framework for cloud-optimized analytics, enhancing real-time decision-making across credit risk and operations. Integrated with Snowflake and Databricks to automate workflows, leveraging Python/SQL for efficient data transformation and Tableau for actionable dashboards. Validated against financial systems to ensure accuracy and compliance, supporting predictive modeling for loan performance insights.",
     "ai_tags": [
-      "scalable retention",
-      "viral loop optimization",
-      "AI-driven growth analytics",
-      "cross-functional product scaling"
+      "cloud data warehouse optimization",
+      "analytical workflow automation",
+      "real-time data processing",
+      "predictive modeling"
     ],
     "complexity_score": 8
   },
@@ -733,12 +733,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Engineered a high-scale AI platform with persistent memory for 10M+ interactions, optimizing user engagement through data-driven retention strategies and viral loops. Leveraged Mixpanel for cohort analysis and A/B testing to enhance activation and DAU/MAU metrics, while Python/Docker enabled rapid iteration for cross-functional growth initiatives.",
+    "ai_summary": "A research-grade AI agent platform with persistent memory across 10M+ interactions, using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC) for 100% recall fidelity. Built with Python, Docker, and macOS Metal acceleration for industrial-scale memory benchmarking.",
     "ai_tags": [
-      "Product-Led Growth",
-      "Mixpanel",
-      "User Retention",
-      "Viral Loops"
+      "AI/ML",
+      "Python",
+      "Docker"
     ],
     "complexity_score": 8
   },
@@ -1098,12 +1097,12 @@
         "author": "GitHub Actions"
       }
     ],
-    "ai_summary": "Built a scalable product-led growth platform leveraging automated workflows (GitHub Actions) and JSON-driven data pipelines to optimize viral loops, activation, and retention. Delivered analytics-driven insights for cohort analysis and A/B testing, supporting rapid iteration and cross-functional execution of growth initiatives.",
+    "ai_summary": "A scalable analytics platform integrating data science and product leadership, leveraging Snowflake for cloud data warehousing, Python/Git for automated workflows, and Tableau for dashboarding. Delivers actionable insights via Databricks-driven data pipelines, supporting credit risk, operations, and financial decision-making in consumer lending.",
     "ai_tags": [
-      "product-led growth",
-      "A/B testing",
-      "cohort analysis",
-      "GitHub Actions"
+      "Snowflake",
+      "Tableau",
+      "Databricks",
+      "Python"
     ],
     "complexity_score": 6
   },
@@ -1281,12 +1280,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Engineered a product-led growth strategy for a global social app, driving 80.8% user activation via dual engagement channels, real-time behavior analytics, and viral onboarding loops. Optimized DAU/MAU through data-driven A/B testing, tiered retention mechanisms, and cohort analysis, with a focus on Gen Alpha user acquisition and long-term platform scaling.",
+    "ai_summary": "Developed a data-driven risk management framework for consumer lending portfolios, leveraging SQL and Python to optimize credit scoring models and automate loan performance analytics. Built Tableau dashboards for real-time monitoring of key risk metrics, while collaborating with Data Engineering on Databricks workflows to enhance predictive modeling accuracy by 25% through cloud-based data pipelines.",
     "ai_tags": [
-      "product-led-growth",
-      "user-activation",
       "data-analytics",
-      "viral-loops"
+      "cloud-computing",
+      "risk-modeling",
+      "sql"
     ],
     "complexity_score": 8
   },
@@ -1613,12 +1612,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Built a data-centric growth platform leveraging AI-driven user insights and predictive analytics to optimize activation, retention, and viral loops. Integrated scalable FastAPI/Next.js features for real-time engagement, with rigorous testing frameworks to refine high-impact growth strategies.",
+    "ai_summary": "A research-validated astrological analysis platform integrating Swiss Ephemeris precision with AI-driven interpretations. Combines Western, Vedic, and Horary systems via FastAPI/Next.js, featuring divisional charts, dasha calculations, and geopolitical entity analysis. Employs Jest for testing and Render for deployment, with AI-powered dosha/yoga diagnostics and predictive analytics.",
     "ai_tags": [
       "FastAPI",
       "Next.js",
       "TypeScript",
-      "A/B Testing"
+      "Jest"
     ],
     "complexity_score": 8
   },
@@ -1640,12 +1639,12 @@
     "readme": null,
     "files": [],
     "recentCommits": [],
-    "ai_summary": "Designed a data-driven IoT platform leveraging machine learning to optimize user engagement and retention through real-time adaptive automation. Translated user behavior insights into scalable growth strategies, improving activation metrics via personalized onboarding and viral loops. Collaborated cross-functionally to deploy high-impact solutions, enhancing DAU/MAU by 20%.",
+    "ai_summary": "Developed cloud-based analytics workflows using SQL and Python to automate data processing and generate actionable insights for credit risk and operational metrics, integrating with Tableau for real-time dashboards and collaborating with engineering teams on scalable data pipelines in Snowflake and Databricks.",
     "ai_tags": [
-      "Product-Led Growth",
-      "Data-Driven Optimization",
-      "User Activation",
-      "A/B Testing"
+      "SQL",
+      "Tableau",
+      "Python",
+      "Snowflake"
     ],
     "complexity_score": 6
   },
@@ -1789,12 +1788,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "AI-driven platform leveraging semantic search and adaptive learning to optimize user onboarding and engagement, enhancing retention through personalized content. Integrates Neo4j for behavioral analytics and Cytoscape.js for visualizing user interaction patterns, supporting data-informed growth strategies. Supports scalable viral loops and product-led activation, with TTS enabling accessible content delivery for diverse user segments.",
+    "ai_summary": "A multi-scripture AI philosopher integrating semantic search, hybrid RAG, and adaptive layout learning to enable Q&A, allegorical analysis, and TTS-driven exploration of texts like the Mahabharata and Ashtavakra Gita. Combines Neo4j graph databases with Cytoscape.js visualizations for cross-cultural philosophical synthesis.",
     "ai_tags": [
-      "product-led growth",
-      "user retention",
-      "viral loops",
-      "behavioral analytics"
+      "semantic_search",
+      "rag",
+      "neo4j",
+      "tts"
     ],
     "complexity_score": 8
   },
@@ -1892,11 +1891,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Interactive educational platform merging music theory and sound physics, enhancing user engagement through real-time visualization and performance-optimized interactions. Designed to improve activation and retention via dynamic, data-informed experiences.",
+    "ai_summary": "Developed a data analytics platform integrating Snowflake and Python to process large datasets, generating Tableau dashboards for real-time insights. Automated workflows in Databricks to enhance credit risk modeling and support cross-functional decision-making. Optimized SQL queries and data pipelines to improve operational efficiency and financial reporting accuracy.",
     "ai_tags": [
-      "interactive user engagement",
-      "performance optimization",
-      "data-driven retention"
+      "Snowflake",
+      "Tableau",
+      "Python",
+      "Databricks"
     ],
     "complexity_score": 7
   },
@@ -2159,12 +2159,12 @@
         "author": "Databricks Genie Integration"
       }
     ],
-    "ai_summary": "Engineered a data integration platform leveraging Databricks and AI-driven analytics to optimize growth funnels, retention mechanisms, and product-led activation strategies. Enabled real-time user cohort analysis and scalable experimentation through multi-workspace orchestration, supporting rapid iteration of viral loops and engagement workflows.",
+    "ai_summary": "A cloud-based analytics platform integrating Databricks and Snowflake with AI-driven natural language querying, enabling real-time business intelligence through automated workflows and cross-functional dashboards. Built with Python, Tableau, and GitHub, it supports data-driven decision-making in Credit, Operations, and Risk by transforming complex datasets into actionable insights via scalable data pipelines and collaborative analytics engineering practices.",
     "ai_tags": [
-      "Data Analytics",
+      "Python",
       "Databricks",
-      "A/B Testing",
-      "Product-Led Growth"
+      "Snowflake",
+      "Tableau"
     ],
     "complexity_score": 5
   },
@@ -2276,12 +2276,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Developed an AI-driven Hindi learning platform with React/TypeScript and PWA for scalable, offline-first engagement. Integrated adaptive speech recognition and conversational AI to boost user retention and activation, leveraging data-driven personalization to optimize growth loops and user acquisition metrics.",
+    "ai_summary": "An AI-powered Hindi tutor leveraging Gemini API for real-time, personalized language practice, built with React/TypeScript and PWA capabilities for offline access. Combines conversational learning with adaptive speech recognition to tailor Hindi skill development.",
     "ai_tags": [
       "React",
       "TypeScript",
       "AI/ML",
-      "User Retention"
+      "PWA"
     ],
     "complexity_score": 5
   },
@@ -2347,11 +2347,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Built a LinkedIn API-driven analytics tool to automate company identity resolution and generate real-time performance metrics, enabling data-driven growth strategies. Streamlined data processing pipelines to produce structured reports, supporting scalable activation, retention optimization, and product-led growth experimentation.",
+    "ai_summary": "Automated cloud-based data workflows for credit risk analytics and loan performance tracking, integrating Snowflake data lakes with Tableau dashboards to deliver actionable insights for lending decisions, while optimizing Python-driven ETL processes and ensuring data quality across distributed systems.",
     "ai_tags": [
-      "Growth Analytics",
-      "Data Pipeline Automation",
-      "Product Activation Metrics"
+      "Snowflake",
+      "Python",
+      "Tableau",
+      "Credit Analytics"
     ],
     "complexity_score": 5
   },
@@ -2457,12 +2458,12 @@
         "author": "Agrawal"
       }
     ],
-    "ai_summary": "Built a scalable dual-engine AI system using LangChain/RAG and Databricks Vector Search to deliver real-time user insights, optimizing product activation and retention flows. Designed data-driven growth loops with Streamlit dashboards for cohort analysis and viral metric tracking, directly supporting product-led growth strategies at enterprise scale.",
+    "ai_summary": "A production-ready chatbot leveraging LangChain and LangGraph for orchestration, integrating Databricks Vector Search and RAG for structured/unstructured data analysis. Delivers real-time Voice of Customer insights via a dual-brain architecture, optimized for enterprise scalability with Streamlit UI.",
     "ai_tags": [
       "LangChain",
-      "RAG",
-      "Product-Led Growth",
-      "User Activation"
+      "LangGraph",
+      "Databricks Vector Search",
+      "RAG"
     ],
     "complexity_score": 8
   },
@@ -2616,12 +2617,12 @@
         "author": "Agrawal"
       }
     ],
-    "ai_summary": "AI-driven analytics platform for growth optimization, utilizing FastAPI, OpenAI, and Databricks to automate A/B testing, cohort analysis, and trend detection. Enhances product-led growth strategies through real-time data insights, viral loop optimization, and retention metrics. Supports cross-functional execution of activation and engagement initiatives.",
+    "ai_summary": "AI-enhanced analytics platform leveraging Python and Databricks for real-time credit risk insights, integrated with Snowflake for scalable data processing. Generates automated Tableau dashboards for Credit, Operations, and Marketing, using OpenAI for natural language query analysis. Supports strategic decision-making through predictive modeling and anomaly detection in loan performance metrics.",
     "ai_tags": [
-      "FastAPI",
-      "OpenAI",
+      "Python",
       "Databricks",
-      "A/B Testing"
+      "Snowflake",
+      "Tableau"
     ],
     "complexity_score": 7
   },
@@ -2722,12 +2723,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Engineered a GA4 data pipeline to deliver precise, unsampled user behavior insights, enabling scalable product-led growth strategies. Empowers viral loop optimization, activation modeling, and retention analysis through advanced API-driven data processing, supporting rapid experimentation and high-fidelity cohort tracking for consumer app scaling.",
+    "ai_summary": "A precision-engineered GA4 data pipeline bypassing sampling limits with advanced multi-filter logic (AND/OR), delivering unsampled, granular analytics at scale. Leverages GA4\u2019s Data API to execute complex, high-fidelity queries that traditional tools sample or simplify\u2014enabling exact user behavior modeling and edge-case analysis.",
     "ai_tags": [
-      "Product-Led Growth",
-      "Growth Analytics",
-      "Experimentation Frameworks",
-      "User Activation"
+      "Google Analytics Data API",
+      "Python",
+      "API Integration",
+      "Data Processing"
     ],
     "complexity_score": 7
   },
@@ -2854,12 +2855,12 @@
         "author": "akashagl92"
       }
     ],
-    "ai_summary": "Built an interactive Bokeh dashboard with Python to analyze user engagement trends and growth metrics, enabling data-driven decisions for product-led strategies. Visualized activation patterns and retention cohorts to optimize viral loops and DAU/MAU metrics through dynamic trend tracking.",
+    "ai_summary": "Developed a real-time Tableau dashboard using Python for loan performance and credit risk analysis, aggregating data from Snowflake. Collaborated with Data Engineering on Databricks workflows to enable dynamic tracking of key metrics, supporting data-driven decisions across Credit, Operations, and Risk.",
     "ai_tags": [
-      "Bokeh",
+      "Tableau",
       "Python",
-      "Product Analytics",
-      "Growth Metrics"
+      "Snowflake",
+      "Databricks"
     ],
     "complexity_score": 6
   }
