@@ -112,12 +112,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Cross-platform AI orchestration framework enabling scalable agent workflows with embedded safety policies. Decouples runtime governance (locks, circuit breakers) from IDE adapters to ensure consistent, auditable AI execution across development environments. Modular architecture supports rapid MVP deployment and telemetry-driven optimization for data product lifecycles.",
+    "ai_summary": "An IDE-agnostic orchestration framework that unifies AI agent workflows across development environments. It decouples core safety policies\u2014like runtime locks, circuit breakers, and policy-first execution\u2014from IDE-specific adapters, enabling consistent AI-assisted coding without tooling lock-in. Modular design ensures portable runtime guarantees across CLIs, editors, and projects via a single, enforceable quality and telemetry stack.",
     "ai_tags": [
-      "cross-platform AI orchestration",
-      "scalable deployment",
-      "data product lifecycle",
-      "policy-driven governance"
+      "AI orchestration",
+      "runtime safety",
+      "modular architecture",
+      "policy enforcement"
     ],
     "complexity_score": 7
   },
@@ -218,11 +218,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "High-fidelity LLM agent framework with O(1) memory scaling via Recursive Gated Consolidation (RGC), enabling 100% recall at 10M+ interactions. Optimized for TPU v4/v5 hardware, validated across Gemini 3.0 and enterprise systems to power scalable, real-world AI agent applications for strategic business growth.",
+    "ai_summary": "Developed a high-fidelity, scalable framework for real-time marketing optimization using Recursive Gated Consolidation (RGC) to maintain 100% data recall across 10M+ customer interactions. Leveraged TPU v4/v5 hardware for low-latency execution, enabling dynamic budget allocation and audience targeting models validated across Gemini 3.0 and Claude 4.6. Delivered end-to-end pipelines for conversion forecasting, churn prediction, and multi-channel bid optimization, directly aligning with performance marketing KPIs.",
     "ai_tags": [
-      "agentic AI scaling",
-      "TPU-optimized LLMs",
-      "AI product roadmapping"
+      "marketing efficiency optimization",
+      "machine learning pipelines",
+      "real-time bidding strategies",
+      "audience segmentation modeling"
     ],
     "complexity_score": 8
   },
@@ -732,12 +733,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Led development of scalable AI agent platforms with persistent memory (10M+ interactions) using RGC/SSC for 100% recall, optimized with Python/Docker. Designed multi-source data workflows, translated technical capabilities into product specs, and defined MVP/POC metrics for AI-driven solutions aligned with business impact and technical feasibility.",
+    "ai_summary": "A research-grade AI agent platform with persistent memory across 10M+ interactions, using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC) for 100% recall fidelity. Built with Python, Docker, and macOS Metal acceleration for industrial-scale memory benchmarking.",
     "ai_tags": [
-      "Agentic AI",
-      "Product Roadmap",
-      "Data Fusion",
-      "MVP Development"
+      "AI/ML",
+      "Python",
+      "Docker"
     ],
     "complexity_score": 8
   },
@@ -1097,12 +1097,12 @@
         "author": "GitHub Actions"
       }
     ],
-    "ai_summary": "A scalable AI platform leveraging agentic AI and JSON data management to automate strategic analytics workflows. Integrates GitHub Actions for CI/CD, enabling rapid deployment of data-driven agent applications aligned with enterprise growth objectives. Delivers production-grade solutions through structured data ingestion, modeling, and serving frameworks tailored for complex business use cases.",
+    "ai_summary": "A scalable data science platform leveraging predictive modeling and automation pipelines to optimize performance marketing efficiency. Integrates real-time analytics, machine learning optimization for bidding strategies, and audience targeting frameworks, aligned with Quince's mission to deliver value through AI-driven decision-making and scalable infrastructure.",
     "ai_tags": [
-      "agentic AI",
-      "GitHub Actions",
-      "JSON data management",
-      "data product lifecycle"
+      "predictive modeling",
+      "automation pipelines",
+      "machine learning optimization",
+      "real-time analytics"
     ],
     "complexity_score": 6
   },
@@ -1280,11 +1280,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Led development of a production-grade autonomous trading system as a data-driven AI agent application, translating financial engineering into functional specs for tax-efficient, risk-adjusted portfolios. Delivered 80.8% XIRR (60.3% Alpha over S&P 500) via dual-track allocation and Golden Cross momentum, with statistical verification and agentic workflows for crypto-stocks hybrid optimization.",
+    "ai_summary": "A production-grade autonomous trading system combining AI-driven financial engineering with risk-adjusted portfolio optimization. The v4.1 Steady Winner strategy achieves 80.8% XIRR (60.3% Alpha over S&P 500) through dual-track asset allocation, Golden Cross momentum, and real-time Shadow Portfolio tracking. Features include tax-efficient execution, statistical verification, and tiered risk management for crypto-stocks hybrid portfolios.",
     "ai_tags": [
-      "product-management",
-      "agentic-ai",
-      "data-product-lifecycle"
+      "autonomous-trading",
+      "financial-modeling",
+      "machine-learning"
     ],
     "complexity_score": 8
   },
@@ -1611,12 +1611,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Engineered an AI-powered astrological analysis platform integrating Swiss Ephemeris data with agentic workflows, translating celestial insights into actionable business strategies. Built scalable data pipelines using FastAPI/Next.js for multi-system (Western, Vedic, Horary) integration, prioritizing use cases via technical feasibility and user impact. Delivered AI-driven dosha/yoga diagnostics as MVPs with measurable success metrics, leveraging data fusion for cross-domain predictive analytics.",
+    "ai_summary": "Developed AI-driven predictive models for marketing efficiency, integrating multi-channel data pipelines with FastAPI/Python. Built optimization engines for dynamic budget allocation and audience targeting, leveraging machine learning and causal inference. Delivered scalable solutions for campaign forecasting, A/B testing, and scenario simulation, enhancing performance marketing ROI through rigorous statistical analysis and cross-functional collaboration.",
     "ai_tags": [
-      "FastAPI",
-      "Next.js",
-      "Agentic AI",
-      "Data Fusion"
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "FastAPI"
     ],
     "complexity_score": 8
   },
@@ -1638,12 +1638,11 @@
     "readme": null,
     "files": [],
     "recentCommits": [],
-    "ai_summary": "Developed a scalable AI-driven IoT platform integrating agentic workflows and real-time ML models to optimize smart environments. Translated business requirements into adaptive control systems, leveraging multi-source data pipelines and lightweight agent architectures for enterprise-grade automation without proprietary dependencies.",
+    "ai_summary": "A Raspberry Pi-powered home automation system that integrates IoT devices with custom logic and lightweight machine learning models, enabling real-time adaptive control of smart environments without proprietary platforms.",
     "ai_tags": [
-      "AI/ML Integration",
-      "Agentic AI Workflows",
-      "Data Product Lifecycle",
-      "IoT Automation"
+      "Raspberry Pi",
+      "IoT Automation",
+      "Machine Learning"
     ],
     "complexity_score": 6
   },
@@ -1787,12 +1786,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "AI-driven solution architect specializing in hybrid RAG and semantic search frameworks, leveraging Neo4j graph databases for scalable data fusion. Designs agentic workflows and cross-domain knowledge graphs to power strategic AI applications, with a focus on translating complex philosophical and cultural insights into actionable, data-driven products for enterprise use cases.",
+    "ai_summary": "AI-driven marketing optimization platform leveraging semantic search for customer behavior analysis, hybrid RAG for multi-channel data integration, and Neo4j graph databases to map customer journeys. Implements real-time TTS reporting, predictive modeling for CPA forecasting, and reinforcement learning for dynamic budget allocation, aligning with Quince's mission to deliver scalable, sustainable growth through data-driven marketing efficiency.",
     "ai_tags": [
-      "hybrid_rag",
-      "agentic_ai",
-      "data_fusion",
-      "neo4j"
+      "predictive_modeling",
+      "customer_segmentation",
+      "reinforcement_learning",
+      "real_time_analytics"
     ],
     "complexity_score": 8
   },
@@ -1890,12 +1889,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Engineered an AI-driven educational platform merging music theory and acoustics, leveraging Web Audio API and HTML5 Canvas for real-time data visualization. Translated complex concepts into user-centric experiences, optimizing performance for scalable deployment. Aligned technical feasibility with educational impact, demonstrating expertise in data-driven product design and cross-functional collaboration.",
+    "ai_summary": "An interactive web-based visualizer merging music theory and sound physics, enabling real-time exploration of harmonic ratios, wave interference, and acoustic principles through Web Audio API and HTML5 Canvas. Combines educational value with performance-optimized audio-visual synthesis for dynamic learning experiences.",
     "ai_tags": [
-      "AI/ML",
-      "Data Visualization",
-      "Product Roadmap",
-      "Agentic AI"
+      "Web Audio API",
+      "HTML5 Canvas",
+      "music theory"
     ],
     "complexity_score": 7
   },
@@ -2158,12 +2156,12 @@
         "author": "Databricks Genie Integration"
       }
     ],
-    "ai_summary": "A scalable AI integration platform orchestrating Databricks workspaces with Genie's agentic AI for real-time business intelligence. Enables multi-source data workflows and agent-driven insights via conversational queries or file uploads, aligning with data product lifecycles. Built using Python, Databricks SQL, and Flask, it supports POC/MVP frameworks for AI-powered agent applications.",
+    "ai_summary": "A data integration platform leveraging Python, Databricks, and AI-driven querying to optimize performance marketing workflows. Enables real-time campaign efficiency modeling, audience targeting, and automated decision-making through multi-workspace orchestration, supporting conversion forecasting and dynamic budget allocation for Quince's growth marketing initiatives.",
     "ai_tags": [
-      "Agentic AI",
-      "Data Fusion",
-      "RAG",
-      "Data Product Lifecycle"
+      "Python",
+      "Machine Learning",
+      "SQL",
+      "Data Pipelines"
     ],
     "complexity_score": 5
   },
@@ -2275,11 +2273,11 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Led development of an AI-powered Hindi tutor leveraging agentic workflows and multi-source data integration, translating language learning needs into scalable product specs. Designed offline-capable PWA with adaptive speech recognition, aligning technical feasibility with user impact while defining roadmap priorities and success metrics for AI-driven language solutions.",
+    "ai_summary": "An AI-powered Hindi tutor leveraging Gemini API for real-time, personalized language practice, built with React/TypeScript and PWA capabilities for offline access. Combines conversational learning with adaptive speech recognition to tailor Hindi skill development.",
     "ai_tags": [
+      "React",
+      "TypeScript",
       "AI/ML",
-      "Agentic AI",
-      "Data Fusion",
       "PWA"
     ],
     "complexity_score": 5
@@ -2346,12 +2344,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "Developed an AI-powered data solution for LinkedIn identity resolution and analytics, structured as a scalable product roadmap with multi-source integration. Delivered real-time performance metrics via automated Excel reporting, aligning with agentic AI workflows and data fusion principles to support strategic decision-making.",
+    "ai_summary": "Automated marketing data pipeline resolving ad platform identities and exporting performance analytics to structured BI tools, enabling real-time optimization of campaign efficiency and scalable audience targeting strategies through predictive modeling and machine learning-driven insights.",
     "ai_tags": [
-      "Agentic AI",
-      "Data Fusion",
-      "Product Roadmap",
-      "MVP Development"
+      "Python",
+      "Predictive Modeling",
+      "BI Tools",
+      "Data Pipelines"
     ],
     "complexity_score": 5
   },
@@ -2457,11 +2455,12 @@
         "author": "Agrawal"
       }
     ],
-    "ai_summary": "Led development of scalable agentic AI workflows leveraging RAG-powered data fusion for real-time VoC insights. Translated business needs into agent behavior specs and prioritized use cases based on technical feasibility and customer impact, collaborating with cross-functional AI/ML teams to deliver enterprise-grade solutions via Streamlit UI.",
+    "ai_summary": "A production-ready chatbot leveraging LangChain and LangGraph for orchestration, integrating Databricks Vector Search and RAG for structured/unstructured data analysis. Delivers real-time Voice of Customer insights via a dual-brain architecture, optimized for enterprise scalability with Streamlit UI.",
     "ai_tags": [
-      "agentic AI workflows",
-      "RAG-powered data fusion",
-      "product roadmap optimization"
+      "LangChain",
+      "LangGraph",
+      "Databricks Vector Search",
+      "RAG"
     ],
     "complexity_score": 8
   },
@@ -2615,12 +2614,12 @@
         "author": "Agrawal"
       }
     ],
-    "ai_summary": "Led development of AI-powered marketing analytics platform, translating business needs into functional specs and agentic workflows. Integrated FastAPI, Databricks SQL, and OpenAI GPT for real-time insights, leveraging agentic AI for A/B testing and trend detection. Aligned product roadmaps with data lifecycle, ensuring scalable solutions for strategic growth.",
+    "ai_summary": "AI-driven marketing analytics platform using FastAPI, Databricks SQL, and Python for real-time campaign optimization. Automates audience targeting, A/B testing, and budget allocation via predictive modeling, enhancing performance marketing efficiency at scale.",
     "ai_tags": [
-      "Agentic AI",
-      "RAG",
+      "FastAPI",
       "Databricks",
-      "FastAPI"
+      "Python",
+      "Predictive Modeling"
     ],
     "complexity_score": 7
   },
@@ -2721,12 +2720,12 @@
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "A scalable GA4 data pipeline engineered for AI/ML agent applications, enabling precise, unsampled data ingestion and multi-source workflow integration. Leverages advanced API-driven processing to translate granular user behavior into actionable product specs, supporting agentic AI workflows and strategic growth initiatives.",
+    "ai_summary": "A precision-engineered GA4 data pipeline bypassing sampling limits with advanced multi-filter logic (AND/OR), delivering unsampled, granular analytics at scale. Leverages GA4\u2019s Data API to execute complex, high-fidelity queries that traditional tools sample or simplify\u2014enabling exact user behavior modeling and edge-case analysis.",
     "ai_tags": [
-      "Agentic AI Workflows",
-      "Data Fusion",
+      "Google Analytics Data API",
       "Python",
-      "Data Product Lifecycle"
+      "API Integration",
+      "Data Processing"
     ],
     "complexity_score": 7
   },
@@ -2853,12 +2852,12 @@
         "author": "akashagl92"
       }
     ],
-    "ai_summary": "Led development of an AI-powered dashboard using Bokeh and Python to aggregate India's state-level pandemic data, enabling real-time trend analysis and dynamic comparisons. Built multi-source workflows for historical and testing metrics, translating public health needs into actionable insights. Demonstrated ownership of data product lifecycle stages and defined success metrics for data-driven decision-making.",
+    "ai_summary": "Developed an automated Bokeh dashboard for real-time performance marketing analytics, leveraging Python to process multi-channel campaign data and enable dynamic audience targeting optimization and budget allocation through predictive modeling.",
     "ai_tags": [
-      "AI-Powered Data Applications",
-      "Data Product Lifecycle",
       "Bokeh",
-      "Agentic AI Workflows"
+      "Python",
+      "Predictive Modeling",
+      "Feature Engineering"
     ],
     "complexity_score": 6
   }

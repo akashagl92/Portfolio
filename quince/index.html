@@ -12,6 +12,7 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-T7V9BT23');</script>
     <!-- End Google Tag Manager -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta charset="UTF-8">
     <meta name="author" content="Akash Agrawal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,39 +65,40 @@
 
     <main>
         <section id="hero" class="reveal active">
-            <div class="hero-content">
-                <span class="badge">Staff Data Scientist - Performance Marketing @ Quince</span>
-                <h1>Scaling Quality through <span class="gradient-text">Algorithmic Precision</span>.</h1>
-                <p class="hero-sub">Bridging the gap between <strong>Performance Marketing Efficiency</strong> and
-                    <strong>Predictive Supply Chain</strong>. I architect the automated bidding and causal inference
-                    engines that fuel sustainable growth.
-                </p>
-                <div class="hero-actions">
-                    <a href="#work" class="btn btn-primary">Professional Portfolio</a>
-                    <a href="#innovation" class="btn btn-secondary">Personal Portfolio</a>
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <span class="badge">Staff Data Scientist - Performance Marketing @ Quince</span>
+                    <h1>Scaling Quality through <span class="gradient-text">Algorithmic Precision</span>.</h1>
+                    <p class="hero-sub">Bridging the gap between <strong>Performance Marketing Efficiency</strong> and
+                        <strong>Predictive Supply Chain</strong>. I architect the automated bidding and causal inference
+                        engines that fuel sustainable growth.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#work" class="btn btn-primary">Professional Portfolio</a>
+                        <a href="#innovation" class="btn btn-secondary">Personal Portfolio</a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-visual">
-                <div class="glass-card main-viz tech-velocity">
-                    <div class="viz-header">
-                        <span>2025-2026 ENGINEERING VELOCITY</span>
-                        <div class="status-indicator">ACTIVE</div>
-                    </div>
-                    <div class="viz-stats">
-                        <div class="stat">
-                            <span class="stat-label">REPOSITORIES</span>
-                            <span class="stat-value" id="total-repos">0</span>
+                <div class="hero-visual">
+                    <div class="glass-card main-viz tech-velocity">
+                        <div class="viz-header">
+                            <span>2025-2026 ENGINEERING VELOCITY</span>
+                            <div class="status-indicator">ACTIVE</div>
                         </div>
-                        <div class="stat">
-                            <span class="stat-label">CONTRIBUTIONS</span>
-                            <span class="stat-value" id="total-commits">0</span>
+                        <div class="viz-stats">
+                            <div class="stat">
+                                <span class="stat-label">REPOSITORIES</span>
+                                <span class="stat-value" id="total-repos">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">CONTRIBUTIONS</span>
+                                <span class="stat-value" id="total-commits">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">LANGUAGES</span>
+                                <span class="stat-value" id="total-languages">0</span>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <span class="stat-label">LANGUAGES</span>
-                            <span class="stat-value" id="total-languages">0</span>
-                        </div>
-                    </div>
-                    <div class="hero-calendar">
+                        <div class="hero-calendar">
                             <div class="calendar-grid-wrapper">
                                 <div class="calendar-days">
                                     <span>Sun</span>
@@ -120,14 +122,15 @@
                                 </div>
                             </div>
                         </div>
-                        
-                    <!-- Inline Tech Distribution -->
-                    <div class="inline-tech-distribution" id="full-tech-distribution">
-                        <!-- Generated by JS -->
+
+                        <!-- Inline Tech Distribution -->
+                        <div class="inline-tech-distribution" id="full-tech-distribution">
+                            <!-- Generated by JS -->
+                        </div>
                     </div>
+                    <!-- Rich tooltip for calendar hover -->
+                    <div id="calendar-tooltip" class="calendar-tooltip"></div>
                 </div>
-                <!-- Rich tooltip for calendar hover -->
-                <div id="calendar-tooltip" class="calendar-tooltip"></div>
             </div>
         </section>
 
@@ -267,21 +270,21 @@
                         <span>Multi-Agent</span>
                         <span>Internal GTM</span>
                     </div>
-                    <h3>Multi-Agent Coordination</h3>
-                    <p>Persona-level sub-agent coordination for complex internal GTM delivery. This portfolio page
-                        itself was a test-case for this architecture.</p>
+                    <h3>Systemic Multi-Agent Coordination</h3>
+                    <p>Beyond Chatbots: A dual-layer architecture separating tactical execution from strategic oversight to ensure production-grade AI reliability.</p>
                     <div class="project-highlights">
                         <ul>
-                            <li><strong>System 1/System 2</strong>: Synchronized agentic reasoning layers.</li>
-                            <li><strong>Sub-agent Coordination</strong>: Specialized personas for GTM delivery.</li>
-                            <li><strong>Real-time Adaptation</strong>: Dynamic task boundaries across agents.</li>
+                            <li><strong>System 1 (Tactical)</strong>: Persona-driven sub-agents executing high-velocity task loops (The "Inner Loop").</li>
+                            <li><strong>System 2 (Strategic)</strong>: Parent orchestrator enforcing quality gates and architectural safety (The "Outer Loop").</li>
+                            <li><strong>Synchronized Reasoning</strong>: Real-time verification ensuring autonomous execution never breaks project intent.</li>
                         </ul>
                     </div>
                     <div class="project-meta">
-                        <span>Agentic Orchestration</span>
+                        <span>Strategic Orchestration</span>
                         <span>GTM Efficiency</span>
                     </div>
                 </div>
+                
 
                 <!-- Project: Moltbot - AI AGENT -->
                 <div class="project-card glass-card personal featured" data-repo="moltbot">
@@ -473,7 +476,7 @@
     </footer>
 
     <div id="chart-tooltip" class="tooltip"></div>
-    <script src="app.js?v=2026"></script>
+    <script src="../app.js?v=2026"></script>
 </body>
 
 </html>
