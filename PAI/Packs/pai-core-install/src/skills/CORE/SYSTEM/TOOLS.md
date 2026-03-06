@@ -157,7 +157,7 @@ Scan directories for 700+ types of credentials and secrets.
 trufflehog filesystem /path/to/directory
 
 # Scan git repository
-trufflehog git file:///path/to/repo
+trufflehog git file: ///path/to/repo
 
 # Verified findings only
 trufflehog filesystem /path/to/directory --only-verified

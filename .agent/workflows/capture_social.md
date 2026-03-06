@@ -57,7 +57,7 @@ End-to-end: create an HTML animation, capture it as a platform-optimized video, 
 
 7. **Generate platform-optimized post copy using the specific User Persona.**
    // turbo
-   Read the persona guidelines from [.pai/personas/user_voice.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.pai/personas/user_voice.md).
+   Read the persona guidelines from [.pai/personas/user_voice.md](../../.pai/personas/user_voice.md).
    
    Write text that sounds like a pragmatic intellectual who is "in the trenches." Avoid literal repetition of historical catchphrases unless they fit naturally. Follow the **Dos and Don'ts** in the persona file to ensure the copy is organic and human.
 

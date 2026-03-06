@@ -15,12 +15,12 @@
 ## Proposed Changes
 
 ### Scripts
-#### [MODIFY] [agentic_chronicler.py](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/scripts/agentic_chronicler.py)
+#### [MODIFY] [agentic_chronicler.py](../../scripts/agentic_chronicler.py)
 - Updated Groq model list to include `qwen/qwen3-32b` (500k TPD) and `openai/gpt-oss-120b` (200k TPD).
 - Run with `--provider groq` using **Qwen 32B** for all tailored generations to bypass 70B rate limits.
 
 ### Portfolio Pages
-#### [MODIFY] [project-details.json](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/project-details.json)
+#### [MODIFY] [project-details.json](../../project-details.json)
 - Run `agentic_chronicler.py` with the `--force` flag once per tailored folder to produce a "static" tailored JSON.
 - This produces the final descriptions that `app.js` will serve for that specific JD context.
 - Include `portable-pai-core` in the summaries if relevant to the JD (especially for infrastructure/AI roles).

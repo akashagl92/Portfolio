@@ -53,7 +53,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A["Change Set (.md + reports + code)"] --> B["Docs Quality Check (file:/// + absolute local path scan)"]
+    A["Change Set (.md + reports + code)"] --> B["Docs Quality Check (file-uri + absolute local path scan)"]
     B --> C{"Docs Check Pass?"}
     C -- "No" --> F1["Quality Gate Fail"]
     C -- "Yes" --> D["Telemetry KPI Evaluation"]

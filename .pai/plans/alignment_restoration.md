@@ -12,7 +12,7 @@ Restore the visual integrity of the portfolio by eliminating horizontal overflow
 
 ### [Portfolio Architecture]
 
-#### [MODIFY] [style.css](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/style.css)
+#### [MODIFY] [style.css](../../style.css)
 - **Global Containment**:
   - Enforce `overflow-x: hidden` on `html` and `body`.
   - Ensure `* { box-sizing: border-box; }` is strictly applied.
@@ -27,7 +27,7 @@ Restore the visual integrity of the portfolio by eliminating horizontal overflow
   - **Grid Scaling**: Increase the minimum `clamp` for `--week-width` to `8px` to maintain legibility.
   - **Container**: Ensure `.calendar-grid-wrapper` is `width: 100%` with `overflow: hidden`.
 
-#### [MODIFY] [app.js](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/app.js)
+#### [MODIFY] [app.js](../../app.js)
 - Ensure horizontal month rendering logic aligns with the new flex-based CSS.
 
 ## Verification
