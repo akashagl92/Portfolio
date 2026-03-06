@@ -195,3 +195,8 @@
 {"ts":"2026-03-06T21:05:37Z","event":"native_artifact_bridge_session_changed","profile":"SHADOW","mode":"proposal_only","data":{"session_dir":"/Users/akashagrawal/.gemini/antigravity/brain/72764eb9-3463-43df-9853-a3de4dd62eed"}}
 {"ts":"2026-03-06T21:05:37Z","event":"native_artifact_bridge_session_changed","profile":"SHADOW","mode":"proposal_only","data":{"session_dir":"/Users/akashagrawal/.gemini/antigravity/brain/72764eb9-3463-43df-9853-a3de4dd62eed"}}
 {"ts":"2026-03-06T21:05:37Z","event":"native_artifact_bridge_session_changed","profile":"SHADOW","mode":"proposal_only","data":{"session_dir":"/Users/akashagrawal/.gemini/antigravity/brain/72764eb9-3463-43df-9853-a3de4dd62eed"}}
+{"ts":"2026-03-06T21:11:36Z","event":"telemetry_updated","profile":"SHADOW","mode":"proposal_only","data":{"stage":"post_deploy" , "spawn_success_rate_pct":"100.00" , "sigma_level":"6.0"}}
+{"ts":"2026-03-06T21:11:37Z","event":"telemetry_updated","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "spawn_success_rate_pct":"100.00" , "sigma_level":"6.0"}}
+{"ts":"2026-03-06T21:11:37Z","event":"quality_gate_failed","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "errors":"1" , "reason":"docs_quality_check_failed"}}
+{"ts":"2026-03-06T21:13:07Z","event":"telemetry_updated","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "spawn_success_rate_pct":"100.00" , "sigma_level":"6.0"}}
+{"ts":"2026-03-06T21:13:25Z","event":"quality_gate_failed","profile":"SHADOW","mode":"proposal_only","data":{"stage":"dev" , "errors":"1" , "reason":"docs_quality_check_failed"}}

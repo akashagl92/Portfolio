@@ -8,10 +8,11 @@ To build a "living" engineering portfolio that dynamically updates itself using 
 - **Architecture Resiliency (2026-03-02 fixes):** Resolved race conditions between active orchestration pushes and automated GitHub Action background syncs by decoupling CI triggers. Enabled offline LLM caching (via JSON injection) for dynamic README project summaries to mitigate rate limits and preserve architecture.
 - **Responsiveness (2026-02-25 fixes):** Resolved horizontal overflow and asymmetric padding on mobile viewports. Unified `min(350px, 100%)` grid sizing, `body` max-width fixes, and `clip-path` glow containment rolled out to all 19 portfolio pages (root, fetch, ambience, circle, scopely, stellantis, viant).
 - **Automation:** GitHub Actions for fetching stats (`update-stats.yml`) are fully functional with specific repository filtering logic.
+- **Infrastructure Sync (2026-03-06):** Unified the `innovation-grid` across all 30+ tailored portfolios using `scripts/sync_cards.js`. Fixed structural layout rot in `/torq/` (missing `.hero-wrapper` and `Chart.js` dependency) and corrected relative script paths.
 - **Research Cards:**
     - "V4.1 Alpha Steady" trading strategy: **80.8% XIRR** (**60.3% Alpha** over S&P 500).
     - "ide-agnostic-agent-orchestrator" (Portable PAI Core): Native artifact safety and cross-IDE telemetry.
-    - "Infinite Memory" card updated to 2026-02-25 hardened metrics.
+    - "Infinite Memory" card updated to 2026-03-06 hardened metrics.
 - **Features:**
     - "Stats Dashboard" (Live - accurate filtered contributions)
     - "Music Visualizer" (WIP)
