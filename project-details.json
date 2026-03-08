@@ -1,5 +1,385 @@
 [
   {
+    "name": "Portfolio",
+    "fullName": "akashagl92/Portfolio",
+    "description": "Build a portfolio using my github repo",
+    "url": "https://github.com/akashagl92/Portfolio",
+    "homepage": null,
+    "isPrivate": false,
+    "language": "HTML",
+    "languages": {
+      "HTML": 696414,
+      "JavaScript": 536925,
+      "TypeScript": 393032,
+      "CSS": 280881,
+      "Shell": 118494,
+      "Python": 66001,
+      "Handlebars": 5679,
+      "Vue": 3564
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-12-19T03:23:05Z",
+    "updatedAt": "2026-03-07T07:03:38Z",
+    "pushedAt": "2026-03-07T07:03:34Z",
+    "topics": [],
+    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **463 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nA dynamic portfolio platform integrating agentic AI, data science, and product leadership, featuring automated content generation via JSON data, GitHub Actions for CI/CD, and scalable architecture for industry-specific projects. Delivers research-grade analytics and AI-driven solutions with production-ready automation.\n\n_Tags: agentic AI, static site generation, GitHub Actions, JSON data management_\n\n---\n\n### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)\n**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)\n\nA research-grade AI agent platform with persistent memory across 10M+ interactions, using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC) for 100% recall fidelity. Built with Python, Docker, and macOS Metal acceleration for industrial-scale memory benchmarking.\n\n_Tags: AI/ML, Python, Docker_\n\n---\n\n### 📈 Autonomous Trading System (`stock_price_target_modelling`)\n**Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)\n\nA production-grade autonomous trading system combining AI-driven financial engineering with risk-adjusted portfolio optimization. The v4.1 Steady Winner strategy achieves 80.8% XIRR (60.3% Alpha over S&P 500) through dual-track asset allocation, Golden Cross momentum, and real-time Shadow Portfolio tracking. Features include tax-efficient execution, statistical verification, and tiered risk management for crypto-stocks hybrid portfolios.\n\n_Tags: autonomous-trading, financial-modeling, machine-learning_\n\n---\n\n### 🔮 AI Astrology Platform (`aistro.ai`)\n**Python** | [Repo](https://github.com/akashagl92/aistro.ai)\n\nA research-validated astrological analysis platform integrating Swiss Ephemeris precision with AI-driven interpretations. Combines Western, Vedic, and Horary systems via FastAPI/Next.js, featuring divisional charts, dasha calculations, and geopolitical entity analysis. Employs Jest for testing and Render for deployment, with AI-powered dosha/yoga diagnostics and predictive analytics.\n\n_Tags: FastAPI, Next.js, TypeScript, Jest_\n\n---\n\n### 🤖 IDE-Agnostic Agent Orchestrator (`ide-agnostic-agent-orchestrator`)\n**Shell** | [Repo](https://github.com/akashagl92/ide-agnostic-agent-orchestrator)\n\nAn IDE-agnostic orchestration framework that unifies AI agent workflows across development environments. It decouples core safety policies—like runtime locks, circuit breakers, and policy-first execution—from IDE-specific adapters, enabling consistent AI-assisted coding without tooling lock-in. Modular design ensures portable runtime guarantees across CLIs, editors, and projects via a single, enforceable quality and telemetry stack.\n\n_Tags: AI orchestration, runtime safety, modular architecture, policy enforcement_\n\n---\n\n### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)\n**JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)\n\nAn interactive web-based visualizer merging music theory and sound physics, enabling real-time exploration of harmonic ratios, wave interference, and acoustic principles through Web Audio API and HTML5 Canvas. Combines educational value with performance-optimized audio-visual synthesis for dynamic learning experiences.\n\n_Tags: Web Audio API, HTML5 Canvas, music theory_\n\n---\n\n### Agentic-memory-scaling (`agentic-memory-scaling`)\n**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)\n\nA high-fidelity framework for O(1) memory scaling in LLM agents, resolving the Discovery Cliff with Recursive Gated Consolidation (RGC) to maintain 100% recall at 10M+ conversation turns. Leverages TPU v4/v5 and SparseCore hardware for latency-optimized pathways, validated across Gemini 3.0, Claude 4.6, and real-world systems.\n\n_Tags: LLM memory scaling, Recursive Gated Consolidation, TPU optimization_\n\n---\n\n### Philosophy-sage (`philosophy-sage`)\n**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)\n\nA multi-scripture AI philosopher integrating semantic search, hybrid RAG, and adaptive layout learning to enable Q&A, allegorical analysis, and TTS-driven exploration of texts like the Mahabharata and Ashtavakra Gita. Combines Neo4j graph databases with Cytoscape.js visualizations for cross-cultural philosophical synthesis.\n\n_Tags: semantic_search, rag, neo4j, tts_\n\n---\n\n### Pi-home-assistant (`pi-home-assistant`)\n | [Repo](https://github.com/akashagl92/pi-home-assistant)\n\nA Raspberry Pi-powered home automation system that integrates IoT devices with custom logic and lightweight machine learning models, enabling real-time adaptive control of smart environments without proprietary platforms.\n\n_Tags: Raspberry Pi, IoT Automation, Machine Learning_\n\n---\n\n### Databricks-Genie-Integration (`Databricks-Genie-Integration`)\n**Python** | [Repo](https://github.com/akashagl92/Databricks-Genie-Integration)\n\nAn intelligent data integration platform combining Databricks workspaces with Genie's AI-driven natural language querying, enabling real-time business intelligence through multi-workspace orchestration and bulk data enrichment. Built with Python Flask, Databricks SQL, and Pandas, it empowers users to extract actionable insights via conversational queries or Excel/CSV uploads, bridging complex analytics with intuitive workflows.\n\n_Tags: Python, Databricks, Flask, AI Integration_\n\n---\n\n### Hindi-Tutor (`Hindi-Tutor`)\n**TypeScript** | [Repo](https://github.com/akashagl92/Hindi-Tutor)\n\nAn AI-powered Hindi tutor leveraging Gemini API for real-time, personalized language practice, built with React/TypeScript and PWA capabilities for offline access. Combines conversational learning with adaptive speech recognition to tailor Hindi skill development.\n\n_Tags: React, TypeScript, AI/ML, PWA_\n\n---\n\n### Voc-buyer-journey-chatbot (`voc-buyer-journey-chatbot`)\n**Python** | [Repo](https://github.com/akashagl92/voc-buyer-journey-chatbot)\n\nA production-ready chatbot leveraging LangChain and LangGraph for orchestration, integrating Databricks Vector Search and RAG for structured/unstructured data analysis. Delivers real-time Voice of Customer insights via a dual-brain architecture, optimized for enterprise scalability with Streamlit UI.\n\n_Tags: LangChain, LangGraph, Databricks Vector Search, RAG_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 463 |\n| Unique Repositories | 11 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 3/7/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## 📝 License\n\nMIT\n",
+    "files": [
+      {
+        "name": ".agent",
+        "type": "dir",
+        "path": ".agent"
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "path": ".env.example"
+      },
+      {
+        "name": ".github",
+        "type": "dir",
+        "path": ".github"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": ".nojekyll",
+        "type": "file",
+        "path": ".nojekyll"
+      },
+      {
+        "name": ".pai",
+        "type": "dir",
+        "path": ".pai"
+      },
+      {
+        "name": "Agrawal_Akash - Resume - Product Leader.docx",
+        "type": "file",
+        "path": "Agrawal_Akash - Resume - Product Leader.docx"
+      },
+      {
+        "name": "Agrawal_Akash - Resume.docx",
+        "type": "file",
+        "path": "Agrawal_Akash - Resume.docx"
+      },
+      {
+        "name": "CODEOWNERS",
+        "type": "file",
+        "path": "CODEOWNERS"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "PAI",
+        "type": "dir",
+        "path": "PAI"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "README.template.md",
+        "type": "file",
+        "path": "README.template.md"
+      },
+      {
+        "name": "SECURITY.md",
+        "type": "file",
+        "path": "SECURITY.md"
+      },
+      {
+        "name": "abnormal",
+        "type": "dir",
+        "path": "abnormal"
+      },
+      {
+        "name": "aifoundry",
+        "type": "dir",
+        "path": "aifoundry"
+      },
+      {
+        "name": "airbnb",
+        "type": "dir",
+        "path": "airbnb"
+      },
+      {
+        "name": "alivo",
+        "type": "dir",
+        "path": "alivo"
+      },
+      {
+        "name": "ambience",
+        "type": "dir",
+        "path": "ambience"
+      },
+      {
+        "name": "app.js",
+        "type": "file",
+        "path": "app.js"
+      },
+      {
+        "name": "archive",
+        "type": "dir",
+        "path": "archive"
+      },
+      {
+        "name": "ci.yml",
+        "type": "file",
+        "path": "ci.yml"
+      },
+      {
+        "name": "circle",
+        "type": "dir",
+        "path": "circle"
+      },
+      {
+        "name": "consensys",
+        "type": "dir",
+        "path": "consensys"
+      },
+      {
+        "name": "data.json",
+        "type": "file",
+        "path": "data.json"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "path": "docs"
+      },
+      {
+        "name": "ey",
+        "type": "dir",
+        "path": "ey"
+      },
+      {
+        "name": "fedex",
+        "type": "dir",
+        "path": "fedex"
+      },
+      {
+        "name": "fetch",
+        "type": "dir",
+        "path": "fetch"
+      },
+      {
+        "name": "growth",
+        "type": "dir",
+        "path": "growth"
+      },
+      {
+        "name": "happymoney",
+        "type": "dir",
+        "path": "happymoney"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "path": "index.html"
+      },
+      {
+        "name": "kraken",
+        "type": "dir",
+        "path": "kraken"
+      },
+      {
+        "name": "og-image.png",
+        "type": "file",
+        "path": "og-image.png"
+      },
+      {
+        "name": "old_style.css",
+        "type": "file",
+        "path": "old_style.css"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json"
+      },
+      {
+        "name": "portable-pai-core",
+        "type": "dir",
+        "path": "portable-pai-core"
+      },
+      {
+        "name": "project-details-ai.json",
+        "type": "file",
+        "path": "project-details-ai.json"
+      },
+      {
+        "name": "project-details.json",
+        "type": "file",
+        "path": "project-details.json"
+      },
+      {
+        "name": "quince",
+        "type": "dir",
+        "path": "quince"
+      },
+      {
+        "name": "reku",
+        "type": "dir",
+        "path": "reku"
+      },
+      {
+        "name": "root",
+        "type": "dir",
+        "path": "root"
+      },
+      {
+        "name": "scopely",
+        "type": "dir",
+        "path": "scopely"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "path": "scripts"
+      },
+      {
+        "name": "showcase",
+        "type": "dir",
+        "path": "showcase"
+      },
+      {
+        "name": "stellantis",
+        "type": "dir",
+        "path": "stellantis"
+      },
+      {
+        "name": "style.css",
+        "type": "file",
+        "path": "style.css"
+      },
+      {
+        "name": "style_backup_hero_preserved.css",
+        "type": "file",
+        "path": "style_backup_hero_preserved.css"
+      },
+      {
+        "name": "style_old.css",
+        "type": "file",
+        "path": "style_old.css"
+      },
+      {
+        "name": "style_reference.css",
+        "type": "file",
+        "path": "style_reference.css"
+      },
+      {
+        "name": "test_access.txt",
+        "type": "file",
+        "path": "test_access.txt"
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "path": "tests"
+      },
+      {
+        "name": "torq",
+        "type": "dir",
+        "path": "torq"
+      },
+      {
+        "name": "viant",
+        "type": "dir",
+        "path": "viant"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2026-03-07T07:03:33Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-06T21:32:24Z",
+        "message": "docs(pai): fix documentation quality violations and absolute paths",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T21:15:56Z",
+        "message": "docs(pai): final master consolidation and semantic sync",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T21:10:36Z",
+        "message": "feat(ui): sync innovation grid across portfolios and fix torq layout",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T07:54:46Z",
+        "message": "docs(pai): elevate CI propagation lesson to formal RCA",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T07:50:27Z",
+        "message": "fix: global stats refresh with robust dynamic propagation",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T07:35:55Z",
+        "message": "fix: force vendor ignored PAI directory and remove absolute symlink",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T07:33:05Z",
+        "message": "fix: remove broken absolute symlink that crashed CI",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T07:30:50Z",
+        "message": "fix: vendor portable-pai-core and resolve submodule checkout error",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T07:26:26Z",
+        "message": "docs: add AI Foundry to live sites",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T07:22:39Z",
+        "message": "feat: design overhaul + AI Foundry tailored portfolio (Phase 1 Sync)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T05:35:48Z",
+        "message": "docs: agentic portfolio tailoring, dynamic README update, and v4.1 trading metrics",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T07:11:39Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-05T07:14:14Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-04T07:10:20Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      }
+    ]
+  },
+  {
     "name": "moltbot",
     "fullName": "akashagl92/moltbot",
     "description": null,
@@ -503,386 +883,6 @@
         "date": "2026-02-25T06:21:30Z",
         "message": "research: add single-variable ablation study and comprehensive paper revision",
         "author": "Akash Agrawal"
-      }
-    ]
-  },
-  {
-    "name": "Portfolio",
-    "fullName": "akashagl92/Portfolio",
-    "description": "Build a portfolio using my github repo",
-    "url": "https://github.com/akashagl92/Portfolio",
-    "homepage": null,
-    "isPrivate": false,
-    "language": "HTML",
-    "languages": {
-      "HTML": 696414,
-      "JavaScript": 536925,
-      "TypeScript": 393032,
-      "CSS": 280881,
-      "Shell": 118494,
-      "Python": 66001,
-      "Handlebars": 5679,
-      "Vue": 3564
-    },
-    "stars": 0,
-    "forks": 0,
-    "createdAt": "2025-12-19T03:23:05Z",
-    "updatedAt": "2026-03-06T21:32:30Z",
-    "pushedAt": "2026-03-06T21:32:25Z",
-    "topics": [],
-    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **463 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nA dynamic portfolio platform integrating agentic AI, data science, and product leadership, featuring automated content generation via JSON data, GitHub Actions for CI/CD, and scalable architecture for industry-specific projects. Delivers research-grade analytics and AI-driven solutions with production-ready automation.\n\n_Tags: agentic AI, static site generation, GitHub Actions, JSON data management_\n\n---\n\n### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)\n**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)\n\nA research-grade AI agent platform with persistent memory across 10M+ interactions, using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC) for 100% recall fidelity. Built with Python, Docker, and macOS Metal acceleration for industrial-scale memory benchmarking.\n\n_Tags: AI/ML, Python, Docker_\n\n---\n\n### 📈 Autonomous Trading System (`stock_price_target_modelling`)\n**Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)\n\nA production-grade autonomous trading system combining AI-driven financial engineering with risk-adjusted portfolio optimization. The v4.1 Steady Winner strategy achieves 80.8% XIRR (60.3% Alpha over S&P 500) through dual-track asset allocation, Golden Cross momentum, and real-time Shadow Portfolio tracking. Features include tax-efficient execution, statistical verification, and tiered risk management for crypto-stocks hybrid portfolios.\n\n_Tags: autonomous-trading, financial-modeling, machine-learning_\n\n---\n\n### 🔮 AI Astrology Platform (`aistro.ai`)\n**Python** | [Repo](https://github.com/akashagl92/aistro.ai)\n\nA research-validated astrological analysis platform integrating Swiss Ephemeris precision with AI-driven interpretations. Combines Western, Vedic, and Horary systems via FastAPI/Next.js, featuring divisional charts, dasha calculations, and geopolitical entity analysis. Employs Jest for testing and Render for deployment, with AI-powered dosha/yoga diagnostics and predictive analytics.\n\n_Tags: FastAPI, Next.js, TypeScript, Jest_\n\n---\n\n### 🤖 IDE-Agnostic Agent Orchestrator (`ide-agnostic-agent-orchestrator`)\n**Shell** | [Repo](https://github.com/akashagl92/ide-agnostic-agent-orchestrator)\n\nAn IDE-agnostic orchestration framework that unifies AI agent workflows across development environments. It decouples core safety policies—like runtime locks, circuit breakers, and policy-first execution—from IDE-specific adapters, enabling consistent AI-assisted coding without tooling lock-in. Modular design ensures portable runtime guarantees across CLIs, editors, and projects via a single, enforceable quality and telemetry stack.\n\n_Tags: AI orchestration, runtime safety, modular architecture, policy enforcement_\n\n---\n\n### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)\n**JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)\n\nAn interactive web-based visualizer merging music theory and sound physics, enabling real-time exploration of harmonic ratios, wave interference, and acoustic principles through Web Audio API and HTML5 Canvas. Combines educational value with performance-optimized audio-visual synthesis for dynamic learning experiences.\n\n_Tags: Web Audio API, HTML5 Canvas, music theory_\n\n---\n\n### Agentic-memory-scaling (`agentic-memory-scaling`)\n**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)\n\nA high-fidelity framework for O(1) memory scaling in LLM agents, resolving the Discovery Cliff with Recursive Gated Consolidation (RGC) to maintain 100% recall at 10M+ conversation turns. Leverages TPU v4/v5 and SparseCore hardware for latency-optimized pathways, validated across Gemini 3.0, Claude 4.6, and real-world systems.\n\n_Tags: LLM memory scaling, Recursive Gated Consolidation, TPU optimization_\n\n---\n\n### Philosophy-sage (`philosophy-sage`)\n**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)\n\nA multi-scripture AI philosopher integrating semantic search, hybrid RAG, and adaptive layout learning to enable Q&A, allegorical analysis, and TTS-driven exploration of texts like the Mahabharata and Ashtavakra Gita. Combines Neo4j graph databases with Cytoscape.js visualizations for cross-cultural philosophical synthesis.\n\n_Tags: semantic_search, rag, neo4j, tts_\n\n---\n\n### Pi-home-assistant (`pi-home-assistant`)\n | [Repo](https://github.com/akashagl92/pi-home-assistant)\n\nA Raspberry Pi-powered home automation system that integrates IoT devices with custom logic and lightweight machine learning models, enabling real-time adaptive control of smart environments without proprietary platforms.\n\n_Tags: Raspberry Pi, IoT Automation, Machine Learning_\n\n---\n\n### Databricks-Genie-Integration (`Databricks-Genie-Integration`)\n**Python** | [Repo](https://github.com/akashagl92/Databricks-Genie-Integration)\n\nAn intelligent data integration platform combining Databricks workspaces with Genie's AI-driven natural language querying, enabling real-time business intelligence through multi-workspace orchestration and bulk data enrichment. Built with Python Flask, Databricks SQL, and Pandas, it empowers users to extract actionable insights via conversational queries or Excel/CSV uploads, bridging complex analytics with intuitive workflows.\n\n_Tags: Python, Databricks, Flask, AI Integration_\n\n---\n\n### Hindi-Tutor (`Hindi-Tutor`)\n**TypeScript** | [Repo](https://github.com/akashagl92/Hindi-Tutor)\n\nAn AI-powered Hindi tutor leveraging Gemini API for real-time, personalized language practice, built with React/TypeScript and PWA capabilities for offline access. Combines conversational learning with adaptive speech recognition to tailor Hindi skill development.\n\n_Tags: React, TypeScript, AI/ML, PWA_\n\n---\n\n### Voc-buyer-journey-chatbot (`voc-buyer-journey-chatbot`)\n**Python** | [Repo](https://github.com/akashagl92/voc-buyer-journey-chatbot)\n\nA production-ready chatbot leveraging LangChain and LangGraph for orchestration, integrating Databricks Vector Search and RAG for structured/unstructured data analysis. Delivers real-time Voice of Customer insights via a dual-brain architecture, optimized for enterprise scalability with Streamlit UI.\n\n_Tags: LangChain, LangGraph, Databricks Vector Search, RAG_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 463 |\n| Unique Repositories | 11 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 3/6/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## 📝 License\n\nMIT\n",
-    "files": [
-      {
-        "name": ".agent",
-        "type": "dir",
-        "path": ".agent"
-      },
-      {
-        "name": ".env.example",
-        "type": "file",
-        "path": ".env.example"
-      },
-      {
-        "name": ".github",
-        "type": "dir",
-        "path": ".github"
-      },
-      {
-        "name": ".gitignore",
-        "type": "file",
-        "path": ".gitignore"
-      },
-      {
-        "name": ".nojekyll",
-        "type": "file",
-        "path": ".nojekyll"
-      },
-      {
-        "name": ".pai",
-        "type": "dir",
-        "path": ".pai"
-      },
-      {
-        "name": "Agrawal_Akash - Resume - Product Leader.docx",
-        "type": "file",
-        "path": "Agrawal_Akash - Resume - Product Leader.docx"
-      },
-      {
-        "name": "Agrawal_Akash - Resume.docx",
-        "type": "file",
-        "path": "Agrawal_Akash - Resume.docx"
-      },
-      {
-        "name": "CODEOWNERS",
-        "type": "file",
-        "path": "CODEOWNERS"
-      },
-      {
-        "name": "CONTRIBUTING.md",
-        "type": "file",
-        "path": "CONTRIBUTING.md"
-      },
-      {
-        "name": "PAI",
-        "type": "dir",
-        "path": "PAI"
-      },
-      {
-        "name": "README.md",
-        "type": "file",
-        "path": "README.md"
-      },
-      {
-        "name": "README.template.md",
-        "type": "file",
-        "path": "README.template.md"
-      },
-      {
-        "name": "SECURITY.md",
-        "type": "file",
-        "path": "SECURITY.md"
-      },
-      {
-        "name": "abnormal",
-        "type": "dir",
-        "path": "abnormal"
-      },
-      {
-        "name": "aifoundry",
-        "type": "dir",
-        "path": "aifoundry"
-      },
-      {
-        "name": "airbnb",
-        "type": "dir",
-        "path": "airbnb"
-      },
-      {
-        "name": "alivo",
-        "type": "dir",
-        "path": "alivo"
-      },
-      {
-        "name": "ambience",
-        "type": "dir",
-        "path": "ambience"
-      },
-      {
-        "name": "app.js",
-        "type": "file",
-        "path": "app.js"
-      },
-      {
-        "name": "archive",
-        "type": "dir",
-        "path": "archive"
-      },
-      {
-        "name": "ci.yml",
-        "type": "file",
-        "path": "ci.yml"
-      },
-      {
-        "name": "circle",
-        "type": "dir",
-        "path": "circle"
-      },
-      {
-        "name": "consensys",
-        "type": "dir",
-        "path": "consensys"
-      },
-      {
-        "name": "data.json",
-        "type": "file",
-        "path": "data.json"
-      },
-      {
-        "name": "docs",
-        "type": "dir",
-        "path": "docs"
-      },
-      {
-        "name": "ey",
-        "type": "dir",
-        "path": "ey"
-      },
-      {
-        "name": "fedex",
-        "type": "dir",
-        "path": "fedex"
-      },
-      {
-        "name": "fetch",
-        "type": "dir",
-        "path": "fetch"
-      },
-      {
-        "name": "growth",
-        "type": "dir",
-        "path": "growth"
-      },
-      {
-        "name": "happymoney",
-        "type": "dir",
-        "path": "happymoney"
-      },
-      {
-        "name": "index.html",
-        "type": "file",
-        "path": "index.html"
-      },
-      {
-        "name": "kraken",
-        "type": "dir",
-        "path": "kraken"
-      },
-      {
-        "name": "og-image.png",
-        "type": "file",
-        "path": "og-image.png"
-      },
-      {
-        "name": "old_style.css",
-        "type": "file",
-        "path": "old_style.css"
-      },
-      {
-        "name": "package-lock.json",
-        "type": "file",
-        "path": "package-lock.json"
-      },
-      {
-        "name": "package.json",
-        "type": "file",
-        "path": "package.json"
-      },
-      {
-        "name": "portable-pai-core",
-        "type": "dir",
-        "path": "portable-pai-core"
-      },
-      {
-        "name": "project-details-ai.json",
-        "type": "file",
-        "path": "project-details-ai.json"
-      },
-      {
-        "name": "project-details.json",
-        "type": "file",
-        "path": "project-details.json"
-      },
-      {
-        "name": "quince",
-        "type": "dir",
-        "path": "quince"
-      },
-      {
-        "name": "reku",
-        "type": "dir",
-        "path": "reku"
-      },
-      {
-        "name": "root",
-        "type": "dir",
-        "path": "root"
-      },
-      {
-        "name": "scopely",
-        "type": "dir",
-        "path": "scopely"
-      },
-      {
-        "name": "scripts",
-        "type": "dir",
-        "path": "scripts"
-      },
-      {
-        "name": "showcase",
-        "type": "dir",
-        "path": "showcase"
-      },
-      {
-        "name": "stellantis",
-        "type": "dir",
-        "path": "stellantis"
-      },
-      {
-        "name": "style.css",
-        "type": "file",
-        "path": "style.css"
-      },
-      {
-        "name": "style_backup_hero_preserved.css",
-        "type": "file",
-        "path": "style_backup_hero_preserved.css"
-      },
-      {
-        "name": "style_old.css",
-        "type": "file",
-        "path": "style_old.css"
-      },
-      {
-        "name": "style_reference.css",
-        "type": "file",
-        "path": "style_reference.css"
-      },
-      {
-        "name": "test_access.txt",
-        "type": "file",
-        "path": "test_access.txt"
-      },
-      {
-        "name": "tests",
-        "type": "dir",
-        "path": "tests"
-      },
-      {
-        "name": "torq",
-        "type": "dir",
-        "path": "torq"
-      },
-      {
-        "name": "viant",
-        "type": "dir",
-        "path": "viant"
-      }
-    ],
-    "recentCommits": [
-      {
-        "date": "2026-03-06T21:32:24Z",
-        "message": "docs(pai): fix documentation quality violations and absolute paths",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T21:15:56Z",
-        "message": "docs(pai): final master consolidation and semantic sync",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T21:10:36Z",
-        "message": "feat(ui): sync innovation grid across portfolios and fix torq layout",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T07:54:46Z",
-        "message": "docs(pai): elevate CI propagation lesson to formal RCA",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T07:50:27Z",
-        "message": "fix: global stats refresh with robust dynamic propagation",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T07:35:55Z",
-        "message": "fix: force vendor ignored PAI directory and remove absolute symlink",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T07:33:05Z",
-        "message": "fix: remove broken absolute symlink that crashed CI",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T07:30:50Z",
-        "message": "fix: vendor portable-pai-core and resolve submodule checkout error",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T07:26:26Z",
-        "message": "docs: add AI Foundry to live sites",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T07:22:39Z",
-        "message": "feat: design overhaul + AI Foundry tailored portfolio (Phase 1 Sync)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T05:35:48Z",
-        "message": "docs: agentic portfolio tailoring, dynamic README update, and v4.1 trading metrics",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T07:11:39Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-05T07:14:14Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-04T07:10:20Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-03T07:14:22Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
       }
     ]
   },
