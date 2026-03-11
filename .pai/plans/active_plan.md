@@ -110,5 +110,6 @@ Check out the carousel below to see the **Hard Evidence** of governed AI develop
 - [x] Agentic Data Enrichment: Swapped raw metadata for `project-details-ai.json` in the `/cresta/` folder to enable enriched AI summaries.
 - [x] Universal Consistency: Fixed `airbnb/` and `fetch/` hero structures; verified all others use `hero-wrapper`.
 - [x] Data Consistency: Ported the root `app.js` 58-week sliding window calendar algorithm to all 18+ tailored pages to ensure identical grid scaling and July 27 start dates.
+- [x] Fix Missing Components: Added CDN link for `Chart.js` to `/fetch/index.html` and `/airbnb/index.html` to fix the unrendered pie chart. Restored the 'IDE-Agnostic Agent Orchestrator' card in `/fetch` and synced the 'Autonomous Trading System' (V4.1) correctly.
 - [x] SHADOW Mode Compliance: Confirmed profile status via `pai_runtime_guard.sh`. Transitioned all task tracking to `.pai/` hierarchy.
 - [x] Final QA: Verified alignment across all 18+ subdirectories on large displays (1920px).

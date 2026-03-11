@@ -220,14 +220,22 @@ function updateCharts(data) {
     if (totalCommitsEl) totalCommitsEl.textContent = data.totalCommits.toLocaleString();
 
     const totalLangsEl = document.getElementById('total-languages');
-    const langData = data.allLanguages || data.languages || {};
-    if (totalLangsEl && Object.keys(langData).length > 0) {
-        totalLangsEl.textContent = Object.keys(langData).length;
-    }
-
     const totalReposEl = document.getElementById('total-repos');
     if (totalReposEl && data.uniqueReposTotal !== undefined) {
         totalReposEl.textContent = data.uniqueReposTotal;
+    }
+
+    // Filter metadata and unwanted files from activeLanguages
+    const strictlyMetadata = ['Dockerfile', 'Procfile'];
+
+    // Count active languages excluding metadata (activeLanguages is an object)
+    const languagesObj = data.activeLanguages || data.languages;
+    const activeLanguagesCount = languagesObj ?
+        Object.keys(languagesObj).filter(l => !strictlyMetadata.includes(l)).length : 0;
+
+    if (totalLangsEl) {
+        // Fallback to data.totalLanguagesCount if our filtered count is 0
+        totalLangsEl.textContent = activeLanguagesCount || data.totalLanguagesCount || 0;
     }
 
     // Dynamic color generator for any language (hash-based for consistency)
@@ -261,28 +269,97 @@ function updateCharts(data) {
     const getLanguageColor = (lang) => langColors[lang] || generateColor(lang);
     const defaultColors = ['#a78bfa', '#3b82f6', '#fbbf24', '#f97316', '#06b6d4', '#10b981', '#ec4899', '#8b5cf6'];
 
-    // Full Tech Distribution (Inline in Hero) - support both 'languages' and 'allLanguages' keys
-    const languageData = data.allLanguages || data.languages || {};
+    const languageData = data.activeLanguages || data.allLanguages || data.languages || {};
     const fullDistChart = document.getElementById('full-tech-distribution');
+
     if (fullDistChart && Object.keys(languageData).length > 0) {
         fullDistChart.innerHTML = '';
+
+        // Setup container for Chart.js
+        fullDistChart.style.position = 'relative';
+        fullDistChart.style.height = '240px'; // Increased height for bottom legend
+        fullDistChart.style.width = '100%';
+        fullDistChart.style.maxWidth = '100%'; /* Strict constraint */
+        fullDistChart.style.overflow = 'hidden'; /* Prevent canvas blowout */
+        fullDistChart.style.boxSizing = 'border-box';
+        fullDistChart.style.display = 'flex';
+        fullDistChart.style.alignItems = 'center';
+        fullDistChart.style.justifyContent = 'center';
+
+        // Filter and sort
         const sortedLangs = Object.entries(languageData)
+            .filter(([lang]) => !strictlyMetadata.includes(lang))
             .sort((a, b) => b[1] - a[1]);
 
-        // Calculate total contributions for percentage
-        const totalContributions = sortedLangs.reduce((sum, [, count]) => sum + count, 0);
+        const labels = sortedLangs.map(([lang]) => lang);
+        const values = sortedLangs.map(([, count]) => count);
+        const colors = labels.map(lang => getLanguageColor(lang));
 
-        sortedLangs.forEach(([lang, count], i) => {
-            const item = document.createElement('div');
-            item.className = 'dist-item';
-            const color = getLanguageColor(lang);
-            const percentage = ((count / totalContributions) * 100).toFixed(1);
-            item.innerHTML = `
-                <span class="lang-dot" style="background: ${color}"></span>
-                <span class="lang-name">${lang}</span>
-                <span class="lang-count">${percentage}%</span>
-            `;
-            fullDistChart.appendChild(item);
+        // Create Canvas for Chart
+        const canvasContainer = document.createElement('div');
+        canvasContainer.style.height = '100%';
+        canvasContainer.style.width = '100%';
+        canvasContainer.style.position = 'relative';
+        canvasContainer.style.minWidth = '0'; // CRITICAL: Allows flex item to shrink below content size
+
+        const canvas = document.createElement('canvas');
+        canvasContainer.appendChild(canvas);
+        fullDistChart.appendChild(canvasContainer);
+
+        new Chart(canvas, {
+            type: 'doughnut',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: values,
+                    backgroundColor: colors,
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '60%',
+                plugins: {
+                    legend: {
+                        position: 'bottom', // Horizontal bottom legend
+                        labels: {
+                            color: '#e2e8f0',
+                            font: {
+                                family: "'Inter', sans-serif",
+                                size: 11
+                            },
+                            boxWidth: 8,
+                            padding: 15,
+                            usePointStyle: true,
+                            pointStyle: 'circle'
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const val = context.raw;
+                                const pct = ((val / total) * 100).toFixed(1) + '%';
+                                return ` ${context.label}: ${pct}`;
+                            }
+                        },
+                        backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                        titleColor: '#f8fafc',
+                        bodyColor: '#e2e8f0',
+                        padding: 10,
+                        cornerRadius: 8,
+                        displayColors: true
+                    }
+                },
+                layout: {
+                    padding: {
+                        top: 10,
+                        bottom: 0
+                    }
+                }
+            }
         });
     }
 
