@@ -29,5 +29,6 @@
 - [x] Sync Enriched Agentic Data (project-details-ai.json) to /cresta/
 - [x] Standardize Global Portfolio Layouts (fix missing hero-wrapper & padding)
 - [x] Synchronize Calendar API Logic: Ported 58-week 'Grow-then-Slide' calendar anchoring (July 27) from root `app.js` to all 18+ subdirectories.
+- [x] Fix Missing Components in `fetch` and `airbnb`: Added missing `Chart.js` dependency to header and restored missing 'IDE-Agnostic Agent Orchestrator' project card in the personal portfolio. Also updated 'Autonomous Trading System' to V4.1.
 - [x] PAI Runtime Guard Check: Confirmed PROFILE=SHADOW, LOCKED=1. Native artifacts bypassed.
 - [x] Final Browser Verification (Universal Layout)
