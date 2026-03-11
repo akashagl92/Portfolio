@@ -1,24 +1,33 @@
-# Session Todo Items
+- [x] Research `portable-pai-core` architecture
+- [x] Design Infographic Carousel (10 slides)
+- [x] Refine for Leadership (Business Value & Governance)
+- [x] Extract Hard Evidence (logs/telemetry)
+- [x] Create HTML Slide Engine (.pai/promos/linkedin/v2/carousel.html)
+- [x] Browser Capture & High-Res Verification
+- [x] Integrate "Cool Features" (LLM Council, RGC Discovery Cliff)
+- [x] Correct RGC Chart (100% vs 17% recall)
+- [x] Update AI Portfolio Targets (AI Foundry, Abnormal AI)
+- [x] PAI Sync & Hygiene Ritual (SHADOW)
+- [ ] Final Presentation PDF Export
 
-- [x] Research new findings (V4.1 alpha, XIRR) and job contexts <!-- id: 0 -->
-- [x] Initialize .pai orchestration artifacts (SHADOW mode) <!-- id: 1 -->
-- [x] Update `scripts/agentic_chronicler.py` with V4.1 performance metrics, TPM safety, and 413 hardening <!-- id: 2 -->
-- [x] Update root `project-details.json` with latest repo data <!-- id: 8 -->
-- [x] Synthesize Golden Root (`project-details-ai.json`) for main portfolio & README <!-- id: 9 -->
-- [x] Run `agentic_chronicler.py` for each tailored portfolio (BATCH FAST-TAILOR) <!-- id: 3 -->
-  - [x] Airbnb <!-- id: 3a -->
-  - [x] FedEx <!-- id: 3b -->
-  - [x] EY <!-- id: 3c -->
-  - [x] Batch Fast-Tailor (Quince, Torq, etc.) <!-- id: 3d -->
-- [x] Add `--tailor-only` mode to chronicler for rapid Adaptation <!-- id: 10 -->
-- [x] Update root `README.md` using `scripts/update-readme.js` <!-- id: 11 -->
-- [x] Create "AI Foundry" Portfolio Page (ATS Optimized) <!-- id: 12 -->
-- [x] Integrate Phase 1 structural updates (14 sub-pages + Hero overhaul) <!-- id: 13 -->
-- [x] Resolve README conflicts and add AI Foundry live link <!-- id: 14 -->
-- [x] Perform Phase 1 Sync (git push) <!-- id: 15 -->
-- [x] Handle GitHub Actions failure (Submodule/Vendoring fix) <!-- id: 16 -->
-- [x] Execute Innovation Grid Synchronization across 30+ portfolios <!-- id: 17 -->
-- [x] Fix Torq layout rot and Chart.js dependency issues <!-- id: 18 -->
-- [x] Finalize walkthrough in `.pai/walkthrough-final.md` <!-- id: 6 -->
-- [x] Execute PAI Sync Ritual v3.3 (Master Consolidation) <!-- id: 19 -->
-- [x] Perform RGC Semantic Health Check & Synthesizer <!-- id: 20 -->
+## Cresta Portfolio (2026-03-11)
+- [x] Gather Job Context (documented in .pai/job_contexts/cresta.md)
+- [x] Apply Global Padding Fix (5% standard)
+- [x] Create /cresta/ directory and baseline files
+- [x] Customize cresta/index.html (Hero, Badge, Headline)
+- [x] Reframe Professional Projects for AI Agent Focus
+- [x] Verify Agentic Summaries & Layout
+- [x] Start Dev Server for User Verification (port 8080)
+- [x] Fix Hero Layout Jump (Overflow & Padding Unification)
+- [x] Correct Project Content Misrepresentation (Genie Integration)
+- [x] Sync data.json & project-details.json to /cresta/
+- [x] Standardize Header/Hero Alignment (v3 fix)
+- [x] Enable Agentic Summaries in app.js
+- [x] Unify Ultra-Wide Section Alignment (1400px max-width)
+- [x] Revert "Squeeze": Restored expansive layout by removing 1400px constraints & unifying 5% padding.
+- [x] Finalize Global 5% Gutter Alignment
+- [x] Sync Enriched Agentic Data (project-details-ai.json) to /cresta/
+- [x] Standardize Global Portfolio Layouts (fix missing hero-wrapper & padding)
+- [x] Synchronize Calendar API Logic: Ported 58-week 'Grow-then-Slide' calendar anchoring (July 27) from root `app.js` to all 18+ subdirectories.
+- [x] PAI Runtime Guard Check: Confirmed PROFILE=SHADOW, LOCKED=1. Native artifacts bypassed.
+- [x] Final Browser Verification (Universal Layout)

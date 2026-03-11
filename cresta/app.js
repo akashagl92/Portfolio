@@ -3,18 +3,18 @@ const GithubService = {
     username: 'akashagl92',
     async fetchAllData() {
         // Check session cache first
-        const cached = sessionStorage.getItem('github_data_v16');
+        const cached = sessionStorage.getItem('github_data_v17');
         if (cached) return JSON.parse(cached);
 
         try {
             // Try to load pre-generated data from build-time script
-            const response = await fetch('../data.json?v=16');
+            const response = await fetch('./data.json?v=17');
             if (response.ok) {
                 const data = await response.json();
                 // Check if data.json has real content (not just placeholder)
                 if (data.totalCommits > 0) {
                     console.log('Using pre-generated data from data.json');
-                    sessionStorage.setItem('github_data_v16', JSON.stringify(data));
+                    sessionStorage.setItem('github_data_v17', JSON.stringify(data));
                     return data;
                 }
             }
@@ -157,10 +157,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const githubData = await GithubService.fetchAllData();
     if (githubData) {
         updateCharts(githubData);
+        // Load agentic summaries after charts/data
+        await loadAgenticSummaries();
     }
-
-    // Load Agentic Summaries
-    loadAgenticSummaries();
 
     // Existing interactivity
     document.querySelectorAll('.glass-card[data-link]').forEach(card => {
@@ -177,7 +176,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadAgenticSummaries() {
     try {
-        const response = await fetch('../project-details-ai.json?v=' + new Date().getTime());
+        const response = await fetch('./project-details.json?v=' + new Date().getTime());
         if (!response.ok) return;
         const projects = await response.json();
 

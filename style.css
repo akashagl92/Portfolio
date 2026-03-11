@@ -74,21 +74,19 @@ body {
 
 /* Layout */
 header {
-    padding: 2rem 5%;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
+    padding: 1.5rem 5% !important;
     backdrop-filter: blur(10px);
-    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
     width: 100%;
 }
 
@@ -134,8 +132,11 @@ nav a:hover {
     min-height: 65vh;
     padding-top: 10rem;
     padding-bottom: 0;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
     overflow: hidden;
-    /* Strict containment to prevent scrollbars */
+    transition: none !important;
+    /* Remove transition to prevent jump */
 }
 
 .hero-wrapper {
@@ -667,7 +668,7 @@ h1 {
 
 /* Projects Section */
 section {
-    padding: 6rem 8%;
+    padding: 6rem 5%;
     overflow: hidden;
 }
 
@@ -1084,12 +1085,16 @@ footer {
     #hero {
         padding-top: 8rem;
         padding-bottom: 0;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
     }
 
     .hero-wrapper {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
+        width: 100%;
+        max-width: 100%;
     }
 
     .hero-content,
@@ -1173,7 +1178,7 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        padding: 1rem 3%;
+        padding: 1rem 5%;
     }
 
     nav ul {
@@ -1371,6 +1376,11 @@ footer {
     @media (max-width: 500px) {
         .hero-calendar {
             margin-top: 1rem;
+            overflow-x: auto;
+            max-width: 100%;
+            padding-bottom: 0.5rem;
+            /* Space for scrollbar */
+            -webkit-overflow-scrolling: touch;
         }
 
         .hero-calendar .calendar-grid,
@@ -1445,6 +1455,8 @@ footer {
 
     #hero {
         padding-top: 6rem;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
     }
 
     .hero-sub {
@@ -1466,12 +1478,16 @@ footer {
         min-width: 0;
         text-align: center;
         flex: none;
+        margin: 0;
+        /* Reset any margins */
     }
 
     /* Calendar - ensure it scrolls horizontally */
     .main-viz {
         padding: 0.75rem;
         max-width: 100%;
+        overflow: hidden !important;
+        /* Force containment on small screens */
     }
 
     /* Removed forced scroll/width to allow fluid scaling */

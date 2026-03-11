@@ -395,49 +395,70 @@ function updateCharts(data) {
     // Hero Calendar
     const heroCalendarGrid = document.getElementById('hero-calendar-grid');
     const heroCalendarMonths = document.getElementById('hero-calendar-months');
+    const heroCalendarYears = document.getElementById('hero-calendar-years');
     const tooltip = document.getElementById('calendar-tooltip');
 
     if (heroCalendarGrid) {
         heroCalendarGrid.innerHTML = '';
+        if (heroCalendarMonths) heroCalendarMonths.innerHTML = '';
+        if (heroCalendarYears) heroCalendarYears.innerHTML = '';
 
-        // Dynamic header update logic
+        // Date window calculation first
+        const today = new Date();
+        const endDate = new Date(today);
+        // End at the current Saturday to ensure a full week column
+        endDate.setDate(endDate.getDate() + (6 - endDate.getDay()));
+
+        // Implementation of 'Grow-then-Slide':
+        // Anchor to July 27, 2025 (Sunday). Use (year, month, day) to avoid UTC timezone shift.
+        const anchorDate = new Date(2025, 6, 27); // month is 0-indexed: 6 = July
+
+        // Geometry standard: 10px cell + 2px gap = 12px per week column
+        const maxWeeks = 58; // 58 weeks is roughly 13.5 to 14 months. Fits perfectly in 800px card.
+        let preferredStart = new Date(endDate);
+        preferredStart.setDate(preferredStart.getDate() - (maxWeeks * 7) + 1);
+        preferredStart.setDate(preferredStart.getDate() - preferredStart.getDay());
+
+        // Use the later of the anchor or the sliding window start
+        const startDate = preferredStart > anchorDate ? preferredStart : anchorDate;
+
+        // Dynamic header update logic based on the calculated sliding window
         const headerSpan = document.querySelector('.viz-header span');
         if (headerSpan) {
-            const currentYear = new Date().getFullYear();
-            if (currentYear > 2025) {
-                headerSpan.textContent = `2025-${currentYear} ENGINEERING VELOCITY`;
+            const startYear = startDate.getFullYear();
+            const endYear = endDate.getFullYear();
+            if (startYear === endYear) {
+                headerSpan.textContent = `${startYear} ENGINEERING VELOCITY`;
+            } else {
+                headerSpan.textContent = `${startYear}-${endYear} ENGINEERING VELOCITY`;
             }
         }
 
-        const startDate = new Date('2025-01-01');
-        const today = new Date();
+
+
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-        // Start from the first day of 2025 (no padding for Dec 2024)
         let currentDate = new Date(startDate);
-
-        // Find the first Sunday on or before Jan 1
-        const firstDayOfWeek = currentDate.getDay(); // Wed = 3
         let weekIndex = 0;
+        let lastTrackedMonth = -1;
+        let lastTrackedYear = -1;
+        const monthTransitions = []; // Track transitions for second-pass labeling
 
-        let currentMonth = 0; // Start with January (0)
-        const monthPositions = [{ month: 'Jan', position: 0 }]; // Jan starts at position 0
+        const totalWeeks = Math.ceil((endDate - startDate) / (7 * 24 * 60 * 60 * 1000)) + 1;
+        heroCalendarGrid.style.setProperty('--total-weeks', totalWeeks);
 
-        // Check if the START of the current week is <= today
-        while (new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - firstDayOfWeek) <= today) {
+        while (currentDate <= endDate) {
             const week = document.createElement('div');
             week.className = 'calendar-week';
 
             for (let i = 0; i < 7; i++) {
+                const dayDate = new Date(currentDate);
+                dayDate.setDate(dayDate.getDate() + i);
+
                 const day = document.createElement('div');
                 day.className = 'calendar-day';
 
-                // For the first week, hide days before Jan 1
-                const effectiveDate = new Date(startDate);
-                effectiveDate.setDate(effectiveDate.getDate() + (weekIndex * 7) + i - firstDayOfWeek);
-
-                if (effectiveDate >= startDate && effectiveDate <= today) {
-                    const dateStr = effectiveDate.toDateString();
+                if (dayDate >= startDate && dayDate <= today) {
+                    const dateStr = dayDate.toDateString();
                     const dayData = activityMap[dateStr] || { count: 0, repos: {}, languages: {} };
 
                     let level = 0;
@@ -446,203 +467,128 @@ function updateCharts(data) {
                     if (dayData.count >= 5) level = 3;
                     if (dayData.count >= 8) level = 4;
 
-                    // Determine dominant language and apply its color
                     const langEntries = Object.entries(dayData.languages);
                     if (langEntries.length > 0 && level > 0) {
                         const dominantLang = langEntries.sort((a, b) => b[1] - a[1])[0][0];
                         const baseColor = langColors[dominantLang] || '#a78bfa';
-                        const opacity = [0.1, 0.5, 0.7, 0.85, 1][level];
                         day.style.background = baseColor;
-                        day.style.opacity = opacity;
+                        day.style.opacity = [0.1, 0.5, 0.7, 0.85, 1][level];
                     } else {
                         day.classList.add(`lvl-${level}`);
                     }
                     day.dataset.date = dateStr;
                     day.dataset.info = JSON.stringify(dayData);
 
-                    // Track month positions just in case logic is needed here
-                    const month = effectiveDate.getMonth();
-                    if (month > currentMonth) {
-                        currentMonth = month;
-                        monthPositions.push({ month: months[month], position: weekIndex });
-                    }
-
-                    // Rich tooltip on hover (only if tooltip element exists)
                     if (tooltip) {
                         day.addEventListener('mouseenter', (e) => {
                             const info = JSON.parse(e.target.dataset.info);
                             const date = e.target.dataset.date;
+                            const langs = Object.entries(info.languages).sort((a, b) => b[1] - a[1]);
+                            const total = Object.values(info.languages).reduce((a, b) => a + b, 0);
 
-                            if (info.count === 0) {
-                                tooltip.innerHTML = `
-                                    <div class="tooltip-header">${date}</div>
-                                    <div style="color: var(--text-muted)">No contributions</div>
-                                `;
-                            } else {
-                                const repoList = Object.entries(info.repos)
-                                    .sort((a, b) => b[1] - a[1])
-                                    .slice(0, 3)
-                                    .map(([repo, ct]) => `<div class="tooltip-project"><span>${repo}</span><span>${ct}</span></div>`)
-                                    .join('');
-
-                                const langEntries = Object.entries(info.languages).sort((a, b) => b[1] - a[1]);
-                                const totalLangCommits = langEntries.reduce((s, l) => s + l[1], 0);
-                                const techBar = langEntries.map(([lang, ct], idx) => {
-                                    const pct = (ct / totalLangCommits) * 100;
-                                    const color = langColors[lang] || defaultColors[idx % defaultColors.length];
-                                    return `<div class="tooltip-tech-segment" style="width: ${pct}%; background: ${color}"></div>`;
-                                }).join('');
-
-                                const techLegend = langEntries.slice(0, 3).map(([lang, ct], idx) => {
-                                    const color = langColors[lang] || defaultColors[idx % defaultColors.length];
-                                    return `<span style="color: ${color}">● ${lang}</span>`;
-                                }).join(' ');
-
-                                tooltip.innerHTML = `
-                                    <div class="tooltip-header">${date}</div>
-                                    <div><span class="tooltip-count">${info.count}</span> contribution${info.count !== 1 ? 's' : ''}</div>
-                                    <div class="tooltip-projects">${repoList}</div>
-                                    <div class="tooltip-tech">
-                                        <div class="tooltip-tech-bar">${techBar}</div>
-                                        <div class="tooltip-tech-legend">${techLegend}</div>
-                                    </div>
-                                `;
-                            }
-
-                            // Smart Positioning Logic
-                            const rect = e.target.getBoundingClientRect(); // Capture rect immediately
-
-                            // Use setTimeout to ensure measurement happens after rendering
-                            requestAnimationFrame(() => {
-                                const ttRect = tooltip.getBoundingClientRect();
-                                const vw = document.documentElement.clientWidth;
-                                const vh = document.documentElement.clientHeight;
-                                const padding = 10; // Safety margin
-
-                                // Default: Right side, aligned top
-                                let left = rect.right + padding;
-                                let top = rect.top;
-
-                                // 1. Horizontal Check
-                                // If overflowing right, flip to left
-                                if (left + ttRect.width > vw - padding) {
-                                    left = rect.left - ttRect.width - padding;
-                                }
-
-                                // 2. Mobile / Narrow Screen Check (if flipping left also fails)
-                                if (left < padding) {
-                                    // Center horizontally
-                                    left = (vw - ttRect.width) / 2;
-                                    // Position above or below
-                                    top = rect.top - ttRect.height - padding;
-                                    if (top < padding) {
-                                        top = rect.bottom + padding;
-                                    }
-                                }
-
-                                // 3. Vertical Check (Prevent bottom overflow)
-                                if (top + ttRect.height > vh - padding) {
-                                    // Shift up
-                                    top = vh - ttRect.height - padding;
-                                }
-                                // Prevent top overflow
-                                if (top < padding) top = padding;
-
-                                // Apply final positions
-                                tooltip.style.left = `${left}px`;
-                                tooltip.style.top = `${top}px`;
-                            });
-
+                            tooltip.innerHTML = `
+                                <div class="tooltip-header">${date}</div>
+                                <div><span class="tooltip-count">${info.count}</span> contribution${info.count !== 1 ? 's' : ''}</div>
+                                <div class="tooltip-projects">${Object.entries(info.repos).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([r, c]) => `<div class="tooltip-project"><span>${r}</span><span>${c}</span></div>`).join('')}</div>
+                                <div class="tooltip-tech">
+                                    <div class="tooltip-tech-bar">${langs.map(([l, c], idx) => {
+                                const pct = (c / total) * 100;
+                                return `<div class="tooltip-tech-segment" style="width: ${pct}%; background: ${langColors[l] || defaultColors[idx % defaultColors.length]}"></div>`;
+                            }).join('')}</div>
+                                    <div class="tooltip-tech-legend">${langs.slice(0, 3).map(([l, c]) => `<span><i style="background: ${langColors[l] || '#fff'}"></i>${l}</span>`).join('')}</div>
+                                </div>
+                            `;
+                            const rect = e.target.getBoundingClientRect();
+                            tooltip.style.left = `${rect.right + 10}px`;
+                            tooltip.style.top = `${rect.top}px`;
                             tooltip.classList.add('visible');
-                        });
 
-                        day.addEventListener('mousemove', (e) => {
-                            tooltip.style.left = `${e.clientX + 15}px`;
-                            tooltip.style.top = `${e.clientY + 15}px`;
+                            // Re-calculate to prevent right-edge clipping
+                            const tRect = tooltip.getBoundingClientRect();
+                            if (tRect.right > window.innerWidth) {
+                                tooltip.style.left = `${Math.max(10, rect.left - tRect.width - 10)}px`;
+                            }
+                            if (tRect.bottom > window.innerHeight) {
+                                tooltip.style.top = `${Math.max(10, window.innerHeight - tRect.height - 10)}px`;
+                            }
                         });
-
-                        day.addEventListener('mouseleave', () => {
-                            tooltip.classList.remove('visible');
-                        });
+                        day.addEventListener('mouseleave', () => tooltip.classList.remove('visible'));
                     }
                 } else {
                     day.style.visibility = 'hidden';
                 }
-
                 week.appendChild(day);
             }
-
             heroCalendarGrid.appendChild(week);
-            weekIndex++;
 
-            // Advance currentDate by 7 days for the while loop condition
-            currentDate.setDate(currentDate.getDate() + 7);
-        }
+            // Track month transitions (first pass — no labeling yet)
+            const weekMonth = currentDate.getMonth();
+            const weekYear = currentDate.getFullYear();
+            const nextWeek = new Date(currentDate);
+            nextWeek.setDate(nextWeek.getDate() + 7);
+            const nextWeekMonth = nextWeek.getMonth();
+            const nextWeekYear = nextWeek.getFullYear();
 
-        // Add month labels - use absolute positioning for precise alignment
-        if (heroCalendarMonths) {
-            heroCalendarMonths.innerHTML = '';
-            heroCalendarMonths.style.position = 'relative';
-
-            // Pre-calculate month positions based on actual calendar structure
-            const startDate = new Date('2025-01-01');
-            const firstDayOfWeek = startDate.getDay(); // Wed = 3 for Jan 1, 2025
-
-            // Iterate from startDate to current date to generate all month labels and year markers
-            let labelDate = new Date(startDate);
-            const currentDateIterator = new Date(); // Use today as end date
-
-            // To avoid potential infinite loops, set a safe limit (e.g., 5 years)
-            const maxDate = new Date(startDate);
-            maxDate.setFullYear(maxDate.getFullYear() + 5);
-
-            while (labelDate <= currentDateIterator && labelDate < maxDate) {
-                const year = labelDate.getFullYear();
-                const monthIndex = labelDate.getMonth();
-                const monthStart = new Date(labelDate);
-                monthStart.setDate(1); // Ensure we are at start of month
-
-                const daysSinceStart = Math.floor((monthStart - startDate) / (1000 * 60 * 60 * 24));
-                // Only if positive (future safeguard)
-                if (daysSinceStart >= 0) {
-                    const weekIndex = Math.floor((daysSinceStart + firstDayOfWeek) / 7);
-
-                    // Add Year Marker for 2026 onwards (bifurcation)
-                    if (monthIndex === 0 && year > 2025) {
-                        const marker = document.createElement('div');
-                        marker.className = 'calendar-year-marker';
-                        marker.dataset.year = year;
-                        marker.style.left = `calc(var(--week-width) * ${weekIndex} - 2px)`; // Adjust for border width
-                        heroCalendarMonths.appendChild(marker);
-                    }
-
-                    // Add Year Marker for 2025 (Start of graph) if month is Jan
-                    if (monthIndex === 0 && year === 2025) {
-                        const marker = document.createElement('div');
-                        marker.className = 'calendar-year-marker';
-                        marker.dataset.year = year;
-                        marker.style.left = `0px`; // Start of grid
-                        heroCalendarMonths.appendChild(marker);
-                    }
-
-                    const span = document.createElement('span');
-                    span.textContent = months[monthIndex];
-                    span.style.position = 'absolute';
-                    span.style.left = `calc(var(--week-width) * ${weekIndex})`;
-                    heroCalendarMonths.appendChild(span);
-                }
-
-                // Increment to next month safely handling year crossovers
-                // Using UTC date methods can sometimes be safer, but basic setMonth usually handles overflow correctly
-                // e.g. Jan 31 -> setMonth(1) -> March 2/3. 
-                // To be safe: Set date to 1 first, then add month.
-                labelDate.setDate(1);
-                labelDate.setMonth(labelDate.getMonth() + 1);
+            // Determine effective label for this position
+            let labelMonth = weekMonth;
+            let labelYear = weekYear;
+            // Stub month: first column, month changes next week → use next month name
+            if (lastTrackedMonth === -1 && weekMonth !== nextWeekMonth) {
+                labelMonth = nextWeekMonth;
+                labelYear = nextWeekYear;
             }
 
-            // Match months container width to grid width so they center together
-            heroCalendarMonths.style.width = `${heroCalendarGrid.offsetWidth}px`;
+            if (labelMonth !== lastTrackedMonth) {
+                monthTransitions.push({ weekIndex, month: labelMonth, year: labelYear });
+                lastTrackedMonth = labelMonth;
+                lastTrackedYear = labelYear;
+            }
+
+            currentDate.setDate(currentDate.getDate() + 7);
+            weekIndex++;
         }
+
+        // Second pass: position labels using offsetLeft for bulletproof alignment natively
+        // Defer to requestAnimationFrame so the browser lays out columns first
+        requestAnimationFrame(() => {
+            let lastPlacedYear = -1;
+            const weekEls = heroCalendarGrid.querySelectorAll('.calendar-week');
+
+            // Ensure the months container precisely matches grid width & position for 1:1 offsets
+            heroCalendarMonths.style.width = `${heroCalendarGrid.offsetWidth}px`;
+            heroCalendarMonths.style.marginLeft = 'auto';
+            heroCalendarMonths.style.marginRight = 'auto';
+
+            if (heroCalendarYears) {
+                heroCalendarYears.style.width = `${heroCalendarGrid.offsetWidth}px`;
+                heroCalendarYears.style.marginLeft = 'auto';
+                heroCalendarYears.style.marginRight = 'auto';
+            }
+
+            monthTransitions.forEach(({ weekIndex: wIdx, month, year }) => {
+                const col = weekEls[wIdx];
+                if (!col) return;
+
+                // Stable layout coordinate relative to the .calendar-grid container
+                const offsetFromGridLeft = col.offsetLeft;
+
+                const span = document.createElement('span');
+                span.textContent = months[month];
+                span.style.position = 'absolute';
+                span.style.left = `${offsetFromGridLeft}px`;
+                heroCalendarMonths.appendChild(span);
+
+                // Year label
+                if (year !== lastPlacedYear && heroCalendarYears) {
+                    const yearSpan = document.createElement('span');
+                    yearSpan.textContent = year;
+                    yearSpan.style.position = 'absolute';
+                    yearSpan.style.left = `${offsetFromGridLeft}px`;
+                    heroCalendarYears.appendChild(yearSpan);
+                    lastPlacedYear = year;
+                }
+            });
+        });
     }
 
 }

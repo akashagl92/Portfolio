@@ -1,31 +1,40 @@
-# Session Walkthrough (SHADOW Mode - 2026-03-06)
+# Walkthrough: Portfolio Standardization & PAI Guard Compliance
 
-## Overview
-Successfully synchronized the `innovation-grid` across 30+ tailored portfolios, resolved critical structural rot in the `/torq/` page, and performed the full PAI Sync ritual.
+I have completed the Cresta portfolio tailoring and standardized the layout across all 18+ tailored subdirectories. Per your request, I have also verified and logged the SHADOW runtime guard status.
 
-## Changes Implemented
+## Changes Made
 
-### 1. Grid Synchronization
-- **Script**: [sync_cards.js](../scripts/sync_cards.js)
-- **Action**: Extracted root `innovation-grid` and propagated to all sub-portfolio `index.html` files.
-- **Consistency**: All pages now show "IDE-Agnostic Agent Orchestrator" and "Autonomous Trading V4.1" (80.8% XIRR).
+### 1. Cresta Portfolio Tailoring
+- **JD Context**: Tailored `/cresta/` based on the PM AI Agent JD.
+- **Enriched Summaries**: Synced `project-details-ai.json` to enable deeper AI-native descriptions.
+- **Hero Alignment**: Replaced stacking hero elements with the side-by-side grid layout.
 
-### 2. Torq Layout & JS Fixes
-- **Structural Fix**: Injected missing `.hero-wrapper` to restore side-by-side flexbox layout.
-- **Dependency Fix**: Injected `Chart.js` CDN to prevent `app.js` Crashes.
-- **Path Fix**: Corrected root script relative paths (`../app.js`).
+### 2. Global Layout Standardization
+- **Structural Unified**: Added missing `.hero-wrapper` to `/airbnb/` and `/fetch/` to ensure grid consistency.
+- **Padding Alignment**: Standardized all sections to `5%` horizontal padding, providing a unified vertical alignment with the header logo (96px on 1920px screens).
+- **Expansion Restoration**: Removed fixed `1400px` max-width constraints to allow the page to expand while maintaining perfect gutters.
 
-### 3. CI/CD & Hygiene
-- **Dynamic Propagation**: Updated `update-stats.yml` with `find` for zero-maintenance `data.json` distribution.
-- **Cache Version**: Bumped to `v17`.
-- **Rituals**: Executed `/qa_gate`, `/pai_sync`, and `/rgc_sync`.
-- **Docs Quality Fix**: Successfully resolved `DOCS_QUALITY_FAIL` by converting absolute `file:///` URIs to portable relative links across all `.pai/` and `.agent/` documentation.
+### 3. PAI Guard Compliance (SHADOW/LOCKED)
+- **Status Verified**: Run `scripts/pai_runtime_guard.sh status`.
+- **Ritual Transition**: Bypassed native Antigravity artifacts (`task.md`, `implementation_plan.md`) after confirming the LOCKED status. All tracking is now centralized in `.pai/tasks/todo.md` and `.pai/plans/active_plan.md`.
 
 ## Verification Results
-- **Visuals**: Confirmed via browser subagent that `/torq` and `/ey` are now structurally identical and responsive.
-- **Git**: Staged, committed, rebased, and pushed to `main`.
-- **QA Gate**: **PASS** (100% Six Sigma compliance across docs and repo integrity).
-- **RGC**: Project state consolidated into `.pai/state/context_summaries.json`.
 
----
-*Consolidated by Antigravity (PAI v2 Staff Engineer)*
+### Browser Audit (1920px Viewport)
+| Page | Left Margin (h1) | Layout |
+| :--- | :--- | :--- |
+| `/cresta/` | 96px (5%) | Side-by-Side |
+| `/abnormal/` | 96px (5%) | Side-by-Side |
+| `/airbnb/` | 96px (5%) | Side-by-Side (REPAIRED) |
+| `/fetch/` | 96px (5%) | Side-by-Side (REPAIRED) |
+
+![Final Alignment Audit](file:///Users/akashagrawal/.gemini/antigravity/brain/1674500c-1436-4c7f-9165-e7611dd103c9/global_portfolio_alignment_audit_1773255086163.webp)
+
+## Runtime Guard Status
+```env
+PROFILE=SHADOW
+LOCKED=1
+REASON=profile_transient_only
+NATIVE_ARTIFACTS_ALLOWED=0
+PAI_SHADOW_ALLOWED_ARTIFACTS=.pai/tasks/todo.md,.pai/plans/active_plan.md,.pai/walkthrough-final.md
+```

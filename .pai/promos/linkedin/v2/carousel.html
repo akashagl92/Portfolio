@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Carousel: AI Governance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-beige: #fbf9f1;
+            --text-dark: #1e293b;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --border-subtle: rgba(30, 41, 59, 0.1);
+            --slide-width: 1080px;
+            --slide-height: 1350px;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+        }
+
+        .carousel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .slide {
+            width: var(--slide-width);
+            height: var(--slide-height);
+            background-color: var(--bg-beige);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            padding: 80px;
+            page-break-after: always;
+        }
+
+        /* Background Grid */
+        .slide::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(var(--border-subtle) 1px, transparent 1px),
+                linear-gradient(90deg, var(--border-subtle) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Slide Header */
+        .slide-num {
+            font-weight: 800;
+            color: var(--accent-purple);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: var(--border-subtle);
+            border-radius: 3px;
+            margin-bottom: 60px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--accent-purple);
+            border-radius: 3px;
+        }
+
+        /* Typography */
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 84px;
+            line-height: 1.1;
+            margin: 0 0 40px 0;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 64px;
+            margin: 0 0 30px 0;
+        }
+
+        .subtext {
+            font-size: 32px;
+            color: #4b5563;
+            line-height: 1.5;
+            max-width: 800px;
+        }
+
+        /* Visual Elements */
+        .visual-area {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0;
+        }
+
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 40px;
+            border-radius: 20px;
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            font-size: 20px;
+            line-height: 1.4;
+            width: 100%;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .log-key {
+            color: #9cdcfe;
+        }
+
+        .log-val {
+            color: #ce9178;
+        }
+
+        .log-bool {
+            color: #569cd6;
+        }
+
+        /* Flowchart Styles */
+        .flow-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            align-items: center;
+        }
+
+        .node {
+            padding: 25px 40px;
+            background: white;
+            border: 2px solid var(--border-subtle);
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            min-width: 300px;
+        }
+
+        .node.highlight {
+            background: var(--accent-purple);
+            color: white;
+            border: none;
+        }
+
+        .node.accent {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .arrow {
+            font-size: 32px;
+            color: var(--border-subtle);
+            font-family: serif;
+        }
+
+        .split-nodes {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* Swipe Indicator */
+        .swipe-hint {
+            position: absolute;
+            bottom: 80px;
+            right: 80px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 600;
+            font-size: 20px;
+            opacity: 0.6;
+        }
+
+        .swipe-icon {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--text-dark);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+
+            .carousel {
+                padding: 0;
+                gap: 0;
+            }
+
+            .slide {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+
+        <!-- Slide 1: Title -->
+        <div class="slide" id="slide1">
+            <div class="content">
+                <div class="slide-num">01 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 10%;"></div>
+                </div>
+                <h1>The AI<br><span style="color: var(--accent-purple)">Governance</span><br>Framework</h1>
+                <p class="subtext">Scaling Agentic Software Delivery with Enterprise Reliability and Strategic Control.
+                </p>
+                <div class="visual-area">
+                    <div style="font-size: 240px;">🛡️</div>
+                </div>
+                <div class="swipe-hint">Swipe to see the Architecture <div class="swipe-icon">→</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: One Truth, Many Lenses -->
+        <div class="slide" id="slide2">
+            <div class="content">
+                <div class="slide-num">02 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 20%;"></div>
+                </div>
+                <h2>One Truth,<br>Many Lenses</h2>
+                <p class="subtext">The technical message of my work remains constant. The language of communication
+                    adapts dynamically to every unique audience.</p>
+                <div class="visual-area">
+                    <div class="flow-container">
+                        <div class="node highlight">Unified Git History (10 Repos)</div>
+                        <div class="arrow">↓</div>
+                        <div class="node accent">Agentic Tailoring Engine</div>
+                        <div class="arrow">↙ ↓ ↘</div>
+                        <div class="split-nodes">
+                            <div class="node" style="min-width: 200px;">AI-Foundry.html</div>
+                            <div class="node" style="min-width: 200px;">Abnormal-AI.html</div>
+                            <div class="node" style="min-width: 200px;">Ambience.html</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: The LLM Council -->
+        <div class="slide" id="slide3">
+            <div class="content">
+                <div class="slide-num">03 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 30%;"></div>
+                </div>
+                <h2>The LLM Council</h2>
+                <p class="subtext">A multi-agent consensus model that generates recruiter-ready summaries without
+                    compromising technical integrity.</p>
+                <div class="visual-area">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                        <div class="node">👨‍💻 Engineer<br><span style="font-size: 16px; font-weight: 400;">Tech Stack
+                                & Complexity</span></div>
+                        <div class="node">💼 Recruiter<br><span style="font-size: 16px; font-weight: 400;">Impact & STAR
+                                Context</span></div>
+                        <div class="node"
+                            style="grid-column: span 2; background: var(--accent-purple); color: white; border: none;">
+                            ⚖️ Chairman<br><span style="font-size: 16px; font-weight: 400;">Synthesis & Final
+                                Polish</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: IDE-Agnostic Core -->
+        <div class="slide" id="slide4">
+            <div class="content">
+                <div class="slide-num">04 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 40%;"></div>
+                </div>
+                <h2>The Infrastructure</h2>
+                <p class="subtext">A robust, IDE-agnostic orchestrator (`portable-pai-core`) ensures consistent
+                    governance whether I'm in VS Code, Cursor, or the CLI.</p>
+                <div class="visual-area">
+                    <div class="flow-container">
+                        <div class="node">IDE Adapters</div>
+                        <div class="arrow">↓</div>
+                        <div class="node highlight">Core Orchestration Plane</div>
+                        <div class="arrow">↓</div>
+                        <div class="split-nodes">
+                            <div class="node" style="min-width: 250px;">Policy Engine</div>
+                            <div class="node" style="min-width: 250px;">Telemetry Bus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Real-time Telemetry -->
+        <div class="slide" id="slide5">
+            <div class="content">
+                <div class="slide-num">05 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+                <h2>Audit-Ready Telemetry</h2>
+                <p class="subtext">Every mutation attempt is validated against enterprise policy. "Shadow AI" becomes a
+                    structured audit trail.</p>
+                <div class="visual-area">
+                    <div class="code-block">
+                        {
+                        <span class="log-key">"ts"</span>: <span class="log-val">"2026-03-07T07:11:25Z"</span>,
+                        <span class="log-key">"event"</span>: <span class="log-val">"tailored_build_start"</span>,
+                        <span class="log-key">"target"</span>: <span class="log-val">"torq-lens"</span>,
+                        <span class="log-key">"policy_check"</span>: <span class="log-val">"PASS"</span>,
+                        <span class="log-key">"governed_by"</span>: <span class="log-val">"PAI-v2-Orchestrator"</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Runtime Guards -->
+        <div class="slide" id="slide6">
+            <div class="content">
+                <div class="slide-num">06 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <h2>Zero-Trust Guards</h2>
+                <p class="subtext">Pre-flight checks integrated into the shell ensure that every agentic session starts
+                    with verified policy and secure identity.</p>
+                <div class="visual-area">
+                    <div class="code-block" style="background: #000; color: #fff;">
+                        $ scripts/pai_runtime_guard.sh status
+                        <span style="color: var(--accent-green)">[PASS]</span> Orchestration Core Loaded
+                        <span style="color: var(--accent-green)">[PASS]</span> Policy: Enterprise-v2
+                        <span style="color: var(--accent-blue)">[INFO]</span> Target Profile: SHADOW
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: RGC Memory (Research) -->
+        <div class="slide" id="slide7">
+            <div class="content">
+                <div class="slide-num">07 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <h2>The Discovery Cliff</h2>
+                <p class="subtext">Standard models (SSC) collapse to <strong>17.0% recall</strong> at 10M turns due to
+                    temporal decay. Our <strong>Recursive Gated Consolidation (RGC)</strong> maintains <strong>100%
+                        fidelity</strong> with O(1) scaling.</p>
+                <div class="visual-area" style="flex-direction: column; align-items: flex-start;">
+                    <div
+                        style="width: 100%; height: 400px; border-left: 4px solid var(--text-dark); border-bottom: 4px solid var(--text-dark); position: relative; margin-top: 40px;">
+                        <!-- RGC Line (Top) -->
+                        <div
+                            style="position: absolute; left: 0; top: 0; width: 100%; border-top: 6px solid var(--accent-green);">
+                        </div>
+                        <div
+                            style="position: absolute; top: -40px; left: 10px; color: var(--accent-green); font-weight: 800; font-size: 24px;">
+                            RGC: 100% Signal Recall (O(1))</div>
+
+                        <!-- SSC Line (Cliff) -->
+                        <div
+                            style="position: absolute; left: 0; top: 20%; width: 40%; border-top: 4px dashed var(--text-dark); opacity: 0.3;">
+                        </div>
+                        <div
+                            style="position: absolute; left: 40%; top: 20%; height: 63%; border-right: 4px solid var(--accent-red);">
+                        </div>
+                        <div
+                            style="position: absolute; left: 40%; top: 83%; width: 60%; border-top: 4px solid var(--accent-red);">
+                        </div>
+
+                        <div
+                            style="position: absolute; left: 45%; top: 65%; color: var(--accent-red); font-weight: 800; font-size: 24px; text-align: left;">
+                            The Discovery Cliff<br>
+                            <span style="font-size: 18px; font-weight: 400;">SSC Recall: 17.0% @ 10M Turns</span>
+                        </div>
+
+                        <!-- X-Axis Label -->
+                        <div
+                            style="position: absolute; bottom: -50px; right: 0; font-weight: 600; font-size: 18px; opacity: 0.5;">
+                            Conversation Depth (Log Scale) →</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Scaling Personalization -->
+        <div class="slide" id="slide8">
+            <div class="content">
+                <div class="slide-num">08 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <h2>Personalization at Scale</h2>
+                <p class="subtext">Dynamically generating dedicated portfolio pages for every unique Job Description
+                    (JD) without manual overhead.</p>
+                <div class="visual-area">
+                    <div style="display: flex; gap: 30px;">
+                        <div class="node" style="width: 250px;">Recruiter A<br><span
+                                style="font-size: 14px; font-weight: 400;">AI Foundry</span></div>
+                        <div class="node" style="width: 250px;">Recruiter B<br><span
+                                style="font-size: 14px; font-weight: 400;">Abnormal AI</span></div>
+                        <div class="node" style="width: 250px;">Recruiter C<br><span
+                                style="font-size: 14px; font-weight: 400;">Ambience Healthcare</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: The Safety Circuit Breaker -->
+        <div class="slide" id="slide9">
+            <div class="content">
+                <div class="slide-num">09 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+                <h2>The Safety Circuit</h2>
+                <p class="subtext">Automated risk mitigation. If an agent deviates from policy during a tailored build,
+                    the circuit opens instantly to prevent unsafe deployment.</p>
+                <div class="visual-area">
+                    <div style="display: flex; align-items: center; gap: 30px;">
+                        <div class="node success">Agent Request</div>
+                        <div class="arrow">→</div>
+                        <div class="node" style="border-style: dashed;">Policy Eval</div>
+                        <div class="arrow">→</div>
+                        <div class="node accent"
+                            style="border-color: var(--accent-purple); color: var(--accent-purple); border-width: 4px;">
+                            CIRCUIT SHADOW</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: The Vision -->
+        <div class="slide" id="slide10">
+            <div class="content">
+                <div class="slide-num">10 / 10</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 100%;"></div>
+                </div>
+                <h2>The Vision</h2>
+                <p class="subtext">A future where engineering organizations are self-correcting and high-performance AI
+                    is managed with absolute transparency.</p>
+                <div class="visual-area">
+                    <div style="font-size: 180px;">🚀</div>
+                </div>
+                <div class="subtext" style="font-weight: 800; font-size: 36px; text-align: center; margin-top: auto;">
+                    Built on Portable PAI Core.</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
