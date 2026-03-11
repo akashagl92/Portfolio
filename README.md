@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **470 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **475 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -14,6 +14,7 @@ This portfolio represents a **Data & AI Product Leader** who combines strategic 
 - **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)
 - **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)
 - **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)
+- **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)
 - **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)
 - **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)
 - **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)
@@ -46,27 +47,36 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ### Portfolio (`Portfolio`)
 **HTML** | [Repo](https://github.com/akashagl92/Portfolio)
 
-A dynamic portfolio platform integrating agentic AI, data science, and product leadership, featuring automated content generation via JSON data, GitHub Actions for CI/CD, and scalable architecture for industry-specific projects. Delivers research-grade analytics and AI-driven solutions with production-ready automation.
+This dynamic portfolio platform leverages agentic AI for automated content generation and a scalable architecture to deliver industry-specific, research-grade analytics. It utilizes vanilla JS/HTML/CSS, Chart.js, and JSON data, supported by robust GitHub Actions for CI/CD and static site generation. The system showcases production-ready automation, effectively bridging data science research, marketing technology, and real-world AI applications through tailored, data-driven content.
 
-_Tags: agentic AI, static site generation, GitHub Actions, JSON data management_
+_Tags: Agentic AI, Static Site Generation, CI/CD Automation, Data Visualization_
 
 ---
 
 ### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)
 **TypeScript** | [Repo](https://github.com/akashagl92/moltbot)
 
-A research-grade AI agent platform with persistent memory across 10M+ interactions, using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC) for 100% recall fidelity. Built with Python, Docker, and macOS Metal acceleration for industrial-scale memory benchmarking.
+This advanced personal AI agent platform pioneers scalable, persistent memory for LLMs, leveraging Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC) to achieve 100% memory fidelity across millions of conversation turns. It integrates sophisticated state management, planning, and tool-use capabilities with diverse external services, including a job-hunter feature and IDE extensions, pushing the boundaries of agentic AI and natural language processing.
 
-_Tags: AI/ML, Python, Docker_
+_Tags: LLM Agents, Persistent Memory, Polyglot Development, Containerization_
 
 ---
 
 ### 📈 Autonomous Trading System (`stock_price_target_modelling`)
 **Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)
 
-A production-grade autonomous trading system combining AI-driven financial engineering with risk-adjusted portfolio optimization. The v4.1 Steady Winner strategy achieves 80.8% XIRR (60.3% Alpha over S&P 500) through dual-track asset allocation, Golden Cross momentum, and real-time Shadow Portfolio tracking. Features include tax-efficient execution, statistical verification, and tiered risk management for crypto-stocks hybrid portfolios.
+This autonomous AI-powered system manages a dual-track stock and crypto portfolio, employing a multi-tier 'Steady Winner' strategy with Golden Cross momentum boosting. It optimizes for realized wealth and tax efficiency, achieving an 80.8% XIRR and 60.3% Alpha over the S&P 500. The system integrates financial data, automates execution, and provides robust email-based reporting and approval workflows.
 
-_Tags: autonomous-trading, financial-modeling, machine-learning_
+_Tags: Quantitative Finance, Machine Learning, Automated Trading, DevOps Automation_
+
+---
+
+### 🤖 IDE-Agnostic Agent Orchestrator (`ide-agnostic-agent-orchestrator`)
+**Shell** | [Repo](https://github.com/akashagl92/ide-agnostic-agent-orchestrator)
+
+This IDE-agnostic orchestration framework unifies AI-assisted software delivery across diverse development environments, eliminating workflow fragmentation. It enforces policy-first execution and integrates a multi-layered native artifact safety stack, including circuit breakers and idempotent retries, to guarantee reliable and controlled AI operations. The system manages complex agent execution, ensuring data integrity and fault tolerance through an event-driven architecture.
+
+_Tags: AI Orchestration, IDE-Agnostic, Policy Enforcement, Fault Tolerance_
 
 ---
 
@@ -76,15 +86,6 @@ _Tags: autonomous-trading, financial-modeling, machine-learning_
 A research-validated astrological analysis platform integrating Swiss Ephemeris precision with AI-driven interpretations. Combines Western, Vedic, and Horary systems via FastAPI/Next.js, featuring divisional charts, dasha calculations, and geopolitical entity analysis. Employs Jest for testing and Render for deployment, with AI-powered dosha/yoga diagnostics and predictive analytics.
 
 _Tags: FastAPI, Next.js, TypeScript, Jest_
-
----
-
-### 🤖 IDE-Agnostic Agent Orchestrator (`ide-agnostic-agent-orchestrator`)
-**Shell** | [Repo](https://github.com/akashagl92/ide-agnostic-agent-orchestrator)
-
-An IDE-agnostic orchestration framework that unifies AI agent workflows across development environments. It decouples core safety policies—like runtime locks, circuit breakers, and policy-first execution—from IDE-specific adapters, enabling consistent AI-assisted coding without tooling lock-in. Modular design ensures portable runtime guarantees across CLIs, editors, and projects via a single, enforceable quality and telemetry stack.
-
-_Tags: AI orchestration, runtime safety, modular architecture, policy enforcement_
 
 ---
 
@@ -100,9 +101,9 @@ _Tags: Web Audio API, HTML5 Canvas, music theory_
 ### Agentic-memory-scaling (`agentic-memory-scaling`)
 **Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)
 
-A high-fidelity framework for O(1) memory scaling in LLM agents, resolving the Discovery Cliff with Recursive Gated Consolidation (RGC) to maintain 100% recall at 10M+ conversation turns. Leverages TPU v4/v5 and SparseCore hardware for latency-optimized pathways, validated across Gemini 3.0, Claude 4.6, and real-world systems.
+Introduces Recursive Gated Consolidation (RGC), an innovative architecture that overcomes the 'Discovery Cliff' in LLM agent memory. It achieves O(1) memory scaling, maintaining 100% signal recall across 10^7 turns where standard methods fail. Utilizing Python, LLM APIs like Gemini and Claude, and extensive Monte Carlo simulations, the system validates an 'Inverted Latency Law' through hardware-grounded analysis, fundamentally redefining long-term memory for intelligent agents.
 
-_Tags: LLM memory scaling, Recursive Gated Consolidation, TPU optimization_
+_Tags: LLM Agent Memory, Recursive Gated Consolidation, Scalable AI Architectures, Monte Carlo Simulation_
 
 ---
 
@@ -169,10 +170,10 @@ _Tags: LangChain, LangGraph, Databricks Vector Search, RAG_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 470 |
+| Total Commits | 475 |
 | Unique Repositories | 11 |
 | Primary Language | Python |
-| Top Languages | N/A |
+| Top Languages | Python (58.5%), HTML (25.9%), TypeScript (12.4%) |
 | Last Synced | 3/11/2026 |
 
 ---
