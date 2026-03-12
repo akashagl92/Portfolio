@@ -58,7 +58,7 @@ jobs:
         run: |
           cp fetch/data.json data.json
           # Dynamically propagate to all subdirectories (excluding specific system/node folders)
-          find . -maxdepth 1 -type d ! -name "." ! -name ".*" ! -name "scripts" ! -name "fetch" ! -name "node_modules" ! -name "adapters" ! -name "core" ! -name "docs" ! -name "examples" ! -name "packs" ! -name "tests" ! -name "PAI" ! -name "portable-pai-core" -exec cp fetch/data.json {}/data.json \;
+          find . -maxdepth 1 -type d ! -name "." ! -name ".*" ! -name "scripts" ! -name "fetch" ! -name "node_modules" ! -name "adapters" ! -name "core" ! -name "docs" ! -name "examples" ! -name "packs" ! -name "tests" ! -name "PAI" ! -name "portable-pai-core" -exec cp fetch/data.json {}/data.json \; -exec cp project-details.json {}/project-details.json \;
           # Safely handle specific nested directories where we explicitly also want stats
           [ -d "airbnb/aircover" ] && cp fetch/data.json airbnb/aircover/data.json || true
 

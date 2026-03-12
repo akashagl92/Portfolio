@@ -8,7 +8,8 @@
 - [x] Correct RGC Chart (100% vs 17% recall)
 - [x] Update AI Portfolio Targets (AI Foundry, Abnormal AI)
 - [x] PAI Sync & Hygiene Ritual (SHADOW)
-- [ ] Final Presentation PDF Export
+- [x] Documentation & Agentic Chronicler Refresh (Gemini-2.5-Flash)
+- [x] Final Presentation PDF Export (Pending Manual Trigger)
 
 ## Cresta Portfolio (2026-03-11)
 - [x] Gather Job Context (documented in .pai/job_contexts/cresta.md)
@@ -32,3 +33,14 @@
 - [x] Fix Missing Components in `fetch` and `airbnb`: Added missing `Chart.js` dependency to header and restored missing 'IDE-Agnostic Agent Orchestrator' project card in the personal portfolio. Also updated 'Autonomous Trading System' to V4.1.
 - [x] PAI Runtime Guard Check: Confirmed PROFILE=SHADOW, LOCKED=1. Native artifacts bypassed.
 - [x] Final Browser Verification (Universal Layout)
+
+## Hershey Portfolio (2026-03-12)
+- [x] Gather Job Context (documented in .pai/job_contexts/hershey.md)
+- [x] Create /hershey/ directory and baseline files
+- [x] Tailor hershey/index.html (Hero, Badge, Headline)
+- [x] Enable Agentic Summaries in app.js
+- [x] Sync data.json & project-details.json to /hershey/
+- [x] Final Browser Verification (Hershey-specific)
+- [x] Enable Data Portability (Local data.json/project-details.json)
+- [x] Sync Hershey with GitHub Actions (.github/workflows/update-stats.yml)
+- [x] PAI Sync (SHADOW enforcement verified)

@@ -9,6 +9,7 @@ To build a "living" engineering portfolio that dynamically updates itself using 
 - **Responsiveness (2026-02-25 fixes):** Resolved horizontal overflow and asymmetric padding on mobile viewports. Unified `min(350px, 100%)` grid sizing, `body` max-width fixes, and `clip-path` glow containment rolled out to all 19 portfolio pages (root, fetch, ambience, circle, scopely, stellantis, viant).
 - **Automation:** GitHub Actions for fetching stats (`update-stats.yml`) are fully functional with specific repository filtering logic.
 - **Infrastructure Sync (2026-03-06):** Unified the `innovation-grid` across all 30+ tailored portfolios using `scripts/sync_cards.js`. Fixed structural layout rot in `/torq/` (missing `.hero-wrapper` and `Chart.js` dependency) and corrected relative script paths.
+- **Hygiene Ritual (2026-03-12):** Pruned legacy stylesheets (`old_style.css`, etc.) and consolidated architectural state via ADRs. Enforced PAI v2 SHADOW mode during high-velocity tailoring session.
 - **Research Cards:**
     - "V4.1 Alpha Steady" trading strategy: **80.8% XIRR** (**60.3% Alpha** over S&P 500).
     - "ide-agnostic-agent-orchestrator" (Portable PAI Core): Native artifact safety and cross-IDE telemetry.
@@ -17,7 +18,7 @@ To build a "living" engineering portfolio that dynamically updates itself using 
     - "Stats Dashboard" (Live - accurate filtered contributions)
     - "Music Visualizer" (WIP)
     - "Journal Paper" (Drafting)
-    - "Tailored Portfolios" (EY-Parthenon, Scopely, Alivo, Fetch, etc.)
+    - "Tailored Portfolios" (EY-Parthenon, Scopely, Alivo, Fetch, Hershey, etc.)
     - "Persona-Driven Narratives" (Live - automated career storytelling via .pai/personas/)
 
 ## Desired State
