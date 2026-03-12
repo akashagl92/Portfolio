@@ -80,75 +80,12 @@ _Tags: AI Orchestration, IDE-Agnostic, Policy Enforcement, Fault Tolerance_
 
 ---
 
-### 🔮 AI Astrology Platform (`aistro.ai`)
-**Python** | [Repo](https://github.com/akashagl92/aistro.ai)
-
-A research-validated astrological analysis platform integrating Swiss Ephemeris precision with AI-driven interpretations. Combines Western, Vedic, and Horary systems via FastAPI/Next.js, featuring divisional charts, dasha calculations, and geopolitical entity analysis. Employs Jest for testing and Render for deployment, with AI-powered dosha/yoga diagnostics and predictive analytics.
-
-_Tags: FastAPI, Next.js, TypeScript, Jest_
-
----
-
-### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)
-**JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)
-
-An interactive web-based visualizer merging music theory and sound physics, enabling real-time exploration of harmonic ratios, wave interference, and acoustic principles through Web Audio API and HTML5 Canvas. Combines educational value with performance-optimized audio-visual synthesis for dynamic learning experiences.
-
-_Tags: Web Audio API, HTML5 Canvas, music theory_
-
----
-
 ### Agentic-memory-scaling (`agentic-memory-scaling`)
 **Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)
 
 Introduces Recursive Gated Consolidation (RGC), an innovative architecture that overcomes the 'Discovery Cliff' in LLM agent memory. It achieves O(1) memory scaling, maintaining 100% signal recall across 10^7 turns where standard methods fail. Utilizing Python, LLM APIs like Gemini and Claude, and extensive Monte Carlo simulations, the system validates an 'Inverted Latency Law' through hardware-grounded analysis, fundamentally redefining long-term memory for intelligent agents.
 
 _Tags: LLM Agent Memory, Recursive Gated Consolidation, Scalable AI Architectures, Monte Carlo Simulation_
-
----
-
-### Philosophy-sage (`philosophy-sage`)
-**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)
-
-A multi-scripture AI philosopher integrating semantic search, hybrid RAG, and adaptive layout learning to enable Q&A, allegorical analysis, and TTS-driven exploration of texts like the Mahabharata and Ashtavakra Gita. Combines Neo4j graph databases with Cytoscape.js visualizations for cross-cultural philosophical synthesis.
-
-_Tags: semantic_search, rag, neo4j, tts_
-
----
-
-### Pi-home-assistant (`pi-home-assistant`)
- | [Repo](https://github.com/akashagl92/pi-home-assistant)
-
-A Raspberry Pi-powered home automation system that integrates IoT devices with custom logic and lightweight machine learning models, enabling real-time adaptive control of smart environments without proprietary platforms.
-
-_Tags: Raspberry Pi, IoT Automation, Machine Learning_
-
----
-
-### Databricks-Genie-Integration (`Databricks-Genie-Integration`)
-**Python** | [Repo](https://github.com/akashagl92/Databricks-Genie-Integration)
-
-An intelligent data integration platform combining Databricks workspaces with Genie's AI-driven natural language querying, enabling real-time business intelligence through multi-workspace orchestration and bulk data enrichment. Built with Python Flask, Databricks SQL, and Pandas, it empowers users to extract actionable insights via conversational queries or Excel/CSV uploads, bridging complex analytics with intuitive workflows.
-
-_Tags: Python, Databricks, Flask, AI Integration_
-
----
-
-### Hindi-Tutor (`Hindi-Tutor`)
-**TypeScript** | [Repo](https://github.com/akashagl92/Hindi-Tutor)
-
-An AI-powered Hindi tutor leveraging Gemini API for real-time, personalized language practice, built with React/TypeScript and PWA capabilities for offline access. Combines conversational learning with adaptive speech recognition to tailor Hindi skill development.
-
-_Tags: React, TypeScript, AI/ML, PWA_
-
----
-
-### Voc-buyer-journey-chatbot (`voc-buyer-journey-chatbot`)
-**Python** | [Repo](https://github.com/akashagl92/voc-buyer-journey-chatbot)
-
-A production-ready chatbot leveraging LangChain and LangGraph for orchestration, integrating Databricks Vector Search and RAG for structured/unstructured data analysis. Delivers real-time Voice of Customer insights via a dual-brain architecture, optimized for enterprise scalability with Streamlit UI.
-
-_Tags: LangChain, LangGraph, Databricks Vector Search, RAG_
 
 
 ---
@@ -174,7 +111,7 @@ _Tags: LangChain, LangGraph, Databricks Vector Search, RAG_
 | Unique Repositories | 11 |
 | Primary Language | Python |
 | Top Languages | Python (58.5%), HTML (25.9%), TypeScript (12.4%) |
-| Last Synced | 3/11/2026 |
+| Last Synced | 3/12/2026 |
 
 ---
 
