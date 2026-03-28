@@ -1,5 +1,375 @@
 [
   {
+    "name": "Portfolio",
+    "fullName": "akashagl92/Portfolio",
+    "description": "Build a portfolio using my github repo",
+    "url": "https://github.com/akashagl92/Portfolio",
+    "homepage": null,
+    "isPrivate": false,
+    "language": "HTML",
+    "languages": {
+      "HTML": 780224,
+      "JavaScript": 588050,
+      "TypeScript": 393032,
+      "CSS": 281467,
+      "Shell": 119955,
+      "Python": 66001,
+      "Handlebars": 5679,
+      "Vue": 3564
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-12-19T03:23:05Z",
+    "updatedAt": "2026-03-27T07:39:24Z",
+    "pushedAt": "2026-03-27T07:39:20Z",
+    "topics": [],
+    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **527 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Hershey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/hershey/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis platform dynamically generates highly-tailored, research-grade analytics and content for specific industries using an automated, production-grade system. It leverages agentic AI for content generation and robust CI/CD with GitHub Actions for deployment and synchronization across multiple customized portfolio versions. The system bridges advanced data science, marketing technology, and real-world AI applications, demonstrating sophisticated automation and data orchestration capabilities.\n\n_Tags: Agentic AI, CI/CD Automation, Data Visualization, Dynamic Content Generation_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 527 |\n| Unique Repositories | 11 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 3/27/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## 📝 License\n\nMIT\n",
+    "files": [
+      {
+        "name": ".agent",
+        "type": "dir",
+        "path": ".agent"
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "path": ".env.example"
+      },
+      {
+        "name": ".github",
+        "type": "dir",
+        "path": ".github"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": ".nojekyll",
+        "type": "file",
+        "path": ".nojekyll"
+      },
+      {
+        "name": ".pai",
+        "type": "dir",
+        "path": ".pai"
+      },
+      {
+        "name": "Agrawal_Akash - Resume - Product Leader.docx",
+        "type": "file",
+        "path": "Agrawal_Akash - Resume - Product Leader.docx"
+      },
+      {
+        "name": "Agrawal_Akash - Resume.docx",
+        "type": "file",
+        "path": "Agrawal_Akash - Resume.docx"
+      },
+      {
+        "name": "CODEOWNERS",
+        "type": "file",
+        "path": "CODEOWNERS"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "PAI",
+        "type": "dir",
+        "path": "PAI"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "README.template.md",
+        "type": "file",
+        "path": "README.template.md"
+      },
+      {
+        "name": "SECURITY.md",
+        "type": "file",
+        "path": "SECURITY.md"
+      },
+      {
+        "name": "abnormal",
+        "type": "dir",
+        "path": "abnormal"
+      },
+      {
+        "name": "aifoundry",
+        "type": "dir",
+        "path": "aifoundry"
+      },
+      {
+        "name": "airbnb",
+        "type": "dir",
+        "path": "airbnb"
+      },
+      {
+        "name": "alivo",
+        "type": "dir",
+        "path": "alivo"
+      },
+      {
+        "name": "ambience",
+        "type": "dir",
+        "path": "ambience"
+      },
+      {
+        "name": "app.js",
+        "type": "file",
+        "path": "app.js"
+      },
+      {
+        "name": "archive",
+        "type": "dir",
+        "path": "archive"
+      },
+      {
+        "name": "ci.yml",
+        "type": "file",
+        "path": "ci.yml"
+      },
+      {
+        "name": "circle",
+        "type": "dir",
+        "path": "circle"
+      },
+      {
+        "name": "consensys",
+        "type": "dir",
+        "path": "consensys"
+      },
+      {
+        "name": "cresta",
+        "type": "dir",
+        "path": "cresta"
+      },
+      {
+        "name": "data.json",
+        "type": "file",
+        "path": "data.json"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "path": "docs"
+      },
+      {
+        "name": "ey",
+        "type": "dir",
+        "path": "ey"
+      },
+      {
+        "name": "fedex",
+        "type": "dir",
+        "path": "fedex"
+      },
+      {
+        "name": "fetch",
+        "type": "dir",
+        "path": "fetch"
+      },
+      {
+        "name": "growth",
+        "type": "dir",
+        "path": "growth"
+      },
+      {
+        "name": "happymoney",
+        "type": "dir",
+        "path": "happymoney"
+      },
+      {
+        "name": "hershey",
+        "type": "dir",
+        "path": "hershey"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "path": "index.html"
+      },
+      {
+        "name": "kraken",
+        "type": "dir",
+        "path": "kraken"
+      },
+      {
+        "name": "og-image.png",
+        "type": "file",
+        "path": "og-image.png"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json"
+      },
+      {
+        "name": "portable-pai-core",
+        "type": "dir",
+        "path": "portable-pai-core"
+      },
+      {
+        "name": "project-details-ai.json",
+        "type": "file",
+        "path": "project-details-ai.json"
+      },
+      {
+        "name": "project-details.json",
+        "type": "file",
+        "path": "project-details.json"
+      },
+      {
+        "name": "quince",
+        "type": "dir",
+        "path": "quince"
+      },
+      {
+        "name": "reku",
+        "type": "dir",
+        "path": "reku"
+      },
+      {
+        "name": "root",
+        "type": "dir",
+        "path": "root"
+      },
+      {
+        "name": "scopely",
+        "type": "dir",
+        "path": "scopely"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "path": "scripts"
+      },
+      {
+        "name": "showcase",
+        "type": "dir",
+        "path": "showcase"
+      },
+      {
+        "name": "stellantis",
+        "type": "dir",
+        "path": "stellantis"
+      },
+      {
+        "name": "style.css",
+        "type": "file",
+        "path": "style.css"
+      },
+      {
+        "name": "test_access.txt",
+        "type": "file",
+        "path": "test_access.txt"
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "path": "tests"
+      },
+      {
+        "name": "torq",
+        "type": "dir",
+        "path": "torq"
+      },
+      {
+        "name": "viant",
+        "type": "dir",
+        "path": "viant"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2026-03-27T07:39:19Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-26T07:40:15Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-25T07:34:34Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-24T07:35:14Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-23T07:43:44Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-22T07:12:17Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-21T07:06:53Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-20T07:28:39Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-19T07:30:59Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-18T07:34:45Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-17T07:34:59Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-16T07:53:12Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-15T07:27:10Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-14T07:09:37Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-13T07:27:16Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      }
+    ]
+  },
+  {
     "name": "erux.ai",
     "fullName": "akashagl92/erux.ai",
     "description": null,
@@ -315,376 +685,6 @@
       {
         "date": "2026-03-22T00:46:02Z",
         "message": "chore: restore Golden State interpretations & implement tiered usage limits",
-        "author": "Akash Agrawal"
-      }
-    ]
-  },
-  {
-    "name": "Portfolio",
-    "fullName": "akashagl92/Portfolio",
-    "description": "Build a portfolio using my github repo",
-    "url": "https://github.com/akashagl92/Portfolio",
-    "homepage": null,
-    "isPrivate": false,
-    "language": "HTML",
-    "languages": {
-      "HTML": 780224,
-      "JavaScript": 588050,
-      "TypeScript": 393032,
-      "CSS": 281467,
-      "Shell": 119955,
-      "Python": 66001,
-      "Handlebars": 5679,
-      "Vue": 3564
-    },
-    "stars": 0,
-    "forks": 0,
-    "createdAt": "2025-12-19T03:23:05Z",
-    "updatedAt": "2026-03-26T07:40:20Z",
-    "pushedAt": "2026-03-26T07:40:16Z",
-    "topics": [],
-    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **527 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Hershey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/hershey/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis platform dynamically generates highly-tailored, research-grade analytics and content for specific industries using an automated, production-grade system. It leverages agentic AI for content generation and robust CI/CD with GitHub Actions for deployment and synchronization across multiple customized portfolio versions. The system bridges advanced data science, marketing technology, and real-world AI applications, demonstrating sophisticated automation and data orchestration capabilities.\n\n_Tags: Agentic AI, CI/CD Automation, Data Visualization, Dynamic Content Generation_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 527 |\n| Unique Repositories | 11 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 3/26/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## 📝 License\n\nMIT\n",
-    "files": [
-      {
-        "name": ".agent",
-        "type": "dir",
-        "path": ".agent"
-      },
-      {
-        "name": ".env.example",
-        "type": "file",
-        "path": ".env.example"
-      },
-      {
-        "name": ".github",
-        "type": "dir",
-        "path": ".github"
-      },
-      {
-        "name": ".gitignore",
-        "type": "file",
-        "path": ".gitignore"
-      },
-      {
-        "name": ".nojekyll",
-        "type": "file",
-        "path": ".nojekyll"
-      },
-      {
-        "name": ".pai",
-        "type": "dir",
-        "path": ".pai"
-      },
-      {
-        "name": "Agrawal_Akash - Resume - Product Leader.docx",
-        "type": "file",
-        "path": "Agrawal_Akash - Resume - Product Leader.docx"
-      },
-      {
-        "name": "Agrawal_Akash - Resume.docx",
-        "type": "file",
-        "path": "Agrawal_Akash - Resume.docx"
-      },
-      {
-        "name": "CODEOWNERS",
-        "type": "file",
-        "path": "CODEOWNERS"
-      },
-      {
-        "name": "CONTRIBUTING.md",
-        "type": "file",
-        "path": "CONTRIBUTING.md"
-      },
-      {
-        "name": "PAI",
-        "type": "dir",
-        "path": "PAI"
-      },
-      {
-        "name": "README.md",
-        "type": "file",
-        "path": "README.md"
-      },
-      {
-        "name": "README.template.md",
-        "type": "file",
-        "path": "README.template.md"
-      },
-      {
-        "name": "SECURITY.md",
-        "type": "file",
-        "path": "SECURITY.md"
-      },
-      {
-        "name": "abnormal",
-        "type": "dir",
-        "path": "abnormal"
-      },
-      {
-        "name": "aifoundry",
-        "type": "dir",
-        "path": "aifoundry"
-      },
-      {
-        "name": "airbnb",
-        "type": "dir",
-        "path": "airbnb"
-      },
-      {
-        "name": "alivo",
-        "type": "dir",
-        "path": "alivo"
-      },
-      {
-        "name": "ambience",
-        "type": "dir",
-        "path": "ambience"
-      },
-      {
-        "name": "app.js",
-        "type": "file",
-        "path": "app.js"
-      },
-      {
-        "name": "archive",
-        "type": "dir",
-        "path": "archive"
-      },
-      {
-        "name": "ci.yml",
-        "type": "file",
-        "path": "ci.yml"
-      },
-      {
-        "name": "circle",
-        "type": "dir",
-        "path": "circle"
-      },
-      {
-        "name": "consensys",
-        "type": "dir",
-        "path": "consensys"
-      },
-      {
-        "name": "cresta",
-        "type": "dir",
-        "path": "cresta"
-      },
-      {
-        "name": "data.json",
-        "type": "file",
-        "path": "data.json"
-      },
-      {
-        "name": "docs",
-        "type": "dir",
-        "path": "docs"
-      },
-      {
-        "name": "ey",
-        "type": "dir",
-        "path": "ey"
-      },
-      {
-        "name": "fedex",
-        "type": "dir",
-        "path": "fedex"
-      },
-      {
-        "name": "fetch",
-        "type": "dir",
-        "path": "fetch"
-      },
-      {
-        "name": "growth",
-        "type": "dir",
-        "path": "growth"
-      },
-      {
-        "name": "happymoney",
-        "type": "dir",
-        "path": "happymoney"
-      },
-      {
-        "name": "hershey",
-        "type": "dir",
-        "path": "hershey"
-      },
-      {
-        "name": "index.html",
-        "type": "file",
-        "path": "index.html"
-      },
-      {
-        "name": "kraken",
-        "type": "dir",
-        "path": "kraken"
-      },
-      {
-        "name": "og-image.png",
-        "type": "file",
-        "path": "og-image.png"
-      },
-      {
-        "name": "package-lock.json",
-        "type": "file",
-        "path": "package-lock.json"
-      },
-      {
-        "name": "package.json",
-        "type": "file",
-        "path": "package.json"
-      },
-      {
-        "name": "portable-pai-core",
-        "type": "dir",
-        "path": "portable-pai-core"
-      },
-      {
-        "name": "project-details-ai.json",
-        "type": "file",
-        "path": "project-details-ai.json"
-      },
-      {
-        "name": "project-details.json",
-        "type": "file",
-        "path": "project-details.json"
-      },
-      {
-        "name": "quince",
-        "type": "dir",
-        "path": "quince"
-      },
-      {
-        "name": "reku",
-        "type": "dir",
-        "path": "reku"
-      },
-      {
-        "name": "root",
-        "type": "dir",
-        "path": "root"
-      },
-      {
-        "name": "scopely",
-        "type": "dir",
-        "path": "scopely"
-      },
-      {
-        "name": "scripts",
-        "type": "dir",
-        "path": "scripts"
-      },
-      {
-        "name": "showcase",
-        "type": "dir",
-        "path": "showcase"
-      },
-      {
-        "name": "stellantis",
-        "type": "dir",
-        "path": "stellantis"
-      },
-      {
-        "name": "style.css",
-        "type": "file",
-        "path": "style.css"
-      },
-      {
-        "name": "test_access.txt",
-        "type": "file",
-        "path": "test_access.txt"
-      },
-      {
-        "name": "tests",
-        "type": "dir",
-        "path": "tests"
-      },
-      {
-        "name": "torq",
-        "type": "dir",
-        "path": "torq"
-      },
-      {
-        "name": "viant",
-        "type": "dir",
-        "path": "viant"
-      }
-    ],
-    "recentCommits": [
-      {
-        "date": "2026-03-26T07:40:15Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-25T07:34:34Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-24T07:35:14Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-23T07:43:44Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-22T07:12:17Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-21T07:06:53Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-20T07:28:39Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-19T07:30:59Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-18T07:34:45Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-17T07:34:59Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-16T07:53:12Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-15T07:27:10Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-14T07:09:37Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-13T07:27:16Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-03-12T16:52:22Z",
-        "message": "docs: agentic sifting & dynamic readme update",
         "author": "Akash Agrawal"
       }
     ]
