@@ -1,46 +1,25 @@
-- [x] Research `portable-pai-core` architecture
-- [x] Design Infographic Carousel (10 slides)
-- [x] Refine for Leadership (Business Value & Governance)
-- [x] Extract Hard Evidence (logs/telemetry)
-- [x] Create HTML Slide Engine (.pai/promos/linkedin/v2/carousel.html)
-- [x] Browser Capture & High-Res Verification
-- [x] Integrate "Cool Features" (LLM Council, RGC Discovery Cliff)
-- [x] Correct RGC Chart (100% vs 17% recall)
-- [x] Update AI Portfolio Targets (AI Foundry, Abnormal AI)
-- [x] PAI Sync & Hygiene Ritual (SHADOW)
-- [x] Documentation & Agentic Chronicler Refresh (Gemini-2.5-Flash)
-- [x] Final Presentation PDF Export (Pending Manual Trigger)
+# PAI Sync Pilot Test (Native Artifacts)
 
-## Cresta Portfolio (2026-03-11)
-- [x] Gather Job Context (documented in .pai/job_contexts/cresta.md)
-- [x] Apply Global Padding Fix (5% standard)
-- [x] Create /cresta/ directory and baseline files
-- [x] Customize cresta/index.html (Hero, Badge, Headline)
-- [x] Reframe Professional Projects for AI Agent Focus
-- [x] Verify Agentic Summaries & Layout
-- [x] Start Dev Server for User Verification (port 8080)
-- [x] Fix Hero Layout Jump (Overflow & Padding Unification)
-- [x] Correct Project Content Misrepresentation (Genie Integration)
-- [x] Sync data.json & project-details.json to /cresta/
-- [x] Standardize Header/Hero Alignment (v3 fix)
-- [x] Enable Agentic Summaries in app.js
-- [x] Unify Ultra-Wide Section Alignment (1400px max-width)
-- [x] Revert "Squeeze": Restored expansive layout by removing 1400px constraints & unifying 5% padding.
-- [x] Finalize Global 5% Gutter Alignment
-- [x] Sync Enriched Agentic Data (project-details-ai.json) to /cresta/
-- [x] Standardize Global Portfolio Layouts (fix missing hero-wrapper & padding)
-- [x] Synchronize Calendar API Logic: Ported 58-week 'Grow-then-Slide' calendar anchoring (July 27) from root `app.js` to all 18+ subdirectories.
-- [x] Fix Missing Components in `fetch` and `airbnb`: Added missing `Chart.js` dependency to header and restored missing 'IDE-Agnostic Agent Orchestrator' project card in the personal portfolio. Also updated 'Autonomous Trading System' to V4.1.
-- [x] PAI Runtime Guard Check: Confirmed PROFILE=SHADOW, LOCKED=1. Native artifacts bypassed.
-- [x] Final Browser Verification (Universal Layout)
+## Planning Phase
+- [x] Write Implementation Plan for `PAISync` pack.
+- [x] Identify and fix bridge session detection bug (mtime conflict).
+- [x] Identify and fix bridge env quoting bug (rc=126).
+- [ ] Submit for User Review (Attempting Native Update).
 
-## Hershey Portfolio (2026-03-12)
-- [x] Gather Job Context (documented in .pai/job_contexts/hershey.md)
-- [x] Create /hershey/ directory and baseline files
-- [x] Tailor hershey/index.html (Hero, Badge, Headline)
-- [x] Enable Agentic Summaries in app.js
-- [x] Sync data.json & project-details.json to /hershey/
-- [x] Final Browser Verification (Hershey-specific)
-- [x] Enable Data Portability (Local data.json/project-details.json)
-- [x] Sync Hershey with GitHub Actions (.github/workflows/update-stats.yml)
-- [x] PAI Sync (SHADOW enforcement verified)
+## PAI Sync Pack Migration (Execution)
+- [ ] Create `.agent/packs/PAISync/` directory.
+- [ ] Write `.agent/packs/PAISync/README.md` (Description/Usage).
+- [ ] Write `.agent/packs/PAISync/INSTALL.md` (AI setup wizard).
+- [ ] Write `.agent/packs/PAISync/VERIFY.md` (Self-test script).
+
+## Native Stability Test (Verification)
+- [x] Run the Motive portfolio tailoring task.
+- [!] Native `task.md` mutation stalled/canceled multiple times.
+- [x] Triggered Circuit Breaker (`shadow-on native_stall`).
+- [ ] Move obsolete `.gemini/workflows/pai_sync.md` to `archive/` if successful.
+
+## Motive Portfolio Tailoring (Completed)
+- [x] Analyze JD & create context.
+- [x] Scaffold `motive/` directory.
+- [x] Tailor content & fix relative paths.
+- [x] Verify in browser & capture screenshot.
