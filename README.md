@@ -20,6 +20,7 @@ This portfolio represents a **Data & AI Product Leader** who combines strategic 
 - **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)
 - **Hershey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/hershey/)
 - **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)
+- **Motive-tailored**: [Explore](https://akashagl92.github.io/Portfolio/motive/)
 - **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)
 - **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)
 - **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)
@@ -76,7 +77,7 @@ _Tags: Agentic AI, CI/CD Automation, Data Visualization, Dynamic Content Generat
 | Unique Repositories | 11 |
 | Primary Language | Python |
 | Top Languages | N/A |
-| Last Synced | 3/30/2026 |
+| Last Synced | 3/31/2026 |
 
 ---
 
