@@ -22,7 +22,7 @@
   "homepage": "https://github.com/akashagl92/Portfolio-Fetch#readme",
   "description": "",
   "dependencies": {
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.4.1",
     "puppeteer": "^24.34.0"
   }
 }
