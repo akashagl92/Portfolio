@@ -159,9 +159,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateCharts(githubData);
     }
 
-    // Load Agentic Summaries
-    await loadAgenticSummaries();
-
     // Existing interactivity
     document.querySelectorAll('.glass-card[data-link]').forEach(card => {
         card.style.cursor = 'pointer';
@@ -173,6 +170,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const vizCard = document.querySelector('.main-viz');
     if (vizCard) vizCard.classList.add('float-anim');
+
+    // Load Agentic Summaries (AI Council)
+    await loadAgenticSummaries();
 });
 
 async function loadAgenticSummaries() {
@@ -252,8 +252,18 @@ function updateCharts(data) {
         totalLangsEl.textContent = activeLanguagesCount || data.totalLanguagesCount || 0;
     }
 
-    // Unified Design System Colors
-    const UDS_COLORS = {
+    // Dynamic color generator for any language (hash-based for consistency)
+    const generateColor = (str) => {
+        let hash = 0;
+        for (let i = 0; i < str.length; i++) {
+            hash = str.charCodeAt(i) + ((hash << 5) - hash);
+        }
+        const h = Math.abs(hash) % 360;
+        return `hsl(${h}, 70%, 60%)`;
+    };
+
+    // Known language colors (for commonly used languages), fallback to generated
+    const langColors = {
         'Python': '#a78bfa',
         'TypeScript': '#3b82f6',
         'JavaScript': '#fbbf24',
@@ -269,18 +279,9 @@ function updateCharts(data) {
         'Other': '#6b7280'
     };
 
-    // Dynamic color generator for any language (hash-based for consistency)
-    const generateColor = (str) => {
-        let hash = 0;
-        for (let i = 0; i < str.length; i++) {
-            hash = str.charCodeAt(i) + ((hash << 5) - hash);
-        }
-        const h = Math.abs(hash) % 360;
-        return `hsl(${h}, 70%, 65%)`;
-    };
-
-    const getLanguageColor = (lang) => UDS_COLORS[lang] || generateColor(lang);
-
+    // Get color for any language (known or dynamically generated)
+    const getLanguageColor = (lang) => langColors[lang] || generateColor(lang);
+    const defaultColors = ['#a78bfa', '#3b82f6', '#fbbf24', '#f97316', '#06b6d4', '#10b981', '#ec4899', '#8b5cf6'];
 
     const languageData = data.activeLanguages || data.allLanguages || data.languages || {};
     const fullDistChart = document.getElementById('full-tech-distribution');

@@ -17,7 +17,12 @@ Prevent native artifact drift and force orchestration writes to project-local `.
 ## Steps
 1. Run runtime preflight:
    - `scripts/pai_runtime_guard.sh status`
-2. Emit shadow-hard banner:
+2. Reconcile Bridge Registry (Surgical Path):
+   - `cat > .pai/runtime/native_artifact_bridge/targets/task.env <<INNER_EOF`
+   - `SESSION_ID="$(pwd | sed 's/.*brain\///;s/\/.*//')"`
+   - `echo "SESSION_ID=\"/Users/akashagrawal/.gemini/antigravity/brain/\$SESSION_ID\"" > .pai/runtime/native_artifact_bridge/targets/task.env`
+   - `INNER_EOF`
+3. Emit shadow-hard banner:
    - `scripts/pai_shadow_hard_banner.sh`
    - Mandatory rule text:
      - `If NATIVE_ARTIFACTS_ALLOWED=0, ban task_boundary + native task.md/implementation_plan.md/walkthrough.md edits, use .pai/* only.`

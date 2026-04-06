@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T7V9BT23');</script>
+    <!-- End Google Tag Manager -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="Akash Agrawal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Agrawal | Principal Product Manager - Search & Content Understanding</title>
+    <meta name="description"
+        content="Portfolio of Akash Agrawal, specializing in Search Innovation, Metadata Enrichment, and Scalable Discovery Systems.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akashagl92.github.io/Portfolio/">
+    <meta property="og:title" content="Akash Agrawal - Search & Discovery Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Akash Agrawal, specializing in Search Innovation, Metadata Enrichment, and Scalable Discovery Systems.">
+    <meta property="og:image" content="https://akashagl92.github.io/Portfolio/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://akashagl92.github.io/Portfolio/">
+    <meta property="twitter:title" content="Akash Agrawal - My Data & AI Portfolio">
+    <meta property="twitter:description"
+        content="Portfolio of Akash Agrawal, specializing in Data Foundations, Measurement Strategy, and Agentic Technologies.">
+    <meta property="twitter:image" content="https://akashagl92.github.io/Portfolio/og-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7V9BT23" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="background-radial"></div>
+    <div class="background-grid"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Akash Agrawal</div>
+            <ul>
+                <li><a href="#work">Professional</a></li>
+                <li><a href="#innovation">Personal</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="reveal active">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <span class="badge">Principal Product Manager</span>
+                    <h1>Search, <span class="gradient-text">Content Understanding</span> & AI Discovery.</h1>
+                    <p class="hero-sub">Defining how fans connect to the stories they love through fast, relevant, 
+                        and data-driven discovery systems—powered by Knowledge Graphs and Scalable AI.</p>
+                    <div class="hero-actions">
+                        <a href="#work" class="btn btn-primary">Professional Portfolio</a>
+                        <a href="#innovation" class="btn btn-secondary">Personal Portfolio</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="glass-card main-viz tech-velocity">
+                        <div class="viz-header">
+                            <span>2025-2026 ENGINEERING VELOCITY</span>
+                            <div class="status-indicator">ACTIVE</div>
+                        </div>
+                        <div class="viz-stats">
+                            <div class="stat">
+                                <span class="stat-label">REPOSITORIES</span>
+                                <span class="stat-value" id="total-repos">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">CONTRIBUTIONS</span>
+                                <span class="stat-value" id="total-commits">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">LANGUAGES</span>
+                                <span class="stat-value" id="total-languages">0</span>
+                            </div>
+                        </div>
+                        <div class="hero-calendar">
+                            <div class="calendar-grid-wrapper">
+                                <div class="calendar-days">
+                                    <span>Sun</span>
+                                    <span></span>
+                                    <span>Tue</span>
+                                    <span></span>
+                                    <span>Thu</span>
+                                    <span></span>
+                                    <span>Sat</span>
+                                </div>
+                                <div class="calendar-main">
+                                    <div class="calendar-months" id="hero-calendar-months">
+                                        <!-- Month labels generated by JS -->
+                                    </div>
+                                    <div class="calendar-grid" id="hero-calendar-grid">
+                                        <!-- Generated by JS -->
+                                    </div>
+                                    <div class="calendar-years" id="hero-calendar-years">
+                                        <!-- Year labels generated by JS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Inline Tech Distribution -->
+                        <div class="inline-tech-distribution" id="full-tech-distribution">
+                            <!-- Generated by JS -->
+                        </div>
+                    </div>
+                    <!-- Rich tooltip for calendar hover -->
+                    <div id="calendar-tooltip" class="calendar-tooltip"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="work" class="reveal">
+            <h2 class="section-title">Professional Portfolio <span class="line"></span></h2>
+            <div class="projects-grid">
+                <!-- Project 1: Databricks Genie Integration - TEXT-TO-SQL / AGENTIC -->
+                <div class="project-card glass-card work featured" data-repo="Databricks-Genie-Integration">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Text-to-SQL</span>
+                        <span>Databricks Genie</span>
+                        <span>Search Innovation</span>
+                    </div>
+                    <h3>Databricks Genie Integration</h3>
+                    <p>Multi-workspace BI platform with natural language queries via Databricks Genie API. Enables
+                        semantic exploration of complex datasets with contact/account lookup, buyer journey analysis,
+                        and bulk data enrichment with sophisticated matching algorithms.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Natural Language → SQL</strong> via Genie Conversation API</li>
+                            <li><strong>Buyer Journey Lookup</strong> by Member ID, Contact, Product Codes</li>
+                            <li><strong>Multi-criteria Matching</strong>: Email, Org hierarchy, DHC mapping</li>
+                            <li><strong>Bulk Processing</strong>: Excel/CSV enrichment at scale</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>Python + Databricks SQL</span>
+                        <span>Enterprise Analytics</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: VOC & Buyer Journey Chatbot - DUAL-BRAIN ARCHITECTURE -->
+                <div class="project-card glass-card work featured" data-repo="voc-buyer-journey-chatbot">
+                    <div class="project-tags">
+                        <span class="highlight-tag">LangGraph</span>
+                        <span>RAG + SQL</span>
+                        <span>Content Discovery</span>
+                    </div>
+                    <h3>VOC & Buyer Journey Chatbot</h3>
+                    <p>Production-ready chatbot with dual-brain architecture: SQL Brain (Genie API for structured queries) 
+                        and Docs Brain (RAG for unstructured PDFs). LangGraph orchestration manages routing, state, 
+                        and complex workflows with LangSmith observability.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Dual-Brain</strong>: SQL (Genie) + Document (RAG) metadata routing</li>
+                            <li><strong>LangGraph</strong> state management & orchestration for discovery</li>
+                            <li><strong>Vector Search</strong> + databricks-bge-large-en embeddings</li>
+                            <li><strong>Model Serving</strong> via Databricks endpoints</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>LangChain 0.2+</span>
+                        <span>Discovery Orchestration</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Marketing Analytics Assistant - MEASUREMENT -->
+                <div class="project-card glass-card work featured" data-repo="Marketing-Analytics-Assistant">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Measurement</span>
+                        <span>A/B Testing</span>
+                        <span>Relevance Testing</span>
+                    </div>
+                    <h3>Marketing Analytics Assistant</h3>
+                    <p>AI-powered chatbot for marketing experiment analysis. Implements binomial tests, Z-tests, 
+                        chi-square, and post-hoc power analysis to validate growth and relevance improvements.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>4 Statistical Tests</strong> for robust relevance/search A/B analysis</li>
+                            <li><strong>Power Analysis</strong>: ≥0.8 threshold for roadmap decisions</li>
+                            <li><strong>GPT + Gemini</strong> for natural language discovery insights</li>
+                            <li><strong>Segment-level</strong> experience performance for personalized discovery</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>FastAPI + Pandas</span>
+                        <span>Relevance Testing</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: LinkedIn API - AD MEASUREMENT -->
+                <div class="project-card glass-card work featured" data-repo="LinkedIn-API">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Ad Tech</span>
+                        <span>LinkedIn Ads</span>
+                        <span>APIs</span>
+                    </div>
+                    <h3>LinkedIn Campaign Measurement</h3>
+                    <p>Automated daily campaign stats export via LinkedIn Marketing API. Company name resolution 
+                        and comprehensive Excel reporting for cross-platform ad measurement and partner data delivery.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Daily Granularity</strong>: No sampling at highest resolution</li>
+                            <li><strong>Company Enrichment</strong>: Org name lookup via LinkedIn API</li>
+                            <li><strong>Automated Export</strong>: Scheduled metadata feeds for stakeholders</li>
+                            <li><strong>Partner Data</strong>: Cross-platform measurement feeds</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>LinkedIn Marketing API</span>
+                        <span>Python + Pandas</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: Google Analytics Pipeline -->
+                <div class="project-card glass-card work featured" data-repo="Google-Analytics">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Data Pipelines</span>
+                        <span>GA4 API</span>
+                        <span>Sampling Bypass</span>
+                    </div>
+                    <h3>Google Analytics Data Foundation</h3>
+                    <p>API-driven data pipelines for GA4 and Universal Analytics. Custom filters to pull 100,000+ rows 
+                        without data sampling—bypassing UI limitations for accurate behavior modeling.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>UserID-Level Data</strong>: Daily granularity without sampling</li>
+                            <li><strong>100K+ Rows</strong>: Bypass GA UI row limits via API</li>
+                            <li><strong>UA + GA4 Support</strong>: Dual-API compatibility</li>
+                            <li><strong>Custom Dimensions</strong>: Full event parameter extraction</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>GA4 Data API</span>
+                        <span>Behavioral Engineering</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+            </div>
+        </section>
+
+
+        <section id="innovation" class="reveal">
+            <h2 class="section-title">Personal Portfolio <span class="line"></span></h2>
+            <div class="innovation-grid">
+                <!-- Project: Erux.ai - Discovery Ecosystem -->
+                <div class="project-card glass-card personal featured" data-repo="erux.ai">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Semantic Search</span>
+                        <span>User Intent</span>
+                        <span>Discovery Innovation</span>
+                    </div>
+                    <h3>Erux.ai: Semantic Discovery Ecosystem</h3>
+                    <p>Global astrological research platform implementing <strong>SmartTextSearch</strong> and 
+                        a semantic <strong>InsightRouter</strong>. Bridges complex datasets with AI-powered interpretations.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Semantic Router</strong>: Dynamic coordinate-system selection for research accuracy</li>
+                            <li><strong>SmartTextSearch</strong>: Hybrid knowledge-base bridging for targeted discovery</li>
+                            <li><strong>Hybrid Insights</strong>: Merging structured data with unstructured research findings</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>FastAPI + Gemini 1.5/2.0</span>
+                        <span>Semantic Intent</span>
+                    </div>
+                </div>
+
+                <!-- Project: Philosophy Sage - Knowledge Graph Architecture -->
+                <div class="project-card glass-card personal featured" data-repo="philosophy-sage">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Knowledge Graphs</span>
+                        <span class="highlight-tag">GraphRAG</span>
+                        <span>Content Understanding</span>
+                    </div>
+                    <h3>Philosophy Sage: Knowledge Graph Architecture</h3>
+                    <p>Advanced Content Understanding platform using <strong>GraphRAG</strong>. Maps semantic relationships 
+                        across a massive corpus of classical texts using Neo4j for high-fidelity contextual retrieval.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Scalable Graph</strong>: Strategy for 650,000+ nodes and 750,000+ relationships</li>
+                            <li><strong>Metadata Enrichment</strong>: Entity-extraction pipeline for automated cross-referencing</li>
+                            <li><strong>Relational Modeling</strong>: Mapping creators, themes, and motifs across 18+ volumes</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>Neo4j + LangChain</span>
+                        <span>Scalable Content IQ</span>
+                    </div>
+                </div>
+
+                <!-- Project: Multi-Agent Coordination - SYSTEM 1/SYSTEM 2 -->
+                <div class="project-card glass-card personal featured">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Orchestration</span>
+                        <span>Consensus Modeling</span>
+                        <span>Discovery Safety</span>
+                    </div>
+                    <h3>Systemic Multi-Agent Coordination</h3>
+                    <p>Dual-layer architecture separating tactical discovery execution from strategic oversight. 
+                        Ensures production-grade reliability for autonomous content-understanding task loops.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>System 1 (Tactical)</strong>: Sub-agents executing high-velocity discovery loops</li>
+                            <li><strong>System 2 (Strategic)</strong>: Parent orchestrator enforcing quality gates and signal integrity</li>
+                            <li><strong>Synchronized Reasoning</strong>: Real-time verification of autonomous discovery paths</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>Strategic Orchestration</span>
+                        <span>Reliability at Scale</span>
+                    </div>
+                </div>
+                
+
+                <!-- Project: OpenClaw - AI AGENT -->
+                <div class="project-card glass-card personal featured" data-repo="moltbot">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Synthesis</span>
+                        <span>Context Modeling</span>
+                        <span>Discovery</span>
+                    </div>
+                    <h3>OpenClaw: Universal Discovery Assistant</h3>
+                    <p>Personal context synthesizer for infinite data streams. Acts as an independent agent for 
+                        cross-account metadata extraction, scheduling, and morning synthesis of complex signal sets.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Synthesis</strong>: Morning briefs from infinite context (Email/Cal/News)</li>
+                            <li><strong>Automation</strong>: Independent discovery-driven cron jobs</li>
+                            <li><strong>Memory</strong>: High-fidelity context assistant for 10x personal productivity</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>WhatsApp Bot</span>
+                        <span>Context Synthesis</span>
+                    </div>
+                </div>
+
+                <!-- Project: Infinite Memory Research - SSC/RGC ARCHITECTURE -->
+                <div class="project-card glass-card personal featured" data-repo="agentic-memory-scaling">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Discovery Innovation</span>
+                        <span>LLM Scaling</span>
+                        <span>Retrieval Quality</span>
+                    </div>
+                    <h3>Discovery at Scale: 100% Recall at 10M Turns</h3>
+                    <p>Formalized research on <strong>Recursive Gated Consolidation (RGC)</strong> to eliminate the 
+                        "Discovery Cliff"—ensuring search relevance and signal recall at extreme context scales.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Discovery Cliff</strong>: Quantitative mitigation of 99% temporal decay</li>
+                            <li><strong>Racer Architecture</strong>: Hybrid gated consolidation for O(1) retrieval cost</li>
+                            <li><strong>Latency Stabilization</strong>: Hardware-grounded performance for high-engagement systems</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>Scaling Laws for Discovery</span>
+                        <span>Peer Review (Pre-print)</span>
+                    </div>
+                </div>
+
+                <!-- Project: Personal AI Infrastructure (PAI v2) -->
+                <div class="project-card glass-card personal featured">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Infrastructure</span>
+                        <span>Shadow Profile</span>
+                        <span>Cross-Project Learning</span>
+                    </div>
+                    <h3>Personal AI Infrastructure (PAI v2)</h3>
+                    <p>A persistent, self-improving AI Operating System layer integrated across all local projects. 
+                        Implements standard orchestration cycles and long-term memory via the Kai System.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Orchestration</strong>: The Six Cycles of agentic workflow persistence</li>
+                            <li><strong>Shadow Profile</strong>: Secure execution via non-native architectural rituals</li>
+                            <li><strong>Kai System</strong>: Automated decision & learning persistence across projects</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>Antigravity Native</span>
+                        <span>Architecture Layer</span>
+                    </div>
+                </div>
+
+
+                <!-- Project: Autonomous Stock Trading System -->
+                <div class="project-card glass-card personal featured" data-repo="stock_price_target_modelling">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Signals</span>
+                        <span>Momentum Discovery</span>
+                        <span>Statistical Verification</span>
+                    </div>
+                    <h3>Autonomous Trading System (V4.1)</h3>
+                    <p>Production-grade autonomous trading system. The V4.1 'Steady Winner' strategy achieves 
+                        80.8% XIRR through dual-track asset allocation and real-time shadow discovery verification.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>80.8% XIRR</strong> (60.3% Alpha vs S&P 500) via autonomous discovery</li>
+                            <li><strong>Shadow Tracking</strong>: Real-time statistical verification of trade signals</li>
+                            <li><strong>Tax Efficient</strong>: Optimized execution for long-term discovery-driven gains</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>80.8% XIRR</span>
+                        <span>Signal Verification</span>
+                    </div>
+                </div>
+
+                <!-- Project: IDE-Agnostic Agent Orchestrator -->
+                <div class="project-card glass-card personal featured" data-repo="ide-agnostic-agent-orchestrator">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Orchestration</span>
+                        <span>Safety Locks</span>
+                        <span>Platform Neutral</span>
+                    </div>
+                    <h3>IDE-Agnostic Agent Orchestrator</h3>
+                    <p>An orchestration framework that unifies AI agent workflows across multi-IDE environments. 
+                        Decouples safety policies (runtime locks, circuit breakers) from specific platforms.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Policy-First</strong>: Mandatory safety and quality gates for discovery agents</li>
+                            <li><strong>Tool Agnostic</strong>: Cross-IDE deployment for discovery workflows</li>
+                            <li><strong>Circuit Breakers</strong>: Preventing infinite agent loops in discovery</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>Architecture Logic</span>
+                        <span>Production Ready</span>
+                    </div>
+                </div>
+
+                <!-- Project: Music + Math Visualizer -->
+                <div class="project-card glass-card personal featured" data-repo="Music-and-Math">
+                    <div class="project-tags">
+                        <span class="highlight-tag">Content Relation</span>
+                        <span>Web Audio</span>
+                        <span>Mathematics</span>
+                    </div>
+                    <h3>Sonic Geometry: Relational Modeling</h3>
+                    <p>Interactive exploration of Music Theory × Physics × Math. Implements real-time spatial 
+                        relational modeling of harmonic ratios and geometry—a playground for relational discovery.</p>
+                    <div class="project-highlights">
+                        <ul>
+                            <li><strong>Real-time FFT</strong>: Spectrum analyzer + oscilloscope for signal mapping</li>
+                            <li><strong>Lissajous Curves</strong>: Relational visualization of harmonic ratios</li>
+                            <li><strong>Circle of Fifths</strong>: Interactive music theory knowledge graph</li>
+                        </ul>
+                    </div>
+                    <div class="project-meta">
+                        <span>Web Audio API</span>
+                        <span>Relational Visualization</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2 class="section-title">Discovery Foundations <span class="line"></span></h2>
+            <div class="skills-container glass-card">
+                <div class="skill-group">
+                    <h5>Search & Relevance</h5>
+                    <p>Semantic Vector Search, Intent Prediction, Relevance Modeling, Query Interpretation, Ranking Logic.</p>
+                </div>
+                <div class="skill-group">
+                    <h5>Content Intelligence</h5>
+                    <p>Knowledge Graph Architecture (Neo4j), Metadata Enrichment, Entity Extraction, Relational Content Modeling.</p>
+                </div>
+                <div class="skill-group">
+                    <h5>AI at Scale</h5>
+                    <p>LLM Scaling Laws, Recursive Consolidation (RGC), Signal Recall Optimization, High-Engagement Platforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2 class="section-title">Let's Connect <span class="line"></span></h2>
+            <div class="contact-container glass-card">
+                <p>Ready to transform data and measurement ecosystems with scalable, agentic solutions.</p>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/akashagl" class="btn btn-primary" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/akashagl92" class="btn btn-secondary" target="_blank">GitHub</a>
+                    <a href="mailto:akash.agl92@gmail.com" class="btn btn-secondary">Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Akash Agrawal. Built with passion.</p>
+    </footer>
+
+    <div id="chart-tooltip" class="tooltip"></div>
+    <script src="app.js?v=2026"></script>
+</body>
+
+</html>

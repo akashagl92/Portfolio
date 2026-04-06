@@ -8,11 +8,11 @@
     "isPrivate": false,
     "language": "HTML",
     "languages": {
-      "HTML": 780224,
-      "JavaScript": 588050,
+      "HTML": 811117,
+      "JavaScript": 613693,
       "TypeScript": 393032,
       "CSS": 281467,
-      "Shell": 119955,
+      "Shell": 119967,
       "Python": 66001,
       "Handlebars": 5679,
       "Vue": 3564
@@ -20,10 +20,10 @@
     "stars": 0,
     "forks": 0,
     "createdAt": "2025-12-19T03:23:05Z",
-    "updatedAt": "2026-03-12T16:47:08Z",
-    "pushedAt": "2026-03-12T16:47:04Z",
+    "updatedAt": "2026-03-30T17:22:54Z",
+    "pushedAt": "2026-03-30T17:22:49Z",
     "topics": [],
-    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **475 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**\u2014all while maintaining rigorous engineering practices.\n\n## \ud83c\udf10 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis dynamic portfolio platform leverages agentic AI for automated content generation and a scalable architecture to deliver industry-specific, research-grade analytics. It utilizes vanilla JS/HTML/CSS, Chart.js, and JSON data, supported by robust GitHub Actions for CI/CD and static site generation. The system showcases production-ready automation, effectively bridging data science research, marketing technology, and real-world AI applications through tailored, data-driven content.\n\n_Tags: Agentic AI, Static Site Generation, CI/CD Automation, Data Visualization_\n\n---\n\n### \ud83d\udcf2 Moltbot - AI WhatsApp Agent (`moltbot`)\n**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)\n\nThis advanced personal AI agent platform pioneers scalable, persistent memory for LLMs, leveraging Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC) to achieve 100% memory fidelity across millions of conversation turns. It integrates sophisticated state management, planning, and tool-use capabilities with diverse external services, including a job-hunter feature and IDE extensions, pushing the boundaries of agentic AI and natural language processing.\n\n_Tags: LLM Agents, Persistent Memory, Polyglot Development, Containerization_\n\n---\n\n### \ud83d\udcc8 Autonomous Trading System (`stock_price_target_modelling`)\n**Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)\n\nThis autonomous AI-powered system manages a dual-track stock and crypto portfolio, employing a multi-tier 'Steady Winner' strategy with Golden Cross momentum boosting. It optimizes for realized wealth and tax efficiency, achieving an 80.8% XIRR and 60.3% Alpha over the S&P 500. The system integrates financial data, automates execution, and provides robust email-based reporting and approval workflows.\n\n_Tags: Quantitative Finance, Machine Learning, Automated Trading, DevOps Automation_\n\n---\n\n### \ud83e\udd16 IDE-Agnostic Agent Orchestrator (`ide-agnostic-agent-orchestrator`)\n**Shell** | [Repo](https://github.com/akashagl92/ide-agnostic-agent-orchestrator)\n\nThis IDE-agnostic orchestration framework unifies AI-assisted software delivery across diverse development environments, eliminating workflow fragmentation. It enforces policy-first execution and integrates a multi-layered native artifact safety stack, including circuit breakers and idempotent retries, to guarantee reliable and controlled AI operations. The system manages complex agent execution, ensuring data integrity and fault tolerance through an event-driven architecture.\n\n_Tags: AI Orchestration, IDE-Agnostic, Policy Enforcement, Fault Tolerance_\n\n---\n\n### Agentic-memory-scaling (`agentic-memory-scaling`)\n**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)\n\nIntroduces Recursive Gated Consolidation (RGC), an innovative architecture that overcomes the 'Discovery Cliff' in LLM agent memory. It achieves O(1) memory scaling, maintaining 100% signal recall across 10^7 turns where standard methods fail. Utilizing Python, LLM APIs like Gemini and Claude, and extensive Monte Carlo simulations, the system validates an 'Inverted Latency Law' through hardware-grounded analysis, fundamentally redefining long-term memory for intelligent agents.\n\n_Tags: LLM Agent Memory, Recursive Gated Consolidation, Scalable AI Architectures, Monte Carlo Simulation_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 475 |\n| Unique Repositories | 11 |\n| Primary Language | Python |\n| Top Languages | Python (58.5%), HTML (25.9%), TypeScript (12.4%) |\n| Last Synced | 3/12/2026 |\n\n---\n\n## \ud83d\udee0 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## \ud83d\udcc1 Structure\n\n```\n\u251c\u2500\u2500 index.html          \u2192 General portfolio\n\u251c\u2500\u2500 alivo/              \u2192 Alivo-tailored (Product Enthusiast)\n\u251c\u2500\u2500 consensys/          \u2192 Consensys-tailored (Market Research)\n\u251c\u2500\u2500 airbnb/             \u2192 Airbnb-tailored (Research & Discovery)\n\u251c\u2500\u2500 data.json           \u2192 GitHub activity data (Synced DAILY)\n\u2514\u2500\u2500 scripts/            \u2192 Automation & Dynamic generation\n```\n\n## \ud83c\udfd7 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## \ud83d\ude80 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## \ud83d\udcdd License\n\nMIT\n",
+    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **529 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**\u2014all while maintaining rigorous engineering practices.\n\n## \ud83c\udf10 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Hershey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/hershey/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis platform dynamically generates highly-tailored, research-grade analytics and content for specific industries using an automated, production-grade system. It leverages agentic AI for content generation and robust CI/CD with GitHub Actions for deployment and synchronization across multiple customized portfolio versions. The system bridges advanced data science, marketing technology, and real-world AI applications, demonstrating sophisticated automation and data orchestration capabilities.\n\n_Tags: Agentic AI, CI/CD Automation, Data Visualization, Dynamic Content Generation_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 529 |\n| Unique Repositories | 11 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 3/30/2026 |\n\n---\n\n## \ud83d\udee0 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## \ud83d\udcc1 Structure\n\n```\n\u251c\u2500\u2500 index.html          \u2192 General portfolio\n\u251c\u2500\u2500 alivo/              \u2192 Alivo-tailored (Product Enthusiast)\n\u251c\u2500\u2500 consensys/          \u2192 Consensys-tailored (Market Research)\n\u251c\u2500\u2500 airbnb/             \u2192 Airbnb-tailored (Research & Discovery)\n\u251c\u2500\u2500 data.json           \u2192 GitHub activity data (Synced DAILY)\n\u2514\u2500\u2500 scripts/            \u2192 Automation & Dynamic generation\n```\n\n## \ud83c\udfd7 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## \ud83d\ude80 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## \ud83d\udcdd License\n\nMIT\n",
     "files": [
       {
         "name": ".agent",
@@ -201,6 +201,11 @@
         "path": "kraken"
       },
       {
+        "name": "motive",
+        "type": "dir",
+        "path": "motive"
+      },
+      {
         "name": "og-image.png",
         "type": "file",
         "path": "og-image.png"
@@ -293,87 +298,415 @@
     ],
     "recentCommits": [
       {
-        "date": "2026-03-12T16:43:22Z",
-        "message": "feat: implement tailored Hershey portfolio & update GH Action sync ritual",
+        "date": "2026-03-30T17:22:48Z",
+        "message": "feat: add tailored motive portfolio page and updated pai state",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-03-12T07:27:27Z",
+        "date": "2026-03-30T17:22:31Z",
+        "message": "feat: add tailored motive portfolio page and update pai state",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-30T08:07:46Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
       },
       {
-        "date": "2026-03-11T22:41:46Z",
-        "message": "docs: agentic sifting & dynamic readme update",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-11T22:03:58Z",
-        "message": "Total sync of updateCharts function across all subdirectories to fix JS errors",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-11T19:39:54Z",
-        "message": "Fix missing Chart.js dependency and missing Project Cards in fetch and airbnb",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-11T19:01:48Z",
-        "message": "Standardize layout, add cresta portfolio, and fix calendar dates across all portfolio pages",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-11T07:15:21Z",
+        "date": "2026-03-29T07:32:08Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
       },
       {
-        "date": "2026-03-10T07:12:12Z",
+        "date": "2026-03-28T07:28:30Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
       },
       {
-        "date": "2026-03-09T07:33:09Z",
+        "date": "2026-03-27T07:39:19Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
       },
       {
-        "date": "2026-03-08T07:06:00Z",
+        "date": "2026-03-26T07:40:15Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
       },
       {
-        "date": "2026-03-07T07:03:33Z",
+        "date": "2026-03-25T07:34:34Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
       },
       {
-        "date": "2026-03-06T21:32:24Z",
-        "message": "docs(pai): fix documentation quality violations and absolute paths",
+        "date": "2026-03-24T07:35:14Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-23T07:43:44Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-22T07:12:17Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-21T07:06:53Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-20T07:28:39Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-19T07:30:59Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
+        "date": "2026-03-18T07:34:45Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      }
+    ],
+    "ai_summary": "This production-grade platform leverages agentic AI to dynamically generate highly-tailored, research-grade analytics and content for diverse industries. It integrates sophisticated data orchestration with robust CI/CD pipelines, enabling the scalable delivery of customized AI applications. The system manages over 20 distinct portfolio versions, demonstrating advanced automation and observability for complex content generation workflows.",
+    "ai_tags": [
+      "Agentic AI",
+      "CI/CD",
+      "Data Orchestration",
+      "Static Site Generation"
+    ],
+    "complexity_score": 9
+  },
+  {
+    "name": "erux.ai",
+    "fullName": "akashagl92/erux.ai",
+    "description": null,
+    "url": "https://github.com/akashagl92/erux.ai",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "Python",
+    "languages": {
+      "Python": 4873705,
+      "TypeScript": 1431542,
+      "HTML": 422820,
+      "Shell": 232150,
+      "JavaScript": 7651,
+      "CSS": 3001,
+      "Procfile": 1921,
+      "Mako": 704
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2025-03-18T06:19:43Z",
+    "updatedAt": "2026-03-27T06:26:28Z",
+    "pushedAt": "2026-03-27T06:26:24Z",
+    "topics": [],
+    "readme": "# SwissEphemeris-Astrology\n\n![Python](https://img.shields.io/badge/python-3.10+-blue.svg)\n![Next.js](https://img.shields.io/badge/Next.js-14.0-black)\n![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688.svg)\n![License](https://img.shields.io/badge/license-MIT-green.svg)\n![Research](https://img.shields.io/badge/Research-Validated-purple)\n\nA comprehensive astrological analysis platform that combines traditional astrological calculations with modern AI-powered interpretations. The system provides accurate astronomical calculations and delivers personalized astrological insights through an intuitive web interface.\n\n## \ud83d\udcda Documentation\n\n### **Complete Technical Documentation**\n- **[COMPREHENSIVE_DOCUMENTATION.md](docs/COMPREHENSIVE_DOCUMENTATION.md)** - Complete technical reference (130KB+)\n  - System architecture and design patterns\n  - Frontend and backend implementation details\n  - Database schema and analytics system\n  - Testing strategy and deployment guide\n  - Business model and pricing strategy\n  - Security and privacy compliance\n\n### **Development Resources**\n- **`CONTRIBUTING.md`** - Development guidelines and Cursor agent instructions\n- **`CHANGELOG.md`** - Version history and recent changes\n- **`README.md`** - This file - project overview and quick start\n\n### **For Cursor/Antigravity or any IDE Agents & Developers**\n**\u26a0\ufe0f IMPORTANT**: Before making any changes, read:\n1. **`COMPREHENSIVE_DOCUMENTATION.md`** - Complete technical reference\n2. **`CONTRIBUTING.md`** - Development guidelines and requirements\n3. Current codebase structure and patterns\n4. **Available Workflows**:\n   - `/docs_sync`: Ensure documentation, research reports, and persistent context are in sync.\n   - `/pai_sync`: Daily synchronization of project state with Personal AI Infrastructure (PAI).\n   - `/refactor`: Weekly hygiene ritual to clean the codebase and prune PAI memory.\n   - `/qa_gate`: Mandatory multi-stage quality gate execution.\n\n## \ud83d\udee1\ufe0f PAI v2: Standard Maintenance Ritual\n\nTo manage the integrity of the product throughout its lifecycle, all agents and developers MUST follow this sequential ritual:\n\n### 1. \ud83d\udccb Planning (Outer Loop)\n- Define **Current State** vs. **Desired State**.\n- **Shadow Mode (Locked)**: Use `.pai/plans/active_plan.md` and `.pai/tasks/todo.md`.\n- **Native Mode**: Use `implementation_plan.md` and `task.md`.\n- Document all architectural pivots as ADRs in `.pai/decisions/`.\n\n### 2. \ud83d\udee0\ufe0f Development (Inner Loop)\n- Implement features with **100% Parity** to established design tokens (Tailwind/CSS).\n- Ensure all AI logic inherits from `BaseAstroProcessor` for unified formatting.\n- **Strict Rule**: No absolute paths (e.g. `file://...`). Use repository-relative links.\n\n### 3. \u2696\ufe0f Quality Assurance (The Gate)\nExecute the mandatory Quality Gate before marking any major task complete:\n```bash\n# Automated Multi-Stage Audit\n./scripts/pai_quality_gate_eval.sh\n```\nThe gate enforces:\n- **Docs Quality**: Automated link and path scrubbing.\n- **AI Guard**: Verifies Grounding Scrubber and Prompt integrity.\n- **Performance**: Latency and token cost audit.\n- **Security**: Prompt injection scan and credential leak audit.\n\n### 4. \ud83d\ude80 Deployment & Persistence\n- Commit code using descriptive messages.\n- Run `/pai_sync` to ensure the project \"Long-term Memory\" in `.pai/` is updated.\n- **CI/CD Enforcement**: The GitHub Deployment Pipeline automatically runs the `pre_merge` gate. Failure here blocks the build.\n\n**Key Requirements:**\n- Keep documentation updated for any code changes\n- Request privacy policy review for data collection changes\n- Maintain minimal tech debt (no duplicate code)\n- Write comprehensive tests for new functionality\n\n## \ud83c\udf1f Features\n\n### Core Functionality\n- **Multi-System Support**: Western (Tropical), Vedic (Sidereal), and Horary astrology\n- **Precise Calculations**: Industry-standard astronomical calculations for accuracy\n- **AI-Powered Interpretations**: Google Gemini API for intelligent analysis\n- **Interactive Charts**: Visual birth chart representations\n- **Q&A System**: Natural language queries about astrological data\n- **Export Capabilities**: PDF generation with custom branding\n- **Responsive Design**: Mobile-first, accessible interface\n\n### Advanced Features\n- **Mundane Astrology**: Country/entity charts using independence dates for geopolitical analysis\n  - *Coming Soon: Company (IPO dates) and Cryptocurrency (launch dates) entity types*\n- **Divisional Charts**: Complete Vedic divisional chart analysis (D1-D60)\n- **Dasha Periods**: Vimshottari Dasha calculations and interpretations\n- **Transit Analysis**: Current planetary movements and their effects\n- **Aspect Analysis**: Detailed planetary aspect calculations\n- **Yogas Detection**: Vedic yoga identification and analysis\n- **Nakshatra Analysis**: Detailed lunar mansion interpretations\n- **Dosha Analysis**: Astrological affliction detection (Mangal, Saturn, Rahu, etc.)\n- **House Systems**: Multiple house system support\n- **Analytics Tracking**: Comprehensive user interaction analytics\n- **Multi-Channel Sharing**: Social media integration with tracking\n\n## \ud83d\udd2c Research & Scientific Validation\n\nThis platform is backed by **rigorous statistical research** validating astrological principles. Our research applies modern data science methods to test traditional astrological techniques.\n\n### Research Dataset\n- **5,885 public figures** with verified birth data and 4,739 documented figures analyzed\n- **239 countries** with independence charts and 7,311 historical events analyzed\n- **Total valid event scale**: 12,050 events\n\n### Key Scientific Findings\n| Finding | Evidence |\n|---------|----------|\n| **Astrological Correlations** | Statistically significant (q < 0.001 after FDR correction) |\n| **Domain-Specific Patterns** | House 10\u2192career, House 7\u2192relationships validated |\n| **Vedic Techniques** | Doshas (RR up to 2.69), 14 Yoga types, Divisional charts all significant |\n| **Combination Effects** | Synergy ratios up to 48.89x when conditions align |\n| **Predictive ML Models** | 78-81% accuracy (Timing Precision) |\n| **Temporal Precision** | 50%+ events within 1\u00b0 orb of exact transits |\n\n### \ud83d\udcd6 Complete Research Documentation\n- **[Master Research Documentation](backend/research/reports/COMPREHENSIVE_MASTER_RESEARCH_DOCUMENTATION.md)** - Complete findings, methodology, and statistical analysis\n- **[Research Directory](backend/research/)** - Scripts, data, and reproducible results\n\n### \ud83e\uddec Hybrid System & Research Philosophy\nWe enforce a unique **\"Archetypal Transferability\"** data philosophy:\n- **Core Premise**: An archetype (e.g., \"Sun in House 10 = Visibility\") is statistically valid regardless of which system places the planet there.\n- **Interoperability**:\n  - **Western Points in Vedic**: We support toggling asteroids (Lilith, Pallas) in Vedic charts. These are interpreted using a **Hybrid Approach**: calculated by Sidereal Sign (Vedic), Vedic House, and *Vedic Nakshatra*.\n  - **Data Flow**: To ensure depth of insight, **all calculated bodies (including asteroids) are passed to the AI Interpretation Engine** even if hidden in the UI. The \"Western Points\" toggle is a visual preference, not a data filter.\n  - **Exclusion**: We do *not* force Vedic-derived points (Arudha Lagna) into Western systems as they lack the requisite framework.\n\n## \ud83c\udfd7\ufe0f Architecture\n\n### Technology Stack\n- **Frontend**: Next.js 14, React 18, TypeScript, Tailwind CSS\n- **Backend**: FastAPI, Python 3.10, SQLAlchemy\n- **Database**: PostgreSQL (Production), SQLite (Development)\n- **AI Integration**: Google Gemini API, HuggingFace Inference API\n- **PDF Generation**: ReportLab with custom watermarking\n- **Deployment**: Render.com, Heroku, Railway, PM2\n- **Testing**: Pytest, Jest, GitHub Actions\n\n### System Components\n```mermaid\ngraph TD\n    Client[\"Client Layer\"]\n    Web[\"Web Browser\"]\n    Mobile[\"Mobile App\"]\n    API[\"API Clients\"]\n    \n    Client --> Web\n    Client --> Mobile\n    Client --> API\n    \n    Web --> Frontend[\"Next.js Frontend\"]\n    Mobile --> Frontend\n    \n    Frontend --> Backend[\"FastAPI Backend\"]\n    \n    subgraph \"Frontend Services\"\n        Components[\"React Components\"]\n        Pages[\"Next.js Pages\"]\n        Utils[\"Utilities\"]\n        Styles[\"Tailwind CSS\"]\n    end\n    \n    Frontend --- Components\n    Frontend --- Pages\n    \n    subgraph \"Backend Services\"\n        Routes[\"Route Handlers\"]\n        Logic[\"Business Logic\"]\n        AI[\"AI Integration (Gemini)\"]\n        Data[\"Data Processing\"]\n        Ephe[\"Swiss Ephemeris\"]\n        DB[(\"Database\")]\n    end\n    \n    Backend --> Routes\n    Routes --> Logic\n    Logic --> AI\n    Logic --> Data\n    Logic --> Ephe\n    Logic --> DB\n```\n\n## \ud83d\ude80 Quick Start\n\n### Prerequisites\n- Python 3.10+\n- Node.js 18+\n- npm or yarn\n- PostgreSQL (for production)\n\n## \ud83e\uddea Testing\n\n### Comprehensive Testing Strategy\nOur application includes a robust testing framework covering all aspects of functionality, security, and user experience:\n\n- **[Testing Strategy](docs/COMPREHENSIVE_DOCUMENTATION.md#10-testing-strategy--implementation)**: Complete testing pyramid including unit, integration, and security tests\n- **[Security Testing](docs/COMPREHENSIVE_DOCUMENTATION.md#11-security--quality-assurance)**: Comprehensive security testing framework with automated vulnerability detection\n- **[UAT Test Plan](docs/COMPREHENSIVE_DOCUMENTATION.md#11-security--quality-assurance)**: Detailed User Acceptance Testing scenarios and procedures\n\n### Running Tests\n```bash\n# Run all tests\ncd backend && python run_tests.py\n\n# Run security tests\ncd backend && python run_security_tests.py\n\n# Run frontend tests\nnpm test\n\n# Run specific test categories\npython -m pytest tests/test_security.py -m sql_injection -v\npython -m pytest tests/test_astrology.py -v\nnpm test -- --testNamePattern=\"NatalChartWheel\"\n```\n\n### Installation\n\n1. **Clone the repository**\n   ```bash\n   git clone https://github.com/your-username/SwissEphemeris-Astrology.git\n   cd SwissEphemeris-Astrology\n   ```\n\n2. **Set up the backend**\n   ```bash\n   # Create and activate virtual environment\n   python -m venv venv_py310\n   source venv_py310/bin/activate  # On Windows: venv_py310\\Scripts\\activate\n   \n   # Install dependencies\n   cd backend\n   pip install -r requirements.txt\n   ```\n\n3. **Set up the frontend**\n   ```bash\n   # Install dependencies\n   npm install\n   ```\n\n4. **Environment Configuration**\n   \n   Create `.env` files in both root and backend directories:\n   \n   **Root `.env`:**\n   ```env\n   NEXT_PUBLIC_API_URL=http://localhost:8001\n   ```\n   \n   **Backend `.env`:**\n   ```env\n   DATABASE_URL=sqlite:///./astrology.db\n   EPHEMERIS_PATH=./app/ephe\n   GEMINI_API_KEY=your_gemini_api_key_here\n   SECRET_KEY=your_secret_key_here\n   ```\n\n5. **Download ephemeris files**\n   ```bash\n   cd backend\n   mkdir -p app/ephe\n   # Download ephemeris files for astronomical calculations\n   # Or use the provided download script\n   python download_ephemeris.py\n   ```\n\n### Running the Application\n\n1. **Start the backend server**\n```bash\ncd backend\nsource ../venv_py310/bin/activate\n   python -m uvicorn app.main:app --port 8001 --reload\n```\n\n2. **Start the frontend server**\n```bash\nnpm run dev\n```\n\n3. **Access the application**\n   - Frontend: http://localhost:3000\n   - Backend API: http://localhost:8001\n   - API Documentation: http://localhost:8001/docs\n\n## \ud83d\udcc1 Project Structure\n\n```\nErux-Astrology/\n\u251c\u2500\u2500 README.md\n\u251c\u2500\u2500 ARCHITECTURE.md\n\u251c\u2500\u2500 DESIGN_GUIDELINES.md\n\u251c\u2500\u2500 package.json\n\u251c\u2500\u2500 next.config.js\n\u251c\u2500\u2500 tailwind.config.js\n\u251c\u2500\u2500 tsconfig.json\n\u251c\u2500\u2500 .env\n\u251c\u2500\u2500 .env.local\n\u251c\u2500\u2500 .gitignore\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 src/                          # Frontend source code\n\u2502   \u251c\u2500\u2500 components/               # React components\n\u2502   \u2502   \u251c\u2500\u2500 ui/                  # Base UI components\n\u2502   \u2502   \u251c\u2500\u2500 charts/              # Chart components\n\u2502   \u2502   \u251c\u2500\u2500 forms/               # Form components\n\u2502   \u2502   \u251c\u2500\u2500 analysis/            # Analysis components\n\u2502   \u2502   \u2514\u2500\u2500 layout/              # Layout components\n\u2502   \u251c\u2500\u2500 pages/                   # Next.js pages\n\u2502   \u2502   \u251c\u2500\u2500 api/                 # API routes\n\u2502   \u2502   \u251c\u2500\u2500 index.tsx            # Home page\n\u2502   \u2502   \u2514\u2500\u2500 chart.tsx            # Chart page\n\u2502   \u251c\u2500\u2500 utils/                   # Utility functions\n\u2502   \u2502   \u251c\u2500\u2500 api.ts               # API client\n\u2502   \u2502   \u251c\u2500\u2500 formatters.ts        # Data formatters\n\u2502   \u2502   \u251c\u2500\u2500 textFormatting.ts    # Text formatting utilities\n\u2502   \u2502   \u2514\u2500\u2500 validators.ts        # Input validation\n\u2502   \u251c\u2500\u2500 types/                   # TypeScript types\n\u2502   \u2502   \u251c\u2500\u2500 chart.ts             # Chart types\n\u2502   \u2502   \u2514\u2500\u2500 api.ts               # API types\n\u2502   \u2514\u2500\u2500 styles/                  # Styling\n\u2502       \u251c\u2500\u2500 globals.css          # Global styles\n\u2502       \u2514\u2500\u2500 components.css       # Component styles\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 backend/                     # Backend source code\n\u2502   \u251c\u2500\u2500 app/\n\u2502   \u2502   \u251c\u2500\u2500 main.py             # FastAPI application\n\u2502   \u2502   \u251c\u2500\u2500 config.py           # Configuration\n\u2502   \u2502   \u251c\u2500\u2500 models/             # Pydantic models\n\u2502   \u2502   \u251c\u2500\u2500 database/           # Database layer\n\u2502   \u2502   \u251c\u2500\u2500 routes/             # API routes\n\u2502   \u2502   \u251c\u2500\u2500 services/           # Business logic\n\u2502   \u2502   \u251c\u2500\u2500 training/           # AI training\n\u2502   \u2502   \u251c\u2500\u2500 utils/              # Utilities\n\u2502   \u2502   \u2514\u2500\u2500 ephe/               # Ephemeris files\n\u2502   \u251c\u2500\u2500 tests/                  # Test suite\n\u2502   \u251c\u2500\u2500 requirements.txt        # Python dependencies\n\u2502   \u2514\u2500\u2500 .env                    # Backend environment\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 .github/                    # GitHub workflows\n\u2502   \u2514\u2500\u2500 workflows/\n\u2502       \u251c\u2500\u2500 deploy.yml          # Deployment workflow\n\u2502       \u2514\u2500\u2500 test.yml            # Testing workflow\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 scripts/                    # Deployment scripts\n\u2502   \u251c\u2500\u2500 deploy.sh              # Deployment script\n\u2502   \u2514\u2500\u2500 backup.sh              # Backup script\n\u2514\u2500\u2500 \n\u2514\u2500\u2500 docs/                      # Documentation\n    \u251c\u2500\u2500 api/                   # API documentation\n    \u251c\u2500\u2500 user-guide/            # User guide\n    \u2514\u2500\u2500 developer-guide/       # Developer guide\n```\n\n## \ud83d\udd27 Configuration\n\n### Environment Variables\n\n#### Frontend Environment Variables\n```env\nNEXT_PUBLIC_API_URL=http://localhost:8001\nNEXT_PUBLIC_BRAND_NAME=\"Erux Astrology\"\n```\n\n#### Backend Environment Variables\n```env\n# Database\nDATABASE_URL=sqlite:///./astrology.db\nDATABASE_URL_PROD=postgresql://user:password@localhost/astrology\n\n# Ephemeris\nEPHEMERIS_PATH=./app/ephe\n\n# AI Integration\nGEMINI_API_KEY=your_gemini_api_key_here\nDISABLE_AI_INTERPRETATIONS=false\n\n# Security\nSECRET_KEY=your_secret_key_here\nCORS_ORIGINS=[\"http://localhost:3000\"]\n\n# Logging\nLOG_LEVEL=INFO\nLOG_FILE=app.log\n\n# Export\nWATERMARK_TEXT=\"Erux Astrology\"\n```\n\n### Ephemeris Setup\n\n1. **Download ephemeris files**\n   ```bash\n   cd backend/app/ephe\n   wget https://www.astro.com/ftp/swisseph/ephe/sepl_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/semo_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/seas_18.se1\n   ```\n\n2. **Verify file integrity**\n   ```bash\n   cd backend\n   python -c \"from app.config import validate_ephemeris_files; validate_ephemeris_files()\"\n   ```\n\n## \ud83e\uddea Testing\n\n### Backend Tests\n```bash\ncd backend\nsource ../venv_py310/bin/activate\npython -m pytest tests/ -v\n```\n\n### Frontend Tests\n```bash\nnpm test\n```\n\n### Integration Tests\n```bash\nnpm run test:integration\n```\n\n### Test Coverage\n```bash\n# Backend coverage\ncd backend\npython -m pytest --cov=app tests/\n\n# Frontend coverage\nnpm run test:coverage\n```\n\n## \ud83d\udcca API Documentation\n\n### Core Endpoints\n#### Chart Calculation\n```http\nPOST /calculate\nContent-Type: application/json\n\n{\n  \"date\": \"1990-07-12\",\n  \"time\": \"14:30\",\n  \"city\": \"New York\",\n  \"state\": \"NY\",\n  \"country\": \"USA\",\n  \"system\": \"western\" // or \"vedic\"\n}\n```\n\n#### Interpretation (Streaming)\n```http\nPOST /interpret\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"system\": \"vedic\",\n  \"include_transits\": true,\n  \"section\": \"natal_chart_interpretation\"\n}\n```\n\n#### City Suggestion\n```http\nGET /suggest_cities?query=London&limit=5&include_timezone=true\n```\n\n#### Q&A System\n```http\nPOST /qa\nContent-Type: application/json\n\n{\n  \"question\": \"What does Saturn in 5th house mean?\",\n  \"context\": { \"chart_data\": ... },\n  \"system\": \"vedic\"\n}\n```\n\n#### Predictions\n```http\nPOST /api/predictions/generate\nContent-Type: application/json\n\n{\n  \"date\": \"1990-07-12\",\n  \"time\": \"14:30\",\n  \"city\": \"New York\",\n  \"prediction_window_days\": 30\n}\n```\n\n#### PDF Export\n```http\nPOST /export/chart/pdf\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"birth_details\": { ... }\n}\n```\n\n### Response Format\n```json\n{\n  \"success\": true,\n  \"data\": {\n    // Response data\n  },\n  \"meta\": {\n    \"timestamp\": \"2024-01-08T12:00:00Z\",\n    \"requestId\": \"req_123456\",\n    \"version\": \"1.0.0\"\n  }\n}\n```\n\n## \ud83d\ude80 Deployment\n\n### Production Deployment\n\n1. **Build the application**\n   ```bash\n   npm run build\n   ```\n\n2. **Deploy to Render.com**\n   ```bash\n   # Using the provided deployment script\n   ./scripts/deploy.sh\n   ```\n\n3. **Environment Setup**\n   - Set production environment variables\n   - Configure database connections\n   - Set up SSL certificates\n\n### Container Deployment\n\n1. **Using Heroku**\n```bash\nheroku create your-app-name\nheroku config:set DATABASE_URL=your_db_url\ngit push heroku main\n```\n\n2. **Using Railway**\n```bash\nrailway login\nrailway init\nrailway up\n```\n\n### Manual Deployment\n\n1. **Backend deployment**\n   ```bash\n   cd backend\n   gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker\n   ```\n\n2. **Frontend deployment**\n   ```bash\n   npm run build\n   npm run start\n   ```\n\n## \ud83d\udd12 Security\n\n### Authentication & Authorization\n- JWT token-based authentication\n- Role-based access control\n- Rate limiting on API endpoints\n- Input validation and sanitization\n\n### Data Protection\n- Encrypted database connections\n- Secure API key management\n- CORS configuration\n- Request/response logging\n\n## \ud83d\udcc8 Performance\n\n### Optimization Strategies\n- **Frontend**: Code splitting, image optimization, caching\n- **Backend**: Database indexing, connection pooling, async processing\n- **API**: Response compression, pagination, caching headers\n\n### Monitoring\n- Application performance monitoring\n- Error tracking and logging\n- Database query optimization\n- API response time monitoring\n\n## \ud83e\udd1d Contributing\n\n### Development Workflow\n\n1. **Fork the repository**\n2. **Create a feature branch**\n   ```bash\n   git checkout -b feature/amazing-feature\n   ```\n3. **Make your changes**\n4. **Run tests**\n   ```bash\n   npm test\n   cd backend && python -m pytest\n   ```\n5. **Submit a pull request**\n\n### Code Style Guidelines\n\n#### TypeScript/JavaScript\n- Use TypeScript for type safety\n- Follow ESLint configuration\n- Use Prettier for code formatting\n- Write meaningful variable names\n\n#### Python\n- Follow PEP 8 style guide\n- Use type hints\n- Write docstrings for functions\n- Use meaningful variable names\n\n### Commit Message Format\n```\ntype(scope): description\n\n[optional body]\n\n[optional footer]\n```\n\nExample:\n```\nfeat(qa): add PDF export functionality\n\nAdd PDF export capability to Q&A responses with custom watermarking\nand structured formatting for better readability.\n\nCloses #123\n```\n\n## \ud83d\udcda Documentation\n\n### Available Documentation\n- [Architecture Guide](docs/architecture/ARCHITECTURE.md) - System architecture and design\n- [Design Guidelines](docs/COMPREHENSIVE_DOCUMENTATION.md#6-design-guidelines--visual-identity) - UI/UX and code style guidelines\n- [API Documentation](docs/COMPREHENSIVE_DOCUMENTATION.md#4-backend-architecture--services) - Detailed API reference\n- [User Guide](docs/COMPREHENSIVE_DOCUMENTATION.md) - End-user documentation\n- [Developer Guide](docs/COMPREHENSIVE_DOCUMENTATION.md) - Development setup and guidelines\n\n### Generating Documentation\n```bash\n# API documentation\ncd backend\npython -m app.docs.generate_api_docs\n\n# Code documentation\nnpm run docs:generate\n```\n\n## \ud83d\udc1b Troubleshooting\n\n### Common Issues\n\n#### Ephemeris Files Missing\n```bash\n# Error: Ephemeris files not found\n# Solution: Download ephemeris files\ncd backend/app/ephe\npython ../download_ephemeris.py\n```\n\n#### Database Connection Issues\n```bash\n# Error: Database connection failed\n# Solution: Check database configuration\ncd backend\npython -c \"from app.database import test_connection; test_connection()\"\n```\n\n#### AI Integration Issues\n```bash\n# Error: Gemini API key invalid\n# Solution: Check API key configuration\nexport GEMINI_API_KEY=your_valid_api_key\n```\n\n### Debug Mode\n```bash\n# Enable debug logging\nexport LOG_LEVEL=DEBUG\n\n# Run with debug mode\ncd backend\npython -m uvicorn app.main:app --reload --log-level debug\n```\n\n## \ud83d\udcc4 License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n## \ufffd\ufffd Acknowledgments\n\n- Astronomical calculation libraries for precise calculations\n- Google Gemini team for AI integration\n- Astrological community for domain expertise\n- Open source contributors and maintainers\n\n## \ud83d\udcde Support\n\n### Getting Help\n- \ud83d\udce7 Email: support@erux.ai\n- \ud83d\udcac Discord: [Join our community](https://discord.gg/astrology)\n- \ud83d\udcd6 Documentation: [docs.erux.ai](https://docs.erux.ai)\n- \ud83d\udc1b Issues: [GitHub Issues](https://github.com/akashagl92/AI-Astrologer/issues)\n\n### Commercial Support\nFor commercial licensing, custom development, or enterprise support, please contact us at akash.agl92@gmail.com.\n\n---\n\nMade with \u2764\ufe0f by Akash Agrawal and Cursor",
+    "files": [
+      {
+        "name": ".agent",
+        "type": "dir",
+        "path": ".agent"
+      },
+      {
+        "name": ".claude",
+        "type": "dir",
+        "path": ".claude"
+      },
+      {
+        "name": ".cursorrules",
+        "type": "file",
+        "path": ".cursorrules"
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "path": ".env.example"
+      },
+      {
+        "name": ".gitattributes",
+        "type": "file",
+        "path": ".gitattributes"
+      },
+      {
+        "name": ".github",
+        "type": "dir",
+        "path": ".github"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": ".pai",
+        "type": "dir",
+        "path": ".pai"
+      },
+      {
+        "name": "CHANGELOG.md",
+        "type": "file",
+        "path": "CHANGELOG.md"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "path": "LICENSE"
+      },
+      {
+        "name": "Procfile",
+        "type": "file",
+        "path": "Procfile"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "REVISED_PLAN.md",
+        "type": "file",
+        "path": "REVISED_PLAN.md"
+      },
+      {
+        "name": "_archive",
+        "type": "dir",
+        "path": "_archive"
+      },
+      {
+        "name": "backend",
+        "type": "dir",
+        "path": "backend"
+      },
+      {
+        "name": "backup_project.sh",
+        "type": "file",
+        "path": "backup_project.sh"
+      },
+      {
+        "name": "commit_non_chart_wheel.sh",
+        "type": "file",
+        "path": "commit_non_chart_wheel.sh"
+      },
+      {
+        "name": "content",
+        "type": "dir",
+        "path": "content"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "path": "docs"
+      },
+      {
+        "name": "ecosystem.config.js",
+        "type": "file",
+        "path": "ecosystem.config.js"
+      },
+      {
+        "name": "env.development",
+        "type": "file",
+        "path": "env.development"
+      },
+      {
+        "name": "env.production.template",
+        "type": "file",
+        "path": "env.production.template"
+      },
+      {
+        "name": "env.staging",
+        "type": "file",
+        "path": "env.staging"
+      },
+      {
+        "name": "jest.config.js",
+        "type": "file",
+        "path": "jest.config.js"
+      },
+      {
+        "name": "jest.setup.js",
+        "type": "file",
+        "path": "jest.setup.js"
+      },
+      {
+        "name": "jest.setup.ts",
+        "type": "file",
+        "path": "jest.setup.ts"
+      },
+      {
+        "name": "local_backups",
+        "type": "dir",
+        "path": "local_backups"
+      },
+      {
+        "name": "next-env.d.ts",
+        "type": "file",
+        "path": "next-env.d.ts"
+      },
+      {
+        "name": "next.config.js",
+        "type": "file",
+        "path": "next.config.js"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json"
+      },
+      {
+        "name": "portable-pai-core",
+        "type": "dir",
+        "path": "portable-pai-core"
+      },
+      {
+        "name": "public",
+        "type": "dir",
+        "path": "public"
+      },
+      {
+        "name": "render.yaml",
+        "type": "file",
+        "path": "render.yaml"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "path": "scripts"
+      },
+      {
+        "name": "src",
+        "type": "dir",
+        "path": "src"
+      },
+      {
+        "name": "start_backend.sh",
+        "type": "file",
+        "path": "start_backend.sh"
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "path": "tests"
+      },
+      {
+        "name": "tmp",
+        "type": "dir",
+        "path": "tmp"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "path": "tsconfig.json"
+      },
+      {
+        "name": "tsconfig.tsbuildinfo",
+        "type": "file",
+        "path": "tsconfig.tsbuildinfo"
+      },
+      {
+        "name": "~",
+        "type": "dir",
+        "path": "~"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2026-03-27T06:26:23Z",
+        "message": "fix(qa): resolved 500 server error and UI meta-tag leaks. 1. Fixed KeyError in grounding scrubber (planet existence guard). 2. Resolved SQLAlchemy mapper conflict in analytics models (absolute module paths). 3. Stripped '[INSIGHT: ...]' debug signals from frontend formatter. 4. Verified server health and mapper initialization.",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-03-06T21:15:56Z",
-        "message": "docs(pai): final master consolidation and semantic sync",
+        "date": "2026-03-27T05:36:05Z",
+        "message": "feat(astrology): Hardening Interpretation Engine v2.1 & Golden State UI Restoration",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-03-06T21:10:36Z",
-        "message": "feat(ui): sync innovation grid across portfolios and fix torq layout",
+        "date": "2026-03-23T07:45:43Z",
+        "message": "Fix contact form email delivery: match auth email logic and fallback to verified sender",
         "author": "Akash Agrawal"
       },
       {
-        "date": "2026-03-06T07:54:46Z",
-        "message": "docs(pai): elevate CI propagation lesson to formal RCA",
+        "date": "2026-03-23T07:22:29Z",
+        "message": "fix(contact): restore missing get_db and model imports for production build",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-23T07:18:46Z",
+        "message": "fix(contact): sync validation, restore email styling, and enhance diagnostic logging",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-23T06:19:12Z",
+        "message": "UDS v1.8.23: Final Production Synchronization (Resolved Hydration Bug, Fixed Contact Form Schema, Sanitized Backend URLs)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-23T06:03:15Z",
+        "message": "UDS v1.8.20: Final Core Deployment (Alembic Sync, GTM Privacy, Consolidate QA, Email Fix, Resilient AI)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-23T05:52:39Z",
+        "message": "UDS v1.8.16: Final Deployment Stabilization (Alembic Sync, Gated GTM, Contact Handshake Fix, Lint Restoration)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-22T10:44:47Z",
+        "message": "Fix: hydration error, ES2018 regex build error, and update CTA label to Submit",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-22T10:36:46Z",
+        "message": "feat: Enshrine Golden State Style & Sentence-Aware Research Enrichment",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-22T04:33:18Z",
+        "message": "fix(prod): finalize environment sync, obfuscate tracking cookie, and extend PWA suppression",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-22T01:19:58Z",
+        "message": "debug(auth): add secure config-check diagnostic endpoint",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-22T01:12:29Z",
+        "message": "fix(auth): finalize config consolidation for production deployment",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-22T00:59:01Z",
+        "message": "fix(analytics): auto-extract session identity & enhance PWA multi-platform prompt",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-22T00:46:02Z",
+        "message": "chore: restore Golden State interpretations & implement tiered usage limits",
         "author": "Akash Agrawal"
       }
     ],
-    "ai_summary": "This platform dynamically generates highly-tailored, research-grade analytics and content for specific industries using an automated, production-grade system. It leverages agentic AI for content generation and robust CI/CD with GitHub Actions for deployment and synchronization across multiple customized portfolio versions. The system bridges advanced data science, marketing technology, and real-world AI applications, demonstrating sophisticated automation and data orchestration capabilities.",
+    "ai_summary": "This full-stack platform delivers highly personalized astrological insights through an intuitive Next.js/React interface. It leverages a Python/FastAPI backend with SQLAlchemy and integrates advanced AI/LLM capabilities, including Google Gemini and a multi-agent architecture, for sophisticated interpretations. The system performs precise, industry-standard astronomical calculations, ensuring accurate and comprehensive analysis across multiple traditional systems.",
     "ai_tags": [
-      "Agentic AI",
-      "CI/CD Automation",
-      "Data Visualization",
-      "Dynamic Content Generation"
+      "Full-Stack Development",
+      "Multi-Agent AI",
+      "Astrological Computing",
+      "Prompt Engineering"
     ],
     "complexity_score": 9
   },
@@ -386,15 +719,15 @@
     "isPrivate": true,
     "language": "Python",
     "languages": {
-      "Python": 27352
+      "Python": 28886
     },
     "stars": 0,
     "forks": 0,
     "createdAt": "2026-02-25T22:37:04Z",
-    "updatedAt": "2026-03-11T15:45:52Z",
-    "pushedAt": "2026-03-11T15:45:48Z",
+    "updatedAt": "2026-03-19T16:35:01Z",
+    "pushedAt": "2026-03-19T16:34:56Z",
     "topics": [],
-    "readme": "# Agentic Memory Scaling: Structured State Convergence and the Discovery Cliff\n\n**Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems at $10^7$ Turns**\n\n[![Paper](https://img.shields.io/badge/Paper-APA_Format-blue)](paper/paper_memory_consolidation_apa.md)\n[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)\n\n---\n\n## Abstract\n\nThis repository contains the research paper, benchmark data, and reproducibility harness for **\"Structured State Convergence and the Discovery Cliff: O(1) Memory Scaling for LLM Agents at $10^7$ Turns.\"**\n\nWe identify a fundamental scaling limit\u2014the **Discovery Cliff**\u2014where standard single-stage memory consolidation (SSC) fails to extract new signals from long conversation histories. Using the constants derived from Live API runs (Tier 1), we perform $10^7$-turn Monte Carlo simulations $(N=1000)$ across multiple model generations (Google Gemini 2.5/3.0/3.1, Anthropic Claude 4.6). Results demonstrate that **temporal decay accounts for up to 99% of the recall collapse** in next-generation models, establishing an invariant Scaling Law for Agentic Memory. At extreme scale ($10^7$ turns), SSC recall degrades to **16.8%**.\n\nWe evaluate **Recursive Gated Consolidation (RGC)**, a two-stage architecture that eliminates this decay and maintains **100% signal recall at scale** by decoupling discovery from history depth. This repository contains the RGC Benchmark Suite, empirical calibration scripts, and the formal publication detailing these findings.\n\n## Key Findings\n\n| Finding | Detail |\n| :--- | :--- |\n| **The Discovery Cliff** | SSC recall collapses to **17.0%** at 10M turns (Flash) |\n| **Temporal Decay Dominance** | Decay rate ($d$) accounts for up to **99%** of recall collapse |\n| **RGC Performance** | Maintains **100% recall** at 10M+ turns |\n| **Inverted Latency Law** | Latency stabilizes/drops as context grows (Gemini 3.0) |\n| **Hardware Grounding** | Validated via TPU v4 OCS and SparseCore optimizations |\n| **Cross-System Validation** | Validated in chatbot (Moltbot) and IDE (Antigravity) |\n\n## Repository Structure\n\n```\nagentic-memory-scaling/\n\u251c\u2500\u2500 README.md                  # This file\n\u251c\u2500\u2500 LICENSE                    # MIT License\n\u251c\u2500\u2500 paper/\n\u2502   \u2514\u2500\u2500 paper_memory_consolidation_apa.md  # Full APA research paper\n\u251c\u2500\u2500 benchmarks/\n\u2502   \u251c\u2500\u2500 results/               # High-fidelity JSON results (N=1000)\n\u2502   \u2502   \u251c\u2500\u2500 flash_results_n1000.json\n\u2502   \u2502   \u251c\u2500\u2500 pro_results_n1000.json\n\u2502   \u2502   \u251c\u2500\u2500 gemini-3.0-flash_results_n1000.json\n\u2502   \u2502   \u251c\u2500\u2500 claude-4.6-opus_results_n1000.json\n\u2502   \u2502   \u2514\u2500\u2500 ablation_*.json\n\u2502   \u2514\u2500\u2500 figures/               # Publication-ready figures (v6)\n\u2502       \u251c\u2500\u2500 discovery_cliff_auto.png\n\u2502       \u251c\u2500\u2500 model_comparison_v6_final.png\n\u2502       \u251c\u2500\u2500 ablation_fidelity_vs_decay_v1.png\n\u2502       \u2514\u2500\u2500 ablation_fidelity_vs_decay_v2.png\n\u2514\u2500\u2500 scripts/\n    \u251c\u2500\u2500 run_cst.py             # Cognitive Stress Test harness\n    \u2514\u2500\u2500 lib_diag.py            # Live API diagnostic implementation\n```\n\n## Scaling Laws & Hardware Grounding\n\nWe introduce the **Inverted Latency Scaling Law**, observing that on Gemini 3.0 Flash, mean latency triggers a sharp transition from **15.33s (5k turns)** down to a deterministic **2.08s (10k turns)**.\n\nThis stabilization is supported by modern infrastructure designs such as Google's **TPU v4/v5** pods. By leveraging **Optical Circuit Switches (OCSes)** for millisecond-level topology reconfiguration and **SparseCores** for embedding acceleration (Jouppi et al., 2023), RGC-enabled agents move from unoptimized $O(n)$ tensor reads to highly localized, hardware-optimized pathways.\n\n## Reproducing Results\n\n### Prerequisites\n- Python 3.10+\n- `matplotlib` (for visualization)\n\n### Agentic Memory Scaling: Structured State Convergence and the Discovery Cliff\n> [!NOTE]\n> This repository contains the data, figures, and research paper for the study of $O(1)$ memory scaling at $10^7$ turns.\n- `scale_results.json` \u2014 Raw recall data across logarithmic turn depths\n- `discovery_cliff_auto.png` \u2014 The Discovery Cliff visualization\n\n## Citation\n\nIf you use this work in your research, please cite:\n\n```bibtex\n@article{agrawal2026discovery,\n  title={Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns},\n  author={Agrawal, Akash},\n  year={2026},\n  note={Preprint}\n}\n```\n\n## License\n\nThis project is licensed under the MIT License \u2014 see the [LICENSE](LICENSE) file for details.\n",
+    "readme": "# Agentic Memory Scaling: Structured State Convergence and the Discovery Cliff\n\n**Scaling Laws for Memory Consolidation in LLM-Based Agentic Systems at $10^7$ Turns**\n\n[![Paper](https://img.shields.io/badge/Paper-APA_Format-blue)](paper/paper_memory_consolidation_apa.md)\n[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)\n\n---\n\n## Abstract\n\nThis repository contains the research paper, benchmark data, and reproducibility harness for **\"Structured State Convergence and the Discovery Cliff: O(1) Memory Scaling for LLM Agents at $10^7$ Turns.\"**\n\nWe identify a fundamental scaling limit\u2014the **Discovery Cliff**\u2014where standard single-stage memory consolidation (SSC) fails to extract new signals from long conversation histories. Using the constants derived from Live API runs (Tier 1), we perform $10^7$-turn Monte Carlo simulations $(N=1000)$ across multiple model generations (Google Gemini 2.5/3.0/3.1, Anthropic Claude 4.6). Results demonstrate that **temporal decay accounts for up to 99% of the recall collapse** in next-generation models, establishing an invariant Scaling Law for Agentic Memory. At extreme scale ($10^7$ turns), SSC recall degrades to **16.8%**.\n\nWe evaluate **Recursive Gated Consolidation (RGC)**, a two-stage architecture that eliminates this decay and maintains **100% signal recall at scale** by decoupling discovery from history depth. This repository contains the RGC Benchmark Suite, empirical calibration scripts, and the formal publication detailing these findings.\n\n## Key Findings\n\n| Finding                      | Detail                                                         |\n| :--------------------------- | :------------------------------------------------------------- |\n| **The Discovery Cliff**      | SSC recall collapses to **17.0%** at 10M turns (Flash)         |\n| **Temporal Decay Dominance** | Decay rate ($d$) accounts for up to **99%** of recall collapse |\n| **RGC Performance**          | Maintains **100% recall** at 10M+ turns                        |\n| **Inverted Latency Law**     | Latency stabilizes/drops as context grows (Gemini 3.0)         |\n| **Hardware Grounding**       | Validated via TPU v4 OCS and SparseCore optimizations          |\n| **Cross-System Validation**  | Validated in chatbot (Moltbot) and IDE (Antigravity)           |\n\n## Repository Structure\n\n```\nagentic-memory-scaling/\n\u251c\u2500\u2500 README.md                  # This file\n\u251c\u2500\u2500 LICENSE                    # MIT License\n\u251c\u2500\u2500 paper/\n\u2502   \u2514\u2500\u2500 paper_memory_consolidation_apa.md  # Full APA research paper\n\u251c\u2500\u2500 benchmarks/\n\u2502   \u251c\u2500\u2500 results/               # High-fidelity JSON results (N=1000)\n\u2502   \u2502   \u251c\u2500\u2500 flash_results_n1000.json\n\u2502   \u2502   \u251c\u2500\u2500 pro_results_n1000.json\n\u2502   \u2502   \u251c\u2500\u2500 gemini-3.0-flash_results_n1000.json\n\u2502   \u2502   \u251c\u2500\u2500 claude-4.6-opus_results_n1000.json\n\u2502   \u2502   \u2514\u2500\u2500 ablation_*.json\n\u2502   \u2514\u2500\u2500 figures/               # Publication-ready figures (v6)\n\u2502       \u251c\u2500\u2500 discovery_cliff_auto.png\n\u2502       \u251c\u2500\u2500 model_comparison_v6_final.png\n\u2502       \u251c\u2500\u2500 ablation_fidelity_vs_decay_v1.png\n\u2502       \u2514\u2500\u2500 ablation_fidelity_vs_decay_v2.png\n\u2514\u2500\u2500 scripts/\n    \u251c\u2500\u2500 run_cst.py             # Cognitive Stress Test harness\n    \u2514\u2500\u2500 lib_diag.py            # Live API diagnostic implementation\n```\n\n## Scaling Laws & Hardware Grounding\n\nWe introduce the **Inverted Latency Scaling Law**, observing that on Gemini 3.0 Flash, mean latency triggers a sharp transition from **15.33s (5k turns)** down to a deterministic **2.08s (10k turns)**.\n\nThis stabilization is supported by modern infrastructure designs such as Google's **TPU v4/v5** pods. By leveraging **Optical Circuit Switches (OCSes)** for millisecond-level topology reconfiguration and **SparseCores** for embedding acceleration (Jouppi et al., 2023), RGC-enabled agents move from unoptimized $O(n)$ tensor reads to highly localized, hardware-optimized pathways.\n\n## Reproducing Results\n\n### Prerequisites\n\n- Python 3.10+\n- `matplotlib` (for visualization)\n\n### Agentic Memory Scaling: Structured State Convergence and the Discovery Cliff\n\n> [!NOTE]\n> This repository contains the data, figures, and research paper for the study of $O(1)$ memory scaling at $10^7$ turns.\n\n- `scale_results.json` \u2014 Raw recall data across logarithmic turn depths\n- `discovery_cliff_auto.png` \u2014 The Discovery Cliff visualization\n\n## Citation\n\nIf you use this work in your research, please cite:\n\n```bibtex\n@article{agrawal2026discovery,\n  title={Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns},\n  author={Agrawal, Akash},\n  year={2026},\n  note={Preprint}\n}\n```\n\n## License\n\nThis project is licensed under the MIT License \u2014 see the [LICENSE](LICENSE) file for details.\n",
     "files": [
       {
         "name": ".gitignore",
@@ -428,6 +761,41 @@
       }
     ],
     "recentCommits": [
+      {
+        "date": "2026-03-19T16:34:55Z",
+        "message": "RESEARCH: Enhanced Paper Storyboarding. Strengthened narrative transitions between results and hardware analysis.",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-19T16:29:20Z",
+        "message": "RESEARCH: Promoted Boxplot (Figure 5) to Results section and refined Methodology to use formal Phase I/II terminology.",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-19T16:17:54Z",
+        "message": "RESEARCH: Audit complete. Figures, citations and APA v7 formatting verified for agentic-memory-scaling export.",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-18T17:12:44Z",
+        "message": "Academic Audit: Comprehensive mentor feedback integration & exhibits",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-17T21:11:44Z",
+        "message": "Academic Audit: Sequential numbering and literature reference stabilization",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-17T21:09:56Z",
+        "message": "Paper Audit: Final Sequential Numbering Repair",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-17T21:05:36Z",
+        "message": "Academic Refinement: Literature Integration & Terminology Clarification",
+        "author": "Akash Agrawal"
+      },
       {
         "date": "2026-03-11T15:45:47Z",
         "message": "PAI Sync: Final Documentation Ritual & README Polish",
@@ -467,38 +835,16 @@
         "date": "2026-03-04T05:19:57Z",
         "message": "feat(research): publish finalized N=1000 high-fidelity benchmarks and hardware-grounded research paper",
         "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-26T07:58:41Z",
-        "message": "docs(research): remove private repository citation",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-26T07:57:06Z",
-        "message": "docs(research): remove irrelevant legacy references (Gemini 1.5, Claude 3)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-26T07:22:27Z",
-        "message": "docs: align README with N=1000 empirical standard",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-26T06:24:23Z",
-        "message": "docs(research): finalize N=1000 empirical convergence data",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T22:45:52Z",
-        "message": "docs: update affiliation, model list, abstract, and stale figure refs",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T22:36:46Z",
-        "message": "Initial commit: Discovery Cliff research paper, benchmarks, and reproducibility harness",
-        "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "Introduces Recursive Gated Consolidation (RGC), an advanced memory architecture that overcomes the 'Discovery Cliff' in LLM agents. It maintains 100% signal recall over 10 million turns, significantly outperforming traditional methods which collapse to 16.8%. The system also reveals an Inverted Latency Law, demonstrating improved performance at scale, validated through extensive Monte Carlo simulations and optimized for cutting-edge hardware like Google's TPU v4/v5, enhancing the reliability and efficiency of agentic AI systems.",
+    "ai_tags": [
+      "LLM Agents",
+      "Memory Architecture",
+      "Performance Optimization",
+      "AI Simulation"
+    ],
+    "complexity_score": 9
   },
   {
     "name": "moltbot",
@@ -509,24 +855,24 @@
     "isPrivate": true,
     "language": "TypeScript",
     "languages": {
-      "TypeScript": 16277922,
-      "HTML": 5074821,
+      "TypeScript": 16362460,
       "Swift": 2627390,
+      "HTML": 1726231,
       "Kotlin": 365828,
-      "Python": 261460,
-      "Shell": 166926,
-      "CSS": 100960,
-      "JavaScript": 82678,
+      "Python": 327124,
+      "Shell": 193697,
+      "CSS": 101190,
+      "JavaScript": 83481,
       "Dockerfile": 4071,
       "Ruby": 3023
     },
     "stars": 0,
     "forks": 0,
     "createdAt": "2026-01-29T07:21:35Z",
-    "updatedAt": "2026-03-07T02:20:12Z",
-    "pushedAt": "2026-03-07T02:20:08Z",
+    "updatedAt": "2026-03-12T18:28:41Z",
+    "pushedAt": "2026-03-12T18:28:37Z",
     "topics": [],
-    "readme": "# Moltbot: Resilient Agentic Memory & Extreme-Scale Research\n\nMoltbot is a research-grade personal AI agent platform built for **Recursive Gated Consolidation (RGC)** and **Structured State Convergence (SSC)**. It is designed to overcome the \"silicone wall\" of attention saturation in LLMs, enabling persistent agentic memory across millions of conversation turns.\n\n## \ud83d\udd2c Research Focus\nThis repository serves as the primary evaluation environment for the **Cognitive Stress Test (CST)** benchmarks, identifying the \"Discovery Cliff\" in single-stage consolidation architectures.\n\n- **Research Paper**: [Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns](research_repo_export/paper/paper_memory_consolidation_apa.md)\n- **Recursive Gated Consolidation (RGC)**: A multi-stage memory architecture that maintains 100% discovery fidelity at 10M+ turns. At *N=1000* converged benchmarks, standard architectures collapse to **17.0% recall** due to temporal decay, whereas RGC artificially drives decay to zero.\n- **Tiered Memory Model**: Decouples strategic, architectural, and narrative state into a three-layer persistence system.\n- **Structured State Convergence (SSC)**: $O(1)$ query latency with structured compaction.\n\n## \ud83d\udcdc Citation\nIf you use this codebase or the RGC/SSC architectures in your research, please cite:\n\n```bibtex\n@article{agrawal2026moltbot,\n  title={Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns},\n  author={Agrawal, Akash},\n  journal={Work-in-Progress (Peer Review)},\n  year={2026},\n  url={https://github.com/akashagrawal/moltbot}\n}\n```\n\n## \ud83d\udee0\ufe0f Performance & Verification\nTo reproduce the research findings, use the native benchmarking suite:\n```bash\npython3 scripts/benchmarking/run_cst.py --scenario test/benchmarks/multi_needle_10m.json --comprehensive --iterations 1000\n```\n*Note: This strictly enforces the N=1000 Empiricism Standard required to bypass stochastic inflation at extreme scale.*\n\n---\n\n<!-- START_CAPABILITIES -->\n\n### \ud83d\ude80 Dynamic Capabilities\n\n| Category | Name | Description |\n| :--- | :--- | :--- |\n| Skill | **1password** | Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op. |\n| Skill | **apple-notes** | Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks Moltbot to add a note, list notes, search notes, or manage note folders. |\n| Skill | **apple-reminders** | Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output. |\n| Skill | **bear-notes** | Create, search, and manage Bear notes via grizzly CLI. |\n| Skill | **bird** | X/Twitter CLI for reading, searching, posting, and engagement via cookies. |\n| Skill | **blogwatcher** | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI. |\n| Skill | **blucli** | BluOS CLI (blu) for discovery, playback, grouping, and volume. |\n| Skill | **bluebubbles** | Build or update the BlueBubbles external channel plugin for Moltbot (extension package, REST send/probe, webhook inbound). |\n| Skill | **camsnap** | Capture frames or clips from RTSP/ONVIF cameras. |\n| Skill | **clawdhub** | Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawdhub CLI. |\n| Skill | **coding-agent** | Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control. |\n| Skill | **discord** | Use when you need to control Discord from Moltbot via the discord tool: send messages, react, post or upload stickers, upload emojis, run polls, manage threads/pins/search, create/edit/delete channels and categories, fetch permissions or member/role/channel info, or handle moderation actions in Discord DMs or channels. |\n| Skill | **eightctl** | Control Eight Sleep pods (status, temperature, alarms, schedules). |\n| Skill | **food-order** | Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA. |\n| Skill | **gemini** | Gemini CLI for one-shot Q&A, summaries, and generation. |\n| Skill | **gifgrep** | Search GIF providers with CLI/TUI, download results, and extract stills/sheets. |\n| Skill | **github** | \"Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.\" |\n| Skill | **gog** | Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. |\n| Skill | **goplaces** | \"Google Places API - Find restaurants, coffee shops, hotels, businesses, attractions nearby. Use for 'find places near me', 'look up restaurants', 'coffee shops nearby', or any real-time location/business search. Also known as: google-places, places, location-search.\" |\n| Skill | **himalaya** | \"CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).\" |\n| Skill | **imsg** | iMessage/SMS CLI for listing chats, history, watch, and sending. |\n| Skill | **job-hunter** | Run automated job searches across LinkedIn, Google Jobs, Startup.jobs, Wellfound, and Reddit. Get email digests of relevant job listings matching your profile. |\n| Skill | **local-places** | Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost. |\n| Skill | **mcporter** | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation. |\n| Skill | **model-usage** | Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON. |\n| Skill | **nano-banana-pro** | Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro). |\n| Skill | **nano-pdf** | Edit PDFs with natural-language instructions using the nano-pdf CLI. |\n| Skill | **notion** | Notion API for creating and managing pages, databases, and blocks. |\n| Skill | **obsidian** | Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli. |\n| Skill | **openai-image-gen** | Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery. |\n| Skill | **openai-whisper** | Local speech-to-text with the Whisper CLI (no API key). |\n| Skill | **openai-whisper-api** | Transcribe audio via OpenAI Audio Transcriptions API (Whisper). |\n| Skill | **openhue** | Control Philips Hue lights/scenes via the OpenHue CLI. |\n| Skill | **oracle** | Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns). |\n| Skill | **ordercli** | Foodora-only CLI for checking past orders and active order status (Deliveroo WIP). |\n| Skill | **peekaboo** | Capture and automate macOS UI with the Peekaboo CLI. |\n| Skill | **sag** | ElevenLabs text-to-speech with mac-style say UX. |\n| Skill | **session-logs** | Search and analyze your own session logs (older/parent conversations) using jq. |\n| Skill | **sherpa-onnx-tts** | Local text-to-speech via sherpa-onnx (offline, no cloud) |\n| Skill | **skill-creator** | Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets. |\n| Skill | **slack** | Use when you need to control Slack from Moltbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs. |\n| Skill | **songsee** | Generate spectrograms and feature-panel visualizations from audio with the songsee CLI. |\n| Skill | **sonoscli** | Control Sonos speakers (discover/status/play/volume/group). |\n| Skill | **spotify-player** | Terminal Spotify playback/search via spogo (preferred) or spotify_player. |\n| Skill | **summarize** | Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for \u201ctranscribe this YouTube/video\u201d). |\n| Skill | **things-mac** | Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks Moltbot to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags. |\n| Skill | **tmux** | Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output. |\n| Skill | **trello** | Manage Trello boards, lists, and cards via the Trello REST API. |\n| Skill | **video-frames** | Extract frames or short clips from videos using ffmpeg. |\n| Skill | **voice-call** | Start voice calls via the Moltbot voice-call plugin. |\n| Skill | **wacli** | Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats). |\n| Skill | **weather** | Native Plugin (See index.ts) |\n\n<!-- END_CAPABILITIES -->\n",
+    "readme": "# Moltbot: Resilient Agentic Memory & Extreme-Scale Research\n\nMoltbot is a research-grade personal AI agent platform built for **Recursive Gated Consolidation (RGC)** and **Structured State Convergence (SSC)**. It is designed to overcome the \"silicone wall\" of attention saturation in LLMs, enabling persistent agentic memory across millions of conversation turns.\n\n## \ud83d\udd2c Research Focus\n\nThis repository serves as the primary evaluation environment for the **Cognitive Stress Test (CST)** benchmarks, identifying the \"Discovery Cliff\" in single-stage consolidation architectures.\n\n- **Research Paper**: [Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns](https://github.com/akashagl92/agentic-memory-scaling)\n- **Recursive Gated Consolidation (RGC)**: A multi-stage memory architecture that maintains 100% discovery fidelity at 10M+ turns. At _N=1000_ converged benchmarks, standard architectures collapse to **17.0% recall** due to temporal decay, whereas RGC artificially drives decay to zero.\n- **Tiered Memory Model**: Decouples strategic, architectural, and narrative state into a three-layer persistence system.\n- **Structured State Convergence (SSC)**: $O(1)$ query latency with structured compaction.\n\n## \ud83d\udcdc Citation\n\nIf you use this codebase or the RGC/SSC architectures in your research, please cite:\n\n```bibtex\n@article{agrawal2026moltbot,\n  title={Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns},\n  author={Agrawal, Akash},\n  journal={Work-in-Progress (Peer Review)},\n  year={2026},\n  url={https://github.com/akashagrawal/moltbot}\n}\n```\n\n## \ud83d\udee0\ufe0f Performance & Verification\n\nTo reproduce the research findings, use the native benchmarking suite:\n\n```bash\npython3 scripts/benchmarking/run_cst.py --scenario test/benchmarks/multi_needle_10m.json --comprehensive --iterations 1000\n```\n\n_Note: This strictly enforces the N=1000 Empiricism Standard required to bypass stochastic inflation at extreme scale._\n\n---\n\n<!-- START_CAPABILITIES -->\n\n### \ud83d\ude80 Dynamic Capabilities\n\n| Category | Name | Description |\n| :--- | :--- | :--- |\n| Skill | **1password** | Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op. |\n| Skill | **apple-notes** | Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks Moltbot to add a note, list notes, search notes, or manage note folders. |\n| Skill | **apple-reminders** | Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output. |\n| Skill | **bear-notes** | Create, search, and manage Bear notes via grizzly CLI. |\n| Skill | **bird** | X/Twitter CLI for reading, searching, posting, and engagement via cookies. |\n| Skill | **blogwatcher** | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI. |\n| Skill | **blucli** | BluOS CLI (blu) for discovery, playback, grouping, and volume. |\n| Skill | **bluebubbles** | Build or update the BlueBubbles external channel plugin for Moltbot (extension package, REST send/probe, webhook inbound). |\n| Skill | **camsnap** | Capture frames or clips from RTSP/ONVIF cameras. |\n| Skill | **clawdhub** | Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawdhub CLI. |\n| Skill | **coding-agent** | Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control. |\n| Skill | **discord** | Use when you need to control Discord from Moltbot via the discord tool: send messages, react, post or upload stickers, upload emojis, run polls, manage threads/pins/search, create/edit/delete channels and categories, fetch permissions or member/role/channel info, or handle moderation actions in Discord DMs or channels. |\n| Skill | **eightctl** | Control Eight Sleep pods (status, temperature, alarms, schedules). |\n| Skill | **food-order** | Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA. |\n| Skill | **gemini** | Gemini CLI for one-shot Q&A, summaries, and generation. |\n| Skill | **gifgrep** | Search GIF providers with CLI/TUI, download results, and extract stills/sheets. |\n| Skill | **github** | \"Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.\" |\n| Skill | **gog** | Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. |\n| Skill | **goplaces** | \"Google Places API - Find restaurants, coffee shops, hotels, businesses, attractions nearby. Use for 'find places near me', 'look up restaurants', 'coffee shops nearby', or any real-time location/business search. Also known as: google-places, places, location-search.\" |\n| Skill | **himalaya** | \"CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).\" |\n| Skill | **imsg** | iMessage/SMS CLI for listing chats, history, watch, and sending. |\n| Skill | **job-hunter** | Run automated job searches across LinkedIn, Google Jobs, Startup.jobs, Wellfound, and Reddit. Get email digests of relevant job listings matching your profile. |\n| Skill | **local-places** | Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost. |\n| Skill | **mcporter** | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation. |\n| Skill | **model-usage** | Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON. |\n| Skill | **nano-banana-pro** | Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro). |\n| Skill | **nano-pdf** | Edit PDFs with natural-language instructions using the nano-pdf CLI. |\n| Skill | **notion** | Notion API for creating and managing pages, databases, and blocks. |\n| Skill | **obsidian** | Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli. |\n| Skill | **openai-image-gen** | Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery. |\n| Skill | **openai-whisper** | Local speech-to-text with the Whisper CLI (no API key). |\n| Skill | **openai-whisper-api** | Transcribe audio via OpenAI Audio Transcriptions API (Whisper). |\n| Skill | **openhue** | Control Philips Hue lights/scenes via the OpenHue CLI. |\n| Skill | **oracle** | Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns). |\n| Skill | **ordercli** | Foodora-only CLI for checking past orders and active order status (Deliveroo WIP). |\n| Skill | **peekaboo** | Capture and automate macOS UI with the Peekaboo CLI. |\n| Skill | **sag** | ElevenLabs text-to-speech with mac-style say UX. |\n| Skill | **session-logs** | Search and analyze your own session logs (older/parent conversations) using jq. |\n| Skill | **sherpa-onnx-tts** | Local text-to-speech via sherpa-onnx (offline, no cloud) |\n| Skill | **skill-creator** | Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets. |\n| Skill | **slack** | Use when you need to control Slack from Moltbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs. |\n| Skill | **songsee** | Generate spectrograms and feature-panel visualizations from audio with the songsee CLI. |\n| Skill | **sonoscli** | Control Sonos speakers (discover/status/play/volume/group). |\n| Skill | **spotify-player** | Terminal Spotify playback/search via spogo (preferred) or spotify_player. |\n| Skill | **summarize** | Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for \u201ctranscribe this YouTube/video\u201d). |\n| Skill | **things-mac** | Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks Moltbot to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags. |\n| Skill | **tmux** | Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output. |\n| Skill | **trello** | Manage Trello boards, lists, and cards via the Trello REST API. |\n| Skill | **video-frames** | Extract frames or short clips from videos using ffmpeg. |\n| Skill | **voice-call** | Start voice calls via the Moltbot voice-call plugin. |\n| Skill | **wacli** | Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats). |\n| Skill | **weather** | Native Plugin (See index.ts) |\n\n<!-- END_CAPABILITIES -->\n",
     "files": [
       {
         "name": ".agent",
@@ -804,6 +1150,11 @@
         "path": "git-hooks"
       },
       {
+        "name": "install_root_x64.log",
+        "type": "file",
+        "path": "install_root_x64.log"
+      },
+      {
         "name": "logs",
         "type": "dir",
         "path": "logs"
@@ -849,6 +1200,11 @@
         "path": "pnpm-workspace.yaml"
       },
       {
+        "name": "portable-pai-core",
+        "type": "dir",
+        "path": "portable-pai-core"
+      },
+      {
         "name": "render.yaml",
         "type": "file",
         "path": "render.yaml"
@@ -857,6 +1213,11 @@
         "name": "research_repo_export",
         "type": "file",
         "path": "research_repo_export"
+      },
+      {
+        "name": "results",
+        "type": "dir",
+        "path": "results"
       },
       {
         "name": "scripts",
@@ -877,6 +1238,11 @@
         "name": "test",
         "type": "dir",
         "path": "test"
+      },
+      {
+        "name": "test_resume_comparison.py",
+        "type": "file",
+        "path": "test_resume_comparison.py"
       },
       {
         "name": "tsconfig.json",
@@ -930,6 +1296,16 @@
       }
     ],
     "recentCommits": [
+      {
+        "date": "2026-03-12T18:28:35Z",
+        "message": "docs: update research paper link to external repository",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-12T18:17:24Z",
+        "message": "docs_sync: Master Synchronization Ritual & Doc Hygiene (SHADOW)",
+        "author": "Akash Agrawal"
+      },
       {
         "date": "2026-03-07T02:20:07Z",
         "message": "feat(job-hunter): implement interactive Hiring.cafe search and absolute pathing resilience (ADR 0031, 0032)",
@@ -994,18 +1370,16 @@
         "date": "2026-02-25T07:12:30Z",
         "message": "feat: add conversation_sentinel.py \u2014 IDE RGC extension for cross-session memory",
         "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T06:27:44Z",
-        "message": "ritual: pai_sync \u2014 capture ablation lesson, update manifest RGC status",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T06:21:30Z",
-        "message": "research: add single-variable ablation study and comprehensive paper revision",
-        "author": "Akash Agrawal"
       }
-    ]
+    ],
+    "ai_summary": "This platform is a research-grade AI agent system designed to overcome LLM memory limitations. It employs Recursive Gated Consolidation and Structured State Convergence to achieve persistent, scalable agentic memory, ensuring 100% information recall over millions of turns. This enables robust, dynamic agents capable of integrating diverse external tools for complex tasks like job hunting, coding, and personal assistance.",
+    "ai_tags": [
+      "LLM Agent Orchestration",
+      "Persistent AI Memory",
+      "Containerization",
+      "Deep Learning"
+    ],
+    "complexity_score": 9
   },
   {
     "name": "stock_price_target_modelling",
@@ -1297,330 +1671,6 @@
       {
         "date": "2026-03-04T19:49:18Z",
         "message": "Initial modular IDE-agnostic framework release",
-        "author": "Akash Agrawal"
-      }
-    ]
-  },
-  {
-    "name": "aistro.ai",
-    "fullName": "akashagl92/aistro.ai",
-    "description": null,
-    "url": "https://github.com/akashagl92/aistro.ai",
-    "homepage": null,
-    "isPrivate": true,
-    "language": "Python",
-    "languages": {
-      "Python": 4718375,
-      "TypeScript": 1263170,
-      "HTML": 422820,
-      "Shell": 113033,
-      "JavaScript": 7569,
-      "CSS": 3001,
-      "Procfile": 1921
-    },
-    "stars": 0,
-    "forks": 0,
-    "createdAt": "2025-03-18T06:19:43Z",
-    "updatedAt": "2026-02-19T17:26:36Z",
-    "pushedAt": "2026-02-19T17:26:32Z",
-    "topics": [],
-    "readme": "# SwissEphemeris-Astrology\n\n![Python](https://img.shields.io/badge/python-3.10+-blue.svg)\n![Next.js](https://img.shields.io/badge/Next.js-14.0-black)\n![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688.svg)\n![License](https://img.shields.io/badge/license-MIT-green.svg)\n![Research](https://img.shields.io/badge/Research-Validated-purple)\n\nA comprehensive astrological analysis platform that combines traditional astrological calculations with modern AI-powered interpretations. The system provides accurate astronomical calculations and delivers personalized astrological insights through an intuitive web interface.\n\n## \ud83d\udcda Documentation\n\n### **Complete Technical Documentation**\n- **[COMPREHENSIVE_DOCUMENTATION.md](docs/COMPREHENSIVE_DOCUMENTATION.md)** - Complete technical reference (130KB+)\n  - System architecture and design patterns\n  - Frontend and backend implementation details\n  - Database schema and analytics system\n  - Testing strategy and deployment guide\n  - Business model and pricing strategy\n  - Security and privacy compliance\n\n### **Development Resources**\n- **`CONTRIBUTING.md`** - Development guidelines and Cursor agent instructions\n- **`CHANGELOG.md`** - Version history and recent changes\n- **`README.md`** - This file - project overview and quick start\n\n### **For Cursor Agents & Developers**\n**\u26a0\ufe0f IMPORTANT**: Before making any changes, read:\n1. **`COMPREHENSIVE_DOCUMENTATION.md`** - Complete technical reference\n2. **`CONTRIBUTING.md`** - Development guidelines and requirements\n3. Current codebase structure and patterns\n4. **Available Workflows**:\n   - `/docs_sync`: Ensure documentation, research reports, and persistent context are in sync.\n   - `/pai_sync`: Daily synchronization of project state with Personal AI Infrastructure (PAI).\n   - `/refactor`: Weekly hygiene ritual to clean the codebase and prune PAI memory.\n\n**Key Requirements:**\n- Keep documentation updated for any code changes\n- Request privacy policy review for data collection changes\n- Maintain minimal tech debt (no duplicate code)\n- Write comprehensive tests for new functionality\n\n## \ud83c\udf1f Features\n\n### Core Functionality\n- **Multi-System Support**: Western (Tropical), Vedic (Sidereal), and Horary astrology\n- **Precise Calculations**: Industry-standard astronomical calculations for accuracy\n- **AI-Powered Interpretations**: Google Gemini API for intelligent analysis\n- **Interactive Charts**: Visual birth chart representations\n- **Q&A System**: Natural language queries about astrological data\n- **Export Capabilities**: PDF generation with custom branding\n- **Responsive Design**: Mobile-first, accessible interface\n\n### Advanced Features\n- **Mundane Astrology**: Country/entity charts using independence dates for geopolitical analysis\n  - *Coming Soon: Company (IPO dates) and Cryptocurrency (launch dates) entity types*\n- **Divisional Charts**: Complete Vedic divisional chart analysis (D1-D60)\n- **Dasha Periods**: Vimshottari Dasha calculations and interpretations\n- **Transit Analysis**: Current planetary movements and their effects\n- **Aspect Analysis**: Detailed planetary aspect calculations\n- **Yogas Detection**: Vedic yoga identification and analysis\n- **Nakshatra Analysis**: Detailed lunar mansion interpretations\n- **Dosha Analysis**: Astrological affliction detection (Mangal, Saturn, Rahu, etc.)\n- **House Systems**: Multiple house system support\n- **Analytics Tracking**: Comprehensive user interaction analytics\n- **Multi-Channel Sharing**: Social media integration with tracking\n\n## \ud83d\udd2c Research & Scientific Validation\n\nThis platform is backed by **rigorous statistical research** validating astrological principles. Our research applies modern data science methods to test traditional astrological techniques.\n\n### Research Dataset\n- **5,885 public figures** with verified birth data and 4,739 documented figures analyzed\n- **239 countries** with independence charts and 7,311 historical events analyzed\n- **Total valid event scale**: 12,050 events\n\n### Key Scientific Findings\n| Finding | Evidence |\n|---------|----------|\n| **Astrological Correlations** | Statistically significant (q < 0.001 after FDR correction) |\n| **Domain-Specific Patterns** | House 10\u2192career, House 7\u2192relationships validated |\n| **Vedic Techniques** | Doshas (RR up to 2.69), 14 Yoga types, Divisional charts all significant |\n| **Combination Effects** | Synergy ratios up to 48.89x when conditions align |\n| **Predictive ML Models** | 78-81% accuracy (Timing Precision) |\n| **Temporal Precision** | 50%+ events within 1\u00b0 orb of exact transits |\n\n### \ud83d\udcd6 Complete Research Documentation\n- **[Master Research Documentation](backend/research/reports/COMPREHENSIVE_MASTER_RESEARCH_DOCUMENTATION.md)** - Complete findings, methodology, and statistical analysis\n- **[Research Directory](backend/research/)** - Scripts, data, and reproducible results\n\n### \ud83e\uddec Hybrid System & Research Philosophy\nWe enforce a unique **\"Archetypal Transferability\"** data philosophy:\n- **Core Premise**: An archetype (e.g., \"Sun in House 10 = Visibility\") is statistically valid regardless of which system places the planet there.\n- **Interoperability**:\n  - **Western Points in Vedic**: We support toggling asteroids (Lilith, Pallas) in Vedic charts. These are interpreted using a **Hybrid Approach**: calculated by Sidereal Sign (Vedic), Vedic House, and *Vedic Nakshatra*.\n  - **Data Flow**: To ensure depth of insight, **all calculated bodies (including asteroids) are passed to the AI Interpretation Engine** even if hidden in the UI. The \"Western Points\" toggle is a visual preference, not a data filter.\n  - **Exclusion**: We do *not* force Vedic-derived points (Arudha Lagna) into Western systems as they lack the requisite framework.\n\n## \ud83c\udfd7\ufe0f Architecture\n\n### Technology Stack\n- **Frontend**: Next.js 14, React 18, TypeScript, Tailwind CSS\n- **Backend**: FastAPI, Python 3.10, SQLAlchemy\n- **Database**: PostgreSQL (Production), SQLite (Development)\n- **AI Integration**: Google Gemini API, HuggingFace Inference API\n- **PDF Generation**: ReportLab with custom watermarking\n- **Deployment**: Render.com, Heroku, Railway, PM2\n- **Testing**: Pytest, Jest, GitHub Actions\n\n### System Components\n```mermaid\ngraph TD\n    Client[\"Client Layer\"]\n    Web[\"Web Browser\"]\n    Mobile[\"Mobile App\"]\n    API[\"API Clients\"]\n    \n    Client --> Web\n    Client --> Mobile\n    Client --> API\n    \n    Web --> Frontend[\"Next.js Frontend\"]\n    Mobile --> Frontend\n    \n    Frontend --> Backend[\"FastAPI Backend\"]\n    \n    subgraph \"Frontend Services\"\n        Components[\"React Components\"]\n        Pages[\"Next.js Pages\"]\n        Utils[\"Utilities\"]\n        Styles[\"Tailwind CSS\"]\n    end\n    \n    Frontend --- Components\n    Frontend --- Pages\n    \n    subgraph \"Backend Services\"\n        Routes[\"Route Handlers\"]\n        Logic[\"Business Logic\"]\n        AI[\"AI Integration (Gemini)\"]\n        Data[\"Data Processing\"]\n        Ephe[\"Swiss Ephemeris\"]\n        DB[(\"Database\")]\n    end\n    \n    Backend --> Routes\n    Routes --> Logic\n    Logic --> AI\n    Logic --> Data\n    Logic --> Ephe\n    Logic --> DB\n```\n\n## \ud83d\ude80 Quick Start\n\n### Prerequisites\n- Python 3.10+\n- Node.js 18+\n- npm or yarn\n- PostgreSQL (for production)\n\n## \ud83e\uddea Testing\n\n### Comprehensive Testing Strategy\nOur application includes a robust testing framework covering all aspects of functionality, security, and user experience:\n\n- **[Testing Strategy](docs/COMPREHENSIVE_DOCUMENTATION.md#10-testing-strategy--implementation)**: Complete testing pyramid including unit, integration, and security tests\n- **[Security Testing](docs/COMPREHENSIVE_DOCUMENTATION.md#11-security--quality-assurance)**: Comprehensive security testing framework with automated vulnerability detection\n- **[UAT Test Plan](docs/COMPREHENSIVE_DOCUMENTATION.md#11-security--quality-assurance)**: Detailed User Acceptance Testing scenarios and procedures\n\n### Running Tests\n```bash\n# Run all tests\ncd backend && python run_tests.py\n\n# Run security tests\ncd backend && python run_security_tests.py\n\n# Run frontend tests\nnpm test\n\n# Run specific test categories\npython -m pytest tests/test_security.py -m sql_injection -v\npython -m pytest tests/test_astrology.py -v\nnpm test -- --testNamePattern=\"NatalChartWheel\"\n```\n\n### Installation\n\n1. **Clone the repository**\n   ```bash\n   git clone https://github.com/your-username/SwissEphemeris-Astrology.git\n   cd SwissEphemeris-Astrology\n   ```\n\n2. **Set up the backend**\n   ```bash\n   # Create and activate virtual environment\n   python -m venv venv_py310\n   source venv_py310/bin/activate  # On Windows: venv_py310\\Scripts\\activate\n   \n   # Install dependencies\n   cd backend\n   pip install -r requirements.txt\n   ```\n\n3. **Set up the frontend**\n   ```bash\n   # Install dependencies\n   npm install\n   ```\n\n4. **Environment Configuration**\n   \n   Create `.env` files in both root and backend directories:\n   \n   **Root `.env`:**\n   ```env\n   NEXT_PUBLIC_API_URL=http://localhost:8001\n   ```\n   \n   **Backend `.env`:**\n   ```env\n   DATABASE_URL=sqlite:///./astrology.db\n   EPHEMERIS_PATH=./app/ephe\n   GEMINI_API_KEY=your_gemini_api_key_here\n   SECRET_KEY=your_secret_key_here\n   ```\n\n5. **Download ephemeris files**\n   ```bash\n   cd backend\n   mkdir -p app/ephe\n   # Download ephemeris files for astronomical calculations\n   # Or use the provided download script\n   python download_ephemeris.py\n   ```\n\n### Running the Application\n\n1. **Start the backend server**\n```bash\ncd backend\nsource ../venv_py310/bin/activate\n   python -m uvicorn app.main:app --port 8001 --reload\n```\n\n2. **Start the frontend server**\n```bash\nnpm run dev\n```\n\n3. **Access the application**\n   - Frontend: http://localhost:3000\n   - Backend API: http://localhost:8001\n   - API Documentation: http://localhost:8001/docs\n\n## \ud83d\udcc1 Project Structure\n\n```\nAistro-Astrology/\n\u251c\u2500\u2500 README.md\n\u251c\u2500\u2500 ARCHITECTURE.md\n\u251c\u2500\u2500 DESIGN_GUIDELINES.md\n\u251c\u2500\u2500 package.json\n\u251c\u2500\u2500 next.config.js\n\u251c\u2500\u2500 tailwind.config.js\n\u251c\u2500\u2500 tsconfig.json\n\u251c\u2500\u2500 .env\n\u251c\u2500\u2500 .env.local\n\u251c\u2500\u2500 .gitignore\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 src/                          # Frontend source code\n\u2502   \u251c\u2500\u2500 components/               # React components\n\u2502   \u2502   \u251c\u2500\u2500 ui/                  # Base UI components\n\u2502   \u2502   \u251c\u2500\u2500 charts/              # Chart components\n\u2502   \u2502   \u251c\u2500\u2500 forms/               # Form components\n\u2502   \u2502   \u251c\u2500\u2500 analysis/            # Analysis components\n\u2502   \u2502   \u2514\u2500\u2500 layout/              # Layout components\n\u2502   \u251c\u2500\u2500 pages/                   # Next.js pages\n\u2502   \u2502   \u251c\u2500\u2500 api/                 # API routes\n\u2502   \u2502   \u251c\u2500\u2500 index.tsx            # Home page\n\u2502   \u2502   \u2514\u2500\u2500 chart.tsx            # Chart page\n\u2502   \u251c\u2500\u2500 utils/                   # Utility functions\n\u2502   \u2502   \u251c\u2500\u2500 api.ts               # API client\n\u2502   \u2502   \u251c\u2500\u2500 formatters.ts        # Data formatters\n\u2502   \u2502   \u251c\u2500\u2500 textFormatting.ts    # Text formatting utilities\n\u2502   \u2502   \u2514\u2500\u2500 validators.ts        # Input validation\n\u2502   \u251c\u2500\u2500 types/                   # TypeScript types\n\u2502   \u2502   \u251c\u2500\u2500 chart.ts             # Chart types\n\u2502   \u2502   \u2514\u2500\u2500 api.ts               # API types\n\u2502   \u2514\u2500\u2500 styles/                  # Styling\n\u2502       \u251c\u2500\u2500 globals.css          # Global styles\n\u2502       \u2514\u2500\u2500 components.css       # Component styles\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 backend/                     # Backend source code\n\u2502   \u251c\u2500\u2500 app/\n\u2502   \u2502   \u251c\u2500\u2500 main.py             # FastAPI application\n\u2502   \u2502   \u251c\u2500\u2500 config.py           # Configuration\n\u2502   \u2502   \u251c\u2500\u2500 models/             # Pydantic models\n\u2502   \u2502   \u251c\u2500\u2500 database/           # Database layer\n\u2502   \u2502   \u251c\u2500\u2500 routes/             # API routes\n\u2502   \u2502   \u251c\u2500\u2500 services/           # Business logic\n\u2502   \u2502   \u251c\u2500\u2500 training/           # AI training\n\u2502   \u2502   \u251c\u2500\u2500 utils/              # Utilities\n\u2502   \u2502   \u2514\u2500\u2500 ephe/               # Ephemeris files\n\u2502   \u251c\u2500\u2500 tests/                  # Test suite\n\u2502   \u251c\u2500\u2500 requirements.txt        # Python dependencies\n\u2502   \u2514\u2500\u2500 .env                    # Backend environment\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 .github/                    # GitHub workflows\n\u2502   \u2514\u2500\u2500 workflows/\n\u2502       \u251c\u2500\u2500 deploy.yml          # Deployment workflow\n\u2502       \u2514\u2500\u2500 test.yml            # Testing workflow\n\u251c\u2500\u2500 \n\u251c\u2500\u2500 scripts/                    # Deployment scripts\n\u2502   \u251c\u2500\u2500 deploy.sh              # Deployment script\n\u2502   \u2514\u2500\u2500 backup.sh              # Backup script\n\u2514\u2500\u2500 \n\u2514\u2500\u2500 docs/                      # Documentation\n    \u251c\u2500\u2500 api/                   # API documentation\n    \u251c\u2500\u2500 user-guide/            # User guide\n    \u2514\u2500\u2500 developer-guide/       # Developer guide\n```\n\n## \ud83d\udd27 Configuration\n\n### Environment Variables\n\n#### Frontend Environment Variables\n```env\nNEXT_PUBLIC_API_URL=http://localhost:8001\nNEXT_PUBLIC_BRAND_NAME=\"Aistro Astrology\"\n```\n\n#### Backend Environment Variables\n```env\n# Database\nDATABASE_URL=sqlite:///./astrology.db\nDATABASE_URL_PROD=postgresql://user:password@localhost/astrology\n\n# Ephemeris\nEPHEMERIS_PATH=./app/ephe\n\n# AI Integration\nGEMINI_API_KEY=your_gemini_api_key_here\nDISABLE_AI_INTERPRETATIONS=false\n\n# Security\nSECRET_KEY=your_secret_key_here\nCORS_ORIGINS=[\"http://localhost:3000\"]\n\n# Logging\nLOG_LEVEL=INFO\nLOG_FILE=app.log\n\n# Export\nWATERMARK_TEXT=\"Aistro Astrology\"\n```\n\n### Ephemeris Setup\n\n1. **Download ephemeris files**\n   ```bash\n   cd backend/app/ephe\n   wget https://www.astro.com/ftp/swisseph/ephe/sepl_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/semo_18.se1\n   wget https://www.astro.com/ftp/swisseph/ephe/seas_18.se1\n   ```\n\n2. **Verify file integrity**\n   ```bash\n   cd backend\n   python -c \"from app.config import validate_ephemeris_files; validate_ephemeris_files()\"\n   ```\n\n## \ud83e\uddea Testing\n\n### Backend Tests\n```bash\ncd backend\nsource ../venv_py310/bin/activate\npython -m pytest tests/ -v\n```\n\n### Frontend Tests\n```bash\nnpm test\n```\n\n### Integration Tests\n```bash\nnpm run test:integration\n```\n\n### Test Coverage\n```bash\n# Backend coverage\ncd backend\npython -m pytest --cov=app tests/\n\n# Frontend coverage\nnpm run test:coverage\n```\n\n## \ud83d\udcca API Documentation\n\n### Core Endpoints\n#### Chart Calculation\n```http\nPOST /calculate\nContent-Type: application/json\n\n{\n  \"date\": \"1990-07-12\",\n  \"time\": \"14:30\",\n  \"city\": \"New York\",\n  \"state\": \"NY\",\n  \"country\": \"USA\",\n  \"system\": \"western\" // or \"vedic\"\n}\n```\n\n#### Interpretation (Streaming)\n```http\nPOST /interpret\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"system\": \"vedic\",\n  \"include_transits\": true,\n  \"section\": \"natal_chart_interpretation\"\n}\n```\n\n#### City Suggestion\n```http\nGET /suggest_cities?query=London&limit=5&include_timezone=true\n```\n\n#### Q&A System\n```http\nPOST /qa\nContent-Type: application/json\n\n{\n  \"question\": \"What does Saturn in 5th house mean?\",\n  \"context\": { \"chart_data\": ... },\n  \"system\": \"vedic\"\n}\n```\n\n#### Predictions\n```http\nPOST /api/predictions/generate\nContent-Type: application/json\n\n{\n  \"date\": \"1990-07-12\",\n  \"time\": \"14:30\",\n  \"city\": \"New York\",\n  \"prediction_window_days\": 30\n}\n```\n\n#### PDF Export\n```http\nPOST /export/chart/pdf\nContent-Type: application/json\n\n{\n  \"chart_data\": { ... },\n  \"birth_details\": { ... }\n}\n```\n\n### Response Format\n```json\n{\n  \"success\": true,\n  \"data\": {\n    // Response data\n  },\n  \"meta\": {\n    \"timestamp\": \"2024-01-08T12:00:00Z\",\n    \"requestId\": \"req_123456\",\n    \"version\": \"1.0.0\"\n  }\n}\n```\n\n## \ud83d\ude80 Deployment\n\n### Production Deployment\n\n1. **Build the application**\n   ```bash\n   npm run build\n   ```\n\n2. **Deploy to Render.com**\n   ```bash\n   # Using the provided deployment script\n   ./scripts/deploy.sh\n   ```\n\n3. **Environment Setup**\n   - Set production environment variables\n   - Configure database connections\n   - Set up SSL certificates\n\n### Container Deployment\n\n1. **Using Heroku**\n```bash\nheroku create your-app-name\nheroku config:set DATABASE_URL=your_db_url\ngit push heroku main\n```\n\n2. **Using Railway**\n```bash\nrailway login\nrailway init\nrailway up\n```\n\n### Manual Deployment\n\n1. **Backend deployment**\n   ```bash\n   cd backend\n   gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker\n   ```\n\n2. **Frontend deployment**\n   ```bash\n   npm run build\n   npm run start\n   ```\n\n## \ud83d\udd12 Security\n\n### Authentication & Authorization\n- JWT token-based authentication\n- Role-based access control\n- Rate limiting on API endpoints\n- Input validation and sanitization\n\n### Data Protection\n- Encrypted database connections\n- Secure API key management\n- CORS configuration\n- Request/response logging\n\n## \ud83d\udcc8 Performance\n\n### Optimization Strategies\n- **Frontend**: Code splitting, image optimization, caching\n- **Backend**: Database indexing, connection pooling, async processing\n- **API**: Response compression, pagination, caching headers\n\n### Monitoring\n- Application performance monitoring\n- Error tracking and logging\n- Database query optimization\n- API response time monitoring\n\n## \ud83e\udd1d Contributing\n\n### Development Workflow\n\n1. **Fork the repository**\n2. **Create a feature branch**\n   ```bash\n   git checkout -b feature/amazing-feature\n   ```\n3. **Make your changes**\n4. **Run tests**\n   ```bash\n   npm test\n   cd backend && python -m pytest\n   ```\n5. **Submit a pull request**\n\n### Code Style Guidelines\n\n#### TypeScript/JavaScript\n- Use TypeScript for type safety\n- Follow ESLint configuration\n- Use Prettier for code formatting\n- Write meaningful variable names\n\n#### Python\n- Follow PEP 8 style guide\n- Use type hints\n- Write docstrings for functions\n- Use meaningful variable names\n\n### Commit Message Format\n```\ntype(scope): description\n\n[optional body]\n\n[optional footer]\n```\n\nExample:\n```\nfeat(qa): add PDF export functionality\n\nAdd PDF export capability to Q&A responses with custom watermarking\nand structured formatting for better readability.\n\nCloses #123\n```\n\n## \ud83d\udcda Documentation\n\n### Available Documentation\n- [Architecture Guide](docs/architecture/ARCHITECTURE.md) - System architecture and design\n- [Design Guidelines](docs/COMPREHENSIVE_DOCUMENTATION.md#6-design-guidelines--visual-identity) - UI/UX and code style guidelines\n- [API Documentation](docs/COMPREHENSIVE_DOCUMENTATION.md#4-backend-architecture--services) - Detailed API reference\n- [User Guide](docs/COMPREHENSIVE_DOCUMENTATION.md) - End-user documentation\n- [Developer Guide](docs/COMPREHENSIVE_DOCUMENTATION.md) - Development setup and guidelines\n\n### Generating Documentation\n```bash\n# API documentation\ncd backend\npython -m app.docs.generate_api_docs\n\n# Code documentation\nnpm run docs:generate\n```\n\n## \ud83d\udc1b Troubleshooting\n\n### Common Issues\n\n#### Ephemeris Files Missing\n```bash\n# Error: Ephemeris files not found\n# Solution: Download ephemeris files\ncd backend/app/ephe\npython ../download_ephemeris.py\n```\n\n#### Database Connection Issues\n```bash\n# Error: Database connection failed\n# Solution: Check database configuration\ncd backend\npython -c \"from app.database import test_connection; test_connection()\"\n```\n\n#### AI Integration Issues\n```bash\n# Error: Gemini API key invalid\n# Solution: Check API key configuration\nexport GEMINI_API_KEY=your_valid_api_key\n```\n\n### Debug Mode\n```bash\n# Enable debug logging\nexport LOG_LEVEL=DEBUG\n\n# Run with debug mode\ncd backend\npython -m uvicorn app.main:app --reload --log-level debug\n```\n\n## \ud83d\udcc4 License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n## \ufffd\ufffd Acknowledgments\n\n- Astronomical calculation libraries for precise calculations\n- Google Gemini team for AI integration\n- Astrological community for domain expertise\n- Open source contributors and maintainers\n\n## \ud83d\udcde Support\n\n### Getting Help\n- \ud83d\udce7 Email: support@aistro.ai\n- \ud83d\udcac Discord: [Join our community](https://discord.gg/astrology)\n- \ud83d\udcd6 Documentation: [docs.aistro.ai](https://docs.aistro.ai)\n- \ud83d\udc1b Issues: [GitHub Issues](https://github.com/akashagl92/AI-Astrologer/issues)\n\n### Commercial Support\nFor commercial licensing, custom development, or enterprise support, please contact us at akash.agl92@gmail.com.\n\n---\n\nMade with \u2764\ufe0f by Akash Agrawal and Cursor",
-    "files": [
-      {
-        "name": ".agent",
-        "type": "dir",
-        "path": ".agent"
-      },
-      {
-        "name": ".claude",
-        "type": "dir",
-        "path": ".claude"
-      },
-      {
-        "name": ".cursorrules",
-        "type": "file",
-        "path": ".cursorrules"
-      },
-      {
-        "name": ".env.example",
-        "type": "file",
-        "path": ".env.example"
-      },
-      {
-        "name": ".gitattributes",
-        "type": "file",
-        "path": ".gitattributes"
-      },
-      {
-        "name": ".github",
-        "type": "dir",
-        "path": ".github"
-      },
-      {
-        "name": ".gitignore",
-        "type": "file",
-        "path": ".gitignore"
-      },
-      {
-        "name": ".pai",
-        "type": "dir",
-        "path": ".pai"
-      },
-      {
-        "name": "5",
-        "type": "file",
-        "path": "5"
-      },
-      {
-        "name": "CHANGELOG.md",
-        "type": "file",
-        "path": "CHANGELOG.md"
-      },
-      {
-        "name": "CONTRIBUTING.md",
-        "type": "file",
-        "path": "CONTRIBUTING.md"
-      },
-      {
-        "name": "HF",
-        "type": "file",
-        "path": "HF"
-      },
-      {
-        "name": "LICENSE",
-        "type": "file",
-        "path": "LICENSE"
-      },
-      {
-        "name": "Procfile",
-        "type": "file",
-        "path": "Procfile"
-      },
-      {
-        "name": "README.md",
-        "type": "file",
-        "path": "README.md"
-      },
-      {
-        "name": "_archive",
-        "type": "dir",
-        "path": "_archive"
-      },
-      {
-        "name": "ai-astrologer",
-        "type": "file",
-        "path": "ai-astrologer"
-      },
-      {
-        "name": "ai-astrologer.pub",
-        "type": "file",
-        "path": "ai-astrologer.pub"
-      },
-      {
-        "name": "backend",
-        "type": "dir",
-        "path": "backend"
-      },
-      {
-        "name": "backup_project.sh",
-        "type": "file",
-        "path": "backup_project.sh"
-      },
-      {
-        "name": "commit_non_chart_wheel.sh",
-        "type": "file",
-        "path": "commit_non_chart_wheel.sh"
-      },
-      {
-        "name": "content",
-        "type": "dir",
-        "path": "content"
-      },
-      {
-        "name": "docs",
-        "type": "dir",
-        "path": "docs"
-      },
-      {
-        "name": "ecosystem.config.js",
-        "type": "file",
-        "path": "ecosystem.config.js"
-      },
-      {
-        "name": "env.development",
-        "type": "file",
-        "path": "env.development"
-      },
-      {
-        "name": "env.production.template",
-        "type": "file",
-        "path": "env.production.template"
-      },
-      {
-        "name": "env.staging",
-        "type": "file",
-        "path": "env.staging"
-      },
-      {
-        "name": "jest.config.js",
-        "type": "file",
-        "path": "jest.config.js"
-      },
-      {
-        "name": "jest.setup.js",
-        "type": "file",
-        "path": "jest.setup.js"
-      },
-      {
-        "name": "jest.setup.ts",
-        "type": "file",
-        "path": "jest.setup.ts"
-      },
-      {
-        "name": "local_backups",
-        "type": "dir",
-        "path": "local_backups"
-      },
-      {
-        "name": "next-env.d.ts",
-        "type": "file",
-        "path": "next-env.d.ts"
-      },
-      {
-        "name": "next.config.js",
-        "type": "file",
-        "path": "next.config.js"
-      },
-      {
-        "name": "package-lock.json",
-        "type": "file",
-        "path": "package-lock.json"
-      },
-      {
-        "name": "package.json",
-        "type": "file",
-        "path": "package.json"
-      },
-      {
-        "name": "public",
-        "type": "dir",
-        "path": "public"
-      },
-      {
-        "name": "render.yaml",
-        "type": "file",
-        "path": "render.yaml"
-      },
-      {
-        "name": "scripts",
-        "type": "dir",
-        "path": "scripts"
-      },
-      {
-        "name": "src",
-        "type": "dir",
-        "path": "src"
-      },
-      {
-        "name": "start_backend.sh",
-        "type": "file",
-        "path": "start_backend.sh"
-      },
-      {
-        "name": "tests",
-        "type": "dir",
-        "path": "tests"
-      },
-      {
-        "name": "tsconfig.json",
-        "type": "file",
-        "path": "tsconfig.json"
-      },
-      {
-        "name": "tsconfig.tsbuildinfo",
-        "type": "file",
-        "path": "tsconfig.tsbuildinfo"
-      },
-      {
-        "name": "~",
-        "type": "dir",
-        "path": "~"
-      }
-    ],
-    "recentCommits": [
-      {
-        "date": "2026-02-19T17:26:31Z",
-        "message": "feat(research): implement system-level filtering and terminology translation (Phase 30)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-19T01:12:22Z",
-        "message": "fix(interpretation): implement neo-vedic sidereal bridge for dasha calculation and broaden JIT enrichment",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-18T22:23:17Z",
-        "message": "feat(qa): implement smart divisional chart context selector (ADR-0032)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-18T21:33:02Z",
-        "message": "Standardized Vedic terminology, verified D-chart inputs, and added QA checks",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-18T08:02:44Z",
-        "message": "feat(qa): resolve persistent 500 error via cross-endpoint robustness and proxy relaxation",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-17T18:55:28Z",
-        "message": "docs(research): finalize phase 25 documentation synthesis and journal paper",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-17T16:03:36Z",
-        "message": "docs: bridge synergy between /docs_sync and /pai_sync workflows",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-17T15:57:12Z",
-        "message": "docs: refine /docs_sync workflow with enhanced verification protocols",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-17T15:55:33Z",
-        "message": "docs: sync tech docs with Hybrid Insight Model and 2026 benchmarks; fix links",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-17T15:41:11Z",
-        "message": "docs: academic refinement of journal paper, documentation sync, and README fix",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-17T02:49:08Z",
-        "message": "fix(frontend): resolve typescript 'possibly null' errors in NatalChartWheel",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-17T02:41:58Z",
-        "message": "docs: pivot architecture to technical flow-charts & remove abstract visuals",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-17T02:40:42Z",
-        "message": "docs: elaborate predictive model architecture & visual deep-dive",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-17T02:31:16Z",
-        "message": "feat: formalize eclipse-natal synergy, documentation & PAI sync (1.46x RR)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-16T15:25:21Z",
-        "message": "feat: implement Dynamic Orb Pruning & research enrichment",
         "author": "Akash Agrawal"
       }
     ]

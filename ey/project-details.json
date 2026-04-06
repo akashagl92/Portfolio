@@ -486,6 +486,11 @@
         "path": "cresta"
       },
       {
+        "name": "crunchyroll",
+        "type": "dir",
+        "path": "crunchyroll"
+      },
+      {
         "name": "data.json",
         "type": "file",
         "path": "data.json"

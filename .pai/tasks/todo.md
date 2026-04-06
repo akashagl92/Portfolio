@@ -1,25 +1,24 @@
-# PAI Sync Pilot Test (Native Artifacts)
+# PAI v3.13.1 Crunchyroll Tailoring (LOCKED=1)
 
-## Planning Phase
-- [x] Write Implementation Plan for `PAISync` pack.
-- [x] Identify and fix bridge session detection bug (mtime conflict).
-- [x] Identify and fix bridge env quoting bug (rc=126).
-- [ ] Submit for User Review (Attempting Native Update).
+- [x] **Phase 1: Context Gathering**
+  - [x] Analyze Crunchyroll JD for key themes.
+  - [ ] Update [.pai/manifest.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.pai/manifest.md).
+  - [ ] Run /pai_sync ritual.
 
-## PAI Sync Pack Migration (Execution)
-- [ ] Create `.agent/packs/PAISync/` directory.
-- [ ] Write `.agent/packs/PAISync/README.md` (Description/Usage).
-- [ ] Write `.agent/packs/PAISync/INSTALL.md` (AI setup wizard).
-- [ ] Write `.agent/packs/PAISync/VERIFY.md` (Self-test script).
+---
 
-## Native Stability Test (Verification)
-- [x] Run the Motive portfolio tailoring task.
-- [!] Native `task.md` mutation stalled/canceled multiple times.
-- [x] Triggered Circuit Breaker (`shadow-on native_stall`).
-- [ ] Move obsolete `.gemini/workflows/pai_sync.md` to `archive/` if successful.
+# [Archived Tasks]
+# PAI v3.13.1 Full Escape Verification
 
-## Motive Portfolio Tailoring (Completed)
-- [x] Analyze JD & create context.
-- [x] Scaffold `motive/` directory.
-- [x] Tailor content & fix relative paths.
-- [x] Verify in browser & capture screenshot.
+- [x] **Phase 1: Safe-Zone Pivot**
+  - [x] Establish Surgical Protocol (v3.13.1).
+  - [x] Verify Zero-Artifact communications (Parent).
+
+- [x] **Phase 2: Reliability Stress Test**
+  - [x] Spawn Reliability Sub-Agent to audit events (Audit ID: 21:58Z).
+  - [x] Prove sync-stability with multiple parent turns (Zero Stalls).
+  - [x] Verify surgical precision without regressive writes.
+
+- [x] **Phase 3: Deployment & Walkthrough**
+  - [x] Formalize Surgical Sync Ritual as project standard.
+  - [x] Final Walkthrough generated.
