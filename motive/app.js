@@ -252,8 +252,8 @@ function updateCharts(data) {
         totalLangsEl.textContent = activeLanguagesCount || data.totalLanguagesCount || 0;
     }
 
-    // Unified Design System Colors
-    const UDS_COLORS = {
+    // Known language colors (for commonly used languages), fallback to generated
+    const langColors = {
         'Python': '#a78bfa',
         'TypeScript': '#3b82f6',
         'JavaScript': '#fbbf24',
@@ -279,7 +279,8 @@ function updateCharts(data) {
         return `hsl(${h}, 70%, 65%)`;
     };
 
-    const getLanguageColor = (lang) => UDS_COLORS[lang] || generateColor(lang);
+    const getLanguageColor = (lang) => langColors[lang] || generateColor(lang);
+    const defaultColors = ['#a78bfa', '#3b82f6', '#fbbf24', '#f97316', '#06b6d4', '#10b981', '#ec4899', '#8b5cf6'];
 
 
     const languageData = data.activeLanguages || data.allLanguages || data.languages || {};
