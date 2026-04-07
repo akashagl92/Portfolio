@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **534 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **535 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -15,6 +15,7 @@ This portfolio represents a **Data & AI Product Leader** who combines strategic 
 - **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)
 - **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)
 - **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)
+- **Crunchyroll-tailored**: [Explore](https://akashagl92.github.io/Portfolio/crunchyroll/)
 - **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)
 - **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)
 - **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)
@@ -49,9 +50,36 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ### Portfolio (`Portfolio`)
 **HTML** | [Repo](https://github.com/akashagl92/Portfolio)
 
-This platform dynamically generates highly-tailored, research-grade analytics and content for specific industries using an automated, production-grade system. It leverages agentic AI for content generation and robust CI/CD with GitHub Actions for deployment and synchronization across multiple customized portfolio versions. The system bridges advanced data science, marketing technology, and real-world AI applications, demonstrating sophisticated automation and data orchestration capabilities.
+This production-grade platform leverages agentic AI to dynamically generate highly-tailored, research-grade analytics and content for diverse industries. It integrates sophisticated data orchestration with robust CI/CD pipelines, enabling the scalable delivery of customized AI applications. The system manages over 20 distinct portfolio versions, demonstrating advanced automation and observability for complex content generation workflows.
 
-_Tags: Agentic AI, CI/CD Automation, Data Visualization, Dynamic Content Generation_
+_Tags: Agentic AI, CI/CD, Data Orchestration, Static Site Generation_
+
+---
+
+### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)
+**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)
+
+This platform is a research-grade AI agent system designed to overcome LLM memory limitations. It employs Recursive Gated Consolidation and Structured State Convergence to achieve persistent, scalable agentic memory, ensuring 100% information recall over millions of turns. This enables robust, dynamic agents capable of integrating diverse external tools for complex tasks like job hunting, coding, and personal assistance.
+
+_Tags: LLM Agent Orchestration, Persistent AI Memory, Containerization, Deep Learning_
+
+---
+
+### Erux.ai (`erux.ai`)
+**Python** | [Repo](https://github.com/akashagl92/erux.ai)
+
+This full-stack platform delivers highly personalized astrological insights through an intuitive Next.js/React interface. It leverages a Python/FastAPI backend with SQLAlchemy and integrates advanced AI/LLM capabilities, including Google Gemini and a multi-agent architecture, for sophisticated interpretations. The system performs precise, industry-standard astronomical calculations, ensuring accurate and comprehensive analysis across multiple traditional systems.
+
+_Tags: Full-Stack Development, Multi-Agent AI, Astrological Computing, Prompt Engineering_
+
+---
+
+### Agentic-memory-scaling (`agentic-memory-scaling`)
+**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)
+
+Introduces Recursive Gated Consolidation (RGC), an advanced memory architecture that overcomes the 'Discovery Cliff' in LLM agents. It maintains 100% signal recall over 10 million turns, significantly outperforming traditional methods which collapse to 16.8%. The system also reveals an Inverted Latency Law, demonstrating improved performance at scale, validated through extensive Monte Carlo simulations and optimized for cutting-edge hardware like Google's TPU v4/v5, enhancing the reliability and efficiency of agentic AI systems.
+
+_Tags: LLM Agents, Memory Architecture, Performance Optimization, AI Simulation_
 
 
 ---
@@ -73,11 +101,11 @@ _Tags: Agentic AI, CI/CD Automation, Data Visualization, Dynamic Content Generat
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 534 |
+| Total Commits | 535 |
 | Unique Repositories | 11 |
 | Primary Language | Python |
 | Top Languages | N/A |
-| Last Synced | 4/6/2026 |
+| Last Synced | 4/7/2026 |
 
 ---
 
