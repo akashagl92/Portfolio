@@ -1,9 +1,13 @@
-# PAI v3.13.1 Crunchyroll Tailoring (LOCKED=1)
+# PAI v3.13.1 Sprinklr PM Tailoring (LOCKED=1)
 
 - [x] **Phase 1: Context Gathering**
-  - [x] Analyze Crunchyroll JD for key themes.
-  - [ ] Update [.pai/manifest.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.pai/manifest.md).
-  - [ ] Run /pai_sync ritual.
+  - [x] Analyze Sprinklr JD for key themes.
+  - [x] Create [.pai/job_contexts/sprinklr.md](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/.pai/job_contexts/sprinklr.md).
+  - [x] Scaffold `sprinklr/` portfolio directory.
+  - [/] Global Rename (Moltbot -> OpenClaw).
+  - [ ] Finalize Sprinklr Portfolio (Hero content + JS).
+  - [ ] Git Sync (Fetch/Pull/Push).
+  - [ ] Verify pages.
 
 ---
 

@@ -1,33 +1,35 @@
-# Active Plan: Crunchyroll Tailored Portfolio - Integration & Stats Sync
+# Implementation Plan: Git Parity & Automation Verification
 
-Recover from rebase divergence while ensuring the Crunchyroll portfolio is integrated with the automated 535-commit GitHub stats infrastructure.
+This plan ensures the local codebase is synchronized with the remote repository and verifies that the new Sprinklr page will receive daily automated contribution statistics.
 
 ## User Review Required
 
 > [!IMPORTANT]
-> **535 Commit Parity**: We are prioritizing the remote version of `data.json` (535 commits) as the source-of-truth. Local 533-commit overrides will be discarded for statistical accuracy.
-
-> [!CAUTION]
-> **Merge Conflict Strategy**: I will perform a manual merge of `project-details.json` to ensure new directory registrations (`crunchyroll/`, `motive/`) are not lost during the rebase over remote updates.
+> **Automation Parity**: The existing GitHub Action (`update-stats.yml`) automatically propagates `data.json` and `project-details.json` to all top-level directories. I will align the Sprinklr page with this mechanism by ensuring it looks for its data in the local folder, allowing the daily automation to work without further changes to the Action.
 
 ## Proposed Changes
 
-### [Integration]
+### 1. Parity Synchronization
+#### [RUN] Git Parity Routine
+- Execute `git stash`
+- Execute `git pull --rebase origin main`
+- Execute `git stash pop`
+- Resolve any minor conflicts in `data.json` if necessary (favoring remote stats).
 
-#### [MODIFY] [fetch/data.json](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/fetch/data.json)
-- Restore from remote `HEAD` during rebase to resolve corruption/syntax errors.
+### 2. Sprinklr Automation Alignment
+#### [MODIFY] [sprinklr/app.js](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/sprinklr/app.js)
+- Revert the data fetch path from `../data.json` to `data.json`.
+- This ensures the page reads the specific copy provided daily by the GitHub Action's `find ... -exec cp ... {}/data.json` command.
 
-### [Portfolios]
-
-#### [NEW] [crunchyroll/data.json](file:///Users/akashagrawal/PycharmProjects/Portfolio-Fetch/crunchyroll/data.json)
-- Generate initial sync via propagation script.
-
-## Open Questions
-
-- None.
+### 3. Re-Sync Verification
+#### [RUN] `python3 fetch/fetch_contributions.py`
+- Run the core fetch script locally to verify that the environment and PAT are correctly configured to update `data.json`.
 
 ## Verification Plan
 
-### Automated Tests
-- `grep \"totalCommits\" */data.json` to confirm 535 parity across all page directories.
-- `git status` to confirm clean branch and sync with origin.
+### Automated Verification
+- `grep "data.json" sprinklr/app.js` - Confirm local path reference.
+- `git status` - Confirm "Your branch is up to date with 'origin/main'".
+
+### Manual Verification
+- Refresh `http://localhost:8080/sprinklr/` and verify that the "Engineering Velocity" section still renders with valid commit/repo counts.

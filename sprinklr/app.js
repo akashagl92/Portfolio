@@ -8,7 +8,7 @@ const GithubService = {
 
         try {
             // Try to load pre-generated data from build-time script
-            const response = await fetch('./data.json?v=20');
+            const response = await fetch('data.json?v=20');
             if (response.ok) {
                 const data = await response.json();
                 // Check if data.json has real content (not just placeholder)
@@ -158,6 +158,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (githubData) {
         updateCharts(githubData);
     }
+    
+    // Load Agentic Summaries (Tailored for Sprinklr PM)
+    await loadAgenticSummaries();
 
     // Existing interactivity
     document.querySelectorAll('.glass-card[data-link]').forEach(card => {
@@ -174,7 +177,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadAgenticSummaries() {
     try {
-        const response = await fetch('./project-details.json?v=' + new Date().getTime());
+        const response = await fetch('project-details.json?v=' + new Date().getTime());
         if (!response.ok) return;
         const projects = await response.json();
 

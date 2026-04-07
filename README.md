@@ -56,8 +56,8 @@ _Tags: Agentic AI, CI/CD, Data Orchestration, Static Site Generation_
 
 ---
 
-### 📲 Moltbot - AI WhatsApp Agent (`moltbot`)
-**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)
+### 📲 OpenClaw - AI WhatsApp Agent (`openclaw`)
+**TypeScript** | [Repo](https://github.com/akashagl92/openclaw)
 
 This platform is a research-grade AI agent system designed to overcome LLM memory limitations. It employs Recursive Gated Consolidation and Structured State Convergence to achieve persistent, scalable agentic memory, ensuring 100% information recall over millions of turns. This enables robust, dynamic agents capable of integrating diverse external tools for complex tasks like job hunting, coding, and personal assistance.
 

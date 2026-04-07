@@ -5,8 +5,8 @@ from pathlib import Path
 
 # Base content for the Moltbot card
 BASE_CARD = """
-                <!-- Project: Moltbot - AI AGENT -->
-                <div class="project-card glass-card personal featured" data-repo="moltbot">
+                <!-- Project: OpenClaw - AI AGENT -->
+                <div class="project-card glass-card personal featured" data-repo="openclaw">
                     <div class="project-tags">
                         <span class="highlight-tag">{tag1}</span>
                         <span>{tag2}</span>
@@ -28,8 +28,8 @@ BASE_CARD = """
                 </div>
 """
 
-UNIFIED_TITLE = "Moltbot - Personal Productivity Agent"
-CORE_DESC = "Personal family assistant for 10x productivity. Synthesizes infinite context across emails, calendars, news, and market updates into morning briefs. Acts as an independent agent for product brainstorming, cron jobs, and reminders across all accounts."
+UNIFIED_TITLE = "OpenClaw - Personal Productivity Agent"
+CORE_DESC = "Personal family assistant for 10x productivity. Features a voice agent running models locally on Raspberry Pi for privacy and speed. Synthesizes infinite context across emails, calendars, news, and market updates into morning briefs."
 
 TAILORING = {
     # Alivo Tailoring (Product Enthusiast / Future Founder)
@@ -78,6 +78,16 @@ TAILORING = {
         "h1_bold": "Enablement", "h1_text": "New product idea exploration",
         "h2_bold": "Synthesis", "h2_text": "Market trend aggregation",
         "h3_bold": "Memory", "h3_text": "Infinite context ideation",
+    },
+    # Sprinklr Tailoring (AI Agent Adoption & Voice PM)
+    "sprinklr": {
+        "tag1": "Voice AI Agent",
+        "tag2": "Local RPi Model",
+        "tag3": "Product Adoption",
+        "description": "Personal family assistant with local voice agent execution on Raspberry Pi. Accelerates system adoption through hands-on implementation and prompting. Synthesizes infinite context into morning briefs and acts as an independent agent for customer field engagements.",
+        "h1_bold": "Voice Agent", "h1_text": "Local RPi LLM execution",
+        "h2_bold": "Adoption", "h2_text": "Hands-on implementation & configuration",
+        "h3_bold": "Synthesis", "h3_text": "Cross-channel context merging",
     }
 }
 
@@ -114,19 +124,23 @@ def generate_card(directory):
 def inject_card(content, card_html):
     # Robust cleanup: Same as before
     next_markers = [
+        r'<!-- Project: Infinite Memory',
+        r'<!-- Project: Personal AI Infrastructure',
+        r'<!-- Project: Multi-Agent Coordination',
         r'<!-- Project: Autonomous Stock',
         r'<!-- Project: AI Astrology',
         r'<!-- Project: Philosophy Sage',
         r'<!-- Project: Music',
         r'</div>\s*<div class="section-cta">',
-        r'<!-- Project: Moltbot' # Safety: if duplicates exist
+        r'<!-- Project: OpenClaw',
+        r'<!-- Project: Moltbot'
     ]
     lookahead = "|".join(next_markers)
     
-    # Remove existing Moltbot card
-    # Relaxed regex to match "<!-- Project: Moltbot - AI AGENT (Tailored...) -->"
-    pattern_remove = r'(<!-- Project: Moltbot - AI AGENT.*?-->).*?(?=' + lookahead + r')'
-    content = re.sub(pattern_remove, '', content, flags=re.DOTALL)
+    # Remove existing OpenClaw/Moltbot cards
+    # Use non-greedy match and ensure we don't cross into the next comment block
+    pattern_remove = r'(<!-- Project: (Moltbot|OpenClaw) - AI AGENT.*?-->).*?(?=' + lookahead + r')'
+    content = re.sub(pattern_remove, '', content, count=1, flags=re.DOTALL)
     
     # Inject new
     pattern_inject = r'(<div class="innovation-grid">)'
@@ -139,6 +153,7 @@ def main():
     print(f"Scanning {os.getcwd()}...")
     
     for root, dirs, files in os.walk(root_dir):
+        if root not in [".", "./sprinklr"]: continue
         if "node_modules" in root: continue
         if "index.html" in files:
             file_path = os.path.join(root, "index.html")

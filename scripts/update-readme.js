@@ -63,7 +63,7 @@ function generateProjectDeepDives() {
     const SIX_MONTHS_AGO = new Date();
     SIX_MONTHS_AGO.setMonth(SIX_MONTHS_AGO.getMonth() - 6);
 
-    const ALWAYS_INCLUDE = ['aistro.ai', 'moltbot', 'stock_price_target_modelling', 'ide-agnostic-agent-orchestrator', 'Music-and-Math', 'Portfolio'];
+    const ALWAYS_INCLUDE = ['aistro.ai', 'openclaw', 'stock_price_target_modelling', 'ide-agnostic-agent-orchestrator', 'Music-and-Math', 'Portfolio'];
 
     const dives = projects
         .map(p => {
@@ -109,7 +109,7 @@ function generateProjectDeepDives() {
         .slice(0, 12) // Show up to 12 projects to be inclusive
         .map(p => {
             const title = p.name === 'aistro.ai' ? '🔮 AI Astrology Platform' :
-                p.name === 'moltbot' ? '📲 Moltbot - AI WhatsApp Agent' :
+                p.name === 'openclaw' ? '📲 OpenClaw - AI WhatsApp Agent' :
                     p.name === 'stock_price_target_modelling' ? '📈 Autonomous Trading System' :
                         p.name === 'ide-agnostic-agent-orchestrator' ? '🤖 IDE-Agnostic Agent Orchestrator' :
                             p.name === 'Music-and-Math' ? '🎹 Sonic Geometry Visualizer' :
