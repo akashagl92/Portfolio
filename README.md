@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **535 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **537 commits across 11 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -26,6 +26,7 @@ This portfolio represents a **Data & AI Product Leader** who combines strategic 
 - **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)
 - **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)
 - **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)
+- **Sprinklr-tailored**: [Explore](https://akashagl92.github.io/Portfolio/sprinklr/)
 - **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)
 - **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)
 - **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)
@@ -101,11 +102,11 @@ _Tags: LLM Agents, Memory Architecture, Performance Optimization, AI Simulation_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 535 |
+| Total Commits | 537 |
 | Unique Repositories | 11 |
 | Primary Language | Python |
 | Top Languages | N/A |
-| Last Synced | 4/7/2026 |
+| Last Synced | 4/8/2026 |
 
 ---
 
