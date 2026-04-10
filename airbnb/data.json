@@ -5,23 +5,22 @@
       "count": 71,
       "uniqueRepos": 5,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
-        "Python": 22,
-        "TypeScript": 13,
-        "Shell": 5,
+        "Python": 24,
         "HTML": 15,
-        "Swift": 1,
-        "CSS": 6,
-        "JavaScript": 9
+        "TypeScript": 18,
+        "JavaScript": 8,
+        "Shell": 3,
+        "CSS": 3
       }
     },
     {
@@ -29,23 +28,23 @@
       "count": 84,
       "uniqueRepos": 4,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
-        "Python": 21,
-        "Shell": 1,
-        "TypeScript": 32,
-        "HTML": 13,
-        "Swift": 3,
-        "JavaScript": 7,
-        "CSS": 7
+        "Python": 19,
+        "TypeScript": 36,
+        "HTML": 10,
+        "Shell": 4,
+        "Swift": 5,
+        "CSS": 2,
+        "JavaScript": 8
       }
     },
     {
@@ -53,43 +52,45 @@
       "count": 123,
       "uniqueRepos": 6,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
-        "Python": 52,
-        "TypeScript": 26,
-        "HTML": 19,
-        "Shell": 10,
-        "Kotlin": 1,
-        "JavaScript": 12,
-        "CSS": 3
+        "Python": 56,
+        "HTML": 14,
+        "TypeScript": 21,
+        "Shell": 14,
+        "Swift": 2,
+        "CSS": 5,
+        "JavaScript": 11
       }
     },
     {
       "name": "Apr",
-      "count": 8,
+      "count": 16,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
-        "Python": 5,
+        "Python": 10,
+        "TypeScript": 2,
         "HTML": 2,
-        "Shell": 1
+        "Shell": 1,
+        "CSS": 1
       }
     },
     {
@@ -97,14 +98,14 @@
       "count": 0,
       "uniqueRepos": 0,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {}
     },
@@ -113,14 +114,14 @@
       "count": 4,
       "uniqueRepos": 1,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
         "Python": 4
@@ -131,18 +132,17 @@
       "count": 4,
       "uniqueRepos": 1,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
-        "Python": 3,
-        "HTML": 1
+        "Python": 4
       }
     },
     {
@@ -150,20 +150,20 @@
       "count": 64,
       "uniqueRepos": 1,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
-        "Python": 52,
-        "Shell": 2,
-        "TypeScript": 8,
-        "HTML": 2
+        "Python": 48,
+        "HTML": 4,
+        "TypeScript": 11,
+        "Shell": 1
       }
     },
     {
@@ -171,20 +171,19 @@
       "count": 57,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
-        "TypeScript": 17,
-        "Python": 37,
-        "HTML": 2,
-        "Shell": 1
+        "Python": 35,
+        "HTML": 6,
+        "TypeScript": 16
       }
     },
     {
@@ -192,14 +191,14 @@
       "count": 0,
       "uniqueRepos": 0,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {}
     },
@@ -208,20 +207,20 @@
       "count": 12,
       "uniqueRepos": 2,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
-        "Shell": 1,
-        "Python": 3,
+        "TypeScript": 9,
         "HTML": 1,
-        "TypeScript": 7
+        "Shell": 1,
+        "Python": 1
       }
     },
     {
@@ -229,26 +228,27 @@
       "count": 112,
       "uniqueRepos": 5,
       "languages": {
-        "Python": 264,
-        "TypeScript": 108,
-        "HTML": 77,
-        "Shell": 22,
-        "Kotlin": 1,
-        "Swift": 4,
-        "JavaScript": 42,
-        "CSS": 21
+        "Python": 266,
+        "TypeScript": 124,
+        "HTML": 67,
+        "Shell": 26,
+        "Swift": 7,
+        "CSS": 20,
+        "JavaScript": 36,
+        "Vue": 1
       },
       "topLangCounts": {
-        "Shell": 1,
-        "HTML": 22,
         "Python": 65,
-        "TypeScript": 5,
-        "JavaScript": 14,
-        "CSS": 5
+        "TypeScript": 11,
+        "HTML": 15,
+        "JavaScript": 9,
+        "CSS": 9,
+        "Vue": 1,
+        "Shell": 2
       }
     }
   ],
-  "totalCommits": 539,
+  "totalCommits": 547,
   "uniqueReposTotal": 11,
   "daily": [
     {
@@ -378,6 +378,54 @@
       "type": "commit"
     },
     {
+      "date": "Thu Apr 09 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Apr 09 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Apr 09 2026",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Apr 09 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Apr 09 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Apr 09 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Apr 09 2026",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Apr 09 2026",
+      "repo": "erux.ai",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
       "date": "Wed Apr 08 2026",
       "repo": "erux.ai",
       "language": "Python",
@@ -410,37 +458,13 @@
     {
       "date": "Fri Mar 27 2026",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Thu Mar 26 2026",
       "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Mar 23 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Mar 23 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Mar 23 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Mar 23 2026",
-      "repo": "erux.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -450,6 +474,30 @@
       "type": "commit"
     },
     {
+      "date": "Mon Mar 23 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Mar 23 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Mar 23 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Mar 23 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
       "date": "Sun Mar 22 2026",
       "repo": "erux.ai",
       "language": "Python",
@@ -458,19 +506,13 @@
     {
       "date": "Sun Mar 22 2026",
       "repo": "erux.ai",
-      "language": "HTML",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sun Mar 22 2026",
       "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Mar 21 2026",
-      "repo": "erux.ai",
-      "language": "HTML",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -495,6 +537,12 @@
       "date": "Sat Mar 21 2026",
       "repo": "erux.ai",
       "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Mar 21 2026",
+      "repo": "erux.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -518,7 +566,7 @@
     {
       "date": "Thu Mar 19 2026",
       "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "Shell",
       "type": "commit"
     },
     {
@@ -530,7 +578,61 @@
     {
       "date": "Thu Mar 19 2026",
       "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 19 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 19 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 19 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 19 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 19 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 19 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 19 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 19 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 19 2026",
+      "repo": "erux.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -548,30 +650,6 @@
     {
       "date": "Thu Mar 19 2026",
       "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 19 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 19 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 19 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 19 2026",
-      "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
@@ -579,36 +657,6 @@
       "date": "Thu Mar 19 2026",
       "repo": "erux.ai",
       "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 19 2026",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 19 2026",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 19 2026",
-      "repo": "erux.ai",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 19 2026",
-      "repo": "erux.ai",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 19 2026",
-      "repo": "erux.ai",
-      "language": "Python",
       "type": "commit"
     },
     {
@@ -620,7 +668,7 @@
     {
       "date": "Wed Mar 18 2026",
       "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -632,7 +680,7 @@
     {
       "date": "Tue Mar 17 2026",
       "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -644,13 +692,13 @@
     {
       "date": "Sun Mar 15 2026",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Thu Feb 19 2026",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -662,29 +710,17 @@
     {
       "date": "Wed Feb 18 2026",
       "repo": "erux.ai",
-      "language": "Shell",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Wed Feb 18 2026",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Wed Feb 18 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 17 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 17 2026",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
@@ -704,23 +740,17 @@
     {
       "date": "Tue Feb 17 2026",
       "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Mon Feb 16 2026",
+      "date": "Tue Feb 17 2026",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Mon Feb 16 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Feb 16 2026",
+      "date": "Tue Feb 17 2026",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
@@ -738,7 +768,19 @@
       "type": "commit"
     },
     {
-      "date": "Thu Feb 12 2026",
+      "date": "Mon Feb 16 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Feb 16 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Feb 16 2026",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
@@ -746,11 +788,11 @@
     {
       "date": "Thu Feb 12 2026",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "Shell",
       "type": "commit"
     },
     {
-      "date": "Wed Jan 28 2026",
+      "date": "Thu Feb 12 2026",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
@@ -770,7 +812,13 @@
     {
       "date": "Wed Jan 28 2026",
       "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Jan 28 2026",
+      "repo": "erux.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -782,12 +830,6 @@
     {
       "date": "Sun Jan 25 2026",
       "repo": "erux.ai",
-      "language": "Shell",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Jan 24 2026",
-      "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
@@ -795,30 +837,6 @@
       "date": "Sat Jan 24 2026",
       "repo": "erux.ai",
       "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Jan 24 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Jan 24 2026",
-      "repo": "erux.ai",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Jan 24 2026",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Jan 24 2026",
-      "repo": "erux.ai",
-      "language": "HTML",
       "type": "commit"
     },
     {
@@ -837,16 +855,70 @@
       "date": "Sat Jan 24 2026",
       "repo": "erux.ai",
       "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Jan 24 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Jan 24 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Jan 24 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Jan 24 2026",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Jan 24 2026",
+      "repo": "erux.ai",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Fri Jan 23 2026",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Tue Jan 20 2026",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 28 2025",
       "repo": "erux.ai",
       "language": "TypeScript",
       "type": "commit"
@@ -854,7 +926,7 @@
     {
       "date": "Sun Dec 28 2025",
       "repo": "erux.ai",
-      "language": "Shell",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -906,78 +978,6 @@
       "type": "commit"
     },
     {
-      "date": "Sun Dec 28 2025",
-      "repo": "erux.ai",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 28 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 27 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
       "date": "Sat Dec 27 2025",
       "repo": "erux.ai",
       "language": "Python",
@@ -999,6 +999,54 @@
       "date": "Sat Dec 27 2025",
       "repo": "erux.ai",
       "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sat Dec 27 2025",
+      "repo": "erux.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -1028,7 +1076,7 @@
     {
       "date": "Sat Dec 20 2025",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1040,7 +1088,7 @@
     {
       "date": "Mon Dec 15 2025",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1058,48 +1106,42 @@
     {
       "date": "Mon Dec 15 2025",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Thu Nov 20 2025",
       "repo": "erux.ai",
-      "language": "Shell",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sat Nov 15 2025",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Thu Nov 13 2025",
       "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Nov 11 2025",
-      "repo": "erux.ai",
-      "language": "HTML",
+      "language": "Shell",
       "type": "commit"
     },
     {
       "date": "Tue Nov 11 2025",
       "repo": "erux.ai",
       "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Nov 11 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Wed Sep 24 2025",
       "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Sep 21 2025",
-      "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
@@ -1110,81 +1152,69 @@
       "type": "commit"
     },
     {
-      "date": "Fri Sep 19 2025",
+      "date": "Sun Sep 21 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
       "date": "Fri Sep 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Sep 16 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Sep 16 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Sep 16 2025",
       "repo": "erux.ai",
       "language": "HTML",
       "type": "commit"
     },
     {
-      "date": "Mon Sep 15 2025",
+      "date": "Fri Sep 19 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Mon Sep 15 2025",
+      "date": "Fri Sep 19 2025",
+      "repo": "erux.ai",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Mon Sep 15 2025",
+      "date": "Fri Sep 19 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 19 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Sep 16 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Sep 16 2025",
       "repo": "erux.ai",
       "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Sep 16 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1208,12 +1238,48 @@
     {
       "date": "Mon Sep 15 2025",
       "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
       "date": "Mon Sep 15 2025",
       "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 15 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 15 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Sep 15 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 12 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 12 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 12 2025",
+      "repo": "erux.ai",
       "language": "TypeScript",
       "type": "commit"
     },
@@ -1236,19 +1302,19 @@
       "type": "commit"
     },
     {
-      "date": "Fri Sep 12 2025",
+      "date": "Mon Sep 08 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Sep 12 2025",
+      "date": "Mon Sep 08 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Sep 12 2025",
+      "date": "Mon Sep 08 2025",
       "repo": "erux.ai",
       "language": "TypeScript",
       "type": "commit"
@@ -1280,7 +1346,7 @@
     {
       "date": "Mon Sep 08 2025",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1292,25 +1358,7 @@
     {
       "date": "Mon Sep 08 2025",
       "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 08 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 08 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Sep 08 2025",
-      "repo": "erux.ai",
-      "language": "Shell",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1322,19 +1370,7 @@
     {
       "date": "Sun Sep 07 2025",
       "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Sep 06 2025",
-      "repo": "erux.ai",
       "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Sep 06 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -1346,7 +1382,7 @@
     {
       "date": "Sat Sep 06 2025",
       "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1356,13 +1392,13 @@
       "type": "commit"
     },
     {
-      "date": "Fri Sep 05 2025",
+      "date": "Sat Sep 06 2025",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
-      "date": "Fri Sep 05 2025",
+      "date": "Sat Sep 06 2025",
       "repo": "erux.ai",
       "language": "TypeScript",
       "type": "commit"
@@ -1371,18 +1407,6 @@
       "date": "Fri Sep 05 2025",
       "repo": "erux.ai",
       "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 05 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Sep 05 2025",
-      "repo": "erux.ai",
-      "language": "Python",
       "type": "commit"
     },
     {
@@ -1413,6 +1437,30 @@
       "date": "Fri Sep 05 2025",
       "repo": "erux.ai",
       "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 05 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 05 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 05 2025",
+      "repo": "erux.ai",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Sep 05 2025",
+      "repo": "erux.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -1466,71 +1514,29 @@
     {
       "date": "Mon Aug 25 2025",
       "repo": "erux.ai",
-      "language": "Shell",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Aug 24 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Aug 24 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Aug 24 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Aug 24 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "erux.ai",
       "language": "HTML",
       "type": "commit"
     },
     {
-      "date": "Sat Aug 23 2025",
+      "date": "Sun Aug 24 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Sat Aug 23 2025",
+      "date": "Sun Aug 24 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Aug 24 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Aug 24 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
@@ -1543,284 +1549,326 @@
     },
     {
       "date": "Sat Aug 23 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Aug 23 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "erux.ai",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
       "repo": "erux.ai",
       "language": "Shell",
       "type": "commit"
     },
     {
-      "date": "Fri Aug 22 2025",
+      "date": "Sat Aug 23 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Aug 22 2025",
+      "date": "Sat Aug 23 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Aug 22 2025",
+      "date": "Sat Aug 23 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Aug 22 2025",
+      "date": "Sat Aug 23 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Aug 22 2025",
+      "date": "Sat Aug 23 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Aug 22 2025",
+      "date": "Sat Aug 23 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Aug 22 2025",
+      "date": "Sat Aug 23 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Aug 22 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Aug 22 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Aug 21 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Aug 21 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Aug 21 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Aug 21 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Aug 21 2025",
+      "date": "Sat Aug 23 2025",
       "repo": "erux.ai",
       "language": "TypeScript",
       "type": "commit"
     },
     {
-      "date": "Thu Aug 21 2025",
+      "date": "Fri Aug 22 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Thu Aug 21 2025",
+      "date": "Fri Aug 22 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Thu Aug 21 2025",
+      "date": "Fri Aug 22 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Thu Aug 21 2025",
+      "date": "Fri Aug 22 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Thu Aug 21 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Aug 21 2025",
+      "date": "Fri Aug 22 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Wed Aug 20 2025",
+      "date": "Fri Aug 22 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Wed Aug 20 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
+      "date": "Fri Aug 22 2025",
       "repo": "erux.ai",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Wed Aug 20 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Aug 20 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Aug 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Aug 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Aug 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Aug 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Aug 19 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Aug 18 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Aug 18 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Aug 18 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Jul 09 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Jul 09 2025",
-      "repo": "erux.ai",
-      "language": "Python",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Jul 09 2025",
+      "date": "Fri Aug 22 2025",
       "repo": "erux.ai",
       "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "erux.ai",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Aug 22 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Aug 21 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "erux.ai",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Aug 20 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Aug 19 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Aug 18 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Aug 18 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Aug 18 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Jul 09 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Jul 09 2025",
+      "repo": "erux.ai",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Jul 09 2025",
+      "repo": "erux.ai",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -1838,13 +1886,7 @@
     {
       "date": "Wed Mar 19 2025",
       "repo": "erux.ai",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Mar 19 2025",
-      "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -1854,9 +1896,9 @@
       "type": "commit"
     },
     {
-      "date": "Tue Mar 18 2025",
+      "date": "Wed Mar 19 2025",
       "repo": "erux.ai",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -1872,9 +1914,15 @@
       "type": "commit"
     },
     {
+      "date": "Tue Mar 18 2025",
+      "repo": "erux.ai",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
       "date": "Wed Mar 19 2025",
       "repo": "erux.ai",
-      "language": "Python",
+      "language": "Shell",
       "type": "pr"
     },
     {
@@ -1976,19 +2024,19 @@
     {
       "date": "Thu Mar 05 2026",
       "repo": "moltbot",
-      "language": "Kotlin",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Mar 05 2026",
-      "repo": "moltbot",
       "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Thu Mar 05 2026",
       "repo": "moltbot",
-      "language": "TypeScript",
+      "language": "Swift",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Mar 05 2026",
+      "repo": "moltbot",
+      "language": "Swift",
       "type": "commit"
     },
     {
@@ -2012,6 +2060,24 @@
     {
       "date": "Wed Feb 25 2026",
       "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "moltbot",
       "language": "Swift",
       "type": "commit"
     },
@@ -2030,85 +2096,67 @@
     {
       "date": "Wed Feb 25 2026",
       "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Feb 24 2026",
-      "repo": "moltbot",
       "language": "Swift",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Feb 24 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -2120,7 +2168,7 @@
     {
       "date": "Wed Feb 18 2026",
       "repo": "moltbot",
-      "language": "TypeScript",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -2150,7 +2198,7 @@
     {
       "date": "Wed Feb 11 2026",
       "repo": "moltbot",
-      "language": "TypeScript",
+      "language": "Swift",
       "type": "commit"
     },
     {
@@ -2168,46 +2216,46 @@
     {
       "date": "Mon Feb 02 2026",
       "repo": "moltbot",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Feb 02 2026",
-      "repo": "moltbot",
       "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Mon Feb 02 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "moltbot",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "moltbot",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "moltbot",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 29 2026",
       "repo": "moltbot",
       "language": "Swift",
       "type": "commit"
     },
     {
+      "date": "Mon Feb 02 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Feb 01 2026",
+      "repo": "moltbot",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Feb 01 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Feb 01 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 29 2026",
+      "repo": "moltbot",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
       "date": "Thu Jan 29 2026",
       "repo": "moltbot",
       "language": "HTML",
@@ -2216,7 +2264,7 @@
     {
       "date": "Thu Jan 29 2026",
       "repo": "moltbot",
-      "language": "HTML",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -2228,13 +2276,13 @@
     {
       "date": "Mon Dec 22 2025",
       "repo": "Music-and-Math",
-      "language": "JavaScript",
+      "language": "CSS",
       "type": "commit"
     },
     {
       "date": "Thu Dec 18 2025",
       "repo": "Music-and-Math",
-      "language": "CSS",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -2342,7 +2390,7 @@
     {
       "date": "Tue Apr 07 2026",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "Shell",
       "type": "commit"
     },
     {
@@ -2353,6 +2401,12 @@
     },
     {
       "date": "Mon Apr 06 2026",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Mar 30 2026",
       "repo": "Portfolio",
       "language": "Shell",
       "type": "commit"
@@ -2360,13 +2414,7 @@
     {
       "date": "Mon Mar 30 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Mar 30 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -2378,25 +2426,19 @@
     {
       "date": "Thu Mar 12 2026",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "Shell",
       "type": "commit"
     },
     {
       "date": "Wed Mar 11 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "Shell",
       "type": "commit"
     },
     {
       "date": "Wed Mar 11 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Mar 11 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -2406,19 +2448,7 @@
       "type": "commit"
     },
     {
-      "date": "Fri Mar 06 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Mar 06 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Mar 06 2026",
+      "date": "Wed Mar 11 2026",
       "repo": "Portfolio",
       "language": "TypeScript",
       "type": "commit"
@@ -2427,6 +2457,12 @@
       "date": "Fri Mar 06 2026",
       "repo": "Portfolio",
       "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Mar 06 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -2444,7 +2480,7 @@
     {
       "date": "Fri Mar 06 2026",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -2456,7 +2492,19 @@
     {
       "date": "Fri Mar 06 2026",
       "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Mar 06 2026",
+      "repo": "Portfolio",
       "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Mar 06 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -2474,6 +2522,18 @@
     {
       "date": "Mon Mar 02 2026",
       "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Mar 02 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Mar 02 2026",
+      "repo": "Portfolio",
       "language": "JavaScript",
       "type": "commit"
     },
@@ -2485,116 +2545,80 @@
     },
     {
       "date": "Mon Mar 02 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Mar 02 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Mar 02 2026",
-      "repo": "Portfolio",
-      "language": "Shell",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Mar 02 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Mon Mar 02 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Mar 01 2026",
-      "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Mar 01 2026",
-      "repo": "Portfolio",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Mar 01 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Mar 01 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Mar 01 2026",
-      "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Mar 01 2026",
-      "repo": "Portfolio",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Mar 01 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Mar 01 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Mar 01 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Feb 27 2026",
-      "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Feb 27 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Feb 27 2026",
       "repo": "Portfolio",
       "language": "Python",
       "type": "commit"
     },
     {
-      "date": "Fri Feb 27 2026",
+      "date": "Mon Mar 02 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Mar 02 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Mar 01 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Mar 01 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Mar 01 2026",
       "repo": "Portfolio",
       "language": "TypeScript",
       "type": "commit"
     },
     {
+      "date": "Sun Mar 01 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Mar 01 2026",
+      "repo": "Portfolio",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Mar 01 2026",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Mar 01 2026",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Mar 01 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Mar 01 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
       "date": "Fri Feb 27 2026",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -2606,13 +2630,19 @@
     {
       "date": "Fri Feb 27 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Fri Feb 27 2026",
       "repo": "Portfolio",
       "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Feb 27 2026",
+      "repo": "Portfolio",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -2622,74 +2652,110 @@
       "type": "commit"
     },
     {
-      "date": "Wed Feb 25 2026",
+      "date": "Fri Feb 27 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
-      "date": "Wed Feb 25 2026",
+      "date": "Fri Feb 27 2026",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
-      "date": "Wed Feb 25 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
-      "repo": "Portfolio",
-      "language": "CSS",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Feb 25 2026",
+      "date": "Fri Feb 27 2026",
       "repo": "Portfolio",
       "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Feb 25 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Mon Feb 23 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Wed Feb 18 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "Shell",
       "type": "commit"
     },
     {
       "date": "Mon Feb 16 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Fri Feb 06 2026",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Thu Feb 05 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "CSS",
       "type": "commit"
     },
     {
       "date": "Mon Feb 02 2026",
       "repo": "Portfolio",
-      "language": "TypeScript",
+      "language": "Shell",
       "type": "commit"
     },
     {
       "date": "Mon Feb 02 2026",
       "repo": "Portfolio",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Feb 01 2026",
+      "repo": "Portfolio",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Feb 01 2026",
+      "repo": "Portfolio",
+      "language": "Shell",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Feb 01 2026",
+      "repo": "Portfolio",
       "language": "TypeScript",
       "type": "commit"
     },
@@ -2702,25 +2768,13 @@
     {
       "date": "Sun Feb 01 2026",
       "repo": "Portfolio",
-      "language": "Python",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sun Feb 01 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Feb 01 2026",
-      "repo": "Portfolio",
-      "language": "CSS",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -2730,21 +2784,15 @@
       "type": "commit"
     },
     {
-      "date": "Sun Feb 01 2026",
+      "date": "Thu Jan 29 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Thu Jan 29 2026",
       "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 29 2026",
-      "repo": "Portfolio",
-      "language": "CSS",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -2756,18 +2804,24 @@
     {
       "date": "Fri Jan 16 2026",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Fri Jan 16 2026",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "Shell",
       "type": "commit"
     },
     {
       "date": "Thu Jan 15 2026",
       "repo": "Portfolio",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 13 2026",
+      "repo": "Portfolio",
       "language": "HTML",
       "type": "commit"
     },
@@ -2775,18 +2829,6 @@
       "date": "Tue Jan 13 2026",
       "repo": "Portfolio",
       "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Jan 13 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Jan 13 2026",
-      "repo": "Portfolio",
-      "language": "CSS",
       "type": "commit"
     },
     {
@@ -2804,41 +2846,59 @@
     {
       "date": "Tue Jan 13 2026",
       "repo": "Portfolio",
-      "language": "Shell",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 13 2026",
+      "repo": "Portfolio",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Mon Jan 12 2026",
       "repo": "Portfolio",
-      "language": "Shell",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 08 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 08 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Jan 08 2026",
-      "repo": "Portfolio",
       "language": "CSS",
       "type": "commit"
     },
     {
       "date": "Thu Jan 08 2026",
       "repo": "Portfolio",
-      "language": "TypeScript",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 08 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 08 2026",
+      "repo": "Portfolio",
+      "language": "JavaScript",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Jan 08 2026",
+      "repo": "Portfolio",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Wed Jan 07 2026",
+      "repo": "Portfolio",
+      "language": "Shell",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 06 2026",
+      "repo": "Portfolio",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Tue Jan 06 2026",
       "repo": "Portfolio",
       "language": "HTML",
       "type": "commit"
@@ -2847,18 +2907,6 @@
       "date": "Tue Jan 06 2026",
       "repo": "Portfolio",
       "language": "Shell",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Jan 06 2026",
-      "repo": "Portfolio",
-      "language": "TypeScript",
-      "type": "commit"
-    },
-    {
-      "date": "Tue Jan 06 2026",
-      "repo": "Portfolio",
-      "language": "CSS",
       "type": "commit"
     },
     {
@@ -2882,18 +2930,6 @@
     {
       "date": "Sun Jan 04 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Jan 04 2026",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Jan 04 2026",
-      "repo": "Portfolio",
       "language": "HTML",
       "type": "commit"
     },
@@ -2910,9 +2946,15 @@
       "type": "commit"
     },
     {
-      "date": "Thu Jan 01 2026",
+      "date": "Sun Jan 04 2026",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Jan 04 2026",
+      "repo": "Portfolio",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
@@ -2924,55 +2966,55 @@
     {
       "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "Shell",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "HTML",
       "type": "commit"
     },
     {
       "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "TypeScript",
+      "language": "HTML",
       "type": "commit"
     },
     {
-      "date": "Mon Dec 29 2025",
+      "date": "Thu Jan 01 2026",
       "repo": "Portfolio",
-      "language": "TypeScript",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
       "date": "Mon Dec 29 2025",
       "repo": "Portfolio",
       "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Mon Dec 29 2025",
+      "repo": "Portfolio",
+      "language": "Vue",
       "type": "commit"
     },
     {
       "date": "Sat Dec 27 2025",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "Shell",
       "type": "commit"
     },
     {
       "date": "Thu Dec 25 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "TypeScript",
       "type": "commit"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
       "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "CSS",
       "type": "commit"
     },
     {
@@ -2984,7 +3026,13 @@
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "CSS",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Sun Dec 21 2025",
+      "repo": "Portfolio",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -2996,7 +3044,7 @@
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "JavaScript",
       "type": "commit"
     },
     {
@@ -3008,23 +3056,17 @@
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "CSS",
       "type": "commit"
     },
     {
       "date": "Sun Dec 21 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "CSS",
       "type": "commit"
     },
     {
       "date": "Sun Dec 21 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Sat Dec 20 2025",
       "repo": "Portfolio",
       "language": "JavaScript",
       "type": "commit"
@@ -3036,7 +3078,7 @@
       "type": "commit"
     },
     {
-      "date": "Fri Dec 19 2025",
+      "date": "Sat Dec 20 2025",
       "repo": "Portfolio",
       "language": "TypeScript",
       "type": "commit"
@@ -3050,7 +3092,13 @@
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "TypeScript",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -3068,7 +3116,7 @@
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "HTML",
+      "language": "CSS",
       "type": "commit"
     },
     {
@@ -3086,7 +3134,19 @@
     {
       "date": "Fri Dec 19 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "CSS",
+      "type": "commit"
+    },
+    {
+      "date": "Fri Dec 19 2025",
+      "repo": "Portfolio",
+      "language": "Shell",
       "type": "commit"
     },
     {
@@ -3096,24 +3156,6 @@
       "type": "commit"
     },
     {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
-      "date": "Fri Dec 19 2025",
-      "repo": "Portfolio",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Thu Dec 18 2025",
-      "repo": "Portfolio",
-      "language": "JavaScript",
-      "type": "commit"
-    },
-    {
       "date": "Thu Dec 18 2025",
       "repo": "Portfolio",
       "language": "CSS",
@@ -3122,13 +3164,19 @@
     {
       "date": "Thu Dec 18 2025",
       "repo": "Portfolio",
-      "language": "JavaScript",
+      "language": "HTML",
+      "type": "commit"
+    },
+    {
+      "date": "Thu Dec 18 2025",
+      "repo": "Portfolio",
+      "language": "CSS",
       "type": "commit"
     },
     {
       "date": "Fri Mar 06 2026",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -3260,7 +3308,7 @@
     {
       "date": "Thu Dec 25 2025",
       "repo": "stock_price_target_modelling",
-      "language": "Python",
+      "language": "HTML",
       "type": "commit"
     },
     {
@@ -3284,7 +3332,7 @@
     {
       "date": "Wed Dec 24 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -3338,7 +3386,7 @@
     {
       "date": "Mon Dec 15 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -3362,7 +3410,7 @@
     {
       "date": "Fri Dec 12 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -3404,12 +3452,6 @@
     {
       "date": "Wed Dec 10 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML",
-      "type": "commit"
-    },
-    {
-      "date": "Wed Dec 10 2025",
-      "repo": "stock_price_target_modelling",
       "language": "Python",
       "type": "commit"
     },
@@ -3422,7 +3464,13 @@
     {
       "date": "Wed Dec 10 2025",
       "repo": "stock_price_target_modelling",
-      "language": "HTML",
+      "language": "Python",
+      "type": "commit"
+    },
+    {
+      "date": "Wed Dec 10 2025",
+      "repo": "stock_price_target_modelling",
+      "language": "Python",
       "type": "commit"
     },
     {
@@ -3463,13 +3511,13 @@
     }
   ],
   "languages": {
-    "Python": 264,
-    "TypeScript": 108,
-    "HTML": 77,
-    "Shell": 22,
-    "Kotlin": 1,
-    "Swift": 4,
-    "JavaScript": 42,
-    "CSS": 21
+    "Python": 266,
+    "TypeScript": 124,
+    "HTML": 67,
+    "Shell": 26,
+    "Swift": 7,
+    "CSS": 20,
+    "JavaScript": 36,
+    "Vue": 1
   }
 }
