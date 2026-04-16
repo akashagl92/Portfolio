@@ -9,7 +9,7 @@ To build a "living" engineering portfolio that dynamically updates itself using 
 - **Responsiveness (2026-02-25 fixes):** Resolved horizontal overflow and asymmetric padding on mobile viewports. Unified `min(350px, 100%)` grid sizing, `body` max-width fixes, and `clip-path` glow containment rolled out to all 19 portfolio pages (root, fetch, ambience, circle, scopely, stellantis, viant).
 - **Automation:** GitHub Actions for fetching stats (`update-stats.yml`) are fully functional with specific repository filtering logic.
 - **Infrastructure Sync (2026-03-06):** Unified the `innovation-grid` across all 30+ tailored portfolios using `scripts/sync_cards.js`. Fixed structural layout rot in `/torq/` (missing `.hero-wrapper` and `Chart.js` dependency) and corrected relative script paths.
-- **Restoring Hero Section Alignment (2026-04-16):** Restored and hardened the center alignment for the hero fold and nav header across mobile viewports. Re-implemented March-standard centering constraints and unified responsive grid behavior after a layout regression.
+- **Restoring Hero Section Alignment (2026-04-16):** Restored and hardened the center alignment for the hero fold and nav header across mobile viewports. Implemented explicit Flexbox centering and auto-margins for block-level elements (H1, badge) to prevent alignment drift and horizontal viewport shifts.
 - **Hygiene Ritual (2026-03-12):** Pruned legacy stylesheets (`old_style.css`, etc.) and consolidated architectural state via ADRs. Enforced PAI v2 SHADOW mode during high-velocity tailoring session.
 - **Research Cards:**
     - "V4.1 Alpha Steady" trading strategy: **80.8% XIRR** (**60.3% Alpha** over S&P 500).
