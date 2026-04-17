@@ -26,6 +26,13 @@ def detect_forbidden_target(command: str, forbidden_targets: List[str]) -> Optio
     return None
 
 
+def command_matches_any(command: str, patterns: List[str]) -> bool:
+    for pattern in patterns:
+        if pattern in command:
+            return True
+    return False
+
+
 def detect_stage(root: Path) -> str:
     stage_script = root / "scripts" / "pai_stage_detect.sh"
     if not stage_script.exists():
@@ -69,15 +76,39 @@ def main():
         print("DENY spawn_disallowed_in_mode")
         return 5
 
+    mutating = detect_mutation(args.command, global_rules.get("mutating_tokens", []))
+
     forbidden = detect_forbidden_target(args.command, global_rules.get("forbidden_targets", []))
     if forbidden:
         print(f"DENY forbidden_target={forbidden}")
         return 6
 
-    mutating = detect_mutation(args.command, global_rules.get("mutating_tokens", []))
+    child_forbidden = detect_forbidden_target(
+        args.command, global_rules.get("child_forbidden_targets", [])
+    )
+    if args.actor == "child" and child_forbidden:
+        print(f"DENY child_forbidden_target={child_forbidden}")
+        return 9
+
+    child_mutation_forbidden = detect_forbidden_target(
+        args.command, global_rules.get("child_forbidden_mutation_targets", [])
+    )
+    if args.actor == "child" and mutating and child_mutation_forbidden:
+        print(f"DENY child_mutation_forbidden_target={child_mutation_forbidden}")
+        return 10
+
     if mutating and not rule.get("allow_mutation", False):
         print("DENY mutation_disallowed_in_mode")
         return 7
+
+    # In scoped_write child lanes, allow mutation only in explicitly-allowed
+    # ephemeral locations to avoid shared-state corruption.
+    if args.actor == "child" and args.mode == "scoped_write" and mutating:
+        if rule.get("require_mutation_path_allowlist_for_child", False):
+            allowed_prefixes = rule.get("allowed_mutation_path_prefixes_for_child", [])
+            if not command_matches_any(args.command, allowed_prefixes):
+                print("DENY scoped_write_mutation_target_outside_allowlist")
+                return 11
 
     stage_rule = stage_overrides.get(stage, {})
     if args.mode == "scoped_write" and stage_rule.get("allow_scoped_write") is False:

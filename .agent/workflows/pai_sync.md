@@ -11,7 +11,9 @@ Run this ritual daily or whenever switching contexts. This acts as a **"Save Gam
 - After significant refactors, bug-fix waves, or incident handling.
 
 > [!IMPORTANT]
-> **Runtime Preflight:** Start by running `scripts/pai_runtime_guard.sh status`. If `PROFILE=SHADOW` or `LOCKED=1`, do not use native Task/Implementation Plan/Walkthrough artifacts.
+> **Runtime Preflight:** Start by running `scripts/pai_runtime_guard.sh status`.
+> Native-first is allowed when `NATIVE_ARTIFACTS_ALLOWED=1`.
+> If `PROFILE=SHADOW` or `LOCKED=1` (or `NATIVE_ARTIFACTS_ALLOWED=0`), do not use native Task/Implementation Plan/Walkthrough artifacts.
 > Allowed shadow write targets only:
 > - `.pai/tasks/todo.md`
 > - `.pai/plans/active_plan.md`

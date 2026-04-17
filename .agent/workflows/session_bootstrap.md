@@ -1,7 +1,7 @@
 ---
-description: Enforce SHADOW hard mode at session start before any task work
+description: Enforce NATIVE-first guarded mode with one-way fallback before task work
 ---
-# Session Bootstrap (SHADOW Hard Mode)
+# Session Bootstrap (NATIVE First, Guarded)
 
 Run this workflow first in every new or reloaded session.
 
@@ -12,55 +12,49 @@ Run this workflow first in every new or reloaded session.
 - Before running any non-trivial workflow (`/persona_orchestration`, `/research_spawn`, `/pai_sync`).
 
 ## Goal
-Prevent native artifact drift and force orchestration writes to project-local `.pai/*` files.
+Default to native main-lane artifact operations while preserving automatic one-way fallback to SHADOW on native instability.
 
 ## Steps
 1. Run runtime preflight:
    - `scripts/pai_runtime_guard.sh status`
-2. Reconcile Bridge Registry (Surgical Path):
-   - `cat > .pai/runtime/native_artifact_bridge/targets/task.env <<INNER_EOF`
-   - `SESSION_ID="$(pwd | sed 's/.*brain\///;s/\/.*//')"`
-   - `echo "SESSION_ID=\"/Users/akashagrawal/.gemini/antigravity/brain/\$SESSION_ID\"" > .pai/runtime/native_artifact_bridge/targets/task.env`
-   - `INNER_EOF`
-3. Emit shadow-hard banner:
-   - `scripts/pai_shadow_hard_banner.sh`
-   - Mandatory rule text:
-     - `If NATIVE_ARTIFACTS_ALLOWED=0, ban task_boundary + native task.md/implementation_plan.md/walkthrough.md edits, use .pai/* only.`
-3. Read and echo the active profile fields:
+2. Enforce native-first transient state:
+   - `scripts/pai_runtime_guard.sh native-on session_bootstrap_native`
+3. Re-run preflight:
+   - `scripts/pai_runtime_guard.sh status`
+4. Read and echo the active profile fields:
    - `PROFILE`
    - `LOCKED`
    - `SUBAGENT_ENABLED`
    - `CAPABILITY_SPAWN_SUBAGENT`
-4. Enforce SHADOW contract:
-   - If `PROFILE=SHADOW` or `LOCKED=1`, native mutations are forbidden.
-5. Record a bootstrap entry in `.pai/tasks/todo.md` with timestamp and session intent using a file-path shell write only:
-   - `printf -- "- [ ] Session bootstrap enforced at %s (shadow hard mode)\n" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> .pai/tasks/todo.md`
-6. Return the token:
-   - `SHADOW_ENFORCED`
+5. Validate native fallback controls:
+   - `PAI_NATIVE_AUTO_SHADOW_ON_OPEN=1`
+   - `PAI_NATIVE_ARTIFACT_AUTO_FALLBACK_ENABLED=1`
+   - `PAI_NATIVE_ARTIFACT_OBSERVE_ONLY=0`
+   - `PAI_NATIVE_ARTIFACT_ONE_WAY_SHADOW=1`
+6. Record bootstrap entry:
+   - `printf -- "- [ ] Session bootstrap enforced at %s (native-first guarded mode)\n" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> .pai/tasks/todo.md`
+7. Return one token:
+   - `NATIVE_ENFORCED` when `NATIVE_ARTIFACTS_ALLOWED=1`
+   - `SHADOW_FALLBACK_ACTIVE` when `NATIVE_ARTIFACTS_ALLOWED=0`
 
-## SHADOW Contract (Explicit)
-- Deny native artifact mutations:
-  - native `Task`
-  - native `Implementation Plan`
-  - native `Walkthrough`
-- Deny native artifact mutation tools/calls:
-  - `task_boundary`
-  - any native edit call targeting `task.md`, `implementation_plan.md`, `walkthrough.md`
-- During bootstrap, do not call any native artifact mutation tool even once.
-- Allow writes only to:
+## Native-First Contract (Explicit)
+- Primary lane is native for main-lane artifacts (`Task`, `Implementation Plan`, `Walkthrough`) when `NATIVE_ARTIFACTS_ALLOWED=1`.
+- On native failure/circuit open, runtime auto-falls back one-way `NATIVE -> SHADOW`.
+- Never auto-switch back to native inside a failing session.
+- Under fallback (`PROFILE=SHADOW` or `LOCKED=1`), write only to:
   - `.pai/tasks/todo.md`
   - `.pai/plans/active_plan.md`
   - `.pai/walkthrough-final.md`
 
 ## Hard Failure Rule (Non-Negotiable)
-- If `NATIVE_ARTIFACTS_ALLOWED=0` from `scripts/pai_runtime_guard.sh status`, do not attempt native artifact tools at all.
-- If a native artifact tool is attempted anyway, immediately stop that lane and continue using `.pai/*` artifacts only.
+- If `NATIVE_ARTIFACTS_ALLOWED=0`, do not attempt native artifact edits.
+- Continue in SHADOW lane and log fallback reason in `.pai/tasks/todo.md`.
 
 ## Failure Behavior
-- If any native artifact action is attempted during bootstrap:
-  1. Abort the native action.
-  2. Continue in SHADOW-only lane.
-  3. Return `SHADOW_ENFORCED_WITH_FALLBACK`.
+- If native mutation fails during a task:
+  1. Runtime opens circuit and moves profile to SHADOW.
+  2. Continue task in SHADOW-only lane.
+  3. Record `fallback_to_single_parent` in `.pai/tasks/todo.md`.
 
 ## Optional Research Routing
 - If a task is research-heavy and both flags are enabled:

@@ -65,4 +65,4 @@ Use this before finalizing implementation decisions or moving toward merge/deplo
 - For SHADOW profile, write outcomes only to:
   - `.pai/tasks/todo.md`
   - `.pai/plans/active_plan.md`
-  - `.pai/tasks/session_walkthrough.md`
+  - `.pai/walkthrough-final.md`

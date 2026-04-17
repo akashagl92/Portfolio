@@ -10,6 +10,17 @@
       ".pai/plans/active_plan.md",
       ".pai/walkthrough-final.md"
     ],
+    "child_forbidden_targets": [
+      "task_boundary"
+    ],
+    "child_forbidden_mutation_targets": [
+      ".env",
+      ".env.",
+      "/.env",
+      ".pai/config/runtime.env",
+      ".pai/runtime/profile.env",
+      ".pai/config/policy.json"
+    ],
     "mutating_tokens": [
       ">",
       ">>",
@@ -40,7 +51,15 @@
     "scoped_write": {
       "allow_spawn": true,
       "allow_mutation": true,
-      "notes": "Write allowed only within approved scope"
+      "notes": "Write allowed only within approved scope",
+      "require_mutation_path_allowlist_for_child": true,
+      "allowed_mutation_path_prefixes_for_child": [
+        ".pai/runtime/subagents/",
+        ".pai/runtime/tmp/",
+        "/tmp/pai-",
+        "tmp/pai-",
+        ".tmp/pai-"
+      ]
     }
   },
   "stage_overrides": {

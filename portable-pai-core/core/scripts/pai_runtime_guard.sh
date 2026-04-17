@@ -139,6 +139,31 @@ case "$cmd" in
     write_state "$reason"
     echo "Switched to NATIVE"
     ;;
+  hybrid-test-on)
+    read_state
+    PROFILE="NATIVE"
+    LOCKED="0"
+    write_state "${reason:-hybrid_test_mode_on}"
+    set_runtime_kv "SUBAGENT_ENABLED" "1"
+    set_runtime_kv "CAPABILITY_SPAWN_SUBAGENT" "1"
+    set_runtime_kv "SUBAGENT_MODE" "scoped_write"
+    set_runtime_kv "SUBAGENT_PARENT_ONLY_WRITES" "1"
+    set_runtime_kv "SUBAGENT_NATIVE_WRITES" "0"
+    echo "Switched to HYBRID test mode"
+    echo "MAIN_LANE=NATIVE unlocked"
+    echo "SUBAGENT_MODE=scoped_write (ephemeral-write policy applies)"
+    ;;
+  hybrid-test-off)
+    read_state
+    PROFILE="SHADOW"
+    LOCKED="1"
+    write_state "${reason:-hybrid_test_mode_off}"
+    set_runtime_kv "SUBAGENT_MODE" "proposal_only"
+    set_runtime_kv "SUBAGENT_NATIVE_WRITES" "0"
+    echo "Hybrid test mode disabled"
+    echo "MAIN_LANE=SHADOW locked"
+    echo "SUBAGENT_MODE=proposal_only"
+    ;;
   shadow-on)
     read_state
     PROFILE="SHADOW"
@@ -206,6 +231,8 @@ case "$cmd" in
     echo "  scripts/pai_runtime_guard.sh status"
     echo "  scripts/pai_runtime_guard.sh shadow-on <reason>"
     echo "  scripts/pai_runtime_guard.sh native-on <reason> [--force]"
+    echo "  scripts/pai_runtime_guard.sh hybrid-test-on <reason>"
+    echo "  scripts/pai_runtime_guard.sh hybrid-test-off <reason>"
     echo "  scripts/pai_runtime_guard.sh unlock <reason>"
     echo "  scripts/pai_runtime_guard.sh reset <reason>"
     echo "  scripts/pai_runtime_guard.sh subagent-on <reason>"
