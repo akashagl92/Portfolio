@@ -1454,109 +1454,152 @@ footer {
 
     @media (max-width: 500px) {
         #hero {
-            padding-left: 5% !important; /* Fixed: Synchronized with standard section padding */
-            padding-right: 5% !important;
+            padding-left: 10px !important; /* v63.1 Reclaimed horizontal real-estate */
+            padding-right: 10px !important;
         }
 
         .main-viz {
-            width: 100%; /* Parity achieved via hero padding */
-            margin-left: auto;
-            margin-right: auto;
-            overflow: visible !important; /* Ultima Fix: Prevents month-label clipping */
+            width: 100%;
+            margin: 0 auto;
+            overflow: visible !important;
+        }
+
+        .main-viz {
+            width: 100%;
+            margin: 0 auto;
+            overflow: visible !important;
+        }
+
+        .main-viz {
+            width: 100%;
+            margin: 0 auto;
+            overflow: visible !important;
+        }
+
+        .main-viz {
+            width: 100%;
+            margin: 0 auto;
+            overflow: visible !important;
         }
 
         .hero-calendar {
-            margin: 1rem auto 0 auto;
-            overflow: visible !important; 
-            max-width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Fixed: Snaps entire container to left baseline */
-            padding: 0 10px; /* Aligned with internal card padding */
-            /* Coordinate Engine: Shared tracks for Months and Grid */
-            --grid-gap: 1.5px;
-            --grid-cols: repeat(var(--total-weeks, 50), 1fr);
+            margin: 1.5rem 0 0.5rem 0;
+            width: 100% !important;
+            overflow: visible !important;
+            display: block !important; /* Reclaimed for 100% width parity (v52) */
+            padding: 1.5rem 5px !important; /* Minimized internal padding to maximize data track length */
+        }
+
+        /* 
+           Staff Engineer Mandate (v52): Suppress sidebars on mobile 
+           to achieve a 100% liquid-fit for the 58-week grid capacity.
+        */
+        .calendar-days {
+            display: none !important;
+        }
+
+        .calendar-grid-wrapper,
+        .calendar-main {
+            display: block !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
 
         .hero-calendar .calendar-months,
         .hero-calendar .calendar-grid,
         .hero-calendar .calendar-years {
-            display: grid;
-            grid-template-columns: var(--grid-cols);
-            gap: var(--grid-gap);
-            width: 100%;
-            width: -webkit-fill-available;
+            --grid-gap: 1px; /* v73: High-density aesthetic polish */
+            display: grid !important; 
+            /* PDPM: Mathematically guaranteed fit (Width - Gaps) / Columns */
+            grid-template-columns: repeat(var(--total-weeks, 58), calc((100% - (var(--total-weeks, 58) - 1) * var(--grid-gap)) / var(--total-weeks, 58))) !important;
+            gap: var(--grid-gap) !important; 
+            width: 100% !important;
             position: relative;
         }
 
+        .hero-calendar .calendar-week {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: var(--grid-gap) !important; 
+            min-width: 0 !important;
+            /* v68: Geometric Sovereignty - Allow children to govern their own height */
+            height: auto !important;
+        }
+
         .hero-calendar .calendar-grid {
-            display: grid;
-            grid-template-columns: var(--grid-cols);
-            grid-template-rows: repeat(7, 1fr);
-            grid-auto-flow: column; /* Force column-wise fill (1 week = 1 column) */
-            gap: var(--grid-gap);
-            width: 100%;
-            width: -webkit-fill-available;
-            aspect-ratio: var(--total-weeks, 40) / 7;
+            display: grid !important;
+            grid-template-columns: repeat(var(--total-weeks, 58), calc((100% - (var(--total-weeks, 58) - 1) * var(--grid-gap)) / var(--total-weeks, 58))) !important;
+            gap: var(--grid-gap) !important;
+            margin-top: 5px;
+            width: 100% !important;
         }
 
-        .hero-calendar .calendar-week {
-            /* DEPRECATED in Sigma: weeks are now column tracks in parent grid */
-            display: contents; 
-        }
-
-        .calendar-day {
-            width: 100%;
-            height: 100%;
-            aspect-ratio: 1/1;
-            border-radius: 2px;
-            /* Grid placement assigned by JS */
-        }
-
-        .hero-calendar .calendar-week {
-            display: grid;
-            grid-template-rows: repeat(7, var(--week-width));
-            gap: 1px;
-            width: var(--week-width);
-            flex-shrink: 0;
+        .hero-calendar .calendar-days {
+            display: none !important; /* v73: Reclaim space for grid neatness */
         }
 
         .hero-calendar .calendar-day {
-            /* Guaranteed Dynamic Scale: Synchronized to parent-scoped width */
-            width: var(--week-width) !important;
-            height: var(--week-width) !important;
-            border-radius: 1px;
-            transition: transform 0.2s ease;
-            flex-shrink: 0; /* Column integrity protection */
-        }
-
-        .hero-calendar .calendar-day.today {
-            /* Proof-of-Visibility: Highlight the current box (Apr 16) */
-            box-shadow: 0 0 0 1px #fbbf24, 0 0 4px rgba(251, 191, 36, 0.4);
-            border-radius: 2px;
-            z-index: 10;
-        }
-
-        .hero-calendar .calendar-months,
-        .hero-calendar .calendar-years {
-            font-size: 0.45rem !important;
-            /* Prevent overlap due to squished columns */
-        }
-
-        #full-tech-distribution svg,
-        .inline-tech-distribution svg {
-            width: 80% !important;
-            /* Scale down pie chart proportionally on mobile */
+            width: 100% !important;
             height: auto !important;
-            margin: 0 auto;
-            display: block;
+            aspect-ratio: 1/1 !important;
+            min-height: 0 !important;
+            max-height: none !important;
+            border-radius: 1px !important;
+            box-sizing: border-box !important;
+        }
+
+        .hero-calendar .calendar-day.lvl-0 {
+            background: rgba(255, 255, 255, 0.1) !important; /* v73.1: Contrast boost restricted to empty tiles */
+        }
+
+        /* v68: Zero-Drift Temporal Normalization */
+        .hero-calendar .calendar-months {
+            display: grid !important;
+            grid-template-columns: repeat(var(--total-weeks, 58), calc((100% - (var(--total-weeks, 58) - 1) * var(--grid-gap)) / var(--total-weeks, 58))) !important;
+            font-size: 0.5rem !important;
+            color: #64748b !important;
+            margin-bottom: 6px !important;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            width: 100% !important;
+        }
+
+        .hero-calendar .calendar-label-month {
+            text-align: center;
+            white-space: nowrap;
+            min-width: 0;
+        }
+
+        .hero-calendar .calendar-years {
+            display: none !important;
         }
 
         #full-tech-distribution,
         .inline-tech-distribution {
-            margin-top: 0.5rem;
-            padding-top: 0.5rem;
-            gap: 0.5rem;
+            margin-top: 2rem !important;
+            width: 100% !important;
+            min-height: 280px !important; /* v61.2: Force circular arc integrity */
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+
+        #full-tech-distribution canvas {
+            max-height: 180px !important;
+            width: 100% !important;
+        }
+
+        #full-tech-distribution svg,
+        .inline-tech-distribution svg {
+            width: 95% !important;
+            height: auto !important;
+        }
+
+        /* Kill Global Horizontal Bleed: Reclaim Viewport Integrity */
+        body, main {
+            overflow-x: hidden !important;
+            width: 100% !important;
         }
     }
 
