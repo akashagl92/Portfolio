@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node --test tests/smoke/**/*.mjs",
-    "test:watch": "node --test --watch tests/smoke/**/*.mjs",
-    "ci:test": "node --test tests/smoke/**/*.mjs",
+    "test": "node --test 'tests/smoke/**/*.mjs'",
+    "test:watch": "node --test --watch 'tests/smoke/**/*.mjs'",
+    "ci:test": "node --test 'tests/smoke/**/*.mjs'",
     "repo:intel": "node scripts/repo-intel-agent.js",
-    "test:portable": "node --test tests/portable/*.test.mjs"
+    "test:portable": "node --test 'tests/portable/*.test.mjs'"
   },
   "repository": {
     "type": "git",
