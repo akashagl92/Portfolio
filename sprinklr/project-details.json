@@ -1,5 +1,532 @@
 [
   {
+    "name": "moltbot",
+    "fullName": "akashagl92/moltbot",
+    "description": null,
+    "url": "https://github.com/akashagl92/moltbot",
+    "homepage": null,
+    "isPrivate": true,
+    "language": "TypeScript",
+    "languages": {
+      "TypeScript": 16405051,
+      "Swift": 2627390,
+      "HTML": 1726231,
+      "Kotlin": 365828,
+      "Python": 327124,
+      "Shell": 193697,
+      "CSS": 101190,
+      "JavaScript": 83481,
+      "Dockerfile": 4071,
+      "Ruby": 3023
+    },
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2026-01-29T07:21:35Z",
+    "updatedAt": "2026-06-20T07:25:43Z",
+    "pushedAt": "2026-06-20T07:25:40Z",
+    "topics": [],
+    "readme": "# Moltbot: Resilient Agentic Memory & Extreme-Scale Research\n\nMoltbot is a research-grade personal AI agent platform built for **Recursive Gated Consolidation (RGC)** and **Structured State Convergence (SSC)**. It is designed to overcome the \"silicone wall\" of attention saturation in LLMs, enabling persistent agentic memory across millions of conversation turns.\n\n## 🔬 Research Focus\n\nThis repository serves as the primary evaluation environment for the **Cognitive Stress Test (CST)** benchmarks, identifying the \"Discovery Cliff\" in single-stage consolidation architectures.\n\n- **Research Paper**: [Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns](https://github.com/akashagl92/agentic-memory-scaling)\n- **Recursive Gated Consolidation (RGC)**: A multi-stage memory architecture that maintains 100% discovery fidelity at 10M+ turns. At _N=1000_ converged benchmarks, standard architectures collapse to **17.0% recall** due to temporal decay, whereas RGC artificially drives decay to zero.\n- **Tiered Memory Model**: Decouples strategic, architectural, and narrative state into a three-layer persistence system.\n- **Structured State Convergence (SSC)**: $O(1)$ query latency with structured compaction.\n\n## 📜 Citation\n\nIf you use this codebase or the RGC/SSC architectures in your research, please cite:\n\n```bibtex\n@article{agrawal2026moltbot,\n  title={Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns},\n  author={Agrawal, Akash},\n  journal={Work-in-Progress (Peer Review)},\n  year={2026},\n  url={https://github.com/akashagrawal/moltbot}\n}\n```\n\n## 🛠️ Performance & Verification\n\nTo reproduce the research findings, use the native benchmarking suite:\n\n```bash\npython3 scripts/benchmarking/run_cst.py --scenario test/benchmarks/multi_needle_10m.json --comprehensive --iterations 1000\n```\n\n_Note: This strictly enforces the N=1000 Empiricism Standard required to bypass stochastic inflation at extreme scale._\n\n---\n\n<!-- START_CAPABILITIES -->\n\n### 🚀 Dynamic Capabilities\n\n| Category | Name | Description |\n| :--- | :--- | :--- |\n| Skill | **1password** | Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op. |\n| Skill | **apple-notes** | Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks Moltbot to add a note, list notes, search notes, or manage note folders. |\n| Skill | **apple-reminders** | Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output. |\n| Skill | **bear-notes** | Create, search, and manage Bear notes via grizzly CLI. |\n| Skill | **bird** | X/Twitter CLI for reading, searching, posting, and engagement via cookies. |\n| Skill | **blogwatcher** | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI. |\n| Skill | **blucli** | BluOS CLI (blu) for discovery, playback, grouping, and volume. |\n| Skill | **bluebubbles** | Build or update the BlueBubbles external channel plugin for Moltbot (extension package, REST send/probe, webhook inbound). |\n| Skill | **camsnap** | Capture frames or clips from RTSP/ONVIF cameras. |\n| Skill | **clawdhub** | Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawdhub CLI. |\n| Skill | **coding-agent** | Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control. |\n| Skill | **discord** | Use when you need to control Discord from Moltbot via the discord tool: send messages, react, post or upload stickers, upload emojis, run polls, manage threads/pins/search, create/edit/delete channels and categories, fetch permissions or member/role/channel info, or handle moderation actions in Discord DMs or channels. |\n| Skill | **eightctl** | Control Eight Sleep pods (status, temperature, alarms, schedules). |\n| Skill | **food-order** | Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA. |\n| Skill | **gemini** | Gemini CLI for one-shot Q&A, summaries, and generation. |\n| Skill | **gifgrep** | Search GIF providers with CLI/TUI, download results, and extract stills/sheets. |\n| Skill | **github** | \"Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.\" |\n| Skill | **gog** | Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. |\n| Skill | **goplaces** | \"Google Places API - Find restaurants, coffee shops, hotels, businesses, attractions nearby. Use for 'find places near me', 'look up restaurants', 'coffee shops nearby', or any real-time location/business search. Also known as: google-places, places, location-search.\" |\n| Skill | **himalaya** | \"CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).\" |\n| Skill | **imsg** | iMessage/SMS CLI for listing chats, history, watch, and sending. |\n| Skill | **job-hunter** | Run automated job searches across LinkedIn, Google Jobs, Startup.jobs, Wellfound, and Reddit. Get email digests of relevant job listings matching your profile. |\n| Skill | **local-places** | Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost. |\n| Skill | **mcporter** | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation. |\n| Skill | **model-usage** | Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON. |\n| Skill | **nano-banana-pro** | Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro). |\n| Skill | **nano-pdf** | Edit PDFs with natural-language instructions using the nano-pdf CLI. |\n| Skill | **notion** | Notion API for creating and managing pages, databases, and blocks. |\n| Skill | **obsidian** | Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli. |\n| Skill | **openai-image-gen** | Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery. |\n| Skill | **openai-whisper** | Local speech-to-text with the Whisper CLI (no API key). |\n| Skill | **openai-whisper-api** | Transcribe audio via OpenAI Audio Transcriptions API (Whisper). |\n| Skill | **openhue** | Control Philips Hue lights/scenes via the OpenHue CLI. |\n| Skill | **oracle** | Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns). |\n| Skill | **ordercli** | Foodora-only CLI for checking past orders and active order status (Deliveroo WIP). |\n| Skill | **peekaboo** | Capture and automate macOS UI with the Peekaboo CLI. |\n| Skill | **sag** | ElevenLabs text-to-speech with mac-style say UX. |\n| Skill | **session-logs** | Search and analyze your own session logs (older/parent conversations) using jq. |\n| Skill | **sherpa-onnx-tts** | Local text-to-speech via sherpa-onnx (offline, no cloud) |\n| Skill | **skill-creator** | Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets. |\n| Skill | **slack** | Use when you need to control Slack from Moltbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs. |\n| Skill | **songsee** | Generate spectrograms and feature-panel visualizations from audio with the songsee CLI. |\n| Skill | **sonoscli** | Control Sonos speakers (discover/status/play/volume/group). |\n| Skill | **spotify-player** | Terminal Spotify playback/search via spogo (preferred) or spotify_player. |\n| Skill | **summarize** | Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”). |\n| Skill | **things-mac** | Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks Moltbot to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags. |\n| Skill | **tmux** | Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output. |\n| Skill | **trello** | Manage Trello boards, lists, and cards via the Trello REST API. |\n| Skill | **video-frames** | Extract frames or short clips from videos using ffmpeg. |\n| Skill | **voice-call** | Start voice calls via the Moltbot voice-call plugin. |\n| Skill | **wacli** | Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats). |\n| Skill | **weather** | Native Plugin (See index.ts) |\n\n<!-- END_CAPABILITIES -->\n",
+    "files": [
+      {
+        "name": ".agent",
+        "type": "dir",
+        "path": ".agent"
+      },
+      {
+        "name": ".detect-secrets.cfg",
+        "type": "file",
+        "path": ".detect-secrets.cfg"
+      },
+      {
+        "name": ".dockerignore",
+        "type": "file",
+        "path": ".dockerignore"
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "path": ".env.example"
+      },
+      {
+        "name": ".gitattributes",
+        "type": "file",
+        "path": ".gitattributes"
+      },
+      {
+        "name": ".github",
+        "type": "dir",
+        "path": ".github"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": ".moltbot-debug-prompt.txt",
+        "type": "file",
+        "path": ".moltbot-debug-prompt.txt"
+      },
+      {
+        "name": ".npmrc",
+        "type": "file",
+        "path": ".npmrc"
+      },
+      {
+        "name": ".oxfmtrc.jsonc",
+        "type": "file",
+        "path": ".oxfmtrc.jsonc"
+      },
+      {
+        "name": ".oxlintrc.json",
+        "type": "file",
+        "path": ".oxlintrc.json"
+      },
+      {
+        "name": ".pai",
+        "type": "dir",
+        "path": ".pai"
+      },
+      {
+        "name": ".pre-commit-config.yaml",
+        "type": "file",
+        "path": ".pre-commit-config.yaml"
+      },
+      {
+        "name": ".prettierignore",
+        "type": "file",
+        "path": ".prettierignore"
+      },
+      {
+        "name": ".secrets.baseline",
+        "type": "file",
+        "path": ".secrets.baseline"
+      },
+      {
+        "name": ".shellcheckrc",
+        "type": "file",
+        "path": ".shellcheckrc"
+      },
+      {
+        "name": ".swiftformat",
+        "type": "file",
+        "path": ".swiftformat"
+      },
+      {
+        "name": ".swiftlint.yml",
+        "type": "file",
+        "path": ".swiftlint.yml"
+      },
+      {
+        "name": "AGENTS-CORE.md",
+        "type": "file",
+        "path": "AGENTS-CORE.md"
+      },
+      {
+        "name": "AGENTS-EXTENDED.md",
+        "type": "file",
+        "path": "AGENTS-EXTENDED.md"
+      },
+      {
+        "name": "AGENTS.md",
+        "type": "file",
+        "path": "AGENTS.md"
+      },
+      {
+        "name": "BOOTSTRAP.md",
+        "type": "file",
+        "path": "BOOTSTRAP.md"
+      },
+      {
+        "name": "CHANGELOG.md",
+        "type": "file",
+        "path": "CHANGELOG.md"
+      },
+      {
+        "name": "CITATION.cff",
+        "type": "file",
+        "path": "CITATION.cff"
+      },
+      {
+        "name": "CLAUDE.md",
+        "type": "file",
+        "path": "CLAUDE.md"
+      },
+      {
+        "name": "CONTEXT_HANDOFF.md",
+        "type": "file",
+        "path": "CONTEXT_HANDOFF.md"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "path": "Dockerfile"
+      },
+      {
+        "name": "Dockerfile.aether",
+        "type": "file",
+        "path": "Dockerfile.aether"
+      },
+      {
+        "name": "Dockerfile.sandbox",
+        "type": "file",
+        "path": "Dockerfile.sandbox"
+      },
+      {
+        "name": "Dockerfile.sandbox-browser",
+        "type": "file",
+        "path": "Dockerfile.sandbox-browser"
+      },
+      {
+        "name": "HEARTBEAT.md",
+        "type": "file",
+        "path": "HEARTBEAT.md"
+      },
+      {
+        "name": "IDENTITY.md",
+        "type": "file",
+        "path": "IDENTITY.md"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "path": "LICENSE"
+      },
+      {
+        "name": "MEMORY.md",
+        "type": "file",
+        "path": "MEMORY.md"
+      },
+      {
+        "name": "README-header.png",
+        "type": "file",
+        "path": "README-header.png"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "README_UPSTREAM.md",
+        "type": "file",
+        "path": "README_UPSTREAM.md"
+      },
+      {
+        "name": "SECURITY.md",
+        "type": "file",
+        "path": "SECURITY.md"
+      },
+      {
+        "name": "SOUL.md",
+        "type": "file",
+        "path": "SOUL.md"
+      },
+      {
+        "name": "Swabble",
+        "type": "dir",
+        "path": "Swabble"
+      },
+      {
+        "name": "TOOLS.md",
+        "type": "file",
+        "path": "TOOLS.md"
+      },
+      {
+        "name": "appcast.xml",
+        "type": "file",
+        "path": "appcast.xml"
+      },
+      {
+        "name": "apps",
+        "type": "dir",
+        "path": "apps"
+      },
+      {
+        "name": "assets",
+        "type": "dir",
+        "path": "assets"
+      },
+      {
+        "name": "auth-profiles.json",
+        "type": "file",
+        "path": "auth-profiles.json"
+      },
+      {
+        "name": "canvas",
+        "type": "dir",
+        "path": "canvas"
+      },
+      {
+        "name": "docker-compose.yml",
+        "type": "file",
+        "path": "docker-compose.yml"
+      },
+      {
+        "name": "docker-setup.sh",
+        "type": "file",
+        "path": "docker-setup.sh"
+      },
+      {
+        "name": "docs.acp.md",
+        "type": "file",
+        "path": "docs.acp.md"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "path": "docs"
+      },
+      {
+        "name": "extensions",
+        "type": "dir",
+        "path": "extensions"
+      },
+      {
+        "name": "fly.private.toml",
+        "type": "file",
+        "path": "fly.private.toml"
+      },
+      {
+        "name": "fly.toml",
+        "type": "file",
+        "path": "fly.toml"
+      },
+      {
+        "name": "git-hooks",
+        "type": "dir",
+        "path": "git-hooks"
+      },
+      {
+        "name": "install_root_x64.log",
+        "type": "file",
+        "path": "install_root_x64.log"
+      },
+      {
+        "name": "logs",
+        "type": "dir",
+        "path": "logs"
+      },
+      {
+        "name": "moltbot.mjs",
+        "type": "file",
+        "path": "moltbot.mjs"
+      },
+      {
+        "name": "north_america_ev_strategy.md",
+        "type": "file",
+        "path": "north_america_ev_strategy.md"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json"
+      },
+      {
+        "name": "packages",
+        "type": "dir",
+        "path": "packages"
+      },
+      {
+        "name": "patches",
+        "type": "dir",
+        "path": "patches"
+      },
+      {
+        "name": "pids",
+        "type": "dir",
+        "path": "pids"
+      },
+      {
+        "name": "pnpm-lock.yaml",
+        "type": "file",
+        "path": "pnpm-lock.yaml"
+      },
+      {
+        "name": "pnpm-workspace.yaml",
+        "type": "file",
+        "path": "pnpm-workspace.yaml"
+      },
+      {
+        "name": "portable-pai-core",
+        "type": "dir",
+        "path": "portable-pai-core"
+      },
+      {
+        "name": "render.yaml",
+        "type": "file",
+        "path": "render.yaml"
+      },
+      {
+        "name": "research_repo_export",
+        "type": "file",
+        "path": "research_repo_export"
+      },
+      {
+        "name": "results",
+        "type": "dir",
+        "path": "results"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "path": "scripts"
+      },
+      {
+        "name": "skills",
+        "type": "dir",
+        "path": "skills"
+      },
+      {
+        "name": "src",
+        "type": "dir",
+        "path": "src"
+      },
+      {
+        "name": "test",
+        "type": "dir",
+        "path": "test"
+      },
+      {
+        "name": "test_resume_comparison.py",
+        "type": "file",
+        "path": "test_resume_comparison.py"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "path": "tsconfig.json"
+      },
+      {
+        "name": "ui",
+        "type": "dir",
+        "path": "ui"
+      },
+      {
+        "name": "vendor",
+        "type": "dir",
+        "path": "vendor"
+      },
+      {
+        "name": "vitest.config.ts",
+        "type": "file",
+        "path": "vitest.config.ts"
+      },
+      {
+        "name": "vitest.e2e.config.ts",
+        "type": "file",
+        "path": "vitest.e2e.config.ts"
+      },
+      {
+        "name": "vitest.extensions.config.ts",
+        "type": "file",
+        "path": "vitest.extensions.config.ts"
+      },
+      {
+        "name": "vitest.gateway.config.ts",
+        "type": "file",
+        "path": "vitest.gateway.config.ts"
+      },
+      {
+        "name": "vitest.live.config.ts",
+        "type": "file",
+        "path": "vitest.live.config.ts"
+      },
+      {
+        "name": "vitest.unit.config.ts",
+        "type": "file",
+        "path": "vitest.unit.config.ts"
+      },
+      {
+        "name": "zizmor.yml",
+        "type": "file",
+        "path": "zizmor.yml"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2026-06-20T07:25:14Z",
+        "message": "PAI: add ADR 0041 for Google Custom Search integration and update context summaries",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-06-20T07:19:15Z",
+        "message": "Web Search: integrate Google Custom Search JSON API with Brave Search failover",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-06-20T06:49:32Z",
+        "message": "Prompt Tier: fallback non-coding research to chat tier (local Qwen3) for privacy",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-06-20T06:31:12Z",
+        "message": "Reflective Checker: fix empty response handling and log format",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-06-20T05:34:36Z",
+        "message": "routing: fix build imports and TS errors for research-analysis reflective gating check",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-06-19T19:08:31Z",
+        "message": "Embedded Runner: wrap completion streams to intercept JSON tool calls",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-06-17T14:53:33Z",
+        "message": "agents: dynamic local-model context cap for compaction safeguard",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-06-12T05:51:47Z",
+        "message": "Docs: Update PAI todo list for empty response task",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-06-12T05:51:39Z",
+        "message": "Docs: Add ADR 0040 and learning on empty LLM response failover",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-06-12T05:19:32Z",
+        "message": "Runner: Implement empty LLM response failover and fallback routing",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-12T18:28:35Z",
+        "message": "docs: update research paper link to external repository",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-12T18:17:24Z",
+        "message": "docs_sync: Master Synchronization Ritual & Doc Hygiene (SHADOW)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-07T02:20:07Z",
+        "message": "feat(job-hunter): implement interactive Hiring.cafe search and absolute pathing resilience (ADR 0031, 0032)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-06T21:19:00Z",
+        "message": "fix(job-hunter): resolve zero-yield, broadening signals, and absolute pathing fixes",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-03-05T18:17:30Z",
+        "message": "feat(research, auth): document G3.1 inversion & integrate dual-key fallback (SHADOW)",
+        "author": "Akash Agrawal"
+      }
+    ]
+  },
+  {
     "name": "Portfolio",
     "fullName": "akashagl92/Portfolio",
     "description": "Build a portfolio using my github repo",
@@ -20,10 +547,10 @@
     "stars": 0,
     "forks": 0,
     "createdAt": "2025-12-19T03:23:05Z",
-    "updatedAt": "2026-06-18T10:51:50Z",
-    "pushedAt": "2026-06-18T10:51:45Z",
+    "updatedAt": "2026-06-19T11:00:52Z",
+    "pushedAt": "2026-06-19T11:00:43Z",
     "topics": [],
-    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **688 commits across 12 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)\n- **Crunchyroll-tailored**: [Explore](https://akashagl92.github.io/Portfolio/crunchyroll/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Hershey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/hershey/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Motive-tailored**: [Explore](https://akashagl92.github.io/Portfolio/motive/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Sprinklr-tailored**: [Explore](https://akashagl92.github.io/Portfolio/sprinklr/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis production-grade platform leverages agentic AI to dynamically generate highly-tailored, research-grade analytics and content for diverse industries. It integrates sophisticated data orchestration with robust CI/CD pipelines, enabling the scalable delivery of customized AI applications. The system manages over 20 distinct portfolio versions, demonstrating advanced automation and observability for complex content generation workflows.\n\n_Tags: Agentic AI, CI/CD, Data Orchestration, Static Site Generation_\n\n---\n\n### 📲 OpenClaw - AI WhatsApp Agent (`openclaw`)\n**TypeScript** | [Repo](https://github.com/akashagl92/openclaw)\n\nThis platform is a research-grade AI agent system designed to overcome LLM memory limitations. It employs Recursive Gated Consolidation and Structured State Convergence to achieve persistent, scalable agentic memory, ensuring 100% information recall over millions of turns. This enables robust, dynamic agents capable of integrating diverse external tools for complex tasks like job hunting, coding, and personal assistance.\n\n_Tags: LLM Agent Orchestration, Persistent AI Memory, Containerization, Deep Learning_\n\n---\n\n### Erux.ai (`erux.ai`)\n**Python** | [Repo](https://github.com/akashagl92/erux.ai)\n\nThis full-stack platform delivers highly personalized astrological insights through an intuitive Next.js/React interface. It leverages a Python/FastAPI backend with SQLAlchemy and integrates advanced AI/LLM capabilities, including Google Gemini and a multi-agent architecture, for sophisticated interpretations. The system performs precise, industry-standard astronomical calculations, ensuring accurate and comprehensive analysis across multiple traditional systems.\n\n_Tags: Full-Stack Development, Multi-Agent AI, Astrological Computing, Prompt Engineering_\n\n---\n\n### Agentic-memory-scaling (`agentic-memory-scaling`)\n**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)\n\nIntroduces Recursive Gated Consolidation (RGC), an advanced memory architecture that overcomes the 'Discovery Cliff' in LLM agents. It maintains 100% signal recall over 10 million turns, significantly outperforming traditional methods which collapse to 16.8%. The system also reveals an Inverted Latency Law, demonstrating improved performance at scale, validated through extensive Monte Carlo simulations and optimized for cutting-edge hardware like Google's TPU v4/v5, enhancing the reliability and efficiency of agentic AI systems.\n\n_Tags: LLM Agents, Memory Architecture, Performance Optimization, AI Simulation_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 688 |\n| Unique Repositories | 12 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 6/18/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## 📝 License\n\nMIT\n",
+    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **688 commits across 12 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)\n- **Crunchyroll-tailored**: [Explore](https://akashagl92.github.io/Portfolio/crunchyroll/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Hershey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/hershey/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Motive-tailored**: [Explore](https://akashagl92.github.io/Portfolio/motive/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Sprinklr-tailored**: [Explore](https://akashagl92.github.io/Portfolio/sprinklr/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis production-grade platform leverages agentic AI to dynamically generate highly-tailored, research-grade analytics and content for diverse industries. It integrates sophisticated data orchestration with robust CI/CD pipelines, enabling the scalable delivery of customized AI applications. The system manages over 20 distinct portfolio versions, demonstrating advanced automation and observability for complex content generation workflows.\n\n_Tags: Agentic AI, CI/CD, Data Orchestration, Static Site Generation_\n\n---\n\n### 📲 OpenClaw - AI WhatsApp Agent (`openclaw`)\n**TypeScript** | [Repo](https://github.com/akashagl92/openclaw)\n\nThis platform is a research-grade AI agent system designed to overcome LLM memory limitations. It employs Recursive Gated Consolidation and Structured State Convergence to achieve persistent, scalable agentic memory, ensuring 100% information recall over millions of turns. This enables robust, dynamic agents capable of integrating diverse external tools for complex tasks like job hunting, coding, and personal assistance.\n\n_Tags: LLM Agent Orchestration, Persistent AI Memory, Containerization, Deep Learning_\n\n---\n\n### Erux.ai (`erux.ai`)\n**Python** | [Repo](https://github.com/akashagl92/erux.ai)\n\nThis full-stack platform delivers highly personalized astrological insights through an intuitive Next.js/React interface. It leverages a Python/FastAPI backend with SQLAlchemy and integrates advanced AI/LLM capabilities, including Google Gemini and a multi-agent architecture, for sophisticated interpretations. The system performs precise, industry-standard astronomical calculations, ensuring accurate and comprehensive analysis across multiple traditional systems.\n\n_Tags: Full-Stack Development, Multi-Agent AI, Astrological Computing, Prompt Engineering_\n\n---\n\n### Agentic-memory-scaling (`agentic-memory-scaling`)\n**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)\n\nIntroduces Recursive Gated Consolidation (RGC), an advanced memory architecture that overcomes the 'Discovery Cliff' in LLM agents. It maintains 100% signal recall over 10 million turns, significantly outperforming traditional methods which collapse to 16.8%. The system also reveals an Inverted Latency Law, demonstrating improved performance at scale, validated through extensive Monte Carlo simulations and optimized for cutting-edge hardware like Google's TPU v4/v5, enhancing the reliability and efficiency of agentic AI systems.\n\n_Tags: LLM Agents, Memory Architecture, Performance Optimization, AI Simulation_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 688 |\n| Unique Repositories | 12 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 6/19/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## 📝 License\n\nMIT\n",
     "files": [
       {
         "name": ".agent",
@@ -308,6 +835,11 @@
     ],
     "recentCommits": [
       {
+        "date": "2026-06-19T11:00:42Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
         "date": "2026-06-18T10:51:44Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
@@ -374,11 +906,6 @@
       },
       {
         "date": "2026-06-05T10:29:47Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-06-04T10:14:46Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
       }
@@ -1098,533 +1625,6 @@
       {
         "date": "2026-04-12T21:53:39Z",
         "message": "Initial commit from Create Next App",
-        "author": "Akash Agrawal"
-      }
-    ]
-  },
-  {
-    "name": "moltbot",
-    "fullName": "akashagl92/moltbot",
-    "description": null,
-    "url": "https://github.com/akashagl92/moltbot",
-    "homepage": null,
-    "isPrivate": true,
-    "language": "TypeScript",
-    "languages": {
-      "TypeScript": 16362460,
-      "Swift": 2627390,
-      "HTML": 1726231,
-      "Kotlin": 365828,
-      "Python": 327124,
-      "Shell": 193697,
-      "CSS": 101190,
-      "JavaScript": 83481,
-      "Dockerfile": 4071,
-      "Ruby": 3023
-    },
-    "stars": 0,
-    "forks": 0,
-    "createdAt": "2026-01-29T07:21:35Z",
-    "updatedAt": "2026-03-12T18:28:41Z",
-    "pushedAt": "2026-03-12T18:28:37Z",
-    "topics": [],
-    "readme": "# Moltbot: Resilient Agentic Memory & Extreme-Scale Research\n\nMoltbot is a research-grade personal AI agent platform built for **Recursive Gated Consolidation (RGC)** and **Structured State Convergence (SSC)**. It is designed to overcome the \"silicone wall\" of attention saturation in LLMs, enabling persistent agentic memory across millions of conversation turns.\n\n## 🔬 Research Focus\n\nThis repository serves as the primary evaluation environment for the **Cognitive Stress Test (CST)** benchmarks, identifying the \"Discovery Cliff\" in single-stage consolidation architectures.\n\n- **Research Paper**: [Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns](https://github.com/akashagl92/agentic-memory-scaling)\n- **Recursive Gated Consolidation (RGC)**: A multi-stage memory architecture that maintains 100% discovery fidelity at 10M+ turns. At _N=1000_ converged benchmarks, standard architectures collapse to **17.0% recall** due to temporal decay, whereas RGC artificially drives decay to zero.\n- **Tiered Memory Model**: Decouples strategic, architectural, and narrative state into a three-layer persistence system.\n- **Structured State Convergence (SSC)**: $O(1)$ query latency with structured compaction.\n\n## 📜 Citation\n\nIf you use this codebase or the RGC/SSC architectures in your research, please cite:\n\n```bibtex\n@article{agrawal2026moltbot,\n  title={Structured State Convergence for O(1) Memory Scaling in LLM Agents: An Empirical Study of Discovery Limits at 10 Million Turns},\n  author={Agrawal, Akash},\n  journal={Work-in-Progress (Peer Review)},\n  year={2026},\n  url={https://github.com/akashagrawal/moltbot}\n}\n```\n\n## 🛠️ Performance & Verification\n\nTo reproduce the research findings, use the native benchmarking suite:\n\n```bash\npython3 scripts/benchmarking/run_cst.py --scenario test/benchmarks/multi_needle_10m.json --comprehensive --iterations 1000\n```\n\n_Note: This strictly enforces the N=1000 Empiricism Standard required to bypass stochastic inflation at extreme scale._\n\n---\n\n<!-- START_CAPABILITIES -->\n\n### 🚀 Dynamic Capabilities\n\n| Category | Name | Description |\n| :--- | :--- | :--- |\n| Skill | **1password** | Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op. |\n| Skill | **apple-notes** | Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks Moltbot to add a note, list notes, search notes, or manage note folders. |\n| Skill | **apple-reminders** | Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output. |\n| Skill | **bear-notes** | Create, search, and manage Bear notes via grizzly CLI. |\n| Skill | **bird** | X/Twitter CLI for reading, searching, posting, and engagement via cookies. |\n| Skill | **blogwatcher** | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI. |\n| Skill | **blucli** | BluOS CLI (blu) for discovery, playback, grouping, and volume. |\n| Skill | **bluebubbles** | Build or update the BlueBubbles external channel plugin for Moltbot (extension package, REST send/probe, webhook inbound). |\n| Skill | **camsnap** | Capture frames or clips from RTSP/ONVIF cameras. |\n| Skill | **clawdhub** | Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawdhub CLI. |\n| Skill | **coding-agent** | Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control. |\n| Skill | **discord** | Use when you need to control Discord from Moltbot via the discord tool: send messages, react, post or upload stickers, upload emojis, run polls, manage threads/pins/search, create/edit/delete channels and categories, fetch permissions or member/role/channel info, or handle moderation actions in Discord DMs or channels. |\n| Skill | **eightctl** | Control Eight Sleep pods (status, temperature, alarms, schedules). |\n| Skill | **food-order** | Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA. |\n| Skill | **gemini** | Gemini CLI for one-shot Q&A, summaries, and generation. |\n| Skill | **gifgrep** | Search GIF providers with CLI/TUI, download results, and extract stills/sheets. |\n| Skill | **github** | \"Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.\" |\n| Skill | **gog** | Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. |\n| Skill | **goplaces** | \"Google Places API - Find restaurants, coffee shops, hotels, businesses, attractions nearby. Use for 'find places near me', 'look up restaurants', 'coffee shops nearby', or any real-time location/business search. Also known as: google-places, places, location-search.\" |\n| Skill | **himalaya** | \"CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).\" |\n| Skill | **imsg** | iMessage/SMS CLI for listing chats, history, watch, and sending. |\n| Skill | **job-hunter** | Run automated job searches across LinkedIn, Google Jobs, Startup.jobs, Wellfound, and Reddit. Get email digests of relevant job listings matching your profile. |\n| Skill | **local-places** | Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost. |\n| Skill | **mcporter** | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation. |\n| Skill | **model-usage** | Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON. |\n| Skill | **nano-banana-pro** | Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro). |\n| Skill | **nano-pdf** | Edit PDFs with natural-language instructions using the nano-pdf CLI. |\n| Skill | **notion** | Notion API for creating and managing pages, databases, and blocks. |\n| Skill | **obsidian** | Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli. |\n| Skill | **openai-image-gen** | Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery. |\n| Skill | **openai-whisper** | Local speech-to-text with the Whisper CLI (no API key). |\n| Skill | **openai-whisper-api** | Transcribe audio via OpenAI Audio Transcriptions API (Whisper). |\n| Skill | **openhue** | Control Philips Hue lights/scenes via the OpenHue CLI. |\n| Skill | **oracle** | Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns). |\n| Skill | **ordercli** | Foodora-only CLI for checking past orders and active order status (Deliveroo WIP). |\n| Skill | **peekaboo** | Capture and automate macOS UI with the Peekaboo CLI. |\n| Skill | **sag** | ElevenLabs text-to-speech with mac-style say UX. |\n| Skill | **session-logs** | Search and analyze your own session logs (older/parent conversations) using jq. |\n| Skill | **sherpa-onnx-tts** | Local text-to-speech via sherpa-onnx (offline, no cloud) |\n| Skill | **skill-creator** | Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets. |\n| Skill | **slack** | Use when you need to control Slack from Moltbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs. |\n| Skill | **songsee** | Generate spectrograms and feature-panel visualizations from audio with the songsee CLI. |\n| Skill | **sonoscli** | Control Sonos speakers (discover/status/play/volume/group). |\n| Skill | **spotify-player** | Terminal Spotify playback/search via spogo (preferred) or spotify_player. |\n| Skill | **summarize** | Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”). |\n| Skill | **things-mac** | Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks Moltbot to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags. |\n| Skill | **tmux** | Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output. |\n| Skill | **trello** | Manage Trello boards, lists, and cards via the Trello REST API. |\n| Skill | **video-frames** | Extract frames or short clips from videos using ffmpeg. |\n| Skill | **voice-call** | Start voice calls via the Moltbot voice-call plugin. |\n| Skill | **wacli** | Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats). |\n| Skill | **weather** | Native Plugin (See index.ts) |\n\n<!-- END_CAPABILITIES -->\n",
-    "files": [
-      {
-        "name": ".agent",
-        "type": "dir",
-        "path": ".agent"
-      },
-      {
-        "name": ".detect-secrets.cfg",
-        "type": "file",
-        "path": ".detect-secrets.cfg"
-      },
-      {
-        "name": ".dockerignore",
-        "type": "file",
-        "path": ".dockerignore"
-      },
-      {
-        "name": ".env.example",
-        "type": "file",
-        "path": ".env.example"
-      },
-      {
-        "name": ".gitattributes",
-        "type": "file",
-        "path": ".gitattributes"
-      },
-      {
-        "name": ".github",
-        "type": "dir",
-        "path": ".github"
-      },
-      {
-        "name": ".gitignore",
-        "type": "file",
-        "path": ".gitignore"
-      },
-      {
-        "name": ".moltbot-debug-prompt.txt",
-        "type": "file",
-        "path": ".moltbot-debug-prompt.txt"
-      },
-      {
-        "name": ".npmrc",
-        "type": "file",
-        "path": ".npmrc"
-      },
-      {
-        "name": ".oxfmtrc.jsonc",
-        "type": "file",
-        "path": ".oxfmtrc.jsonc"
-      },
-      {
-        "name": ".oxlintrc.json",
-        "type": "file",
-        "path": ".oxlintrc.json"
-      },
-      {
-        "name": ".pai",
-        "type": "dir",
-        "path": ".pai"
-      },
-      {
-        "name": ".pre-commit-config.yaml",
-        "type": "file",
-        "path": ".pre-commit-config.yaml"
-      },
-      {
-        "name": ".prettierignore",
-        "type": "file",
-        "path": ".prettierignore"
-      },
-      {
-        "name": ".secrets.baseline",
-        "type": "file",
-        "path": ".secrets.baseline"
-      },
-      {
-        "name": ".shellcheckrc",
-        "type": "file",
-        "path": ".shellcheckrc"
-      },
-      {
-        "name": ".swiftformat",
-        "type": "file",
-        "path": ".swiftformat"
-      },
-      {
-        "name": ".swiftlint.yml",
-        "type": "file",
-        "path": ".swiftlint.yml"
-      },
-      {
-        "name": "AGENTS-CORE.md",
-        "type": "file",
-        "path": "AGENTS-CORE.md"
-      },
-      {
-        "name": "AGENTS-EXTENDED.md",
-        "type": "file",
-        "path": "AGENTS-EXTENDED.md"
-      },
-      {
-        "name": "AGENTS.md",
-        "type": "file",
-        "path": "AGENTS.md"
-      },
-      {
-        "name": "BOOTSTRAP.md",
-        "type": "file",
-        "path": "BOOTSTRAP.md"
-      },
-      {
-        "name": "CHANGELOG.md",
-        "type": "file",
-        "path": "CHANGELOG.md"
-      },
-      {
-        "name": "CITATION.cff",
-        "type": "file",
-        "path": "CITATION.cff"
-      },
-      {
-        "name": "CLAUDE.md",
-        "type": "file",
-        "path": "CLAUDE.md"
-      },
-      {
-        "name": "CONTEXT_HANDOFF.md",
-        "type": "file",
-        "path": "CONTEXT_HANDOFF.md"
-      },
-      {
-        "name": "CONTRIBUTING.md",
-        "type": "file",
-        "path": "CONTRIBUTING.md"
-      },
-      {
-        "name": "Dockerfile",
-        "type": "file",
-        "path": "Dockerfile"
-      },
-      {
-        "name": "Dockerfile.aether",
-        "type": "file",
-        "path": "Dockerfile.aether"
-      },
-      {
-        "name": "Dockerfile.sandbox",
-        "type": "file",
-        "path": "Dockerfile.sandbox"
-      },
-      {
-        "name": "Dockerfile.sandbox-browser",
-        "type": "file",
-        "path": "Dockerfile.sandbox-browser"
-      },
-      {
-        "name": "HEARTBEAT.md",
-        "type": "file",
-        "path": "HEARTBEAT.md"
-      },
-      {
-        "name": "IDENTITY.md",
-        "type": "file",
-        "path": "IDENTITY.md"
-      },
-      {
-        "name": "LICENSE",
-        "type": "file",
-        "path": "LICENSE"
-      },
-      {
-        "name": "MEMORY.md",
-        "type": "file",
-        "path": "MEMORY.md"
-      },
-      {
-        "name": "README-header.png",
-        "type": "file",
-        "path": "README-header.png"
-      },
-      {
-        "name": "README.md",
-        "type": "file",
-        "path": "README.md"
-      },
-      {
-        "name": "README_UPSTREAM.md",
-        "type": "file",
-        "path": "README_UPSTREAM.md"
-      },
-      {
-        "name": "SECURITY.md",
-        "type": "file",
-        "path": "SECURITY.md"
-      },
-      {
-        "name": "SOUL.md",
-        "type": "file",
-        "path": "SOUL.md"
-      },
-      {
-        "name": "Swabble",
-        "type": "dir",
-        "path": "Swabble"
-      },
-      {
-        "name": "TOOLS.md",
-        "type": "file",
-        "path": "TOOLS.md"
-      },
-      {
-        "name": "appcast.xml",
-        "type": "file",
-        "path": "appcast.xml"
-      },
-      {
-        "name": "apps",
-        "type": "dir",
-        "path": "apps"
-      },
-      {
-        "name": "assets",
-        "type": "dir",
-        "path": "assets"
-      },
-      {
-        "name": "auth-profiles.json",
-        "type": "file",
-        "path": "auth-profiles.json"
-      },
-      {
-        "name": "canvas",
-        "type": "dir",
-        "path": "canvas"
-      },
-      {
-        "name": "docker-compose.yml",
-        "type": "file",
-        "path": "docker-compose.yml"
-      },
-      {
-        "name": "docker-setup.sh",
-        "type": "file",
-        "path": "docker-setup.sh"
-      },
-      {
-        "name": "docs.acp.md",
-        "type": "file",
-        "path": "docs.acp.md"
-      },
-      {
-        "name": "docs",
-        "type": "dir",
-        "path": "docs"
-      },
-      {
-        "name": "extensions",
-        "type": "dir",
-        "path": "extensions"
-      },
-      {
-        "name": "fly.private.toml",
-        "type": "file",
-        "path": "fly.private.toml"
-      },
-      {
-        "name": "fly.toml",
-        "type": "file",
-        "path": "fly.toml"
-      },
-      {
-        "name": "git-hooks",
-        "type": "dir",
-        "path": "git-hooks"
-      },
-      {
-        "name": "install_root_x64.log",
-        "type": "file",
-        "path": "install_root_x64.log"
-      },
-      {
-        "name": "logs",
-        "type": "dir",
-        "path": "logs"
-      },
-      {
-        "name": "moltbot.mjs",
-        "type": "file",
-        "path": "moltbot.mjs"
-      },
-      {
-        "name": "north_america_ev_strategy.md",
-        "type": "file",
-        "path": "north_america_ev_strategy.md"
-      },
-      {
-        "name": "package.json",
-        "type": "file",
-        "path": "package.json"
-      },
-      {
-        "name": "packages",
-        "type": "dir",
-        "path": "packages"
-      },
-      {
-        "name": "patches",
-        "type": "dir",
-        "path": "patches"
-      },
-      {
-        "name": "pids",
-        "type": "dir",
-        "path": "pids"
-      },
-      {
-        "name": "pnpm-lock.yaml",
-        "type": "file",
-        "path": "pnpm-lock.yaml"
-      },
-      {
-        "name": "pnpm-workspace.yaml",
-        "type": "file",
-        "path": "pnpm-workspace.yaml"
-      },
-      {
-        "name": "portable-pai-core",
-        "type": "dir",
-        "path": "portable-pai-core"
-      },
-      {
-        "name": "render.yaml",
-        "type": "file",
-        "path": "render.yaml"
-      },
-      {
-        "name": "research_repo_export",
-        "type": "file",
-        "path": "research_repo_export"
-      },
-      {
-        "name": "results",
-        "type": "dir",
-        "path": "results"
-      },
-      {
-        "name": "scripts",
-        "type": "dir",
-        "path": "scripts"
-      },
-      {
-        "name": "skills",
-        "type": "dir",
-        "path": "skills"
-      },
-      {
-        "name": "src",
-        "type": "dir",
-        "path": "src"
-      },
-      {
-        "name": "test",
-        "type": "dir",
-        "path": "test"
-      },
-      {
-        "name": "test_resume_comparison.py",
-        "type": "file",
-        "path": "test_resume_comparison.py"
-      },
-      {
-        "name": "tsconfig.json",
-        "type": "file",
-        "path": "tsconfig.json"
-      },
-      {
-        "name": "ui",
-        "type": "dir",
-        "path": "ui"
-      },
-      {
-        "name": "vendor",
-        "type": "dir",
-        "path": "vendor"
-      },
-      {
-        "name": "vitest.config.ts",
-        "type": "file",
-        "path": "vitest.config.ts"
-      },
-      {
-        "name": "vitest.e2e.config.ts",
-        "type": "file",
-        "path": "vitest.e2e.config.ts"
-      },
-      {
-        "name": "vitest.extensions.config.ts",
-        "type": "file",
-        "path": "vitest.extensions.config.ts"
-      },
-      {
-        "name": "vitest.gateway.config.ts",
-        "type": "file",
-        "path": "vitest.gateway.config.ts"
-      },
-      {
-        "name": "vitest.live.config.ts",
-        "type": "file",
-        "path": "vitest.live.config.ts"
-      },
-      {
-        "name": "vitest.unit.config.ts",
-        "type": "file",
-        "path": "vitest.unit.config.ts"
-      },
-      {
-        "name": "zizmor.yml",
-        "type": "file",
-        "path": "zizmor.yml"
-      }
-    ],
-    "recentCommits": [
-      {
-        "date": "2026-03-12T18:28:35Z",
-        "message": "docs: update research paper link to external repository",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-12T18:17:24Z",
-        "message": "docs_sync: Master Synchronization Ritual & Doc Hygiene (SHADOW)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-07T02:20:07Z",
-        "message": "feat(job-hunter): implement interactive Hiring.cafe search and absolute pathing resilience (ADR 0031, 0032)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-06T21:19:00Z",
-        "message": "fix(job-hunter): resolve zero-yield, broadening signals, and absolute pathing fixes",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-05T18:17:30Z",
-        "message": "feat(research, auth): document G3.1 inversion & integrate dual-key fallback (SHADOW)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-05T18:03:28Z",
-        "message": "fix(job-hunter): fix role deduplication persistence, broaden scraper yield, and add geographic kill-switch",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-05T07:02:51Z",
-        "message": "feat(job-hunter): add hiring.cafe, role-based deduplication, and AI bypass logic",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-04T05:14:53Z",
-        "message": "docs(research): incorporate TPU v4 hardware insights and fix image paths",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-03-03T18:27:58Z",
-        "message": "feat(voice): Transition to Metal-Accelerated Mac Architecture (ADR 0030)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-26T06:37:25Z",
-        "message": "docs(pai): digest N=1000 Invariant Decay discovery into RGC memory",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T21:57:48Z",
-        "message": "docs(research): final scientific polish on memory consolidation paper",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T21:41:47Z",
-        "message": "fix(research): convert absolute image paths to relative for GitHub rendering",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T21:32:43Z",
-        "message": "chore: restore CI stability and align research metrics",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T07:15:07Z",
-        "message": "paper: rename Moltbot to Aether, add Conversation Sentinel as live SSC application",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-02-25T07:12:30Z",
-        "message": "feat: add conversation_sentinel.py — IDE RGC extension for cross-session memory",
         "author": "Akash Agrawal"
       }
     ]
