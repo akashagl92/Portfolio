@@ -1336,3 +1336,13 @@
 {"ts":"2026-04-17T20:58:33Z","event":"native_artifact_bridge_loop_started","profile":"NATIVE","mode":"scoped_write","data":{"source_root":"/Users/akashagrawal/.gemini/antigravity/brain" , "poll_sec":"5"}}
 {"ts":"2026-04-17T20:58:34Z","event":"native_artifact_bridge_loop_exited","profile":"NATIVE","mode":"scoped_write","data":{"exit_code":"0"}}
 {"ts":"2026-04-17T20:58:34Z","event":"native_artifact_bridge_daemon_start_failed","profile":"NATIVE","mode":"scoped_write","data":{"reason":"post_start_liveness_failed"}}
+{"ts":"2026-04-19T00:37:10Z","event":"native_artifact_bridge_loop_started","profile":"NATIVE","mode":"scoped_write","data":{"source_root":"/Users/akashagrawal/.gemini/antigravity/brain" , "poll_sec":"5"}}
+{"ts":"2026-04-19T00:37:11Z","event":"native_artifact_bridge_loop_exited","profile":"NATIVE","mode":"scoped_write","data":{"exit_code":"0"}}
+{"ts":"2026-04-19T00:37:11Z","event":"native_artifact_bridge_loop_started","profile":"NATIVE","mode":"scoped_write","data":{"source_root":"/Users/akashagrawal/.gemini/antigravity/brain" , "poll_sec":"5"}}
+{"ts":"2026-04-19T00:37:12Z","event":"native_artifact_bridge_loop_exited","profile":"NATIVE","mode":"scoped_write","data":{"exit_code":"0"}}
+{"ts":"2026-04-19T00:37:12Z","event":"native_artifact_bridge_daemon_start_failed","profile":"NATIVE","mode":"scoped_write","data":{"reason":"post_start_liveness_failed"}}
+{"ts":"2026-04-19T00:37:12Z","event":"native_artifact_bridge_loop_started","profile":"NATIVE","mode":"scoped_write","data":{"source_root":"/Users/akashagrawal/.gemini/antigravity/brain" , "poll_sec":"5"}}
+{"ts":"2026-04-19T00:37:13Z","event":"native_artifact_bridge_loop_exited","profile":"NATIVE","mode":"scoped_write","data":{"exit_code":"0"}}
+{"ts":"2026-04-19T00:37:13Z","event":"native_artifact_bridge_loop_started","profile":"NATIVE","mode":"scoped_write","data":{"source_root":"/Users/akashagrawal/.gemini/antigravity/brain" , "poll_sec":"5"}}
+{"ts":"2026-04-19T00:37:14Z","event":"native_artifact_bridge_loop_exited","profile":"NATIVE","mode":"scoped_write","data":{"exit_code":"0"}}
+{"ts":"2026-04-19T00:37:14Z","event":"native_artifact_bridge_daemon_start_failed","profile":"NATIVE","mode":"scoped_write","data":{"reason":"post_start_liveness_failed"}}

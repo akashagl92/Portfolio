@@ -108,18 +108,35 @@ function generateProjectDeepDives() {
         })
         .slice(0, 12) // Show up to 12 projects to be inclusive
         .map(p => {
-            const title = p.name === 'aistro.ai' ? '🔮 AI Astrology Platform' :
-                p.name === 'openclaw' ? '📲 OpenClaw - AI WhatsApp Agent' :
-                    p.name === 'stock_price_target_modelling' ? '📈 Autonomous Trading System' :
-                        p.name === 'ide-agnostic-agent-orchestrator' ? '🤖 IDE-Agnostic Agent Orchestrator' :
-                            p.name === 'Music-and-Math' ? '🎹 Sonic Geometry Visualizer' :
-                                p.name.charAt(0).toUpperCase() + p.name.slice(1);
+            const titleMap = {
+                'aistro.ai': '🔮 Planetary & Astrological Intelligence Platform',
+                'erux.ai': '🔮 Planetary & Astrological Intelligence Platform',
+                'openclaw': '📲 OpenClaw: Autonomous Personal Assistant',
+                'stock_price_target_modelling': '📈 Autonomous Trading System (V4.1)',
+                'ide-agnostic-agent-orchestrator': '🤖 IDE-Agnostic Agent Orchestrator',
+                'Music-and-Math': '🎹 Sonic Geometry Visualizer',
+                'agentic-memory-scaling': '🧠 Infinite Memory: AI Agent Scaling',
+                'philosophy-sage': '📜 Philosophy Sage: Knowledge Graph AI',
+                'Databricks-Genie-Integration': '📊 AI Data Analyst (Databricks Genie)',
+                'voc-buyer-journey-chatbot': '💬 VOC & Buyer Journey AI Assistant',
+                'Marketing-Analytics-Assistant': '📈 Automated Marketing Experiment Analyzer',
+                'LinkedIn-API': '🔗 LinkedIn Ad Measurement Pipeline',
+                'Google-Analytics': '📊 GA4 Data Foundation',
+                'family-heritage-vault': '🏛️ Family Heritage Vault',
+                'moltbot': '🤖 Moltbot: Persistent Memory Agent'
+            };
+
+            const title = titleMap[p.name] || (p.name.charAt(0).toUpperCase() + p.name.slice(1));
 
             const lang = p.language ? `**${p.language}**` : '';
             const link = p.homepage ? ` | [Live Demo](${p.homepage})` : p.url ? ` | [Repo](${p.url})` : '';
             const tags = p.ai_tags ? `\n\n_Tags: ${p.ai_tags.join(', ')}_` : '';
 
-            return `### ${title} (\`${p.name}\`)\n${lang}${link}\n\n${p.ai_summary || p.description || 'No summary available.'}${tags}\n`;
+            let summary = p.ai_summary || p.description || 'No summary available.';
+            // Sanitize raw math/LaTeX symbols
+            summary = summary.replace(/\$10\^7\$/g, '10 million').replace(/\$\$/g, '').replace(/&\\\/&/g, '&');
+
+            return `### ${title} (\`${p.name}\`)\n${lang}${link}\n\n${summary}${tags}\n`;
         });
 
     return dives.join('\n---\n\n');

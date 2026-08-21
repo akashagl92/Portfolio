@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **788 commits across 12 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
+This portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **776 commits across 12 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.
 
 ## 🌐 Live Sites
 
@@ -28,6 +28,7 @@ This portfolio represents a **Data & AI Product Leader** who combines strategic 
 - **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)
 - **Sprinklr-tailored**: [Explore](https://akashagl92.github.io/Portfolio/sprinklr/)
 - **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)
+- **Texasinstruments-tailored**: [Explore](https://akashagl92.github.io/Portfolio/texasinstruments/)
 - **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)
 - **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)
 
@@ -51,36 +52,108 @@ Each project embeds measurement and analytics capabilities from day one, treatin
 ### Portfolio (`Portfolio`)
 **HTML** | [Repo](https://github.com/akashagl92/Portfolio)
 
-This production-grade platform leverages agentic AI to dynamically generate highly-tailored, research-grade analytics and content for diverse industries. It integrates sophisticated data orchestration with robust CI/CD pipelines, enabling the scalable delivery of customized AI applications. The system manages over 20 distinct portfolio versions, demonstrating advanced automation and observability for complex content generation workflows.
+This production-grade platform leverages agentic AI to dynamically generate and scalably deliver over 20 highly-tailored, research-grade portfolio versions with unique analytics and content. It integrates sophisticated data orchestration, custom static site generation, and robust CI/CD pipelines, demonstrating advanced automation and AI-assisted content creation capabilities across diverse industries.
 
-_Tags: Agentic AI, CI/CD, Data Orchestration, Static Site Generation_
-
----
-
-### 📲 OpenClaw - AI WhatsApp Agent (`openclaw`)
-**TypeScript** | [Repo](https://github.com/akashagl92/openclaw)
-
-This platform is a research-grade AI agent system designed to overcome LLM memory limitations. It employs Recursive Gated Consolidation and Structured State Convergence to achieve persistent, scalable agentic memory, ensuring 100% information recall over millions of turns. This enables robust, dynamic agents capable of integrating diverse external tools for complex tasks like job hunting, coding, and personal assistance.
-
-_Tags: LLM Agent Orchestration, Persistent AI Memory, Containerization, Deep Learning_
+_Tags: Agentic AI, Static Site Generation, CI/CD Automation, Data Orchestration_
 
 ---
 
-### Erux.ai (`erux.ai`)
+### 📈 Autonomous Trading System (V4.1) (`stock_price_target_modelling`)
+**Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)
+
+This autonomous AI-powered system manages a dual-track stock and crypto portfolio, employing a multi-tier 'Steady Winner' strategy with Golden Cross momentum boosting. It optimizes for realized wealth and tax efficiency, achieving an 80.8% XIRR and 60.3% Alpha over the S&P 500. The system integrates financial data, automates execution, and provides robust email-based reporting and approval workflows.
+
+_Tags: Quantitative Finance, Machine Learning, Automated Trading, DevOps Automation_
+
+---
+
+### 🤖 IDE-Agnostic Agent Orchestrator (`ide-agnostic-agent-orchestrator`)
+**Shell** | [Repo](https://github.com/akashagl92/ide-agnostic-agent-orchestrator)
+
+This IDE-agnostic orchestration framework unifies AI-assisted software delivery across diverse development environments, eliminating workflow fragmentation. It enforces policy-first execution and integrates a multi-layered native artifact safety stack, including circuit breakers and idempotent retries, to guarantee reliable and controlled AI operations. The system manages complex agent execution, ensuring data integrity and fault tolerance through an event-driven architecture.
+
+_Tags: AI Orchestration, IDE-Agnostic, Policy Enforcement, Fault Tolerance_
+
+---
+
+### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)
+**JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)
+
+An interactive web-based visualizer merging music theory and sound physics, enabling real-time exploration of harmonic ratios, wave interference, and acoustic principles through Web Audio API and HTML5 Canvas. Combines educational value with performance-optimized audio-visual synthesis for dynamic learning experiences.
+
+_Tags: Web Audio API, HTML5 Canvas, music theory_
+
+---
+
+### 🔮 Planetary & Astrological Intelligence Platform (`erux.ai`)
 **Python** | [Repo](https://github.com/akashagl92/erux.ai)
 
-This full-stack platform delivers highly personalized astrological insights through an intuitive Next.js/React interface. It leverages a Python/FastAPI backend with SQLAlchemy and integrates advanced AI/LLM capabilities, including Google Gemini and a multi-agent architecture, for sophisticated interpretations. The system performs precise, industry-standard astronomical calculations, ensuring accurate and comprehensive analysis across multiple traditional systems.
+This advanced platform delivers personalized, certified astrological insights across Western, Vedic, and Neo-Vedic systems. It leverages precise SwissEphemeris calculations and a sophisticated, agent-driven AI architecture, integrating multiple models with a robust 6-tier failover chain. The system employs polyglot persistence and an AI-driven development workflow, ensuring high-quality, reliable interpretations.
 
-_Tags: Full-Stack Development, Multi-Agent AI, Astrological Computing, Prompt Engineering_
+_Tags: AI Agents, Astrological Computing, LLM Orchestration, Polyglot Persistence_
 
 ---
 
-### Agentic-memory-scaling (`agentic-memory-scaling`)
+### 🤖 Moltbot: Persistent Memory Agent (`moltbot`)
+**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)
+
+This research-grade personal AI agent platform overcomes LLM attention saturation using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC). It enables persistent agentic memory, maintaining 100% discovery fidelity across millions of turns where standard architectures fail. The platform integrates diverse web search APIs and external tools, offering a highly extensible and interactive AI agent experience, supported by robust containerization and polyglot development practices.
+
+_Tags: LLM Agents, Persistent Memory, Container Orchestration, Polyglot Development_
+
+---
+
+### 🧠 Infinite Memory: AI Agent Scaling (`agentic-memory-scaling`)
 **Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)
 
-Introduces Recursive Gated Consolidation (RGC), an advanced memory architecture that overcomes the 'Discovery Cliff' in LLM agents. It maintains 100% signal recall over 10 million turns, significantly outperforming traditional methods which collapse to 16.8%. The system also reveals an Inverted Latency Law, demonstrating improved performance at scale, validated through extensive Monte Carlo simulations and optimized for cutting-edge hardware like Google's TPU v4/v5, enhancing the reliability and efficiency of agentic AI systems.
+Introduces a novel Recursive Gated Consolidation (RGC) architecture, overcoming the "Discovery Cliff" to achieve 100% signal recall for LLM agents over 10 million turns. It eradicates temporal decay, a critical scaling limit, and demonstrates an "Inverted Latency Law" through extensive Monte Carlo simulations on advanced hardware like TPUs and OCS. This innovation significantly advances LLM agent memory scaling.
 
-_Tags: LLM Agents, Memory Architecture, Performance Optimization, AI Simulation_
+_Tags: Agentic AI, LLM Memory Architectures, Scalability, Hardware Optimization_
+
+---
+
+### 🏛️ Family Heritage Vault (`family-heritage-vault`)
+**TypeScript** | [Live Demo](https://family-heritage-vault.vercel.app)
+
+A secure, interactive heritage vault built with Next.js and TypeScript, dynamically visualizes complex family lineage and kinship pairings. It features a robust media pipeline for a cinematic experience, intelligent routing, and hardened middleware security. The platform integrates AI agents, likely Anthropic Claude, for advanced capabilities such as content generation, intelligent search, and agent orchestration, providing a sophisticated system for exploring and preserving family history.
+
+_Tags: Next.js, TypeScript, AI Integration, Data Visualization_
+
+---
+
+### 📜 Philosophy Sage: Knowledge Graph AI (`philosophy-sage`)
+**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)
+
+A multi-scripture AI philosopher integrating semantic search, hybrid RAG, and adaptive layout learning to enable Q&A, allegorical analysis, and TTS-driven exploration of texts like the Mahabharata and Ashtavakra Gita. Combines Neo4j graph databases with Cytoscape.js visualizations for cross-cultural philosophical synthesis.
+
+_Tags: semantic_search, rag, neo4j, tts_
+
+---
+
+### 💬 VOC & Buyer Journey AI Assistant (`voc-buyer-journey-chatbot`)
+**Python** | [Repo](https://github.com/akashagl92/voc-buyer-journey-chatbot)
+
+A production-ready chatbot leveraging LangChain and LangGraph for orchestration, integrating Databricks Vector Search and RAG for structured/unstructured data analysis. Delivers real-time Voice of Customer insights via a dual-brain architecture, optimized for enterprise scalability with Streamlit UI.
+
+_Tags: LangChain, LangGraph, Databricks Vector Search, RAG_
+
+---
+
+### 📈 Automated Marketing Experiment Analyzer (`Marketing-Analytics-Assistant`)
+**Python** | [Repo](https://github.com/akashagl92/Marketing-Analytics-Assistant)
+
+AI-powered marketing analytics assistant leveraging FastAPI, OpenAI GPT, and Google Gemini for natural language query parsing. Integrates Databricks SQL for real-time data access, Pandas for statistical analysis, and Matplotlib/Seaborn for visualization. Transforms complex marketing queries into actionable insights through automated A/B testing, segment comparison, and trend detection.
+
+_Tags: FastAPI, OpenAI, Databricks_
+
+---
+
+### 📊 GA4 Data Foundation (`Google-Analytics`)
+**Python** | [Repo](https://github.com/akashagl92/Google-Analytics)
+
+A precision-engineered GA4 data pipeline bypassing sampling limits with advanced multi-filter logic (AND/OR), delivering unsampled, granular analytics at scale. Leverages GA4’s Data API to execute complex, high-fidelity queries that traditional tools sample or simplify—enabling exact user behavior modeling and edge-case analysis.
+
+_Tags: Google Analytics Data API, Python, API Integration, Data Processing_
 
 
 ---
@@ -102,10 +175,10 @@ _Tags: LLM Agents, Memory Architecture, Performance Optimization, AI Simulation_
 
 | Metric | Current Value |
 |--------|------------|
-| Total Commits | 788 |
+| Total Commits | 776 |
 | Unique Repositories | 12 |
 | Primary Language | Python |
-| Top Languages | N/A |
+| Top Languages | Python (70.1%), HTML (17.7%), TypeScript (10.3%) |
 | Last Synced | 8/21/2026 |
 
 ---
