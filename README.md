@@ -58,33 +58,6 @@ _Tags: Agentic AI, Static Site Generation, CI/CD Automation, Data Orchestration_
 
 ---
 
-### 📈 Autonomous Trading System (V4.1) (`stock_price_target_modelling`)
-**Python** | [Repo](https://github.com/akashagl92/stock_price_target_modelling)
-
-This autonomous AI-powered system manages a dual-track stock and crypto portfolio, employing a multi-tier 'Steady Winner' strategy with Golden Cross momentum boosting. It optimizes for realized wealth and tax efficiency, achieving an 80.8% XIRR and 60.3% Alpha over the S&P 500. The system integrates financial data, automates execution, and provides robust email-based reporting and approval workflows.
-
-_Tags: Quantitative Finance, Machine Learning, Automated Trading, DevOps Automation_
-
----
-
-### 🤖 IDE-Agnostic Agent Orchestrator (`ide-agnostic-agent-orchestrator`)
-**Shell** | [Repo](https://github.com/akashagl92/ide-agnostic-agent-orchestrator)
-
-This IDE-agnostic orchestration framework unifies AI-assisted software delivery across diverse development environments, eliminating workflow fragmentation. It enforces policy-first execution and integrates a multi-layered native artifact safety stack, including circuit breakers and idempotent retries, to guarantee reliable and controlled AI operations. The system manages complex agent execution, ensuring data integrity and fault tolerance through an event-driven architecture.
-
-_Tags: AI Orchestration, IDE-Agnostic, Policy Enforcement, Fault Tolerance_
-
----
-
-### 🎹 Sonic Geometry Visualizer (`Music-and-Math`)
-**JavaScript** | [Repo](https://github.com/akashagl92/Music-and-Math)
-
-An interactive web-based visualizer merging music theory and sound physics, enabling real-time exploration of harmonic ratios, wave interference, and acoustic principles through Web Audio API and HTML5 Canvas. Combines educational value with performance-optimized audio-visual synthesis for dynamic learning experiences.
-
-_Tags: Web Audio API, HTML5 Canvas, music theory_
-
----
-
 ### 🔮 Planetary & Astrological Intelligence Platform (`erux.ai`)
 **Python** | [Repo](https://github.com/akashagl92/erux.ai)
 
@@ -119,42 +92,6 @@ A secure, interactive heritage vault built with Next.js and TypeScript, dynamica
 
 _Tags: Next.js, TypeScript, AI Integration, Data Visualization_
 
----
-
-### 📜 Philosophy Sage: Knowledge Graph AI (`philosophy-sage`)
-**TypeScript** | [Repo](https://github.com/akashagl92/philosophy-sage)
-
-A multi-scripture AI philosopher integrating semantic search, hybrid RAG, and adaptive layout learning to enable Q&A, allegorical analysis, and TTS-driven exploration of texts like the Mahabharata and Ashtavakra Gita. Combines Neo4j graph databases with Cytoscape.js visualizations for cross-cultural philosophical synthesis.
-
-_Tags: semantic_search, rag, neo4j, tts_
-
----
-
-### 💬 VOC & Buyer Journey AI Assistant (`voc-buyer-journey-chatbot`)
-**Python** | [Repo](https://github.com/akashagl92/voc-buyer-journey-chatbot)
-
-A production-ready chatbot leveraging LangChain and LangGraph for orchestration, integrating Databricks Vector Search and RAG for structured/unstructured data analysis. Delivers real-time Voice of Customer insights via a dual-brain architecture, optimized for enterprise scalability with Streamlit UI.
-
-_Tags: LangChain, LangGraph, Databricks Vector Search, RAG_
-
----
-
-### 📈 Automated Marketing Experiment Analyzer (`Marketing-Analytics-Assistant`)
-**Python** | [Repo](https://github.com/akashagl92/Marketing-Analytics-Assistant)
-
-AI-powered marketing analytics assistant leveraging FastAPI, OpenAI GPT, and Google Gemini for natural language query parsing. Integrates Databricks SQL for real-time data access, Pandas for statistical analysis, and Matplotlib/Seaborn for visualization. Transforms complex marketing queries into actionable insights through automated A/B testing, segment comparison, and trend detection.
-
-_Tags: FastAPI, OpenAI, Databricks_
-
----
-
-### 📊 GA4 Data Foundation (`Google-Analytics`)
-**Python** | [Repo](https://github.com/akashagl92/Google-Analytics)
-
-A precision-engineered GA4 data pipeline bypassing sampling limits with advanced multi-filter logic (AND/OR), delivering unsampled, granular analytics at scale. Leverages GA4’s Data API to execute complex, high-fidelity queries that traditional tools sample or simplify—enabling exact user behavior modeling and edge-case analysis.
-
-_Tags: Google Analytics Data API, Python, API Integration, Data Processing_
-
 
 ---
 
@@ -179,7 +116,7 @@ _Tags: Google Analytics Data API, Python, API Integration, Data Processing_
 | Unique Repositories | 12 |
 | Primary Language | Python |
 | Top Languages | Python (70.1%), HTML (17.7%), TypeScript (10.3%) |
-| Last Synced | 8/21/2026 |
+| Last Synced | 8/22/2026 |
 
 ---
 
