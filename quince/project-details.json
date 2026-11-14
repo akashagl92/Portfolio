@@ -1,5 +1,133 @@
 [
   {
+    "name": "erux_mcp",
+    "fullName": "akashagl92/erux_mcp",
+    "description": "Official Model Context Protocol (MCP) server & AI plugin for ERUX — deterministic astronomical ephemeris, Dual-Zodiac natal & mundane charts, 120-year Vimshottari Dasha timelines, topocentric Horas, and Vedic yogas over Streamable HTTP.",
+    "url": "https://github.com/akashagl92/erux_mcp",
+    "homepage": "https://api.erux.ai/mcp",
+    "isPrivate": false,
+    "language": null,
+    "languages": {},
+    "stars": 0,
+    "forks": 0,
+    "createdAt": "2026-10-04T03:35:21Z",
+    "updatedAt": "2026-11-14T05:05:36Z",
+    "pushedAt": "2026-11-14T05:01:43Z",
+    "topics": [
+      "ai-agents",
+      "ai-agents-automation",
+      "ai-agents-cli",
+      "astrology-ai",
+      "astrology-engine",
+      "ephemeris",
+      "ephemeris-calculations",
+      "ephemeris-cosmology-consciousness",
+      "mcp",
+      "mcpserver",
+      "model-context-protocol"
+    ],
+    "readme": "# ERUX Astrology & Ephemeris MCP Server\n\n[![MCPRush](https://img.shields.io/badge/MCPRush-Listed-blueviolet)](https://mcprush.com/akashagl92/erux-astrology-ephemeris-engine-mcp)\n[![Glama](https://img.shields.io/badge/Glama-MCP%20Connector-10b981)](https://glama.ai/mcp/connectors/io.github.akashagl92/erux-astrology)\n[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.github.akashagl92%2Ferux--astrology-blue?logo=github)](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.akashagl92%2Ferux-astrology/versions/latest)\n[![Transport](https://img.shields.io/badge/Transport-Streamable%20HTTP%20SSE-success)](#quickstart-adding-to-your-mcp-client)\n[![Version](https://img.shields.io/badge/Version-2.0.3-brightgreen)](#)\n[![Discord](https://img.shields.io/badge/Discord-%23dev--chat-5865F2?logo=discord&logoColor=white)](https://discord.gg/sP4sHzRjT)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n\nThe official **Model Context Protocol (MCP)** server for [ERUX](https://erux.ai) — the high-precision astronomical ephemeris and dual-zodiac astrology intelligence engine.\n\nConnect **Google Gemini**, **ChatGPT**, **Claude.ai**, **Perplexity**, **Claude Desktop**, **Claude Code**, **Cursor**, **Windsurf**, **Open-WebUI**, **LibreChat**, or autonomous agent frameworks directly to deterministic astrological calculations without compiling C ephemeris libraries or running local Python background processes.\n\n---\n\n## Key Capabilities\n\n- **High-Precision Ephemeris Calculations**: Sub-arcsecond planetary coordinates for Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu, Uranus, Neptune, Pluto, and Chiron.\n- **Hybrid Insight Model (Dual-Zodiac Decoupling)**: Simultaneously evaluates Western Tropical Placidus (psychological and temperamental wiring) alongside Vedic Sidereal Lahiri (karmic timing and Dasha epochs).\n- **120-Year Parashara Vimshottari Timeline**: Multi-level Mahadasha, Antardasha, and Pratyantardasha hierarchy with exact date boundaries down to the hour.\n- **Real-Time Transit Horoscopes**: Continuous tracking of planetary transits against natal chart cusps with structured transit aspect predictions.\n- **Topocentric 24-Hora & Muhurta Engine**: Dynamic planetary hours (Horas) tied to local solar sunrise and sunset, plus Rahu Kaal, Yamaganda, Gulika, and Abhijit Muhurta.\n- **Classical Vedic Yoga Detection**: Algorithmic identification of Raja, Dhana, Pancha Mahapurusha, and Gaja Kesari yogas with planetary trigger explanations.\n- **Interactive Visual Wheel Generation**: Tools automatically return interactive visual chart wheel URLs (`https://erux.ai/chart?id=...`) and rendered PNG previews.\n\n---\n\n## MCP Endpoints, Registries & Direct Setup Links\n\n| Resource | Endpoint / Direct Link | Purpose |\n| :--- | :--- | :--- |\n| **Remote MCP Server** | `https://api.erux.ai/mcp` | Production Streamable HTTP endpoint for IDEs, AI assistants, and MCP SDKs |\n| **Google Gemini** | [Open Gemini Connected Apps](https://gemini.google.com/customize/connectors) | Click **+ Custom**, paste `https://api.erux.ai/mcp`, set Authentication to **None** |\n| **ChatGPT** | [Open ChatGPT Plugins](https://chatgpt.com/plugins) | Click **Add** (top-right), paste `https://api.erux.ai/mcp` into **Server URL**, set Auth to **No Auth**, and click **Create as a plugin** |\n| **Claude.ai Web** | [Open Claude.ai Connectors](https://claude.ai/settings/connectors) | Click **+** -> **Add custom connector**, paste `https://api.erux.ai/mcp`, and click **Add** |\n| **Perplexity** | [Open Perplexity Plugins](https://www.perplexity.ai/computer/plugins) | Click **+ Add custom** -> **Import plugin from GitHub**, and paste `https://github.com/akashagl92/erux_mcp` |\n| **Developer Documentation** | [erux.ai/developers/mcp](https://erux.ai/developers/mcp) | Interactive 1-click setup guides, live tool schema inspector, and prompt playbook |\n| **Official MCP Registry** | [View on MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.akashagl92%2Ferux-astrology/versions/latest) | Official Model Context Protocol registry manifest (`io.github.akashagl92/erux-astrology`) |\n| **Glama** | [View on Glama](https://glama.ai/mcp/connectors/io.github.akashagl92/erux-astrology) | Glama MCP Connector directory card, tool schema explorer, and client configs |\n| **MCPRush** | [View on MCPRush](https://mcprush.com/akashagl92/erux-astrology-ephemeris-engine-mcp) | Curated global MCP directory listing and client configurations |\n| **Developer Support** | [Discord `#dev-chat`](https://discord.gg/sP4sHzRjT) | Direct engineering support, bug reports, and MCP integration assistance |\n| **ERUX Web Engine** | [erux.ai](https://erux.ai) | Interactive natal, transit, and divisional (D1–D60) chart viewer for `chart_ui_url` outputs |\n\n---\n\n## Quickstart: Adding to Your MCP Client\n\nERUX runs as a **remote Streamable HTTP (SSE) server** at `https://api.erux.ai/mcp`. No local package installation, `pip install`, or `npx` compilation is required.\n\n### 1. Google Gemini (Web & Mobile)\n1. Open **[Gemini Connected Apps](https://gemini.google.com/customize/connectors)** and click **+ Custom** in the top-right corner.\n2. Paste `https://api.erux.ai/mcp`, name it **ERUX Astrology** with Authentication set to **None**, and click **Save**.\n\n---\n\n### 2. ChatGPT (Custom MCP Plugin)\n1. Open **[ChatGPT Plugins](https://chatgpt.com/plugins)** and click **Add** in the top-right corner to open **Add custom MCP server**.\n2. Set **Name** to **ERUX Astrology**, paste `https://api.erux.ai/mcp` into **Connection (Server URL)**, and change **Authentication** from `OAuth` to **No Auth**.\n3. Check **I understand and want to continue** and click **Create as a plugin**.\n\n---\n\n### 3. Claude.ai (Web & Mobile) & Claude Desktop\n\n**Claude.ai Web & Mobile:**\n1. Open **[Claude.ai Connectors](https://claude.ai/settings/connectors)** (or **Customize -> Connectors**).\n2. Click **+** -> **Add custom connector**, paste `https://api.erux.ai/mcp`, name it **ERUX Astrology**, and click **Add**.\n\n**Claude Desktop (`claude_desktop_config.json`):**\n* **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`\n* **Windows**: `%APPDATA%\\Claude\\claude_desktop_config.json`\n\n```json\n{\n  \"mcpServers\": {\n    \"erux-astrology\": {\n      \"url\": \"https://api.erux.ai/mcp\"\n    }\n  }\n}\n```\n\n> **Using with `mcp-remote` (optional stdio bridge):**\n> If your client strictly requires a `stdio` process:\n> ```json\n> {\n>   \"mcpServers\": {\n>     \"erux-astrology\": {\n>       \"command\": \"npx\",\n>       \"args\": [\"-y\", \"mcp-remote\", \"https://api.erux.ai/mcp\"]\n>     }\n>   }\n> }\n> ```\n\n---\n\n### 4. Perplexity (1-Click GitHub Plugin Import)\n1. Open **[Perplexity Plugins](https://www.perplexity.ai/computer/plugins)** and click **+ Add custom** in the top-right corner.\n2. Select **Import plugin from GitHub** and paste `https://github.com/akashagl92/erux_mcp`.\n3. Perplexity automatically imports `plugin.json`, the remote HTTP `mcp.json` (`https://api.erux.ai/mcp`), and the `erux-astrology` skill bundle.\n\n---\n\n### 5. Claude Code CLI (Direct Vendor HTTP)\nRegister ERUX directly in Claude Code with zero third-party proxy dependencies:\n\n```bash\nclaude mcp add --transport http erux https://api.erux.ai/mcp\n```\n\n---\n\n### 6. Cursor & VS Code\nAdd to `.cursor/mcp.json` (Cursor Settings > Features > MCP) or `.vscode/mcp.json`:\n\n```json\n{\n  \"mcpServers\": {\n    \"erux-astrology\": {\n      \"url\": \"https://api.erux.ai/mcp\"\n    }\n  }\n}\n```\n*(1-click IDE deep links for Cursor and VS Code are also available on [erux.ai/developers/mcp](https://erux.ai/developers/mcp).)*\n\n---\n\n### 7. Windsurf (Codeium)\nAdd to your `mcp_config.json`:\n\n```json\n{\n  \"mcpServers\": {\n    \"erux-astrology\": {\n      \"serverUrl\": \"https://api.erux.ai/mcp\"\n    }\n  }\n}\n```\n\n---\n\n### 8. Open-WebUI & LibreChat\nNavigate to **Admin Panel > Settings > Tools / MCP** and register the remote SSE endpoint:\n- **Server Name**: `erux-astrology`\n- **Server URL**: `https://api.erux.ai/mcp`\n- **Transport**: `sse` / `streamable-http`\n\n---\n\n### 9. Python / LangChain / CrewAI Agents\n\n```python\nimport asyncio\nfrom mcp.client.session import ClientSession\nfrom mcp.client.streamable_http import streamablehttp_client\n\nasync def run_astrology_agent():\n    async with streamablehttp_client(\"https://api.erux.ai/mcp\") as (read, write, _):\n        async with ClientSession(read, write) as session:\n            await session.initialize()\n\n            # List available tools\n            tools = await session.list_tools()\n            print([tool.name for tool in tools.tools])\n\n            # Calculate birth chart\n            result = await session.call_tool(\"calculate_chart\", {\n                \"date\": \"1992-10-14\",\n                \"time\": \"14:30\",\n                \"city\": \"Austin, Texas\",\n                \"system\": \"hybrid\"\n            })\n            print(result)\n\nasyncio.run(run_astrology_agent())\n```\n\n---\n\n## Tool Catalog\n\nERUX exposes 6 deterministic tools to the host model:\n\n### 1. `calculate_chart`\n*Calculates personal birth charts or national mundane charts.*\n- **Arguments**:\n  - `date` (*string*, YYYY-MM-DD): Birth date or national founding date.\n  - `time` (*string*, HH:MM): 24-hour birth time (defaults to `12:00` solar noon if unknown).\n  - `city` (*string*): City of birth or founding.\n  - `country` (*optional string*): Country to disambiguate city name.\n  - `system` (*optional string*): `'hybrid'` (default), `'vedic'`, or `'western'`.\n- **Outputs**: Exact planetary longitudes, retrogrades, nakshatras, house cusps, active Dasha cycle, and interactive `chart_ui_url`.\n\n### 2. `get_horoscope`\n*Generates transit horoscopes, daily 24-Hora planetary hours, and transit aspect predictions.*\n- **Arguments**:\n  - `birth_date` (*string*, YYYY-MM-DD): User's natal birth date.\n  - `birth_city` (*string*): Natal birth city.\n  - `birth_time` (*optional string*, default `'12:00'`): Natal birth time.\n  - `current_city` (*optional string*): Relocated city for local topocentric horizon.\n  - `cadence` (*optional string*): `'daily'` (Horas & Panchang), `'weekly'`, `'monthly'`, `'yearly'` (Solar Return).\n  - `target_date` (*optional string*): Future target forecast date.\n- **Outputs**: Real-world strategic guidance, topocentric 24-Hora schedule, Rahu Kaal, transit predictions, and interactive transits wheel link.\n\n### 3. `calculate_dasha`\n*Computes the 120-year Parashara Vimshottari planetary timeline.*\n- **Arguments**:\n  - `date` (*string*, YYYY-MM-DD): Natal birth date.\n  - `time` (*string*, HH:MM): 24-hour birth time.\n  - `city` (*string*): Birth city.\n  - `target_date` (*optional string*): Target date to inspect active sub-periods.\n- **Outputs**: 120-year Mahadasha timeline with full Antardasha and Pratyantardasha start and end dates.\n\n### 4. `get_yogas`\n*Identifies classical Vedic yogas and active planetary formations.*\n- **Arguments**:\n  - `date` (*string*, YYYY-MM-DD): Natal birth date.\n  - `time` (*string*, HH:MM): 24-hour birth time.\n  - `city` (*string*): Birth city.\n- **Outputs**: Detected yogas (Raja, Dhana, Gajakesari, Mahapurusha), strength assessments, and planetary triggers.\n\n### 5. `ask_astrology_guidance`\n*Contextual life pillar synthesis grounded in house significations and Karakas.*\n- **Arguments**:\n  - `question` (*string*): The user's life question (e.g. career pivot, relocation timing).\n  - `date` (*optional string*, YYYY-MM-DD): Natal birth date for personalized house and Dasha evaluation.\n  - `time` (*optional string*, HH:MM, default `'12:00'`): Natal birth time.\n  - `city` (*optional string*): Natal birth city for personalized chart grounding.\n- **Outputs**: Grounded astrological framework guidance with relevant house, active Dasha, and Karaka analysis.\n\n### 6. `get_interpretation`\n*Comprehensive deep-dive analysis across canonical life pillars.*\n- **Arguments**:\n  - `topic` (*optional string*, default `'career_and_vocation'`): Canonical life pillar topic (e.g. `'career_and_vocation'`, `'love_and_relationships'`, `'wealth_and_finances'`, `'health_and_vitality'`).\n  - `date` (*string*, YYYY-MM-DD): Natal birth date.\n  - `time` (*optional string*, HH:MM, default `'12:00'`): Natal birth time.\n  - `city` (*string*): Natal birth city.\n  - `current_city` (*optional string*): Relocated city for topocentric transit context.\n  - `system` (*optional string*, default `'hybrid'`): `'hybrid'`, `'vedic'`, or `'western'`.\n- **Outputs**: Detailed analysis combining natal placements, dasha cycles, and transit influences.\n\n---\n\n## Example Prompts\n\nAsk your MCP-connected model:\n\n- \"What is my current Vimshottari Mahadasha and Antardasha? Born October 14, 1992 at 2:30 PM in Austin, Texas.\"\n- \"Show my complete birth chart wheel and calculate my Vedic yogas.\"\n- \"What are the best astronomical Horas for business negotiations today in London?\"\n- \"Calculate the national mundane chart for France and summarize its key planetary placements.\"\n- \"I am planning a career transition next month. Based on my natal placements, what planetary transits are active?\"\n\n---\n\n## Security & Architecture\n\n- **Hosted Remote Endpoint**: All astronomical calculations execute on secure, hardened ERUX cloud infrastructure (`api.erux.ai`).\n- **No Local Code Execution**: Connecting to ERUX does not execute arbitrary binaries or scripts on your local machine.\n- **Zero API Keys Required**: The public MCP endpoint requires no authentication or upfront API keys for standard queries.\n- **Read-Only & Idempotent**: All tools are annotated as read-only and idempotent, ensuring safe execution within enterprise agent workflows.\n\n---\n\n## Resources & Links\n\n- **Remote MCP Endpoint**: `https://api.erux.ai/mcp`\n- **Developer MCP Documentation**: [https://erux.ai/developers/mcp](https://erux.ai/developers/mcp)\n- **Official MCP Registry**: [Registry Manifest](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.akashagl92%2Ferux-astrology/versions/latest)\n- **Glama Directory**: [Glama MCP Connector](https://glama.ai/mcp/connectors/io.github.akashagl92/erux-astrology)\n- **MCPRush Directory**: [MCPRush Listing](https://mcprush.com/akashagl92/erux-astrology-ephemeris-engine-mcp)\n- **Developer Support (`#dev-chat`)**: [Join Discord `#dev-chat`](https://discord.gg/sP4sHzRjT)\n- **ERUX Web Platform**: [https://erux.ai](https://erux.ai)\n\n---\n\n## License\n\nThis repository and its configuration schemas are licensed under the [MIT License](LICENSE).\nCalculations and data provided via the ERUX API are subject to the [ERUX Terms of Service](https://erux.ai/terms).\n",
+    "files": [
+      {
+        "name": ".claude-plugin",
+        "type": "dir",
+        "path": ".claude-plugin"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": ".mcp.json",
+        "type": "file",
+        "path": ".mcp.json"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "path": "LICENSE"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "mcp.json",
+        "type": "file",
+        "path": "mcp.json"
+      },
+      {
+        "name": "plugin.json",
+        "type": "file",
+        "path": "plugin.json"
+      },
+      {
+        "name": "server.json",
+        "type": "file",
+        "path": "server.json"
+      },
+      {
+        "name": "skills",
+        "type": "dir",
+        "path": "skills"
+      }
+    ],
+    "recentCommits": [
+      {
+        "date": "2026-11-14T04:23:02Z",
+        "message": "feat: bump MCP manifests to v2.0.3, add Perplexity/Claude GitHub plugin bundle, Glama connector, and direct setup links",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-11-14T03:58:17Z",
+        "message": "docs: remove sunset Smithery badge/CLI and add Claude Code CLI",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-10-07T04:42:53Z",
+        "message": "docs: add MCPRush directory listing badge and link",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-10-07T04:41:00Z",
+        "message": "chore(release): bump mcp server to v2.0.2 with differentiated annotations and meta messaging channels",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-10-04T04:49:05Z",
+        "message": "docs: add official Smithery badge, backlink and 1-click CLI quickstart",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-10-04T04:04:53Z",
+        "message": "chore: update registry badges and links to v1.0.1",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-10-04T03:58:08Z",
+        "message": "docs: replace Google Chat Bot with ChatGPT OpenAI Plugin (In Review)",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-10-04T03:49:34Z",
+        "message": "chore: bump version to 1.0.1 and link repository URL",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-10-04T03:45:25Z",
+        "message": "docs: remove emojis for clean engineering tone",
+        "author": "Akash Agrawal"
+      },
+      {
+        "date": "2026-10-04T03:33:58Z",
+        "message": "feat: initial release of ERUX Astrology MCP server documentation & config",
+        "author": "Akash Agrawal"
+      }
+    ]
+  },
+  {
     "name": "Portfolio",
     "fullName": "akashagl92/Portfolio",
     "description": "Build a portfolio using my github repo",
@@ -21,9 +149,9 @@
     "forks": 0,
     "createdAt": "2025-12-19T03:23:05Z",
     "updatedAt": "2026-11-12T16:29:11Z",
-    "pushedAt": "2026-11-12T15:29:05Z",
+    "pushedAt": "2026-11-13T14:46:22Z",
     "topics": [],
-    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **911 commits across 14 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)\n- **Crunchyroll-tailored**: [Explore](https://akashagl92.github.io/Portfolio/crunchyroll/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Hershey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/hershey/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Motive-tailored**: [Explore](https://akashagl92.github.io/Portfolio/motive/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Sprinklr-tailored**: [Explore](https://akashagl92.github.io/Portfolio/sprinklr/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Texasinstruments-tailored**: [Explore](https://akashagl92.github.io/Portfolio/texasinstruments/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis production-grade platform leverages agentic AI to dynamically generate and scalably deliver over 20 highly-tailored, research-grade portfolio versions with unique analytics and content. It integrates sophisticated data orchestration, custom static site generation, and robust CI/CD pipelines, demonstrating advanced automation and AI-assisted content creation capabilities across diverse industries.\n\n_Tags: Agentic AI, Static Site Generation, CI/CD Automation, Data Orchestration_\n\n---\n\n### 🔮 Planetary & Astrological Intelligence Platform (`erux.ai`)\n**Python** | [Repo](https://github.com/akashagl92/erux.ai)\n\nThis advanced platform delivers personalized, certified astrological insights across Western, Vedic, and Neo-Vedic systems. It leverages precise SwissEphemeris calculations and a sophisticated, agent-driven AI architecture, integrating multiple models with a robust 6-tier failover chain. The system employs polyglot persistence and an AI-driven development workflow, ensuring high-quality, reliable interpretations.\n\n_Tags: AI Agents, Astrological Computing, LLM Orchestration, Polyglot Persistence_\n\n---\n\n### 🤖 Moltbot: Persistent Memory Agent (`moltbot`)\n**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)\n\nThis research-grade personal AI agent platform overcomes LLM attention saturation using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC). It enables persistent agentic memory, maintaining 100% discovery fidelity across millions of turns where standard architectures fail. The platform integrates diverse web search APIs and external tools, offering a highly extensible and interactive AI agent experience, supported by robust containerization and polyglot development practices.\n\n_Tags: LLM Agents, Persistent Memory, Container Orchestration, Polyglot Development_\n\n---\n\n### 🧠 Infinite Memory: AI Agent Scaling (`agentic-memory-scaling`)\n**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)\n\nIntroduces a novel Recursive Gated Consolidation (RGC) architecture, overcoming the \"Discovery Cliff\" to achieve 100% signal recall for LLM agents over 10 million turns. It eradicates temporal decay, a critical scaling limit, and demonstrates an \"Inverted Latency Law\" through extensive Monte Carlo simulations on advanced hardware like TPUs and OCS. This innovation significantly advances LLM agent memory scaling.\n\n_Tags: Agentic AI, LLM Memory Architectures, Scalability, Hardware Optimization_\n\n---\n\n### 🏛️ Family Heritage Vault (`family-heritage-vault`)\n**TypeScript** | [Live Demo](https://family-heritage-vault.vercel.app)\n\nA secure, interactive heritage vault built with Next.js and TypeScript, dynamically visualizes complex family lineage and kinship pairings. It features a robust media pipeline for a cinematic experience, intelligent routing, and hardened middleware security. The platform integrates AI agents, likely Anthropic Claude, for advanced capabilities such as content generation, intelligent search, and agent orchestration, providing a sophisticated system for exploring and preserving family history.\n\n_Tags: Next.js, TypeScript, AI Integration, Data Visualization_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 911 |\n| Unique Repositories | 14 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 11/12/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## 📝 License\n\nMIT\n",
+    "readme": "# Akash Agrawal - 2026 Engineering Portfolio\n\n## Executive Summary\n\nThis portfolio represents a **Data & AI Product Leader** who combines strategic product thinking with deep technical execution. With **911 commits across 14 repositories** in 2025-2026, the work demonstrates a unique ability to architect and build production-grade systems that bridge **data science research**, **marketing technology**, and **agentic AI**—all while maintaining rigorous engineering practices.\n\n## 🌐 Live Sites\n\n- **General**: [Live Site](https://akashagl92.github.io/Portfolio/)\n- **Abnormal-tailored**: [Explore](https://akashagl92.github.io/Portfolio/abnormal/)\n- **Aifoundry-tailored**: [Explore](https://akashagl92.github.io/Portfolio/aifoundry/)\n- **Airbnb-tailored**: [Explore](https://akashagl92.github.io/Portfolio/airbnb/)\n- **Alivo-tailored**: [Explore](https://akashagl92.github.io/Portfolio/alivo/)\n- **Ambience-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ambience/)\n- **Circle-tailored**: [Explore](https://akashagl92.github.io/Portfolio/circle/)\n- **Consensys-tailored**: [Explore](https://akashagl92.github.io/Portfolio/consensys/)\n- **Cresta-tailored**: [Explore](https://akashagl92.github.io/Portfolio/cresta/)\n- **Crunchyroll-tailored**: [Explore](https://akashagl92.github.io/Portfolio/crunchyroll/)\n- **Ey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/ey/)\n- **Fedex-tailored**: [Explore](https://akashagl92.github.io/Portfolio/fedex/)\n- **Happymoney-tailored**: [Explore](https://akashagl92.github.io/Portfolio/happymoney/)\n- **Hershey-tailored**: [Explore](https://akashagl92.github.io/Portfolio/hershey/)\n- **Kraken-tailored**: [Explore](https://akashagl92.github.io/Portfolio/kraken/)\n- **Motive-tailored**: [Explore](https://akashagl92.github.io/Portfolio/motive/)\n- **Quince-tailored**: [Explore](https://akashagl92.github.io/Portfolio/quince/)\n- **Reku-tailored**: [Explore](https://akashagl92.github.io/Portfolio/reku/)\n- **Root-tailored**: [Explore](https://akashagl92.github.io/Portfolio/root/)\n- **Scopely-tailored**: [Explore](https://akashagl92.github.io/Portfolio/scopely/)\n- **Sprinklr-tailored**: [Explore](https://akashagl92.github.io/Portfolio/sprinklr/)\n- **Stellantis-tailored**: [Explore](https://akashagl92.github.io/Portfolio/stellantis/)\n- **Texasinstruments-tailored**: [Explore](https://akashagl92.github.io/Portfolio/texasinstruments/)\n- **Torq-tailored**: [Explore](https://akashagl92.github.io/Portfolio/torq/)\n- **Viant-tailored**: [Explore](https://akashagl92.github.io/Portfolio/viant/)\n\n---\n\n## Key Themes & Differentiators\n\n### 1. Research-Backed Product Development\nThe hallmark of this portfolio is the integration of **scientific rigor** into product ideation and validation. Each project demonstrates data-driven hypothesis testing before and during development.\n\n### 2. Agentic IDE Efficiency\nA core insight from this portfolio: **agentic IDEs dramatically accelerate MVP velocity while reducing costs**. This is exemplified across all projects where AI-assisted development has scaled capabilities beyond traditional manual limits.\n\n### 3. Marketing Technology Integration\nEach project embeds measurement and analytics capabilities from day one, treating instrumentation as a first-class feature.\n\n---\n\n## Project Deep-Dives\n\n### Portfolio (`Portfolio`)\n**HTML** | [Repo](https://github.com/akashagl92/Portfolio)\n\nThis production-grade platform leverages agentic AI to dynamically generate and scalably deliver over 20 highly-tailored, research-grade portfolio versions with unique analytics and content. It integrates sophisticated data orchestration, custom static site generation, and robust CI/CD pipelines, demonstrating advanced automation and AI-assisted content creation capabilities across diverse industries.\n\n_Tags: Agentic AI, Static Site Generation, CI/CD Automation, Data Orchestration_\n\n---\n\n### 🔮 Planetary & Astrological Intelligence Platform (`erux.ai`)\n**Python** | [Repo](https://github.com/akashagl92/erux.ai)\n\nThis advanced platform delivers personalized, certified astrological insights across Western, Vedic, and Neo-Vedic systems. It leverages precise SwissEphemeris calculations and a sophisticated, agent-driven AI architecture, integrating multiple models with a robust 6-tier failover chain. The system employs polyglot persistence and an AI-driven development workflow, ensuring high-quality, reliable interpretations.\n\n_Tags: AI Agents, Astrological Computing, LLM Orchestration, Polyglot Persistence_\n\n---\n\n### 🤖 Moltbot: Persistent Memory Agent (`moltbot`)\n**TypeScript** | [Repo](https://github.com/akashagl92/moltbot)\n\nThis research-grade personal AI agent platform overcomes LLM attention saturation using Recursive Gated Consolidation (RGC) and Structured State Convergence (SSC). It enables persistent agentic memory, maintaining 100% discovery fidelity across millions of turns where standard architectures fail. The platform integrates diverse web search APIs and external tools, offering a highly extensible and interactive AI agent experience, supported by robust containerization and polyglot development practices.\n\n_Tags: LLM Agents, Persistent Memory, Container Orchestration, Polyglot Development_\n\n---\n\n### 🧠 Infinite Memory: AI Agent Scaling (`agentic-memory-scaling`)\n**Python** | [Repo](https://github.com/akashagl92/agentic-memory-scaling)\n\nIntroduces a novel Recursive Gated Consolidation (RGC) architecture, overcoming the \"Discovery Cliff\" to achieve 100% signal recall for LLM agents over 10 million turns. It eradicates temporal decay, a critical scaling limit, and demonstrates an \"Inverted Latency Law\" through extensive Monte Carlo simulations on advanced hardware like TPUs and OCS. This innovation significantly advances LLM agent memory scaling.\n\n_Tags: Agentic AI, LLM Memory Architectures, Scalability, Hardware Optimization_\n\n---\n\n### 🏛️ Family Heritage Vault (`family-heritage-vault`)\n**TypeScript** | [Live Demo](https://family-heritage-vault.vercel.app)\n\nA secure, interactive heritage vault built with Next.js and TypeScript, dynamically visualizes complex family lineage and kinship pairings. It features a robust media pipeline for a cinematic experience, intelligent routing, and hardened middleware security. The platform integrates AI agents, likely Anthropic Claude, for advanced capabilities such as content generation, intelligent search, and agent orchestration, providing a sophisticated system for exploring and preserving family history.\n\n_Tags: Next.js, TypeScript, AI Integration, Data Visualization_\n\n\n---\n\n## Technical Philosophy\n\n### CI/CD with Security-First Mindset\n- **Unit testing** throughout the codebase\n- **Walk-forward validation** for financial models\n- **LangSmith observability** for agentic systems\n\n### Cost Efficiency Through Agentic Development\n1. **Research acceleration**: Scaling calculations and dataDS tasks via AI agents.\n2. **Rapid prototyping**: Production-ready MVPs with comprehensive documentation.\n\n---\n\n## Summary Statistics\n\n| Metric | Current Value |\n|--------|------------|\n| Total Commits | 911 |\n| Unique Repositories | 14 |\n| Primary Language | Python |\n| Top Languages | N/A |\n| Last Synced | 11/13/2026 |\n\n---\n\n## 🛠 Tech Stack\n\n- Vanilla JavaScript & TypeScript\n- Python (FastAPI, SciPy, LangChain)\n- Neo4j Knowledge Graphs\n- GitHub Actions for automated daily data updates\n\n## 📁 Structure\n\n```\n├── index.html          → General portfolio\n├── alivo/              → Alivo-tailored (Product Enthusiast)\n├── consensys/          → Consensys-tailored (Market Research)\n├── airbnb/             → Airbnb-tailored (Research & Discovery)\n├── data.json           → GitHub activity data (Synced DAILY)\n└── scripts/            → Automation & Dynamic generation\n```\n\n## 🏗 Architecture & Data Flow\n\n```mermaid\ngraph TD\n    A[GitHub Repos] -->|fetch/fetch_contributions.py| B[data.json]\n    A -->|scripts/fetch-project-details.js| C[project-details.json]\n    C -.->|scripts/agentic_chronicler.py| D[project-details-ai.json]\n    B -->|scripts/update-readme.js| E[README.md]\n    D -->|scripts/update-readme.js| E\n    F[README.template.md] -->|scripts/update-readme.js| E\n```\n\n## 🚀 Development\n\n```bash\n# Update GitHub stats & README (requires GITHUB_TOKEN)\npython fetch/fetch_contributions.py\nnode scripts/update-readme.js\n```\n\n\n## 📝 License\n\nMIT\n",
     "files": [
       {
         "name": ".agent",
@@ -313,6 +441,11 @@
     ],
     "recentCommits": [
       {
+        "date": "2026-11-13T14:46:21Z",
+        "message": "Update portfolio stats & README [skip ci]",
+        "author": "GitHub Actions"
+      },
+      {
         "date": "2026-11-12T15:29:04Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
@@ -379,11 +512,6 @@
       },
       {
         "date": "2026-10-30T13:16:15Z",
-        "message": "Update portfolio stats & README [skip ci]",
-        "author": "GitHub Actions"
-      },
-      {
-        "date": "2026-10-29T13:26:51Z",
         "message": "Update portfolio stats & README [skip ci]",
         "author": "GitHub Actions"
       }
@@ -1445,87 +1573,6 @@
         "date": "2026-10-16T00:14:52Z",
         "message": "fix(javascript): retain unresolved network targets with provenance",
         "author": "morluto"
-      }
-    ]
-  },
-  {
-    "name": "erux_mcp",
-    "fullName": "akashagl92/erux_mcp",
-    "description": null,
-    "url": "https://github.com/akashagl92/erux_mcp",
-    "homepage": null,
-    "isPrivate": false,
-    "language": null,
-    "languages": {},
-    "stars": 0,
-    "forks": 0,
-    "createdAt": "2026-10-04T03:35:21Z",
-    "updatedAt": "2026-10-07T04:43:00Z",
-    "pushedAt": "2026-10-07T04:42:55Z",
-    "topics": [],
-    "readme": "# ERUX Astrology & Ephemeris MCP Server\n\n[![smithery badge](https://smithery.ai/badge/akash-agl92/erux_mcp)](https://smithery.ai/servers/akash-agl92/erux_mcp)\n[![MCPRush](https://img.shields.io/badge/MCPRush-Listed-blueviolet)](https://mcprush.com/akashagl92/erux-astrology-ephemeris-engine-mcp)\n[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.github.akashagl92%2Ferux--astrology-blue?logo=github)](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.akashagl92%2Ferux-astrology/versions/2.0.2)\n[![Transport](https://img.shields.io/badge/Transport-Streamable%20HTTP%20SSE-success)](#quickstart)\n[![Version](https://img.shields.io/badge/Version-2.0.2-brightgreen)](#)\n[![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/cykwmxQ3K)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n\nThe official **Model Context Protocol (MCP)** server for [ERUX](https://erux.ai) — the high-precision astronomical ephemeris and dual-zodiac astrology intelligence engine.\n\nConnect **Claude Desktop**, **Cursor**, **Windsurf**, **Open-WebUI**, **LibreChat**, or autonomous agent frameworks directly to deterministic astrological calculations without compiling C ephemeris libraries or running local Python background processes.\n\n---\n\n## Key Capabilities\n\n- **High-Precision Ephemeris Calculations**: Sub-arcsecond planetary coordinates for Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu, Uranus, Neptune, Pluto, and Chiron.\n- **Hybrid Insight Model (Dual-Zodiac Decoupling)**: Simultaneously evaluates Western Tropical Placidus (psychological and temperamental wiring) alongside Vedic Sidereal Lahiri (karmic timing and Dasha epochs).\n- **120-Year Parashara Vimshottari Timeline**: Multi-level Mahadasha, Antardasha, and Pratyantardasha hierarchy with exact date boundaries down to the hour.\n- **Real-Time Transit Horoscopes**: Continuous tracking of planetary transits against natal chart cusps with structured transit aspect predictions.\n- **Topocentric 24-Hora & Muhurta Engine**: Dynamic planetary hours (Horas) tied to local solar sunrise and sunset, plus Rahu Kaal, Yamaganda, Gulika, and Abhijit Muhurta.\n- **Classical Vedic Yoga Detection**: Algorithmic identification of Raja, Dhana, Pancha Mahapurusha, and Gaja Kesari yogas with planetary trigger explanations.\n- **Interactive Visual Wheel Generation**: Tools automatically return interactive visual chart wheel URLs (`https://erux.ai/chart?id=...`) and rendered PNG previews.\n\n---\n\n## Omnichannel Bot Ecosystem & Community\n\nERUX provides **1:1 command parity** across its MCP server, web application, and chat integrations:\n\n| Platform | Channel / Access | Features |\n| :--- | :--- | :--- |\n| **MCP Server** | `https://api.erux.ai/mcp` | Direct integration for Claude, Cursor, Windsurf, Open-WebUI, and AI Agents |\n| **Smithery** | [View on Smithery](https://smithery.ai/servers/akash-agl92/erux_mcp) | 1-Click CLI installer (`npx -y @smithery/cli run @akash-agl92/erux_mcp --client claude`) |\n| **MCPRush** | [View on MCPRush](https://mcprush.com/akashagl92/erux-astrology-ephemeris-engine-mcp) | Curated global MCP directory listing with direct client configurations |\n| **Discord Bot** | [Add to Discord Server](https://discord.com/oauth2/authorize?client_id=1532467179491164183) | Interactive slash commands: `/chart`, `/horoscope`, `/dasha`, `/yogas`, `/ask` |\n| **Discord Community** | [Join Community](https://discord.gg/cykwmxQ3K) | Astrologer community discussions, release updates, and developer support |\n| **ChatGPT** | OpenAI Plugin (In Review) | Direct conversational astrological chart synthesis, Vimshottari Dasha, and transits |\n| **WhatsApp** | [Chat on WhatsApp](https://wa.me/message/eruxai) | Instant natal chart wheels, daily hora schedules, and conversational transit Q&A |\n| **Instagram** | [@eruxaistro](https://instagram.com/eruxaistro) | Direct message astrological consultations, transit alerts, and visual chart cards |\n| **Messenger** | [m.me/eruxai](https://m.me/eruxai) | Omnichannel Facebook Messenger bot with 1:1 parity across all core ephemeris tools |\n| **Web Platform** | [erux.ai](https://erux.ai) | Full visual interactive wheels, multi-varga divisional charts (D1–D60), transits |\n\n---\n\n## Quickstart: Adding to Your MCP Client\n\nERUX runs as a **remote Streamable HTTP (SSE) server**. No local package installation, `pip install`, or `npx` compilation is required.\n\n### 1. Claude Desktop\nAdd this to your `claude_desktop_config.json`:\n\n* **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`\n* **Windows**: `%APPDATA%\\Claude\\claude_desktop_config.json`\n\n```json\n{\n  \"mcpServers\": {\n    \"erux-astrology\": {\n      \"url\": \"https://api.erux.ai/mcp\"\n    }\n  }\n}\n```\n\n> **Using with `mcp-remote` (optional stdio bridge):**\n> If your client strictly requires a `stdio` process:\n> ```json\n> {\n>   \"mcpServers\": {\n>     \"erux-astrology\": {\n>       \"command\": \"npx\",\n>       \"args\": [\"-y\", \"mcp-remote\", \"https://api.erux.ai/mcp\"]\n>     }\n>   }\n> }\n> ```\n\n---\n\n### 2. Cursor IDE\nAdd to `.cursor/mcp.json` (or via Cursor Settings > Features > MCP):\n\n```json\n{\n  \"mcpServers\": {\n    \"erux-astrology\": {\n      \"url\": \"https://api.erux.ai/mcp\"\n    }\n  }\n}\n```\n\n---\n\n### 3. Windsurf (Codeium)\nAdd to your `mcp_config.json`:\n\n```json\n{\n  \"mcpServers\": {\n    \"erux-astrology\": {\n      \"serverUrl\": \"https://api.erux.ai/mcp\"\n    }\n  }\n}\n```\n\n---\n\n### 4. Open-WebUI & LibreChat\nNavigate to **Admin Panel > Settings > Tools / MCP** and register the remote SSE endpoint:\n- **Server Name**: `erux-astrology`\n- **Server URL**: `https://api.erux.ai/mcp`\n- **Transport**: `sse` / `streamable-http`\n\n---\n\n### 5. Smithery CLI (Automated 1-Click Install)\nTo automatically configure and connect ERUX to Claude Desktop using [Smithery](https://smithery.ai/servers/akash-agl92/erux_mcp):\n\n```bash\nnpx -y @smithery/cli run @akash-agl92/erux_mcp --client claude\n```\n\n---\n\n### 6. Python / LangChain / CrewAI Agents\n\n```python\nfrom mcp import ClientSession\nfrom mcp.client.sse import sse_client\n\nasync def run_astrology_agent():\n    async with sse_client(\"https://api.erux.ai/mcp\") as (read, write):\n        async with ClientSession(read, write) as session:\n            await session.initialize()\n            \n            # List available tools\n            tools = await session.list_tools()\n            print([tool.name for tool in tools.tools])\n            \n            # Calculate birth chart\n            result = await session.call_tool(\"calculate_chart\", {\n                \"date\": \"1992-10-14\",\n                \"time\": \"14:30\",\n                \"city\": \"Austin, Texas\",\n                \"system\": \"hybrid\"\n            })\n            print(result)\n```\n\n---\n\n## Tool Catalog\n\nERUX exposes 6 deterministic tools to the host model:\n\n### 1. `calculate_chart`\n*Calculates personal birth charts or national mundane charts.*\n- **Arguments**:\n  - `date` (*string*, YYYY-MM-DD): Birth date or national founding date.\n  - `time` (*string*, HH:MM): 24-hour birth time (defaults to `12:00` solar noon if unknown).\n  - `city` (*string*): City of birth or founding.\n  - `country` (*optional string*): Country to disambiguate city name.\n  - `system` (*optional string*): `'hybrid'` (default), `'vedic'`, or `'western'`.\n- **Outputs**: Exact planetary longitudes, retrogrades, nakshatras, house cusps, active Dasha cycle, and interactive `chart_ui_url`.\n\n### 2. `get_horoscope`\n*Generates transit horoscopes, daily 24-Hora planetary hours, and transit aspect predictions.*\n- **Arguments**:\n  - `birth_date` (*string*, YYYY-MM-DD): User's natal birth date.\n  - `birth_city` (*string*): Natal birth city.\n  - `birth_time` (*optional string*, default `'12:00'`): Natal birth time.\n  - `current_city` (*optional string*): Relocated city for local topocentric horizon.\n  - `cadence` (*optional string*): `'daily'` (Horas & Panchang), `'weekly'`, `'monthly'`, `'yearly'` (Solar Return).\n  - `target_date` (*optional string*): Future target forecast date.\n- **Outputs**: Real-world strategic guidance, topocentric 24-Hora schedule, Rahu Kaal, transit predictions, and interactive transits wheel link.\n\n### 3. `calculate_dasha`\n*Computes the 120-year Parashara Vimshottari planetary timeline.*\n- **Arguments**:\n  - `date` (*string*, YYYY-MM-DD): Natal birth date.\n  - `time` (*string*, HH:MM): 24-hour birth time.\n  - `city` (*string*): Birth city.\n  - `target_date` (*optional string*): Target date to inspect active sub-periods.\n- **Outputs**: 120-year Mahadasha timeline with full Antardasha and Pratyantardasha start and end dates.\n\n### 4. `get_yogas`\n*Identifies classical Vedic yogas and active planetary formations.*\n- **Arguments**:\n  - `date` (*string*, YYYY-MM-DD): Natal birth date.\n  - `time` (*string*, HH:MM): 24-hour birth time.\n  - `city` (*string*): Birth city.\n- **Outputs**: Detected yogas (Raja, Dhana, Gajakesari, Mahapurusha), strength assessments, and planetary triggers.\n\n### 5. `ask_astrology_guidance`\n*Contextual life pillar synthesis grounded in house significations and Karakas.*\n- **Arguments**:\n  - `prompt` (*string*): The user's life question (e.g. career pivot, relocation timing).\n  - `birth_date` (*string*): Natal birth date.\n  - `birth_city` (*string*): Natal birth city.\n- **Outputs**: Grounded astrological framework guidance with relevant house and Karaka analysis.\n\n### 6. `get_interpretation`\n*Comprehensive deep-dive analysis across canonical life pillars.*\n- **Arguments**:\n  - `pillar` (*string*): `'career'`, `'love'`, `'wealth'`, `'health'`, or `'spirituality'`.\n  - `date` (*string*): Natal birth date.\n  - `city` (*string*): Natal birth city.\n- **Outputs**: Detailed analysis combining natal placements, dasha cycles, and transit influences.\n\n---\n\n## Example Prompts\n\nAsk your MCP-connected model:\n\n- \"What is my current Vimshottari Mahadasha and Antardasha? Born October 14, 1992 at 2:30 PM in Austin, Texas.\"\n- \"Show my complete birth chart wheel and calculate my Vedic yogas.\"\n- \"What are the best astronomical Horas for business negotiations today in London?\"\n- \"Calculate the national mundane chart for France and summarize its key planetary placements.\"\n- \"I am planning a career transition next month. Based on my natal placements, what planetary transits are active?\"\n\n---\n\n## Security & Architecture\n\n- **Hosted Remote Endpoint**: All astronomical calculations execute on secure, hardened ERUX cloud infrastructure (`api.erux.ai`).\n- **No Local Code Execution**: Connecting to ERUX does not execute arbitrary binaries or scripts on your local machine.\n- **Zero API Keys Required**: The public MCP endpoint requires no authentication or upfront API keys for standard queries.\n- **Read-Only & Idempotent**: All tools are annotated as read-only and idempotent, ensuring safe execution within enterprise agent workflows.\n\n---\n\n## Resources & Links\n\n- **Web Application**: [https://erux.ai](https://erux.ai)\n- **Developer MCP Documentation**: [https://erux.ai/developers/mcp](https://erux.ai/developers/mcp)\n- **Discord Bot**: [Invite Bot](https://discord.com/oauth2/authorize?client_id=1532467179491164183)\n- **Community Discord**: [Join Community](https://discord.gg/cykwmxQ3K)\n- **Official MCP Registry**: [Registry Link](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.akashagl92%2Ferux-astrology/versions/2.0.2)\n\n---\n\n## License\n\nThis repository and its configuration schemas are licensed under the [MIT License](LICENSE).\nCalculations and data provided via the ERUX API are subject to the [ERUX Terms of Service](https://erux.ai/terms).\n",
-    "files": [
-      {
-        "name": ".gitignore",
-        "type": "file",
-        "path": ".gitignore"
-      },
-      {
-        "name": "LICENSE",
-        "type": "file",
-        "path": "LICENSE"
-      },
-      {
-        "name": "README.md",
-        "type": "file",
-        "path": "README.md"
-      },
-      {
-        "name": "server.json",
-        "type": "file",
-        "path": "server.json"
-      }
-    ],
-    "recentCommits": [
-      {
-        "date": "2026-10-07T04:42:53Z",
-        "message": "docs: add MCPRush directory listing badge and link",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-10-07T04:41:00Z",
-        "message": "chore(release): bump mcp server to v2.0.2 with differentiated annotations and meta messaging channels",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-10-04T04:49:05Z",
-        "message": "docs: add official Smithery badge, backlink and 1-click CLI quickstart",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-10-04T04:04:53Z",
-        "message": "chore: update registry badges and links to v1.0.1",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-10-04T03:58:08Z",
-        "message": "docs: replace Google Chat Bot with ChatGPT OpenAI Plugin (In Review)",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-10-04T03:49:34Z",
-        "message": "chore: bump version to 1.0.1 and link repository URL",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-10-04T03:45:25Z",
-        "message": "docs: remove emojis for clean engineering tone",
-        "author": "Akash Agrawal"
-      },
-      {
-        "date": "2026-10-04T03:33:58Z",
-        "message": "feat: initial release of ERUX Astrology MCP server documentation & config",
-        "author": "Akash Agrawal"
       }
     ]
   },
